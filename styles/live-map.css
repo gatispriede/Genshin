@@ -1,0 +1,266 @@
+/* Interactive quest map. Uses the shared tokens from styles/map.css, so link
+   that first. Markers divide by --k, which the script sets to the current
+   zoom, so everything keeps a constant on-screen size. */
+
+.lmap-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .lmap-wrap { grid-template-columns: minmax(0, 1fr); }
+}
+
+.lmap {
+  position: relative;
+  height: clamp(460px, 72vh, 820px);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0a1017;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+.lmap.is-grabbing { cursor: grabbing; }
+
+.lmap__world { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+.lmap__tile { position: absolute; display: block; pointer-events: none; }
+.lmap__layer { position: absolute; inset: 0; pointer-events: none; }
+
+/* ── Teleports ─────────────────────────────────────────────────────────── */
+.lmap__wp {
+  position: absolute;
+  width: calc(10px / var(--k, 1));
+  height: calc(10px / var(--k, 1));
+  margin: calc(-5px / var(--k, 1)) 0 0 calc(-5px / var(--k, 1));
+  background: var(--hub);
+  border: calc(1.4px / var(--k, 1)) solid #06202e;
+  transform: rotate(45deg);
+  pointer-events: auto;
+}
+.lmap__wp--statue {
+  background: var(--geo);
+  border-radius: 50%;
+  transform: none;
+}
+.lmap__wp--domain { background: var(--electro); }
+
+/* ── Place names ───────────────────────────────────────────────────────── */
+.lmap__place {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: calc(1px / var(--k, 1)) calc(4px / var(--k, 1));
+  border-radius: calc(3px / var(--k, 1));
+  background: rgba(6, 10, 16, .6);
+  color: #e8eefc;
+  font-size: calc(9px / var(--k, 1));
+  white-space: nowrap;
+}
+.lmap__world.is-far .lmap__names { display: none; }
+
+/* ── Quest dots ────────────────────────────────────────────────────────── */
+.lmap__q {
+  position: absolute;
+  width: calc(13px / var(--k, 1));
+  height: calc(13px / var(--k, 1));
+  margin: calc(-6.5px / var(--k, 1)) 0 0 calc(-6.5px / var(--k, 1));
+  padding: 0;
+  border: calc(1.6px / var(--k, 1)) solid #06101a;
+  border-radius: 50%;
+  background: var(--best);
+  cursor: pointer;
+  pointer-events: auto;
+}
+.lmap__q--very-short { background: var(--goal); }
+.lmap__q--short      { background: var(--farm); }
+.lmap__q--medium     { background: var(--warn); }
+.lmap__q--long       { background: var(--do-now); }
+.lmap__q.is-done     { background: var(--off); opacity: .55; }
+.lmap__q.is-open {
+  box-shadow: 0 0 0 calc(3px / var(--k, 1)) #fff;
+  z-index: 5;
+}
+
+/* ── Info panel ────────────────────────────────────────────────────────── */
+.lmap-panel {
+  position: relative;
+  padding: 14px 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+.lmap-panel h3 { margin: 2px 0 10px; font-size: 1.05rem; }
+.lmap__close {
+  position: absolute; top: 8px; right: 8px;
+  width: 26px; height: 26px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel2);
+  color: var(--dim);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+.lmap__close:hover { color: var(--paper); }
+
+.lmap__tier {
+  margin: 0;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.lmap__tier--very-short { color: var(--goal); }
+.lmap__tier--short      { color: var(--farm); }
+.lmap__tier--medium     { color: var(--warn); }
+.lmap__tier--long       { color: var(--do-now); }
+
+.lmap__shot { display: block; margin-bottom: 10px; }
+.lmap__shot img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: block;
+}
+.lmap__noshot {
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--dim);
+  font-size: .85rem;
+}
+
+.lmap__facts { margin: 0 0 10px; display: grid; gap: 6px; }
+.lmap__facts div { display: flex; gap: 8px; justify-content: space-between; }
+.lmap__facts dt { color: var(--dim); font-size: .82rem; }
+.lmap__facts dd { margin: 0; font-size: .86rem; text-align: right; }
+
+.lmap__done {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: .86rem; cursor: pointer;
+}
+.lmap__fine { margin: 10px 0 0; font-size: .76rem; color: var(--dim); }
+
+/* ── Bar ───────────────────────────────────────────────────────────────── */
+.lmap-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  margin-top: 10px;
+}
+.lmap-bar__status { flex: 1; min-width: 14rem; font-size: .84rem; color: var(--dim); }
+.lmap-bar label { display: inline-flex; align-items: center; gap: 6px; font-size: .84rem; }
+.lmap-bar button {
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel2);
+  color: var(--dim);
+  font: inherit; font-size: .82rem;
+  cursor: pointer;
+}
+.lmap-bar button:hover { color: var(--paper); }
+
+.lmap-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.chip {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--dim);
+  font: inherit; font-size: .82rem;
+  cursor: pointer;
+}
+.chip[aria-pressed="true"] {
+  border-color: var(--hub);
+  background: rgba(47, 159, 237, .14);
+  color: #bfe2ff;
+}
+
+.lmap-legend {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  margin: 0 0 10px; padding: 0; list-style: none;
+  font-size: .8rem; color: var(--dim);
+}
+.lmap-legend li { display: flex; align-items: center; gap: 6px; }
+.lmap-legend i { width: 11px; height: 11px; border-radius: 50%; flex: none; }
+.lmap-legend .k-vs { background: var(--goal); }
+.lmap-legend .k-s  { background: var(--farm); }
+.lmap-legend .k-m  { background: var(--warn); }
+.lmap-legend .k-l  { background: var(--do-now); }
+.lmap-legend .k-d  { background: var(--off); }
+.lmap-legend .k-wp { background: var(--hub); border-radius: 0; transform: rotate(45deg); }
+
+/* ── Collectible maps ────────────────────────────────────────────────────── */
+.cmap__item {
+  position: absolute;
+  width: calc(12px / var(--k, 1));
+  height: calc(12px / var(--k, 1));
+  margin: calc(-6px / var(--k, 1)) 0 0 calc(-6px / var(--k, 1));
+  padding: 0;
+  border: calc(1.6px / var(--k, 1)) solid #2a1800;
+  border-radius: 50%;
+  background: var(--best);
+  cursor: pointer;
+  pointer-events: auto;
+}
+.cmap__item.is-got { background: var(--off); opacity: .5; }
+
+.cmap__stop {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: calc(22px / var(--k, 1));
+  height: calc(22px / var(--k, 1));
+  padding: 0;
+  border: calc(2px / var(--k, 1)) solid #06202e;
+  border-radius: 50%;
+  background: var(--hub);
+  color: #04131d;
+  font: inherit;
+  font-weight: 700;
+  font-size: calc(11px / var(--k, 1));
+  cursor: pointer;
+  z-index: 3;
+}
+.cmap__stop.is-clear { background: var(--goal); }
+.cmap__stop.is-active { box-shadow: 0 0 0 calc(3px / var(--k, 1)) #fff; }
+
+.cmap__tether {
+  stroke: rgba(47, 159, 237, .35);
+  stroke-width: calc(1.2px / var(--k, 1));
+}
+.cmap__tether.is-active { stroke: #fff; stroke-width: calc(1.8px / var(--k, 1)); }
+
+.cmap__list { list-style: none; margin: 0; padding: 0; max-height: 620px; overflow: auto; }
+.cmap__row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+.cmap__row:hover { background: var(--panel2); }
+.cmap__row.is-active { background: rgba(47, 159, 237, .14); }
+.cmap__row.is-clear { opacity: .5; }
+.cmap__row > b {
+  display: grid; place-items: center;
+  width: 24px; height: 24px; flex: none;
+  border-radius: 50%;
+  background: var(--hub); color: #04131d;
+  font-size: .78rem;
+}
+.cmap__row.is-clear > b { background: var(--goal); }
+.cmap__where { flex: 1; font-size: .86rem; }
+.cmap__where em { display: block; font-style: normal; font-size: .74rem; color: var(--dim); }
+.cmap__n { font-size: 1rem; font-weight: 700; text-align: right; }
+.cmap__n em { display: block; font-style: normal; font-size: .72rem; font-weight: 400; color: var(--dim); }
+
+/* Off-surface pins: in a cave, a sub-level, or underwater. A ring, so you can
+   tell before you warp that you cannot just walk up to it. */
+.cmap__item.is-off {
+  background: var(--electro);
+  box-shadow: 0 0 0 calc(2px / var(--k, 1)) rgba(192, 132, 252, .45);
+}
+.cmap__item.is-off.is-got { background: var(--off); box-shadow: none; }
+.cmap__off { color: var(--electro) !important; }

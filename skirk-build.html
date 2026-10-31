@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skirk — build and rotation</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .slots { display:grid; gap:9px; margin-top:10px; }
+  .slot { display:grid; grid-template-columns:96px 1fr 1fr; gap:12px; align-items:start;
+          padding:12px 14px; background:var(--panel); border-radius:8px;
+          border-left:3px solid var(--off); }
+  .slot.ok  { border-left-color:var(--goal); }
+  .slot.bad { border-left-color:var(--do-now); }
+  .slot.meh { border-left-color:var(--warn); }
+  .slot h4 { margin:0; font-size:.88rem; color:var(--paper); }
+  .slot .now, .slot .want { font-size:.85rem; line-height:1.5; }
+  .slot .now  { color:var(--dim); }
+  .slot .want { color:#c9d4e3; }
+  .slot .want b { color:var(--best); }
+  .slot small { display:block; color:#6f7a8c; font-size:.72rem;
+                letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px; }
+  @media (max-width:640px){ .slot{ grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="styles/gear.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pagechar"><span data-char="Skirk"></span><h1>Skirk</h1></div>
+  <p class="sub">Lv 60 · C0 · Cryo sword · on-field Cryo DPS. Live loadout read
+  27 Oct 2026.</p>
+
+  <div class="bar key">
+    <b>Her artifacts are in better shape than I previously said.</b> 4-piece Finale of the
+    Deep Galleries is equipped and it's her best set. One main stat is genuinely wrong
+    (the sands). The two real problems are <b>20.5% CRIT Rate</b> and a <b>weapon whose
+    substat does nothing for her</b>.
+  </div>
+
+  <div class="bar warn">
+    <b>Correction to docs 05 and 06.</b> I listed a <b>Cryo DMG goblet</b> as urgent for
+    her. KeqingMains lists her goblet as <b>"Cryo DMG Bonus <i>or</i> ATK%"</b> — and she's
+    wearing a 5★ ATK% goblet. That's a legitimate build, not a mistake. A Cryo goblet is a
+    modest upgrade, not a transformation. <b>Varesa's Electro goblet is the urgent one</b>,
+    not Skirk's.
+  </div>
+
+  <h2>Where she is vs where she's going</h2>
+  <table>
+    <tr><th>Stat</th><th>Now</th><th>Target</th><th></th></tr>
+    <tr><td>ATK</td><td>1,206</td><td>higher, via ATK% sands</td><td class="bad">one bad slot</td></tr>
+    <tr><td>CRIT Rate</td><td><b>20.5%</b></td><td>~50%</td><td class="bad">the main gap</td></tr>
+    <tr><td>CRIT DMG</td><td>106.1%</td><td>fine for now</td><td class="good">ok</td></tr>
+    <tr><td>Cryo DMG</td><td>15.0% <small>(2pc Galleries)</small></td><td>optional goblet upgrade</td><td class="good">ok</td></tr>
+    <tr><td>Energy Recharge</td><td>114.0%</td><td><b>0% — she has no use for it</b></td><td class="bad">wasted</td></tr>
+    <tr><td>Elemental Mastery</td><td>56</td><td>she doesn't want it</td><td class="bad">wasted</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Her CRIT ratio is 1 : 5.</b> The rule of thumb is 1 : 2. She has 106% CRIT DMG that
+    fires roughly one hit in five. Every point of CRIT Rate is worth far more to her than
+    anything else on the sheet.
+  </div>
+
+  <h2>Slot by slot</h2>
+  <div class="slots">
+    <div class="slot ok">
+      <h4>Flower</h4>
+      <div class="now"><small>Now</small>Finale of the Deep Galleries 4★ +8 · flat HP</div>
+      <div class="want"><small>Want</small>Same piece. Take it to <b>+12</b>.</div>
+    </div>
+    <div class="slot ok">
+      <h4>Plume</h4>
+      <div class="now"><small>Now</small>Finale 4★ <b>+16</b> · flat ATK</div>
+      <div class="want"><small>Want</small>Done. Her best-levelled piece.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Sands</h4>
+      <div class="now"><small>Now</small>Finale 4★ +6 · <b>HP% 17.0%</b></div>
+      <div class="want"><small>Want</small><b>ATK%.</b> The one clearly wrong main stat on
+        her. HP does nothing — none of her damage scales off it.</div>
+    </div>
+    <div class="slot meh">
+      <h4>Goblet</h4>
+      <div class="now"><small>Now</small>Gladiator's Finale <b>5★</b> +12 · ATK% 30.8%</div>
+      <div class="want"><small>Want</small>Keep it. <b>Cryo DMG%</b> is a small upgrade when
+        it turns up, and it should be a <b>non-Galleries</b> piece — this is her one free
+        slot.</div>
+    </div>
+    <div class="slot ok">
+      <h4>Circlet</h4>
+      <div class="now"><small>Now</small>Finale 4★ +12 · <b>CRIT DMG 36.9%</b></div>
+      <div class="want"><small>Want</small>CRIT is correct. Given her 1:5 ratio, a
+        <b>CRIT Rate</b> circlet would serve her better than more CRIT DMG.</div>
+    </div>
+  </div>
+
+  <div class="bar good">
+    <b>Substat priority:</b> <b>CRIT</b> → ATK% → flat ATK. <b>Energy Recharge and
+    Elemental Mastery are dead rolls</b> on her — she has 114% ER and 56 EM doing
+    absolutely nothing. When you compare two pieces, count only the CRIT and ATK% rolls.
+  </div>
+
+  <div class="note">
+    <b>Why the goblet is the free slot, and should stay that way.</b> The 4-piece needs four
+    Galleries pieces. Hers are flower, plume, sands and circlet — so the goblet is already
+    the odd one out, which is the right arrangement: goblet main stats are the hardest to
+    roll, so you want that slot open to <i>any</i> set. (Varesa has the same structure
+    wrong — see <a href="varesa-build.html">her page</a>.)
+  </div>
+
+  <h2>Weapon — the one thing to change</h2>
+
+  <div class="bar bad">
+    <b>Prototype Rancour's substat is Physical DMG 28.4%, and none of her damage is
+    physical.</b> In Seven-Phase Flash her attacks are converted to Cryo and cannot be
+    overridden. That substat is doing <b>nothing</b>.
+  </div>
+
+  <div class="note">
+    <b>Precision, added 30 Oct after pulling the real weapon text:</b> the <i>substat</i>
+    is dead, but the passive isn't. <b>Smashed Stone</b> gives <b>+4% ATK and DEF per
+    Normal or Charged hit, max 4 stacks</b> — that works for her. So it's a weak stat stick
+    rather than an empty slot. The swap is still right, because the Exaiphanes Blade brings
+    far more base ATK <i>and</i> the CRIT Rate she's starved of.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Exaiphanes Blade — the fix</b>
+      <span>5★ sword, <b>608 base ATK and 33.1% CRIT Rate</b> at full upgrade, free, no
+      levelling materials. Her exact two problems in one swap. It's sitting on your
+      Traveler at Lv 20 — see
+      <a href="exaiphanes-statues-map.html">the Snezhnaya statue map</a>.
+      <b>Note:</b> it isn't in the KeqingMains list below because that guide predates the
+      weapon. The case for it is plain stats, not a passive — which is exactly what she
+      needs.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Calamity of Eshu — if you'd rather use a 4★</b>
+      <span>KQM's strong free option, but its passive needs a <b>shielder</b>. You have
+      <b>Dahlia</b> (Hydro, C4) — though she's Lv 23. Without the shield it's
+      unremarkable.</span></div></div>
+    <div class="row off"><div class="num">3</div>
+      <div><b>Also listed by KQM</b>
+      <span><b>Finale of the Deep</b> — the best 4★ for her when running 4pc Galleries
+      without a shielder. <b>The Black Sword</b> and <b>Kagotsurube Isshin</b> as
+      placeholders. <b>Azurelight</b> is her signature 5★.</span></div></div>
+    <div class="row hub"><div class="num">→</div>
+      <div><b>Prototype Rancour goes to Noelle or Razor</b>
+      <span>Physical damage is their whole kit, and your <b>C6 Mika</b> gives Soulwind
+      targets <b>+60% Physical CRIT DMG</b> — which Skirk can't use and they can.</span></div></div>
+  </div>
+
+  <h2>How her kit actually works</h2>
+
+  <div class="note">
+    She runs on <b>Serpent's Subtlety (SS)</b>, not Elemental Energy. Her Burst is paid for
+    in SS. Her Elemental Energy bar is never spent — which is precisely why
+    <b>4pc Finale of the Deep Galleries</b> is built for her: its condition is
+    <b>0 Elemental Energy</b>, and hers is permanently 0, so the 4-piece is
+    <b>always on</b>.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">E</div>
+      <div><b>Elemental Skill — +45 SS</b>
+      <span><b>Tap</b> enters <b>Seven-Phase Flash</b>. <b>Hold</b> absorbs Void Rifts.
+      Most of her on-field damage comes from this talent.</span></div></div>
+    <div class="row hub"><div class="num">◇</div>
+      <div><b>Void Rifts — +8 SS each</b>
+      <span>Created when a <b>nearby party member</b> triggers <b>Frozen, Superconduct,
+      Cryo Swirl or Cryo Crystallize</b>. <b>Melt does not make them.</b> One every 2.5s,
+      <b>max 3 on the field</b>. She absorbs them with a Charged Attack during Seven-Phase
+      Flash, with Havoc: Extinction, or by holding her Skill.</span></div></div>
+    <div class="row"><div class="num">Q</div>
+      <div><b>Elemental Burst — costs 50 SS</b>
+      <span>Every SS point <b>above 50</b> adds Burst damage, up to <b>12 extra points</b>.
+      So <b>62 SS is the ceiling</b> — Skill (45) plus two Rifts (16) lands on 61, which is
+      as close as C0 gets.</span></div></div>
+    <div class="row goal"><div class="num">⚡</div>
+      <div><b>Seven-Phase Flash</b>
+      <span>Up to <b>12.5s</b>, or until SS runs out — SS drains continuously. Her Burst is
+      replaced by <b>Havoc: Extinction</b>, which costs no SS and buffs her next
+      <b>10 Normal Attacks</b>. Any leftover SS is <b>cleared</b> when the state
+      ends.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Enemies with a permanent Pyro aura shut her down.</b> They block Void Rift
+    generation, which cuts off her SS income. Don't bring her to Pyro-aura content —
+    send Varesa instead.
+  </div>
+
+  <h2>⭐ The passive that decides her team</h2>
+
+  <div class="bar key">
+    <b>Return to Oblivion (Ascension 4).</b> Every time a nearby <b>Hydro</b> teammate lands
+    a Hydro hit, or a <b>Cryo</b> teammate other than Skirk lands a Cryo hit, she gains a
+    stack of <b>Death's Crossing</b> for 20s. <b>Max 3 stacks — one per teammate.</b>
+    At 3 stacks it's roughly <b>+170% Normal Attack damage</b> in Seven-Phase Flash and
+    <b>+160% Burst damage</b>, as a base-damage multiplier.
+  </div>
+
+  <div class="note">
+    <b>This is not a small bonus — it's most of her damage.</b> Each teammate can give only
+    one stack and she can't give herself one, so <b>three stacks means three Hydro/Cryo
+    teammates, all of them actually hitting enemies</b>. The step from two stacks to three
+    is the biggest one. Any non-Hydro, non-Cryo character in the slot is a stack you
+    don't get.
+  </div>
+
+  <div class="note">
+    <b>Mutual Weapons Mentorship (utility passive):</b> if <b>every</b> party member is
+    Hydro or Cryo, with at least one of each, everyone's <b>Elemental Skill level +1</b>.
+    A mono Hydro/Cryo team gets this on top of the three stacks.
+  </div>
+
+  <h2>Her team, from what you own</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Skirk — on-field</b> <span>Lv 60. AR 40 opened <b>Lv 80</b>.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Barbara — Hydro, Lv 66</b> <span>Freezes targets with Skirk's Cryo, which is
+      what <b>makes the Void Rifts</b>. One Death's Crossing stack.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Mika — Cryo, C6, Lv 40</b> <span>Heals, party ATK SPD, and a second stack.
+      His C6 physical crit buff is wasted here, but the stack isn't.</span></div></div>
+    <div class="row hub"><div class="num">4</div>
+      <div><b>The third stack — this is what's missing</b>
+      <span>Pick one and <b>level them</b>: <b>Kaeya</b> (Cryo, Lv 20), <b>Dahlia</b>
+      (Hydro, C4, Lv 23 — also a shielder, which would switch on Calamity of Eshu), or
+      <b>Candace</b> (Hydro, C2, Lv 20). All four slots Hydro/Cryo also triggers the
+      <b>Skill level +1</b> passive.</span></div></div>
+  </div>
+
+  <div class="bar good">
+    <b>Fischl and Sucrose do generate Void Rifts</b> (Superconduct and Cryo Swirl both
+    count) — but they give <b>no Death's Crossing stack</b>, and they break the mono
+    Hydro/Cryo passive. SS income is not her bottleneck; the stacks are. <b>Mono freeze
+    wins.</b>
+  </div>
+
+  <h2>Rotation</h2>
+  <p class="sub">On-field, the version to use at C0 with this team.</p>
+
+  <div class="steps">
+    <span class="step">1 · Tap E</span>
+    <span class="step">2 · N5D, repeat</span>
+    <span class="step">3 · Charged Attack to eat Rifts</span>
+    <span class="step warn">4 · Havoc: Extinction</span>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Get the stacks up first</b>
+      <span>Barbara, Mika and your third Hydro/Cryo each land a hit. Three stacks,
+      20 seconds each — plenty of time.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Tap Skill to enter Seven-Phase Flash</b>
+      <span>+45 SS, 12.5 seconds on the clock.</span></div></div>
+    <div class="row"><div class="num">3</div>
+      <div><b>Spam N5D</b>
+      <span>Five Normal Attacks then a dash, over and over. This is the damage.</span></div></div>
+    <div class="row"><div class="num">4</div>
+      <div><b>Weave Charged Attacks to absorb Void Rifts</b>
+      <span>+8 SS each, and it keeps the state alive longer.</span></div></div>
+    <div class="row"><div class="num">5</div>
+      <div><b>Havoc: Extinction</b>
+      <span>Her Burst slot during the state — costs no SS and buffs the next 10 Normal
+      Attacks.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Split rotation</b> (when you want teammates on the field): <b>Hold Skill → Burst</b>
+    first, swap out for the team, then come back for <b>Tap Skill and N5D</b>. Hold-Skill
+    charges SS off the Rifts; aim for <b>~61 SS</b> before the Burst.
+  </div>
+
+  <div class="note">
+    <b>Talent priority:</b> on-field, <b>Elemental Skill first</b>, then Burst.
+    <b>Normal Attack doesn't need levelling</b> — the opposite of Varesa. Materials and
+    the domain schedule: <a href="research/03-character-materials.md">03-character-materials.md</a>.
+  </div>
+
+  <div class="bar good">
+    <b>Do these four things, in order:</b> 1 · level the <b>Exaiphanes Blade</b> and put it
+    on her · 2 · <b>ATK% sands</b> · 3 · level <b>Kaeya or Dahlia</b> for the third
+    Death's Crossing stack · 4 · ascend her toward <b>Lv 80</b>.
+  </div>
+
+  <div class="note">
+    Where to farm: <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a>.
+    Free 5★ sword: <a href="exaiphanes-statues-map.html">Snezhnaya statues</a>.
+    Everyone's gear: <a href="research/05-current-loadouts.md">05-current-loadouts.md</a>.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> set, main stats, substat priority, weapons, talent priority, mechanics
+    and rotation from the
+    <a href="https://keqingmains.com/q/skirk-quickguide/" target="_blank" rel="noopener">KeqingMains
+    Skirk quick guide</a>; <i>Return to Oblivion</i> and <i>Mutual Weapons Mentorship</i>
+    from the <a href="https://genshin-impact.fandom.com/wiki/Skirk" target="_blank"
+    rel="noopener">Genshin wiki</a>. Your stats and equipped pieces are read live from the
+    Battle Chronicle.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<div id="ascension" data-character="Skirk"></div>
+
+<h2>Artifact sets</h2>
+<p class="sub">Effects are read live from the game data, so they cannot go stale.</p>
+<div class="setgrid gear" data-sets="Finale of the Deep Galleries | off-field 4pc, keeps working while she is away; Golden Troupe | her Skill damage, with an off-field clause; Blizzard Strayer | only if the team actually freezes; Gladiator's Finale | no domain drops it, Strongbox or bosses only"></div>
+
+<script src="app/ascension.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>

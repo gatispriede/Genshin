@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking collected oculi</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Tracking which oculi you've already collected</h1>
+  <p class="sub">Checked against the live HoYoLAB map in your own logged-in browser, 27 Oct 2026.</p>
+
+  <div class="bar bad">
+    <b>There is no automatic sync.</b> Nothing reads what you picked up in-game and ticks it
+    off the map. The marking is <b>manual</b> — but once you mark a pin it is saved to your
+    HoYoLAB account, so it follows you across devices.
+  </div>
+
+  <div class="bar good">
+    <b>What that buys you:</b> turn on <b>Hide Marked Pins</b> and the map stops showing
+    anything you've already done. From then on every pin you can see is a pin you still owe.
+    That is the closest thing to a real tracker.
+  </div>
+
+  <h2>1 · Mark a pin</h2>
+  <p class="sub">Click any pin → the card has two buttons at the bottom.</p>
+
+  <div class="map-wrap" id="popup"
+       data-map="assets/hoyolab-pin-popup.jpg"
+       data-alt="HoYoLAB interactive map with an Anemoculus pin card open"></div>
+
+  <div class="rows">
+    <div class="row"><div class="num">A</div>
+      <div><b>Mark Pin</b>
+      <span>Ticks off this one pin. It greys out immediately and is stored against your
+      account.</span></div></div>
+    <div class="row"><div class="num">B</div>
+      <div><b>Batch Mark</b>
+      <span>The one worth knowing. Puts the map into a mode where every pin you click gets
+      marked, without reopening a card each time. Use it after a collecting run — sweep the
+      area you just cleared in one pass.</span></div></div>
+  </div>
+
+  <h2>2 · Hide what you've done</h2>
+  <p class="sub">Gear icon, top right.</p>
+
+  <div class="map-wrap" id="settings"
+       data-map="assets/hoyolab-settings.jpg"
+       data-alt="HoYoLAB interactive map settings panel"></div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Hide Marked Pins — turn this ON</b>
+      <span>Marked pins vanish from the map. What's left is your to-do list. This is the
+      whole point of marking.</span></div></div>
+    <div class="row off"><div class="num">2</div>
+      <div><b>Hide Exploration Progress</b>
+      <span>Leave it off. The map <b>does</b> pull your real in-game exploration percentage
+      per region from your account — that part is automatic. It's region %, though, not
+      which individual oculi you have.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>The right-hand rail</b> (marked ⚙ ◎ ⤳ ▽ on the screenshot above): gear = settings,
+    ◎ = centre on your in-game position, <b>⤳ = Routes</b>, <b>▽ = My Marked Pins</b>.
+  </div>
+
+  <h2>3 · My Marked Pins</h2>
+  <p class="sub">The ▽ icon. Lists every category you've marked anything in.</p>
+
+  <div class="map-wrap" id="marked"
+       data-map="assets/hoyolab-marked-pins.jpg"
+       data-alt="HoYoLAB My Marked Pins panel"></div>
+
+  <div class="rows">
+    <div class="row"><div class="num">★</div>
+      <div><b>The checkbox per row</b>
+      <span>Toggles that category's layer on the map.</span></div></div>
+    <div class="row"><div class="num">⋯</div>
+      <div><b>The ⋯ menu — two entries</b>
+      <span><b>Timer Settings</b> — respawn countdown for things that regrow (ore, local
+      specialities). <b>Cancel all markers</b> — wipes every mark in that category. There is
+      no undo, so don't press it to "clean up".</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Your account already has marks</b> in Anemoculus, Mondstadt keys and Luxurious Chest.
+    So someone — you — has been marking. Worth continuing rather than starting over.
+  </div>
+
+  <h2>Where you actually are</h2>
+  <p class="sub">Live from your Battle Chronicle, 27 Oct 2026. These are <b>collected</b>
+  counts.</p>
+
+  <table>
+    <tr><th>Oculus</th><th>Collected</th><th>Region total</th><th>Left</th></tr>
+    <tr><td>Anemoculus</td><td><b>50</b></td><td>66</td><td class="good">16</td></tr>
+    <tr><td>Geoculus</td><td><b>48</b></td><td>131</td><td>83</td></tr>
+    <tr><td>Cryoculus</td><td><b>19</b></td><td>—</td><td>—</td></tr>
+    <tr><td>Hydroculus</td><td><b>11</b></td><td>180</td><td>169</td></tr>
+    <tr><td>Pyroculus</td><td><b>8</b></td><td>168</td><td>160</td></tr>
+    <tr><td>Lunoculus</td><td><b>3</b></td><td>—</td><td>—</td></tr>
+    <tr><td>Electroculus</td><td>0</td><td>181</td><td>181</td></tr>
+    <tr><td>Dendroculus</td><td>0</td><td>271</td><td>271</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Unverified:</b> I haven't confirmed the Snezhnaya (Cryoculus) and Nod-Krai
+    (Lunoculus) region totals, so those two rows are left blank rather than guessed.
+  </div>
+
+  <div class="bar key">
+    <b>Anemoculus is nearly finished — 16 left of 66.</b> That's the one to close out.
+    Every 2 Anemoculi offered raises the Mondstadt Statue level, and statue levels are what
+    raise your <b>stamina cap</b>.
+  </div>
+
+  <h2>The in-game tracker that does work automatically</h2>
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Resonance Stones</b>
+      <span>Place one and it points at the <b>nearest uncollected</b> oculus of that type —
+      the game knows what you have, so this never sends you to one you already took. One
+      charge, 30s to re-place.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>How to get one — corrected 28 Oct</b>
+      <span>They are <b>not sold by a vendor</b>; I had this wrong. You receive
+      <b>Instructions: Anemoculus Resonance Stone</b> as the <b>Mondstadt Reputation
+      Level 2</b> reward, then <b>craft it via Alchemy</b>. The Geoculus version is the
+      same at Liyue Reputation Level 2; Electro, Dendro and Hydro arrive at Reputation
+      Level 8 in their regions. Reputation itself opens at <b>AR 25</b> and Level 2 is only
+      <b>400 EXP</b> — about four world quests. See
+      <a href="reputation-compass.html">reputation-compass.html</a>.</span></div></div>
+    <div class="row off"><div class="num">3</div>
+      <div><b>The minimap check</b>
+      <span>Stand near a known oculus location. If the floating diamond isn't on your
+      minimap, you already took it. Crude, but it's free and it's authoritative.</span></div></div>
+  </div>
+
+  <h2>Also on that map, worth knowing</h2>
+  <div class="note">
+    <b>Routes</b> (the ⤳ icon) — pre-built harvest circuits for ascension materials. Winter
+    Icelea, Moonfall Silver, Portable Bearing, Skysplit Gembloom, Dracolite, Withering
+    Purpurbloom, Glowing Hornshroom, Rainbow Rose, Saurian Claw Succulent, Brilliant
+    Chrysanthemum — each one a node order with counts. You can also build your own under
+    <b>My Routes</b>. Combined with <b>Timer Settings</b> this is a real farming tool, not
+    just a map.
+  </div>
+
+  <div class="bar bad">
+    <b>What does not exist:</b> importing collected oculi or opened chests from the game.
+    The only in-game import is your own <b>self-placed in-game pins</b>, and it is one-way
+    with no un-sync. Collected state does not transfer.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+
+  drawMap("#popup", [
+    { x: 69.6, y: 84.9, role: "hub",    size: "sm", label: "B" },
+    { x: 77.5, y: 84.9, role: "do-now", size: "sm", label: "A", pulse: true,
+      tag: "A · Mark Pin    B · Batch Mark" }
+  ]);
+
+  drawMap("#settings", [
+    { x: 56.4, y: 49.4, role: "do-now", size: "lg", label: "1", pulse: true,
+      tag: "1 · Hide Marked Pins — turn ON" },
+    { x: 56.4, y: 60.6, role: "off",    size: "sm", label: "2",
+      tag: "2 · Exploration % is pulled automatically" },
+    { x: 97.8, y: 14.6, role: "goal",   size: "sm", label: "⚙" },
+    { x: 97.8, y: 25.9, role: "farm",   size: "sm", label: "⤳" },
+    { x: 97.8, y: 31.6, role: "best",   size: "sm", label: "▽" }
+  ]);
+
+  drawMap("#marked", [
+    { x: 20,   y: 5.3,  role: "hub",    size: "sm", label: "·", tag: "Categories you've marked in" },
+    { x: 18.8, y: 18.1, role: "do-now", size: "sm", label: "⋯", pulse: true,
+      tag: "⋯ · Timer Settings / Cancel all markers" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

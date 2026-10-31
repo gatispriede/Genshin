@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuwang Hill — 8-statue puzzle</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Wuwang Hill summit — 8 statues</h1>
+  <p class="sub">"The highest point of Qingce Village." <b>Order does not matter</b> — you
+  just need the right four.</p>
+
+  <div class="diagram">
+  <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg">
+    <defs><style>
+      .ring{fill:none;stroke:#263040;stroke-width:2;stroke-dasharray:6 7}
+      .on{fill:#ffc63f;stroke:#fff;stroke-width:4}
+      .off{fill:#3a4454;stroke:#55606f;stroke-width:3}
+      .lbl{font:700 17px "Segoe UI",sans-serif;fill:#11161f;text-anchor:middle}
+      .lbloff{font:700 16px "Segoe UI",sans-serif;fill:#8e99a8;text-anchor:middle}
+      .cap{font:700 12px "Segoe UI",sans-serif;fill:#ffd97a;text-anchor:middle}
+      .ctr{font:800 15px "Segoe UI",sans-serif;fill:#6f7a8c;text-anchor:middle}
+      .nmark{font:800 16px "Segoe UI",sans-serif;fill:#e24a4a;text-anchor:middle}
+      .small{font:600 10.5px "Segoe UI",sans-serif;fill:#8e99a8;text-anchor:middle}
+    </style></defs>
+
+    <circle class="ring" cx="260" cy="260" r="175"/>
+    <text class="ctr" x="260" y="250">rune marker</text>
+    <text class="ctr" x="260" y="272">(the riddle)</text>
+
+    <g>
+      <circle cx="470" cy="55" r="40" fill="#161d28" stroke="#e24a4a" stroke-width="2"/>
+      <polygon points="470,22 480,56 470,49 460,56" fill="#e24a4a"/>
+      <polygon points="470,88 480,54 470,61 460,54" fill="#5a6678"/>
+      <text class="nmark" x="470" y="18">N</text>
+      <text class="small" x="470" y="106">S</text>
+    </g>
+    <text class="small" x="470" y="126">top of</text>
+    <text class="small" x="470" y="139">diagram</text>
+
+    <circle class="on" cx="260" cy="85" r="30"/>
+    <text class="lbl" x="260" y="92">N</text>
+    <text class="cap" x="260" y="38">wind-swept ruin</text>
+    <text class="cap" x="260" y="54">Stormterror's Lair</text>
+
+    <circle class="off" cx="384" cy="136" r="24"/><text class="lbloff" x="384" y="142">NE</text>
+    <circle class="off" cx="435" cy="260" r="24"/><text class="lbloff" x="435" y="266">E</text>
+
+    <circle class="on" cx="384" cy="384" r="30"/>
+    <text class="lbl" x="384" y="391">SE</text>
+    <text class="cap" x="420" y="437">snow-capped peak</text>
+
+    <circle class="on" cx="260" cy="435" r="30"/>
+    <text class="lbl" x="260" y="442">S</text>
+    <text class="cap" x="260" y="492">city of Liyue</text>
+
+    <circle class="on" cx="136" cy="384" r="30"/>
+    <text class="lbl" x="136" y="391">SW</text>
+    <text class="cap" x="100" y="437">adepti's abode</text>
+
+    <circle class="off" cx="85"  cy="260" r="24"/><text class="lbloff" x="85"  y="266">W</text>
+    <circle class="off" cx="136" cy="136" r="24"/><text class="lbloff" x="136" y="142">NW</text>
+  </svg>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--warn)"></i> Activate these four</span>
+    <span><i style="background:var(--off)"></i> Leave alone</span>
+  </div>
+
+  <div class="bar warn">
+    <b>Activate: N · SE · S · SW.</b> Any order. The other four stay untouched.
+  </div>
+
+  <div class="bar warn">
+    <b>How to find north in-game:</b> your <b>minimap</b> (top-left) has an <b>N</b> marker
+    on its rim. Rotate your camera until that <b>N sits at the top of the minimap</b> — you
+    are now facing north and the diagram lines up with what's in front of you:
+    <b>north statue far side, south statue nearest you</b>.<br><br>
+    The full map screen (M) is <b>always north-up</b>, so you can orient from that too.
+  </div>
+
+  <h2>Alternative if you can't tell direction</h2>
+  <div class="note">
+    Find the statue <b>facing the climbable stone cliff</b> — call that <b>#1</b>. Count
+    <b>clockwise</b>, then activate <b>2, 3, 5 and 8</b>.<br><br>
+    The compass version above is tied to the riddle's landmarks, so it's the safer of the two.
+  </div>
+
+  <h2>Getting up there</h2>
+  <div class="map-wrap" id="map"
+       data-map="assets/wuwang-player-map.webp"
+       data-alt="Wuwang Hill map"></div>
+
+  <div class="note">
+    Go <b>behind the village elder's shrine</b> in Qingce for a set of <b>ladders</b>, climb
+    those, then <b>free-climb the cliff face</b> to the top. Take stamina food, or grab
+    <b>Anemograna</b> on the way for the −30% climbing stamina.<br><br>
+    You'll know you're there: water, <b>glowing orange crystals</b>, and the rune marker in
+    the middle giving you the riddle.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 56, y: 46, role: "do-now", label: "▲", pulse: true,
+      tag: "Wuwang Hill summit — the 8 statues" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

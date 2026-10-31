@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inazuma reputation quests — where each one starts</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .quest{scroll-margin-top:14px;background:var(--panel);border-radius:10px;
+         padding:14px 16px;margin:14px 0;border-left:3px solid var(--line)}
+  .quest.pri{border-left-color:var(--do-now)}
+  .quest.spare{border-left-color:var(--hub)}
+  .quest.done{border-left-color:#3a4a3c;opacity:.5}
+  .quest.done h2{text-decoration:line-through;text-decoration-color:#4a5a66}
+  .quest.done .shots img{filter:grayscale(1) brightness(.6)}
+  .quest header{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+  .quest h2{margin:0;font-size:1.04rem;color:var(--paper);border:0;padding:0}
+  .idx{flex:0 0 34px;height:34px;border-radius:50%;background:#2a3543;
+       color:var(--dim);font-weight:700;display:grid;place-items:center;font-size:.95rem}
+  .pri .idx{background:var(--do-now);color:#1a1008}
+  .done .idx{background:#243229;color:#5e8f70}
+  .qtag{display:inline-block;padding:1px 8px;border-radius:999px;
+        background:#3a2412;color:#ffc48f;font-size:.68rem;letter-spacing:.05em;
+        text-transform:uppercase;white-space:nowrap}
+  .qtag.ok{background:#15321f;color:#7ee2a8}
+  .qtag.sp{background:#15283a;color:#8fc4ff}
+  .meta{margin:3px 0 0;color:var(--dim);font-size:.85rem}
+  .meta b{color:var(--best)}
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+  .shots figure{margin:0}
+  .shots img{width:100%;border-radius:7px;display:block;background:#0e141c}
+  .shots figcaption{color:var(--dim);font-size:.74rem;letter-spacing:.07em;
+                    text-transform:uppercase;margin-top:5px}
+  .more{color:#5d6b7e;font-size:.78rem;margin:8px 0 0}
+  .nomap{color:var(--dim);font-size:.86rem;padding:10px 12px;border-radius:7px;
+         background:#1a222c;border:1px dashed var(--line)}
+  .rnav{margin:10px 0 4px;font-size:.92rem}
+  .rnav a{color:var(--best);text-decoration:none;margin-right:4px}
+  .rnav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Inazuma reputation quests — where each one starts</h1>
+<p class="sub">All 42 world quests that pay Reputation EXP, ordered shortest
+first, with 139 map and location shots pulled from the wiki.</p>
+<div class="rnav"><a href="liyue-quest-maps.html">Liyue</a> · <b>Inazuma</b> · <a href="sumeru-quest-maps.html">Sumeru</a> · <a href="fontaine-quest-maps.html">Fontaine</a></div>
+
+<div class="bar warn"><b>Target: Level 9 and the <b>Electro Treasure Compass</b>.</b> <b>42 world quests at 100</b> plus <b>3 Archon or story acts at 200</b> = <b>4,800 EXP</b>, against the <b>5,000</b> needed — <b>short by 200.</b> The gap has to come from weekly Requests (80 each, capped at 3 per week <i>across every nation</i>) and exploration milestones.<br><br><b>Only the 42 world quests appear below</b>; the acts have no start location of their own, so there is nothing to map for them.<br><br><b>You have explored 0% of this region</b>, so treat this as a route plan rather than a to-do list — the Reputation board itself unlocks behind that region's Archon quest, and most of these start points sit behind waypoints you have not opened. The flagged ones are simply the shortest, for whenever you do arrive.</div>
+
+<div class="bar key">
+  <b>These maps are the wiki's own in-game crops</b>, taken from each quest page
+  and each giver's NPC page — not pins I placed. The white ring marks the spot;
+  the blue teardrop nearby is the waypoint to teleport to.
+</div>
+
+<div class="note">
+  <b>Why there is no single map with every dot on it.</b> The official
+  interactive map's World Quest layer has <b>576 pins, every one of which
+  returns a null name</b>, and the wiki stores no coordinates. A combined map
+  would have been guesswork; these per-quest crops are exact.
+  Full sortable table across all regions:
+  <a href="reputation-quests.html">reputation-quests.html</a>.
+</div>
+<div class="note"><b>6 quests have no location shot anywhere:</b> <i>Katheryne in Inazuma</i>, <i>Gourmet Supremos, Assemble!</i>, <i>Treatment on the Island</i>, <i>Yougou Cleansing</i>, <i>The Subterranean Trials of Drake and Serpent</i>, <i>The Sun-Wheel and Mt. Kanna</i>. Those cards say so rather than showing a guess.</div>
+
+<article id="q-katheryne-in-inazuma" class="quest pri" data-area="Inazuma City">
+  <header>
+    <span class="idx">1</span>
+    <div>
+      <h2>Katheryne in Inazuma</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Katheryne (Inazuma)</b> · <b>Inazuma City</b> · 1 step · 2.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Inazuma City</b> and look for <b>Katheryne (Inazuma)</b>.</div></div>
+</article>
+<article id="q-orobashi-s-legacy-part-v" class="quest pri" data-area="Fort Fujitou">
+  <header>
+    <span class="idx">2</span>
+    <div>
+      <h2>Orobashi's Legacy: Part V</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Kaji</b> · <b>Fort Fujitou</b> · 4 steps · 3.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-kaji-2.png" alt="Orobashi's Legacy: Part V map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-kaji-context-2.png" alt="Orobashi's Legacy: Part V map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-art-of-horticulture" class="quest pri" data-area="Kamisato Estate">
+  <header>
+    <span class="idx">3</span>
+    <div>
+      <h2>The Art of Horticulture</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Madame Ping</b> · <b>Kamisato Estate</b> · 2 steps · 5.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-madame-ping.png" alt="The Art of Horticulture map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-madame-ping-context.png" alt="The Art of Horticulture map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-ritou-road" class="quest pri" data-area="Ritou">
+  <header>
+    <span class="idx">4</span>
+    <div>
+      <h2>The Ritou Road</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Harrison</b> · <b>Ritou</b> · 8 steps · 4.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-harrison.png" alt="The Ritou Road map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-harrison-context-nighttime.png" alt="The Ritou Road map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-reminiscence-of-seirai" class="quest pri" data-area="Seirai Island">
+  <header>
+    <span class="idx">5</span>
+    <div>
+      <h2>Reminiscence of Seirai</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Furuya Noboru</b> · <b>Seirai Island</b> · 4 steps · 7.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-noboru.png" alt="Reminiscence of Seirai map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-noboru-context.png" alt="Reminiscence of Seirai map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">6 more shots on the wiki page.</p>
+</article>
+<article id="q-chisato-s-letter" class="quest pri" data-area="Inazuma City">
+  <header>
+    <span class="idx">6</span>
+    <div>
+      <h2>Chisato's Letter</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Hiiragi Chisato</b> · <b>Inazuma City</b> · 6 steps · 7.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-hiiragi-chisato-sasaki.png" alt="Chisato's Letter map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-hiiragi-chisato-sasaki-context.png" alt="Chisato's Letter map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-battle-of-revenge" class="quest spare" data-area="Inazuma City">
+  <header>
+    <span class="idx">7</span>
+    <div>
+      <h2>Battle of Revenge</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Asakura</b> · <b>Inazuma City</b> · 5 steps · 8.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-asakura.png" alt="Battle of Revenge map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-asakura-context.png" alt="Battle of Revenge map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">3 more shots on the wiki page.</p>
+</article>
+<article id="q-gourmet-supremos-assemble" class="quest spare" data-area="Narukami Island">
+  <header>
+    <span class="idx">8</span>
+    <div>
+      <h2>Gourmet Supremos, Assemble!</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Julie</b> · <b>Narukami Island</b> · 4 steps · 9.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Narukami Island</b> and look for <b>Julie</b>.</div></div>
+</article>
+<article id="q-yae-publishing-house-s-invitation" class="quest spare" data-area="Inazuma City">
+  <header>
+    <span class="idx">9</span>
+    <div>
+      <h2>Yae Publishing House's Invitation</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Aratani</b> · <b>Inazuma City</b> · 4 steps · 10.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-aratani.png" alt="Yae Publishing House's Invitation map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-aratani-context.png" alt="Yae Publishing House's Invitation map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-seirai-stormchasers-part-iv" class="quest spare" data-area="Seirai Island">
+  <header>
+    <span class="idx">10</span>
+    <div>
+      <h2>Seirai Stormchasers: Part IV</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Etsuko</b> · <b>Seirai Island</b> · 12 steps · 5.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-etsuko.png" alt="Seirai Stormchasers: Part IV map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-etsuko-context.png" alt="Seirai Stormchasers: Part IV map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-three-great-martial-trials" class="quest" data-area="Enkanomiya">
+  <header>
+    <span class="idx">11</span>
+    <div>
+      <h2>The Three Great Martial Trials</h2>
+      <p class="meta">Talk to <b>Eboshi</b> · <b>Enkanomiya</b> · 6 steps · 9.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-eboshi.png" alt="The Three Great Martial Trials map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-three-great-martial-trials-start-location-context.png" alt="The Three Great Martial Trials map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-collection-of-dragons-and-snakes" class="quest" data-area="The Narrows">
+  <header>
+    <span class="idx">12</span>
+    <div>
+      <h2>Collection of Dragons and Snakes</h2>
+      <p class="meta">Talk to <b>Ema</b> · <b>The Narrows</b> · 5 steps · 10.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-ema.png" alt="Collection of Dragons and Snakes map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-ema-context.png" alt="Collection of Dragons and Snakes map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">5 more shots on the wiki page.</p>
+</article>
+<article id="q-o-archon-have-i-done-right" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">13</span>
+    <div>
+      <h2>O Archon, Have I Done Right?</h2>
+      <p class="meta">Talk to <b>Kouichi</b> · <b>Inazuma City</b> · 6 steps · 10.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-shouta.png" alt="O Archon, Have I Done Right? map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-shouta-context.png" alt="O Archon, Have I Done Right? map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-the-narukami-trail" class="quest" data-area="Asase Shrine">
+  <header>
+    <span class="idx">14</span>
+    <div>
+      <h2>The Narukami Trail</h2>
+      <p class="meta">Talk to <b>Inagi Hotomi</b> · <b>Asase Shrine</b> · 6 steps · 10.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-inagi-hotomi.png" alt="The Narukami Trail map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-inagi-hotomi-context.png" alt="The Narukami Trail map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-home-lies-over-the-ocean" class="quest" data-area="Narukami Island">
+  <header>
+    <span class="idx">15</span>
+    <div>
+      <h2>Home Lies Over the Ocean</h2>
+      <p class="meta">Talk to <b>Atsuko</b> · <b>Narukami Island</b> · 5 steps · 12.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-atsuko.png" alt="Home Lies Over the Ocean map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-atsuko-context.png" alt="Home Lies Over the Ocean map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-storytelling-method" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">16</span>
+    <div>
+      <h2>Storytelling Method</h2>
+      <p class="meta">Talk to <b>Junkichi</b> · <b>Inazuma City</b> · 8 steps · 10.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-junkichi-shigeru.png" alt="Storytelling Method map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-junkichi-shigeru-context.png" alt="Storytelling Method map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-the-gourmet-supremos-on-the-road" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">17</span>
+    <div>
+      <h2>The Gourmet Supremos: On the Road</h2>
+      <p class="meta">Talk to <b>Xudong</b> · <b>Inazuma City</b> · 6 steps · 12.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/the-gourmet-supremos-4-start-location.png" alt="The Gourmet Supremos: On the Road map"><figcaption>Exact spot</figcaption></figure></div>
+</article>
+<article id="q-the-seventh-samurai" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">18</span>
+    <div>
+      <h2>"The Seventh Samurai"</h2>
+      <p class="meta">Talk to <b>Toranosuke</b> · <b>Inazuma City</b> · 6 steps · 13.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-xavier-3.png" alt=""The Seventh Samurai" map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-xavier-3-context.png" alt=""The Seventh Samurai" map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-fate-of-a-fighter" class="quest" data-area="Yashiori Island">
+  <header>
+    <span class="idx">19</span>
+    <div>
+      <h2>Fate of a Fighter</h2>
+      <p class="meta">Talk to <b>Inaba Kyuuzou</b> · <b>Yashiori Island</b> · 11 steps · 10.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/fate-of-a-fighter-enemy-camp-location.png" alt="Fate of a Fighter map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-inaba-kyuuzou-context.png" alt="Fate of a Fighter map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-the-saga-of-mr-forgetful" class="quest" data-area="Tsurumi Island">
+  <header>
+    <span class="idx">20</span>
+    <div>
+      <h2>The Saga of Mr. Forgetful</h2>
+      <p class="meta">Talk to <b>Roald</b> · <b>Tsurumi Island</b> · 5 steps · 14.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-mr-forgetful-location-mural-spot-4.png" alt="The Saga of Mr. Forgetful map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-mr-forgetful-location-mural-spot-4-context.png" alt="The Saga of Mr. Forgetful map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">9 more shots on the wiki page.</p>
+</article>
+<article id="q-heart-of-watatsumi" class="quest" data-area="Sangonomiya Shrine">
+  <header>
+    <span class="idx">21</span>
+    <div>
+      <h2>"Heart of Watatsumi"</h2>
+      <p class="meta">Talk to <b>Tsuyuko</b> · <b>Sangonomiya Shrine</b> · 22 steps · 6.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-tsuyuko-2.png" alt=""Heart of Watatsumi" map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-tsuyuko-context-2.png" alt=""Heart of Watatsumi" map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-international-travel-log" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">22</span>
+    <div>
+      <h2>International Travel Log</h2>
+      <p class="meta">Talk to <b>Heihachi</b> · <b>Inazuma City</b> · 14 steps · 11.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/location-komore-teahouse.png" alt="International Travel Log map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-heihachi-context.png" alt="International Travel Log map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-the-still-water-s-flow" class="quest" data-area="Sangonomiya Shrine">
+  <header>
+    <span class="idx">23</span>
+    <div>
+      <h2>The Still Water's Flow</h2>
+      <p class="meta">Talk to <b>Tsuyuko</b> · <b>Sangonomiya Shrine</b> · 15 steps · 11.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-tsuyuko-2.png" alt="The Still Water's Flow map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-tsuyuko-context-2.png" alt="The Still Water's Flow map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">5 more shots on the wiki page.</p>
+</article>
+<article id="q-treatment-on-the-island" class="quest" data-area="Yashiori Island">
+  <header>
+    <span class="idx">24</span>
+    <div>
+      <h2>Treatment on the Island</h2>
+      <p class="meta">Talk to <b>Yasumoto</b> · <b>Yashiori Island</b> · 16 steps · 11.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Yashiori Island</b> and look for <b>Yasumoto</b>.</div></div>
+</article>
+<article id="q-the-phaethons-syrtos" class="quest" data-area="Evernight Temple">
+  <header>
+    <span class="idx">25</span>
+    <div>
+      <h2>The Phaethons' Syrtos</h2>
+      <p class="meta">Talk to <b>Clymene</b> · <b>Evernight Temple</b> · 7 steps · 16.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-phaethon-s-syrtos-start-location.png" alt="The Phaethons' Syrtos map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-phaethon-s-syrtos-start-location-context.png" alt="The Phaethons' Syrtos map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-fertilizer-salesperson" class="quest" data-area="Bourou Village">
+  <header>
+    <span class="idx">26</span>
+    <div>
+      <h2>Fertilizer... Salesperson?</h2>
+      <p class="meta">Talk to <b>Alrani</b> · <b>Bourou Village</b> · 10 steps · 15.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location.png" alt="Fertilizer... Salesperson? map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location-context.png" alt="Fertilizer... Salesperson? map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-in-another-land" class="quest" data-area="Ritou">
+  <header>
+    <span class="idx">27</span>
+    <div>
+      <h2>In Another Land</h2>
+      <p class="meta">Talk to <b>Alrani</b> · <b>Ritou</b> · 6 steps · 17.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location.png" alt="In Another Land map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location-context.png" alt="In Another Land map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-divine-plant-of-the-depths" class="quest" data-area="Bourou Village">
+  <header>
+    <span class="idx">28</span>
+    <div>
+      <h2>Divine Plant of the Depths</h2>
+      <p class="meta">Talk to <b>Komaki</b> · <b>Bourou Village</b> · 11 steps · 15.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-komaki.png" alt="Divine Plant of the Depths map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-komaki-context.png" alt="Divine Plant of the Depths map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-sakura-arborism" class="quest" data-area="Kannazuka">
+  <header>
+    <span class="idx">29</span>
+    <div>
+      <h2>Sakura Arborism</h2>
+      <p class="meta">Talk to <b>Hideaki</b> · <b>Kannazuka</b> · 13 steps · 15.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/thunder-sakura-1-location.png" alt="Sakura Arborism map"><figcaption>Exact spot</figcaption></figure></div><p class="more">5 more shots on the wiki page.</p>
+</article>
+<article id="q-yougou-cleansing" class="quest" data-area="Konda Village">
+  <header>
+    <span class="idx">30</span>
+    <div>
+      <h2>Yougou Cleansing</h2>
+      <p class="meta">Talk to <b>Hanachirusato</b> · <b>Konda Village</b> · 6 steps · 21.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Konda Village</b> and look for <b>Hanachirusato</b>.</div></div>
+</article>
+<article id="q-lotus-eater" class="quest" data-area="The Serpent's Heart">
+  <header>
+    <span class="idx">31</span>
+    <div>
+      <h2>Lotus Eater</h2>
+      <p class="meta">Talk to <b>Adonis</b> · <b>The Serpent's Heart</b> · 20 steps · 14.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-lotus-eater-start-location.png" alt="Lotus Eater map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-lotus-eater-start-location-context.png" alt="Lotus Eater map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-clean-house" class="quest" data-area="Sangonomiya Shrine">
+  <header>
+    <span class="idx">32</span>
+    <div>
+      <h2>Clean House</h2>
+      <p class="meta">Talk to <b>Borenka</b> · <b>Sangonomiya Shrine</b> · 13 steps · 19.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-clean-house-start-location.png" alt="Clean House map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-clean-house-start-location-context.png" alt="Clean House map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-hiromi-s-watch" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">33</span>
+    <div>
+      <h2>Hiromi's Watch</h2>
+      <p class="meta">Talk to <b>Hiromi</b> · <b>Inazuma City</b> · 8 steps · 23.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-hiromi-2.png" alt="Hiromi's Watch map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-hiromi-2-context.png" alt="Hiromi's Watch map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-the-gourmet-supremos-the-importance-of-eating-well" class="quest" data-area="Inazuma City">
+  <header>
+    <span class="idx">34</span>
+    <div>
+      <h2>The Gourmet Supremos: The Importance of Eating Well</h2>
+      <p class="meta">Talk to <b>Julie</b> · <b>Inazuma City</b> · 15 steps · 20.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location.png" alt="The Gourmet Supremos: The Importance of Eating Well map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location-context.png" alt="The Gourmet Supremos: The Importance of Eating Well map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-tatara-tales-the-last-act" class="quest" data-area="Tatarasuna">
+  <header>
+    <span class="idx">35</span>
+    <div>
+      <h2>Tatara Tales: The Last Act</h2>
+      <p class="meta">Talk to <b>Toranosuke</b> · <b>Tatarasuna</b> · 22 steps · 17.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-xavier-3.png" alt="Tatara Tales: The Last Act map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-xavier-3-context.png" alt="Tatara Tales: The Last Act map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-relics-of-seirai" class="quest" data-area="Koseki Village">
+  <header>
+    <span class="idx">36</span>
+    <div>
+      <h2>Relics of Seirai</h2>
+      <p class="meta">Talk to <b>Fujiwara Toshiko</b> · <b>Koseki Village</b> · 38 steps · 9.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-fujiwara-toshiko.png" alt="Relics of Seirai map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-fujiwara-toshiko-context.png" alt="Relics of Seirai map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-solitary-sea-beast" class="quest" data-area="Watatsumi Island">
+  <header>
+    <span class="idx">37</span>
+    <div>
+      <h2>Solitary Sea-Beast</h2>
+      <p class="meta">Talk to <b>Anisa</b> · <b>Watatsumi Island</b> · 14 steps · 25.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-anisa.png" alt="Solitary Sea-Beast map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-anisa-context.png" alt="Solitary Sea-Beast map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-gazing-three-thousand-miles-away" class="quest" data-area="Jakotsu Mine">
+  <header>
+    <span class="idx">38</span>
+    <div>
+      <h2>Gazing Three Thousand Miles Away</h2>
+      <p class="meta">Talk to <b>Chouji</b> · <b>Jakotsu Mine</b> · 14 steps · 33.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-gazing-three-thousand-miles-away-start-location.png" alt="Gazing Three Thousand Miles Away map"><figcaption>Exact spot</figcaption></figure></div>
+</article>
+<article id="q-dreams-of-sword-art" class="quest" data-area="Kannazuka">
+  <header>
+    <span class="idx">39</span>
+    <div>
+      <h2>Dreams of Sword Art</h2>
+      <p class="meta">Talk to <b>Ishikawa</b> · <b>Kannazuka</b> · 34 steps · 24.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-nameless.png" alt="Dreams of Sword Art map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-nameless-context.png" alt="Dreams of Sword Art map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-the-farmer-s-treasure" class="quest" data-area="Jinren Island">
+  <header>
+    <span class="idx">40</span>
+    <div>
+      <h2>The Farmer's Treasure</h2>
+      <p class="meta">Talk to <b>Saimon Eri</b> · <b>Jinren Island</b> · 36 steps · 25.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-saimon-eri.png" alt="The Farmer's Treasure map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-futaba-context.png" alt="The Farmer's Treasure map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-subterranean-trials-of-drake-and-serpent" class="quest" data-area="Enkanomiya">
+  <header>
+    <span class="idx">41</span>
+    <div>
+      <h2>The Subterranean Trials of Drake and Serpent</h2>
+      <p class="meta">Talk to <b>Aru</b> · <b>Enkanomiya</b> · 29 steps · 36.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Enkanomiya</b> and look for <b>Aru</b>.</div></div>
+</article>
+<article id="q-the-sun-wheel-and-mt-kanna" class="quest" data-area="Tsurumi Island">
+  <header>
+    <span class="idx">42</span>
+    <div>
+      <h2>The Sun-Wheel and Mt. Kanna</h2>
+      <p class="meta">Talk to <b>Kama</b> · <b>Tsurumi Island</b> · 46 steps · 50.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Tsurumi Island</b> and look for <b>Kama</b>.</div></div>
+</article>
+
+<div class="note">
+  Regenerate with <code>python -I tools/fetch-quest-maps.py Inazuma 0</code> then
+  <code>python -I tools/build-quest-maps-page.py Inazuma</code>.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

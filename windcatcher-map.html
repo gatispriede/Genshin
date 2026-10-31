@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wind Catcher — charging spots</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Wind Catcher — how to fill it</h1>
+  <p class="sub">Charge it by walking up to <b>Anemograna</b> — small floating wind spirits.
+  Just get close; no button needed. Holds <b>5 charges</b>.</p>
+
+  <div class="bar good">
+    <b>You may not even need the gadget.</b> Collect <b>all three</b> Anemograna in an area
+    and a <b>Wind Current spawns right there</b>. They also cut <b>Stamina consumption by
+    30%</b> while attached.
+  </div>
+
+  <h2>Spot 1 — east of the Dawn Winery statue</h2>
+  <div class="map-wrap" id="dawn"
+       data-map="assets/windwail-map.webp"
+       data-alt="Windwail Highland map"></div>
+
+  <h2>Spot 2 — south of the Windrise statue</h2>
+  <div class="map-wrap" id="windrise"
+       data-map="assets/mondstadt-map.webp"
+       data-alt="Starfell Valley map"></div>
+
+  <h2>The gadget itself</h2>
+  <table>
+    <tr><td>Unlock</td><td><b>Mondstadt Reputation Lv 3</b> → blueprint → craft at a blacksmith</td></tr>
+    <tr><td>Craft cost</td><td>10 Hurricane Seeds · 30 Windwheel Aster · <b>50 Crystal Chunks</b></td></tr>
+    <tr><td>Charging</td><td>Walk near <b>Anemograna</b>. Max <b>5 charges</b></td></tr>
+    <tr><td>Use</td><td><b>Z</b> key (or the icon on mobile)</td></tr>
+    <tr><td>Effect</td><td>One wind current per charge — about a mid-sized tree's height, ~10s</td></tr>
+    <tr><td>Cooldown</td><td>~100 seconds</td></tr>
+    <tr><td>Restrictions</td><td><b>Cannot be used in combat or while gliding</b></td></tr>
+  </table>
+
+  <div class="note">
+    <b>Where the materials come from:</b> <b>Hurricane Seeds</b> drop from the Anemo
+    Hypostasis at Stormbearer Point. <b>Windwheel Aster</b> grows around Mondstadt and
+    Windrise. <b>50 Crystal Chunks</b> — see
+    <a href="chasm-ore-map.html">chasm-ore-map.html</a>; the Chasm Underground Mines cover
+    that in one trip.<br><br>
+    <b>What they look like:</b> pale blue-white motes like spinning dandelion seeds, low to
+    the ground, always in <b>sets of three</b>. Found in Mondstadt including Dragonspine —
+    the Dragonspine ones look different, having "mutated to their environment."<br><br>
+    <b>Zones are approximate</b> — they mark where Anemograna concentrate, not individual
+    spirits.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+
+  drawMap("#dawn", [
+    { zone: true, x: 46, y: 49, w: 20, h: 20, role: "goal",
+      tag: "Anemograna — east of the statue" },
+    { x: 46.4, y: 58.9, role: "hub", size: "sm", label: "★", tag: "Statue of the Seven" }
+  ]);
+
+  drawMap("#windrise", [
+    { zone: true, x: 38, y: 87, w: 17, h: 11, role: "goal",
+      tag: "Anemograna — cross the river, climb the ledge" },
+    { x: 46.5, y: 86.7, role: "hub", size: "sm", label: "★", tag: "Windrise statue" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

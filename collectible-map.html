@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collectible maps — routes that assume you teleport</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/live-map.css">
+</head>
+<body>
+
+<h1 id="cmap-head">Collectible maps</h1>
+<p class="sub">
+  Every pin on the real map, grouped into <b>warps</b> rather than one long walking
+  loop. Each numbered circle is a teleport; the lines show what it is closest to.
+  Click a pin to tick it off, or a number to fly to that stop.
+</p>
+
+<div class="lmap-filters" id="cmap-sets"></div>
+
+<div class="note">
+  <b>The route assumes you teleport.</b> Walking order barely matters once you can warp,
+  so the stops are ranked by <b>how many pins each warp pays out</b> — do them top-down
+  and a half-finished run is still the best half. Within a stop, pins are ordered as a
+  short walk out from the teleport.
+</div>
+
+<ul class="lmap-legend">
+  <li><i style="background:var(--best)"></i> On the surface</li>
+  <li><i style="background:var(--electro)"></i> Not on the surface &mdash; cave, sub-level or underwater</li>
+  <li><i style="background:var(--off)"></i> Ticked off</li>
+  <li><i class="k-wp" style="background:var(--hub)"></i> Teleport</li>
+</ul>
+
+<div class="lmap-wrap">
+  <div>
+    <div class="lmap" id="map-canvas"></div>
+    <div class="lmap-bar">
+      <span class="lmap-bar__status" id="cmap-status"></span>
+      <button type="button" id="cmap-out">&minus;</button>
+      <button type="button" id="cmap-in">+</button>
+      <button type="button" id="cmap-fit">Fit</button>
+      <button type="button" id="cmap-reset">Clear ticks</button>
+    </div>
+  </div>
+
+  <aside class="lmap-panel">
+    <h3 style="margin-top:0">Warps, best first</h3>
+    <ul class="cmap__list" id="cmap-stops"></ul>
+  </aside>
+</div>
+
+<div class="note">
+  <b>What feeds what.</b> Only Dragonspine's <b>Frostbearing Tree</b> takes a collectible
+  you can map — <b>Crimson Agate</b>. The other offering trees take <b>Sigils</b>, which
+  come from chests, Shrines of Depths and from offering oculi at a Statue of the Seven.
+  So for Inazuma, Sumeru, Fontaine and Natlan the thing worth hunting is the region's
+  <b>oculus</b>: Sacred Sakura via Electro Sigils, Tree of Dreams via Dendro Sigils,
+  Fountain of Lucine via Hydro Sigils, Tablet of Tona via Pyro Sigils.
+</div>
+
+<div class="note">
+  <b>Height, as far as the map knows it.</b> There are no elevation figures in the data,
+  so nothing can tell you a pin is "40m up a cliff". What it does record is whether a pin
+  sits on a <b>named floor</b> &mdash; a cave, an underground level or a submerged one &mdash;
+  which is the part that actually changes how you approach it. Those are drawn in purple and
+  named on hover: <i>Underground Lava River: Lower Level</i>, <i>Submerged Ruins</i>,
+  <i>Rock Cavern Middle Level</i>. A pin with no floor is open world, which may still mean
+  the top of a mountain.
+</div>
+
+<div class="note">
+  <b>Ticks are yours, kept in this browser.</b> No API exposes which individual oculus or
+  agate you have picked up — HoYoLAB publishes only a per-region <i>count</i>. So the dots
+  start unticked and you mark them as you go; the counter tells you how many remain.
+</div>
+
+<script src="app/map-core.js"></script>
+<script src="app/collect-map.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>

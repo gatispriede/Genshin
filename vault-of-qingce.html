@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault of Qingce — locked gate</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Vault of Qingce</h1>
+  <p class="sub">The cavern behind the waterfall north of Qingce Village, with the floating
+  golden orb inside.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/vault-qingce-map.webp"
+       data-alt="Vault of Qingce map"></div>
+
+  <div class="bar key">
+    <b>That gate isn't a puzzle.</b> No lever, no torch sequence, nothing to hit. It opens
+    through the world quest <b><i>The Chi of Yore</i></b> — the same questline as the
+    statues.
+  </div>
+
+  <div class="note">
+    <b>What to do</b>
+    <ol>
+      <li>Talk to <b>Granny Ruoxin</b> in Qingce Village to start it, if you haven't</li>
+      <li>Collect <b>all three Chi fragments</b>:
+        <br>• <b>Shrine</b>, east Qingce — 5 statues, <b>N → SE → NW → NE → SW</b>
+        <br>• <b>Wuwang Hill summit</b> — 8 statues, pick 4 (no order)
+        <br>• <b>West of Qingce</b>, bamboo-covered hill
+      </li>
+      <li>Return — the Vault opens, and a <b>secret room at the back</b> becomes reachable</li>
+    </ol>
+    Statue solutions in <a href="chi-of-yore-puzzles.html">chi-of-yore-puzzles.html</a>
+    and <a href="wuwang-statue-puzzle.html">wuwang-statue-puzzle.html</a>.
+  </div>
+
+  <div class="note">
+    <b>Lore:</b> the vault is rumoured to hold the remains of the Chi, and the secret room
+    is built in Qingce Village style.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 49, y: 49, role: "do-now", label: "🔒", pulse: true,
+      tag: "Vault of Qingce — the locked gate" },
+    { x: 57, y: 84, role: "best", size: "sm", label: "!",
+      tag: "Granny Ruoxin — starts the quest" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

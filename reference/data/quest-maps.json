@@ -1,0 +1,4882 @@
+{
+ "Liyue": [
+  {
+   "name": "Changchang's Little Friend",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Changchang"
+   ],
+   "dlg": 3001,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-changchang.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-changchang-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Provisional Arrangement",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Huai'an",
+    "Zhen Qiang"
+   ],
+   "dlg": 3656,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-huai-an.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-a-provisional-arrangement-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-huai-an-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Old Tastes Die Hard",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Mr. Zhu"
+   ],
+   "dlg": 3089,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "location-emerald-maple-inn.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-old-tastes-die-hard-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-mr-zhu-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Hereafter: Return to the Mountains",
+   "type": "World",
+   "group": null,
+   "start": "Lisha, Liyue",
+   "area": "Lisha",
+   "subarea": null,
+   "npcs": [
+    "Wang Ping'an",
+    "Pervases"
+   ],
+   "dlg": 3691,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-starsnatcher.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-starsnatcher-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Perfect Shot",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Ji Tong"
+   ],
+   "dlg": 5718,
+   "steps": 1,
+   "maps": [
+    {
+     "file": "npc-location-ji-tong.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "The Secret of Nantianmen",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Jiayi"
+   ],
+   "dlg": 4083,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-jiayi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-jiayi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Book in the Woods",
+   "type": "World",
+   "group": null,
+   "start": "Wuwang Hill, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wuwang Hill",
+   "npcs": [
+    "Little Nine"
+   ],
+   "dlg": 4028,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "world-quest-book-in-the-woods-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-book-in-the-woods-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Share Not Your Treasures",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [],
+   "dlg": 3620,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "world-quest-share-not-your-treasures-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-share-not-your-treasures-final-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-share-not-your-treasures-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-share-not-your-treasures-final-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Overstretched",
+   "type": "World",
+   "group": null,
+   "start": "Dihua Marsh, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Dihua Marsh",
+   "npcs": [
+    "Qiaoxi"
+   ],
+   "dlg": 3832,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "npc-location-qiaoxi.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-overstretched-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-qiaoxi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Snapshots",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Granny Shan",
+    "Tea Master Liu Su",
+    "Xu"
+   ],
+   "dlg": 6216,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-granny-shan-manager-kuan-yiran.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-granny-shan-manager-kuan-yiran-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Words Worth Their Weight in Mora",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Gentry De'an",
+    "Jifang",
+    "Uncle Tian"
+   ],
+   "dlg": 5696,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-gentry-de-an.png",
+     "context": false
+    },
+    {
+     "file": "gentry-de-an-nighttime-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-gentry-de-an-nighttime-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-gentry-de-an-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Yaksha's Wish",
+   "type": "World",
+   "group": null,
+   "start": "Minlin, Liyue",
+   "area": "Minlin",
+   "subarea": null,
+   "npcs": [],
+   "dlg": 1554,
+   "steps": 12,
+   "maps": [
+    {
+     "file": "world-quest-the-yaksha-s-wish-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-yaksha-s-wish-clue-locations.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-yaksha-s-wish-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Adventurers' Guild's Affairs",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan",
+    "Ash"
+   ],
+   "dlg": 7415,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-katheryne-liyue-harbor.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-lan-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Tree who Stands Alone",
+   "type": "World",
+   "group": null,
+   "start": "Mingyun Village, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Mingyun Village",
+   "npcs": [
+    "Yuan Hong",
+    "Yuan Cheng",
+    "Yuan Qing",
+    "Yuan Liang"
+   ],
+   "dlg": 7088,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "location-lost-notes-house.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-tree-who-stands-alone-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-tree-who-stands-alone-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Says He Who Seeks Stone",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": null,
+   "npcs": [
+    "Muning"
+   ],
+   "dlg": 8387,
+   "steps": 2,
+   "maps": [
+    {
+     "file": "npc-location-muning.png",
+     "context": false
+    },
+    {
+     "file": "chasm-archaic-stones-locations.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-muning-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Blackcliff Woes",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Manager Kuan"
+   ],
+   "dlg": 4292,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-granny-shan-manager-kuan-yiran.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-granny-shan-manager-kuan-yiran-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Fishing For Jade",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Baiwen",
+    "Kun"
+   ],
+   "dlg": 7361,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "location-jade-chamber.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-fishing-for-jade-and-return-of-the-jade-chamber-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-kun-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-baiwen-context-1.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "...What Do Adventurers Do Again?",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan",
+    "Tiantian"
+   ],
+   "dlg": 6852,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-katheryne-liyue-harbor.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-lan-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Big Business",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Bao'er",
+    "Landa"
+   ],
+   "dlg": 6865,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-bao-er.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-landa-tia.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-bao-er-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-landa-tia-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Endless Research",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Alrani"
+   ],
+   "dlg": 6557,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "world-quest-in-another-land-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-endless-research-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-in-another-land-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-endless-research-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Stolen, by the Rightful Owner",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Clitopho",
+    "Taliesin"
+   ],
+   "dlg": 8466,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-clitopho.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-clitopho-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "An Ode to Yonder City",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Fan Er'ye",
+    "Hao (Liyue Harbor)",
+    "Qingzhou"
+   ],
+   "dlg": 7351,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-fan-er-ye.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-fan-er-ye-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "No Restoring This Past Land of Beauty",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Tianheng, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Mt. Tianheng",
+   "npcs": [
+    "Zhiping"
+   ],
+   "dlg": 9360,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-zhiping.png",
+     "context": false
+    },
+    {
+     "file": "quest-no-restoring-this-past-land-of-beauty-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Hereafter: All is Well",
+   "type": "World",
+   "group": null,
+   "start": "Lisha, Liyue",
+   "area": "Lisha",
+   "subarea": null,
+   "npcs": [
+    "Wang Ping'an"
+   ],
+   "dlg": 8161,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-starsnatcher.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-starsnatcher-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Tianqiu Treasure Trail",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan"
+   ],
+   "dlg": 5112,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-katheryne-liyue-harbor.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-lan-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "And This Treasure Goes To...",
+   "type": "World",
+   "group": null,
+   "start": "Lingju Pass, Liyue",
+   "area": "Lisha",
+   "subarea": "Lingju Pass",
+   "npcs": [
+    "Alrani"
+   ],
+   "dlg": 7185,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "quest-and-this-treasure-goes-to-location-1.png",
+     "context": false
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-2.png",
+     "context": false
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-3.png",
+     "context": false
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-4.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-in-another-land-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-endless-research-start-location.png",
+     "context": false
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-context-3.png",
+     "context": true
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-context-1.png",
+     "context": true
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-context-2.png",
+     "context": true
+    },
+    {
+     "file": "quest-and-this-treasure-goes-to-location-context-4.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-in-another-land-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-endless-research-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Pressing Deadlines",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Clerk Zhao",
+    "Jiangzhou",
+    "Nervous An"
+   ],
+   "dlg": 9681,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-clerk-zhao-nighttime.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-big-footed-dajiao-clerk-zhao.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-clerk-zhao-nighttime-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-big-footed-dajiao-clerk-zhao-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "An Adeptal Summons",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Aocang, Liyue",
+   "area": "Minlin",
+   "subarea": "Mt. Aocang",
+   "npcs": [
+    "Xianyun"
+   ],
+   "dlg": 7231,
+   "steps": 10,
+   "maps": []
+  },
+  {
+   "name": "Shrouded Vale, Hidden Hero",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Lingmeng, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Mt. Lingmeng",
+   "npcs": [],
+   "dlg": 7345,
+   "steps": 10,
+   "maps": []
+  },
+  {
+   "name": "Hereafter: The Trail of Pervases",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Chef Mao",
+    "Xiao",
+    "Wang Ping'an"
+   ],
+   "dlg": 9047,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "npc-location-chef-mao.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chef-mao-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Necessary Procedures",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Ivanovich",
+    "Nervous An",
+    "Jiayi",
+    "Clerk Zhao"
+   ],
+   "dlg": 10368,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "npc-location-ivanovich.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ivanovich-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Treasure Lost, Treasure Found (Part 1)",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [
+    "Soraya"
+   ],
+   "dlg": 12540,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-soraya.png",
+     "context": false
+    },
+    {
+     "file": "item-transcription-from-a-ruin-locations.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-soraya-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Luhua Landscape",
+   "type": "World",
+   "group": null,
+   "start": "Luhua Pool, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Luhua Pool",
+   "npcs": [
+    "Vermeer"
+   ],
+   "dlg": 8276,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "npc-location-vermeer-2.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-luhua-landscape-start-location.png",
+     "context": false
+    },
+    {
+     "file": "item-painting-tools-world-quest-luhua-landscape-locations.png",
+     "context": false
+    },
+    {
+     "file": "item-strange-stones-world-quest-luhua-landscape-locations.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-vermeer-2-context.png",
+     "context": true
+    },
+    {
+     "file": "item-painting-tool-1-world-quest-luhua-landscape-location-context.png",
+     "context": true
+    },
+    {
+     "file": "item-painting-tool-2-world-quest-luhua-landscape-location-context.png",
+     "context": true
+    },
+    {
+     "file": "item-strange-stone-1-world-quest-luhua-landscape-location-context.png",
+     "context": true
+    },
+    {
+     "file": "item-strange-stone-2-world-quest-luhua-landscape-location-context.png",
+     "context": true
+    },
+    {
+     "file": "item-strange-stone-3-world-quest-luhua-landscape-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Missing Miner",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm: Underground Mines",
+   "area": "The Chasm: Underground Mines",
+   "subarea": null,
+   "npcs": [
+    "Jinwu",
+    "Khedive",
+    "Tang Wuchou",
+    "Uncle He"
+   ],
+   "dlg": 14972,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-jinwu.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-missing-miner-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-jinwu-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-missing-miner-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Little Game",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Tianheng, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Mt. Tianheng",
+   "npcs": [
+    "Childish Jiang"
+   ],
+   "dlg": 13905,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-childish-jiang.png",
+     "context": false
+    },
+    {
+     "file": "a-little-game-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-childish-jiang-context.png",
+     "context": true
+    },
+    {
+     "file": "a-little-game-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Will of Stone",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Granny Ruoxin",
+    "Jiayi",
+    "Little Liu"
+   ],
+   "dlg": 10668,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-jiayi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-granny-ruoxin.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-jiayi-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-granny-ruoxin-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Trails in Tianqiu",
+   "type": "World",
+   "group": null,
+   "start": "Tianqiu Valley, Liyue",
+   "area": "Minlin",
+   "subarea": "Tianqiu Valley",
+   "npcs": [],
+   "dlg": 5207,
+   "steps": 21,
+   "maps": [
+    {
+     "file": "world-quest-trails-in-tianqiu-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-trails-in-tianqiu-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Dealing Sands",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Mingyuan, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Mt. Mingyuan",
+   "npcs": [
+    "Hongyu (Chenyu Vale)",
+    "Iron Chuan'er",
+    "Iron Chui'er",
+    "Iron Dou'er",
+    "Iron Gua'er",
+    "Iron Men'er",
+    "Iron Ming",
+    "Iron Shan'er",
+    "Johnnie",
+    "Lingxiao",
+    "Qingye",
+    "Walker",
+    "Yijun"
+   ],
+   "dlg": 13210,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "the-dealing-sands-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-hongyu-lingxiao-qingye-and-yijun.png",
+     "context": false
+    },
+    {
+     "file": "the-dealing-sands-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-hongyu-lingxiao-qingye-and-yijun-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Nine Pillars of Peace",
+   "type": "World",
+   "group": null,
+   "start": "Cuijue Slope, Liyue",
+   "area": "Minlin",
+   "subarea": "Cuijue Slope",
+   "npcs": [
+    "Bolai",
+    "Linlang"
+   ],
+   "dlg": 8093,
+   "steps": 18,
+   "maps": [
+    {
+     "file": "npc-location-bolai.png",
+     "context": false
+    },
+    {
+     "file": "nine-pillars-of-peace-location.png",
+     "context": false
+    },
+    {
+     "file": "nine-pillars-of-peace-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-bolai-context.png",
+     "context": true
+    },
+    {
+     "file": "nine-pillars-of-peace-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Temporary Acclimatization",
+   "type": "World",
+   "group": null,
+   "start": "Chenyu Vale: Upper Vale, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": null,
+   "npcs": [
+    "Ms. Qiu",
+    "Woliu",
+    "Xingye",
+    "Yifeng"
+   ],
+   "dlg": 14981,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "world-quest-temporary-acclimatization-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-temporary-acclimatization-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Roaming Abode",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Lingmeng, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Teatree Slope",
+   "npcs": [
+    "Uncle Luo",
+    "Xiangjun"
+   ],
+   "dlg": 10820,
+   "steps": 17,
+   "maps": [
+    {
+     "file": "world-quest-the-roaming-abode-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-uncle-luo-after-threefold-expectations.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-roaming-abode-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-uncle-luo-after-threefold-expectations-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Our Chenyu Vale Trek",
+   "type": "World",
+   "group": null,
+   "start": "Hezhe Post, Yilong Wharf, Chenyu Vale, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Yilong Wharf",
+   "npcs": [
+    "Akai",
+    "Fangju",
+    "Mali",
+    "Mingjing",
+    "Zhuchun"
+   ],
+   "dlg": 16528,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "point-of-interest-hezhe-post-map-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-fangju-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Treasure Lost, Treasure Found (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [
+    "Soraya"
+   ],
+   "dlg": 14783,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-soraya.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-jade-plate-locations.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-final-ruins-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-part-2-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-soraya-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-treasure-lost-treasure-found-part-2-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Threefold Expectations",
+   "type": "World",
+   "group": null,
+   "start": "Qiaoying Village, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Qiaoying Village",
+   "npcs": [
+    "Hautemontagne",
+    "Uncle Luo"
+   ],
+   "dlg": 16705,
+   "steps": 10,
+   "maps": [
+    {
+     "file": "npc-location-hautemontagne.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-threefold-expectations-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-little-mao-hautemontagne-yilong-wharf.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-hautemontagne-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-threefold-expectations-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-little-mao-hautemontagne-yilong-wharf-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Quiet Day in Liyue Harbor",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Atsuko",
+    "Bolai",
+    "Clerk Zhao",
+    "Freki",
+    "Geri",
+    "Ivanovich",
+    "Manager Kuan",
+    "Nervous An"
+   ],
+   "dlg": 17870,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-atsuko.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-nervous-an.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-atsuko-inazuma.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-atsuko-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-nervous-an-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-atsuko-inazuma-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Qiaoying, the Village of Many Tales",
+   "type": "World",
+   "group": null,
+   "start": "Qiaoying Village, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Qiaoying Village",
+   "npcs": [
+    "Guijarro",
+    "Hung Fan"
+   ],
+   "dlg": 19962,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "world-quest-qiaoying-the-village-of-many-tales-start-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Return of the Jade Chamber?",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Kun",
+    "Jifang",
+    "Qingzhou",
+    "Master Lu",
+    "Baiwen"
+   ],
+   "dlg": 19104,
+   "steps": 10,
+   "maps": [
+    {
+     "file": "npc-location-kun.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-fishing-for-jade-and-return-of-the-jade-chamber-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-kun-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Cliff-Side Hero's Past",
+   "type": "World",
+   "group": null,
+   "start": "Cinnabar Cliff, The Chasm",
+   "area": "The Chasm (Area)",
+   "subarea": "Cinnabar Cliff",
+   "npcs": [
+    "Old Chou",
+    "Tang Wuchou"
+   ],
+   "dlg": 19872,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-old-chou.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-old-chou-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Millennial Mountains",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm's Maw, The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": "The Chasm's Maw",
+   "npcs": [
+    "Wang",
+    "\"The Qingce Kid\""
+   ],
+   "dlg": 18369,
+   "steps": 12,
+   "maps": [
+    {
+     "file": "npc-location-wang.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-wang-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Chili Con Cloudy",
+   "type": "World",
+   "group": null,
+   "start": "Chenyu Vale: Upper Vale, Chenyu Vale",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": null,
+   "npcs": [
+    "Chili Pepper",
+    "Mingli",
+    "Tusheng",
+    "Wenhua",
+    "Yunyun"
+   ],
+   "dlg": 21026,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-chili-pepper-and-yunyun.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-chili-con-cloudy-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-chili-con-cloudy-start-location-2.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chili-pepper-and-yunyun-nighttime.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chili-pepper-and-yunyun-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-chili-con-cloudy-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-chili-con-cloudy-start-location-2-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-chili-pepper-and-yunyun-context-nighttime.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "On the Stage, Behind the Stage",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Dayu",
+    "Fan Er'ye",
+    "Granny Ruoxin",
+    "Master Lu",
+    "Tea Master Liu Su",
+    "Yun Jin"
+   ],
+   "dlg": 20865,
+   "steps": 11,
+   "maps": []
+  },
+  {
+   "name": "The Ocean Pearl",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Chaoxi",
+    "Cui'er",
+    "Guan Hong",
+    "Li the Ninth",
+    "Luo Feng",
+    "Luoxia",
+    "Maksim",
+    "Pinghai",
+    "Qiu'ge",
+    "Sisi"
+   ],
+   "dlg": 19623,
+   "steps": 17,
+   "maps": [
+    {
+     "file": "npc-location-chaoxi-sisi.png",
+     "context": false
+    },
+    {
+     "file": "point-of-interest-pearl-galley-map-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chaoxi-sisi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Lone Ship In Guyun",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Bolai",
+    "Changchang",
+    "Furong",
+    "Juza",
+    "Little Yue",
+    "Mora-Grubber",
+    "Sea Drake",
+    "Suling",
+    "Xu Liushi",
+    "Yinxing"
+   ],
+   "dlg": 25574,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-bolai.png",
+     "context": false
+    },
+    {
+     "file": "point-of-interest-alcor-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-bolai-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Undetected Infiltration",
+   "type": "World",
+   "group": null,
+   "start": "Tiangong Gorge, The Chasm",
+   "area": "The Chasm (Area)",
+   "subarea": "Tiangong Gorge",
+   "npcs": [
+    "Brass Bull Zhao",
+    "Chen the Flower",
+    "Ivano",
+    "Yanbo"
+   ],
+   "dlg": 18335,
+   "steps": 34,
+   "maps": [
+    {
+     "file": "location-undetected-infiltration-start.png",
+     "context": false
+    },
+    {
+     "file": "location-undetected-infiltration-start-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Chi of Yore",
+   "type": "World",
+   "group": null,
+   "start": "Bishui Plain, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Qingce Village",
+   "npcs": [
+    "Granny Ruoxin",
+    "Little Liu",
+    "Little Xing",
+    "Little You",
+    "Little Zuo",
+    "Master Lu",
+    "Pops Kai",
+    "Yan'er",
+    "Zhi"
+   ],
+   "dlg": 20657,
+   "steps": 34,
+   "maps": [
+    {
+     "file": "npc-location-granny-ruoxin.png",
+     "context": false
+    },
+    {
+     "file": "location-chi-of-guyun-geo-statues.png",
+     "context": false
+    },
+    {
+     "file": "item-collected-fragment-03-location.png",
+     "context": false
+    },
+    {
+     "file": "item-collected-fragment-02-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-chi-of-yore-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-granny-ruoxin-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-chi-of-yore-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Surreptitious Seven-Star Seal Sundering",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": null,
+   "npcs": [
+    "Muning",
+    "Zhiqiong"
+   ],
+   "dlg": 34566,
+   "steps": 18,
+   "maps": [
+    {
+     "file": "npc-location-muning.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-muning-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Wherefore Did the Spiritstone Descend?",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm: Underground Mines",
+   "area": "The Chasm: Underground Mines",
+   "subarea": null,
+   "npcs": [
+    "Clitopho",
+    "Jinwu",
+    "Khedive",
+    "Muning",
+    "Taliesin",
+    "Yelan",
+    "Zhiqiong"
+   ],
+   "dlg": 45728,
+   "steps": 28,
+   "maps": [
+    {
+     "file": "npc-location-clitopho.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-clitopho-context.png",
+     "context": true
+    },
+    {
+     "file": "chasm-delvers-item-crystal-1-location-context.png",
+     "context": true
+    },
+    {
+     "file": "chasm-delvers-item-crystal-2-location-context.png",
+     "context": true
+    },
+    {
+     "file": "chasm-delvers-item-crystal-3-location-context.png",
+     "context": true
+    },
+    {
+     "file": "chasm-delvers-item-crystal-4-location-context.png",
+     "context": true
+    },
+    {
+     "file": "chasm-delvers-item-crystal-5-location-context.png",
+     "context": true
+    }
+   ]
+  }
+ ],
+ "Inazuma": [
+  {
+   "name": "Katheryne in Inazuma",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Katheryne (Inazuma)"
+   ],
+   "dlg": 2489,
+   "steps": 1,
+   "maps": []
+  },
+  {
+   "name": "Orobashi's Legacy: Part V",
+   "type": "World",
+   "group": null,
+   "start": "Fort Fujitou",
+   "area": "Yashiori Island",
+   "subarea": "Fort Fujitou",
+   "npcs": [
+    "Kaji"
+   ],
+   "dlg": 3912,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-kaji-2.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-kaji-context-2.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Art of Horticulture",
+   "type": "World",
+   "group": null,
+   "start": "Kamisato Estate, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Kamisato Estate",
+   "npcs": [
+    "Madame Ping",
+    "Madarame Hyakubei"
+   ],
+   "dlg": 5143,
+   "steps": 2,
+   "maps": [
+    {
+     "file": "npc-location-madame-ping.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-madame-ping-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Ritou Road",
+   "type": "World",
+   "group": null,
+   "start": "Ritou, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Ritou",
+   "npcs": [
+    "Harrison"
+   ],
+   "dlg": 4520,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "npc-location-harrison.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-ritou-road-destination-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-harrison-context-nighttime.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Reminiscence of Seirai",
+   "type": "World",
+   "group": null,
+   "start": "Seirai Island, Inazuma",
+   "area": "Seirai Island",
+   "subarea": null,
+   "npcs": [
+    "Furuya Noboru",
+    "Oda Tarou"
+   ],
+   "dlg": 7374,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-noboru.png",
+     "context": false
+    },
+    {
+     "file": "reminiscence-of-seirai-photo-i-location.png",
+     "context": false
+    },
+    {
+     "file": "reminiscence-of-seirai-photo-ii-location.png",
+     "context": false
+    },
+    {
+     "file": "reminiscence-of-seirai-photo-iv-location.png",
+     "context": false
+    },
+    {
+     "file": "reminiscence-of-seirai-photo-iii-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-reminiscence-of-seirai-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-noboru-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-reminiscence-of-seirai-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Chisato's Letter",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Hiiragi Chisato",
+    "Kiminami Anna",
+    "Kujou Kamaji",
+    "Sanada"
+   ],
+   "dlg": 7498,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-hiiragi-chisato-sasaki.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-hiiragi-chisato-sasaki-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Battle of Revenge",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Asakura"
+   ],
+   "dlg": 8198,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-asakura.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-asakura-an-art-to-be-honed.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-asakura-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-asakura-an-art-to-be-honed-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-asakura-duel-before-the-throne-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Gourmet Supremos, Assemble!",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Julie",
+    "Parvaneh",
+    "Xudong"
+   ],
+   "dlg": 9043,
+   "steps": 4,
+   "maps": []
+  },
+  {
+   "name": "Yae Publishing House's Invitation",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Aratani",
+    "Chang the Ninth",
+    "Xingqiu"
+   ],
+   "dlg": 10226,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "npc-location-aratani.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-aratani-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Seirai Stormchasers: Part IV",
+   "type": "World",
+   "group": null,
+   "start": "Seirai Island, Inazuma",
+   "area": "Seirai Island",
+   "subarea": null,
+   "npcs": [
+    "Etsuko",
+    "Taisuke"
+   ],
+   "dlg": 5588,
+   "steps": 12,
+   "maps": [
+    {
+     "file": "npc-location-etsuko.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-etsuko-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Three Great Martial Trials",
+   "type": "World",
+   "group": null,
+   "start": "Enkanomiya",
+   "area": "Enkanomiya",
+   "subarea": null,
+   "npcs": [
+    "Eboshi"
+   ],
+   "dlg": 9209,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-eboshi.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-three-great-martial-trials-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-three-great-martial-trials-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Collection of Dragons and Snakes",
+   "type": "World",
+   "group": null,
+   "start": "The Narrows, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "The Narrows",
+   "npcs": [
+    "Ema"
+   ],
+   "dlg": 10427,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-ema.png",
+     "context": false
+    },
+    {
+     "file": "collection-of-dragons-and-snakes-1-location.png",
+     "context": false
+    },
+    {
+     "file": "collection-of-dragons-and-snakes-2-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ema-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-ema-entrance-context.png",
+     "context": true
+    },
+    {
+     "file": "collection-of-dragons-and-snakes-1-location-context.png",
+     "context": true
+    },
+    {
+     "file": "collection-of-dragons-and-snakes-2-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "O Archon, Have I Done Right?",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Kouichi",
+    "Shouta",
+    "Yayoi Nanatsuki"
+   ],
+   "dlg": 10819,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-shouta.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-kouichi-midori.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-shouta-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-kouichi-midori-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Narukami Trail",
+   "type": "World",
+   "group": null,
+   "start": "Asase Shrine, Inazuma",
+   "area": "Seirai Island",
+   "subarea": "Asase Shrine",
+   "npcs": [
+    "Inagi Hotomi",
+    "Neko"
+   ],
+   "dlg": 10925,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-inagi-hotomi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-inagi-hotomi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Home Lies Over the Ocean",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Atsuko",
+    "Atsuko (Bake-Danuki)",
+    "Michiru",
+    "Yoh"
+   ],
+   "dlg": 12079,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "npc-location-atsuko.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-atsuko-inazuma.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-atsuko-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-atsuko-inazuma-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Storytelling Method",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Junkichi",
+    "Shigeru"
+   ],
+   "dlg": 10788,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "npc-location-junkichi-shigeru.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-storytelling-method-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-junkichi-shigeru-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-storytelling-method-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Gourmet Supremos: On the Road",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Xudong",
+    "Parvaneh",
+    "Julie",
+    "Kamei Munehisa"
+   ],
+   "dlg": 12030,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "the-gourmet-supremos-4-start-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "\"The Seventh Samurai\"",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Toranosuke",
+    "Xavier"
+   ],
+   "dlg": 13404,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-xavier-3.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-xavier-3-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Fate of a Fighter",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Inaba Kyuuzou"
+   ],
+   "dlg": 10482,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "fate-of-a-fighter-enemy-camp-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-fate-of-a-fighter-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-inaba-kyuuzou-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Saga of Mr. Forgetful",
+   "type": "World",
+   "group": null,
+   "start": "Tsurumi Island, Inazuma",
+   "area": "Tsurumi Island",
+   "subarea": null,
+   "npcs": [
+    "Roald"
+   ],
+   "dlg": 14489,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-4.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-5.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-6.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-4-image.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-5-image.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-6-image.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-1-2-3.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-4-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-5-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-6-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-mr-forgetful-location-mural-spot-1-2-3-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "\"Heart of Watatsumi\"",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Tsuyuko"
+   ],
+   "dlg": 6508,
+   "steps": 22,
+   "maps": [
+    {
+     "file": "npc-location-tsuyuko-2.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-tsuyuko-1.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-heart-of-watatsumi-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-tsuyuko-context-2.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-tsuyuko-context-3.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-tsuyuko-context-1.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "International Travel Log",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Heihachi",
+    "Kozue",
+    "Midori",
+    "Ramsay"
+   ],
+   "dlg": 11912,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "location-komore-teahouse.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-kouichi-midori.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-heihachi-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-kouichi-midori-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Still Water's Flow",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Tsuyuko"
+   ],
+   "dlg": 11469,
+   "steps": 15,
+   "maps": [
+    {
+     "file": "npc-location-tsuyuko-2.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-tsuyuko-1.png",
+     "context": false
+    },
+    {
+     "file": "item-key-sigil-type-1-location.png",
+     "context": false
+    },
+    {
+     "file": "item-key-sigil-type-5-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-tsuyuko-context-2.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-tsuyuko-context-3.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-tsuyuko-context-1.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Treatment on the Island",
+   "type": "World",
+   "group": null,
+   "start": "Yashiori Island, Inazuma",
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Yasumoto"
+   ],
+   "dlg": 11023,
+   "steps": 16,
+   "maps": []
+  },
+  {
+   "name": "The Phaethons' Syrtos",
+   "type": "World",
+   "group": null,
+   "start": "Evernight Temple, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "Evernight Temple",
+   "npcs": [
+    "Clymene"
+   ],
+   "dlg": 16637,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-seelie-1-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-seelie-2-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-seelie-1-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-phaethon-s-syrtos-seelie-2-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Fertilizer... Salesperson?",
+   "type": "World",
+   "group": null,
+   "start": "Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Bourou Village",
+   "npcs": [
+    "Alrani",
+    "Gorou",
+    "Hiroyuki",
+    "Iwata",
+    "Kaushik",
+    "Ookubo Daisuke"
+   ],
+   "dlg": 15012,
+   "steps": 10,
+   "maps": [
+    {
+     "file": "world-quest-in-another-land-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-endless-research-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-fertilizer-salesperson-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-in-another-land-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-endless-research-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-fertilizer-salesperson-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "In Another Land",
+   "type": "World",
+   "group": null,
+   "start": "Ritou, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Ritou",
+   "npcs": [
+    "Alrani",
+    "Kaede",
+    "Obata",
+    "Vahid"
+   ],
+   "dlg": 17428,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "world-quest-in-another-land-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-endless-research-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-in-another-land-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-endless-research-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Divine Plant of the Depths",
+   "type": "World",
+   "group": null,
+   "start": "Bourou Village, Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Bourou Village",
+   "npcs": [
+    "Komaki"
+   ],
+   "dlg": 15515,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-komaki.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-divine-plant-of-the-depths-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-komaki-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-divine-plant-of-the-depths-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Sakura Arborism",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Hideaki",
+    "Miyuki"
+   ],
+   "dlg": 15747,
+   "steps": 13,
+   "maps": [
+    {
+     "file": "thunder-sakura-1-location.png",
+     "context": false
+    },
+    {
+     "file": "thunder-sakura-2-location.png",
+     "context": false
+    },
+    {
+     "file": "thunder-sakura-3-location.png",
+     "context": false
+    },
+    {
+     "file": "thunder-sakura-4-location.png",
+     "context": false
+    },
+    {
+     "file": "thunder-sakura-5-location.png",
+     "context": false
+    },
+    {
+     "file": "sakura-arborism-start-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Yougou Cleansing",
+   "type": "World",
+   "group": null,
+   "start": "Konda Village, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Konda Village",
+   "npcs": [
+    "Hanachirusato"
+   ],
+   "dlg": 21765,
+   "steps": 6,
+   "maps": []
+  },
+  {
+   "name": "Lotus Eater",
+   "type": "World",
+   "group": null,
+   "start": "The Serpent's Heart, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "The Serpent's Heart",
+   "npcs": [
+    "Adonis",
+    "Supada no Hiko"
+   ],
+   "dlg": 14913,
+   "steps": 20,
+   "maps": [
+    {
+     "file": "world-quest-lotus-eater-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-lotus-eater-start-location-2.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-lotus-eater-start-location-npc.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-lotus-eater-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Clean House",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Borenka",
+    "Brutish Samurai",
+    "Shizuru"
+   ],
+   "dlg": 19326,
+   "steps": 13,
+   "maps": [
+    {
+     "file": "world-quest-clean-house-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-clean-house-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Hiromi's Watch",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Hiromi",
+    "Shun",
+    "Little Que'er",
+    "Sun Yu",
+    "Yan'er"
+   ],
+   "dlg": 23213,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "npc-location-hiromi-2.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-hiromi-s-watch-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-hiromi-2-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-hiromi-s-watch-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Gourmet Supremos: The Importance of Eating Well",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Julie",
+    "Kamei Munehisa",
+    "Parvaneh",
+    "Xudong"
+   ],
+   "dlg": 20653,
+   "steps": 15,
+   "maps": [
+    {
+     "file": "world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Tatara Tales: The Last Act",
+   "type": "World",
+   "group": null,
+   "start": "Tatarasuna, Inazuma",
+   "area": "Kannazuka",
+   "subarea": "Tatarasuna",
+   "npcs": [
+    "Toranosuke",
+    "Xavier"
+   ],
+   "dlg": 17127,
+   "steps": 22,
+   "maps": [
+    {
+     "file": "npc-location-xavier-3.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-xavier-3-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Relics of Seirai",
+   "type": "World",
+   "group": null,
+   "start": "Koseki Village, Inazuma",
+   "area": "Seirai Island",
+   "subarea": "Koseki Village",
+   "npcs": [
+    "Fujiwara Toshiko"
+   ],
+   "dlg": 9747,
+   "steps": 38,
+   "maps": [
+    {
+     "file": "npc-location-fujiwara-toshiko.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-fujiwara-toshiko-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Solitary Sea-Beast",
+   "type": "World",
+   "group": null,
+   "start": "Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": null,
+   "npcs": [
+    "Anisa",
+    "Kumi"
+   ],
+   "dlg": 25294,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "npc-location-anisa.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-solitary-sea-beast-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-anisa-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-solitary-sea-beast-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Gazing Three Thousand Miles Away",
+   "type": "World",
+   "group": null,
+   "start": "Jakotsu Mine, Yashiori Island",
+   "area": "Yashiori Island",
+   "subarea": "Jakotsu Mine",
+   "npcs": [
+    "Chouji"
+   ],
+   "dlg": 33036,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "world-quest-gazing-three-thousand-miles-away-start-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Dreams of Sword Art",
+   "type": "World",
+   "group": null,
+   "start": "Kannazuka, Inazuma",
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Ishikawa",
+    "Kujou Masahito",
+    "Matsudaira",
+    "Nameless"
+   ],
+   "dlg": 24497,
+   "steps": 34,
+   "maps": [
+    {
+     "file": "npc-location-nameless.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ishikawa.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-nameless-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-ishikawa-context.png",
+     "context": true
+    },
+    {
+     "file": "item-discarded-blade-location-context.png",
+     "context": true
+    },
+    {
+     "file": "item-a-masterless-blade-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Farmer's Treasure",
+   "type": "World",
+   "group": null,
+   "start": "Jinren Island, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Jinren Island",
+   "npcs": [
+    "Saimon Eri",
+    "Saimon Jirou",
+    "Saimon Katsumi"
+   ],
+   "dlg": 25583,
+   "steps": 36,
+   "maps": [
+    {
+     "file": "npc-location-saimon-eri.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-futaba-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Subterranean Trials of Drake and Serpent",
+   "type": "World",
+   "group": null,
+   "start": "Enkanomiya",
+   "area": "Enkanomiya",
+   "subarea": null,
+   "npcs": [
+    "Aru",
+    "Enjou",
+    "Tsuyuko"
+   ],
+   "dlg": 36640,
+   "steps": 29,
+   "maps": []
+  },
+  {
+   "name": "The Sun-Wheel and Mt. Kanna",
+   "type": "World",
+   "group": null,
+   "start": "Tsurumi Island, Inazuma",
+   "area": "Tsurumi Island",
+   "subarea": null,
+   "npcs": [
+    "Kama",
+    "Kapatcir",
+    "Ruu",
+    "Sumida"
+   ],
+   "dlg": 50506,
+   "steps": 46,
+   "maps": []
+  }
+ ],
+ "Sumeru": [
+  {
+   "name": "Adventure Takes Courage! (World Quest)",
+   "type": "World",
+   "group": null,
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Katheryne (Sumeru)"
+   ],
+   "dlg": 2892,
+   "steps": 1,
+   "maps": []
+  },
+  {
+   "name": "Memory's Final Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Mawtiyima Forest, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": "Mawtiyima Forest",
+   "npcs": [
+    "Khayyam",
+    "Aragaru",
+    "Aranaga",
+    "Aranakin"
+   ],
+   "dlg": 4917,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-khayyam.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-memory-s-final-chapter-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-khayyam-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-memory-s-final-chapter-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Short Encounter with a Rare Bird",
+   "type": "World",
+   "group": null,
+   "start": "Ashavan Realm, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": null,
+   "npcs": [
+    "Ferit",
+    "Pamuk",
+    "Shefket",
+    "Orhan"
+   ],
+   "dlg": 0,
+   "steps": 13,
+   "maps": [
+    {
+     "file": "world-quest-a-short-encounter-with-a-rare-bird-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-a-short-encounter-with-a-rare-bird-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Delicacy for Nara",
+   "type": "World",
+   "group": null,
+   "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+   "area": "Vanarana (Area)",
+   "subarea": "Vanarana (Subarea)",
+   "npcs": [
+    "Arachatora",
+    "Arapacati",
+    "Arapas",
+    "Araphala",
+    "Arasaka"
+   ],
+   "dlg": 7498,
+   "steps": 1,
+   "maps": [
+    {
+     "file": "npc-location-arachatora-arapacati-araphala-arasaka.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-arachatora-arapacati-araphala-arasaka-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Treasure of Wisdom: A New Plan",
+   "type": "World",
+   "group": null,
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Drusus"
+   ],
+   "dlg": 9511,
+   "steps": 2,
+   "maps": [
+    {
+     "file": "world-quest-treasure-of-wisdom-a-new-plan-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "For a Dream I Tarry",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Javi",
+    "Ami"
+   ],
+   "dlg": 8962,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "while-the-dream-lingers-map-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Blooming Sands",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Azalai",
+    "Raef",
+    "Nermin"
+   ],
+   "dlg": 8458,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-azalai.png",
+     "context": false
+    },
+    {
+     "file": "blooming-sands-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-azalai-sania-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Even Beasts Stumble",
+   "type": "World",
+   "group": null,
+   "start": "Yasna Monument, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": "Yasna Monument",
+   "npcs": [
+    "Elber"
+   ],
+   "dlg": 8720,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "world-quest-even-beasts-stumble-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-even-beasts-stumble-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"",
+   "type": "World",
+   "group": null,
+   "start": "Land of Grounded Dreams, Sumeru",
+   "area": "Lost Nursery",
+   "subarea": "Old Vanarana",
+   "npcs": [
+    "Arana",
+    "Rana"
+   ],
+   "dlg": 11580,
+   "steps": 3,
+   "maps": []
+  },
+  {
+   "name": "The Path of Papers",
+   "type": "World",
+   "group": null,
+   "start": "The Akademiya, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Alrani",
+    "Gobley",
+    "Narzam",
+    "Niloofar"
+   ],
+   "dlg": 13722,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "world-quest-in-another-land-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-endless-research-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-path-of-papers-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-in-another-land-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-endless-research-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-path-of-papers-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Purbiruni's Commandment",
+   "type": "World",
+   "group": null,
+   "start": "The Akademiya, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Dara",
+    "Hawa",
+    "Iris (Sumeru City)",
+    "Khedive",
+    "Sadife"
+   ],
+   "dlg": 13098,
+   "steps": 8,
+   "maps": []
+  },
+  {
+   "name": "Soheil's Wish",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Soheil",
+    "Hulwani"
+   ],
+   "dlg": 16311,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-soheil.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-soheil-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Where Are the Fierce Creatures?",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Santon",
+    "Najib",
+    "Anaya",
+    "Hong"
+   ],
+   "dlg": 13345,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-santon.png",
+     "context": false
+    },
+    {
+     "file": "where-are-the-fierce-creatures-gator-raja-location.png",
+     "context": false
+    },
+    {
+     "file": "where-are-the-fierce-creatures-rishboland-raja-location.png",
+     "context": false
+    },
+    {
+     "file": "where-are-the-fierce-creatures-sumpter-beastlord-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-santon-context.png",
+     "context": true
+    },
+    {
+     "file": "where-are-the-fierce-creatures-gator-raja-location-context.png",
+     "context": true
+    },
+    {
+     "file": "where-are-the-fierce-creatures-rishboland-raja-location-context.png",
+     "context": true
+    },
+    {
+     "file": "where-are-the-fierce-creatures-sumpter-beastlord-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Vimana Agama: Dev Delver Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Devantaka Mountain, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Devantaka Mountain",
+   "npcs": [
+    "Ararycan"
+   ],
+   "dlg": 6631,
+   "steps": 21,
+   "maps": [
+    {
+     "file": "npc-location-ararycan.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ararycan-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Cost-Effective Hook",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Helbet",
+    "Kayvan"
+   ],
+   "dlg": 12983,
+   "steps": 12,
+   "maps": []
+  },
+  {
+   "name": "The Price",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Alexandra",
+    "Berat",
+    "Nika",
+    "Przheva"
+   ],
+   "dlg": 15960,
+   "steps": 9,
+   "maps": [
+    {
+     "file": "npc-location-alexandra-przheva.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-the-price-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-alexandra-przheva-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-the-price-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Join the Eremites and Embrace a Wonderful New Life!",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Atiyah",
+    "Ayten",
+    "Fodil",
+    "Karima",
+    "Sania"
+   ],
+   "dlg": 16034,
+   "steps": 10,
+   "maps": [
+    {
+     "file": "npc-location-atiyah.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-atiyah-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Static Views, Part 2",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Araminali",
+    "Aranimba"
+   ],
+   "dlg": 12686,
+   "steps": 16,
+   "maps": [
+    {
+     "file": "npc-location-araminali.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-araminali-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Prayer for Rain on the Fecund Land",
+   "type": "World",
+   "group": null,
+   "start": "Apam Woods, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": "Apam Woods",
+   "npcs": [
+    "Arabalika",
+    "Arakunti",
+    "Aranakula",
+    "Arapandu"
+   ],
+   "dlg": 17618,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-arabalika-arakunti-arapandu.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-arabalika-arakunti-arapandu-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Afratu's Dilemma",
+   "type": "World",
+   "group": null,
+   "start": "Valley of Dahri, Sumeru",
+   "area": "Land of Upper Setekh",
+   "subarea": "Valley of Dahri",
+   "npcs": [
+    "Afratu"
+   ],
+   "dlg": 14428,
+   "steps": 17,
+   "maps": [
+    {
+     "file": "world-quest-afratu-s-dilemma-start-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "Garcia's Paean: A Gift of Compatibility",
+   "type": "World",
+   "group": null,
+   "start": "Treasures Street, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Garcia",
+    "Lutong",
+    "Ahangar",
+    "Sheikh Zubayr",
+    "Kaia"
+   ],
+   "dlg": 22019,
+   "steps": 5,
+   "maps": []
+  },
+  {
+   "name": "Courage Is in the Heart",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Arashakun"
+   ],
+   "dlg": 14441,
+   "steps": 18,
+   "maps": [
+    {
+     "file": "npc-location-arashakun.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-courage-is-in-the-heart-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-arashakun-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-courage-is-in-the-heart-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Hymn of Tir Yazad (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Tunigi Hollow, Sumeru",
+   "area": "Gavireh Lajavard",
+   "subarea": "Tunigi Hollow",
+   "npcs": [
+    "Katheryne (Sumeru)",
+    "Mihir",
+    "Rashnu",
+    "Sorush",
+    "Zurvan"
+   ],
+   "dlg": 17150,
+   "steps": 16,
+   "maps": []
+  },
+  {
+   "name": "The Foolish Fatuus",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Ashavan Realm",
+   "subarea": "Yasna Monument",
+   "npcs": [
+    "Kasim",
+    "Oleg",
+    "Rukh Shah"
+   ],
+   "dlg": 19323,
+   "steps": 22,
+   "maps": [
+    {
+     "file": "the-foolish-fatuus-location.png",
+     "context": false
+    },
+    {
+     "file": "the-foolish-fatuus-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Eternal Dream, Ever Lush",
+   "type": "World",
+   "group": null,
+   "start": "The Orchard of Pairidaeza, Desert of Hadramaveth, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": "Mt. Damavand",
+   "npcs": [
+    "Babel",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 25416,
+   "steps": 12,
+   "maps": [
+    {
+     "file": "babel-s-tent-location.png",
+     "context": false
+    },
+    {
+     "file": "babel-s-tent-location-context-after-death.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Dual Evidence",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Kalantari",
+    "Soheil",
+    "Hulwani"
+   ],
+   "dlg": 29732,
+   "steps": 15,
+   "maps": []
+  },
+  {
+   "name": "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars",
+   "type": "World",
+   "group": null,
+   "start": "Treasures Street, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": null,
+   "npcs": [
+    "Aderfi",
+    "Babel",
+    "Hugeweh",
+    "Jeht",
+    "Katheryne (Sumeru)",
+    "Masseira",
+    "Mendas",
+    "Yuften"
+   ],
+   "dlg": 31106,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "npc-location-aderfi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-aderfi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Until Vana is Healed",
+   "type": "World",
+   "group": null,
+   "start": "Ardravi Valley, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": null,
+   "npcs": [
+    "Ararycan",
+    "Jazari"
+   ],
+   "dlg": 26000,
+   "steps": 29,
+   "maps": [
+    {
+     "file": "npc-location-ararycan.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ararycan-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Final Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Mawtiyima Forest, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": "Mawtiyima Forest",
+   "npcs": [
+    "Aragaru",
+    "Aranaga",
+    "Aranakin"
+   ],
+   "dlg": 25511,
+   "steps": 33,
+   "maps": [
+    {
+     "file": "npc-location-aragaru.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-aragaru-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Gourmet Supremos: Within Our Duties",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Farzah",
+    "Julie",
+    "Kamal",
+    "Kamei Munehisa",
+    "Maryam",
+    "Nabati",
+    "Neriman",
+    "Nète",
+    "Parvaneh",
+    "Shevirme",
+    "Xudong",
+    "Yunus"
+   ],
+   "dlg": 38207,
+   "steps": 24,
+   "maps": [
+    {
+     "file": "world-quest-gourmet-supremos-within-our-duties-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-gourmet-supremos-within-our-duties-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Dune-Entombed Fecundity: Part III",
+   "type": "World",
+   "group": null,
+   "start": "Desert of Hadramaveth, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": null,
+   "npcs": [
+    "Aderfi",
+    "Azariq",
+    "Ferigees",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 31005,
+   "steps": 42,
+   "maps": [
+    {
+     "file": "npc-location-aderfi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-aderfi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Dreams Beneath the Searing Sand",
+   "type": "World",
+   "group": null,
+   "start": "Sobek Oasis, Sumeru",
+   "area": "Hypostyle Desert",
+   "subarea": "Sobek Oasis",
+   "npcs": [
+    "Bonifaz",
+    "Tirzad",
+    "Jeht",
+    "Jebrael",
+    "Nachtigal",
+    "Benben",
+    "Samail",
+    "Mirsad",
+    "Omid",
+    "\"Cyrus\""
+   ],
+   "dlg": 57423,
+   "steps": 40,
+   "maps": [
+    {
+     "file": "npc-location-bonifaz-nachtigal.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-bonifaz-nachtigal-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Temple Where Sand Flows Like Tears",
+   "type": "World",
+   "group": null,
+   "start": "The Temples Forsaken, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": "Safhe Shatranj",
+   "npcs": [
+    "Azariq",
+    "Babel",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 63302,
+   "steps": 47,
+   "maps": []
+  }
+ ],
+ "Fontaine": [
+  {
+   "name": "Another Horizon of Adventure",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Quartier Lyonnais, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Katheryne (Fontaine)"
+   ],
+   "dlg": 2000,
+   "steps": 1,
+   "maps": []
+  },
+  {
+   "name": "Strange Stone Chronicle (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village;\"A Very Bright Place\"",
+   "npcs": [
+    "Chesil",
+    "Puca"
+   ],
+   "dlg": 3606,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-chesil.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chesil-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Fishing Game",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Iara"
+   ],
+   "dlg": 7523,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-iara.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-iara-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Leroy: Beautiful Friends",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Vasari Passage, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Autumn",
+    "Athos (Fontaine)",
+    "Molli"
+   ],
+   "dlg": 9217,
+   "steps": 1,
+   "maps": [
+    {
+     "file": "item-location-autumn-s-gift.png",
+     "context": false
+    },
+    {
+     "file": "item-location-autumn-s-gift-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Were It So Easy",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Beryl Region, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Cosanzeana"
+   ],
+   "dlg": 7561,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-cosanzeana.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-were-it-so-easy-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-cosanzeana-context.png",
+     "context": true
+    },
+    {
+     "file": "were-it-so-easy-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Happy Birthday",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Caterpillar",
+    "Charlene",
+    "Earnshaw",
+    "Lanoire"
+   ],
+   "dlg": 11780,
+   "steps": 1,
+   "maps": [
+    {
+     "file": "happy-birthday-start-location.png",
+     "context": false
+    },
+    {
+     "file": "happy-birthday-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Three Primary Colors of the Solar Corona",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Sluasi"
+   ],
+   "dlg": 12078,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "npc-location-sluasi.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-sluasi-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Danger Lurks Everywhere in Fontaine",
+   "type": "World",
+   "group": null,
+   "start": "Marcotte Station, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Marcotte Station",
+   "npcs": [
+    "Arouet",
+    "Guijarro"
+   ],
+   "dlg": 10509,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "npc-location-arouet.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-danger-lurks-everywhere-in-fontaine-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-arouet-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-danger-lurks-everywhere-in-fontaine-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Fountain Flows Again",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Edel",
+    "Estelle",
+    "Keratry",
+    "Remaudiere"
+   ],
+   "dlg": 11744,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "the-fountain-flows-again-location.png",
+     "context": false
+    }
+   ]
+  },
+  {
+   "name": "A Certain Trifle",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Cornelia",
+    "Estelle",
+    "Iaune",
+    "Roialte",
+    "Semaine"
+   ],
+   "dlg": 11724,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "point-of-interest-palais-mermonia-map-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-cornelia-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Hereafter...",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Caterpillar",
+    "Earnshaw",
+    "Lanoire"
+   ],
+   "dlg": 15326,
+   "steps": 3,
+   "maps": []
+  },
+  {
+   "name": "Our Purpose Is in Another Canal",
+   "type": "World",
+   "group": null,
+   "start": "Liffey Region, Fontaine",
+   "area": "Liffey Region",
+   "subarea": null,
+   "npcs": [
+    "Aigouy",
+    "Balent"
+   ],
+   "dlg": 11509,
+   "steps": 10,
+   "maps": [
+    {
+     "file": "npc-location-aigouy.png",
+     "context": false
+    },
+    {
+     "file": "quest-location-our-purpose-is-in-another-canal.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-aigouy-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-our-purpose-is-in-another-canal-context.png",
+     "context": true
+    },
+    {
+     "file": "quest-location-our-purpose-is-in-another-canal-context.png",
+     "context": true
+    },
+    {
+     "file": "our-purpose-is-in-another-canal-handwheel-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Certain Stamp",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Cornelia",
+    "Gattineo",
+    "Iaune",
+    "Roialte",
+    "Semaine",
+    "Thales"
+   ],
+   "dlg": 15297,
+   "steps": 4,
+   "maps": [
+    {
+     "file": "point-of-interest-palais-mermonia-map-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-cornelia-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "In Search of Lost Time",
+   "type": "World",
+   "group": null,
+   "start": "New Fontaine Research Institute, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute",
+   "npcs": [
+    "Broglie",
+    "Malinovskyi"
+   ],
+   "dlg": 10861,
+   "steps": 12,
+   "maps": [
+    {
+     "file": "npc-location-broglie.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-broglie-02.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-broglie-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-broglie-context-02.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Letter",
+   "type": "World",
+   "group": null,
+   "start": "New Fontaine Research Institute, Fontaine",
+   "area": "Liffey Region;Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute",
+   "npcs": [
+    "Choiseul",
+    "Desnos",
+    "Iaune"
+   ],
+   "dlg": 13892,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "npc-location-choiseul.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-a-letter-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-choiseul-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-a-letter-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Within the Depths of Erinnyes",
+   "type": "World",
+   "group": null,
+   "start": "Marcotte Station, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Marcotte Station",
+   "npcs": [
+    "Keratry",
+    "Pahsiv",
+    "Remaudiere"
+   ],
+   "dlg": 10627,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "npc-location-remaudiere-keratry.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-remaudiere-keratry-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Truly Mouthwatering!",
+   "type": "World",
+   "group": null,
+   "start": "West Slopes of Mont Automnequi, Fontaine",
+   "area": "Belleau Region",
+   "subarea": "West Slopes of Mont Automnequi",
+   "npcs": [
+    "Henri",
+    "Hunter",
+    "Turner"
+   ],
+   "dlg": 17686,
+   "steps": 3,
+   "maps": [
+    {
+     "file": "truly-mouthwatering-start-location.png",
+     "context": false
+    },
+    {
+     "file": "truly-mouthwatering-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Where His Life Lies",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Court Region Waterway Hub, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Garcia",
+    "Kaia",
+    "Lutong",
+    "Menthe"
+   ],
+   "dlg": 18116,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "world-quest-where-his-life-lies-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-where-his-life-lies-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Impromptu Poem of the Crimson Dawn",
+   "type": "World",
+   "group": null,
+   "start": "Erinnyes Forest, Fontaine",
+   "area": "Erinnyes Forest",
+   "subarea": null,
+   "npcs": [
+    "Blanc",
+    "Bleu",
+    "Havisham",
+    "Jingle",
+    "Rouge"
+   ],
+   "dlg": 17980,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "impromptu-poem-of-the-crimson-dawn-start-location.png",
+     "context": false
+    },
+    {
+     "file": "impromptu-poem-of-the-crimson-dawn-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "\"Hey, This Isn't Pumpkin Soup...\"",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Verenata"
+   ],
+   "dlg": 16365,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-verenata.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-verenata-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Latecoming Homecoming",
+   "type": "World",
+   "group": null,
+   "start": "Petrichor, Fontaine",
+   "area": "Nostoi Region",
+   "subarea": "Petrichor",
+   "npcs": [
+    "Agent",
+    "Contarini",
+    "Giovanni",
+    "Giulietta",
+    "Giustino",
+    "Loredan"
+   ],
+   "dlg": 19411,
+   "steps": 7,
+   "maps": [
+    {
+     "file": "world-quest-latecoming-homecoming-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-latecoming-homecoming-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Upon a Flowery Field of Grass",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Earnshaw",
+    "Hero",
+    "Lanoire",
+    "Prince (Dog)",
+    "Princess"
+   ],
+   "dlg": 22612,
+   "steps": 2,
+   "maps": [
+    {
+     "file": "npc-location-earnshaw.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-earnshaw-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Fortune Plango Vulnera",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Bygone Eras, Fontaine",
+   "area": "Sea of Bygone Eras",
+   "subarea": null,
+   "npcs": [
+    "Boethius",
+    "Cassiodor",
+    "Osse",
+    "Phobos",
+    "Scylla"
+   ],
+   "dlg": 18067,
+   "steps": 13,
+   "maps": []
+  },
+  {
+   "name": "An Expected Lie",
+   "type": "World",
+   "group": null,
+   "start": "Fort Charybdis Ruins, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Fort Charybdis Ruins",
+   "npcs": [
+    "Chaussivert",
+    "Choiseul",
+    "Edwin Eastinghouse",
+    "Fusilier",
+    "Lemarcq",
+    "Nacker",
+    "Raimondo"
+   ],
+   "dlg": 19840,
+   "steps": 11,
+   "maps": [
+    {
+     "file": "npc-location-chaussivert-lemarcq.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chaussivert-lemarcq-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "A Certain Notice",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine.",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Difor",
+    "Gattineo",
+    "Iaune",
+    "Roialte"
+   ],
+   "dlg": 23674,
+   "steps": 5,
+   "maps": [
+    {
+     "file": "point-of-interest-palais-mermonia-map-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-a-certain-notice-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Treacherous Light of the Depths",
+   "type": "World",
+   "group": null,
+   "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "Chisseray",
+    "Sevigne"
+   ],
+   "dlg": 15423,
+   "steps": 20,
+   "maps": [
+    {
+     "file": "npc-location-chisseray.png",
+     "context": false
+    },
+    {
+     "file": "treacherous-light-of-the-depths-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-chisseray-context.png",
+     "context": true
+    },
+    {
+     "file": "treacherous-light-of-the-depths-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Mary-Ann's Story",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Ann",
+    "Mary-Ann"
+   ],
+   "dlg": 24343,
+   "steps": 8,
+   "maps": []
+  },
+  {
+   "name": "Daydreams Beyond Space and Time",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Garcia",
+    "Kaia",
+    "Lutong",
+    "Mécantre",
+    "Babisse",
+    "Grundeland",
+    "Menthe"
+   ],
+   "dlg": 28777,
+   "steps": 6,
+   "maps": [
+    {
+     "file": "world-quest-daydreams-beyond-space-and-time-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-daydreams-beyond-space-and-time-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Road to the Singularity",
+   "type": "World",
+   "group": null,
+   "start": "Kuisel's Clockwork Workshop, Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "Bricole",
+    "Coutrot",
+    "Kuisel"
+   ],
+   "dlg": 16792,
+   "steps": 27,
+   "maps": [
+    {
+     "file": "npc-location-bricole.png",
+     "context": false
+    },
+    {
+     "file": "road-to-the-singularity-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-bricole-context.png",
+     "context": true
+    },
+    {
+     "file": "road-to-the-singularity-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "The Lone Phantom Sail",
+   "type": "World",
+   "group": null,
+   "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+   "area": "Beryl Region",
+   "subarea": "\"A Lonely Place\"",
+   "npcs": [
+    "Ahes"
+   ],
+   "dlg": 25257,
+   "steps": 15,
+   "maps": [
+    {
+     "file": "npc-location-ahes.png",
+     "context": false
+    },
+    {
+     "file": "the-lone-phantom-sail-location.png",
+     "context": false
+    },
+    {
+     "file": "achievement-fontaine-expects-that-everyone-will-do-their-duty-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-ahes-context.png",
+     "context": true
+    },
+    {
+     "file": "the-lone-phantom-sail-location-context.png",
+     "context": true
+    },
+    {
+     "file": "achievement-fontaine-expects-that-everyone-will-do-their-duty-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Wish-Fulfilling Treasure Hunt",
+   "type": "World",
+   "group": null,
+   "start": "Tower of Ipsissimus, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Tower of Ipsissimus",
+   "npcs": [
+    "Nadia (Fontaine)",
+    "Urville"
+   ],
+   "dlg": 31474,
+   "steps": 8,
+   "maps": [
+    {
+     "file": "npc-location-nadia-fontaine-daytime.png",
+     "context": false
+    },
+    {
+     "file": "wish-fulfilling-treasure-hunt-start-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-nadia-fontaine-urville-nighttime.png",
+     "context": false
+    },
+    {
+     "file": "wish-fulfilling-treasure-hunt-pre-quest-nadia-and-urville-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-nadia-fontaine-context-daytime.png",
+     "context": true
+    },
+    {
+     "file": "wish-fulfilling-treasure-hunt-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-nadia-fontaine-urville-context-nighttime.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Rowboat's Wake (Quest)",
+   "type": "World",
+   "group": null,
+   "start": "Genesis of a Certain Micro-Universe, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Genesis of a Certain Micro-Universe",
+   "npcs": [
+    "Ann",
+    "Caterpillar",
+    "Mamere",
+    "Mary-Ann",
+    "Narzissenkreuz",
+    "Seymour"
+   ],
+   "dlg": 31249,
+   "steps": 9,
+   "maps": []
+  },
+  {
+   "name": "Echoes of the Ancient World",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Carabosse",
+    "Katheryne (Fontaine)",
+    "Tailleferre",
+    "Topyas",
+    "Verenata"
+   ],
+   "dlg": 29217,
+   "steps": 14,
+   "maps": [
+    {
+     "file": "npc-location-carabosse.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-echoes-of-the-ancient-world-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-carabosse-context.png",
+     "context": true
+    },
+    {
+     "file": "world-quest-echoes-of-the-ancient-world-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Limner, Dreamer, and Robotic Dog",
+   "type": "World",
+   "group": null,
+   "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+   "area": "Beryl Region",
+   "subarea": "\"A Lonely Place\"; \"A Very Warm Place\"",
+   "npcs": [
+    "Elynas (NPC)",
+    "Jakob",
+    "Mamere",
+    "Seymour"
+   ],
+   "dlg": 31885,
+   "steps": 12,
+   "maps": []
+  },
+  {
+   "name": "Aqueous Tidemarks",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Luca",
+    "Sonny",
+    "Virgil"
+   ],
+   "dlg": 31584,
+   "steps": 19,
+   "maps": [
+    {
+     "file": "npc-location-luca-sonny.png",
+     "context": false
+    },
+    {
+     "file": "aqueous-tidemarks-pre-quest-sonny-and-luca-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-luca-sonny-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Free Verse",
+   "type": "World",
+   "group": null,
+   "start": "Erinnyes Forest, Fontaine",
+   "area": "Erinnyes Forest",
+   "subarea": null,
+   "npcs": [
+    "Don Quijano",
+    "Nana",
+    "Penny"
+   ],
+   "dlg": 38860,
+   "steps": 16,
+   "maps": [
+    {
+     "file": "free-verse-start-location.png",
+     "context": false
+    },
+    {
+     "file": "free-verse-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Both Brains and Brawn",
+   "type": "World",
+   "group": null,
+   "start": "Administrative Area, Fontaine",
+   "area": "Liffey Region",
+   "subarea": "Fortress of Meropide",
+   "npcs": [
+    "Champvallon",
+    "Genevieve",
+    "Goncourt",
+    "Poiret",
+    "Roussimoff"
+   ],
+   "dlg": 57043,
+   "steps": 37,
+   "maps": []
+  },
+  {
+   "name": "Villains",
+   "type": "World",
+   "group": null,
+   "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "\"Guileless Wolfhook\"",
+    "\"Ruthless Calla Lily\"",
+    "\"Trendy Zaytun Peach\"",
+    "\"Tricky Bulle Fruit\"",
+    "Blanche (Fontaine)"
+   ],
+   "dlg": 66003,
+   "steps": 25,
+   "maps": [
+    {
+     "file": "villains-start-location.png",
+     "context": false
+    },
+    {
+     "file": "villains-start-location-context.png",
+     "context": true
+    }
+   ]
+  },
+  {
+   "name": "Questions and Answers",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine: Quartier Narbonnais",
+   "npcs": [
+    "\"Curve\"",
+    "\"Intrepid Valberry\"",
+    "Baulande",
+    "Baulande! Lombroso!",
+    "Boss (The Red and the Black)",
+    "Euphrasie",
+    "Jenck",
+    "Kevin",
+    "Madeleine (Questioning Melusine and Answering Machine)",
+    "Melo Lombroso",
+    "Rocher",
+    "Sir Arthur",
+    "Talochard"
+   ],
+   "dlg": 58224,
+   "steps": 45,
+   "maps": []
+  },
+  {
+   "name": "Fontaine Research Institute, Stagnating in the Rubble",
+   "type": "World",
+   "group": null,
+   "start": "Liffey Region, Fontaine",
+   "area": "Liffey Region; Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute; Central Laboratory Ruins",
+   "npcs": [
+    "Broglie",
+    "Chalmet",
+    "Chisseray",
+    "Choiseul",
+    "Chronie",
+    "Conjat",
+    "Damestier",
+    "Denichere",
+    "Desnos",
+    "Heinry",
+    "Katheryne (Fontaine)",
+    "Lanty",
+    "Muirne",
+    "Nacker",
+    "Raimondo",
+    "Sevigne",
+    "Vuillermoz"
+   ],
+   "dlg": 112172,
+   "steps": 34,
+   "maps": [
+    {
+     "file": "npc-location-broglie.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-broglie-02.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-katheryne-court-of-fontaine.png",
+     "context": false
+    },
+    {
+     "file": "qualifications-review-representative-office-location.png",
+     "context": false
+    },
+    {
+     "file": "npc-location-broglie-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-broglie-context-02.png",
+     "context": true
+    },
+    {
+     "file": "fontaine-research-institute-stagnating-in-the-rubble-start-location-context.png",
+     "context": true
+    }
+   ]
+  }
+ ]
+}

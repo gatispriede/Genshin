@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yaodie Valley — location</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Yaodie Valley</h1>
+  <p class="sub"><b>Chenyu Vale: Southern Mountain</b>, Liyue — eastern side. South of
+  Teatree Slope, north of Mt. Xuanlian. Added in 4.4.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/chenyu-south-map.webp"
+       data-alt="Chenyu Vale Southern Mountain map"></div>
+
+  <div class="bar key">
+    <b>Hidden world quest here:</b> <i>Silently the Butterfly Crosses the Valley</i>.
+    Teleport to Yaodie Valley and <b>enter the cave immediately on your right</b> — that's
+    the whole trigger. No marker, easy to walk past.
+  </div>
+
+  <div class="note">
+    <b>What else is in the valley</b><br>
+    • <b>Valley of Vibrant Butterflies</b> — Viewpoint, free Primogems<br>
+    • <b>Adeptus's Repose</b> of the adeptus <b>Herblord</b>, with <b>Lingshu Courtyard</b>
+      beside it where he made medicine<br>
+    • <b>Knocking Vases</b> scattered around<br>
+    • Heavy <b>Clearwater Jade</b> concentration between here and Mt. Xuanlian<br>
+    • <b>Chili Con Cloudy</b> quest starts just east<br>
+    • <b>Clear Skies Over Xuanlian</b> viewpoint — on a rock northeast of the waypoint
+      <i>south</i> of Yaodie Valley<br><br>
+    <b>Lore:</b> an adeptus's abode where <b>Fujin</b> sheltered peoples displaced by war,
+    preserving them through great floods.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 75,   y: 32.9, role: "do-now", size: "lg", label: "★", pulse: true,
+      tag: "YAODIE VALLEY" },
+    { x: 74.7, y: 16.6, role: "hub", size: "sm", label: "N",
+      tag: "Teatree Slope — north of it" },
+    { x: 59.1, y: 59,   role: "hub", size: "sm", label: "S",
+      tag: "Mt. Xuanlian — south of it" },
+    { x: 62.8, y: 33.2, role: "hub", size: "sm", label: "W", tag: "Nearest waypoint" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

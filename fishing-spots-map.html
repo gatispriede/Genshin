@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fishing spots — Mondstadt & Liyue</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Fishing spots</h1>
+  <p class="sub">Gold pin = the best single spot in that region. Blue = solid alternatives.</p>
+
+  <div class="bar bad">
+    <b>Genshin's in-game map doesn't mark fishing spots at all.</b> There's no icon to look
+    for — go to the coordinates below and watch for <b>ripples on the water</b> with fish
+    circling.
+  </div>
+
+  <h2>Mondstadt</h2>
+  <div class="map-wrap" id="mondstadt"
+       data-map="assets/mondstadt-map.webp"
+       data-alt="Starfell Valley map"></div>
+
+  <div class="note">
+    <b>Stormbearer lake</b> alone yields Medaka, Aizen Medaka, Crystalfish, Golden Koi,
+    Tea-Colored Shirakodai, Dawncatcher and <b>Venomspine Fish</b> — the widest spread in
+    the region. Start here.<br><br>
+    <b>Also in Mondstadt but off this view:</b> the coast south of <b>Dawn Winery</b>
+    (pufferfish + Akai Maou) — see <a href="windcatcher-map.html">the Windwail map</a>.
+    Plus two spots in Stormterror's Lair and one south of Wyrmrest Valley in Dragonspine.
+  </div>
+
+  <h2>Liyue — the farming route</h2>
+  <div class="map-wrap" id="liyue"
+       data-map="assets/bishui-map.webp"
+       data-alt="Bishui Plain map"></div>
+
+  <div class="note">
+    <b>The route:</b> <b>Qingce Village</b> (3 spots in walking distance — Sweet-Flower
+    Medaka, Crystalfish, Bitter Pufferfish, Brown Shirakodai, Betta, Dawncatcher) →
+    <b>Luhua Pool</b> (Akai Maou, Rusty Koi, Golden Koi) → <b>Liyue Harbor</b>. The last two
+    sit south of this view.<br><br>
+    <b>Mt. Aocang</b> doubles as your ore route — see
+    <a href="research/07-ore-farming.md">07-ore-farming.md</a>.
+  </div>
+
+  <div class="bar warn">
+    <b>Day/night matters more than location.</b> Every <b>Redrot Bait</b> fish — Lunged
+    Stickleback, Betta, Venomspine Fish, Akai Maou, Snowstrider — appears <b>only at
+    night</b>. Each spot has separate day and night pools, so a "cleared" spot is usually
+    half full. Once both are exhausted it's a <b>72-hour</b> respawn.
+  </div>
+
+  <div class="note">
+    <b>Why fish at all:</b> <b>The Catch</b> — a 4★ polearm and the best F2P option for
+    Xiangling — comes from <b>Kujirai Momiji</b> in <b>Inazuma</b>. You have
+    <b>0 Electroculi</b>, so park that goal until Inazuma is open.<br><br>
+    Mondstadt's vendor is <b>Nantuck</b>, just outside the city — he sells the Redrot,
+    False Worm and Fake Fly bait blueprints for 3 Medaka each.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+
+  drawMap("#mondstadt", [
+    { x: 48.8, y: 11.5, role: "best", size: "lg", label: "★", pulse: true,
+      tag: "★ Stormbearer lake — most fish types in Mondstadt" },
+    { x: 20.5, y: 23,   role: "farm", label: "1", tag: "Cider Lake — 2 spots" },
+    { x: 39,   y: 40,   role: "farm", label: "2", tag: "Whispering Woods" },
+    { x: 46.5, y: 89,   role: "farm", label: "3", tag: "South of Windrise" }
+  ]);
+
+  drawMap("#liyue", [
+    { x: 43.1, y: 32,   role: "best", size: "lg", label: "★", pulse: true,
+      tag: "★ Qingce Village — 3 spots clustered" },
+    { x: 57.2, y: 61,   role: "farm", label: "1", tag: "Dihua Marsh" },
+    { x: 55,   y: 79,   role: "farm", label: "2", tag: "West of Wangshu Inn" },
+    { x: 64.4, y: 49.5, role: "farm", label: "3", tag: "Lake south of Stone Gate" },
+    { x: 82.4, y: 57.5, role: "farm", label: "4", tag: "Island east of Bishui Plain — 2 spots" },
+    { x: 3,    y: 62.4, role: "farm", label: "5", tag: "Mt. Aocang — Abiding Angelfish" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

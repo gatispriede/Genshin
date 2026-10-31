@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi of Yore — statue puzzles</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Chi of Yore — statue puzzles</h1>
+  <p class="sub">Two near Qingce Village. Only one has an order.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/qingce-player-map.webp"
+       data-alt="Qingce Village / Wuwang Hill map"></div>
+
+  <h2>Puzzle 1 — the shrine, east Qingce</h2>
+  <div class="bar key">
+    <div class="steps" style="margin-bottom:9px">
+      <div class="step">1 · NORTH</div>
+      <div class="step">2 · SOUTH-EAST</div>
+      <div class="step">3 · NORTH-WEST</div>
+      <div class="step">4 · NORTH-EAST</div>
+      <div class="step">5 · SOUTH-WEST</div>
+    </div>
+    Facing north that reads on screen as
+    <b>top → bottom-right → top-left → top-right → bottom-left</b>.<br>
+    <b>Messed it up?</b> Activate <b>all</b> the statues to reset, then start again.
+  </div>
+
+  <h2>Puzzle 2 — Wuwang Hill summit</h2>
+  <div class="note">
+    <b>Order does not matter here</b> — you just pick the right four of eight. Full diagram
+    with a compass in <a href="wuwang-statue-puzzle.html">wuwang-statue-puzzle.html</a>.<br><br>
+    Short version: activate <b>N · SE · S · SW</b>. Or, counting clockwise from the statue
+    facing the climbable stone cliff as #1, activate <b>2, 3, 5, 8</b>.
+  </div>
+
+  <div class="note">
+    Both are fragments for <b>The Chi of Yore</b>, started by <b>Granny Ruoxin</b> in Qingce
+    Village. A third sits <b>west of Qingce</b> on a bamboo-covered hill. All three open the
+    <a href="vault-of-qingce.html">Vault of Qingce</a>.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 62, y: 20, role: "do-now", label: "1", tag: "1 · Shrine — 5 statues, ORDER matters" },
+    { x: 70, y: 62, role: "hub",    label: "2", tag: "2 · Wuwang summit — 8 statues, pick 4" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

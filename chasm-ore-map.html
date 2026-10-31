@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Chasm — ore map</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>The Chasm — ore</h1>
+  <p class="sub">One of the richest mining regions in the game. The surface is decent; the
+  <b>Underground Mines</b> are the real haul.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/chasm-player-map.webp"
+       data-alt="The Chasm surface map"></div>
+
+  <div class="bar key">
+    <b>The Underground Mines are a separate map layer.</b> Switch to it with the layer
+    toggle on your map — the surface barely hints at how much is down there. In order of
+    value:<br>
+    <b>1 · Main Mining Area</b> — the bulk of the Crystal Chunks, in dense clusters<br>
+    <b>2 · Serpent's Cave / Ad-Hoc Main Tunnel</b> — two waypoints sit beside chunks.
+    <b>Don't glide into the Ruin Serpent arena</b> by accident<br>
+    <b>3 · Underground Waterway</b> — the mop-up leg
+  </div>
+
+  <div class="note">
+    <b>Take Noelle.</b> Claymores break a node in 3–4 hits; swords and bows take far longer.
+    Geo attacks also shatter ore, so your <b>Geo Traveler</b> doubles up.<br><br>
+    <b>Surface bonus:</b> the terraces have "investigate" sparkle spots that yield iron and
+    <b>never show on the map</b> — not even with Ningguang. Poke at anything that
+    glitters.<br><br>
+    <b>Respawn is 48–72 hours.</b> Ask a blacksmith in Liyue Harbor which regions have reset
+    before committing to a route.<br><br>
+    <b>The dashed ring is approximate</b> — it marks the terraced belt where surface nodes
+    concentrate, not individual nodes.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { zone: true, x: 27, y: 21, w: 52, h: 60, role: "farm",
+      tag: "Surface ore belt — terraces" },
+    { x: 57.9, y: 62.4, role: "goal", size: "lg", label: "▼", pulse: true,
+      tag: "▼ Descend here → UNDERGROUND MINES" },
+    { x: 43.4, y: 53.8, role: "hub",  size: "sm", label: "★", tag: "Statue — teleport hub" },
+    { x: 33.9, y: 61.7, role: "farm", label: "1", tag: "Cinnabar Cliff" },
+    { x: 54.1, y: 71.1, role: "farm", label: "2", tag: "Tiangong Gorge" },
+    { x: 74.1, y: 69.5, role: "farm", label: "3", tag: "Glaze Peak" },
+    { x: 56,   y: 39.3, role: "farm", label: "4", tag: "Fuao Vale" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

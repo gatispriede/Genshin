@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bounty — Ruin Guard, Stormbearer</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Bounty — Ruin Guard</h1>
+  <p class="sub">"A strange machine … stood up, swinging its two long arms." Near the tower
+  between <b>Stormbearer Mountains</b> and <b>Stormbearer Point</b>.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/stormbearer-map.webp"
+       data-alt="Stormbearer Mountains map, Mondstadt">
+    <div class="offmap" style="left:2.5%; bottom:4%">
+      <b>Note:</b> the circle marks the corridor between the two named areas.
+      Hit <b>Check Map</b> on the bounty in-game for the exact search radius.
+    </div>
+  </div>
+
+  <div class="bar bad">
+    <b>Invulnerable to Physical DMG.</b> Un-infused normal attacks do <b>zero</b>. Kaeya
+    swinging raw will achieve nothing.
+  </div>
+
+  <div class="bar good">
+    <b>All Element RES decreased.</b> Every element works and is boosted — bring whoever
+    hits hardest. <b>Skirk is ideal:</b> in Seven-Phase Flash her attacks convert to
+    <b>Cryo</b>, so she bypasses the Physical immunity completely.
+  </div>
+
+  <div class="note">
+    <b>Kill it fast:</b> shoot the glowing orange core on its chest or back with a
+    <b>fully-charged aimed shot</b> to stagger it flat, then burst it while it's down.
+    Use <b>Fischl</b> — charged aimed shots deal the character's element, so hers land as
+    <b>Electro</b> rather than Physical.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+
+  drawMap("#map", [
+    { zone: true, x: 50, y: 30, w: 36, h: 28, tag: "Bounty search area" },
+    { x: 39,   y: 39,   role: "do-now", label: "⌂", tag: "Tower ruin — landmark" },
+    { x: 73,   y: 62,   role: "hub", size: "sm", label: "W", tag: "Closest waypoint" },
+    { x: 36.5, y: 57.8, role: "hub", size: "sm", label: "W", tag: "Alt. waypoint" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

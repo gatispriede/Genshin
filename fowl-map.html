@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fowl — where to get it</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Fowl — the easy way</h1>
+  <p class="sub">Don't chase birds. Buy it.</p>
+
+  <div class="bar key">
+    <b>Draff, in Springvale.</b> Sells <b>10 Fowl daily</b> at 200–240 Mora each. Restocks
+    every day. One trip beats an hour of shooting pigeons.
+  </div>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/windwail-map.webp"
+       data-alt="Windwail Highland map — Springvale"></div>
+
+  <div class="note">
+    <b>Finding him:</b> he moves with the clock. <b>In front of Springvale during the
+    day</b> (06:00–19:00, near the water at the village entrance), and <b>in front of his
+    house at night</b>. He also stocks <b>Raw Meat</b> and <b>Eggs</b>.
+  </div>
+
+  <h2>If you'd rather farm it</h2>
+  <div class="rows">
+    <div class="row farm"><div class="num">1</div>
+      <div><b>Bridge outside Mondstadt's gates</b>
+      <span>Reliable bird spawns on the approach to the city. Flat ground, quick loop.</span></div></div>
+    <div class="row farm"><div class="num">2</div>
+      <div><b>Any lakeside or beach</b>
+      <span>Birds cluster near water. Drops that land in the water can be swum out to.</span></div></div>
+    <div class="row off"><div class="num">3</div>
+      <div><b>Konda Village, Inazuma</b>
+      <span>The best open-world source by far — the repeatable <i>Warden of Konda</i> event
+      gives roughly <b>40–60 Fowl</b> across 10 runs a day. <b>You have 0 Electroculi</b>,
+      so Inazuma isn't open yet.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Use a bow.</b> Birds flee the moment you get close — <b>Fischl or Amber</b> from
+    range. Melee characters will just watch them fly off.
+  </div>
+
+  <div class="note">
+    <b>What you need it for:</b> <b>Redrot Bait</b> — 1 Dendrobium + 1 Fowl, makes 10 bait.
+    That's the bait for Venomspine Fish, Akai Maou, Betta, Lunged Stickleback and
+    Snowstrider, all of which are <b>night-only</b>. See
+    <a href="fishing-spots-map.html">fishing-spots-map.html</a>.<br><br>
+    Also feeds Sweet Madame, Smoked Fowl, Chicken-Mushroom Skewer and Jueyun Chili Chicken.
+  </div>
+
+  <div class="note">
+    <b>Unverified:</b> some guides claim Chef Mao in Liyue Harbor and Tsuyuko in Inazuma
+    also sell Fowl. Better sources only list Draff and <b>Ashpazi</b> in Gandharva Ville,
+    Sumeru — so don't make a trip to Liyue Harbor on that basis alone.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 68.3, y: 54.8, role: "do-now", size: "lg", label: "★", pulse: true,
+      tag: "★ Draff — Springvale, 10 Fowl/day" },
+    { x: 60,   y: 19,   role: "farm", size: "sm", label: "1",
+      tag: "Bridge outside Mondstadt — bird spawns" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

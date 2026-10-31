@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crafting Benches — where to make bait</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Where to craft bait</h1>
+  <p class="sub">Any <b>Crafting Bench</b> — the alchemy table. Not the blacksmith, not the
+  cooking pot.</p>
+
+  <div class="bar warn">
+    <b>You don't need this map.</b> Crafting Benches are already marked on your own map with
+    the <b>alchemy symbol</b>. Open the map, look for that icon, teleport to the nearest one.
+    The map below is just for the two you'll use most.
+  </div>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/windwail-map.webp"
+       data-alt="Windwail Highland map">
+    <div class="offmap" style="left:2.5%; bottom:4%">
+      <b>Also permanent:</b><br>
+      <b>Chihu Rock</b>, Liyue Harbor — south of this view<br>
+      <b>Albedo's Campsite</b>, Dragonspine — handy during <i>In the Mountains</i>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Recipes — each set of ingredients makes 10 bait:</b><br>
+    <b>Fruit Paste</b> — 1 Sunsettia + 1 Wheat <i>(you have this by default)</i><br>
+    <b>Redrot</b> — 1 Dendrobium + 1 Fowl<br>
+    <b>False Worm</b> — 1 Slime Condensate + 1 Berry<br>
+    <b>Fake Fly</b> — 1 Sakura Bloom + 1 Horsetail<br><br>
+    The last three need blueprints from <b>Nantuck</b> at the Mondstadt Fishing Association,
+    just outside the city — <b>3 Medaka each</b>. Catch a few Medaka with Fruit Paste first,
+    then buy the rest.<br><br>
+    <b>Shortcut:</b> place an <b>Alchemist's Crafting Bench</b> inside the Serenitea Pot once
+    it's unlocked and skip the trip entirely.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 67.3, y: 14, role: "best", label: "⚗", pulse: true,
+      tag: "Mondstadt — Market District bench" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

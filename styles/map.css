@@ -1,0 +1,309 @@
+/* Shared styling for every annotated map / puzzle page in this project.
+   Link it, then use the classes below. See docs/AUTHORING.md for the recipe. */
+
+:root {
+  --ink:    #11161f;   /* page background        */
+  --panel:  #1a212c;   /* list rows              */
+  --panel2: #141a24;   /* notes                  */
+  --line:   #262f3d;   /* borders                */
+  --paper:  #f4f1e9;   /* body text              */
+  --dim:    #9aa4b5;   /* secondary text         */
+
+  /* marker roles — pick by meaning, not colour */
+  --do-now:  #ff5a3c;  /* act on this first      */
+  --goal:    #18a558;  /* the objective          */
+  --hub:     #2f9fed;  /* waypoint / teleport    */
+  --farm:    #3fb6e0;  /* resource spot          */
+  --best:    #ffb020;  /* best option of a group */
+  --warn:    #ffc63f;  /* caution                */
+  --off:     #3a4454;  /* inactive / don't touch */
+
+  /* the seven elements — use these, never a raw hex, so pages agree */
+  --pyro:    #ff7a45;
+  --hydro:   #3d9ff5;
+  --electro: #c084fc;
+  --cryo:    #6fd7e8;
+  --dendro:  #9bd440;
+  --anemo:   #5fd0a9;
+  --geo:     #e8b23a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px 18px 48px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.wrap { max-width: 1000px; margin: 0 auto; }
+
+h1 { font-size: clamp(1.3rem, 3vw, 1.85rem); margin: 0 0 4px; letter-spacing: -.02em; }
+.sub { margin: 0 0 15px; color: var(--dim); font-size: .9rem; }
+h2 {
+  font: 700 .74rem/1 "Segoe UI", sans-serif;
+  letter-spacing: .13em; text-transform: uppercase;
+  color: #6f7a8c; margin: 24px 0 9px;
+}
+
+/* ---------- map container ---------- */
+
+.map-wrap {
+  position: relative; border-radius: 9px; overflow: hidden; line-height: 0;
+  box-shadow: 0 16px 44px rgba(0,0,0,.6);
+}
+.map-wrap img { width: 100%; height: auto; display: block; }
+
+/* ---------- pins ---------- */
+
+.pin {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center;
+  font: 800 14px/1 "Segoe UI", sans-serif; color: #fff;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.55), 0 4px 12px rgba(0,0,0,.6);
+  z-index: 5;
+}
+.pin.sm { width: 26px; height: 26px; font-size: 11px; border-width: 2.5px; }
+.pin.lg { width: 38px; height: 38px; font-size: 16px; }
+
+.pin.do-now { background: var(--do-now); }
+.pin.goal   { background: var(--goal); }
+.pin.hub    { background: var(--hub); }
+.pin.farm   { background: var(--farm); color: #06222e; }
+.pin.best   { background: var(--best); color: #2a1a00; }
+.pin.off    { background: var(--off); color: #8e99a8; border-color: #55606f; }
+
+/* pulsing ring — reserve for the single most important marker on a page */
+.pin.pulse::after {
+  content: ""; position: absolute; inset: -11px;
+  border: 2px solid currentColor; border-radius: 50%;
+  animation: pin-ring 1.9s ease-out infinite;
+}
+@keyframes pin-ring {
+  0%   { transform: scale(.7);  opacity: .9; }
+  100% { transform: scale(1.5); opacity: 0;  }
+}
+
+/* ---------- tags (the label under a pin) ---------- */
+
+.tag {
+  position: absolute; transform: translate(-50%, 0); margin-top: 5px;
+  background: rgba(8,12,18,.93); color: #fff;
+  font: 700 12px/1.3 "Segoe UI", sans-serif;
+  padding: 5px 9px; border-radius: 5px; white-space: nowrap;
+  z-index: 6; border-left: 3px solid var(--do-now);
+  pointer-events: none;
+}
+.tag.goal { border-left-color: var(--goal); }
+.tag.hub  { border-left-color: var(--hub);  font-weight: 600; }
+.tag.farm { border-left-color: var(--farm); font-weight: 600; }
+.tag.best { border-left-color: var(--best); font-weight: 800; }
+.tag.off  { border-left-color: var(--off);  font-weight: 600; }
+
+/* ---------- zones (approximate areas) ---------- */
+
+.zone {
+  position: absolute; z-index: 2;
+  border: 3px dashed var(--best);
+  background: rgba(255,176,32,.15);
+  border-radius: 50%;                 /* .zone.rect for a box */
+}
+.zone.rect { border-radius: 14px; }
+.zone.farm { border-color: var(--farm); background: rgba(63,182,224,.14); }
+.zone.goal { border-color: var(--goal); background: rgba(24,165,88,.14); }
+
+.zone-label {
+  position: absolute; transform: translate(-50%, 0); z-index: 7;
+  background: var(--best); color: #1a1206;
+  font: 800 12px/1.2 "Segoe UI", sans-serif;
+  padding: 5px 10px; border-radius: 5px; white-space: nowrap;
+}
+.zone-label.farm { background: var(--farm); color: #06222e; }
+
+/* small floating box for things that sit outside the map view */
+.offmap {
+  position: absolute; z-index: 7; max-width: 270px; text-align: left;
+  background: rgba(8,12,18,.93); border: 1px solid var(--best);
+  border-radius: 7px; padding: 9px 12px;
+  font: 600 11.5px/1.45 "Segoe UI", sans-serif; color: #ffd79a;
+}
+.offmap b { color: #fff; }
+
+/* ---------- dots (dense sets, where a pin would be too heavy) ---------- */
+
+.dot-m {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 11px; height: 11px; border-radius: 50%;
+  border: 1.5px solid rgba(8,12,18,.85); z-index: 1;
+}
+.dot-m.chest { background: #4ade5a; box-shadow: 0 0 7px rgba(74,222,90,.95); }
+.dot-m.wp    { background: #ffd666; box-shadow: 0 0 8px rgba(255,214,102,.9);
+               width: 14px; height: 14px; border-color: #11161f; z-index: 2; }
+
+/* inline legend line: a swatch then a sentence */
+.dotkey {
+  max-width: 1000px; margin: 13px auto 0; display: flex;
+  align-items: flex-start; gap: 8px; line-height: 1.5;
+  color: var(--dim); font-size: .85rem;
+}
+.dotkey i {
+  width: 13px; height: 13px; border-radius: 50%; display: inline-block;
+  flex: 0 0 auto; margin-top: 3px; border: 2px solid #11161f;
+}
+.dotkey i.chest { background: #4ade5a; box-shadow: 0 0 8px rgba(74,222,90,.95); }
+.dotkey i.wp    { background: #ffd666; box-shadow: 0 0 8px rgba(255,214,102,.9); }
+.dotkey b { color: var(--paper); }
+
+/* ---------- SVG diagram panel ---------- */
+
+.diagram {
+  background: #0d1219; border: 1px solid var(--line);
+  border-radius: 12px; padding: 10px;
+}
+.diagram svg { width: 100%; height: auto; display: block; }
+
+/* ---------- ordered step chips ---------- */
+
+.steps { display: flex; flex-wrap: wrap; gap: 8px; }
+.step {
+  background: var(--do-now); color: #2a0d04;
+  font: 800 13px/1 "Segoe UI", sans-serif;
+  padding: 9px 13px; border-radius: 6px; white-space: nowrap;
+}
+.step.warn { background: var(--warn); color: #2a2208; }
+
+/* ---------- callout bars ---------- */
+
+.bar {
+  margin-top: 14px; padding: 13px 16px; border-radius: 9px;
+  font-size: .92rem; line-height: 1.6;
+}
+.bar b { color: #fff; }
+.bar.good { background: #0f1c14; border: 1px solid #235c33; color: #c4e8d1; }
+.bar.bad  { background: #1f1011; border: 1px solid #5c2328; color: #f0c9cc; }
+.bar.warn { background: #1d1806; border: 1px solid #5c4d16; color: #f0e4bd; }
+.bar.key  { background: #2a1008; border: 2px solid var(--do-now); color: #ffd0c4; }
+
+.note {
+  margin-top: 11px; padding: 12px 15px;
+  background: var(--panel2); border: 1px solid var(--line);
+  border-radius: 8px; color: #b6bfcd; font-size: .88rem; line-height: 1.65;
+}
+.note b { color: var(--paper); }
+.note a { color: #6fd3ff; }
+
+/* ---------- numbered step rows ---------- */
+
+.rows { display: grid; gap: 9px; margin-top: 10px; }
+.row {
+  display: grid; grid-template-columns: 30px 1fr; gap: 12px;
+  padding: 12px 14px; background: var(--panel); border-radius: 8px;
+  border-left: 3px solid var(--do-now);
+}
+.row.goal { border-left-color: var(--goal); }
+.row.hub  { border-left-color: var(--hub);  }
+.row.farm { border-left-color: var(--farm); }
+.row.off  { border-left-color: var(--off);  }
+
+.row .num {
+  width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center;
+  font: 800 13px/1 sans-serif; color: #fff; background: var(--do-now);
+}
+.row.goal .num { background: var(--goal); }
+.row.hub  .num { background: var(--hub);  }
+.row.farm .num { background: var(--farm); color: #06222e; }
+.row.off  .num { background: var(--off);  }
+
+.row > div > b { display: block; font-size: .93rem; margin-bottom: 3px; }
+.row span { color: var(--dim); font-size: .87rem; line-height: 1.55; }
+.row span b { display: inline; color: var(--paper); }
+
+/* ---------- colour legend: a row of swatch + label pairs ---------- */
+/* Named .legend, not .key — .key is the highlight modifier on .bar above. */
+
+.legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px;
+          font-size: .87rem; color: #b6bfcd; }
+.legend span { display: flex; align-items: center; gap: 7px; }
+.legend i { width: 15px; height: 15px; border-radius: 50%; display: inline-block; }
+
+/* ---------- tables ---------- */
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: .88rem; }
+td, th { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+th { color: #6f7a8c; font: 700 .72rem/1 "Segoe UI"; letter-spacing: .1em;
+     text-transform: uppercase; }
+td { color: #b6bfcd; }
+td:first-child { color: var(--paper); font-weight: 600; }
+td.good { color: var(--goal); font-weight: 700; }
+td.bad  { color: var(--do-now); font-weight: 700; }
+
+/* ── Site nav, injected by app/nav.js on every page ──────────────────────── */
+.sitenav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  margin: -24px -18px 18px;
+  padding: 0 18px;
+  background: rgba(10, 14, 20, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.sitenav__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+.sitenav a {
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: var(--dim);
+  text-decoration: none;
+  font-size: .85rem;
+  white-space: nowrap;
+}
+.sitenav a:hover { background: var(--panel); color: var(--paper); }
+.sitenav a[aria-current="page"] {
+  background: rgba(47, 159, 237, .16);
+  color: #bfe2ff;
+}
+.sitenav__ext { color: #6f7b8d; }
+.sitenav__ext:hover { color: var(--best); }
+
+/* ── Ascension material tables on build pages ───────────────────────────── */
+.asc { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: .9rem; }
+.asc caption {
+  text-align: left; padding: 0 0 6px;
+  font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dim);
+}
+.asc th, .asc td { padding: .6rem .7rem; text-align: left; vertical-align: top;
+  border-top: 1px solid var(--line); }
+.asc tbody tr:first-child th, .asc tbody tr:first-child td { border-top: 0; }
+.asc th[scope="row"] { font-weight: 600; white-space: nowrap; }
+.asc__qty { color: var(--paper); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.asc td em { display: block; font-style: normal; font-size: .8rem; color: var(--dim); margin-top: 2px; }
+.asc__pin {
+  display: inline-block; margin-left: 6px; padding: 1px 7px;
+  border-radius: 999px; background: rgba(47,159,237,.18); color: #bfe2ff;
+  font-size: .68rem; letter-spacing: .06em; text-transform: uppercase;
+}
+.asc__pin--away { background: rgba(255,176,32,.18); color: var(--best); }
+
+/* Roster portraits on the coverage grid. */
+.ch { position: relative; }
+.ch .por {
+  display: block;
+  width: 46px; height: 46px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  background: var(--panel2);
+  object-fit: contain;
+}
+.ch .por--none { background: var(--panel2); opacity: .5; }

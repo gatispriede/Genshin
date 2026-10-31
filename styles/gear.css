@@ -1,0 +1,109 @@
+/* Gear cards with real icons, for build pages. Icons come from Ambr
+   (gi.yatta.moe) using the icon names in reference/data/*.json:
+     artifacts  https://gi.yatta.moe/assets/UI/reliquary/<icon>.png
+     weapons    https://gi.yatta.moe/assets/UI/<icon>.png             */
+
+.gear {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  margin: 0 0 20px;
+}
+.gear--small { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.gear__card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+.gear__card.is-best { border-left-color: var(--best); }
+.gear__card.is-warn { border-left-color: var(--do-now); }
+
+.gear__card img {
+  width: 64px;
+  height: 64px;
+  flex: none;
+  border-radius: 8px;
+  background: var(--panel2);
+  object-fit: contain;
+}
+.gear__card > div { min-width: 0; }
+/* Name and tag share a line but must be free to wrap, or a long set name
+   and a long tag collide. */
+.gear__card b {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.gear__card p { margin: 0 0 6px; font-size: .86rem; color: var(--dim); }
+.gear__card p:last-child { margin-bottom: 0; color: var(--paper); }
+.gear__card .two,
+.gear__card .four {
+  color: var(--paper);
+  font-size: .82rem;
+  padding-left: 9px;
+  border-left: 2px solid var(--line);
+}
+
+.gear__tag {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--panel2);
+  color: var(--dim);
+  font-size: .68rem;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.gear__tag--best  { background: rgba(255,176,32,.18);  color: var(--best); }
+.gear__tag--cheap { background: rgba(47,159,237,.16);  color: #bfe2ff; }
+.gear__tag--warn  { background: rgba(255,90,60,.18);   color: var(--do-now); }
+
+.gear__own {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(24,165,88,.2);
+  color: #7fe0a8;
+  font-size: .68rem;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* Where a set actually comes from — the question every set list forgets. */
+.gear__card .where {
+  margin-top: 8px;
+  padding-top: 7px;
+  border-top: 1px solid var(--line);
+  font-size: .79rem;
+  color: var(--dim) !important;
+}
+.gear__card .where b { display: inline; color: var(--paper); font-weight: 600; }
+
+/* Inline icons: <span data-set="..."> and <span data-char="..."> */
+.ico { display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; }
+.ico > img {
+  width: 26px; height: 26px; flex: none;
+  border-radius: 6px; background: var(--panel2); object-fit: contain;
+}
+.ico--char > img { border-radius: 50%; }
+
+/* Character portrait beside a page title. */
+.pagechar { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+.pagechar img {
+  width: 76px; height: 76px; flex: none;
+  border-radius: 14px; background: var(--panel); object-fit: contain;
+  border: 1px solid var(--line);
+}
+.pagechar h1 { margin: 0; }

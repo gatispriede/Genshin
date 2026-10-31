@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liyue reputation quests — where each one starts</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .quest{scroll-margin-top:14px;background:var(--panel);border-radius:10px;
+         padding:14px 16px;margin:14px 0;border-left:3px solid var(--line)}
+  .quest.pri{border-left-color:var(--do-now)}
+  .quest.spare{border-left-color:var(--hub)}
+  .quest.done{border-left-color:#3a4a3c;opacity:.5}
+  .quest.done h2{text-decoration:line-through;text-decoration-color:#4a5a66}
+  .quest.done .shots img{filter:grayscale(1) brightness(.6)}
+  .quest header{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+  .quest h2{margin:0;font-size:1.04rem;color:var(--paper);border:0;padding:0}
+  .idx{flex:0 0 34px;height:34px;border-radius:50%;background:#2a3543;
+       color:var(--dim);font-weight:700;display:grid;place-items:center;font-size:.95rem}
+  .pri .idx{background:var(--do-now);color:#1a1008}
+  .done .idx{background:#243229;color:#5e8f70}
+  .qtag{display:inline-block;padding:1px 8px;border-radius:999px;
+        background:#3a2412;color:#ffc48f;font-size:.68rem;letter-spacing:.05em;
+        text-transform:uppercase;white-space:nowrap}
+  .qtag.ok{background:#15321f;color:#7ee2a8}
+  .qtag.sp{background:#15283a;color:#8fc4ff}
+  .meta{margin:3px 0 0;color:var(--dim);font-size:.85rem}
+  .meta b{color:var(--best)}
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+  .shots figure{margin:0}
+  .shots img{width:100%;border-radius:7px;display:block;background:#0e141c}
+  .shots figcaption{color:var(--dim);font-size:.74rem;letter-spacing:.07em;
+                    text-transform:uppercase;margin-top:5px}
+  .more{color:#5d6b7e;font-size:.78rem;margin:8px 0 0}
+  .nomap{color:var(--dim);font-size:.86rem;padding:10px 12px;border-radius:7px;
+         background:#1a222c;border:1px dashed var(--line)}
+  .rnav{margin:10px 0 4px;font-size:.92rem}
+  .rnav a{color:var(--best);text-decoration:none;margin-right:4px}
+  .rnav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Liyue reputation quests — where each one starts</h1>
+<p class="sub">All 57 world quests that pay Reputation EXP, ordered shortest
+first, with 189 map and location shots pulled from the wiki.</p>
+<div class="rnav"><b>Liyue</b> · <a href="inazuma-quest-maps.html">Inazuma</a> · <a href="sumeru-quest-maps.html">Sumeru</a> · <a href="fontaine-quest-maps.html">Fontaine</a></div>
+
+<div class="bar good"><b>Level 6 and the Geo Treasure Compass landed 30 Oct 2026.</b> 44 quests remain here, 13 struck off.<br><br>Next is Level 8 and <b>Wings of Golden Flight</b>, the glider that caps Liyue. From the Level 6 threshold of <b>2,200</b> that is <b>1,020 EXP</b>, about <b>11 quests</b>.<br><br>The 11 marked <i>do this one</i> need <b>59k of dialogue and 55 objectives</b>; the same number taken from the longest would cost <b>260k and 165</b> for identical EXP.<br><br><b>That count is a ceiling.</b> EXP already earned past the threshold, plus exploration milestones and weekly requests, comes off the top.</div>
+
+<div class="bar key">
+  <b>These maps are the wiki's own in-game crops</b>, taken from each quest page
+  and each giver's NPC page — not pins I placed. The white ring marks the spot;
+  the blue teardrop nearby is the waypoint to teleport to.
+</div>
+
+<div class="note">
+  <b>Why there is no single map with every dot on it.</b> The official
+  interactive map's World Quest layer has <b>576 pins, every one of which
+  returns a null name</b>, and the wiki stores no coordinates. A combined map
+  would have been guesswork; these per-quest crops are exact.
+  Full sortable table across all regions:
+  <a href="reputation-quests.html">reputation-quests.html</a>.
+</div>
+<div class="note"><b>3 quests have no location shot anywhere:</b> <i>An Adeptal Summons</i>, <i>Shrouded Vale, Hidden Hero</i>, <i>On the Stage, Behind the Stage</i>. Those cards say so rather than showing a guess.</div>
+
+<article id="q-changchang-s-little-friend" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">1</span>
+    <div>
+      <h2>Changchang's Little Friend</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Changchang</b> · <b>Liyue Harbor</b> · 3 steps · 3.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-changchang.png" alt="Changchang's Little Friend map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-changchang-context.png" alt="Changchang's Little Friend map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-a-provisional-arrangement" class="quest pri" data-area="Wangshu Inn">
+  <header>
+    <span class="idx">2</span>
+    <div>
+      <h2>A Provisional Arrangement</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Huai'an</b> · <b>Wangshu Inn</b> · 3 steps · 3.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-huai-an.png" alt="A Provisional Arrangement map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-huai-an-context.png" alt="A Provisional Arrangement map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-old-tastes-die-hard" class="quest done" data-area="Sea of Clouds">
+  <header>
+    <span class="idx">3</span>
+    <div>
+      <h2>Old Tastes Die Hard</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Mr. Zhu</b> · <b>Sea of Clouds</b> · 4 steps · 3.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/location-emerald-maple-inn.png" alt="Old Tastes Die Hard map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-mr-zhu-context.png" alt="Old Tastes Die Hard map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-hereafter-return-to-the-mountains" class="quest pri" data-area="Lisha">
+  <header>
+    <span class="idx">4</span>
+    <div>
+      <h2>Hereafter: Return to the Mountains</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Wang Ping'an</b> · <b>Lisha</b> · 4 steps · 3.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-starsnatcher.png" alt="Hereafter: Return to the Mountains map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-starsnatcher-context.png" alt="Hereafter: Return to the Mountains map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-perfect-shot" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">5</span>
+    <div>
+      <h2>Perfect Shot</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Ji Tong</b> · <b>Liyue Harbor</b> · 1 step · 5.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-ji-tong.png" alt="Perfect Shot map"><figcaption>Exact spot</figcaption></figure></div>
+</article>
+<article id="q-the-secret-of-nantianmen" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">6</span>
+    <div>
+      <h2>The Secret of Nantianmen</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Jiayi</b> · <b>Liyue Harbor</b> · 4 steps · 4.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-jiayi.png" alt="The Secret of Nantianmen map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-jiayi-context.png" alt="The Secret of Nantianmen map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-book-in-the-woods" class="quest pri" data-area="Wuwang Hill">
+  <header>
+    <span class="idx">7</span>
+    <div>
+      <h2>Book in the Woods</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Little Nine</b> · <b>Wuwang Hill</b> · 5 steps · 4.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-book-in-the-woods-location.png" alt="Book in the Woods map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-book-in-the-woods-location-context.png" alt="Book in the Woods map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-share-not-your-treasures" class="quest pri" data-area="Guili Plains">
+  <header>
+    <span class="idx">8</span>
+    <div>
+      <h2>Share Not Your Treasures</h2>
+      <p class="meta"><span class="qtag">do this one</span> <i>No giver — starts when you arrive</i> · <b>Guili Plains</b> · 7 steps · 3.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-share-not-your-treasures-start-location.png" alt="Share Not Your Treasures map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-share-not-your-treasures-start-location-context.png" alt="Share Not Your Treasures map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-overstretched" class="quest done" data-area="Dihua Marsh">
+  <header>
+    <span class="idx">9</span>
+    <div>
+      <h2>Overstretched</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Qiaoxi</b> · <b>Dihua Marsh</b> · 7 steps · 3.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-qiaoxi.png" alt="Overstretched map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-qiaoxi-context.png" alt="Overstretched map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-snapshots" class="quest pri" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">10</span>
+    <div>
+      <h2>Snapshots</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Granny Shan</b> · <b>Liyue Harbor</b> · 4 steps · 6.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-shan-manager-kuan-yiran.png" alt="Snapshots map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-shan-manager-kuan-yiran-context.png" alt="Snapshots map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-words-worth-their-weight-in-mora" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">11</span>
+    <div>
+      <h2>Words Worth Their Weight in Mora</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Gentry De'an</b> · <b>Liyue Harbor</b> · 5 steps · 5.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-gentry-de-an.png" alt="Words Worth Their Weight in Mora map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-gentry-de-an-context.png" alt="Words Worth Their Weight in Mora map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-the-yaksha-s-wish" class="quest pri" data-area="Minlin">
+  <header>
+    <span class="idx">12</span>
+    <div>
+      <h2>The Yaksha's Wish</h2>
+      <p class="meta"><span class="qtag">do this one</span> <i>No giver — starts when you arrive</i> · <b>Minlin</b> · 12 steps · 1.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-yaksha-s-wish-start-location.png" alt="The Yaksha's Wish map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-yaksha-s-wish-start-location-context.png" alt="The Yaksha's Wish map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-the-adventurers-guild-s-affairs" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">13</span>
+    <div>
+      <h2>The Adventurers' Guild's Affairs</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Lan</b> · <b>Liyue Harbor</b> · 3 steps · 7.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-katheryne-liyue-harbor.png" alt="The Adventurers' Guild's Affairs map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-lan-context.png" alt="The Adventurers' Guild's Affairs map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-tree-who-stands-alone" class="quest pri" data-area="Mingyun Village">
+  <header>
+    <span class="idx">14</span>
+    <div>
+      <h2>The Tree who Stands Alone</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Yuan Hong</b> · <b>Mingyun Village</b> · 4 steps · 7.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/location-lost-notes-house.png" alt="The Tree who Stands Alone map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-tree-who-stands-alone-start-location-context.png" alt="The Tree who Stands Alone map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-says-he-who-seeks-stone" class="quest pri" data-area="The Chasm (Area)">
+  <header>
+    <span class="idx">15</span>
+    <div>
+      <h2>Says He Who Seeks Stone</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Muning</b> · <b>The Chasm (Area)</b> · 2 steps · 8.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-muning.png" alt="Says He Who Seeks Stone map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-muning-context.png" alt="Says He Who Seeks Stone map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-blackcliff-woes" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">16</span>
+    <div>
+      <h2>Blackcliff Woes</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Manager Kuan</b> · <b>Liyue Harbor</b> · 9 steps · 4.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-shan-manager-kuan-yiran.png" alt="Blackcliff Woes map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-shan-manager-kuan-yiran-context.png" alt="Blackcliff Woes map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-fishing-for-jade" class="quest pri" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">17</span>
+    <div>
+      <h2>Fishing For Jade</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Baiwen</b> · <b>Liyue Harbor</b> · 4 steps · 7.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/location-jade-chamber.png" alt="Fishing For Jade map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-kun-context.png" alt="Fishing For Jade map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-what-do-adventurers-do-again" class="quest pri" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">18</span>
+    <div>
+      <h2>...What Do Adventurers Do Again?</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Lan</b> · <b>Liyue Harbor</b> · 5 steps · 6.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-katheryne-liyue-harbor.png" alt="...What Do Adventurers Do Again? map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-lan-context.png" alt="...What Do Adventurers Do Again? map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-big-business" class="quest pri" data-area="Wangshu Inn">
+  <header>
+    <span class="idx">19</span>
+    <div>
+      <h2>Big Business</h2>
+      <p class="meta"><span class="qtag">do this one</span> Talk to <b>Bao'er</b> · <b>Wangshu Inn</b> · 5 steps · 6.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-bao-er.png" alt="Big Business map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-bao-er-context.png" alt="Big Business map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-endless-research" class="quest spare" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">20</span>
+    <div>
+      <h2>Endless Research</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Alrani</b> · <b>Liyue Harbor</b> · 6 steps · 6.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location.png" alt="Endless Research map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-in-another-land-start-location-context.png" alt="Endless Research map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-stolen-by-the-rightful-owner" class="quest spare" data-area="—">
+  <header>
+    <span class="idx">21</span>
+    <div>
+      <h2>Stolen, by the Rightful Owner</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Clitopho</b> · <b>—</b> · 3 steps · 8.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-clitopho.png" alt="Stolen, by the Rightful Owner map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-clitopho-context.png" alt="Stolen, by the Rightful Owner map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-an-ode-to-yonder-city" class="quest spare" data-area="Wangshu Inn">
+  <header>
+    <span class="idx">22</span>
+    <div>
+      <h2>An Ode to Yonder City</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Fan Er'ye</b> · <b>Wangshu Inn</b> · 6 steps · 7.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-fan-er-ye.png" alt="An Ode to Yonder City map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-fan-er-ye-context.png" alt="An Ode to Yonder City map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-no-restoring-this-past-land-of-beauty" class="quest spare" data-area="Mt. Tianheng">
+  <header>
+    <span class="idx">23</span>
+    <div>
+      <h2>No Restoring This Past Land of Beauty</h2>
+      <p class="meta"><span class="qtag sp">spare</span> Talk to <b>Zhiping</b> · <b>Mt. Tianheng</b> · 3 steps · 9.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-zhiping.png" alt="No Restoring This Past Land of Beauty map"><figcaption>Exact spot</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-hereafter-all-is-well" class="quest" data-area="Lisha">
+  <header>
+    <span class="idx">24</span>
+    <div>
+      <h2>Hereafter: All is Well</h2>
+      <p class="meta">Talk to <b>Wang Ping'an</b> · <b>Lisha</b> · 5 steps · 8.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-starsnatcher.png" alt="Hereafter: All is Well map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-starsnatcher-context.png" alt="Hereafter: All is Well map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-tianqiu-treasure-trail" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">25</span>
+    <div>
+      <h2>Tianqiu Treasure Trail</h2>
+      <p class="meta">Talk to <b>Lan</b> · <b>Liyue Harbor</b> · 11 steps · 5.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-katheryne-liyue-harbor.png" alt="Tianqiu Treasure Trail map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-lan-context.png" alt="Tianqiu Treasure Trail map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-and-this-treasure-goes-to" class="quest" data-area="Lingju Pass">
+  <header>
+    <span class="idx">26</span>
+    <div>
+      <h2>And This Treasure Goes To...</h2>
+      <p class="meta">Talk to <b>Alrani</b> · <b>Lingju Pass</b> · 8 steps · 7.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/quest-and-this-treasure-goes-to-location-1.png" alt="And This Treasure Goes To... map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/quest-and-this-treasure-goes-to-location-context-3.png" alt="And This Treasure Goes To... map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">10 more shots on the wiki page.</p>
+</article>
+<article id="q-pressing-deadlines" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">27</span>
+    <div>
+      <h2>Pressing Deadlines</h2>
+      <p class="meta">Talk to <b>Clerk Zhao</b> · <b>Liyue Harbor</b> · 4 steps · 9.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-clerk-zhao-nighttime.png" alt="Pressing Deadlines map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-clerk-zhao-nighttime-context.png" alt="Pressing Deadlines map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-an-adeptal-summons" class="quest" data-area="Mt. Aocang">
+  <header>
+    <span class="idx">28</span>
+    <div>
+      <h2>An Adeptal Summons</h2>
+      <p class="meta">Talk to <b>Xianyun</b> · <b>Mt. Aocang</b> · 10 steps · 7.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Mt. Aocang</b> and look for <b>Xianyun</b>.</div></div>
+</article>
+<article id="q-shrouded-vale-hidden-hero" class="quest" data-area="Mt. Lingmeng">
+  <header>
+    <span class="idx">29</span>
+    <div>
+      <h2>Shrouded Vale, Hidden Hero</h2>
+      <p class="meta"><i>No giver — starts when you arrive</i> · <b>Mt. Lingmeng</b> · 10 steps · 7.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Mt. Lingmeng</b> and look for the quest marker.</div></div>
+</article>
+<article id="q-hereafter-the-trail-of-pervases" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">30</span>
+    <div>
+      <h2>Hereafter: The Trail of Pervases</h2>
+      <p class="meta">Talk to <b>Chef Mao</b> · <b>Liyue Harbor</b> · 8 steps · 9.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-chef-mao.png" alt="Hereafter: The Trail of Pervases map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-chef-mao-context.png" alt="Hereafter: The Trail of Pervases map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-necessary-procedures" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">31</span>
+    <div>
+      <h2>Necessary Procedures</h2>
+      <p class="meta">Talk to <b>Ivanovich</b> · <b>Liyue Harbor</b> · 7 steps · 10.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-ivanovich.png" alt="Necessary Procedures map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-ivanovich-context.png" alt="Necessary Procedures map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-treasure-lost-treasure-found-part-1" class="quest done" data-area="Guili Plains">
+  <header>
+    <span class="idx">32</span>
+    <div>
+      <h2>Treasure Lost, Treasure Found (Part 1)</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Soraya</b> · <b>Guili Plains</b> · 6 steps · 12.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-soraya.png" alt="Treasure Lost, Treasure Found (Part 1) map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-soraya-context.png" alt="Treasure Lost, Treasure Found (Part 1) map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">3 more shots on the wiki page.</p>
+</article>
+<article id="q-luhua-landscape" class="quest" data-area="Luhua Pool">
+  <header>
+    <span class="idx">33</span>
+    <div>
+      <h2>Luhua Landscape</h2>
+      <p class="meta">Talk to <b>Vermeer</b> · <b>Luhua Pool</b> · 14 steps · 8.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-vermeer-2.png" alt="Luhua Landscape map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-vermeer-2-context.png" alt="Luhua Landscape map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">8 more shots on the wiki page.</p>
+</article>
+<article id="q-the-missing-miner" class="quest" data-area="The Chasm: Underground Mines">
+  <header>
+    <span class="idx">34</span>
+    <div>
+      <h2>The Missing Miner</h2>
+      <p class="meta">Talk to <b>Jinwu</b> · <b>The Chasm: Underground Mines</b> · 3 steps · 15.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-jinwu.png" alt="The Missing Miner map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-jinwu-context.png" alt="The Missing Miner map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-a-little-game" class="quest" data-area="Mt. Tianheng">
+  <header>
+    <span class="idx">35</span>
+    <div>
+      <h2>A Little Game</h2>
+      <p class="meta">Talk to <b>Childish Jiang</b> · <b>Mt. Tianheng</b> · 5 steps · 13.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-childish-jiang.png" alt="A Little Game map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-childish-jiang-context.png" alt="A Little Game map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-will-of-stone" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">36</span>
+    <div>
+      <h2>Will of Stone</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Granny Ruoxin</b> · <b>Liyue Harbor</b> · 11 steps · 10.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-jiayi.png" alt="Will of Stone map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-jiayi-context.png" alt="Will of Stone map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-trails-in-tianqiu" class="quest" data-area="Tianqiu Valley">
+  <header>
+    <span class="idx">37</span>
+    <div>
+      <h2>Trails in Tianqiu</h2>
+      <p class="meta"><i>No giver — starts when you arrive</i> · <b>Tianqiu Valley</b> · 21 steps · 5.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-trails-in-tianqiu-start-location.png" alt="Trails in Tianqiu map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-trails-in-tianqiu-start-location-context.png" alt="Trails in Tianqiu map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-dealing-sands" class="quest" data-area="Mt. Mingyuan">
+  <header>
+    <span class="idx">38</span>
+    <div>
+      <h2>The Dealing Sands</h2>
+      <p class="meta">Talk to <b>Hongyu (Chenyu Vale)</b> · <b>Mt. Mingyuan</b> · 8 steps · 13.2k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/the-dealing-sands-start-location.png" alt="The Dealing Sands map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/the-dealing-sands-start-location-context.png" alt="The Dealing Sands map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-nine-pillars-of-peace" class="quest" data-area="Cuijue Slope">
+  <header>
+    <span class="idx">39</span>
+    <div>
+      <h2>Nine Pillars of Peace</h2>
+      <p class="meta">Talk to <b>Bolai</b> · <b>Cuijue Slope</b> · 18 steps · 8.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-bolai.png" alt="Nine Pillars of Peace map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-bolai-context.png" alt="Nine Pillars of Peace map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">3 more shots on the wiki page.</p>
+</article>
+<article id="q-temporary-acclimatization" class="quest" data-area="Chenyu Vale: Upper Vale">
+  <header>
+    <span class="idx">40</span>
+    <div>
+      <h2>Temporary Acclimatization</h2>
+      <p class="meta">Talk to <b>Ms. Qiu</b> · <b>Chenyu Vale: Upper Vale</b> · 8 steps · 15.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-temporary-acclimatization-start-location.png" alt="Temporary Acclimatization map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-temporary-acclimatization-start-location-context.png" alt="Temporary Acclimatization map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-roaming-abode" class="quest" data-area="Teatree Slope">
+  <header>
+    <span class="idx">41</span>
+    <div>
+      <h2>The Roaming Abode</h2>
+      <p class="meta">Talk to <b>Uncle Luo</b> · <b>Teatree Slope</b> · 17 steps · 10.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-roaming-abode-start-location.png" alt="The Roaming Abode map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/world-quest-the-roaming-abode-start-location-context.png" alt="The Roaming Abode map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">2 more shots on the wiki page.</p>
+</article>
+<article id="q-our-chenyu-vale-trek" class="quest" data-area="Yilong Wharf">
+  <header>
+    <span class="idx">42</span>
+    <div>
+      <h2>Our Chenyu Vale Trek</h2>
+      <p class="meta">Talk to <b>Akai</b> · <b>Yilong Wharf</b> · 8 steps · 16.5k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/point-of-interest-hezhe-post-map-location.png" alt="Our Chenyu Vale Trek map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-fangju-context.png" alt="Our Chenyu Vale Trek map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-treasure-lost-treasure-found-part-2" class="quest done" data-area="Guili Plains">
+  <header>
+    <span class="idx">43</span>
+    <div>
+      <h2>Treasure Lost, Treasure Found (Part 2)</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Soraya</b> · <b>Guili Plains</b> · 11 steps · 14.8k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-soraya.png" alt="Treasure Lost, Treasure Found (Part 2) map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-soraya-context.png" alt="Treasure Lost, Treasure Found (Part 2) map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-threefold-expectations" class="quest" data-area="Qiaoying Village">
+  <header>
+    <span class="idx">44</span>
+    <div>
+      <h2>Threefold Expectations</h2>
+      <p class="meta">Talk to <b>Hautemontagne</b> · <b>Qiaoying Village</b> · 10 steps · 16.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-hautemontagne.png" alt="Threefold Expectations map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-hautemontagne-context.png" alt="Threefold Expectations map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-a-quiet-day-in-liyue-harbor" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">45</span>
+    <div>
+      <h2>A Quiet Day in Liyue Harbor</h2>
+      <p class="meta">Talk to <b>Atsuko</b> · <b>Liyue Harbor</b> · 11 steps · 17.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-atsuko.png" alt="A Quiet Day in Liyue Harbor map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-atsuko-context.png" alt="A Quiet Day in Liyue Harbor map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">4 more shots on the wiki page.</p>
+</article>
+<article id="q-qiaoying-the-village-of-many-tales" class="quest" data-area="Qiaoying Village">
+  <header>
+    <span class="idx">46</span>
+    <div>
+      <h2>Qiaoying, the Village of Many Tales</h2>
+      <p class="meta">Talk to <b>Guijarro</b> · <b>Qiaoying Village</b> · 8 steps · 20.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/world-quest-qiaoying-the-village-of-many-tales-start-location.png" alt="Qiaoying, the Village of Many Tales map"><figcaption>Exact spot</figcaption></figure></div>
+</article>
+<article id="q-return-of-the-jade-chamber" class="quest" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">47</span>
+    <div>
+      <h2>Return of the Jade Chamber?</h2>
+      <p class="meta">Talk to <b>Kun</b> · <b>Liyue Harbor</b> · 10 steps · 19.1k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-kun.png" alt="Return of the Jade Chamber? map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-kun-context.png" alt="Return of the Jade Chamber? map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-a-cliff-side-hero-s-past" class="quest" data-area="Cinnabar Cliff">
+  <header>
+    <span class="idx">48</span>
+    <div>
+      <h2>A Cliff-Side Hero's Past</h2>
+      <p class="meta">Talk to <b>Old Chou</b> · <b>Cinnabar Cliff</b> · 9 steps · 19.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-old-chou.png" alt="A Cliff-Side Hero's Past map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-old-chou-context.png" alt="A Cliff-Side Hero's Past map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-millennial-mountains" class="quest" data-area="The Chasm's Maw">
+  <header>
+    <span class="idx">49</span>
+    <div>
+      <h2>The Millennial Mountains</h2>
+      <p class="meta">Talk to <b>Wang</b> · <b>The Chasm's Maw</b> · 12 steps · 18.4k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-wang.png" alt="The Millennial Mountains map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-wang-context.png" alt="The Millennial Mountains map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-chili-con-cloudy" class="quest" data-area="Chenyu Vale: Upper Vale">
+  <header>
+    <span class="idx">50</span>
+    <div>
+      <h2>Chili Con Cloudy</h2>
+      <p class="meta">Talk to <b>Chili Pepper</b> · <b>Chenyu Vale: Upper Vale</b> · 9 steps · 21.0k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-chili-pepper-and-yunyun.png" alt="Chili Con Cloudy map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-chili-pepper-and-yunyun-context.png" alt="Chili Con Cloudy map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">6 more shots on the wiki page.</p>
+</article>
+<article id="q-on-the-stage-behind-the-stage" class="quest done" data-area="Liyue Harbor">
+  <header>
+    <span class="idx">51</span>
+    <div>
+      <h2>On the Stage, Behind the Stage</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Dayu</b> · <b>Liyue Harbor</b> · 11 steps · 20.9k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><div class="nomap">No location shot exists on the wiki for this one, and the official map's quest pins are unnamed — so there is nothing to show that would not be invented. Head for <b>Liyue Harbor</b> and look for <b>Dayu</b>.</div></div>
+</article>
+<article id="q-the-ocean-pearl" class="quest" data-area="Sea of Clouds">
+  <header>
+    <span class="idx">52</span>
+    <div>
+      <h2>The Ocean Pearl</h2>
+      <p class="meta">Talk to <b>Chaoxi</b> · <b>Sea of Clouds</b> · 17 steps · 19.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-chaoxi-sisi.png" alt="The Ocean Pearl map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-chaoxi-sisi-context.png" alt="The Ocean Pearl map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-a-lone-ship-in-guyun" class="quest" data-area="Sea of Clouds">
+  <header>
+    <span class="idx">53</span>
+    <div>
+      <h2>A Lone Ship In Guyun</h2>
+      <p class="meta">Talk to <b>Bolai</b> · <b>Sea of Clouds</b> · 9 steps · 25.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-bolai.png" alt="A Lone Ship In Guyun map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-bolai-context.png" alt="A Lone Ship In Guyun map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">1 more shot on the wiki page.</p>
+</article>
+<article id="q-undetected-infiltration" class="quest" data-area="Tiangong Gorge">
+  <header>
+    <span class="idx">54</span>
+    <div>
+      <h2>Undetected Infiltration</h2>
+      <p class="meta">Talk to <b>Brass Bull Zhao</b> · <b>Tiangong Gorge</b> · 34 steps · 18.3k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/location-undetected-infiltration-start.png" alt="Undetected Infiltration map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/location-undetected-infiltration-start-context.png" alt="Undetected Infiltration map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-the-chi-of-yore" class="quest done" data-area="Qingce Village">
+  <header>
+    <span class="idx">55</span>
+    <div>
+      <h2>The Chi of Yore</h2>
+      <p class="meta"><span class="qtag ok">&#10003; claimed</span> Talk to <b>Granny Ruoxin</b> · <b>Qingce Village</b> · 34 steps · 20.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-ruoxin.png" alt="The Chi of Yore map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-granny-ruoxin-context.png" alt="The Chi of Yore map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">5 more shots on the wiki page.</p>
+</article>
+<article id="q-surreptitious-seven-star-seal-sundering" class="quest" data-area="The Chasm (Area)">
+  <header>
+    <span class="idx">56</span>
+    <div>
+      <h2>Surreptitious Seven-Star Seal Sundering</h2>
+      <p class="meta">Talk to <b>Muning</b> · <b>The Chasm (Area)</b> · 18 steps · 34.6k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-muning.png" alt="Surreptitious Seven-Star Seal Sundering map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-muning-context.png" alt="Surreptitious Seven-Star Seal Sundering map"><figcaption>What you'll see there</figcaption></figure></div>
+</article>
+<article id="q-wherefore-did-the-spiritstone-descend" class="quest" data-area="The Chasm: Underground Mines">
+  <header>
+    <span class="idx">57</span>
+    <div>
+      <h2>Wherefore Did the Spiritstone Descend?</h2>
+      <p class="meta">Talk to <b>Clitopho</b> · <b>The Chasm: Underground Mines</b> · 28 steps · 45.7k dialogue</p>
+    </div>
+  </header>
+  <div class="shots"><figure><img loading="lazy" src="assets/quest-maps/npc-location-clitopho.png" alt="Wherefore Did the Spiritstone Descend? map"><figcaption>Exact spot</figcaption></figure><figure><img loading="lazy" src="assets/quest-maps/npc-location-clitopho-context.png" alt="Wherefore Did the Spiritstone Descend? map"><figcaption>What you'll see there</figcaption></figure></div><p class="more">5 more shots on the wiki page.</p>
+</article>
+
+<div class="note">
+  Regenerate with <code>python -I tools/fetch-quest-maps.py Liyue 0</code> then
+  <code>python -I tools/build-quest-maps-page.py Liyue</code>.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

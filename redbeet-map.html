@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Beet — Everfrozen Earth search zone</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Red Beet — Everfrozen Earth</h1>
+  <p class="sub">Your own map, with the densest reported corridor shaded. The band is
+  <b>approximate</b> — it marks the stretch guides point to, not individual nodes.</p>
+
+  <div class="bar bad">
+    <b>Look for small blue petals, not a red root.</b> The pink-red body is mostly buried in
+    snow; the only thing visible from standing height is a little blue flower. This is
+    almost certainly why you've walked past them.
+  </div>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/everfrozen-earth-map.webp"
+       data-alt="Everfrozen Earth map, Snezhnaya"></div>
+
+  <h2>What the shaded band means</h2>
+  <div class="note">
+    Guides place the densest Red Beet growth <b>between Morepesok and the Inverted Glacier
+    Domain</b>. Morepesok is labelled on your map; the southern end is anchored on the
+    domain icon directly south of it. <b>Confirm that domain's name on your own map</b> —
+    if it isn't Inverted Glacier, shift the band to whichever one is.
+  </div>
+
+  <h2>Where to search</h2>
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>The Morepesok corridor</b>
+      <span>The shaded band. Work <b>south from Morepesok</b> toward the domain, sweeping
+      the flat snow either side of the road. You were out west — move <b>east, then
+      north</b> to get into it.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Okurov</b>
+      <span>Second-densest area. Not visible in this view.</span></div></div>
+    <div class="row"><div class="num">3</div>
+      <div><b>Valley of Fire Feathers</b>
+      <span>About <b>28 beets</b> in clusters — the richest single area. Needs the quest
+      <b><i>In the Abode of Life</i></b> partially completed first.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>100 Red Beets exist across Snezhnaya.</b> Your Everfrozen Earth exploration is
+    <b>23%</b>, so most are still under fog.<br><br>
+    <b>No vendor sells them.</b> Gathering only, plus <b>Permafrost-area Expeditions</b>,
+    which return them passively — set those before you log off.<br><br>
+    <b>Uses:</b> weapon diagrams from Kuzmichev at the Kuznets Smithy, Snezhnograd.
+    <b>Not needed for Goulash</b> — that's 2× Chilled Meat, 2× Carrot, 1× Tomato.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { zone: true, rect: true, x: 37, y: 8, w: 22, h: 40,
+      tag: "Densest reported Red Beet corridor" },
+    { x: 43.5, y: 6.5,  role: "best", size: "sm", label: "N",
+      tag: "Morepesok — north anchor" },
+    { x: 49.8, y: 45.6, role: "best", size: "sm", label: "S",
+      tag: "Domain south of Morepesok — south anchor" },
+    { x: 24.5, y: 49.6, role: "hub",  size: "sm", label: "▲",
+      tag: "You were here — too far west" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

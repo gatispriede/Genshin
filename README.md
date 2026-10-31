@@ -1,0 +1,166 @@
+# Genshin Impact — Account Research
+
+Local research compiled for one specific account (EU). Written for *that*
+account's situation, not generic wiki advice.
+
+---
+
+## Account snapshot
+
+Pulled from the Enka profile API, **2026-10-30**. The figures in brackets are the
+previous HoYoLAB snapshot (2026-10-23) — one week of very fast progress.
+
+| | |
+|---|---|
+| **Adventure Rank** | **45** (was 33 on 23 Oct) |
+| **World Level** | **6** — ascended 31 Oct (was 3) |
+| Achievements | 272 (was 131) |
+| Spiral Abyss | Floor 10, Chamber 3 (was Floor 4) |
+| Characters | 22 |
+| Waypoints unlocked | 127 |
+| Domains unlocked | 15 |
+
+Enka serves Adventure Rank, World Level, achievements and Abyss progress without
+authentication; the character, exploration and chest figures below still come from
+the older HoYoLAB pull and are the stale half of this page.
+
+> **World Level 5 clears the Lv. 60 gate.** Overworld enemies scale with World Level,
+> and in-game screenshots from 2026-10-30 show Lv. 69–70 Saurians — so Tyrant's Fang
+> does drop for this account, confirmed both by the profile and by what was seen in
+> game. At World Level 3 it would not have.
+
+### Collectibles
+
+| Oculi | Count | Chests | Count |
+|---|---|---|---|
+| Geoculus (Liyue) | 28 | Common | 141 |
+| Anemoculus (Mondstadt) | 20 | Exquisite | 138 |
+| Cryoculus | 10 | Precious | 39 |
+| Hydroculus (Fontaine) | 8 | Remarkable | 13 |
+| Pyroculus (Natlan) | 4 | Luxurious | 10 |
+| Electroculus (Inazuma) | **0** | | |
+| Dendroculus (Sumeru) | **0** | | |
+
+### Exploration
+Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
+
+> **What this tells us:** you've touched Mondstadt, Liyue, Fontaine, Natlan and the
+> Cryo region, but never Inazuma or Sumeru. Natlan access is confirmed — so **Blazing
+> Ruins** (Skirk-era talent books) is reachable. Exploration is low everywhere, which
+> means a very large pool of unclaimed one-time Primogems and oculi is still sitting there.
+
+### Milestones ahead
+- ✅ **AR 28 passed** — Serenitea Pot needs only the quest *A New Star Approaches* now
+- ✅ **Trounce Domains** (weekly bosses) are open and unused
+- ✅ **AR 45 reached and World Level 6 ascended (31 Oct 2026).** 5-star artifacts
+  now drop, ley line Mora roughly doubled, and bosses now reach **Lv. 75+** — which
+  is the gate on **top-tier gemstones** (Shivada Jade Gemstone and the rest).
+  Below WL6 only Chunks drop.
+- ⏳ **AR 50 / 55 / 58** — World Levels 7, 8 and 9. WL9 arrived in 5.0 and is the
+  real cap; several guides still say 8.
+- ⏳ **AR 60 is the ceiling.** Past it, Adventure EXP converts to Mora at 1:10.
+
+---
+
+## Documents
+
+| File | Covers |
+|---|---|
+| [`research/01-mora-farming.md`](research/01-mora-farming.md) | Blossoms of Wealth, Ley Line Overflow, resin-free Mora, what not to do |
+| [`research/02-wishes-and-primogems.md`](research/02-wishes-and-primogems.md) | Primogem income, pity maths, free 5-star selectors, pull strategy |
+| [`research/03-character-materials.md`](research/03-character-materials.md) | Full 22-character roster, investment priority, talent domain schedule, gems by element |
+| [`research/04-weapons-and-artifacts.md`](research/04-weapons-and-artifacts.md) | Best 3-star weapons, per-character builds, the AR 45 artifact rule |
+| [`research/05-current-loadouts.md`](research/05-current-loadouts.md) | **Audit of what you're actually running** — equipped weapons, crit stats, what's broken |
+| [`research/06-artifact-plan.md`](research/06-artifact-plan.md) | **Where to get goblets and crit circlets at AR 33** — Blizzard Strayer, Peak of Vindagnyr |
+| [`research/07-ore-farming.md`](research/07-ore-farming.md) | Dense ore routes near waypoints — Mt. Aocang, Mt. Aozang, Brightcrown Canyon |
+| [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, Red Beet and weapon diagrams |
+| [`research/09-artifact-sets.md`](research/09-artifact-sets.md) | **Set bonuses by damage / support / utility**, per-character tier tables, farming order |
+
+### Interactive reference pages
+| File | Covers |
+|---|---|
+| [`starfell-valley-guide.html`](starfell-valley-guide.html) | Annotated Mondstadt map — priority spots, chest zones, waypoints |
+| [`reaction-combos.html`](reaction-combos.html) | Element pair picker — which reaction, what it does, who goes first |
+| [`dragonspine-quest-map.html`](dragonspine-quest-map.html) | Annotated Dragonspine map — the *In the Mountains* route to Peak of Vindagnyr |
+| [`redbeet-map.html`](redbeet-map.html) | Your Everfrozen Earth map with the Red Beet corridor shaded |
+
+**Start at [`index.html`](index.html)** — the hub linking every map, doc and tool.
+
+### Building new pages
+| File | Purpose |
+|---|---|
+| [`docs/AUTHORING.md`](docs/AUTHORING.md) | The recipe — new map page in ~2 minutes |
+| [`styles/map.css`](styles/map.css) | Shared pin / tag / zone / callout styles |
+| [`app/annotate.js`](app/annotate.js) | Render markers from a data array |
+| [`tools/fetch-map.py`](tools/fetch-map.py) | Download a wiki map, print its pixel size |
+| [`tools/serve.cmd`](tools/serve.cmd) | Local server on :8800 (needed for module pages) |
+
+---
+
+## Headline findings
+
+1. **No one has an Elemental DMG goblet.** Every audited character shows 0.0% elemental
+   damage bonus except Skirk. Biggest systemic gap on the account.
+2. **Crit Rate is near-base across the roster** — 7–9% on most characters. Noelle has
+   97.9% Crit DMG at 9.7% Crit Rate, which almost never fires.
+3. **Skirk's weapon substat is dead.** Prototype Rancour gives 25.4% *Physical* DMG, and
+   her kit converts all her attacks to Cryo. Move it to Noelle or Kaeya.
+4. **Talents are Lv 1**, including on Skirk at Lv 57.
+5. **Build Xiangling.** Sitting at **Lv 1**, one of the strongest 4-stars in the game.
+6. **Fischl has 284 ATK** on a Lv 20 Slingshot. Oz scales on her ATK — cheapest big fix.
+7. **Keep Noelle in the exploration party** — your only usable claymore.
+8. **Sunday is talent-book day.** Every book from every region is available.
+9. **Don't farm artifacts until AR 45.** 5-star artifacts don't drop before then.
+
+---
+
+## Time-sensitive
+
+| Deadline | Item |
+|---|---|
+| **2026-11-03** | Free standard 5-star selector expires — needs only a login |
+
+---
+
+## Data sources
+
+**Enka.Network** — public, no credentials:
+```bash
+curl -s "https://enka.network/api/uid/$UID/"
+```
+Returns profile stats, plus full build data (weapon, refinement, artifacts, talents) for
+characters added to the in-game **showcase** with *Show Character Details* enabled.
+Currently the showcase is empty, so only profile stats come back.
+
+**HoYoLAB Battle Chronicle** — read through the logged-in browser session. Gives the full
+roster, levels, constellations, exploration and chest counts. Requires an authenticated
+session; no credential is stored in this repository and none should be.
+
+### Not available from either
+Weapon inventory, material counts, Mora balance. Those need screenshots.
+
+---
+
+## Companion project — live maps
+
+**`D:\Genshin Impact game\guide`** holds a second, smaller site built later. It
+is not a duplicate of this one; the two cover different ground.
+
+| | this project | the guide project |
+|---|---|---|
+| maps | static wiki screenshots, one per quest, showing exact start locations | live, built from the official map API — pan, zoom, click a cluster to clear it |
+| strength | named quests with measured length; builds, puzzles, collectibles | plotting an entire category at once, on real terrain |
+| reputation | `reputation-quests.html` — 172 world quests ranked shortest-first, 147 with maps | compass unlock levels and weeks-to-go only; it defers here for the quest list |
+
+Its `tools/build-map-data.mjs` will draw **any** category the official map
+tracks — oculi, chests, a specific enemy, world quests — onto the real terrain,
+cropping tiles to just the region needed. This project has no equivalent, and
+the official map's world-quest pins are unnamed, so the two complement rather
+than overlap.
+
+Run it with `python -m http.server 5173 --directory .` from that folder.
+
+> **The Natlan farming plan there is valid for this account.** It needs Lv. 60+
+> Saurians, and World Level 5 puts overworld enemies at roughly Lv. 69 — matching
+> the in-game screenshots. Ascending to World Level 6 raises enemy levels further,
+> so it stays valid and drop rates improve; the Lv. 60 gate is never at risk again.

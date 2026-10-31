@@ -1,0 +1,3459 @@
+{
+ "Liyue": [
+  {
+   "name": "A New Star Approaches",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Farewell, Archaic Lord",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Of the Land Amidst Monoliths",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Smiley's Selections",
+   "type": "World",
+   "group": "Request",
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Smiley Yanxiao"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "The Yaksha's Wish",
+   "type": "World",
+   "group": null,
+   "start": "Minlin, Liyue",
+   "area": "Minlin",
+   "subarea": null,
+   "npcs": [],
+   "dlg": 1554,
+   "steps": 12
+  },
+  {
+   "name": "Master Zhang's Metal Mission",
+   "type": "World",
+   "group": "Request",
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Master Zhang"
+   ],
+   "dlg": 1989,
+   "steps": 1
+  },
+  {
+   "name": "Hanfeng's Iron-Mongering",
+   "type": "World",
+   "group": "Request",
+   "start": "Qingce Village, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Qingce Village",
+   "npcs": [
+    "Hanfeng, \"Cold Blade\""
+   ],
+   "dlg": 2137,
+   "steps": 1
+  },
+  {
+   "name": "Let's Make A Flower Garland!",
+   "type": "World",
+   "group": "Request",
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Changchang"
+   ],
+   "dlg": 2233,
+   "steps": 1
+  },
+  {
+   "name": "Changchang's Little Friend",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Changchang"
+   ],
+   "dlg": 3001,
+   "steps": 3
+  },
+  {
+   "name": "Yi Zhu's Snack",
+   "type": "World",
+   "group": "Request",
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Yi Xian",
+    "Yi Zhu"
+   ],
+   "dlg": 3084,
+   "steps": 1
+  },
+  {
+   "name": "Old Tastes Die Hard",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Mr. Zhu"
+   ],
+   "dlg": 3089,
+   "steps": 4
+  },
+  {
+   "name": "Share Not Your Treasures",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [],
+   "dlg": 3620,
+   "steps": 7
+  },
+  {
+   "name": "A Provisional Arrangement",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Huai'an",
+    "Zhen Qiang"
+   ],
+   "dlg": 3656,
+   "steps": 3
+  },
+  {
+   "name": "Hereafter: Return to the Mountains",
+   "type": "World",
+   "group": null,
+   "start": "Lisha, Liyue",
+   "area": "Lisha",
+   "subarea": null,
+   "npcs": [
+    "Wang Ping'an",
+    "Pervases"
+   ],
+   "dlg": 3691,
+   "steps": 4
+  },
+  {
+   "name": "Overstretched",
+   "type": "World",
+   "group": null,
+   "start": "Dihua Marsh, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Dihua Marsh",
+   "npcs": [
+    "Qiaoxi"
+   ],
+   "dlg": 3832,
+   "steps": 7
+  },
+  {
+   "name": "Herbalist's Forage",
+   "type": "World",
+   "group": "Request",
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Herbalist Gui"
+   ],
+   "dlg": 3842,
+   "steps": 1
+  },
+  {
+   "name": "Book in the Woods",
+   "type": "World",
+   "group": null,
+   "start": "Wuwang Hill, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wuwang Hill",
+   "npcs": [
+    "Little Nine"
+   ],
+   "dlg": 4028,
+   "steps": 5
+  },
+  {
+   "name": "The Secret of Nantianmen",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Jiayi"
+   ],
+   "dlg": 4083,
+   "steps": 4
+  },
+  {
+   "name": "Geri's Gastro-Nostalgia",
+   "type": "World",
+   "group": "Request",
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Geri"
+   ],
+   "dlg": 4136,
+   "steps": 1
+  },
+  {
+   "name": "Blackcliff Woes",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Manager Kuan"
+   ],
+   "dlg": 4292,
+   "steps": 9
+  },
+  {
+   "name": "Tianqiu Treasure Trail",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan"
+   ],
+   "dlg": 5112,
+   "steps": 11
+  },
+  {
+   "name": "Trails in Tianqiu",
+   "type": "World",
+   "group": null,
+   "start": "Tianqiu Valley, Liyue",
+   "area": "Minlin",
+   "subarea": "Tianqiu Valley",
+   "npcs": [],
+   "dlg": 5207,
+   "steps": 21
+  },
+  {
+   "name": "Words Worth Their Weight in Mora",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Gentry De'an",
+    "Jifang",
+    "Uncle Tian"
+   ],
+   "dlg": 5696,
+   "steps": 5
+  },
+  {
+   "name": "Perfect Shot",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Ji Tong"
+   ],
+   "dlg": 5718,
+   "steps": 1
+  },
+  {
+   "name": "Snapshots",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Granny Shan",
+    "Tea Master Liu Su",
+    "Xu"
+   ],
+   "dlg": 6216,
+   "steps": 4
+  },
+  {
+   "name": "Endless Research",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Alrani"
+   ],
+   "dlg": 6557,
+   "steps": 6
+  },
+  {
+   "name": "...What Do Adventurers Do Again?",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan",
+    "Tiantian"
+   ],
+   "dlg": 6852,
+   "steps": 5
+  },
+  {
+   "name": "Big Business",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Bao'er",
+    "Landa"
+   ],
+   "dlg": 6865,
+   "steps": 5
+  },
+  {
+   "name": "The Tree who Stands Alone",
+   "type": "World",
+   "group": null,
+   "start": "Mingyun Village, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Mingyun Village",
+   "npcs": [
+    "Yuan Hong",
+    "Yuan Cheng",
+    "Yuan Qing",
+    "Yuan Liang"
+   ],
+   "dlg": 7088,
+   "steps": 4
+  },
+  {
+   "name": "And This Treasure Goes To...",
+   "type": "World",
+   "group": null,
+   "start": "Lingju Pass, Liyue",
+   "area": "Lisha",
+   "subarea": "Lingju Pass",
+   "npcs": [
+    "Alrani"
+   ],
+   "dlg": 7185,
+   "steps": 8
+  },
+  {
+   "name": "An Adeptal Summons",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Aocang, Liyue",
+   "area": "Minlin",
+   "subarea": "Mt. Aocang",
+   "npcs": [
+    "Xianyun"
+   ],
+   "dlg": 7231,
+   "steps": 10
+  },
+  {
+   "name": "Shrouded Vale, Hidden Hero",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Lingmeng, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Mt. Lingmeng",
+   "npcs": [],
+   "dlg": 7345,
+   "steps": 10
+  },
+  {
+   "name": "An Ode to Yonder City",
+   "type": "World",
+   "group": null,
+   "start": "Wangshu Inn, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Wangshu Inn",
+   "npcs": [
+    "Fan Er'ye",
+    "Hao (Liyue Harbor)",
+    "Qingzhou"
+   ],
+   "dlg": 7351,
+   "steps": 6
+  },
+  {
+   "name": "Fishing For Jade",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Baiwen",
+    "Kun"
+   ],
+   "dlg": 7361,
+   "steps": 4
+  },
+  {
+   "name": "The Adventurers' Guild's Affairs",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Lan",
+    "Ash"
+   ],
+   "dlg": 7415,
+   "steps": 3
+  },
+  {
+   "name": "Nine Pillars of Peace",
+   "type": "World",
+   "group": null,
+   "start": "Cuijue Slope, Liyue",
+   "area": "Minlin",
+   "subarea": "Cuijue Slope",
+   "npcs": [
+    "Bolai",
+    "Linlang"
+   ],
+   "dlg": 8093,
+   "steps": 18
+  },
+  {
+   "name": "Hereafter: All is Well",
+   "type": "World",
+   "group": null,
+   "start": "Lisha, Liyue",
+   "area": "Lisha",
+   "subarea": null,
+   "npcs": [
+    "Wang Ping'an"
+   ],
+   "dlg": 8161,
+   "steps": 5
+  },
+  {
+   "name": "Luhua Landscape",
+   "type": "World",
+   "group": null,
+   "start": "Luhua Pool, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Luhua Pool",
+   "npcs": [
+    "Vermeer"
+   ],
+   "dlg": 8276,
+   "steps": 14
+  },
+  {
+   "name": "Says He Who Seeks Stone",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": null,
+   "npcs": [
+    "Muning"
+   ],
+   "dlg": 8387,
+   "steps": 2
+  },
+  {
+   "name": "Stolen, by the Rightful Owner",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Clitopho",
+    "Taliesin"
+   ],
+   "dlg": 8466,
+   "steps": 3
+  },
+  {
+   "name": "Hereafter: The Trail of Pervases",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Chef Mao",
+    "Xiao",
+    "Wang Ping'an"
+   ],
+   "dlg": 9047,
+   "steps": 8
+  },
+  {
+   "name": "No Restoring This Past Land of Beauty",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Tianheng, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Mt. Tianheng",
+   "npcs": [
+    "Zhiping"
+   ],
+   "dlg": 9360,
+   "steps": 3
+  },
+  {
+   "name": "Pressing Deadlines",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Clerk Zhao",
+    "Jiangzhou",
+    "Nervous An"
+   ],
+   "dlg": 9681,
+   "steps": 4
+  },
+  {
+   "name": "Necessary Procedures",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Ivanovich",
+    "Nervous An",
+    "Jiayi",
+    "Clerk Zhao"
+   ],
+   "dlg": 10368,
+   "steps": 7
+  },
+  {
+   "name": "Will of Stone",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Granny Ruoxin",
+    "Jiayi",
+    "Little Liu"
+   ],
+   "dlg": 10668,
+   "steps": 11
+  },
+  {
+   "name": "The Roaming Abode",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Lingmeng, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Teatree Slope",
+   "npcs": [
+    "Uncle Luo",
+    "Xiangjun"
+   ],
+   "dlg": 10820,
+   "steps": 17
+  },
+  {
+   "name": "Treasure Lost, Treasure Found (Part 1)",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [
+    "Soraya"
+   ],
+   "dlg": 12540,
+   "steps": 6
+  },
+  {
+   "name": "The Dealing Sands",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Mingyuan, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Mt. Mingyuan",
+   "npcs": [
+    "Hongyu (Chenyu Vale)",
+    "Iron Chuan'er",
+    "Iron Chui'er",
+    "Iron Dou'er",
+    "Iron Gua'er",
+    "Iron Men'er",
+    "Iron Ming",
+    "Iron Shan'er",
+    "Johnnie",
+    "Lingxiao",
+    "Qingye",
+    "Walker",
+    "Yijun"
+   ],
+   "dlg": 13210,
+   "steps": 8
+  },
+  {
+   "name": "A Little Game",
+   "type": "World",
+   "group": null,
+   "start": "Mt. Tianheng, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Mt. Tianheng",
+   "npcs": [
+    "Childish Jiang"
+   ],
+   "dlg": 13905,
+   "steps": 5
+  },
+  {
+   "name": "Treasure Lost, Treasure Found (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Guili Plains, Liyue",
+   "area": "Qiongji Estuary",
+   "subarea": "Guili Plains",
+   "npcs": [
+    "Soraya"
+   ],
+   "dlg": 14783,
+   "steps": 11
+  },
+  {
+   "name": "The Missing Miner",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm: Underground Mines",
+   "area": "The Chasm: Underground Mines",
+   "subarea": null,
+   "npcs": [
+    "Jinwu",
+    "Khedive",
+    "Tang Wuchou",
+    "Uncle He"
+   ],
+   "dlg": 14972,
+   "steps": 3
+  },
+  {
+   "name": "Temporary Acclimatization",
+   "type": "World",
+   "group": null,
+   "start": "Chenyu Vale: Upper Vale, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": null,
+   "npcs": [
+    "Ms. Qiu",
+    "Woliu",
+    "Xingye",
+    "Yifeng"
+   ],
+   "dlg": 14981,
+   "steps": 8
+  },
+  {
+   "name": "Our Chenyu Vale Trek",
+   "type": "World",
+   "group": null,
+   "start": "Hezhe Post, Yilong Wharf, Chenyu Vale, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Yilong Wharf",
+   "npcs": [
+    "Akai",
+    "Fangju",
+    "Mali",
+    "Mingjing",
+    "Zhuchun"
+   ],
+   "dlg": 16528,
+   "steps": 8
+  },
+  {
+   "name": "Threefold Expectations",
+   "type": "World",
+   "group": null,
+   "start": "Qiaoying Village, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Qiaoying Village",
+   "npcs": [
+    "Hautemontagne",
+    "Uncle Luo"
+   ],
+   "dlg": 16705,
+   "steps": 10
+  },
+  {
+   "name": "A Quiet Day in Liyue Harbor",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Atsuko",
+    "Bolai",
+    "Clerk Zhao",
+    "Freki",
+    "Geri",
+    "Ivanovich",
+    "Manager Kuan",
+    "Nervous An"
+   ],
+   "dlg": 17870,
+   "steps": 11
+  },
+  {
+   "name": "Undetected Infiltration",
+   "type": "World",
+   "group": null,
+   "start": "Tiangong Gorge, The Chasm",
+   "area": "The Chasm (Area)",
+   "subarea": "Tiangong Gorge",
+   "npcs": [
+    "Brass Bull Zhao",
+    "Chen the Flower",
+    "Ivano",
+    "Yanbo"
+   ],
+   "dlg": 18335,
+   "steps": 34
+  },
+  {
+   "name": "The Millennial Mountains",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm's Maw, The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": "The Chasm's Maw",
+   "npcs": [
+    "Wang",
+    "\"The Qingce Kid\""
+   ],
+   "dlg": 18369,
+   "steps": 12
+  },
+  {
+   "name": "Return of the Jade Chamber?",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Kun",
+    "Jifang",
+    "Qingzhou",
+    "Master Lu",
+    "Baiwen"
+   ],
+   "dlg": 19104,
+   "steps": 10
+  },
+  {
+   "name": "The Ocean Pearl",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Chaoxi",
+    "Cui'er",
+    "Guan Hong",
+    "Li the Ninth",
+    "Luo Feng",
+    "Luoxia",
+    "Maksim",
+    "Pinghai",
+    "Qiu'ge",
+    "Sisi"
+   ],
+   "dlg": 19623,
+   "steps": 17
+  },
+  {
+   "name": "A Cliff-Side Hero's Past",
+   "type": "World",
+   "group": null,
+   "start": "Cinnabar Cliff, The Chasm",
+   "area": "The Chasm (Area)",
+   "subarea": "Cinnabar Cliff",
+   "npcs": [
+    "Old Chou",
+    "Tang Wuchou"
+   ],
+   "dlg": 19872,
+   "steps": 9
+  },
+  {
+   "name": "Qiaoying, the Village of Many Tales",
+   "type": "World",
+   "group": null,
+   "start": "Qiaoying Village, Liyue",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": "Qiaoying Village",
+   "npcs": [
+    "Guijarro",
+    "Hung Fan"
+   ],
+   "dlg": 19962,
+   "steps": 8
+  },
+  {
+   "name": "The Chi of Yore",
+   "type": "World",
+   "group": null,
+   "start": "Bishui Plain, Liyue",
+   "area": "Bishui Plain",
+   "subarea": "Qingce Village",
+   "npcs": [
+    "Granny Ruoxin",
+    "Little Liu",
+    "Little Xing",
+    "Little You",
+    "Little Zuo",
+    "Master Lu",
+    "Pops Kai",
+    "Yan'er",
+    "Zhi"
+   ],
+   "dlg": 20657,
+   "steps": 34
+  },
+  {
+   "name": "On the Stage, Behind the Stage",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": "Liyue Harbor",
+   "npcs": [
+    "Dayu",
+    "Fan Er'ye",
+    "Granny Ruoxin",
+    "Master Lu",
+    "Tea Master Liu Su",
+    "Yun Jin"
+   ],
+   "dlg": 20865,
+   "steps": 11
+  },
+  {
+   "name": "Chili Con Cloudy",
+   "type": "World",
+   "group": null,
+   "start": "Chenyu Vale: Upper Vale, Chenyu Vale",
+   "area": "Chenyu Vale: Upper Vale",
+   "subarea": null,
+   "npcs": [
+    "Chili Pepper",
+    "Mingli",
+    "Tusheng",
+    "Wenhua",
+    "Yunyun"
+   ],
+   "dlg": 21026,
+   "steps": 9
+  },
+  {
+   "name": "A Lone Ship In Guyun",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Clouds, Liyue",
+   "area": "Sea of Clouds",
+   "subarea": null,
+   "npcs": [
+    "Bolai",
+    "Changchang",
+    "Furong",
+    "Juza",
+    "Little Yue",
+    "Mora-Grubber",
+    "Sea Drake",
+    "Suling",
+    "Xu Liushi",
+    "Yinxing"
+   ],
+   "dlg": 25574,
+   "steps": 9
+  },
+  {
+   "name": "Surreptitious Seven-Star Seal Sundering",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm, Liyue",
+   "area": "The Chasm (Area)",
+   "subarea": null,
+   "npcs": [
+    "Muning",
+    "Zhiqiong"
+   ],
+   "dlg": 34566,
+   "steps": 18
+  },
+  {
+   "name": "Wherefore Did the Spiritstone Descend?",
+   "type": "World",
+   "group": null,
+   "start": "The Chasm: Underground Mines",
+   "area": "The Chasm: Underground Mines",
+   "subarea": null,
+   "npcs": [
+    "Clitopho",
+    "Jinwu",
+    "Khedive",
+    "Muning",
+    "Taliesin",
+    "Yelan",
+    "Zhiqiong"
+   ],
+   "dlg": 45728,
+   "steps": 28
+  }
+ ],
+ "Inazuma": [
+  {
+   "name": "Automaton Attack",
+   "type": "World",
+   "group": "Request",
+   "start": "Yashiori Island, Inazuma",
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Satou"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Fatuous Farce (Inazuma)",
+   "type": "World",
+   "group": "Request",
+   "start": "Tatarasuna, Inazuma",
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Katayama"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Hilichurl Hullaballoo (Inazuma)",
+   "type": "World",
+   "group": "Request",
+   "start": "Narukami Island, Inazuma",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Furuya Noboru",
+    "Utsumi"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Kairagi Chaos",
+   "type": "World",
+   "group": "Request",
+   "start": "Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Inoue"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Kairagi-Vagrant Pandemonium",
+   "type": "World",
+   "group": "Request",
+   "start": "Yashiori Island, Inazuma",
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Kujou Masahito"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Monster Mayhem",
+   "type": "World",
+   "group": "Request",
+   "start": "Kannazuka, Inazuma",
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Ikuhara Gai"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Omnipresence Over Mortals",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Stillness, the Sublimation of Shadow",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "The Immovable God and the Eternal Euthymia",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Vagrant Havoc",
+   "type": "World",
+   "group": "Request",
+   "start": "Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Amano"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Kozue's Ironwork",
+   "type": "World",
+   "group": "Request",
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Kozue"
+   ],
+   "dlg": 1704,
+   "steps": 1
+  },
+  {
+   "name": "Riku's Eggy Endeavor",
+   "type": "World",
+   "group": "Request",
+   "start": "Grand Narukami Shrine, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Grand Narukami Shrine (Subarea)",
+   "npcs": [
+    "Riku"
+   ],
+   "dlg": 1711,
+   "steps": 1
+  },
+  {
+   "name": "Kanra's Lovesickness",
+   "type": "World",
+   "group": "Request",
+   "start": "Grand Narukami Shrine, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Grand Narukami Shrine (Subarea)",
+   "npcs": [
+    "Kanra"
+   ],
+   "dlg": 1950,
+   "steps": 1
+  },
+  {
+   "name": "Murakami's Meal-Making",
+   "type": "World",
+   "group": "Request",
+   "start": "Amakane Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Amakane Island",
+   "npcs": [
+    "Murakami"
+   ],
+   "dlg": 2036,
+   "steps": 1
+  },
+  {
+   "name": "Sanden's Resource Request",
+   "type": "World",
+   "group": "Request",
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Sanden"
+   ],
+   "dlg": 2039,
+   "steps": 1
+  },
+  {
+   "name": "Matsumoto's Fried Egg Fracas",
+   "type": "World",
+   "group": "Request",
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Matsumoto"
+   ],
+   "dlg": 2183,
+   "steps": 1
+  },
+  {
+   "name": "Kano Nana's Healthy Diet",
+   "type": "World",
+   "group": "Request",
+   "start": "Grand Narukami Shrine, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Grand Narukami Shrine (Subarea)",
+   "npcs": [
+    "Kano Nana"
+   ],
+   "dlg": 2185,
+   "steps": 1
+  },
+  {
+   "name": "Yata Kouki's Order of Ore",
+   "type": "World",
+   "group": "Request",
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Yata Kouki"
+   ],
+   "dlg": 2191,
+   "steps": 1
+  },
+  {
+   "name": "Katheryne in Inazuma",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Katheryne (Inazuma)"
+   ],
+   "dlg": 2489,
+   "steps": 1
+  },
+  {
+   "name": "Orobashi's Legacy: Part V",
+   "type": "World",
+   "group": null,
+   "start": "Fort Fujitou",
+   "area": "Yashiori Island",
+   "subarea": "Fort Fujitou",
+   "npcs": [
+    "Kaji"
+   ],
+   "dlg": 3912,
+   "steps": 4
+  },
+  {
+   "name": "The Ritou Road",
+   "type": "World",
+   "group": null,
+   "start": "Ritou, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Ritou",
+   "npcs": [
+    "Harrison"
+   ],
+   "dlg": 4520,
+   "steps": 8
+  },
+  {
+   "name": "The Art of Horticulture",
+   "type": "World",
+   "group": null,
+   "start": "Kamisato Estate, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Kamisato Estate",
+   "npcs": [
+    "Madame Ping",
+    "Madarame Hyakubei"
+   ],
+   "dlg": 5143,
+   "steps": 2
+  },
+  {
+   "name": "Seirai Stormchasers: Part IV",
+   "type": "World",
+   "group": null,
+   "start": "Seirai Island, Inazuma",
+   "area": "Seirai Island",
+   "subarea": null,
+   "npcs": [
+    "Etsuko",
+    "Taisuke"
+   ],
+   "dlg": 5588,
+   "steps": 12
+  },
+  {
+   "name": "\"Heart of Watatsumi\"",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Tsuyuko"
+   ],
+   "dlg": 6508,
+   "steps": 22
+  },
+  {
+   "name": "Reminiscence of Seirai",
+   "type": "World",
+   "group": null,
+   "start": "Seirai Island, Inazuma",
+   "area": "Seirai Island",
+   "subarea": null,
+   "npcs": [
+    "Furuya Noboru",
+    "Oda Tarou"
+   ],
+   "dlg": 7374,
+   "steps": 4
+  },
+  {
+   "name": "Chisato's Letter",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Hiiragi Chisato",
+    "Kiminami Anna",
+    "Kujou Kamaji",
+    "Sanada"
+   ],
+   "dlg": 7498,
+   "steps": 6
+  },
+  {
+   "name": "Battle of Revenge",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Asakura"
+   ],
+   "dlg": 8198,
+   "steps": 5
+  },
+  {
+   "name": "Gourmet Supremos, Assemble!",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Julie",
+    "Parvaneh",
+    "Xudong"
+   ],
+   "dlg": 9043,
+   "steps": 4
+  },
+  {
+   "name": "The Three Great Martial Trials",
+   "type": "World",
+   "group": null,
+   "start": "Enkanomiya",
+   "area": "Enkanomiya",
+   "subarea": null,
+   "npcs": [
+    "Eboshi"
+   ],
+   "dlg": 9209,
+   "steps": 6
+  },
+  {
+   "name": "Relics of Seirai",
+   "type": "World",
+   "group": null,
+   "start": "Koseki Village, Inazuma",
+   "area": "Seirai Island",
+   "subarea": "Koseki Village",
+   "npcs": [
+    "Fujiwara Toshiko"
+   ],
+   "dlg": 9747,
+   "steps": 38
+  },
+  {
+   "name": "Yae Publishing House's Invitation",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Aratani",
+    "Chang the Ninth",
+    "Xingqiu"
+   ],
+   "dlg": 10226,
+   "steps": 4
+  },
+  {
+   "name": "Collection of Dragons and Snakes",
+   "type": "World",
+   "group": null,
+   "start": "The Narrows, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "The Narrows",
+   "npcs": [
+    "Ema"
+   ],
+   "dlg": 10427,
+   "steps": 5
+  },
+  {
+   "name": "Fate of a Fighter",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Inaba Kyuuzou"
+   ],
+   "dlg": 10482,
+   "steps": 11
+  },
+  {
+   "name": "Storytelling Method",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Junkichi",
+    "Shigeru"
+   ],
+   "dlg": 10788,
+   "steps": 8
+  },
+  {
+   "name": "O Archon, Have I Done Right?",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Kouichi",
+    "Shouta",
+    "Yayoi Nanatsuki"
+   ],
+   "dlg": 10819,
+   "steps": 6
+  },
+  {
+   "name": "The Narukami Trail",
+   "type": "World",
+   "group": null,
+   "start": "Asase Shrine, Inazuma",
+   "area": "Seirai Island",
+   "subarea": "Asase Shrine",
+   "npcs": [
+    "Inagi Hotomi",
+    "Neko"
+   ],
+   "dlg": 10925,
+   "steps": 6
+  },
+  {
+   "name": "Treatment on the Island",
+   "type": "World",
+   "group": null,
+   "start": "Yashiori Island, Inazuma",
+   "area": "Yashiori Island",
+   "subarea": null,
+   "npcs": [
+    "Yasumoto"
+   ],
+   "dlg": 11023,
+   "steps": 16
+  },
+  {
+   "name": "The Still Water's Flow",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Tsuyuko"
+   ],
+   "dlg": 11469,
+   "steps": 15
+  },
+  {
+   "name": "International Travel Log",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Heihachi",
+    "Kozue",
+    "Midori",
+    "Ramsay"
+   ],
+   "dlg": 11912,
+   "steps": 14
+  },
+  {
+   "name": "The Gourmet Supremos: On the Road",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Xudong",
+    "Parvaneh",
+    "Julie",
+    "Kamei Munehisa"
+   ],
+   "dlg": 12030,
+   "steps": 6
+  },
+  {
+   "name": "Home Lies Over the Ocean",
+   "type": "World",
+   "group": null,
+   "start": "Liyue Harbor, Liyue",
+   "area": "Narukami Island",
+   "subarea": null,
+   "npcs": [
+    "Atsuko",
+    "Atsuko (Bake-Danuki)",
+    "Michiru",
+    "Yoh"
+   ],
+   "dlg": 12079,
+   "steps": 5
+  },
+  {
+   "name": "\"The Seventh Samurai\"",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Toranosuke",
+    "Xavier"
+   ],
+   "dlg": 13404,
+   "steps": 6
+  },
+  {
+   "name": "The Saga of Mr. Forgetful",
+   "type": "World",
+   "group": null,
+   "start": "Tsurumi Island, Inazuma",
+   "area": "Tsurumi Island",
+   "subarea": null,
+   "npcs": [
+    "Roald"
+   ],
+   "dlg": 14489,
+   "steps": 5
+  },
+  {
+   "name": "Lotus Eater",
+   "type": "World",
+   "group": null,
+   "start": "The Serpent's Heart, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "The Serpent's Heart",
+   "npcs": [
+    "Adonis",
+    "Supada no Hiko"
+   ],
+   "dlg": 14913,
+   "steps": 20
+  },
+  {
+   "name": "Fertilizer... Salesperson?",
+   "type": "World",
+   "group": null,
+   "start": "Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Bourou Village",
+   "npcs": [
+    "Alrani",
+    "Gorou",
+    "Hiroyuki",
+    "Iwata",
+    "Kaushik",
+    "Ookubo Daisuke"
+   ],
+   "dlg": 15012,
+   "steps": 10
+  },
+  {
+   "name": "Divine Plant of the Depths",
+   "type": "World",
+   "group": null,
+   "start": "Bourou Village, Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Bourou Village",
+   "npcs": [
+    "Komaki"
+   ],
+   "dlg": 15515,
+   "steps": 11
+  },
+  {
+   "name": "Sakura Arborism",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Hideaki",
+    "Miyuki"
+   ],
+   "dlg": 15747,
+   "steps": 13
+  },
+  {
+   "name": "The Phaethons' Syrtos",
+   "type": "World",
+   "group": null,
+   "start": "Evernight Temple, Enkanomiya, Inazuma",
+   "area": "Enkanomiya",
+   "subarea": "Evernight Temple",
+   "npcs": [
+    "Clymene"
+   ],
+   "dlg": 16637,
+   "steps": 7
+  },
+  {
+   "name": "Tatara Tales: The Last Act",
+   "type": "World",
+   "group": null,
+   "start": "Tatarasuna, Inazuma",
+   "area": "Kannazuka",
+   "subarea": "Tatarasuna",
+   "npcs": [
+    "Toranosuke",
+    "Xavier"
+   ],
+   "dlg": 17127,
+   "steps": 22
+  },
+  {
+   "name": "In Another Land",
+   "type": "World",
+   "group": null,
+   "start": "Ritou, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Ritou",
+   "npcs": [
+    "Alrani",
+    "Kaede",
+    "Obata",
+    "Vahid"
+   ],
+   "dlg": 17428,
+   "steps": 6
+  },
+  {
+   "name": "Clean House",
+   "type": "World",
+   "group": null,
+   "start": "Sangonomiya Shrine, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": "Sangonomiya Shrine",
+   "npcs": [
+    "Borenka",
+    "Brutish Samurai",
+    "Shizuru"
+   ],
+   "dlg": 19326,
+   "steps": 13
+  },
+  {
+   "name": "The Gourmet Supremos: The Importance of Eating Well",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Julie",
+    "Kamei Munehisa",
+    "Parvaneh",
+    "Xudong"
+   ],
+   "dlg": 20653,
+   "steps": 15
+  },
+  {
+   "name": "Yougou Cleansing",
+   "type": "World",
+   "group": null,
+   "start": "Konda Village, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Konda Village",
+   "npcs": [
+    "Hanachirusato"
+   ],
+   "dlg": 21765,
+   "steps": 6
+  },
+  {
+   "name": "Hiromi's Watch",
+   "type": "World",
+   "group": null,
+   "start": "Inazuma City, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Inazuma City",
+   "npcs": [
+    "Hiromi",
+    "Shun",
+    "Little Que'er",
+    "Sun Yu",
+    "Yan'er"
+   ],
+   "dlg": 23213,
+   "steps": 8
+  },
+  {
+   "name": "Dreams of Sword Art",
+   "type": "World",
+   "group": null,
+   "start": "Kannazuka, Inazuma",
+   "area": "Kannazuka",
+   "subarea": null,
+   "npcs": [
+    "Ishikawa",
+    "Kujou Masahito",
+    "Matsudaira",
+    "Nameless"
+   ],
+   "dlg": 24497,
+   "steps": 34
+  },
+  {
+   "name": "Solitary Sea-Beast",
+   "type": "World",
+   "group": null,
+   "start": "Watatsumi Island, Inazuma",
+   "area": "Watatsumi Island",
+   "subarea": null,
+   "npcs": [
+    "Anisa",
+    "Kumi"
+   ],
+   "dlg": 25294,
+   "steps": 14
+  },
+  {
+   "name": "The Farmer's Treasure",
+   "type": "World",
+   "group": null,
+   "start": "Jinren Island, Narukami Island, Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Jinren Island",
+   "npcs": [
+    "Saimon Eri",
+    "Saimon Jirou",
+    "Saimon Katsumi"
+   ],
+   "dlg": 25583,
+   "steps": 36
+  },
+  {
+   "name": "Gazing Three Thousand Miles Away",
+   "type": "World",
+   "group": null,
+   "start": "Jakotsu Mine, Yashiori Island",
+   "area": "Yashiori Island",
+   "subarea": "Jakotsu Mine",
+   "npcs": [
+    "Chouji"
+   ],
+   "dlg": 33036,
+   "steps": 14
+  },
+  {
+   "name": "The Subterranean Trials of Drake and Serpent",
+   "type": "World",
+   "group": null,
+   "start": "Enkanomiya",
+   "area": "Enkanomiya",
+   "subarea": null,
+   "npcs": [
+    "Aru",
+    "Enjou",
+    "Tsuyuko"
+   ],
+   "dlg": 36640,
+   "steps": 29
+  },
+  {
+   "name": "The Sun-Wheel and Mt. Kanna",
+   "type": "World",
+   "group": null,
+   "start": "Tsurumi Island, Inazuma",
+   "area": "Tsurumi Island",
+   "subarea": null,
+   "npcs": [
+    "Kama",
+    "Kapatcir",
+    "Ruu",
+    "Sumida"
+   ],
+   "dlg": 50506,
+   "steps": 46
+  }
+ ],
+ "Sumeru": [
+  {
+   "name": "A Short Encounter with a Rare Bird",
+   "type": "World",
+   "group": null,
+   "start": "Ashavan Realm, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": null,
+   "npcs": [
+    "Ferit",
+    "Pamuk",
+    "Shefket",
+    "Orhan"
+   ],
+   "dlg": 0,
+   "steps": 13
+  },
+  {
+   "name": "Akasha Pulses, the Kalpa Flame Rises",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "An Unwavering Culinary Dream",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Dreams, Emptiness, Deception",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Eremite Mayhem",
+   "type": "World",
+   "group": "Request",
+   "start": "Ardravi Valley, Sumeru",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Araby",
+    "Tanamart",
+    "Arshia"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Fatuous Farce (Sumeru)",
+   "type": "World",
+   "group": "Request",
+   "start": "Avidya Forest, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": null,
+   "npcs": [
+    "Shams"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Fungal Fracas",
+   "type": "World",
+   "group": "Request",
+   "start": "Ardravi Valley, Sumeru",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Hawad",
+    "Pam",
+    "Kira (Sumeru)"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Hilichurl Hullaballoo (Sumeru)",
+   "type": "World",
+   "group": "Request",
+   "start": "Ashavan Realm, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": null,
+   "npcs": [
+    "Yinjie"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "King Deshret and the Three Magi",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Ruin Drake Maelstrom (Sumeru)",
+   "type": "World",
+   "group": "Request",
+   "start": "Vissudha Field, Sumeru",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Armin",
+    "Baharak"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "The Morn a Thousand Roses Brings",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Through Mists of Smoke and Forests Dark",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Vimana Agama",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Arayesh's Jam",
+   "type": "World",
+   "group": "Request",
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Arayesh"
+   ],
+   "dlg": 1421,
+   "steps": 1
+  },
+  {
+   "name": "Jahan's Sugar",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Jahan"
+   ],
+   "dlg": 1462,
+   "steps": 1
+  },
+  {
+   "name": "Kourosh's Sumeru Roses",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Kourosh"
+   ],
+   "dlg": 1560,
+   "steps": 1
+  },
+  {
+   "name": "Dwarkanath's White Iron Chunks",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Dwarkanath"
+   ],
+   "dlg": 1654,
+   "steps": 2
+  },
+  {
+   "name": "Kamla's Berries",
+   "type": "World",
+   "group": "Request",
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Kamla"
+   ],
+   "dlg": 1657,
+   "steps": 1
+  },
+  {
+   "name": "Amir's Raw Meat Commission",
+   "type": "World",
+   "group": "Request",
+   "start": "Gandharva Ville, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Gandharva Ville",
+   "npcs": [
+    "Amir"
+   ],
+   "dlg": 1913,
+   "steps": 1
+  },
+  {
+   "name": "Housein's Harra Fruits",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Housein"
+   ],
+   "dlg": 1925,
+   "steps": 1
+  },
+  {
+   "name": "Yavanani's Apples",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Yavanani"
+   ],
+   "dlg": 1930,
+   "steps": 1
+  },
+  {
+   "name": "Arina's Nilotpala Lotuses",
+   "type": "World",
+   "group": "Request",
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Arina"
+   ],
+   "dlg": 2008,
+   "steps": 1
+  },
+  {
+   "name": "Peseng's Zaytun Peaches",
+   "type": "World",
+   "group": "Request",
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Peseng"
+   ],
+   "dlg": 2150,
+   "steps": 1
+  },
+  {
+   "name": "Adventure Takes Courage! (World Quest)",
+   "type": "World",
+   "group": null,
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Katheryne (Sumeru)"
+   ],
+   "dlg": 2892,
+   "steps": 1
+  },
+  {
+   "name": "Memory's Final Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Mawtiyima Forest, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": "Mawtiyima Forest",
+   "npcs": [
+    "Khayyam",
+    "Aragaru",
+    "Aranaga",
+    "Aranakin"
+   ],
+   "dlg": 4917,
+   "steps": 3
+  },
+  {
+   "name": "Vimana Agama: Dev Delver Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Devantaka Mountain, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Devantaka Mountain",
+   "npcs": [
+    "Ararycan"
+   ],
+   "dlg": 6631,
+   "steps": 21
+  },
+  {
+   "name": "A Delicacy for Nara",
+   "type": "World",
+   "group": null,
+   "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+   "area": "Vanarana (Area)",
+   "subarea": "Vanarana (Subarea)",
+   "npcs": [
+    "Arachatora",
+    "Arapacati",
+    "Arapas",
+    "Araphala",
+    "Arasaka"
+   ],
+   "dlg": 7498,
+   "steps": 1
+  },
+  {
+   "name": "Blooming Sands",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Azalai",
+    "Raef",
+    "Nermin"
+   ],
+   "dlg": 8458,
+   "steps": 6
+  },
+  {
+   "name": "Even Beasts Stumble",
+   "type": "World",
+   "group": null,
+   "start": "Yasna Monument, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": "Yasna Monument",
+   "npcs": [
+    "Elber"
+   ],
+   "dlg": 8720,
+   "steps": 7
+  },
+  {
+   "name": "For a Dream I Tarry",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Javi",
+    "Ami"
+   ],
+   "dlg": 8962,
+   "steps": 5
+  },
+  {
+   "name": "Treasure of Wisdom: A New Plan",
+   "type": "World",
+   "group": null,
+   "start": "Sumeru City, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Drusus"
+   ],
+   "dlg": 9511,
+   "steps": 2
+  },
+  {
+   "name": "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"",
+   "type": "World",
+   "group": null,
+   "start": "Land of Grounded Dreams, Sumeru",
+   "area": "Lost Nursery",
+   "subarea": "Old Vanarana",
+   "npcs": [
+    "Arana",
+    "Rana"
+   ],
+   "dlg": 11580,
+   "steps": 3
+  },
+  {
+   "name": "Static Views, Part 2",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Araminali",
+    "Aranimba"
+   ],
+   "dlg": 12686,
+   "steps": 16
+  },
+  {
+   "name": "Cost-Effective Hook",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Helbet",
+    "Kayvan"
+   ],
+   "dlg": 12983,
+   "steps": 12
+  },
+  {
+   "name": "Purbiruni's Commandment",
+   "type": "World",
+   "group": null,
+   "start": "The Akademiya, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Dara",
+    "Hawa",
+    "Iris (Sumeru City)",
+    "Khedive",
+    "Sadife"
+   ],
+   "dlg": 13098,
+   "steps": 8
+  },
+  {
+   "name": "Where Are the Fierce Creatures?",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Santon",
+    "Najib",
+    "Anaya",
+    "Hong"
+   ],
+   "dlg": 13345,
+   "steps": 9
+  },
+  {
+   "name": "The Path of Papers",
+   "type": "World",
+   "group": null,
+   "start": "The Akademiya, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Alrani",
+    "Gobley",
+    "Narzam",
+    "Niloofar"
+   ],
+   "dlg": 13722,
+   "steps": 6
+  },
+  {
+   "name": "Afratu's Dilemma",
+   "type": "World",
+   "group": null,
+   "start": "Valley of Dahri, Sumeru",
+   "area": "Land of Upper Setekh",
+   "subarea": "Valley of Dahri",
+   "npcs": [
+    "Afratu"
+   ],
+   "dlg": 14428,
+   "steps": 17
+  },
+  {
+   "name": "Courage Is in the Heart",
+   "type": "World",
+   "group": null,
+   "start": "Lokapala Jungle, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": null,
+   "npcs": [
+    "Arashakun"
+   ],
+   "dlg": 14441,
+   "steps": 18
+  },
+  {
+   "name": "The Price",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Alexandra",
+    "Berat",
+    "Nika",
+    "Przheva"
+   ],
+   "dlg": 15960,
+   "steps": 9
+  },
+  {
+   "name": "Join the Eremites and Embrace a Wonderful New Life!",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Atiyah",
+    "Ayten",
+    "Fodil",
+    "Karima",
+    "Sania"
+   ],
+   "dlg": 16034,
+   "steps": 10
+  },
+  {
+   "name": "Soheil's Wish",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Soheil",
+    "Hulwani"
+   ],
+   "dlg": 16311,
+   "steps": 3
+  },
+  {
+   "name": "The Hymn of Tir Yazad (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Tunigi Hollow, Sumeru",
+   "area": "Gavireh Lajavard",
+   "subarea": "Tunigi Hollow",
+   "npcs": [
+    "Katheryne (Sumeru)",
+    "Mihir",
+    "Rashnu",
+    "Sorush",
+    "Zurvan"
+   ],
+   "dlg": 17150,
+   "steps": 16
+  },
+  {
+   "name": "A Prayer for Rain on the Fecund Land",
+   "type": "World",
+   "group": null,
+   "start": "Apam Woods, Sumeru",
+   "area": "Ashavan Realm",
+   "subarea": "Apam Woods",
+   "npcs": [
+    "Arabalika",
+    "Arakunti",
+    "Aranakula",
+    "Arapandu"
+   ],
+   "dlg": 17618,
+   "steps": 11
+  },
+  {
+   "name": "The Foolish Fatuus",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Ashavan Realm",
+   "subarea": "Yasna Monument",
+   "npcs": [
+    "Kasim",
+    "Oleg",
+    "Rukh Shah"
+   ],
+   "dlg": 19323,
+   "steps": 22
+  },
+  {
+   "name": "Garcia's Paean: A Gift of Compatibility",
+   "type": "World",
+   "group": null,
+   "start": "Treasures Street, Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "npcs": [
+    "Garcia",
+    "Lutong",
+    "Ahangar",
+    "Sheikh Zubayr",
+    "Kaia"
+   ],
+   "dlg": 22019,
+   "steps": 5
+  },
+  {
+   "name": "The Eternal Dream, Ever Lush",
+   "type": "World",
+   "group": null,
+   "start": "The Orchard of Pairidaeza, Desert of Hadramaveth, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": "Mt. Damavand",
+   "npcs": [
+    "Babel",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 25416,
+   "steps": 12
+  },
+  {
+   "name": "The Final Chapter",
+   "type": "World",
+   "group": null,
+   "start": "Mawtiyima Forest, Sumeru",
+   "area": "Lokapala Jungle",
+   "subarea": "Mawtiyima Forest",
+   "npcs": [
+    "Aragaru",
+    "Aranaga",
+    "Aranakin"
+   ],
+   "dlg": 25511,
+   "steps": 33
+  },
+  {
+   "name": "Until Vana is Healed",
+   "type": "World",
+   "group": null,
+   "start": "Ardravi Valley, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": null,
+   "npcs": [
+    "Ararycan",
+    "Jazari"
+   ],
+   "dlg": 26000,
+   "steps": 29
+  },
+  {
+   "name": "Dual Evidence",
+   "type": "World",
+   "group": null,
+   "start": "Aaru Village, Sumeru",
+   "area": "Land of Lower Setekh",
+   "subarea": "Aaru Village",
+   "npcs": [
+    "Kalantari",
+    "Soheil",
+    "Hulwani"
+   ],
+   "dlg": 29732,
+   "steps": 15
+  },
+  {
+   "name": "Dune-Entombed Fecundity: Part III",
+   "type": "World",
+   "group": null,
+   "start": "Desert of Hadramaveth, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": null,
+   "npcs": [
+    "Aderfi",
+    "Azariq",
+    "Ferigees",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 31005,
+   "steps": 42
+  },
+  {
+   "name": "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars",
+   "type": "World",
+   "group": null,
+   "start": "Treasures Street, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": null,
+   "npcs": [
+    "Aderfi",
+    "Babel",
+    "Hugeweh",
+    "Jeht",
+    "Katheryne (Sumeru)",
+    "Masseira",
+    "Mendas",
+    "Yuften"
+   ],
+   "dlg": 31106,
+   "steps": 14
+  },
+  {
+   "name": "Gourmet Supremos: Within Our Duties",
+   "type": "World",
+   "group": null,
+   "start": "Port Ormos, Sumeru",
+   "area": "Ardravi Valley",
+   "subarea": "Port Ormos",
+   "npcs": [
+    "Farzah",
+    "Julie",
+    "Kamal",
+    "Kamei Munehisa",
+    "Maryam",
+    "Nabati",
+    "Neriman",
+    "Nète",
+    "Parvaneh",
+    "Shevirme",
+    "Xudong",
+    "Yunus"
+   ],
+   "dlg": 38207,
+   "steps": 24
+  },
+  {
+   "name": "Dreams Beneath the Searing Sand",
+   "type": "World",
+   "group": null,
+   "start": "Sobek Oasis, Sumeru",
+   "area": "Hypostyle Desert",
+   "subarea": "Sobek Oasis",
+   "npcs": [
+    "Bonifaz",
+    "Tirzad",
+    "Jeht",
+    "Jebrael",
+    "Nachtigal",
+    "Benben",
+    "Samail",
+    "Mirsad",
+    "Omid",
+    "\"Cyrus\""
+   ],
+   "dlg": 57423,
+   "steps": 40
+  },
+  {
+   "name": "The Temple Where Sand Flows Like Tears",
+   "type": "World",
+   "group": null,
+   "start": "The Temples Forsaken, Sumeru",
+   "area": "Desert of Hadramaveth",
+   "subarea": "Safhe Shatranj",
+   "npcs": [
+    "Azariq",
+    "Babel",
+    "Jeht",
+    "Liloupar"
+   ],
+   "dlg": 63302,
+   "steps": 47
+  }
+ ],
+ "Fontaine": [
+  {
+   "name": "As Light Rain Falls Without Reason",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Cataclysm's Quickening",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Crabby Chaos",
+   "type": "World",
+   "group": "Request",
+   "start": "Belleau Region, Fontaine",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Wei Xiaobao",
+    "Hubel"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Hydro Phantasm Havoc",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Lectoure"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "Masquerade of the Guilty",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Meka Mess",
+   "type": "World",
+   "group": "Request",
+   "start": "Beryl Region, Fontaine",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Arouet",
+    "Augereau",
+    "Chatelet",
+    "Liath"
+   ],
+   "dlg": 0,
+   "steps": 2
+  },
+  {
+   "name": "Prelude of Blancheur and Noirceur",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Ruin Drake Maelstrom (Fontaine)",
+   "type": "World",
+   "group": "Request",
+   "start": "Beryl Region, Fontaine",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Ophelia"
+   ],
+   "dlg": 0,
+   "steps": 1
+  },
+  {
+   "name": "To the Stars Shining in the Depths",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Paban's Milk Run",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Paban"
+   ],
+   "dlg": 1387,
+   "steps": 1
+  },
+  {
+   "name": "Muirne's Better Butter",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Muirne"
+   ],
+   "dlg": 1435,
+   "steps": 1
+  },
+  {
+   "name": "Bruneau's Flower Request",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Bruneau"
+   ],
+   "dlg": 1444,
+   "steps": 1
+  },
+  {
+   "name": "Sylvie's Beryl Conch Commission",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Sylvie"
+   ],
+   "dlg": 1595,
+   "steps": 1
+  },
+  {
+   "name": "Galathee's Salt Solicitation",
+   "type": "World",
+   "group": "Request",
+   "start": "Romaritime Harbor, Fontaine",
+   "area": "Belleau Region",
+   "subarea": "Romaritime Harbor",
+   "npcs": [
+    "Galathee"
+   ],
+   "dlg": 1613,
+   "steps": 1
+  },
+  {
+   "name": "Etienne's Raw Meat Request",
+   "type": "World",
+   "group": "Request",
+   "start": "Romaritime Harbor, Fontaine",
+   "area": "Belleau Region",
+   "subarea": "Romaritime Harbor",
+   "npcs": [
+    "Etienne",
+    "Baguette"
+   ],
+   "dlg": 1641,
+   "steps": 1
+  },
+  {
+   "name": "Pruniere's White Iron Impetration",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Pruniere"
+   ],
+   "dlg": 1702,
+   "steps": 1
+  },
+  {
+   "name": "Another Horizon of Adventure",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Quartier Lyonnais, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Katheryne (Fontaine)"
+   ],
+   "dlg": 2000,
+   "steps": 1
+  },
+  {
+   "name": "Ismenor's Bulle Fruit Bulletin",
+   "type": "World",
+   "group": "Request",
+   "start": "Court of Fontaine: Vasari Passage, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Ismenor"
+   ],
+   "dlg": 2180,
+   "steps": 1
+  },
+  {
+   "name": "Strange Stone Chronicle (Part 2)",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village;\"A Very Bright Place\"",
+   "npcs": [
+    "Chesil",
+    "Puca"
+   ],
+   "dlg": 3606,
+   "steps": 3
+  },
+  {
+   "name": "Fishing Game",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Iara"
+   ],
+   "dlg": 7523,
+   "steps": 3
+  },
+  {
+   "name": "Were It So Easy",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Beryl Region, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Cosanzeana"
+   ],
+   "dlg": 7561,
+   "steps": 6
+  },
+  {
+   "name": "Leroy: Beautiful Friends",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Vasari Passage, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Autumn",
+    "Athos (Fontaine)",
+    "Molli"
+   ],
+   "dlg": 9217,
+   "steps": 1
+  },
+  {
+   "name": "Danger Lurks Everywhere in Fontaine",
+   "type": "World",
+   "group": null,
+   "start": "Marcotte Station, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Marcotte Station",
+   "npcs": [
+    "Arouet",
+    "Guijarro"
+   ],
+   "dlg": 10509,
+   "steps": 6
+  },
+  {
+   "name": "Within the Depths of Erinnyes",
+   "type": "World",
+   "group": null,
+   "start": "Marcotte Station, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Marcotte Station",
+   "npcs": [
+    "Keratry",
+    "Pahsiv",
+    "Remaudiere"
+   ],
+   "dlg": 10627,
+   "steps": 14
+  },
+  {
+   "name": "In Search of Lost Time",
+   "type": "World",
+   "group": null,
+   "start": "New Fontaine Research Institute, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute",
+   "npcs": [
+    "Broglie",
+    "Malinovskyi"
+   ],
+   "dlg": 10861,
+   "steps": 12
+  },
+  {
+   "name": "Our Purpose Is in Another Canal",
+   "type": "World",
+   "group": null,
+   "start": "Liffey Region, Fontaine",
+   "area": "Liffey Region",
+   "subarea": null,
+   "npcs": [
+    "Aigouy",
+    "Balent"
+   ],
+   "dlg": 11509,
+   "steps": 10
+  },
+  {
+   "name": "A Certain Trifle",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Cornelia",
+    "Estelle",
+    "Iaune",
+    "Roialte",
+    "Semaine"
+   ],
+   "dlg": 11724,
+   "steps": 8
+  },
+  {
+   "name": "The Fountain Flows Again",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Edel",
+    "Estelle",
+    "Keratry",
+    "Remaudiere"
+   ],
+   "dlg": 11744,
+   "steps": 5
+  },
+  {
+   "name": "Happy Birthday",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Caterpillar",
+    "Charlene",
+    "Earnshaw",
+    "Lanoire"
+   ],
+   "dlg": 11780,
+   "steps": 1
+  },
+  {
+   "name": "The Three Primary Colors of the Solar Corona",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Sluasi"
+   ],
+   "dlg": 12078,
+   "steps": 3
+  },
+  {
+   "name": "A Letter",
+   "type": "World",
+   "group": null,
+   "start": "New Fontaine Research Institute, Fontaine",
+   "area": "Liffey Region;Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute",
+   "npcs": [
+    "Choiseul",
+    "Desnos",
+    "Iaune"
+   ],
+   "dlg": 13892,
+   "steps": 7
+  },
+  {
+   "name": "A Certain Stamp",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Cornelia",
+    "Gattineo",
+    "Iaune",
+    "Roialte",
+    "Semaine",
+    "Thales"
+   ],
+   "dlg": 15297,
+   "steps": 4
+  },
+  {
+   "name": "Hereafter...",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Caterpillar",
+    "Earnshaw",
+    "Lanoire"
+   ],
+   "dlg": 15326,
+   "steps": 3
+  },
+  {
+   "name": "Treacherous Light of the Depths",
+   "type": "World",
+   "group": null,
+   "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "Chisseray",
+    "Sevigne"
+   ],
+   "dlg": 15423,
+   "steps": 20
+  },
+  {
+   "name": "\"Hey, This Isn't Pumpkin Soup...\"",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Verenata"
+   ],
+   "dlg": 16365,
+   "steps": 11
+  },
+  {
+   "name": "Road to the Singularity",
+   "type": "World",
+   "group": null,
+   "start": "Kuisel's Clockwork Workshop, Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "Bricole",
+    "Coutrot",
+    "Kuisel"
+   ],
+   "dlg": 16792,
+   "steps": 27
+  },
+  {
+   "name": "Truly Mouthwatering!",
+   "type": "World",
+   "group": null,
+   "start": "West Slopes of Mont Automnequi, Fontaine",
+   "area": "Belleau Region",
+   "subarea": "West Slopes of Mont Automnequi",
+   "npcs": [
+    "Henri",
+    "Hunter",
+    "Turner"
+   ],
+   "dlg": 17686,
+   "steps": 3
+  },
+  {
+   "name": "Impromptu Poem of the Crimson Dawn",
+   "type": "World",
+   "group": null,
+   "start": "Erinnyes Forest, Fontaine",
+   "area": "Erinnyes Forest",
+   "subarea": null,
+   "npcs": [
+    "Blanc",
+    "Bleu",
+    "Havisham",
+    "Jingle",
+    "Rouge"
+   ],
+   "dlg": 17980,
+   "steps": 6
+  },
+  {
+   "name": "Fortune Plango Vulnera",
+   "type": "World",
+   "group": null,
+   "start": "Sea of Bygone Eras, Fontaine",
+   "area": "Sea of Bygone Eras",
+   "subarea": null,
+   "npcs": [
+    "Boethius",
+    "Cassiodor",
+    "Osse",
+    "Phobos",
+    "Scylla"
+   ],
+   "dlg": 18067,
+   "steps": 13
+  },
+  {
+   "name": "Where His Life Lies",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Court Region Waterway Hub, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Garcia",
+    "Kaia",
+    "Lutong",
+    "Menthe"
+   ],
+   "dlg": 18116,
+   "steps": 5
+  },
+  {
+   "name": "Latecoming Homecoming",
+   "type": "World",
+   "group": null,
+   "start": "Petrichor, Fontaine",
+   "area": "Nostoi Region",
+   "subarea": "Petrichor",
+   "npcs": [
+    "Agent",
+    "Contarini",
+    "Giovanni",
+    "Giulietta",
+    "Giustino",
+    "Loredan"
+   ],
+   "dlg": 19411,
+   "steps": 7
+  },
+  {
+   "name": "An Expected Lie",
+   "type": "World",
+   "group": null,
+   "start": "Fort Charybdis Ruins, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Fort Charybdis Ruins",
+   "npcs": [
+    "Chaussivert",
+    "Choiseul",
+    "Edwin Eastinghouse",
+    "Fusilier",
+    "Lemarcq",
+    "Nacker",
+    "Raimondo"
+   ],
+   "dlg": 19840,
+   "steps": 11
+  },
+  {
+   "name": "Upon a Flowery Field of Grass",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Earnshaw",
+    "Hero",
+    "Lanoire",
+    "Prince (Dog)",
+    "Princess"
+   ],
+   "dlg": 22612,
+   "steps": 2
+  },
+  {
+   "name": "A Certain Notice",
+   "type": "World",
+   "group": null,
+   "start": "Palais Mermonia, Fontaine.",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Difor",
+    "Gattineo",
+    "Iaune",
+    "Roialte"
+   ],
+   "dlg": 23674,
+   "steps": 5
+  },
+  {
+   "name": "Mary-Ann's Story",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine Region, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": null,
+   "npcs": [
+    "Ann",
+    "Mary-Ann"
+   ],
+   "dlg": 24343,
+   "steps": 8
+  },
+  {
+   "name": "The Lone Phantom Sail",
+   "type": "World",
+   "group": null,
+   "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+   "area": "Beryl Region",
+   "subarea": "\"A Lonely Place\"",
+   "npcs": [
+    "Ahes"
+   ],
+   "dlg": 25257,
+   "steps": 15
+  },
+  {
+   "name": "Daydreams Beyond Space and Time",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Garcia",
+    "Kaia",
+    "Lutong",
+    "Mécantre",
+    "Babisse",
+    "Grundeland",
+    "Menthe"
+   ],
+   "dlg": 28777,
+   "steps": 6
+  },
+  {
+   "name": "Echoes of the Ancient World",
+   "type": "World",
+   "group": null,
+   "start": "Merusea Village, Fontaine",
+   "area": "Beryl Region",
+   "subarea": "Merusea Village",
+   "npcs": [
+    "Carabosse",
+    "Katheryne (Fontaine)",
+    "Tailleferre",
+    "Topyas",
+    "Verenata"
+   ],
+   "dlg": 29217,
+   "steps": 14
+  },
+  {
+   "name": "Rowboat's Wake (Quest)",
+   "type": "World",
+   "group": null,
+   "start": "Genesis of a Certain Micro-Universe, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Genesis of a Certain Micro-Universe",
+   "npcs": [
+    "Ann",
+    "Caterpillar",
+    "Mamere",
+    "Mary-Ann",
+    "Narzissenkreuz",
+    "Seymour"
+   ],
+   "dlg": 31249,
+   "steps": 9
+  },
+  {
+   "name": "Wish-Fulfilling Treasure Hunt",
+   "type": "World",
+   "group": null,
+   "start": "Tower of Ipsissimus, Fontaine",
+   "area": "Morte Region",
+   "subarea": "Tower of Ipsissimus",
+   "npcs": [
+    "Nadia (Fontaine)",
+    "Urville"
+   ],
+   "dlg": 31474,
+   "steps": 8
+  },
+  {
+   "name": "Aqueous Tidemarks",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine",
+   "npcs": [
+    "Luca",
+    "Sonny",
+    "Virgil"
+   ],
+   "dlg": 31584,
+   "steps": 19
+  },
+  {
+   "name": "Limner, Dreamer, and Robotic Dog",
+   "type": "World",
+   "group": null,
+   "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+   "area": "Beryl Region",
+   "subarea": "\"A Lonely Place\"; \"A Very Warm Place\"",
+   "npcs": [
+    "Elynas (NPC)",
+    "Jakob",
+    "Mamere",
+    "Seymour"
+   ],
+   "dlg": 31885,
+   "steps": 12
+  },
+  {
+   "name": "Free Verse",
+   "type": "World",
+   "group": null,
+   "start": "Erinnyes Forest, Fontaine",
+   "area": "Erinnyes Forest",
+   "subarea": null,
+   "npcs": [
+    "Don Quijano",
+    "Nana",
+    "Penny"
+   ],
+   "dlg": 38860,
+   "steps": 16
+  },
+  {
+   "name": "Both Brains and Brawn",
+   "type": "World",
+   "group": null,
+   "start": "Administrative Area, Fontaine",
+   "area": "Liffey Region",
+   "subarea": "Fortress of Meropide",
+   "npcs": [
+    "Champvallon",
+    "Genevieve",
+    "Goncourt",
+    "Poiret",
+    "Roussimoff"
+   ],
+   "dlg": 57043,
+   "steps": 37
+  },
+  {
+   "name": "Questions and Answers",
+   "type": "World",
+   "group": null,
+   "start": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+   "area": "Court of Fontaine Region",
+   "subarea": "Court of Fontaine: Quartier Narbonnais",
+   "npcs": [
+    "\"Curve\"",
+    "\"Intrepid Valberry\"",
+    "Baulande",
+    "Baulande! Lombroso!",
+    "Boss (The Red and the Black)",
+    "Euphrasie",
+    "Jenck",
+    "Kevin",
+    "Madeleine (Questioning Melusine and Answering Machine)",
+    "Melo Lombroso",
+    "Rocher",
+    "Sir Arthur",
+    "Talochard"
+   ],
+   "dlg": 58224,
+   "steps": 45
+  },
+  {
+   "name": "Villains",
+   "type": "World",
+   "group": null,
+   "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": null,
+   "npcs": [
+    "\"Guileless Wolfhook\"",
+    "\"Ruthless Calla Lily\"",
+    "\"Trendy Zaytun Peach\"",
+    "\"Tricky Bulle Fruit\"",
+    "Blanche (Fontaine)"
+   ],
+   "dlg": 66003,
+   "steps": 25
+  },
+  {
+   "name": "Fontaine Research Institute, Stagnating in the Rubble",
+   "type": "World",
+   "group": null,
+   "start": "Liffey Region, Fontaine",
+   "area": "Liffey Region; Fontaine Research Institute of Kinetic Energy Engineering Region",
+   "subarea": "New Fontaine Research Institute; Central Laboratory Ruins",
+   "npcs": [
+    "Broglie",
+    "Chalmet",
+    "Chisseray",
+    "Choiseul",
+    "Chronie",
+    "Conjat",
+    "Damestier",
+    "Denichere",
+    "Desnos",
+    "Heinry",
+    "Katheryne (Fontaine)",
+    "Lanty",
+    "Muirne",
+    "Nacker",
+    "Raimondo",
+    "Sevigne",
+    "Vuillermoz"
+   ],
+   "dlg": 112172,
+   "steps": 34
+  }
+ ],
+ "Natlan": []
+}

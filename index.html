@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genshin Helper</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .hero{display:flex;gap:26px;flex-wrap:wrap;align-items:baseline;margin-bottom:6px}
+  .stat{display:flex;flex-direction:column}
+  .stat b{font-size:1.5rem;line-height:1.1}
+  .stat span{color:var(--dim);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:10px}
+  .card{display:block;text-decoration:none;padding:13px 15px;border-radius:9px;
+        background:var(--panel);border-left:3px solid var(--line);transition:background .14s}
+  .card:hover{background:#222c3a}
+  .card b{display:block;color:var(--paper);font-size:.94rem;margin-bottom:3px}
+  .card span{color:var(--dim);font-size:.84rem;line-height:1.45}
+  .card.map{border-left-color:var(--do-now)}
+  .card.doc{border-left-color:var(--farm)}
+  .card.tool{border-left-color:var(--best)}
+  .deadline{margin-top:14px;padding:12px 15px;border-radius:8px;
+            background:#2a1008;border:1px solid var(--do-now);color:#ffd0c4;font-size:.9rem}
+  .deadline b{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Genshin Impact — helper</h1>
+<p class="sub">Everything in this project, in one place. Account figures live from the
+Battle Chronicle, 27 Oct 2026.</p>
+
+<div class="hero">
+  <div class="stat"><b>40</b><span>Adventure Rank</span></div>
+  <div class="stat"><b>23</b><span>Characters</span></div>
+  <div class="stat"><b>192</b><span>Achievements</span></div>
+  <div class="stat"><b>10-3</b><span>Spiral Abyss</span></div>
+  <div class="stat"><b>EU</b><span>Server</span></div>
+</div>
+
+<div class="deadline">
+  <b>Nov 3, 14:59 server time</b> — <b>both</b> anniversary 5-star selectors expire.
+  <b>Standard</b> (login only): Jean · Diluc · Qiqi · Mona · Tighnari · Keqing · Dehya ·
+  Yumemizuki Mizuki. <b>Limited</b> (needs Archon Ch. VII Act IV): Tartaglia · Nilou ·
+  Baizhu · Chiori · Clorinde · Varesa. They're independent — claim both.
+</div>
+
+<h2>Maps</h2>
+<div class="grid">
+  <a class="card map" href="starfell-valley-guide.html">
+    <b>Starfell Valley</b><span>Priority spots, chest zones, waypoints — Mondstadt</span></a>
+  <a class="card map" href="dragonspine-quest-map.html">
+    <b>Dragonspine — In the Mountains</b><span>Route to Peak of Vindagnyr</span></a>
+  <a class="card map" href="chasm-ore-map.html">
+    <b>The Chasm — ore</b><span>Surface belt and the Underground Mines</span></a>
+  <a class="card map" href="fishing-spots-map.html">
+    <b>Fishing spots</b><span>Mondstadt and Liyue, best spot per region</span></a>
+  <a class="card map" href="windcatcher-map.html">
+    <b>Wind Catcher</b><span>Anemograna charging spots</span></a>
+  <a class="card map" href="crafting-bench-map.html">
+    <b>Crafting benches</b><span>Where to make bait and alchemy items</span></a>
+  <a class="card map" href="fowl-map.html">
+    <b>Fowl</b><span>Draff in Springvale — bait ingredient</span></a>
+  <a class="card map" href="bounty-stormbearer-map.html">
+    <b>Bounty — Ruin Guard</b><span>Stormbearer search area</span></a>
+  <a class="card map" href="redbeet-map.html">
+    <b>Red Beet</b><span>Everfrozen Earth corridor</span></a>
+  <a class="card map" href="eye-of-graeae-map.html">
+    <b>Eye of Graeae</b><span>Three fragment questlines</span></a>
+  <a class="card map" href="yaodie-valley-map.html">
+    <b>Yaodie Valley</b><span>Chenyu Vale — hidden quest cave</span></a>
+  <a class="card map" href="vault-of-qingce.html">
+    <b>Vault of Qingce</b><span>Why the gate is locked</span></a>
+  <a class="card map" href="chi-of-yore-puzzles.html">
+    <b>Chi of Yore — statues</b><span>Both Qingce puzzles</span></a>
+  <a class="card map" href="wuwang-statue-puzzle.html">
+    <b>Wuwang Hill — 8 statues</b><span>Diagram with compass</span></a>
+  <a class="card tool" href="theater-picks.html">
+    <b>Theater — Act 1 picks</b><span>Which four of the six trial characters, with portraits</span></a>
+  <a class="card map" href="liyue-quest-maps.html">
+    <b>Liyue quests — start maps</b><span>All 57, shortest first, with the wiki's in-game crop of each start spot</span></a>
+  <a class="card map" href="inazuma-quest-maps.html">
+    <b>Inazuma quests — start maps</b><span>Toward the Electro Treasure Compass</span></a>
+  <a class="card map" href="sumeru-quest-maps.html">
+    <b>Sumeru quests — start maps</b><span>Toward the Dendro Treasure Compass</span></a>
+  <a class="card map" href="fontaine-quest-maps.html">
+    <b>Fontaine quests — start maps</b><span>Toward the Hydro Treasure Compass</span></a>
+  <a class="card map" href="collectible-map.html">
+    <b>Collectible maps</b><span>Crimson Agate and every oculus, grouped into warps rather than a walking loop. Tick them off as you go</span></a>
+  <a class="card map" href="quest-map.html">
+    <b>Quest map — interactive</b><span>Every reputation quest on the live game map, with teleports. Click a dot for the NPC, length and start screenshot</span></a>
+  <a class="card tool" href="reputation-quests.html">
+    <b>Reputation quests — all regions</b><span>Every quest with its start NPC and a measured length. Liyue · Inazuma · Sumeru · Fontaine</span></a>
+  <a class="card tool" href="liyue-reputation-quests.html">
+    <b>Liyue reputation quests</b><span>The full list, and the claim step people miss</span></a>
+  <a class="card tool" href="reputation-compass.html">
+    <b>Treasure Compasses</b><span>Reputation costs and the fastest route to each</span></a>
+  <a class="card tool" href="collectibles-status.html">
+    <b>Collectibles status</b><span>Exploration per region, oculi remaining, what to do next</span></a>
+  <a class="card tool" href="tcg-skirk.html">
+    <b>TCG — cards & a Skirk deck</b><span>How to get cards, what they cost, the deck</span></a>
+  <a class="card tool" href="build-coverage.html">
+    <b>Build coverage</b><span>All 23 characters — who's documented, who isn't</span></a>
+  <a class="card tool" href="support-squad.html">
+    <b>Support squad</b><span>Barbara, Mika, Sucrose, Alyosha, Kaeya, Chongyun</span></a>
+  <a class="card tool" href="escoffier-build.html">
+    <b>Escoffier — build &amp; materials</b><span>Skirk’s best teammate. Sets and 3★/4★ polearms with icons, and the Skirk material overlap</span></a>
+  <a class="card tool" href="tighnari-build.html">
+    <b>Tighnari — build &amp; materials</b><span>Artifact sets and 3★/4★ bows with icons, plus every ascension material</span></a>
+  <a class="card tool" href="fischl-build.html">
+    <b>Fischl — build & rotation</b><span>Five 3★ pieces and 7.1% crit, and the fix</span></a>
+  <a class="card tool" href="skirk-build.html">
+    <b>Skirk — build & rotation</b><span>Slot by slot, and the team that triples her damage</span></a>
+  <a class="card tool" href="varesa-build.html">
+    <b>Varesa — build & rotation</b><span>Slot by slot, and the ECP loop</span></a>
+  <a class="card map" href="derelict-masonry-dock.html">
+    <b>Derelict Masonry Dock</b><span>Atocpan — the artifact domain for Skirk and Varesa</span></a>
+  <a class="card map" href="exaiphanes-statues-map.html">
+    <b>Snezhnaya statues</b><span>Five stops that level the Exaiphanes Blade — free</span></a>
+  <a class="card map" href="oculus-tracking.html">
+    <b>Oculus tracking</b><span>What HoYoLAB can and can't tick off for you</span></a>
+  <a class="card map" href="reaction-combos.html">
+    <b>Reaction combos</b><span>Element pair picker</span></a>
+</div>
+
+<h2>Farming</h2>
+<p class="sub">
+  Lives in the companion project at <code>D:\Genshin Impact game\guide</code> &mdash; live maps
+  built from the official map API, rather than wiki screenshots. Start it with the
+  <code>genshin-guide</code> launch entry, then these open on
+  <a href="http://localhost:5173/">localhost:5173</a>.
+</p>
+<div class="grid">
+  <a class="card map" href="http://localhost:5173/map.html">
+    <b>Natlan Saurian map</b><span>All 946 spawns on the real terrain, clustered and routed, with every teleport. For Tyrant&rsquo;s Fang</span></a>
+  <a class="card tool" href="http://localhost:5173/index.html">
+    <b>Tyrant&rsquo;s Fang plan</b><span>How many days of farming are left, crafting ratios and the Lv. 60 gate</span></a>
+  <a class="card tool" href="http://localhost:5173/routes.html">
+    <b>Natlan routes</b><span>16 written loops, densest first, each linking to its spot on the map</span></a>
+  <a class="card map" href="http://localhost:5173/quests.html">
+    <b>World quest pins</b><span>All 576 official pins across Teyvat &mdash; unnamed, so use the quest map above for named quests</span></a>
+</div>
+
+<h2>Research</h2>
+<div class="grid">
+  <a class="card doc" href="research/01-mora-farming.md">
+    <b>01 · Mora farming</b><span>Blossoms of Wealth, Ley Line Overflow</span></a>
+  <a class="card doc" href="research/02-wishes-and-primogems.md">
+    <b>02 · Wishes & Primogems</b><span>Income, pity maths, pull strategy</span></a>
+  <a class="card doc" href="research/03-character-materials.md">
+    <b>03 · Characters & materials</b><span>Roster, priority, talent domains</span></a>
+  <a class="card doc" href="research/04-weapons-and-artifacts.md">
+    <b>04 · Weapons & artifacts</b><span>Best 3-stars, per-character builds</span></a>
+  <a class="card doc" href="research/05-current-loadouts.md">
+    <b>05 · Loadout audit</b><span>Every equipped piece, per slot — and the free 5★ sword you're not using</span></a>
+  <a class="card doc" href="research/06-artifact-plan.md">
+    <b>06 · Artifact plan</b><span>What AR 40 unlocked, and the one domain to farm</span></a>
+  <a class="card doc" href="research/06a-in-the-mountains.md">
+    <b>06a · In the Mountains</b><span>Dragonspine unlock walkthrough</span></a>
+  <a class="card doc" href="research/07-ore-farming.md">
+    <b>07 · Ore farming</b><span>Dense routes near waypoints</span></a>
+  <a class="card doc" href="research/08-snezhnaya-mechanics.md">
+    <b>08 · Snezhnaya mechanics</b><span>Prime Ice Constructs, melting ice</span></a>
+  <a class="card doc" href="research/09-artifact-sets.md">
+    <b>09 · Artifact sets</b><span>Damage / support / utility, per-character tiers</span></a>
+</div>
+
+<h2>Reference</h2>
+<div class="grid">
+  <a class="card doc" href="CLAUDE.md">
+    <b>CLAUDE.md</b><span>Working rules — loads automatically every session</span></a>
+  <a class="card doc" href="reference/account.md">
+    <b>Account snapshot</b><span>Roster, gear, exploration — and how to refresh it</span></a>
+  <a class="card doc" href="reference/verified-facts.md">
+    <b>Verified facts</b><span>Checked numbers with dates. Anything not here, look up again</span></a>
+  <a class="card doc" href="reference/kits.md">
+    <b>Character kits</b><span>All 23 — talents, passives, constellations, full text</span></a>
+  <a class="card doc" href="reference/artifact-sets.md">
+    <b>Artifact sets</b><span>All 63, 2pc and 4pc bonuses</span></a>
+  <a class="card doc" href="reference/weapons-owned.md">
+    <b>Weapons you own</b><span>Substats and passive text</span></a>
+  <a class="card doc" href="reference/open-questions.md">
+    <b>Open questions</b><span>Unverified things — most answerable in-game in seconds</span></a>
+  <a class="card doc" href="reference/sources.md">
+    <b>Sources</b><span>Which source answers what, and how to reach it</span></a>
+  <a class="card doc" href="reference/corrections.md">
+    <b>Corrections log</b><span>What I got wrong, and the habits that caused it</span></a>
+</div>
+
+<h2>Making new pages</h2>
+<div class="grid">
+  <a class="card tool" href="docs/AUTHORING.md">
+    <b>Authoring guide</b><span>How to build a new map page quickly</span></a>
+  <a class="card tool" href="styles/map.css">
+    <b>styles/map.css</b><span>Shared pin, tag, zone and callout styles</span></a>
+  <a class="card tool" href="app/annotate.js">
+    <b>app/annotate.js</b><span>Render markers from data</span></a>
+</div>
+
+<div class="note">
+  <b>Serve locally</b> with <b>tools/serve.cmd</b> (or <code>python -m http.server 8800</code>
+  from the project root) — pages using <code>app/annotate.js</code> need a server, since
+  browsers block ES modules on <code>file://</code>. Image-only pages open fine by
+  double-clicking.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

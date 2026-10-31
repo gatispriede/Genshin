@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eye of Graeae — 3 fragments</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Eye of Graeae — 3 fragments</h1>
+  <p class="sub">They aren't lying in the open world. Each is the reward for finishing a
+  separate Snezhnaya questline. <b>Any order.</b></p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/everfrozen-earth-map.webp"
+       data-alt="Everfrozen Earth map">
+    <div class="offmap" style="right:2.5%; bottom:4%">
+      <b>2 · Flamefeather Valley</b> — not in this view. Different part of Snezhnaya.<br>
+      <b>Fellfrost Peak</b> (step 2 of fragment 1) is south of Svetloledovka, also off-view.
+    </div>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Pebble of Freezing Heart</b> — <i>Hesperides of Love and Hate</i>
+      <span>Go to the <b>central Svetloledovka waypoint</b>, walk forward and <b>drop into
+      the valley below</b>. Interact with the glowing spot on the <b>wooden mining
+      platforms</b> for the Invitation — or talk to the <b>Snegovik</b> by the waypoint.
+      Then head <b>south to the Fellfrost Peak Statue of the Seven</b> and meet
+      <b>Ikhor</b>.</span></div></div>
+
+    <div class="row best"><div class="num" style="background:var(--best);color:#2a1a00">2</div>
+      <div><b>Pebble of Serpentine Algae</b> — <i>In the Dwelling of Life</i> → Chorus of Solace
+      <span>Go to the <b>Flamefeather Valley Statue of the Seven</b> and <b>defeat The
+      Anvil</b> nearby. That unlocks the world quest at its marker.</span></div></div>
+
+    <div class="row goal"><div class="num">3</div>
+      <div><b>Pebble of Crystalline Essence</b> — <i>On One Side a Palace, On the Other a Tomb</i>
+      <span>Starts <b>automatically</b> after fragment 2. Inspect the Eye of Graeae at
+      <b>Central Station</b> — the fragment is inside <b>one of the train carriages</b>.
+      The quest then carries you to <b>Snowgrave</b> and opens the Pale Crown Palace.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Prerequisite:</b> the finale <i>Her Palace Collapses Into the Blizzard</i> only
+    appears after the Archon Quest <b><i>Gunfire in the Silent Lands</i></b>.<br><br>
+    <b>If the finale won't start</b>, one chain is unfinished — the door to the <b>Courtyard
+    of Carefree Light</b> opens only with all three. Talk to the Eye of Graeae there and
+    choose to return its powers.<br><br>
+    <b>Why bother:</b> Goggles stays usable for exploration, and it's what gives you
+    <b>Prime Ice Constructs</b> — see
+    <a href="research/08-snezhnaya-mechanics.md">08-snezhnaya-mechanics.md</a>.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 77.3, y: 19.3, role: "goal",   label: "3",
+      tag: "3 · Central Station — train carriage" },
+    { x: 90,   y: 62,   role: "do-now", label: "1",
+      tag: "1 · Svetloledovka — start here" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

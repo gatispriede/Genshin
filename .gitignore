@@ -1,0 +1,20 @@
+# Wiki screenshots: 101 MB of third-party images, re-fetchable in one command.
+# Git keeps deleted blobs forever, so these must never enter history.
+#   python -I tools/fetch-quest-maps.py <Region>
+assets/quest-maps/
+
+# Generated from the live map API — rebuild rather than commit.
+#   node tools/build-map-data.mjs      (farming project)
+#   python -I tools/build-collectible-map.py --label <id> --slug <name>
+reference/data/collect-*.js
+reference/data/quest-map.data.js
+
+# Local scratch
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Cached dumps of the live map API (88k points). Regenerable, and 21 MB of
+# churn that git would keep forever.
+reference/data/hoyo_points.json
+reference/data/hoyo_tree.json

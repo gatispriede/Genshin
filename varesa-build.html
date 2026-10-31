@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varesa — build and rotation</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .slots { display:grid; gap:9px; margin-top:10px; }
+  .slot { display:grid; grid-template-columns:96px 1fr 1fr; gap:12px; align-items:start;
+          padding:12px 14px; background:var(--panel); border-radius:8px;
+          border-left:3px solid var(--off); }
+  .slot.ok  { border-left-color:var(--goal); }
+  .slot.bad { border-left-color:var(--do-now); }
+  .slot h4 { margin:0; font-size:.88rem; color:var(--paper); }
+  .slot .now, .slot .want { font-size:.85rem; line-height:1.5; }
+  .slot .now  { color:var(--dim); }
+  .slot .want { color:#c9d4e3; }
+  .slot .want b { color:var(--best); }
+  .slot small { display:block; color:#6f7a8c; font-size:.72rem;
+                letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px; }
+  @media (max-width:640px){ .slot{ grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="styles/gear.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pagechar"><span data-char="Varesa"></span><h1>Varesa</h1></div>
+  <p class="sub">Lv 70 · C0 · Electro catalyst · on-field plunge DPS · your highest-level
+  character. Live loadout read 27 Oct 2026.</p>
+
+  <div class="bar key">
+    <b>Her set is already right. Three of her five main stats are not.</b> 4-piece Long
+    Night's Oath is her best-in-slot and it's equipped. The sands, goblet and circlet are
+    all rolling the wrong stat, and three of her pieces are still at <b>+0</b>.
+  </div>
+
+  <h2>Where she is vs where she's going</h2>
+  <table>
+    <tr><th>Stat</th><th>Now</th><th>Target</th><th></th></tr>
+    <tr><td>ATK</td><td>1,091</td><td>2,000–3,000</td><td class="bad">half-way</td></tr>
+    <tr><td>CRIT Rate</td><td>24.3%</td><td>50–60%</td><td class="bad">short</td></tr>
+    <tr><td>CRIT DMG</td><td>99.8%</td><td>180%+</td><td class="bad">short</td></tr>
+    <tr><td>Electro DMG</td><td><b>0.0%</b></td><td>46%+ (goblet)</td><td class="bad">missing</td></tr>
+    <tr><td>Energy Recharge</td><td>103.6%</td><td>100% for one short Burst per rotation</td><td class="good">fine</td></tr>
+  </table>
+
+  <div class="note">
+    <b>24.3% CRIT Rate is almost entirely her ascension stat</b> — Varesa's ascension bonus
+    <i>is</i> CRIT Rate. She has barely any crit from gear. That's the gap.
+    <br><br>
+    <b>Correction, 30 Oct:</b> this said "14.4% at Ascension 4 = 19.4%". Wrong —
+    Ascension 4 gives <b>+9.6%</b>, so at Lv 70 she has <b>5 + 9.6 = 14.6%</b> free
+    and about <b>9.7% from gear</b>. 14.4% is Ascension <i>5</i>. Checked against
+    the Project Amber data in <code>reference/data/char_10000111.json</code>.
+  </div>
+
+  <div class="bar key">
+    <b>Her full ascension ladder, verified.</b> CRIT Rate for free, just from levelling:
+    <table class="asc">
+      <tr><th>Ascension</th><th>Max Lv</th><th>CRIT Rate</th><th>Total with 5% base</th></tr>
+      <tr><td>2</td><td>50</td><td>+4.8%</td><td>9.8%</td></tr>
+      <tr><td>3</td><td>60</td><td>+9.6%</td><td>14.6%</td></tr>
+      <tr><td class="now">4 ← she is here</td><td>70</td><td>+9.6%</td><td>14.6%</td></tr>
+      <tr><td>5</td><td>80</td><td>+14.4%</td><td>19.4%</td></tr>
+      <tr><td>6</td><td>90</td><td><b>+19.2%</b></td><td><b>24.2%</b></td></tr>
+    </table>
+    Ascending her to 80 and then 90 is worth <b>+9.6% CRIT Rate</b> with no artifact
+    luck involved at all.
+  </div>
+
+  <h2>Slot by slot</h2>
+  <div class="slots">
+    <div class="slot ok">
+      <h4>Flower</h4>
+      <div class="now"><small>Now</small>Long Night's Oath 4★ <b>+0</b> · flat HP</div>
+      <div class="want"><small>Want</small>Same piece. <b>Level it to +12.</b> Main stat is
+        always flat HP, there's nothing to hunt.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Plume</h4>
+      <div class="now"><small>Now</small>Blizzard Strayer 4★ +8 · flat ATK</div>
+      <div class="want"><small>Want</small>A <b>Long Night's Oath plume</b>. Easiest drop in
+        the game — plumes are always flat ATK, so any one works. <b>This is the first
+        thing to fix</b> — see below.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Sands</h4>
+      <div class="now"><small>Now</small>Long Night's Oath 4★ +0 · <b>HP% 6.3%</b></div>
+      <div class="want"><small>Want</small><b>ATK%</b>. HP does nothing for her.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Goblet</h4>
+      <div class="now"><small>Now</small>Long Night's Oath 4★ +0 · <b>DEF% 7.9%</b></div>
+      <div class="want"><small>Want</small><b>Electro DMG Bonus.</b> The worst slot on your
+        whole account — DEF% on a DPS contributes nothing at all.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Circlet</h4>
+      <div class="now"><small>Now</small>Long Night's Oath 4★ +14 · ATK% 31.3%</div>
+      <div class="want"><small>Want</small><b>CRIT Rate.</b> She's at 24.3% rate against
+        99.8% damage — the rate is what's missing, not the damage.</div>
+    </div>
+  </div>
+
+  <div class="bar good">
+    <b>Substat priority:</b> Energy Recharge until she hits her requirement (she already
+    has) → <b>CRIT Rate / CRIT DMG</b> → ATK% → flat ATK.
+  </div>
+
+  <h2>⭐ The trick: make the plume the Long Night's Oath piece</h2>
+
+  <div class="bar warn">
+    <b>The 4-piece needs four Long Night's Oath pieces — so exactly one slot can be
+    something else.</b> Right now that free slot is the plume. It's the wrong slot to spend
+    it on.
+  </div>
+
+  <div class="rows">
+    <div class="row off"><div class="num">✗</div>
+      <div><b>What happens if you don't fix the plume</b>
+      <span>The Electro goblet you farm has to be a <b>Long Night's Oath</b> goblet
+      specifically — a goblet (1 slot in 5) <i>and</i> an Electro main stat (1 element in
+      ~11) <i>and</i> the right set. That's a long wait.</span></div></div>
+    <div class="row goal"><div class="num">✓</div>
+      <div><b>What happens if you do</b>
+      <span>Move the free slot to the <b>goblet</b>. Then <b>any Electro DMG goblet from
+      any set</b> works — world bosses, chests, elite drops, every other domain. You stop
+      depending on one domain's set roll for the hardest main stat to find.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Order of operations:</b> farm a Long Night's Oath <b>plume</b> at
+    <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a> — it's a 1-in-5 slot roll
+    with a fixed main stat, so it comes fast. Then her four LNO pieces are flower, plume,
+    sands and circlet, and the goblet is free. <b>Until then, keep the LNO goblet on</b> —
+    a DEF% goblet with the 4-piece still beats an Electro goblet without it.
+  </div>
+
+  <h2>Weapon</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">✓</div>
+      <div><b>The Widsith — keep it</b>
+      <span>4★, Lv 70, R1, <b>CRIT DMG 45.4%</b>. That substat is carrying her entire
+      99.8% CRIT DMG, and it's the best catalyst on your account by a wide margin — your
+      others are Magic Guide, Emerald Orb and a <b>Lv 1 Apprentice's Notes</b>.
+      Its passive rolls one of three buffs at random on field entry, so it's inconsistent
+      at R1, but the stats alone justify it.</span></div></div>
+    <div class="row off"><div class="num">·</div>
+      <div><b>If you ever pull one</b>
+      <span><b>Vivid Notions</b> is her signature and best-in-slot. <b>Clash of Kings</b>
+      (Battle Pass) is the strongest 4★ at R5. <b>Flowing Purity</b> is the best free
+      option if she's running with a healer — which she is, you have Barbara.</span></div></div>
+  </div>
+
+  <h2>How her kit actually works</h2>
+
+  <div class="note">
+    She runs on <b>Nightsoul points</b>, not on her Burst. Her Skill gives <b>20</b>, each
+    Plunge gives <b>25</b> (if she's in combat when she lands, or the shockwave connects).
+    At <b>40 points</b> her next Plunge puts her into <b>Fiery Passion</b> — and if she
+    crosses 40 <i>with</i> a Plunge, she enters it immediately. So <b>Skill + one Plunge</b>
+    is enough. Two Plunges also work.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">E</div>
+      <div><b>Elemental Skill</b> <span>+20 Nightsoul points. Gains an extra tap charge
+      while in Fiery Passion.</span></div></div>
+    <div class="row goal"><div class="num">C</div>
+      <div><b>Charged Attack</b> <span>Launches her into the air. This is the
+      <i>only</i> reason it's in the rotation — it sets up the Plunge.</span></div></div>
+    <div class="row"><div class="num">P</div>
+      <div><b>Plunging Attack</b> <span>Damage along the path plus a large AoE on impact.
+      <b>This is her damage.</b> Her Ascension 1 passive raises the impact damage after a
+      Skill, and raises it further during Fiery Passion.</span></div></div>
+    <div class="row hub"><div class="num">Q</div>
+      <div><b>Short Burst (sQ)</b> <span><b>30 energy, no cooldown.</b> Used right after a
+      Plunge drops her out of Fiery Passion. It counts as <b>Plunging Attack damage</b>, so
+      every plunge buff applies to it. Usually better than her full Burst — cheaper and a
+      shorter animation.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Fiery Passion</b> boosts her Normal, Charged and Plunging attacks for up to
+    <b>15 seconds</b>. A Plunge during it <b>spends all her points and ends it</b> — that's
+    intended, it's the payoff hit. It also ends early if she runs out of points or leaves
+    combat.
+  </div>
+
+  <h2>Rotation at C0</h2>
+  <p class="sub">The building block is <b>ECP</b> — Skill, Charged Attack, Plunge.</p>
+
+  <div class="steps">
+    <span class="step">E · Skill</span>
+    <span class="step">C · Charged Attack</span>
+    <span class="step">P · Plunge</span>
+    <span class="step warn">(sQ) · if energy allows</span>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>First rotation only: one ECP, then swap out</b>
+      <span>Banks Nightsoul points before the team buffs land.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Set the team up</b>
+      <span>Fischl's Oz, your Anemo grouping, heals — then bring Varesa
+      back in.</span></div></div>
+    <div class="row"><div class="num">3</div>
+      <div><b>The loop: ECP (sQ) · ECP · ECP (sQ)</b>
+      <span>Short Burst whenever a Plunge drops her out of Fiery Passion and she has
+      30 energy.</span></div></div>
+    <div class="row"><div class="num">4</div>
+      <div><b>Finish with two CPs</b>
+      <span>Charged Attack → Plunge, twice, with no Skill. This resets the cycle so she
+      starts the next rotation with an <b>enhanced Skill</b> ready.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Talent priority:</b> <b>Normal Attack</b> first (her plunges scale off the Normal
+    Attack talent), then <b>Elemental Burst</b>, then <b>character level</b>, then
+    Elemental Skill last. Materials and the domain schedule are in
+    <a href="research/03-character-materials.md">03-character-materials.md</a>.
+  </div>
+
+  <h2>Her team, from what you own</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Varesa — on-field DPS</b> <span>Lv 70. Ascend her to <b>Lv 80</b>; AR 40
+      opened it, and Ascension 5 alone hands her <b>+4.8% CRIT Rate</b> for
+      free.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Fischl — off-field Electro</b> <span>Oz does damage while Varesa cycles
+      plunges, and a second Electro keeps her energy fed. At a Fischl team's energy
+      requirement her <b>103.6% ER is already enough</b> for one short Burst per
+      rotation.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Sucrose — Anemo</b> <span>Groups enemies under the plunge AoE. Long term she
+      wants <b>4-piece Viridescent Venerer</b> for <b>−40% Electro RES</b>; she has one VV
+      piece. First, though, <b>get her off a Lv 1 weapon</b>.</span></div></div>
+    <div class="row hub"><div class="num">4</div>
+      <div><b>Barbara or Mika — heals</b> <span>Mika also gives party <b>ATK SPD</b>, which
+      a plunge loop uses well. Barbara is the better pick if you want Electro-Charged on
+      the enemies.</span></div></div>
+  </div>
+
+  <div class="bar good">
+    <b>Do these five things, in order:</b> 1 · ascend her to Lv 80 · 2 · farm a Long Night's
+    Oath <b>plume</b> · 3 · any <b>Electro DMG goblet</b> · 4 · <b>ATK% sands</b> and
+    <b>CRIT Rate circlet</b> · 5 · level every piece to +12.
+  </div>
+
+  <div class="note">
+    Where to farm: <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a>. What
+    everyone else is wearing: <a href="research/05-current-loadouts.md">05-current-loadouts.md</a>.
+    Set reference: <a href="research/09-artifact-sets.md">09-artifact-sets.md</a>.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> kit, rotation, main stats, substat priority and energy requirements
+    from the <a href="https://keqingmains.com/q/varesa-quickguide/" target="_blank"
+    rel="noopener">KeqingMains Varesa quick guide</a> (v7.1); ascension-stat figures from
+    <a href="https://wiki.hoyolab.com/m/genshin/entry/7488?lang=en-us" target="_blank"
+    rel="noopener">HoYoWiki</a>. Your stats and equipped pieces are read live from the
+    Battle Chronicle.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<div id="ascension" data-character="Varesa"></div>
+
+<h2>Artifact sets</h2>
+<p class="sub">Effects are read live from the game data, so they cannot go stale.</p>
+<div class="setgrid gear" data-sets="Viridescent Venerer | goes on her Anemo support, not her, for -40% Electro RES; Thundering Fury | the Electro damage set; Noblesse Oblige | party ATK if she is bursting; Instructor | 3-4 star stopgap, a finished set beats half a good one"></div>
+
+<script src="app/ascension.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>

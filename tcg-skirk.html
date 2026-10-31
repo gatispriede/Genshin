@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCG — getting cards, and a Skirk deck</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .card-spec { margin-top:12px; padding:14px 16px; border-radius:10px;
+               background:var(--panel2); border:1px solid var(--line); }
+  .card-spec dl { display:grid; grid-template-columns:150px 1fr; gap:6px 14px;
+                  margin:0; font-size:.87rem; line-height:1.5; }
+  .card-spec dt { color:var(--cryo); font-weight:700; }
+  .card-spec dd { margin:0; color:#c9d4e3; }
+  .card-spec dd b { color:var(--paper); }
+  .dice { display:inline-block; background:#1f2733; border:1px solid var(--line);
+          border-radius:4px; padding:1px 6px; font-size:.78rem; color:var(--cryo);
+          font-weight:700; }
+  @media (max-width:560px){ .card-spec dl{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Genius Invokation — getting cards, and a Skirk deck</h1>
+  <p class="sub">Checked 27 Oct 2026, TCG version 6.3-era card pool.</p>
+
+  <div class="bar bad">
+    <b>I can't give you a working sharing code.</b> The code packs 33 internal card IDs
+    into base64, and I don't have a verified ID table — a guessed code either fails to
+    import or imports the wrong deck. I decoded the structure of the one you sent (51 bytes,
+    33 twelve-bit slots: 3 characters + 30 action cards) but <b>not</b> which card each ID
+    is. Everything below is a build-by-hand list instead.
+  </div>
+
+  <h2>1 · How you get character cards</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>The tutorial hands you four</b>
+      <span><b>Diluc, Kaeya, Sucrose, Fischl</b> — free from the world quest
+      <i>Battlefield of Dice, Cats, and Cards</i>.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Everything else comes from the Invitation Board — this is the main route</b>
+      <span>Wall-mounted board in <b>The Cat's Tail</b>. Spend a <b>Match Invitation
+      Letter</b> to unlock a character's Invitational, beat them on <b>Friendly
+      Fracas</b>, and their card is the reward. Once unlocked you can rematch freely until
+      you've claimed every objective.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Talent cards come from the same duel</b>
+      <span>Clearing <b>all</b> of that character's challenge objectives on Friendly Fracas
+      gives their Talent card. You can't buy Talent cards.</span></div></div>
+    <div class="row hub"><div class="num">4</div>
+      <div><b>Player Level rewards</b>
+      <span>Levelling your TCG Player Level pays out cards and more
+      Match Invitation Letters.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>You cannot buy character cards</b>
+      <span>Prince's shop sells <b>Action</b> cards, letters, card backs, boxes and skins —
+      not character cards. The only way to a character card is to beat them.</span></div></div>
+  </div>
+
+  <h2>1b · Your fastest route to that letter</h2>
+  <p class="sub">From your Player's Manual: <b>The First Match, 3/6</b>. Finishing it pays
+  <b>60 Primogems + 500 Lucky Coins + a card</b>.</p>
+
+  <table>
+    <tr><th>Objective</th><th>You</th><th>Pays</th></tr>
+    <tr><td>Build 2 valid decks in your Casket of Tomes</td><td class="good">done</td><td>500</td></tr>
+    <tr><td>Purchase 5 cards at the Card Shop</td><td class="good">done</td><td>1 card</td></tr>
+    <tr><td><b>Complete 20 Open World Player Challenge objectives</b></td><td class="bad">7 / 20</td><td>500</td></tr>
+    <tr><td>Complete 1 Tavern Guest Challenge</td><td class="bad">0 / 1</td><td>500</td></tr>
+    <tr><td>Purchase a Match Invitation Letter</td><td class="bad">0 / 1</td><td>1 card</td></tr>
+  </table>
+
+  <div class="bar key">
+    <b>Three of these solve each other.</b> Open-world duels pay the Lucky Coins
+    <i>and</i> tick off objective 2 <i>and</i> push your Player Level to 2 — which is what
+    unlocks both the Tavern Guest Challenge and the ability to buy the letter in the first
+    place.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Do a lap of Mondstadt's eight duellists</b>
+      <span>They're all in or at the city. Each duel has a win objective plus bonus
+      objectives (round limits, no characters lost), so <b>20 objectives comes much faster
+      than 20 duels</b> — you're 7 in already.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>That gets you to Player Level 2</b>
+      <span>Which unlocks the <b>Weekly Guest Challenge</b> — four random guests appear
+      inside The Cat's Tail each week with a blue card icon over their heads. One win
+      clears objective 3.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Buy the letter at 1,000 coins</b>
+      <span>Clears objective 1 and completes The First Match. <b>Then spend the letter on
+      Skirk.</b></span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Coin rates to expect:</b> open-world duels scale with Player Level — a few hundred
+    coins each early, rising steeply (a Level 7–8 opponent pays around 1,500). Weekly
+    guests pay roughly 300 at Player Level 2 and 600 at Level 4, across four guests a week.
+    At Player Level 7, <b>Serious Showdown</b> versions of Invitationals and Tavern
+    Challenges unlock at <b>1,000 coins each</b>. <b>Cap is 50,000</b> — don't hoard past it.
+  </div>
+
+  <h2>2 · Where that happens</h2>
+  <p class="sub">The Cat's Tail, Mondstadt Market District — between Katheryne's
+  Adventurers' Guild post and Good Hunter.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/mondstadt-city.jpg"
+       data-alt="Map of Mondstadt city with the Market District and teleport waypoints marked"></div>
+
+  <div class="bar good">
+    <b>Easiest way in:</b> zoom the <b>in-game</b> map all the way into Mondstadt city and
+    the Cat's Tail gets its own icon — clicking it <b>teleports you straight inside, in
+    front of Prince</b>. No walking. The interior only unlocks after you start the TCG
+    world quest.
+  </div>
+
+  <div class="note">
+    <b>The zone above is approximate.</b> The Market District is the red-roofed block in
+    the east of the city; Cat's Tail sits inside it between the Adventurers' Guild post and
+    Good Hunter. <b>The official HoYoLAB map has no TCG pin layer</b> — I checked — so I've
+    marked the district rather than guess the exact building.
+  </div>
+
+  <h3>Mondstadt's eight open-world duellists</h3>
+  <div class="bar good">
+    <b>Let the game find them for you.</b> Open the <b>Casket of Tomes</b> and use its
+    locate function — it pins every nearby TCG player on your own map, always current.
+    That beats any static map, including mine.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Swan</b> <span>In front of the Mondstadt city gates.</span></div></div>
+    <div class="row goal"><div class="num">2</div>
+      <div><b>Timmie</b> <span>On the bridge in front of the city. Has <b>both</b> an
+      Adventure Challenge and a Duel — two sets of objectives from one
+      NPC.</span></div></div>
+    <div class="row goal"><div class="num">3</div>
+      <div><b>Marjorie</b> <span>Across from The Cat's Tail — the same Market District
+      block marked on the map above.</span></div></div>
+    <div class="row goal"><div class="num">4</div>
+      <div><b>Ellin</b> <span>Knights of Favonius training ground.</span></div></div>
+    <div class="row hub"><div class="num">5</div>
+      <div><b>Wagner</b> <span>The blacksmith by the city gates. Player Level 2.</span></div></div>
+    <div class="row hub"><div class="num">6</div>
+      <div><b>Blanche</b> <span>General Goods store. Player Level 2.</span></div></div>
+    <div class="row hub"><div class="num">7</div>
+      <div><b>Timaeus</b> <span>At the crafting table in Mondstadt Square. Player Level 2.</span></div></div>
+    <div class="row hub"><div class="num">8</div>
+      <div><b>Patton</b> <span>In front of Angel's Share. Player Level 2.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Liyue is the next lap</b> once Mondstadt runs dry — Iron Tongue Tian, Lan, Tea
+    Master Liu Su, Bu Yun, Chef Mao, Shitou, Uncle Tian and Jifang in the Harbor, plus
+    Granny Ruoxin and Ms. Bai in Qingce Village. Several of those also carry both an
+    Adventure Challenge and a Duel.
+  </div>
+
+  <h2>3 · What it costs</h2>
+  <table>
+    <tr><th>Item</th><th>Lucky Coins</th><th>Notes</th></tr>
+    <tr><td><b>Match Invitation Letter</b></td><td><b>1,000</b></td><td>Needs Player Level 2. One letter = one character unlocked.</td></tr>
+    <tr><td>Action cards</td><td>500 – 1,000 each</td><td>1–2 copies per card. Non-Talent only.</td></tr>
+    <tr><td>Card Boxes (Fontaine / Natlan / Nod-Krai)</td><td>16,000 each</td><td>Player Level 8</td></tr>
+    <tr><td>Dynamic card skins</td><td>4,000</td><td>Cosmetic only</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Letters are the bottleneck, not coins.</b> Shop stock is gated by Player Level —
+    1 letter each at Levels 2, 3 and 4, then 5 at Level 5, and the shop only goes
+    <b>unlimited at Player Level 10</b>. Levels 2–9 also hand you <b>8 free letters</b>.
+    So before Level 10 you have a hard cap on how many characters you can unlock, and
+    <b>which character you spend a letter on matters.</b>
+  </div>
+
+  <div class="bar key">
+    <b>Spend your next letter on Skirk.</b> She's the strongest thing you can add to a
+    Cryo deck, and you already own her in the open world — the card plays nothing like
+    the character, but it's an excellent card in its own right.
+  </div>
+
+  <h2>4 · Skirk's card</h2>
+
+  <div class="card-spec">
+    <dl>
+      <dt>Card</dt><dd><b>Skirk</b> · 10 HP · Cryo · Sword · Cosmic Calamity</dd>
+      <dt>Normal Attack</dt><dd><b>Havoc: Sunder</b> — <span class="dice">1 Cryo + 2 Unaligned</span> · 2 <b>Physical</b> DMG</dd>
+      <dt>Elemental Skill</dt><dd><b>Havoc: Warp</b> — <span class="dice">2 Cryo</span> · gain <b>2 Serpent's Subtlety</b>, create 1 <b>Mutual Weapons Mentorship</b> in hand. <b>Once per round.</b></dd>
+      <dt>Elemental Burst</dt><dd><b>Havoc: Ruin</b> — <span class="dice">3 Cryo</span> + at least 2 Serpent's Subtlety · consumes <b>all</b> of it and deals that much <b>Cryo DMG</b>, plus <b>2 Piercing</b> to standby characters — <b>3 Piercing if you spend all 7</b>.</dd>
+      <dt>Passive</dt><dd><b>Reason Beyond Reason</b> — she <b>cannot gain Energy</b>. She stores up to <b>7 Serpent's Subtlety</b>. When <b>your side</b> triggers <b>Frozen, Cryo Swirl, Superconduct or Cryo Crystallize</b>, she creates a <b>Void Rift</b> in your hand — up to <b>3 times per round</b>.</dd>
+      <dt>Void Rift</dt><dd>Discard 1 card from hand <b>whose original cost is 3 dice</b> → Skirk gains <b>2 Serpent's Subtlety</b>.</dd>
+      <dt>Mutual Weapons Mentorship</dt><dd>Attaches Seven-Phase Flash: <b>+1 DMG</b> on its next instance. At round start, or after you switch characters, it's discarded and you gain <b>1 Serpent's Subtlety</b>.</dd>
+      <dt>Talent card</dt><dd><b>Far To Fall</b> — <span class="dice">1 Cryo</span>, Fast Action. While equipped and she's on field, <b>playing or discarding a Void Rift deals 1 Cryo DMG</b> to the opposing active character. Once per round.</dd>
+    </dl>
+  </div>
+
+  <div class="bar warn">
+    <b>Read the Burst again — it's the whole deck.</b> 7 Serpent's Subtlety means
+    <b>7 Cryo damage to the active character and 3 piercing to each one behind it</b>, for
+    3 dice. Everything in the deck exists to get her to 7 before you fire.
+  </div>
+
+  <h3>The maths on reaching 7</h3>
+  <table>
+    <tr><th>Source</th><th>Serpent's Subtlety</th><th>Limit</th></tr>
+    <tr><td>Elemental Skill</td><td>+2</td><td>once per round</td></tr>
+    <tr><td>Mutual Weapons Mentorship discarding</td><td>+1</td><td>on switch / round start</td></tr>
+    <tr><td>Each Void Rift played</td><td><b>+2</b></td><td>up to 3 rifts per round</td></tr>
+    <tr><td class="good"><b>Best round</b></td><td class="good"><b>capped at 7</b></td><td>easily reached in two rounds</td></tr>
+  </table>
+
+  <div class="bar bad">
+    <b>The trap: Void Rift needs a 3-cost card to throw away.</b> Not any card — one whose
+    <b>original cost is 3 dice</b>. If your deck is all cheap cards you will hold Void Rifts
+    you can't use and Skirk never charges. <b>Build in 6–8 three-cost cards as ammunition</b>
+    and treat them as fuel first, playable cards second.
+  </div>
+
+  <h2>5 · The deck</h2>
+
+  <div class="bar key">
+    <b>Skirk · Kaeya · Xingqiu.</b> Two Invitation Letters — one for Skirk, one for
+    Xingqiu. Kaeya is free from the tutorial.
+  </div>
+
+  <div class="bar warn">
+    <b>Changed twice, 27 Oct — here's the trail.</b> First I built it around <b>Fischl</b>
+    (free, Oz auto-generates rifts). Then <b>Mona</b>, for the damage doubling. Then I went
+    and looked up what the game itself does with Skirk — her Invitational deck is
+    <b>Skirk · Xingqiu · Escoffier</b>, won through repeated <b>Frozen</b>. That's better
+    evidence than my reasoning, so <b>Xingqiu</b> it is, with Kaeya in Escoffier's slot.
+    Mona and Fischl both remain good; see below.
+  </div>
+
+  <div class="bar good">
+    <b>She does not have to tank the whole charge.</b> Her passive fires when
+    <b>"your side"</b> triggers the reaction, and Void Rift says <b>"your allied Skirk"</b>
+    gains the Serpent's Subtlety — neither says <i>active</i>. So she banks from the back
+    bench while Kaeya and your third character do the work. She only has to be on field for
+    her <b>Skill</b> (+2) and the <b>Burst</b> — one or two turns of exposure, not six.
+    <i>Far To Fall is the exception: its bonus damage does require her on field.</i>
+  </div>
+
+  <div class="bar warn">
+    <b>The constraint that actually decides your third slot: it can't be Cryo.</b>
+    Skirk is Cryo and Kaeya is Cryo. Mono-Cryo triggers <b>no reactions at all</b> — no
+    Frozen, no Superconduct, no Swirl, no Crystallize — which means <b>zero Void Rifts</b>
+    and a Burst that never charges. The third character has to be <b>Hydro, Electro, Anemo
+    or Geo</b>, or you must bench Kaeya.
+  </div>
+
+  <h3>What the research actually says</h3>
+
+  <div class="bar bad">
+    <b>There is no published Skirk deck.</b> I checked the main community deck aggregator —
+    <b>34 top decks, not one contains her</b> — and GameWith's Skirk card page lists no
+    recommended teammates at all. She's too new for the meta lists to have caught up.
+    Anything anyone tells you about "the best Skirk deck" right now, including me, is
+    reasoning from her card text rather than quoting results.
+  </div>
+
+  <div class="bar key">
+    <b>The strongest evidence available is HoYoverse's own Skirk deck.</b> Her Invitational
+    stage — the one you'll be fighting — runs <b>Skirk · Xingqiu · Escoffier</b>, and the
+    in-game hint describes it as building momentum by <b>repeatedly inflicting Frozen</b>
+    and converting that control into one powerful final strike. That's the designers
+    telling you the shell: <b>Cryo carry + Cryo support + Hydro enabler, winning through
+    Frozen.</b>
+  </div>
+
+  <div class="bar good">
+    <b>So the pick is Xingqiu, not Mona.</b> Escoffier isn't in your Player List, but
+    <b>Xingqiu is</b> — and Kaeya covers Escoffier's slot for free. That makes your deck
+    <b>Skirk · Kaeya · Xingqiu</b>: the official shell, one letter, built tonight.
+  </div>
+
+  <h3>Spending your letter</h3>
+  <div class="rows">
+    <div class="row goal"><div class="num">★</div>
+      <div><b>Xingqiu — the pick</b>
+      <span><b>Raincutter</b> leaves <b>Rainbow Bladework</b>: 1 Hydro DMG after each of
+      your Normal Attacks, 3 uses, plus Hydro application on the character. Against Kaeya's
+      Cryo that's <b>Frozen over and over</b> — and Frozen is the engine here. Every freeze
+      is a Void Rift, and a frozen opponent <b>loses its turn</b>, which is also the answer
+      to Skirk dying before she fires. <b>Consistency is what this deck lacks, not
+      ceiling:</b> if the rifts don't arrive, Skirk never charges and no multiplier
+      matters.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Mona — the higher ceiling, the lower floor</b>
+      <span><b>Stellaris Phantasm</b> (3 Hydro + 3 Energy) deals 4 Hydro DMG and leaves an
+      <b>Illusory Bubble</b>: the next instance of <b>Skill DMG is doubled</b>, applied
+      <i>after</i> every additive bonus. <b>Skirk's 7-stack Burst becomes 14.</b> She's
+      also Hydro for Frozen, and her passive makes switching off her a <b>Fast
+      Action</b> once per round — which matters in a deck that swaps constantly, since every
+      switch also discards Mutual Weapons Mentorship for +1 Serpent's Subtlety.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Diona — the survivability pick, but it costs you Kaeya</b>
+      <span>Cryo <b>Bow</b>, 12 HP. <b>Icy Paws</b> (3 Cryo) deals 2 Cryo and gives a
+      <b>Cat-Claw Shield</b>; her Burst heals her 2 and summons <b>Drunken Mist</b>, which
+      deals 1 Cryo and <b>heals your active character 2 HP every End Phase</b> — that's
+      sustain while Skirk is the one standing out front. Her Talent is <b>3 dice</b>, so
+      it doubles as fuel, and being a Bow user makes <b>Sacrificial Bow</b> live again.
+      <b>But she's Cryo</b> — so the lineup becomes <b>Skirk · Diona · Fischl</b> and Kaeya
+      sits out, with Fischl's Oz carrying the Superconduct rifts alone.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Tartaglia — a strong card, the wrong job</b>
+      <span>Hydro, so he'd make Frozen, and his <b>Talent is 3 dice</b> so it doubles as
+      fuel. Two real problems though. <b>He's a Bow user</b> — Skirk, Kaeya and Xingqiu are
+      all swords, so he splits your weapon cards in half. And <b>he wants the field</b>:
+      Foul Legacy puts him in Melee Stance for 2 rounds, his Charged Attacks apply Riptide,
+      and his big Burst is the 7-damage melee one at 3 Energy. <b>He's a carry, not an
+      enabler</b> — he and Skirk compete for field time and dice, and you end up doing
+      neither plan well. His own shell is Tartaglia + Raiden + Beidou on
+      Electro-Charged.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Not Ganyu, Ayaka or Chongyun</b>
+      <span>All fine Cryo cards, but they want to be the one dealing the damage — and a
+      third Cryo makes the reaction problem worse. You already have a finisher; what you
+      lack is a multiplier or a medic.</span></div></div>
+  </div>
+
+  <h3>Switching, shields and heals — you mostly don't need a letter for these</h3>
+  <div class="rows">
+    <div class="row goal"><div class="num">↔</div>
+      <div><b>Mona already is the fast-switch card</b>
+      <span>Her passive <b>Illusory Torrent</b> makes switching away from her a <b>Fast
+      Action</b> once per round — it doesn't cost you the turn.</span></div></div>
+    <div class="row hub"><div class="num">↔</div>
+      <div><b>Changing Shifts and Leave It to Me!</b>
+      <span>0 dice. One makes the next switch free, the other makes it a Fast Action.
+      <b>500 coins each</b> — far cheaper than a 1,000-coin letter, and every switch also
+      discards Mutual Weapons Mentorship for <b>+1 Serpent's Subtlety</b>.</span></div></div>
+    <div class="row hub"><div class="num">◈</div>
+      <div><b>Lotus Flower Crisp for the shield, Mondstadt Hash Brown for the heal</b>
+      <span>Food cards, one per character per round. Skirk only needs to survive the one or
+      two turns she's actually out front.</span></div></div>
+    <div class="row off"><div class="num">❄</div>
+      <div><b>Frozen is defence</b>
+      <span>This is the part that answers your worry directly: Mona's Hydro on Kaeya's Cryo
+      <b>freezes the opponent, and a frozen character loses its turn.</b> A turn they don't
+      get is damage you don't take — while also handing you a Void Rift.</span></div></div>
+  </div>
+
+  <div class="bar key">
+    <b>Take Mona unless you're actually losing games to damage.</b> She answers all three
+    of your asks — fast switch built into her passive, Frozen denying the opponent turns,
+    and she doubles the payoff. <b>If you find Skirk dying before she fires even after
+    adding the food cards, Diona is the right second letter</b> and the deck becomes
+    Skirk · Diona · Fischl.
+  </div>
+
+  <div class="note">
+    <b>One thing I haven't verified:</b> whether Illusory Bubble also doubles the
+    <b>piercing</b> damage Skirk's Burst sends to the standby characters, or only the main
+    Cryo hit. The card text says "double the DMG dealt for this instance" — read it in
+    game before you count on 6 piercing.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Skirk — the finisher</b>
+      <span>Stays back, banks Serpent's Subtlety off everyone else's reactions, comes in
+      and fires one enormous Burst.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Kaeya — the Cryo applicator</b>
+      <span><b>This is the part people get wrong.</b> Skirk's Normal Attack is
+      <b>Physical</b> and her Skill deals no damage — <b>she barely applies Cryo
+      herself</b>. Kaeya is what puts Cryo on the board so there's something to react
+      with. He's also your second Cryo character, which unlocks the Cryo Elemental
+      Resonance cards.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Xingqiu — Hydro, and the reason the engine runs</b>
+      <span>Rainbow Bladework applies Hydro over and over. Hydro onto Kaeya's Cryo =
+      <b>Frozen</b> = a Void Rift <i>and</i> a turn the opponent doesn't get. This is the
+      pairing the game's own Skirk deck uses.</span></div></div>
+    <div class="row off"><div class="num">·</div>
+      <div><b>Fischl — the budget substitute</b>
+      <span>Free from the tutorial. Oz pings Electro <b>every End Phase on his own</b>;
+      Electro onto Kaeya's Cryo = <b>Superconduct</b> = a free rift every round with no card
+      and no turn spent. Most reliable rift generator you can get without a letter — just
+      no damage multiplier.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Why not Sucrose?</b> Cryo Swirl also makes rifts, but she has to be on field and hit
+    something that already has Cryo on it. Oz does it automatically. <b>Diluc is the one to
+    cut</b> either way — Melt makes no Void Rift at all.
+  </div>
+
+  <h3>Action cards — what to include</h3>
+  <div class="rows">
+    <div class="row goal"><div class="num">A</div>
+      <div><b>Far To Fall</b> — Skirk's Talent, from clearing all her Invitational
+      objectives
+      <span>Turns every rift into free chip damage. Take it as soon as you have
+      her.</span></div></div>
+    <div class="row"><div class="num">B</div>
+      <div><b>6–8 cards with an original cost of exactly 3 dice</b>
+      <span>Your Void Rift ammunition. <b>5-star weapon cards and the Sacrificial weapon
+      series are 3 dice</b>; so are several Talent cards. It doesn't matter much what they
+      do — you're buying the number <b>3</b> on the corner.</span></div></div>
+    <div class="row hub"><div class="num">C</div>
+      <div><b>Cryo Elemental Resonance</b>
+      <span>Two Cryo characters (Skirk + Kaeya) unlocks <b>Shattering Ice</b> and
+      <b>Woven Ice</b>. Those were the cards showing <b>"Invalid"</b> in your builder —
+      they go live the moment you have a second Cryo character in the lineup.</span></div></div>
+    <div class="row hub"><div class="num">D</div>
+      <div><b>Switch-acceleration</b>
+      <span>You swap a lot: Kaeya and Fischl set up, Skirk cashes in. Cheap
+      switch-cost reduction is worth more here than in most decks — and every switch also
+      discards Mutual Weapons Mentorship for <b>+1 Serpent's Subtlety</b>.</span></div></div>
+    <div class="row off"><div class="num">E</div>
+      <div><b>Food and healing</b>
+      <span>Skirk is 10 HP and has to survive to the round she fires. Keep your usual
+      1–2 food cards.</span></div></div>
+  </div>
+
+  <h3>The full 30</h3>
+  <p class="sub">Characters: <b>Skirk · Kaeya · Xingqiu</b>. Thirty action cards below.
+  <b>Fuel</b> = original cost 3 dice, so it can feed a Void Rift.</p>
+
+  <div class="bar good">
+    <b>All three carry swords.</b> That's a quiet piece of luck — <b>every sword card in
+    the deck is castable on somebody</b>, so your 3-cost fuel is never stranded. No bow or
+    catalyst weapons needed, and <b>Sacrificial Fragments is off the shopping list</b>.
+  </div>
+
+  <div class="bar good">
+    <b>Every dice cost below is verified against the wiki card list, 28 Oct.</b> The
+    <b>Fuel</b> column is the one that matters — those are the cards whose original cost is
+    exactly <b>3</b>, so they can be discarded to a Void Rift.
+  </div>
+
+  <table>
+    <tr><th>Card</th><th>×</th><th>Dice</th><th>Role</th><th>Where</th></tr>
+    <tr><td colspan="5" class="good"><b>FUEL — 10 cards at exactly 3 dice</b></td></tr>
+    <tr><td><b>Sacrificial Sword</b></td><td>2</td><td class="good">3</td><td>+1 DMG, makes a die after a Skill</td><td>Shop 700 ea</td></tr>
+    <tr><td><b>Favonius Sword</b></td><td>2</td><td class="good">3</td><td>The budget sword — same cost</td><td>Shop</td></tr>
+    <tr><td><b>Noblesse Oblige</b></td><td>2</td><td class="good">3</td><td><b>+1 Energy on play</b>, then +1 DMG ×3 after a Burst</td><td>Shop</td></tr>
+    <tr><td><b>Paimon</b></td><td>2</td><td class="good">3</td><td>2 Omni dice</td><td class="good">Starter deck</td></tr>
+    <tr><td><b>Dawn Winery</b></td><td>2</td><td class="good">3</td><td>Cheaper switching</td><td class="good">Starter deck</td></tr>
+    <tr><td colspan="5"><b>PAYLOAD</b></td></tr>
+    <tr><td><b>Far to Fall</b></td><td>1</td><td>1</td><td>Skirk's Talent — rifts deal 1 Cryo</td><td>Her Invitational objectives</td></tr>
+    <tr><td><b>Adeptus' Temptation</b></td><td>2</td><td>2</td><td class="bad">+3 Burst DMG — see below</td><td>Shop</td></tr>
+    <tr><td>Elemental Resonance: Shattering Ice</td><td>1</td><td>1</td><td>+2 DMG, needs 2 Cryo</td><td class="good">You have it</td></tr>
+    <tr><td>Elemental Resonance: Woven Ice</td><td>1</td><td>0</td><td>Free Cryo die</td><td class="good">You have it</td></tr>
+    <tr><td colspan="5"><b>ENGINE</b></td></tr>
+    <tr><td>Changing Shifts</td><td>2</td><td>0</td><td>Free switch</td><td>Starter</td></tr>
+    <tr><td>Leave It to Me!</td><td>2</td><td>0</td><td>Switch as a Fast Action</td><td>Starter</td></tr>
+    <tr><td>Knights of Favonius Library</td><td>2</td><td>0</td><td>Reroll dice</td><td>Shop 700 ea</td></tr>
+    <tr><td>Strategize</td><td>2</td><td>1</td><td>Draw 2</td><td>Starter</td></tr>
+    <tr><td>The Bestest Travel Companion!</td><td>2</td><td>2</td><td>2 Omni dice</td><td>Starter</td></tr>
+    <tr><td>Starsigns</td><td>2</td><td>2</td><td>Energy — charges Xingqiu's Burst</td><td>Starter</td></tr>
+    <tr><td>Liyue Harbor Wharf</td><td>2</td><td>2</td><td>Draw cards</td><td>Shop 700 ea</td></tr>
+    <tr><td>Mondstadt Hash Brown</td><td>1</td><td>1</td><td>Healing — Skirk is 10 HP</td><td>Starter</td></tr>
+    <tr><td class="good"><b>Total</b></td><td class="good"><b>30</b></td><td class="good"><b>10 fuel</b></td><td>Comfortably above the 6–8 floor</td><td></td></tr>
+  </table>
+
+  <div class="bar key">
+    <b>Four of your ten fuel cards are already in the Starter Deck.</b> <b>Paimon</b> and
+    <b>Dawn Winery</b> are both <b>3 dice</b> and both came free with the Casket of Tomes.
+    That's half the ammunition problem solved before you spend a single coin.
+  </div>
+
+  <div class="note">
+    <b>All six 3-cost swords</b>, if you want more fuel or cheaper options:
+    <b>Sacrificial Sword · Favonius Sword · Aquila Favonia · Skyward Blade ·
+    Light of Foliar Incision · Sapwood Blade</b>. Every one of them is castable on Skirk,
+    Kaeya <i>or</i> Xingqiu, so none can ever be stranded. At 2 copies each that's 12
+    potential fuel cards from swords alone.
+  </div>
+
+  <div class="note">
+    <b>Cards I checked that are <i>not</i> fuel</b> — don't count on them for a Void Rift:
+    Changing Shifts (0), Leave It to Me! (0), Knights of Favonius Library (0), Woven Ice
+    (0), Northern Smoked Chicken (0), Strategize (1), Shattering Ice (1), Mondstadt Hash
+    Brown (1), Far to Fall (1), Instructor's Cap (2), Liyue Harbor Wharf (2), Favonius
+    Cathedral (2), Wangshu Inn (2), Adeptus' Temptation (2), Starsigns (2), The Bestest
+    Travel Companion! (2).
+  </div>
+
+  <div class="bar key">
+    <b>Adeptus' Temptation is the card that breaks the game open.</b> +3 Elemental Burst
+    DMG is <b>additive</b>, and Mona's Illusory Bubble doubles <b>after</b> additive
+    bonuses. So: 7 Serpent's Subtlety → <b>+3 → 10 → doubled → 20 Cryo damage</b> in one
+    hit. Against a 10 HP card that's an overkill; against two it's a game.
+  </div>
+
+  <div class="bar warn">
+    <b>Tuning the fuel.</b> Six 3-cost cards is the floor. If you find yourself holding Void
+    Rifts you can't discard into, cut the <b>Northern Smoked Chicken</b> and one
+    <b>Mondstadt Hash Brown</b> for two more 3-cost weapons. If you're drowning in fuel and
+    starving for plays, go the other way.
+  </div>
+
+  <div class="note">
+    <b>Verification status — 28 Oct.</b> Every dice cost in the table above is now checked
+    against the
+    <a href="https://genshin-impact.fandom.com/wiki/Genius_Invokation_TCG/Card_List"
+       target="_blank" rel="noopener">wiki card list</a>, section by section (Event,
+    Support, Equipment). <b>Every cost I'd previously written from memory turned out
+    correct</b> — but two things only turned up on the real list: <b>Dawn Winery and
+    Noblesse Oblige are 3 dice</b>, which makes them fuel I'd been treating as ordinary
+    cards. The deck above is built on verified numbers, not recollection.
+  </div>
+
+  <h3>How it plays</h3>
+  <div class="steps">
+    <span class="step">1 · Kaeya applies Cryo</span>
+    <span class="step">2 · Fischl drops Oz</span>
+    <span class="step warn">3 · Superconduct → Void Rift</span>
+    <span class="step">4 · Discard 3-cost → +2 SS</span>
+    <span class="step">5 · Skirk in, Skill, Burst at 7</span>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">R1</div>
+      <div><b>Set the engine up</b>
+      <span>Kaeya's Skill for Cryo, Xingqiu's Burst for Rainbow Bladework. <b>Frozen</b>
+      triggers, you get a rift — and the opponent loses a turn. Skirk's Skill once for
+      <b>+2</b>, and bank the Mutual Weapons Mentorship. <i>(With Fischl instead: drop Oz
+      and let Superconduct do the same job.)</i></span></div></div>
+    <div class="row"><div class="num">R2</div>
+      <div><b>Bank to 7</b>
+      <span>Play up to three Void Rifts, discarding a 3-cost each time — <b>+6</b>. With
+      the Skill and a Mentorship discard you are at the cap.</span></div></div>
+    <div class="row goal"><div class="num">R3</div>
+      <div><b>Fire</b>
+      <span>Switch to Skirk, <b>Havoc: Ruin</b>. 7 Cryo to the active character and
+      <b>3 piercing to both characters behind it</b> — that's 13 damage spread across their
+      whole team from one card.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Don't fire early.</b> The Burst is legal at 2 Serpent's Subtlety and it will tempt
+    you. At 2 it does 2 damage and 2 piercing; at 7 it does 7 and 3. Same 3 dice.
+    <b>Always wait for 7</b> unless you're closing out a game that round.
+  </div>
+
+  <h2>6 · The shopping list</h2>
+  <p class="sub">Everything here is bought from Prince at The Cat's Tail with Lucky Coins.
+  Prices verified 27 Oct 2026.</p>
+
+  <div class="bar key">
+    <b>Core total: 3,100 Lucky Coins.</b> One letter plus three weapon cards turns the deck
+    from "has Skirk in it" into "Skirk actually fires."
+  </div>
+
+  <table>
+    <tr><th>#</th><th>Buy</th><th>Coins</th><th>Why</th></tr>
+    <tr><td>1</td><td><b>Match Invitation Letter</b> — for <b>Skirk</b></td><td><b>1,000</b></td><td>The card itself. Nothing else matters without it.</td></tr>
+    <tr><td>2</td><td><b>Match Invitation Letter</b> — for <b>Xingqiu</b></td><td><b>1,000</b></td><td>The Hydro half of the engine. You have one letter already.</td></tr>
+    <tr><td>3</td><td><b>Sacrificial Sword</b> ×2</td><td>1,400</td><td>3 dice each, castable on all three characters.</td></tr>
+    <tr><td class="good">—</td><td class="good"><b>Core total</b></td><td class="good"><b>3,400</b></td><td>Buy in this order.</td></tr>
+    <tr><td>4</td><td>Support cards (Liyue Harbor Wharf, Knights of Favonius Library, Jade Chamber, Dawn Winery, Wangshu Inn, Favonius Cathedral)</td><td>700 each</td><td>Filling your 4 empty slots.</td></tr>
+    <tr><td>5</td><td>5★ swords — Aquila Favonia, Skyward Blade</td><td>1,000 each</td><td>Also 3 dice. Extra fuel once the cheap options are bought.</td></tr>
+  </table>
+
+  <div class="bar good">
+    <b>Why the Sacrificial series is the right buy and not just any 3-cost card.</b>
+    <b>3 dice</b> — so it's legal Void Rift ammunition. But it's also a card you're happy to
+    <i>play</i>: <b>+1 DMG, and after that character uses an Elemental Skill it creates
+    1 Elemental Die of their element, once per round.</b> On <b>Fischl</b>, who re-casts her
+    Skill constantly to keep Oz out, that's close to a free die every round. Dead fuel
+    becomes live tempo — and if you draw it when you need a discard instead, nothing is
+    lost.
+  </div>
+
+  <div class="rows">
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Don't buy Sacrificial Bow, Greatsword or Fragments</b>
+      <span>Also 700 and also 3 dice, but Skirk, Kaeya and Xingqiu are <b>all sword
+      users</b> — a bow, claymore or catalyst card would be fuel you can never cast. Only
+      flip this if you swap Xingqiu for Fischl (then the <b>Bow</b>) or Mona (then the
+      <b>Fragments</b>).</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Don't buy dynamic skins (4,000) or Card Boxes (16,000)</b>
+      <span>Skins are cosmetic. Boxes need Player Level 8 and cost five letters' worth of
+      coins.</span></div></div>
+    <div class="row warn"><div class="num">!</div>
+      <div><b>Far To Fall is not for sale</b>
+      <span>Skirk's Talent card comes from clearing <b>all</b> her Invitational objectives
+      on Friendly Fracas. No amount of coins buys it.</span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Shop price tiers, so you can judge anything not listed:</b> <b>500</b> — event cards
+    and basic weapons (Raven Bow, Magic Guide, White Iron Greatsword). <b>700</b> — every
+    Support card, plus the mid-tier weapons (Sacrificial series, King's Squire, Fruit of
+    Fulfillment). <b>1,000</b> — top-tier weapons and the Match Invitation Letter.
+    Most cards cap at <b>2 copies</b> each.
+  </div>
+
+  <h2>7 · If you want the strongest deck rather than a Skirk deck</h2>
+
+  <div class="bar key">
+    <b>Kamisato Ayaka · Chongyun · Xingqiu</b> — a top community Freeze deck, and
+    <b>all three are sitting in your Player List right now</b>. Three letters.
+  </div>
+
+  <div class="card-spec">
+    <dl>
+      <dt>Sharing code</dt>
+      <dd style="word-break:break-all;font-family:Consolas,monospace;font-size:.82rem">
+        AIBQyQQMAJCgzPMMD8Aw3/END/AQ3vAND+EADfwQD/FwD/UNDFAQ1sELDEAgQcgEDBAA</dd>
+      <dt>How to use it</dt>
+      <dd>Deck screen → <b>⋯</b> → <b>Use Sharing Code to import deck</b>.</dd>
+      <dt>What it is</dt>
+      <dd>The classic <b>Freeze</b> archetype: Chongyun infuses, Xingqiu applies Hydro,
+        Ayaka carries. Same win condition as the Skirk deck — lock them down, then hit —
+        but with a proven list behind it.</dd>
+    </dl>
+  </div>
+
+  <div class="bar good">
+    <b>I checked this code decodes cleanly</b> — 68 characters, 51 bytes, the same shape as
+    the one you sent me. I still can't tell you which 30 action cards are inside it, and
+    <b>the import will show you which of them you're missing</b>. That's actually the
+    fastest way to find out what your collection lacks: import it and read the gaps.
+  </div>
+
+  <div class="note">
+    <b>Xingqiu is in both decks.</b> Whichever way you go, he's not a wasted letter — he's
+    the Hydro half of the Skirk engine <i>and</i> a core piece of the proven Freeze list.
+    <b>Spend the letter you have on him or on Skirk; neither is a mistake.</b>
+  </div>
+
+  <h2>8 · Your current deck</h2>
+  <div class="note">
+    Your screenshots show <b>3/3 characters and 26/30 action cards</b> — four slots spare.
+    Those are the slots to fill with <b>3-cost Void Rift fuel</b> once Skirk is in. The two
+    cards marked <b>"Invalid"</b> are almost certainly Elemental Resonance cards that need
+    two characters of one element in the lineup; adding Skirk alongside Kaeya validates the
+    Cryo pair.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> card acquisition and shop pricing from the
+    <a href="https://genshin-impact.fandom.com/wiki/Genius_Invokation_TCG/Card_Shop"
+       target="_blank" rel="noopener">Card Shop wiki</a> and
+    <a href="https://game8.co/games/Genshin-Impact/archives/399170" target="_blank"
+       rel="noopener">Game8</a>; Skirk's card text from
+    <a href="https://gamewith.net/genshin-impact/article/show/72585" target="_blank"
+       rel="noopener">GameWith</a> and the
+    <a href="https://genshin-impact.fandom.com/wiki/Skirk_(Character_Card)" target="_blank"
+       rel="noopener">Genshin wiki</a>; Cat's Tail's location from the
+    <a href="https://genshin-impact.fandom.com/wiki/The_Cat's_Tail" target="_blank"
+       rel="noopener">wiki</a>.
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { zone: true, x: 60, y: 41.7, w: 22.5, h: 30, role: "do-now",
+      tag: "Market District — Cat's Tail (approximate)" },
+    { x: 69.3, y: 48.8, role: "hub", size: "sm", label: "▾", tag: "Teleport here" },
+    { x: 34.6, y: 57.5, role: "off", size: "sm", label: "▾" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

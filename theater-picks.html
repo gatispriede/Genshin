@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imaginarium Theater — Act 1 picks</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .cast{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:16px 0 6px}
+  .pick{background:var(--panel);border-radius:12px;padding:10px 8px 12px;text-align:center;
+        border:2px solid transparent;position:relative}
+  .pick.yes{border-color:var(--do-now)}
+  .pick.no{opacity:.4}
+  .pick img{width:100%;border-radius:9px;display:block;background:#0e141c}
+  .pick.no img{filter:grayscale(1) brightness(.7)}
+  .slot{position:absolute;top:-9px;left:50%;transform:translateX(-50%);
+        width:22px;height:22px;border-radius:50%;background:#2a3543;color:var(--dim);
+        font-size:.76rem;font-weight:700;display:grid;place-items:center}
+  .pick.yes .slot{background:var(--do-now);color:#1a1008}
+  .nm{margin:9px 0 0;font-size:.86rem;color:var(--paper);font-weight:600}
+  .ro{margin:2px 0 0;font-size:.76rem;color:var(--dim);line-height:1.35}
+  .pick.yes .ro{color:var(--best)}
+  .el{display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
+      padding:1px 7px;border-radius:999px;margin-top:6px}
+  .hydro{background:#10303f;color:#7fd4f0}
+  .cryo{background:#17323a;color:#9fe6f5}
+  .anemo{background:#143328;color:#86dfb8}
+  .order{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .order div{background:var(--panel);border-radius:8px;padding:8px 12px;font-size:.86rem;
+             border-left:3px solid var(--best)}
+  .order b{color:var(--paper)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Act 1 — who to pick</h1>
+<p class="sub">Same left-to-right order as your Principal Cast row. Opposing lineup is a
+single enemy; Star Challenge is 75 seconds.</p>
+
+<div class="cast">
+  <div class="pick no"><span class="slot">1</span>
+    <img src="assets/portraits/Wanderer.png" alt="Wanderer">
+    <p class="nm">Wanderer</p><p class="ro">bench</p>
+    <span class="el anemo">Anemo</span></div>
+
+  <div class="pick yes"><span class="slot">2</span>
+    <img src="assets/portraits/Citlali.png" alt="Citlali">
+    <p class="nm">Citlali</p><p class="ro">Cryo + 20% Hydro RES shred</p>
+    <span class="el cryo">Cryo</span></div>
+
+  <div class="pick yes"><span class="slot">3</span>
+    <img src="assets/portraits/Neuvillette.png" alt="Neuvillette">
+    <p class="nm">Neuvillette</p><p class="ro">your carry — stay on him</p>
+    <span class="el hydro">Hydro</span></div>
+
+  <div class="pick no"><span class="slot">4</span>
+    <img src="assets/portraits/Prune.png" alt="Prune">
+    <p class="nm">Prune</p><p class="ro">bench</p>
+    <span class="el anemo">Anemo</span></div>
+
+  <div class="pick yes"><span class="slot">5</span>
+    <img src="assets/portraits/Kaeya.png" alt="Kaeya">
+    <p class="nm">Kaeya</p><p class="ro">second Cryo, keeps Frozen up</p>
+    <span class="el cryo">Cryo</span></div>
+
+  <div class="pick yes"><span class="slot">6</span>
+    <img src="assets/portraits/Barbara.png" alt="Barbara">
+    <p class="nm">Barbara</p><p class="ro">heals — Neuvillette scales on HP</p>
+    <span class="el hydro">Hydro</span></div>
+</div>
+
+<div class="bar good">
+  <b>Pick 2, 3, 5 and 6.</b> Bench the two Anemo — against a single enemy their crowd
+  grouping does nothing, and Wanderer is a second on-field carry who would stand idle
+  behind Neuvillette. Save both for a later battle.
+</div>
+
+<h2>Why these four</h2>
+<div class="order">
+  <div><b>Citlali's Cryo + Neuvillette's Hydro → Frozen.</b> That single reaction drives
+  everything below.</div>
+  <div><b>Frozen feeds Neuvillette.</b> <i>Heir to the Ancient Sea's Authority</i> grants
+  up to 3 stacks, boosting his Charged Attack.</div>
+  <div><b>Frozen also fires Citlali's shred.</b> <i>Mamaloaco's Frigid Rain</i> cuts
+  <b>20% Hydro RES</b> — aimed straight at your carry.</div>
+  <div><b>Kaeya is the second Cryo source</b>, so Frozen holds through Citlali's
+  cooldowns instead of gapping.</div>
+  <div><b>Barbara keeps him topped up.</b> <i>Discipline of the Supreme Arbitration</i>
+  gives <b>+0.6% Hydro DMG per 1% HP above 30%</b>, to a maximum of <b>+30%</b>.</div>
+</div>
+
+<div class="note">
+  <b>Order:</b> put <b>Citlali</b> or <b>Barbara</b> in slot 1 so you open on setup, then
+  swap to Neuvillette and stay there. Rough loop — Barbara skill, Kaeya skill, Citlali
+  skill, then Neuvillette charged attacks for the remainder.
+</div>
+
+<div class="bar key">
+  <b>Your Blessing track is the Frozen one at Lv 2</b>, which this team leans on directly.
+  Every point already spent there is working here.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

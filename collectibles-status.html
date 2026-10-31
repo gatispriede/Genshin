@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One-time collectibles — what you have, what's left</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .prog { display:grid; grid-template-columns:150px 1fr 56px; gap:12px; align-items:center;
+          margin-top:7px; font-size:.87rem; }
+  .prog .nm { color:var(--paper); }
+  .prog .nm small { display:block; color:#6f7a8c; font-size:.72rem; }
+  .prog .track { height:17px; background:#0d1219; border:1px solid var(--line);
+                 border-radius:5px; overflow:hidden; }
+  .prog .fill { height:100%; border-radius:4px 0 0 4px; }
+  .prog .pct { text-align:right; color:var(--dim); font-variant-numeric:tabular-nums; }
+  .prog.sub { font-size:.8rem; }
+  .prog.sub .nm { color:var(--dim); padding-left:14px; }
+  @media (max-width:560px){ .prog{ grid-template-columns:110px 1fr 46px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>One-time collectibles</h1>
+  <p class="sub">What the game knows, what the map knows, and what's actually left.
+  Account data pulled live 28 Oct 2026.</p>
+
+  <div class="bar bad">
+    <b>There is no automatic sync, and there isn't going to be one.</b> Nothing reads your
+    collected oculi, chests or puzzles and ticks them off the map. I checked this against
+    the live HoYoLAB map — the marking is manual. Full mechanics:
+    <a href="oculus-tracking.html">oculus-tracking.html</a>.
+  </div>
+
+  <div class="bar good">
+    <b>But two things <i>are</i> automatic, and together they get you most of the way.</b>
+    Your <b>Battle Chronicle</b> tells you <b>how many</b> of each you have — live, accurate,
+    no effort. The <b>map with "Hide Marked Pins" on</b> tells you <b>which ones</b> are
+    left, once you start marking. Chronicle for the count, map for the locations.
+  </div>
+
+  <h2>The thing your numbers actually say</h2>
+
+  <div class="bar key">
+    <b>This isn't a tracking problem. It's an exploration problem.</b> Seven of your eight
+    regions are between <b>0% and 6%</b> explored. There's almost nothing marked on your map
+    because there's almost nothing collected yet — a tracker would mostly be showing you
+    empty regions.
+  </div>
+
+  <h2>Region by region</h2>
+  <p class="sub">Live exploration percentages from the Battle Chronicle.</p>
+
+  <div class="prog"><div class="nm">Mondstadt</div>
+    <div class="track"><div class="fill" style="width:70.4%;background:var(--goal)"></div></div>
+    <div class="pct">70.4%</div></div>
+  <div class="prog sub"><div class="nm">Windrest Peak</div>
+    <div class="track"><div class="fill" style="width:32.2%;background:var(--farm)"></div></div>
+    <div class="pct">32.2%</div></div>
+  <div class="prog sub"><div class="nm">Dragonspine</div>
+    <div class="track"><div class="fill" style="width:29.5%;background:var(--farm)"></div></div>
+    <div class="pct">29.5%</div></div>
+
+  <div class="prog"><div class="nm">Liyue</div>
+    <div class="track"><div class="fill" style="width:22.7%;background:var(--warn)"></div></div>
+    <div class="pct">22.7%</div></div>
+  <div class="prog sub"><div class="nm">Chenyu Vale</div>
+    <div class="track"><div class="fill" style="width:3.9%;background:var(--do-now)"></div></div>
+    <div class="pct">3.9%</div></div>
+  <div class="prog sub"><div class="nm">The Chasm</div>
+    <div class="track"><div class="fill" style="width:0%;background:var(--do-now)"></div></div>
+    <div class="pct">0%</div></div>
+
+  <div class="prog"><div class="nm">Snezhnaya</div>
+    <div class="track"><div class="fill" style="width:6%;background:var(--do-now)"></div></div>
+    <div class="pct">6%</div></div>
+  <div class="prog sub"><div class="nm">Temple of Space</div>
+    <div class="track"><div class="fill" style="width:27.5%;background:var(--farm)"></div></div>
+    <div class="pct">27.5%</div></div>
+
+  <div class="prog"><div class="nm">Natlan</div>
+    <div class="track"><div class="fill" style="width:2%;background:var(--do-now)"></div></div>
+    <div class="pct">2%</div></div>
+  <div class="prog"><div class="nm">Fontaine</div>
+    <div class="track"><div class="fill" style="width:2%;background:var(--do-now)"></div></div>
+    <div class="pct">2%</div></div>
+  <div class="prog"><div class="nm">Nod-Krai</div>
+    <div class="track"><div class="fill" style="width:1%;background:var(--do-now)"></div></div>
+    <div class="pct">1%</div></div>
+  <div class="prog"><div class="nm">Inazuma</div>
+    <div class="track"><div class="fill" style="width:0%;background:var(--off)"></div></div>
+    <div class="pct">0%</div></div>
+  <div class="prog"><div class="nm">Sumeru</div>
+    <div class="track"><div class="fill" style="width:0%;background:var(--off)"></div></div>
+    <div class="pct">0%</div></div>
+
+  <h2>Oculi — the countable ones</h2>
+  <table>
+    <tr><th>Oculus</th><th>Have</th><th>Total</th><th>Left</th><th>Region at</th></tr>
+    <tr><td>Anemoculus</td><td><b>50</b></td><td>66</td><td class="good"><b>16</b></td><td>Mondstadt 70.4%</td></tr>
+    <tr><td>Geoculus</td><td><b>48</b></td><td>131</td><td>83</td><td>Liyue 22.7%</td></tr>
+    <tr><td>Cryoculus</td><td><b>19</b></td><td>140</td><td>121</td><td>Snezhnaya 6%</td></tr>
+    <tr><td>Hydroculus</td><td>11</td><td>180</td><td class="bad">169</td><td>Fontaine 2%</td></tr>
+    <tr><td>Pyroculus</td><td>8</td><td>168</td><td class="bad">160</td><td>Natlan 2%</td></tr>
+    <tr><td>Lunoculus</td><td>3</td><td>271</td><td class="bad">268</td><td>Nod-Krai 1%</td></tr>
+    <tr><td>Electroculus</td><td>0</td><td>181</td><td class="bad">181</td><td>Inazuma 0%</td></tr>
+    <tr><td>Dendroculus</td><td>0</td><td>271</td><td class="bad">271</td><td>Sumeru 0%</td></tr>
+  </table>
+
+  <div class="bar good">
+    <b>Cryoculus resolved, 28 Oct.</b> <b>140</b> exist in the released part of Snezhnaya,
+    spread across Volkodlak Tundra, Everfrozen Earth, Fellfrost Peak, Flamefeather Valley
+    and White Birch Snowgrave. The Statue goes to <b>Lv 10</b> and wants roughly <b>270</b>
+    in total, so 140 only gets you to <b>Lv 6</b> — the Lv 10 achievement isn't completable
+    yet, by anyone. Datamines point at ~271 once the region is finished.
+  </div>
+
+  <h2>Chests and the rest</h2>
+  <table>
+    <tr><th>Thing</th><th>Count</th><th>Note</th></tr>
+    <tr><td>Common chests</td><td>234</td><td rowspan="5">All five are <b>cumulative totals</b>, not fractions — the game never tells you how many exist, so there's no "remaining" figure to compute. Use the map for these.</td></tr>
+    <tr><td>Exquisite chests</td><td>257</td></tr>
+    <tr><td>Precious chests</td><td>69</td></tr>
+    <tr><td>Luxurious chests</td><td>27</td></tr>
+    <tr><td>Remarkable chests</td><td>15</td></tr>
+    <tr><td>Waypoints unlocked</td><td><b>163</b></td><td>High relative to your exploration — you've teleported widely without clearing.</td></tr>
+    <tr><td>Domains unlocked</td><td>19</td><td></td></tr>
+    <tr><td>Achievements</td><td>194</td><td></td></tr>
+  </table>
+
+  <h2>So what should you actually do</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Finish Mondstadt's Anemoculi — 16 left of 66</b>
+      <span>It's the only collectible on the account within reach of <i>done</i>. The
+      <b>Anemoculus Resonance Stone</b> points at the nearest one you haven't taken —
+      <b>that's the real auto-tracker</b>, and it's in the game already.
+      <b>Correction:</b> it isn't bought from Marjorie as I first said — you craft it via
+      Alchemy after <b>Mondstadt Reputation Level 2</b>, which is only four world quests
+      away. See <a href="reputation-compass.html">reputation-compass.html</a>. Statue
+      levels raise your <b>stamina cap</b>.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Then pick one region and commit to it</b>
+      <span>Spreading across eight regions at 2% each is why nothing feels finished.
+      <b>Liyue at 22.7%</b> has the most momentum, and its <b>Geoculus Resonance Stone</b>
+      comes the same way — Liyue Reputation Level 2, then craft it.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Mark as you go, not retroactively</b>
+      <span>Don't try to reconstruct 50 Anemoculi you've already taken. Turn on
+      <b>Hide Marked Pins</b> and <b>Batch Mark</b> each area the moment you clear
+      it. From then on every pin you can see is a pin you still owe.</span></div></div>
+    <div class="row off"><div class="num">4</div>
+      <div><b>Don't bother tracking chests</b>
+      <span>There are several hundred per region and no published total, so a chest tracker
+      can never show progress. Clear enemy camps and puzzles as you pass them and let the
+      count rise on its own.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>One consequence worth knowing.</b> Natlan is at <b>2%</b>, and
+    <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a> — the artifact domain
+    for Skirk and Varesa — is in Atocpan. You have the Pyroculi to prove you've been there,
+    but expect some travel to reach it rather than a short teleport.
+  </div>
+
+  <div class="note">
+    Related: <a href="oculus-tracking.html">how the map's marking actually works</a> ·
+    <a href="exaiphanes-statues-map.html">Snezhnaya statues</a> ·
+    <a href="starfell-valley-guide.html">Mondstadt priority spots</a>.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

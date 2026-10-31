@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fischl — build and rotation</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .slots { display:grid; gap:9px; margin-top:10px; }
+  .slot { display:grid; grid-template-columns:96px 1fr 1fr; gap:12px; align-items:start;
+          padding:12px 14px; background:var(--panel); border-radius:8px;
+          border-left:3px solid var(--off); }
+  .slot.ok  { border-left-color:var(--goal); }
+  .slot.bad { border-left-color:var(--do-now); }
+  .slot.meh { border-left-color:var(--warn); }
+  .slot h4 { margin:0; font-size:.88rem; color:var(--paper); }
+  .slot .now, .slot .want { font-size:.85rem; line-height:1.5; }
+  .slot .now  { color:var(--dim); }
+  .slot .want { color:#c9d4e3; }
+  .slot .want b { color:var(--best); }
+  .slot small { display:block; color:#6f7a8c; font-size:.72rem;
+                letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px; }
+  @media (max-width:640px){ .slot{ grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="styles/gear.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pagechar"><span data-char="Fischl"></span><h1>Fischl</h1></div>
+  <p class="sub">Lv 50 · C0 · Electro bow · off-field sub-DPS. Live loadout read
+  27 Oct 2026.</p>
+
+  <div class="bar key">
+    <b>She is wearing five 3-star artifacts, four of which roll the same ATK% 5.2%.</b>
+    Her weapon is fine. Her artifacts are the worst set on the account, and she has
+    <b>7.1% CRIT Rate</b> — the lowest of all 23 characters. This is the cheapest large
+    fix left.
+  </div>
+
+  <h2>Where she is vs where she's going</h2>
+  <table>
+    <tr><th>Stat</th><th>Now</th><th>Target</th><th></th></tr>
+    <tr><td>ATK</td><td>852</td><td>higher — Oz scales off it</td><td class="bad">3★ pieces</td></tr>
+    <tr><td>CRIT Rate</td><td><b>7.1%</b></td><td>~50%</td><td class="bad">worst on account</td></tr>
+    <tr><td>CRIT DMG</td><td>54.2%</td><td>~100%+</td><td class="bad">barely above base</td></tr>
+    <tr><td>Electro DMG</td><td><b>0.0%</b></td><td>46%+ (goblet)</td><td class="bad">missing</td></tr>
+    <tr><td>Energy Recharge</td><td>103.5%</td><td>100% <b>if she's with Varesa</b></td><td class="good">fine</td></tr>
+  </table>
+
+  <div class="note">
+    <b>7.1% CRIT Rate means she crits about one hit in fourteen.</b> 54.2% CRIT DMG is
+    barely above the 50% every character starts with — so essentially none of her gear is
+    contributing crit at all.
+  </div>
+
+  <div class="bar good">
+    <b>Her Energy Recharge is only fine because of Varesa.</b> At C0 a solo-Electro Fischl
+    needs <b>120–140% ER</b>; with a second Electro character on the team it drops to
+    <b>100%</b>. She has 103.5%. <b>Run her with Varesa</b> and you can ignore ER entirely —
+    split them up and she starts missing Bursts.
+  </div>
+
+  <h2>Slot by slot</h2>
+  <div class="slots">
+    <div class="slot bad">
+      <h4>Flower</h4>
+      <div class="now"><small>Now</small>Resolution of Sojourner <b>3★</b> +4 · flat HP</div>
+      <div class="want"><small>Want</small>Any <b>4★ or 5★</b> flower. Main stat is fixed,
+        so this is purely about the substats and the level cap.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Plume</h4>
+      <div class="now"><small>Now</small>Resolution of Sojourner <b>3★</b> +12 · flat ATK</div>
+      <div class="want"><small>Want</small>Any <b>4★ or 5★</b> plume. Same story.</div>
+    </div>
+    <div class="slot meh">
+      <h4>Sands</h4>
+      <div class="now"><small>Now</small>Martial Artist <b>3★</b> +0 · ATK% 5.2%</div>
+      <div class="want"><small>Want</small><b>ATK%</b> — right stat, worthless piece. A 4★
+        ATK% sands at +12 gives roughly <b>8× as much</b>.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Goblet</h4>
+      <div class="now"><small>Now</small>Martial Artist <b>3★</b> +0 · ATK% 5.2%</div>
+      <div class="want"><small>Want</small><b>Electro DMG Bonus.</b> KeqingMains is explicit
+        that ATK% goblets are generally worse for her. This is her single biggest
+        slot.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Circlet</h4>
+      <div class="now"><small>Now</small>Resolution of Sojourner <b>3★</b> +0 · ATK% 5.2%</div>
+      <div class="want"><small>Want</small><b>CRIT Rate</b> or <b>CRIT DMG</b>, aiming at a
+        1:2 ratio. From 7.1%, a CRIT Rate circlet is the bigger jump.</div>
+    </div>
+  </div>
+
+  <div class="bar good">
+    <b>Substat priority:</b> Energy Recharge until she hits her requirement (done, with
+    Varesa) → <b>CRIT</b> → ATK%. Flat ATK is worth about <b>half</b> of ATK%.
+  </div>
+
+  <h2>Sets — the cheap one and the real one</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Do this week: 2pc Thundering Fury + 2pc anything with ATK%</b>
+      <span><b>Midsummer Courtyard</b>, near Starsnatch Cliff in Mondstadt — unlocked at
+      AR 22, so it's been open for ages. Two pieces gets you <b>Electro DMG +15%</b> with
+      no 4-piece commitment. Against five 3★ pieces this is transformative and nearly
+      free.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>The actual best-in-slot: 4pc Golden Troupe</b>
+      <span><b>+70% Elemental Skill damage while off-field.</b> Oz <i>is</i> her Elemental
+      Skill and he fights off-field, so both halves of the 4-piece apply to her main damage
+      source — nothing else comes close. Drops from <b>Denouement of Sin</b>, Belleau
+      Region, <b>Fontaine</b> — north of Romaritime Harbor. You have 11 Hydroculi, so
+      Fontaine is open.</span></div></div>
+    <div class="row off"><div class="num">3</div>
+      <div><b>Also fine</b>
+      <span>2pc Golden Troupe + 2pc Thundering Fury. 4pc Tenacity of the Millelith if you
+      want the team ATK buff instead. <b>Not</b> 4pc Thundering Fury — its 2-piece is
+      better than its 4-piece.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Resin order.</b> Varesa's Electro goblet at
+    <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a> still comes first —
+    she's Lv 70 and Fischl is support. But the <b>2pc Thundering Fury</b> step above costs
+    almost nothing and shouldn't wait for it.
+  </div>
+
+  <h2>Weapon — keep Rust, but know what it isn't doing</h2>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">✓</div>
+      <div><b>Rust — 4★, Lv 50, R1, ATK% 26.8%</b>
+      <span><b>Keep it.</b> Oz <b>snapshots Fischl's ATK</b> the moment he's summoned, so
+      base ATK and ATK% both feed straight into his damage. As a stat stick it's the best
+      bow you have for her.</span></div></div>
+    <div class="row off"><div class="num">!</div>
+      <div><b>Its passive is dead on this build</b>
+      <span>Rust gives <b>+40% Normal Attack DMG and −10% Charged Attack DMG</b>. Oz's
+      damage is <b>Elemental Skill</b> damage — neither half touches it. Don't let the
+      passive influence what you compare it against; judge it on base ATK and ATK%
+      alone.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Don't move Slingshot over from Amber</b>
+      <span>It tempts because of its CRIT Rate substat, but it's a 3★ with far less base
+      ATK, its own passive is also dead for Oz, and it would leave Amber with nothing.
+      <b>Get the crit from the circlet instead</b> — a 4★ CRIT Rate circlet at +16 beats
+      it outright and costs Amber nothing.</span></div></div>
+    <div class="row hub"><div class="num">·</div>
+      <div><b>If you want to craft something</b>
+      <span>KQM's free 4★ picks are <b>Fading Twilight</b>, and the craftable
+      <b>Hamayumi</b> and <b>Prototype Crescent</b> — all stat sticks for Oz too.
+      <b>Polar Star</b> is her 5★ best-in-slot if you ever pull one.</span></div></div>
+  </div>
+
+  <h2>How her kit actually works</h2>
+
+  <div class="bar key">
+    <b>Oz snapshots.</b> When you cast her Skill, Oz locks in Fischl's stats at that
+    instant and keeps them for his whole duration. <b>Any ATK buff has to land before the
+    Skill</b>, not after. Recasting the Skill resummons him and re-snapshots.
+  </div>
+
+  <div class="rows">
+    <div class="row goal"><div class="num">E</div>
+      <div><b>Elemental Skill — summons Oz · 25s cooldown</b>
+      <span>He attacks on his own with an <b>11m range</b> and generates roughly
+      <b>0.67 Electro particles per second</b> — he is both her damage and the team's
+      energy.</span></div></div>
+    <div class="row hub"><div class="num">Q</div>
+      <div><b>Elemental Burst — 15s cooldown</b>
+      <span>Also puts Oz on the field. The Burst-summoned Oz snapshots when Fischl leaves
+      her Oz form.</span></div></div>
+    <div class="row"><div class="num">A4</div>
+      <div><b>Her Ascension 4 passive — free damage you already have</b>
+      <span>While Oz is out, when the <b>active character</b> triggers an Electro-related
+      reaction, it deals extra Electro damage equal to <b>80% of Fischl's ATK</b>, every
+      0.5s, within 15m of whoever is on the field. With <b>Varesa on field and Barbara
+      applying Hydro</b>, Electro-Charged fires this constantly. <b>Spread does not
+      trigger it.</b></span></div></div>
+  </div>
+
+  <div class="note">
+    <b>Talent priority:</b> <b>Elemental Skill first</b> — Oz's damage scales off the Skill
+    level, so it's the single highest-value talent on her. Then Burst (worth taking to
+    level 6). <b>Normal Attack barely matters</b>; she isn't holding the field.
+  </div>
+
+  <h2>Rotation</h2>
+  <div class="steps">
+    <span class="step">1 · E — Oz out</span>
+    <span class="step">2 · Swap to Varesa</span>
+    <span class="step warn">3 · Q when it's up</span>
+    <span class="step">4 · Re-cast E every 25s</span>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Open with her Skill</b>
+      <span>Oz first, before Varesa starts her ECP loop — so his damage overlaps the whole
+      rotation and he's feeding particles the entire time.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Alternate Skill and Burst on cooldown</b>
+      <span>Skill is 25s, Burst is 15s. At C0 her personal rotation is <b>25 seconds</b> —
+      don't try to force her into a shorter one.</span></div></div>
+    <div class="row off"><div class="num">!</div>
+      <div><b>Don't end a fight on her Burst</b>
+      <span>She'll start the next fight with no energy and no Oz.</span></div></div>
+  </div>
+
+  <h2>Her team</h2>
+  <div class="rows">
+    <div class="row hub"><div class="num">1</div>
+      <div><b>Varesa — on-field, Electro</b> <span>The second Electro that halves Fischl's
+      ER requirement. See <a href="varesa-build.html">her page</a>.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Barbara — Hydro</b> <span>Electro-Charged keeps Fischl's A4 firing.</span></div></div>
+    <div class="row hub"><div class="num">3</div>
+      <div><b>Sucrose — Anemo</b> <span>Grouping, and eventually 4pc Viridescent Venerer
+      for <b>−40% Electro RES</b>, which buffs Fischl and Varesa at once.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Not on Skirk's team</b>
+      <span>Skirk's A4 only counts <b>Hydro and Cryo</b> teammates. Fischl gives her no
+      Death's Crossing stack — see <a href="skirk-build.html">Skirk's page</a>.</span></div></div>
+  </div>
+
+  <div class="bar good">
+    <b>Do these four things, in order:</b> 1 · <b>2pc Thundering Fury</b> from Midsummer
+    Courtyard · 2 · any <b>Electro DMG goblet</b> and a <b>CRIT circlet</b>, 4★ or better ·
+    3 · max her <b>Elemental Skill</b> talent · 4 · ascend her toward <b>Lv 80</b>.
+  </div>
+
+  <div class="note">
+    Coverage across the whole roster:
+    <a href="build-coverage.html">build-coverage.html</a>. Everyone's equipped gear:
+    <a href="research/05-current-loadouts.md">05-current-loadouts.md</a>.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> sets, main stats, substat priority, ER requirements, weapons, talent
+    priority, Oz mechanics and rotation from the
+    <a href="https://keqingmains.com/fischl/" target="_blank" rel="noopener">KeqingMains
+    Fischl guide</a>; Golden Troupe's domain from
+    <a href="https://game8.co/games/Genshin-Impact/archives/421272" target="_blank"
+    rel="noopener">Game8</a>; Rust's passive from the
+    <a href="https://genshin-impact.fandom.com/wiki/Rust" target="_blank"
+    rel="noopener">Genshin wiki</a>. Your stats and equipped pieces are read live from the
+    Battle Chronicle.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<div id="ascension" data-character="Fischl"></div>
+
+<h2>Artifact sets</h2>
+<p class="sub">Effects are read live from the game data, so they cannot go stale.</p>
+<div class="setgrid gear" data-sets="Golden Troupe | best for her, because Oz is Skill damage and the 4pc works off field; Thundering Fury | the classic Electro set; Tenacity of the Millelith | support mode, +20% party ATK; Instructor | 3-4 star stopgap, a finished set beats half a good one"></div>
+
+<script src="app/ascension.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>

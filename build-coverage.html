@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build coverage — who's documented, who isn't</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .tally { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin:14px 0 4px; }
+  .tally div { padding:12px 14px; border-radius:9px; background:var(--panel);
+               border-top:3px solid var(--off); }
+  .tally b { display:block; font-size:1.7rem; line-height:1.1; color:var(--paper); }
+  .tally span { color:var(--dim); font-size:.74rem; letter-spacing:.08em;
+                text-transform:uppercase; }
+  .tally .t1 { border-top-color:var(--best); }
+  .tally .t2 { border-top-color:var(--goal); }
+  .tally .t3 { border-top-color:var(--hub); }
+  .tally .t4 { border-top-color:var(--off); }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(148px,1fr));
+          gap:8px; margin-top:10px; }
+  .ch { position:relative; padding:11px 12px 10px; border-radius:9px;
+        background:var(--panel); border-left:4px solid var(--off);
+        display:grid; gap:3px; }
+  .ch .nm { display:flex; align-items:center; gap:7px;
+            font:700 .92rem/1.2 "Segoe UI",sans-serif; color:var(--paper); }
+  .ch .nm i { width:9px; height:9px; border-radius:50%; flex:0 0 auto; }
+  .ch .lv { color:var(--dim); font-size:.78rem; }
+  .ch .st { font-size:.7rem; letter-spacing:.07em; text-transform:uppercase;
+            font-weight:700; margin-top:2px; }
+  .ch.t1 { border-left-color:var(--best);  background:#2a2208; }
+  .ch.t2 { border-left-color:var(--goal); }
+  .ch.t3 { border-left-color:var(--hub); }
+  .ch.t4 { border-left-color:var(--off);  background:var(--panel2); }
+  .ch.t1 .st { color:var(--best); }
+  .ch.t2 .st { color:var(--goal); }
+  .ch.t3 .st { color:var(--hub); }
+  .ch.t4 .st { color:#5b6678; }
+  .ch .flag { position:absolute; top:8px; right:9px; font-size:.62rem; font-weight:800;
+              letter-spacing:.06em; color:#2a0d04; background:var(--do-now);
+              padding:2px 6px; border-radius:4px; }
+  .ch a { color:inherit; text-decoration:none; }
+
+  .elkey { display:flex; flex-wrap:wrap; gap:14px; margin-top:12px;
+           font-size:.8rem; color:var(--dim); }
+  .elkey span { display:flex; align-items:center; gap:6px; }
+  .elkey i { width:10px; height:10px; border-radius:50%; }
+  @media (max-width:560px){ .tally{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Who has a build, who doesn't</h1>
+  <p class="sub">All <span id="total">–</span> characters, 31 Oct 2026. Colour = how much of a build exists in
+  this project, not how good the character is.</p>
+
+  <div class="tally">
+    <div class="t1"><b id="n1">–</b><span>Has a page</span></div>
+    <div class="t2"><b id="n2">–</b><span>Audited, no page</span></div>
+    <div class="t3"><b id="n3">–</b><span>Set advice only</span></div>
+    <div class="t4"><b id="n4">–</b><span>Nothing</span></div>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--best)"></i>Has a page — own build page, or the <a href="support-squad.html">support squad</a> page</span>
+    <span><i style="background:var(--goal)"></i>Per-slot audit in doc 05 + set tier in doc 09</span>
+    <span><i style="background:var(--hub)"></i>Named in doc 09's set tiers only</span>
+    <span><i style="background:var(--off)"></i>Not covered anywhere</span>
+  </div>
+
+  <div class="elkey">
+    <span><i style="background:var(--pyro)"></i>Pyro</span>
+    <span><i style="background:var(--hydro)"></i>Hydro</span>
+    <span><i style="background:var(--electro)"></i>Electro</span>
+    <span><i style="background:var(--cryo)"></i>Cryo</span>
+    <span><i style="background:var(--dendro)"></i>Dendro</span>
+    <span><i style="background:var(--anemo)"></i>Anemo</span>
+    <span><i style="background:var(--geo)"></i>Geo</span>
+  </div>
+
+  <h2>The roster, highest level first</h2>
+  <div class="grid" id="roster"></div>
+
+  <h2>What the gaps actually mean</h2>
+  <div class="rows">
+    <div class="row warn"><div class="num">!</div>
+      <div><b>Five characters were missing from this page entirely</b>
+      <span>Four of them 5★: <b>Neuvillette</b> (Hydro), <b>Wanderer</b> (Anemo),
+      <b>Escoffier</b> and <b>Citlali</b> (Cryo), plus <b>Prune</b> (Anemo).
+      Escoffier now has <a href="escoffier-build.html">a page</a>. They are
+      listed now with <b>Lv ?</b> because the local character files are static game data,
+      not account data — levels need a HoYoLAB pull.
+      <b>Neuvillette and Wanderer matter most</b>: they are your Hydro and Anemo main DPS,
+      so "no non-Electro damage option" was never true.</span></div></div>
+    <div class="row"><div class="num">1</div>
+      <div><b>Dahlia is the last red flag</b>
+      <span>Kaeya now has one on the <a href="support-squad.html">squad page</a>. Dahlia
+      (Hydro, C4, Lv 23) is the other candidate for Skirk's missing third <b>Death's
+      Crossing</b> stack, and she's also a shielder — which would switch on Calamity of
+      Eshu if you ever build Skirk around it.</span></div></div>
+    <div class="row done"><div class="num">2</div>
+      <div><b>Tighnari &mdash; done, 31 Oct</b>
+      <span>C1, Lv 44, wearing two 3★ Gambler pieces. <a href="tighnari-build.html">His page</a>
+      covers both roles &mdash; Charged Attack main DPS and quickswap &mdash; because the gear
+      differs. You own a bow for each: <b>Slingshot</b> for DPS, <b>Favonius Warbow</b> for
+      quickswap. <b>Rust is an active downgrade on him</b>, since it lowers Charged Attack
+      damage.</span></div></div>
+    <div class="row goal"><div class="num">3</div>
+      <div><b>Fischl — done, 27 Oct</b>
+      <span>Five 3★ pieces and <b>7.1% CRIT Rate</b>, the worst on the account.
+      <a href="fischl-build.html">Her page</a> has the fix, and the cheap first step is
+      2pc Thundering Fury from Midsummer Courtyard.</span></div></div>
+    <div class="row off"><div class="num">4</div>
+      <div><b>The grey block is now just benchwarmers</b>
+      <span>Manekin, Manekina, Candace, Razor and Dahlia. Nothing to document until you
+      decide to use one.</span></div></div>
+  </div>
+
+  <div class="bar warn">
+    <b>Separately — <a href="reaction-combos.html">reaction-combos.html</a> is stale.</b>
+    It was written when you had five characters and says "you have no Hydro". You now have
+    four Hydro characters and all seven elements except Pyro coverage worth speaking of.
+    Worth a rewrite.
+  </div>
+
+<script>
+  const E = { Pyro:"--pyro", Hydro:"--hydro", Electro:"--electro", Cryo:"--cryo",
+              Dendro:"--dendro", Anemo:"--anemo", Geo:"--geo" };
+
+  // tier 1 own page · 2 audited in doc 05 · 3 doc 09 set tiers only · 4 nothing
+  const SQ = "support-squad.html";
+  const ROSTER = [
+    ["Varesa",   70, 0, "Electro", 1, "varesa-build.html"],
+    ["Barbara",  66, 0, "Hydro",   1, SQ, null, "Squad page"],
+    ["Skirk",    60, 0, "Cryo",    1, "skirk-build.html"],
+    ["Fischl",   50, 0, "Electro", 1, "fischl-build.html"],
+    ["Lisa",     50, 0, "Electro", 2],
+    ["Tighnari", 44, 1, "Dendro",  1, "tighnari-build.html"],
+    ["Traveler", 40, 2, "Geo",     2],
+    ["Mika",     40, 6, "Cryo",    1, SQ, null, "Squad page"],
+    ["Sucrose",  40, 0, "Anemo",   1, SQ, null, "Squad page"],
+    ["Xiangling",40, 0, "Pyro",    2],
+    ["Amber",    40, 1, "Pyro",    2],
+    ["Noelle",   32, 0, "Geo",     2],
+    ["Alyosha",  28, 0, "Electro", 1, SQ, null, "Squad page"],
+    ["Dahlia",   23, 4, "Hydro",   4, null, "NEXT"],
+    ["Manekina", 20, 0, "Geo",     4],
+    ["Manekin",  20, 0, "Geo",     4],
+    ["Lynette",  20, 0, "Anemo",   3],
+    ["Candace",  20, 2, "Hydro",   4],
+    ["Beidou",   20, 0, "Electro", 3],
+    ["Razor",    20, 0, "Electro", 4],
+    ["Kaeya",    20, 0, "Cryo",    1, SQ, null, "Squad page"],
+    ["Chongyun", 13, 0, "Cryo",    1, SQ, null, "Squad page"],
+    ["Collei",    1, 0, "Dendro",  3],
+    ["Neuvillette", 0, 0, "Hydro", 4, null, "NEW"],
+    ["Wanderer",  0, 0, "Anemo",   4, null, "NEW"],
+    ["Escoffier", 0, 0, "Cryo",    1, "escoffier-build.html"],
+    ["Citlali",   0, 0, "Cryo",    4, null, "NEW"],
+    ["Prune",     0, 0, "Anemo",   4, null, "NEW"]
+  ];
+
+  const LABEL = { 1:"Build page", 2:"Audited", 3:"Set advice", 4:"No build" };
+
+  // Portraits come from the local avatar data; names it doesn't know (Traveler,
+  // the Manekins) simply render without one rather than showing a broken image.
+  let ICON = {};
+  fetch("reference/data/_avatars_index.json", { cache: "no-cache" })
+    .then(r => r.json())
+    .then(d => {
+      Object.values(d.data.items).forEach(c => { ICON[c.name] = c.icon; });
+      draw();
+    })
+    .catch(draw);
+
+  function draw() {
+  document.getElementById("roster").innerHTML = ROSTER.map(
+    ([name, lv, cons, el, tier, href, flag, label]) => {
+      const pic = ICON[name]
+        ? `<img class="por" loading="lazy" alt="" src="https://gi.yatta.moe/assets/UI/${ICON[name]}.png">`
+        : `<span class="por por--none"></span>`;
+      const inner = pic +
+        `<div class="nm"><i style="background:var(--${el.toLowerCase()})"></i>${name}</div>` +
+        `<div class="lv">Lv ${lv || "?"}${cons ? " · C" + cons : ""}</div>` +
+        `<div class="st">${label || LABEL[tier]}</div>` +
+        (flag ? `<div class="flag">${flag}</div>` : "");
+      return `<div class="ch t${tier}">` +
+             (href ? `<a href="${href}">${inner}</a>` : inner) +
+             `</div>`;
+    }).join("");
+  }
+
+  [1, 2, 3, 4].forEach(t => {
+    document.getElementById("n" + t).textContent =
+      ROSTER.filter(r => r[4] === t).length;
+  });
+  document.getElementById("total").textContent = ROSTER.length;
+</script>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

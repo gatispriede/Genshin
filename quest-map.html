@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quest map — every reputation quest</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/live-map.css">
+</head>
+<body>
+
+<h1>Quest map — every reputation quest</h1>
+<p class="sub">
+  The shortest-first list from <a href="reputation-quests.html">Reputation quests</a>,
+  put on the real game map. What the reputation is <i>for</i>: <a href="reputation-compass.html">the treasure compasses</a>. Click a dot for the start NPC, the measured length and
+  the wiki's own start-location screenshot. Colour is how long the quest is.
+</p>
+
+<div class="note">
+  <b>Dots are area-accurate, not pin-accurate.</b> The official map's 576 World Quest
+  pins carry no names, so none of them can be tied to a quest. What the wiki does
+  record exactly is each quest's subarea, and the map's anchor list gives every named
+  area a position — so each dot sits on its named place, fanned out where several
+  quests share one. <b>The screenshot in the panel is the precise spot.</b>
+</div>
+
+<div class="lmap-filters" id="lmap-filters"></div>
+
+<ul class="lmap-legend">
+  <li><i class="k-vs"></i> Very short</li>
+  <li><i class="k-s"></i> Short</li>
+  <li><i class="k-m"></i> Medium</li>
+  <li><i class="k-l"></i> Long</li>
+  <li><i class="k-d"></i> Done</li>
+  <li><i class="k-wp"></i> Teleport &mdash; diamond; circle is a Statue, purple a Domain</li>
+</ul>
+
+<div class="lmap-wrap">
+  <div>
+    <div class="lmap" id="map-canvas" data-source="QUEST_MAP"></div>
+    <div class="lmap-bar">
+      <span class="lmap-bar__status" id="lmap-status"></span>
+      <label><input type="checkbox" id="lmap-hide-done"> Hide done</label>
+      <label><input type="checkbox" id="lmap-wp" checked> Teleports</label>
+      <button type="button" id="lmap-out">&minus;</button>
+      <button type="button" id="lmap-in">+</button>
+      <button type="button" id="lmap-fit">Fit</button>
+    </div>
+  </div>
+
+  <aside class="lmap-panel" id="lmap-panel" hidden></aside>
+</div>
+
+<div class="note" id="lmap-missing"></div>
+
+<div class="note">
+  Teleports and place names come from the live official map; quest length and
+  start-location screenshots from the wiki. Mondstadt and Snezhnaya have no
+  Reputation system entries, and Natlan uses per-tribe reputation, a separate system.
+</div>
+
+<div class="note">
+  <b>Farming maps</b> are in the companion project, same engine, different data:
+  <a href="http://localhost:5173/map.html">Natlan Saurian map</a> (946 spawns for
+  Tyrant&rsquo;s Fang),
+  <a href="http://localhost:5173/routes.html">written routes</a> and the
+  <a href="http://localhost:5173/index.html">farming plan</a>. They need the
+  <code>genshin-guide</code> server on port 5173.
+</div>
+
+<script src="reference/data/quest-map.data.js"></script>
+<script src="app/map-core.js"></script>
+<script src="app/live-map.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+ "crimson-agate": {
+  "title": "Crimson Agate",
+  "feeds": "Frostbearing Tree (Dragonspine)",
+  "count": 80,
+  "stops": 13,
+  "file": "collect-crimson-agate.js"
+ },
+ "anemoculus": {
+  "title": "Anemoculus",
+  "feeds": "Statue of the Seven (Mondstadt)",
+  "count": 66,
+  "stops": 29,
+  "file": "collect-anemoculus.js"
+ },
+ "geoculus": {
+  "title": "Geoculus",
+  "feeds": "Statue of the Seven (Liyue)",
+  "count": 131,
+  "stops": 53,
+  "file": "collect-geoculus.js"
+ },
+ "electroculus": {
+  "title": "Electroculus",
+  "feeds": "Statue of the Seven (Inazuma) → Electro Sigils → Sacred Sakura",
+  "count": 181,
+  "stops": 58,
+  "file": "collect-electroculus.js"
+ },
+ "dendroculus": {
+  "title": "Dendroculus",
+  "feeds": "Statue of the Seven (Sumeru) → Dendro Sigils → Tree of Dreams",
+  "count": 271,
+  "stops": 122,
+  "file": "collect-dendroculus.js"
+ },
+ "hydroculus": {
+  "title": "Hydroculus",
+  "feeds": "Statue of the Seven (Fontaine) → Hydro Sigils → Fountain of Lucine",
+  "count": 225,
+  "stops": 91,
+  "file": "collect-hydroculus.js"
+ },
+ "pyroculus": {
+  "title": "Pyroculus",
+  "feeds": "Statue of the Seven (Natlan) → Pyro Sigils → Tablet of Tona",
+  "count": 249,
+  "stops": 117,
+  "file": "collect-pyroculus.js"
+ },
+ "cryoculus": {
+  "title": "Cryoculus",
+  "feeds": "Statue of the Seven (Snezhnaya)",
+  "count": 140,
+  "stops": 57,
+  "file": "collect-cryoculus.js"
+ },
+ "lunoculus": {
+  "title": "Lunoculus",
+  "feeds": "Statue of the Seven (Nod-Krai) → Luna Sigils",
+  "count": 197,
+  "stops": 86,
+  "file": "collect-lunoculus.js"
+ },
+ "skysplit-gembloom": {
+  "title": "Skysplit Gembloom",
+  "feeds": "Varesa + Skirk — 168 each, 336 total",
+  "count": 49,
+  "stops": 7,
+  "file": "collect-skysplit-gembloom.js"
+ },
+ "philanemo-mushroom": {
+  "title": "Philanemo Mushroom",
+  "feeds": "Barbara ascension — 168 needed",
+  "count": 57,
+  "stops": 7,
+  "file": "collect-philanemo-mushroom.js"
+ },
+ "small-lamp-grass": {
+  "title": "Small Lamp Grass",
+  "feeds": "Fischl ascension — 168 needed",
+  "count": 85,
+  "stops": 16,
+  "file": "collect-small-lamp-grass.js"
+ },
+ "clockwork-meka": {
+  "title": "Clockwork Meka",
+  "feeds": "Skirk — the three gear tiers",
+  "count": 327,
+  "stops": 70,
+  "file": "collect-clockwork-meka.js"
+ },
+ "nilotpala-lotus": {
+  "title": "Nilotpala Lotus",
+  "feeds": "Tighnari ascension — 168 needed",
+  "count": 79,
+  "stops": 23,
+  "file": "collect-nilotpala-lotus.js"
+ },
+ "beryl-conch": {
+  "title": "Beryl Conch",
+  "feeds": "Escoffier ascension — 168 needed",
+  "count": 105,
+  "stops": 20,
+  "file": "collect-beryl-conch.js"
+ }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbara · Mika · Sucrose · Alyosha · Kaeya · Chongyun</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .ch { margin-top:16px; padding:14px 16px; border-radius:10px;
+        background:var(--panel); border-left:4px solid var(--off); }
+  .ch header { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+               margin-bottom:3px; }
+  .ch h3 { margin:0; font-size:1.12rem; color:var(--paper); display:flex;
+           align-items:center; gap:8px; }
+  .ch h3 i { width:11px; height:11px; border-radius:50%; }
+  .ch .meta { color:var(--dim); font-size:.84rem; }
+  .ch .role { color:#c9d4e3; font-size:.9rem; margin:4px 0 9px; }
+  .kit { display:grid; grid-template-columns:86px 1fr; gap:4px 12px;
+         font-size:.85rem; line-height:1.5; margin-bottom:9px; }
+  .kit dt { color:#6f7a8c; font-size:.72rem; letter-spacing:.07em;
+            text-transform:uppercase; padding-top:3px; }
+  .kit dd { margin:0; color:var(--dim); }
+  .kit dd b { color:var(--paper); }
+  .kit dd .no { color:var(--do-now); font-weight:700; }
+  .kit dd .yes { color:var(--goal); font-weight:700; }
+  .fix { list-style:none; padding:0; margin:0; display:grid; gap:5px; }
+  .fix li { display:grid; grid-template-columns:22px 1fr; gap:9px;
+            font-size:.86rem; line-height:1.5; color:#c9d4e3; }
+  .fix li span.n { width:19px; height:19px; border-radius:50%; display:grid;
+                   place-items:center; font:800 11px/1 sans-serif; color:#fff;
+                   background:var(--do-now); margin-top:1px; }
+  .fix li.ok span.n { background:var(--goal); }
+  .fix li.soon span.n { background:var(--hub); }
+  .ch.hydro   { border-left-color:var(--hydro); }
+  .ch.cryo    { border-left-color:var(--cryo); }
+  .ch.anemo   { border-left-color:var(--anemo); }
+  .ch.electro { border-left-color:var(--electro); }
+  @media (max-width:560px){ .kit{ grid-template-columns:1fr; } .kit dt{ padding-top:7px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>The six you actually play</h1>
+  <p class="sub">Barbara · Mika · Sucrose · Alyosha · Kaeya · Chongyun. Live gear read
+  27 Oct 2026, straight off the Battle Chronicle.</p>
+
+  <div class="bar bad">
+    <b>None of these six is a damage dealer.</b> Barbara, Mika and Alyosha are all healers.
+    Sucrose groups. Kaeya and Chongyun apply Cryo. It's a support bench with nobody to
+    support — your actual damage is <a href="varesa-build.html">Varesa</a>,
+    <a href="skirk-build.html">Skirk</a> and <a href="fischl-build.html">Fischl</a>.
+  </div>
+
+  <div class="bar good">
+    <b>The good news:</b> three of these six — <b>Barbara, Mika and Kaeya</b> (or Chongyun)
+    — are exactly the team Skirk's Ascension 4 passive wants. All Hydro/Cryo, three
+    <b>Death's Crossing</b> stacks, plus the party-wide <b>Elemental Skill +1</b>. Drop
+    Skirk into this squad and it becomes the strongest team on the account.
+  </div>
+
+  <h2>Two farming trips cover four of them</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">1</div>
+      <div><b>Valley of Remembrance</b>
+      <span>Windwail Highland, Mondstadt, near Dawn Winery · AR 25. Drops
+      <b>Maiden Beloved</b> (Barbara) and <b>Viridescent Venerer</b> (Sucrose) from the
+      same room.</span></div></div>
+    <div class="row hub"><div class="num">2</div>
+      <div><b>Clear Pool and Mountain Cavern</b>
+      <span>Minlin, Liyue, north of Mt. Aocang. Drops <b>Noblesse Oblige</b> — the set both
+      <b>Mika</b> and <b>Alyosha</b> want, for the party-wide <b>+20% ATK</b> on
+      Burst.</span></div></div>
+  </div>
+
+  <h2>Character by character</h2>
+
+  <div class="ch hydro">
+    <header>
+      <h3><i style="background:var(--hydro)"></i>Barbara</h3>
+      <span class="meta">Lv 66 · C0 · Hydro catalyst</span>
+    </header>
+    <p class="role"><b>Healer and Hydro applicator.</b> In a Skirk team her real job is
+    freezing things — Hydro plus Skirk's Cryo is what creates the Void Rifts.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd>Magic Guide 3★ Lv 50 R5 · EM 122</dd>
+      <dt>Set</dt><dd><b class="yes">4pc Maiden Beloved</b> — correct, +20% healing received by the party</dd>
+      <dt>Sands</dt><dd><span class="no">Elemental Mastery 111</span> — wrong stat</dd>
+      <dt>Goblet</dt><dd>HP% 6.3% <span class="yes">✓</span> but <b>Lv 0</b></dd>
+      <dt>Circlet</dt><dd>Instructor's Cap · Healing 26.8% <span class="yes">✓</span> Lv 16</dd>
+      <dt>Stats</dt><dd>HP 10,402 · Healing 41.8% · EM 232 · ER 104.1%</dd>
+    </dl>
+    <ul class="fix">
+      <li><span class="n">1</span><div><b>Replace the EM sands with HP%.</b> Her healing
+        scales off Max HP. 232 Elemental Mastery is doing nothing — Freeze deals no
+        reaction damage, so there's no reaction for it to boost.</div></li>
+      <li class="soon"><span class="n">2</span><div><b>Level her flower, plume and goblet.</b>
+        Three of her five pieces are at +0.</div></li>
+      <li class="ok"><span class="n">✓</span><div><b>Keep the set and the circlet.</b>
+        She's the most coherently built of the six.</div></li>
+    </ul>
+  </div>
+
+  <div class="ch cryo">
+    <header>
+      <h3><i style="background:var(--cryo)"></i>Mika</h3>
+      <span class="meta">Lv 40 · <b>C6</b> · Cryo polearm</span>
+    </header>
+    <p class="role"><b>Healer, party attack speed, and a Death's Crossing stack for
+    Skirk.</b> His healing scales on <b>Max HP</b>.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd>Black Tassel 3★ Lv 50 R5 · HP% 30.4% <span class="yes">✓</span> right stat for him</dd>
+      <dt>Set</dt><dd><span class="no">None.</span> 2pc Exile + 2pc Scholar — both give Energy Recharge he doesn't need</dd>
+      <dt>Sands</dt><dd><span class="no">Energy Recharge 25.6%</span></dd>
+      <dt>Goblet</dt><dd><span class="no">Cryo DMG 6.3%</span> — he isn't dealing damage</dd>
+      <dt>Circlet</dt><dd><span class="no">DEF% 7.9%</span></dd>
+      <dt>Stats</dt><dd>HP 8,304 · <b>ER 175.4%</b> · CRIT 5.0% / 50.0% · Healing Bonus <b>0.0%</b></dd>
+    </dl>
+    <ul class="fix">
+      <li><span class="n">1</span><div><b>All three main stats are wrong.</b> Target
+        <b>HP% sands, HP% goblet, Healing Bonus circlet</b>. He's a Max-HP healer wearing
+        a damage goblet and a DEF circlet.</div></li>
+      <li><span class="n">2</span><div><b>175% Energy Recharge is roughly double what he
+        needs</b>, and it's coming from two 2-piece sets you should drop. Those are four
+        slots producing nothing.</div></li>
+      <li class="soon"><span class="n">3</span><div><b>Target 4pc Noblesse Oblige</b> — +20%
+        party ATK on Burst, which actually helps whoever is dealing the damage.</div></li>
+      <li class="ok"><span class="n">!</span><div><b>His C6 is wasted on your teams.</b> It
+        gives <b>+60% Physical CRIT DMG</b>. Skirk converts her attacks to Cryo and Varesa
+        deals Electro — neither sees a point of it. It would matter for Razor or
+        Noelle.</div></li>
+    </ul>
+  </div>
+
+  <div class="ch anemo">
+    <header>
+      <h3><i style="background:var(--anemo)"></i>Sucrose</h3>
+      <span class="meta">Lv 40 · C0 · Anemo catalyst</span>
+    </header>
+    <p class="role"><b>Grouping and resistance shred.</b> With 4pc Viridescent Venerer she
+    strips <b>40% elemental resistance</b> off whatever she swirls — the strongest support
+    effect available to you.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd><span class="no">Apprentice's Notes 1★ Lv 1 · base ATK 23</span></dd>
+      <dt>Set</dt><dd><span class="no">None.</span> 1 Viridescent Venerer + 2 Wanderer's Troupe + 1 Finale + 1 Exile</dd>
+      <dt>Sands</dt><dd>EM 25 <span class="yes">✓</span> Lv 0</dd>
+      <dt>Goblet</dt><dd>EM 68 <span class="yes">✓</span> Lv 6</dd>
+      <dt>Circlet</dt><dd>EM 80 <span class="yes">✓</span> Lv 10</dd>
+      <dt>Stats</dt><dd>EM 254 · ATK <b>166</b> · ER 113.9%</dd>
+    </dl>
+    <ul class="fix">
+      <li><span class="n">1</span><div><b>She is holding the worst item on the account.</b>
+        A 1-star weapon at <b>Lv 1</b>, base ATK 23. <b>Take Emerald Orb off Lisa</b> —
+        3★ Lv 40 R5 with an EM substat, and Lisa isn't in your rotation. That's a free
+        eightfold increase in base ATK.</div></li>
+      <li><span class="n">2</span><div><b>Farm 4pc Viridescent Venerer</b> at Valley of
+        Remembrance. She has one piece. All three of her main stats are already correct —
+        the set is the only thing missing.</div></li>
+      <li class="ok"><span class="n">✓</span><div><b>Her main stats are right.</b> EM on
+        all three. Just level them.</div></li>
+    </ul>
+  </div>
+
+  <div class="ch electro">
+    <header>
+      <h3><i style="background:var(--electro)"></i>Alyosha</h3>
+      <span class="meta">Lv 28 · C0 · Electro polearm</span>
+    </header>
+    <p class="role"><b>Healer, off-field Electro, and an ATK buff for whoever is on
+    field.</b> His Burst summons Tugarin, which taunts, hits every 2s and heals the party
+    for <b>120% of his ATK</b>. His Skill marks enemies; hitting a marked enemy hands the
+    active character an ATK% buff.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd><span class="no">Beginner's Protector 1★ Lv 1 · base ATK 23</span></dd>
+      <dt>Set</dt><dd>4pc The Exile — +20% ER and party energy on Burst. <span class="yes">Actually useful for him.</span></dd>
+      <dt>Flower</dt><dd><span class="no">Empty — no flower equipped at all</span></dd>
+      <dt>Sands</dt><dd><span class="no">ATK% 5.2%</span> — should be <b>Energy Recharge</b></dd>
+      <dt>Goblet</dt><dd><span class="no">Hydro DMG 5.2%</span> on an Electro character</dd>
+      <dt>Circlet</dt><dd>ATK% 5.2% — acceptable</dd>
+      <dt>Stats</dt><dd>ATK <b>166</b> · ER 120.0% · CRIT 5.0% / 53.3%</dd>
+    </dl>
+    <ul class="fix">
+      <li><span class="n">1</span><div><b>He has no flower.</b> An empty slot is a free
+        upgrade — put anything in it.</div></li>
+      <li><span class="n">2</span><div><b>Energy Recharge is his damage stat.</b> His
+        Ascension 4 passive gives <b>+0.35% Skill and Burst damage per 1% ER</b>, capping
+        at <b>+70% at 200% ER</b>. He's at 120%, so he's collecting about 42% of a
+        possible 70%. <b>ER sands</b>, ER substats, and keep the Exile 2-piece.</div></li>
+      <li><span class="n">3</span><div><b>Swap the Hydro goblet for ATK%.</b> ATK is what
+        his healing scales on — a Hydro DMG goblet on an Electro character is as close to
+        zero as a slot gets.</div></li>
+      <li><span class="n">4</span><div><b>Arm him.</b> Base ATK 23 on a character whose
+        heal is 120% of ATK. Any levelled polearm is a huge gain — <b>Xiangling's Black
+        Tassel</b> at minimum. An Energy Recharge polearm (Favonius Lance, The Catch) would
+        be ideal if you have one.</div></li>
+      <li class="soon"><span class="n">?</span><div><b>Check his Stellar-Conduct buff
+        in-game.</b> His headline passive boosts <b>Stellar-Conduct</b> damage —
+        an upgraded Superconduct that only exists when a party member has the enabling
+        passive (Sandrone's role). <b>I can't see one on your roster</b>, so that part of
+        his kit is probably inert for you. Read his passive text and confirm before you
+        build around it. Everything above holds either way.</div></li>
+    </ul>
+  </div>
+
+  <div class="ch cryo">
+    <header>
+      <h3><i style="background:var(--cryo)"></i>Kaeya</h3>
+      <span class="meta">Lv 20 · C0 · Cryo sword</span>
+    </header>
+    <p class="role"><b>Skirk's missing third Death's Crossing stack.</b> That's the reason
+    to build him, and it's a big one — the step from two stacks to three is the largest.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd>Cool Steel 3★ Lv 20 · ATK% 13.5%</dd>
+      <dt>Set</dt><dd><span class="no">None.</span> 2pc Traveling Doctor + Adventurer starters, all <b>Lv 0</b></dd>
+      <dt>Sands</dt><dd>ATK% 4.2% — right stat, 1★ piece</dd>
+      <dt>Goblet</dt><dd><span class="no">DEF% 5.2%</span></dd>
+      <dt>Circlet</dt><dd><span class="no">Elemental Mastery 13</span></dd>
+      <dt>Stats</dt><dd>ATK 223 · CRIT 5.0% / 50.0% · Cryo DMG <b>0.0%</b> · ER 100%</dd>
+    </dl>
+    <ul class="fix">
+      <li><span class="n">1</span><div><b>Level him. That's the whole job.</b> He is at
+        <b>Lv 20</b> with starter artifacts. For the stack he just needs to land Cryo hits
+        and survive — levelling beats artifacts here by a wide margin.</div></li>
+      <li class="soon"><span class="n">2</span><div><b>Build him Cryo, not physical.</b>
+        Current guidance is <b>4pc Blizzard Strayer</b> (Peak of Vindagnyr, Dragonspine) with
+        a <b>Cryo DMG goblet</b> and a CRIT circlet. Physical Kaeya is no longer the
+        recommendation — don't hand him Prototype Rancour.</div></li>
+      <li class="ok"><span class="n">+</span><div><b>He pairs with Chongyun.</b> Chongyun's
+        field converts Kaeya's Normal Attacks to Cryo, which is the classic core these two
+        were designed around.</div></li>
+    </ul>
+  </div>
+
+  <div class="ch cryo">
+    <header>
+      <h3><i style="background:var(--cryo)"></i>Chongyun</h3>
+      <span class="meta">Lv 13 · C0 · Cryo claymore</span>
+    </header>
+    <p class="role"><b>Better value for Skirk than you'd guess.</b> His Skill drops a field
+    that infuses sword, claymore and polearm Normal Attacks with Cryo, gives <b>+8% Normal
+    Attack speed</b> inside it, and on expiry shaves <b>10% Cryo resistance</b> off
+    everything nearby for 8 seconds.</p>
+    <dl class="kit">
+      <dt>Weapon</dt><dd>Debate Club 3★ Lv 50 R5 · ATK% 22.8%</dd>
+      <dt>Set</dt><dd><span class="yes">2pc Finale of the Deep Galleries</span> (Cryo +15%) + <span class="yes">2pc Berserker</span> (CRIT Rate +12%)</dd>
+      <dt>Sands</dt><dd>ATK% 5.2% — right stat, Lv 0</dd>
+      <dt>Goblet</dt><dd>Cryo DMG 6.3% <span class="yes">✓</span></dd>
+      <dt>Circlet</dt><dd>CRIT Rate 3.5% <span class="yes">✓</span></dd>
+      <dt>Stats</dt><dd>ATK 391 · <b>CRIT 20.5% / 54.4%</b> · Cryo DMG 21.3%</dd>
+    </dl>
+    <ul class="fix">
+      <li class="ok"><span class="n">✓</span><div><b>Every main stat is already correct</b>
+        and he has two working 2-piece bonuses. At <b>Lv 13</b> he has the same CRIT Rate
+        as your Lv 60 Skirk — whoever put this together did it right.</div></li>
+      <li><span class="n">1</span><div><b>Level him.</b> Nothing else is wrong. The pieces
+        are all at +0 and he's thirteen.</div></li>
+      <li class="soon"><span class="n">2</span><div><b>+8% attack speed suits Skirk
+        specifically</b> — her rotation is Normal Attack spam inside Seven-Phase Flash.
+        Combined with the Cryo RES shred, he's a better Skirk teammate than his level
+        suggests.</div></li>
+    </ul>
+  </div>
+
+  <h2>Which team each belongs to</h2>
+  <div class="rows">
+    <div class="row goal"><div class="num">A</div>
+      <div><b>Skirk · Barbara · Mika · Kaeya or Chongyun</b>
+      <span>All Hydro/Cryo. <b>Three Death's Crossing stacks</b> and everyone's Elemental
+      Skill level +1. Barbara freezes to make Void Rifts; Chongyun adds attack speed and
+      Cryo RES shred. <b>This is the strongest team you can field.</b></span></div></div>
+    <div class="row hub"><div class="num">B</div>
+      <div><b>Varesa · Fischl · Sucrose · Alyosha</b>
+      <span>Double Electro keeps Fischl's energy requirement at 100%. Sucrose groups for
+      Varesa's plunge AoE and shreds Electro RES. Alyosha heals and hands Varesa an ATK
+      buff.</span></div></div>
+    <div class="row off"><div class="num">✗</div>
+      <div><b>Don't put Sucrose or Alyosha on Skirk's team</b>
+      <span>Anemo and Electro give her <b>no Death's Crossing stack</b> and break the
+      all-Hydro/Cryo passive. They generate Void Rifts, but rifts aren't her
+      bottleneck.</span></div></div>
+  </div>
+
+  <div class="bar key">
+    <b>If you do five things this week:</b> arm <b>Sucrose</b> with Lisa's Emerald Orb ·
+    give <b>Alyosha</b> a flower and any real polearm · fix <b>Mika's</b> three main stats ·
+    swap <b>Barbara's</b> EM sands for HP% · and <b>level Kaeya or Chongyun</b> into
+    Skirk's team.
+  </div>
+
+  <div class="note">
+    Roster-wide coverage: <a href="build-coverage.html">build-coverage.html</a>. Set
+    reference: <a href="research/09-artifact-sets.md">09-artifact-sets.md</a>. The DPS they
+    support: <a href="skirk-build.html">Skirk</a> ·
+    <a href="varesa-build.html">Varesa</a> · <a href="fischl-build.html">Fischl</a>.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> Alyosha's passives and stat priority from
+    <a href="https://www.icy-veins.com/genshin-impact/alyosha-profile-talents-constellations"
+       target="_blank" rel="noopener">Icy Veins</a> and
+    <a href="https://keqingmains.com/q/alyosha-quickguide/" target="_blank" rel="noopener">KeqingMains</a>;
+    Chongyun's skill and passives from
+    <a href="https://www.icy-veins.com/genshin-impact/chongyun-guide-best-builds"
+       target="_blank" rel="noopener">Icy Veins</a>; Kaeya's current build direction from
+    <a href="https://game8.co/games/Genshin-Impact/archives/297516" target="_blank"
+       rel="noopener">Game8</a>; domain locations from
+    <a href="https://game8.co/games/Genshin-Impact/archives/297467" target="_blank"
+       rel="noopener">Game8</a>. Gear and stats read live from the Battle Chronicle.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

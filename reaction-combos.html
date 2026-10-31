@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reaction combos — your roster</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  /* picker-specific only — everything else comes from styles/map.css */
+  .picker{background:var(--panel);border:1px solid var(--line);
+          border-radius:12px;padding:20px}
+  .step-label{font:700 .72rem/1 "Segoe UI";letter-spacing:.14em;
+              text-transform:uppercase;color:#6f7a8c;margin-bottom:10px}
+  .els{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .el{display:flex;align-items:center;gap:8px;padding:9px 14px 9px 10px;
+      background:var(--panel2);border:1.5px solid var(--line);border-radius:999px;
+      cursor:pointer;font:600 .9rem/1 "Segoe UI";color:var(--paper);
+      transition:border-color .15s,background .15s}
+  .el:hover{border-color:#3c4857}
+  .el .dot{width:13px;height:13px;border-radius:50%;flex:0 0 auto}
+  .el .who{color:var(--dim);font-weight:400;font-size:.8rem}
+  .el[data-on="1"]{background:#222c3a}
+  .el[data-slot="a"]{border-color:#ffd166}
+  .el[data-slot="b"]{border-color:#6fd3ff}
+  .el .badge{font:700 .62rem/1 sans-serif;letter-spacing:.08em;
+             padding:3px 6px;border-radius:4px;color:#11161f}
+  .el[data-slot="a"] .badge{background:#ffd166}
+  .el[data-slot="b"] .badge{background:#6fd3ff}
+
+  .result{margin-top:4px;padding:20px;background:var(--panel2);
+          border:1px solid var(--line);border-radius:10px;min-height:150px}
+  .rname{font-size:1.45rem;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
+  .rtag{display:inline-block;font:700 .66rem/1 sans-serif;letter-spacing:.1em;
+        text-transform:uppercase;padding:5px 9px;border-radius:5px;margin-bottom:14px}
+  .rbody{color:#c3cbd8;font-size:.95rem;line-height:1.65;margin:0 0 14px}
+  .rbody b{color:var(--paper)}
+  .order{background:#0e131b;border-left:3px solid #3c4857;padding:12px 14px;
+         border-radius:0 7px 7px 0;font-size:.88rem;color:#c3cbd8;line-height:1.6}
+  .order b{color:var(--paper)}
+  .empty{color:#6f7a8c;font-size:.95rem;line-height:1.6}
+
+  .card{background:var(--panel);border-radius:9px;padding:14px 16px;
+        margin-bottom:10px;border-left:3px solid var(--line)}
+  .card.best{border-left-color:var(--do-now)}
+  .card.warn{border-left-color:var(--best)}
+  .card b{display:block;margin-bottom:3px;font-size:.95rem}
+  .card span{color:var(--dim);font-size:.875rem;line-height:1.55}
+  .card span b{display:inline;color:var(--paper)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Reaction combos — your roster</h1>
+  <p class="sub">Pick two elements. Fire + Wind, Ice + Lightning, and so on. Only the elements you actually own are listed.</p>
+
+  <div class="picker">
+    <div class="step-label">Your elements — click two</div>
+    <div class="els" id="els"></div>
+    <div class="result" id="result">
+      <div class="empty">Pick two elements above.<br>Pick the same one twice to see what happens when you double up.</div>
+    </div>
+  </div>
+
+  <h2>Worth building around</h2>
+  <div class="card best">
+    <b>Ice + Lightning — Superconduct</b>
+    <span>Your single best combo. Kaeya and Lisa are both Lv 20, and the <b>−40% Physical RES</b> is exactly what Kaeya's normal attacks want. This is your default.</span>
+  </div>
+  <div class="card best">
+    <b>Fire + Ice — Melt</b>
+    <span>Your biggest single hit. Kaeya applies Cryo, Amber's charged shot melts it for <b>2× damage</b>. Slow, so save it for bosses and Ruin Guards.</span>
+  </div>
+  <div class="card best">
+    <b>Wind + anything — Swirl</b>
+    <span>Funii groups enemies and spreads whatever element is on them. Not big damage by itself, but grouping is what makes every other reaction hit four enemies instead of one.</span>
+  </div>
+
+  <h2>Traps</h2>
+  <div class="card warn">
+    <b>Fire + Lightning — Overloaded knocks enemies apart</b>
+    <span>It does real damage, but the knockback scatters the pack Funii just grouped and interrupts Kaeya's attack string. Don't run Amber and Lisa as your reaction core.</span>
+  </div>
+  <div class="card warn">
+    <b>Wind does not swirl Dendro</b>
+    <span>Anemo swirls Pyro, Hydro, Electro and Cryo only. Your Dendro character gets nothing from Funii.</span>
+  </div>
+
+  <h2>The hole in your roster</h2>
+  <div class="card">
+    <b>You have no Hydro, and that costs you four reactions</b>
+    <span>Vaporize (the other 2× multiplier), Freeze (the strongest early-game crowd control there is), Electro-Charged, and Bloom are all locked behind one element you don't own. <b>Barbara is free</b> from the Mondstadt Archon Quest. Getting her roughly doubles your reaction options.</span>
+  </div>
+
+<script>
+const ELEMENTS = [
+  { id:"pyro",    name:"Fire",      el:"Pyro",    who:"Amber",        color:"var(--pyro)" },
+  { id:"cryo",    name:"Ice",       el:"Cryo",    who:"Kaeya, +1",    color:"var(--cryo)" },
+  { id:"electro", name:"Lightning", el:"Electro", who:"Lisa",         color:"var(--electro)" },
+  { id:"anemo",   name:"Wind",      el:"Anemo",   who:"Funii, Traveler", color:"var(--anemo)" },
+  { id:"dendro",  name:"Nature",    el:"Dendro",  who:"your Lv 2",    color:"var(--dendro)" }
+];
+
+const COMBOS = {
+  "pyro+anemo": {
+    name: "Swirl (Fire)", tag: "SPREAD", color: "var(--pyro)",
+    body: "Funii picks up the Pyro and <b>flings it outward</b>, dealing AoE Pyro damage and setting fire to everything nearby. The damage is modest at your level — the point is <b>coverage</b>. One Amber shot becomes Pyro on the whole pack.",
+    order: "<b>Amber E or a fire arrow first</b>, then Funii's skill or burst. Anemo has to land on an element that is already there — swirling an empty enemy does nothing."
+  },
+  "cryo+anemo": {
+    name: "Swirl (Ice)", tag: "SPREAD", color: "var(--cryo)",
+    body: "Spreads Kaeya's Cryo across the group. Combined with Lisa this is how you get <b>Superconduct on four enemies at once</b> instead of just the one Kaeya hit.",
+    order: "<b>Kaeya E, then Funii.</b> Then Lisa to convert the spread Cryo into group-wide Superconduct."
+  },
+  "electro+anemo": {
+    name: "Swirl (Lightning)", tag: "SPREAD", color: "var(--electro)",
+    body: "Spreads Lisa's Electro. Useful, but Lisa's burst already covers a wide area, so this is the least necessary of your three swirls.",
+    order: "<b>Lisa E or Q, then Funii.</b>"
+  },
+  "dendro+anemo": {
+    name: "Nothing happens", tag: "NO REACTION", color: "#6f7a8c",
+    body: "Anemo only swirls <b>Pyro, Hydro, Electro and Cryo</b>. Dendro and Geo are immune to it. This pairing does nothing at all.",
+    order: "Don't bother. Pair your Dendro with Lisa instead."
+  },
+  "pyro+cryo": {
+    name: "Melt", tag: "2× DAMAGE", color: "var(--pyro)",
+    body: "Your <b>biggest single hit available</b>. Direction matters enormously: <b>Fire onto Ice = 2× damage. Ice onto Fire = only 1.5×.</b> Always apply Cryo first and hit it with Pyro second.",
+    order: "<b>Kaeya E to coat the target in Cryo, swap to Amber, charged shot.</b> Amber's charged shot is slow to wind up, so use this on bosses, Ruin Guards and anything that stands still — not on a scattering hilichurl camp."
+  },
+  "cryo+electro": {
+    name: "Superconduct", tag: "YOUR BEST COMBO", color: "var(--cryo)",
+    body: "Deals AoE Cryo damage and drops the enemy's <b>Physical RES by 40% for 12 seconds</b>. Almost all your damage right now is Kaeya's physical sword swings, so this is close to a flat 40% damage increase on your main source of DPS. Nothing else in your roster comes near it.",
+    order: "<b>Lisa E (hold it if you have a second), then Kaeya E, then stay on Kaeya and normal attack.</b> The shred lasts 12 seconds — that's your damage window. Re-apply when it drops."
+  },
+  "pyro+electro": {
+    name: "Overloaded", tag: "CAREFUL", color: "var(--pyro)",
+    body: "A Pyro explosion that <b>knocks lighter enemies flying</b>. Genuinely good damage, and it breaks the shields on Abyss Mages. But the knockback scatters the group you just gathered and interrupts your own attack chain.",
+    order: "Use it <b>deliberately</b>, not as your default. Good for breaking a shield or clearing a tight cluster. Bad as a rotation you lean on."
+  },
+  "pyro+dendro": {
+    name: "Burning", tag: "DAMAGE OVER TIME", color: "var(--dendro)",
+    body: "Sets the target alight for continuous Pyro damage. Weak on its own, and your Dendro character is <b>Level 2</b>, so this is theoretical for now.",
+    order: "Dendro first to apply the aura, then Pyro to ignite it. Park this until that character is actually levelled."
+  },
+  "electro+dendro": {
+    name: "Quicken → Aggravate / Spread", tag: "LONG-TERM", color: "var(--dendro)",
+    body: "Electro onto Dendro creates a <b>Quickened</b> state. Hit it again with Electro for <b>Aggravate</b> (bonus Electro damage) or with Dendro for <b>Spread</b> (bonus Dendro damage). This is one of the strongest systems in the game — but it needs Elemental Mastery and a levelled Dendro unit to matter.",
+    order: "<b>Dendro, then Lisa, then Lisa again.</b> Worth revisiting once that Dendro character is past Lv 40."
+  },
+  "cryo+dendro": {
+    name: "Nothing happens", tag: "NO REACTION", color: "#6f7a8c",
+    body: "Cryo and Dendro simply don't interact. This is the only pairing in the whole game where two different elements do nothing to each other.",
+    order: "Pick a different pair."
+  }
+};
+
+// COMBOS keys are written in reading order; normalise them so lookup is order-independent.
+const COMBO_LOOKUP = {};
+Object.entries(COMBOS).forEach(([k, v]) => {
+  COMBO_LOOKUP[k.split("+").sort().join("+")] = v;
+});
+
+const SAME = {
+  pyro:    "Two Pyro characters don't react — they just apply Pyro <b>harder and more often</b>. Useful for keeping an aura up so a third character can Melt off it, but you only have Amber anyway.",
+  cryo:    "Your two Cryo characters stack application rather than reacting. Kaeya alone applies plenty — your Lv 7 Cryo adds nothing a second Kaeya skill wouldn't.",
+  electro: "No reaction. You only have Lisa, so this is moot.",
+  anemo:   "Funii and the Traveler are the same element with the same kit — running both is <b>pure redundancy</b>. Pick Funii; it levels for free.",
+  dendro:  "No reaction, and you only have one Dendro character."
+};
+
+let slotA = null, slotB = null;
+
+const elsBox = document.getElementById("els");
+const result = document.getElementById("result");
+
+ELEMENTS.forEach(e => {
+  const b = document.createElement("button");
+  b.className = "el";
+  b.dataset.id = e.id;
+  b.innerHTML = `<span class="dot" style="background:${e.color}"></span>
+                 <span>${e.name}</span>
+                 <span class="who">${e.el} · ${e.who}</span>
+                 <span class="badge" style="display:none"></span>`;
+  b.addEventListener("click", () => pick(e.id));
+  elsBox.appendChild(b);
+});
+
+function pick(id) {
+  if (slotA === null)        slotA = id;
+  else if (slotB === null)   slotB = id;
+  else { slotA = id; slotB = null; }
+  render();
+}
+
+function render() {
+  document.querySelectorAll(".el").forEach(node => {
+    const id = node.dataset.id;
+    node.removeAttribute("data-slot");
+    node.dataset.on = (id === slotA || id === slotB) ? "1" : "0";
+    const badge = node.querySelector(".badge");
+    badge.style.display = "none";
+    if (id === slotA) { node.dataset.slot = "a"; badge.textContent = "1ST"; badge.style.display = ""; }
+    if (id === slotB) { node.dataset.slot = "b"; badge.textContent = "2ND"; badge.style.display = ""; }
+  });
+
+  if (slotA === null || slotB === null) {
+    result.innerHTML = `<div class="empty">Pick ${slotA === null ? "two elements" : "one more element"} above.</div>`;
+    return;
+  }
+
+  if (slotA === slotB) {
+    result.innerHTML = `
+      <p class="rname">Same element</p>
+      <span class="rtag" style="background:#2a3442;color:#c3cbd8">NO REACTION</span>
+      <p class="rbody">${SAME[slotA]}</p>`;
+    return;
+  }
+
+  const key = [slotA, slotB].sort().join("+");
+  const c = COMBO_LOOKUP[key];
+  if (!c) {
+    result.innerHTML = `<div class="empty">No data for that pairing.</div>`;
+    return;
+  }
+  result.innerHTML = `
+    <p class="rname" style="color:${c.color}">${c.name}</p>
+    <span class="rtag" style="background:${c.color};color:#11161f">${c.tag}</span>
+    <p class="rbody">${c.body}</p>
+    <div class="order"><b>Order:</b> ${c.order}</div>`;
+}
+
+render();
+</script>
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

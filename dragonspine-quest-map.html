@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dragonspine — In the Mountains route</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Dragonspine — <i>In the Mountains</i></h1>
+  <p class="sub">Your own map. Route to unlock Peak of Vindagnyr → Blizzard Strayer for
+  Skirk.</p>
+
+  <div class="map-wrap" id="map"
+       data-map="assets/dragonspine-player-map.webp"
+       data-alt="Player's Dragonspine map"></div>
+
+  <div class="bar warn">
+    <b>Blocker:</b> step 3 needs a <b>Cryo character</b> — Skirk, Kaeya, Mika or Chongyun.
+    Also bring <b>Noelle</b> (claymore) for Scarlet Quartz nodes.
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="num">1</div>
+      <div><b>Iris — Adventurer Camp</b>
+      <span>Ask about the <b>blue crystals</b> to start. AR 30 required; you're 33.</span></div></div>
+    <div class="row"><div class="num">2</div>
+      <div><b>Strange ice</b>
+      <span>Break a <b>Scarlet Quartz</b> node, grab it, hit the ice. <b>Three quartz
+      hits</b> — the gauge only drops partway each time. Then activate the orb.</span></div></div>
+    <div class="row"><div class="num">3</div>
+      <div><b>Wyrmrest Valley — monument order</b>
+      <span>Watch the <b>Warming Seelie</b>'s route between monuments, repeat that order
+      with <b>Cryo</b>. The chest spawns <b>2 Ruin Guards + a Ruin Grader</b>.</span></div></div>
+    <div class="row hub"><div class="num">★</div>
+      <div><b>Statue of the Seven</b>
+      <span>Already unlocked. The summit route runs through the cavern near it.</span></div></div>
+    <div class="row"><div class="num">4</div>
+      <div><b>Skyfrost Nail — summit</b>
+      <span>Three shards, <b>one hit each</b>. Activate every orb.</span></div></div>
+    <div class="row goal"><div class="num">5</div>
+      <div><b>Pillar rises → Peak of Vindagnyr</b>
+      <span>Drop into the gap beneath. <b>Open the red-aura Luxurious Chest</b> — that's
+      what grants domain access. Also unlocks the <b>Cryo Hypostasis</b> (Shivada Jade) and
+      the <b>Frostbearing Tree</b>.</span></div></div>
+  </div>
+
+</div>
+
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#map", [
+    { x: 78.1, y: 34.3, role: "off",    size: "sm", label: "▲", tag: "You are here" },
+    { x: 86,   y: 12,   role: "do-now", label: "1",
+      tag: "1 · Iris — Adventurer Camp (NE entrance)" },
+    { x: 72,   y: 20.5, role: "do-now", label: "2", tag: "2 · Strange ice — 3× Scarlet Quartz" },
+    { x: 39.6, y: 30.3, role: "do-now", label: "3", tag: "3 · Wyrmrest Valley — Cryo monuments" },
+    { x: 76.2, y: 50.1, role: "hub",    label: "★", tag: "★ Statue of Seven — cavern route up" },
+    { x: 64.2, y: 76.5, role: "do-now", label: "4", tag: "4 · Skyfrost Nail — 3 shards, 1 hit each" },
+    { x: 55.5, y: 70,   role: "goal",   size: "lg", label: "5", pulse: true,
+      tag: "5 · Peak of Vindagnyr ← the \"Unknown\" domain" }
+  ]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

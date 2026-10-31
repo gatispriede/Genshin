@@ -1,0 +1,352 @@
+{
+  "_source": "Ascension and talent totals cross-checked against Icy Veins and Game Rant, 31 Oct 2026. Several sites invent item names for newer characters (e.g. 'Frostflake Axion' for Skirk) - only corroborated lists were used.",
+  "_note": "Totals are for Lv.90 ascension and all three talents at 10. `map` names a set on collectible-map.html; `href` points somewhere else entirely.",
+  "Skirk": {
+    "element": "Cryo",
+    "weapon": "Sword",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Shivada Jade",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Cryo Regisvine or Cryo Hypostasis, both in Dragonspine - they drop only Shivada Jade, unlike mixed-element bosses",
+        "note": "Gemstones need Lv.75+ bosses, so World Level 6+"
+      },
+      {
+        "item": "Skysplit Gembloom",
+        "qty": "168",
+        "map": "skysplit-gembloom",
+        "from": "Natlan local specialty around Atocpan",
+        "note": "Varesa needs 168 too - 336 total"
+      },
+      {
+        "item": "Ensnaring Gaze",
+        "qty": "46",
+        "from": "Tenebrous Papilla world boss, east of the Flower-Feather Clan, in an underground cave"
+      },
+      {
+        "item": "Gears",
+        "qty": "18 meshing · 30 spur · 36 artificed dynamic",
+        "map": "clockwork-meka",
+        "from": "Clockwork Meka in Fontaine, or the Stardust Exchange"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Contention",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Blazing Ruins domain, Natlan",
+        "note": "Mon / Thu / Sun only"
+      },
+      {
+        "item": "Gears",
+        "qty": "18 · 66 · 93",
+        "map": "clockwork-meka",
+        "from": "Clockwork Meka"
+      },
+      {
+        "item": "Ascended Sample: Knight",
+        "qty": "18",
+        "from": "Wager With the Mages trounce domain",
+        "note": "weekly boss - 3 discounted claims a week"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  },
+  "Varesa": {
+    "element": "Electro",
+    "weapon": "Catalyst",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Vajrada Amethyst",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Thunder Manifestation, Tenebrous Papilla, or a Secret Source Automaton",
+        "note": "Gemstones need World Level 6+"
+      },
+      {
+        "item": "Skysplit Gembloom",
+        "qty": "168",
+        "map": "skysplit-gembloom",
+        "from": "Natlan local specialty around Atocpan",
+        "note": "Skirk needs 168 too - 336 total"
+      },
+      {
+        "item": "Sparkless Statue Core",
+        "qty": "46",
+        "from": "Lava Dragon Statue world boss, Natlan"
+      },
+      {
+        "item": "Saurian Fangs",
+        "qty": "18 juvenile · 30 seasoned · 36 tyrant's",
+        "href": "http://localhost:5173/map.html",
+        "from": "Natlan Saurians - Tyrant's Fang needs Lv.60+ enemies",
+        "note": "946 spawns mapped in the farming project"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Conflict",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Blazing Ruins domain, Natlan",
+        "note": "Wed / Sat / Sun only"
+      },
+      {
+        "item": "Saurian Fangs",
+        "qty": "18 · 66 · 93",
+        "href": "http://localhost:5173/map.html",
+        "from": "Natlan Saurians",
+        "note": "129 Tyrant's Fang once ascension is counted"
+      },
+      {
+        "item": "Eroded Scale-Feather",
+        "qty": "18",
+        "from": "Lord of Eroded Primal Fire weekly boss",
+        "note": "a multi-week floor on maxing talents"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  },
+  "Fischl": {
+    "element": "Electro",
+    "weapon": "Bow",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Vajrada Amethyst",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Electro Hypostasis, Thunder Manifestation, or Azhdaha",
+        "note": "Gemstones need World Level 6+"
+      },
+      {
+        "item": "Small Lamp Grass",
+        "qty": "168",
+        "map": "small-lamp-grass",
+        "from": "Mondstadt local specialty"
+      },
+      {
+        "item": "Lightning Prism",
+        "qty": "46",
+        "from": "Electro Hypostasis, Cape Oath"
+      },
+      {
+        "item": "Arrowheads",
+        "qty": "18 firm · 30 sharp · 36 weathered",
+        "from": "Hilichurl shooters anywhere"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Ballad",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Forsaken Rift domain, Mondstadt",
+        "note": "Wed / Sat / Sun only"
+      },
+      {
+        "item": "Arrowheads",
+        "qty": "18 · 66 · 93",
+        "from": "Hilichurl shooters"
+      },
+      {
+        "item": "Spirit Locket of Boreas",
+        "qty": "18",
+        "from": "Andrius, Wolf of the North",
+        "note": "weekly boss"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  },
+  "Barbara": {
+    "element": "Hydro",
+    "weapon": "Catalyst",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Varunada Lazurite",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Rhodeia of Loch (Oceanid), or any Hydro boss",
+        "note": "Gemstones need World Level 6+"
+      },
+      {
+        "item": "Philanemo Mushroom",
+        "qty": "168",
+        "map": "philanemo-mushroom",
+        "from": "Mondstadt local specialty - 22 of them sit at one city warp"
+      },
+      {
+        "item": "Cleansing Heart",
+        "qty": "46",
+        "from": "Rhodeia of Loch, Cuijue Slope"
+      },
+      {
+        "item": "Divining Scrolls",
+        "qty": "18 divining · 30 sealed · 36 forbidden curse",
+        "from": "Samachurls anywhere"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Freedom",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Forsaken Rift domain, Mondstadt",
+        "note": "Mon / Thu / Sun only"
+      },
+      {
+        "item": "Divining Scrolls",
+        "qty": "18 · 66 · 93",
+        "from": "Samachurls"
+      },
+      {
+        "item": "Ring of Boreas",
+        "qty": "18",
+        "from": "Andrius, Wolf of the North",
+        "note": "weekly boss"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  },
+  "Tighnari": {
+    "element": "Dendro",
+    "weapon": "Bow",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Nagadus Emerald",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Jadeplume Terrorshroom, Sumeru",
+        "note": "Gemstones need World Level 6+ — the same boss drops his Beaks, so one run feeds both"
+      },
+      {
+        "item": "Nilotpala Lotus",
+        "qty": "168",
+        "map": "nilotpala-lotus",
+        "from": "Sumeru local specialty, in rainforest water",
+        "note": "not growable in the Serenitea Pot"
+      },
+      {
+        "item": "Majestic Hooked Beak",
+        "qty": "46",
+        "from": "Jadeplume Terrorshroom, Sumeru"
+      },
+      {
+        "item": "Fungal Spores",
+        "qty": "18 spores · 30 luminescent pollen · 36 crystalline cyst dust",
+        "from": "Fungi enemies across Sumeru"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Admonition",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Steeple of Ignorance domain, Sumeru",
+        "note": "Mon / Thu / Sun only"
+      },
+      {
+        "item": "Fungal Spores",
+        "qty": "18 · 66 · 93",
+        "from": "Fungi enemies across Sumeru"
+      },
+      {
+        "item": "The Meaning of Aeons",
+        "qty": "18",
+        "from": "Magatsu Mitake Narukami no Mikoto (Raiden) trounce domain",
+        "note": "weekly boss — needs Inazuma access"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  },
+  "Escoffier": {
+    "element": "Cryo",
+    "weapon": "Polearm",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4957500
+    },
+    "ascension": [
+      {
+        "item": "Shivada Jade",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Cryo Regisvine or Cryo Hypostasis, both in Dragonspine",
+        "note": "Skirk needs the identical amount — 2 gemstones short of a dozen between them. Gemstones need World Level 6+"
+      },
+      {
+        "item": "Beryl Conch",
+        "qty": "168",
+        "map": "beryl-conch",
+        "from": "Fontaine local specialty, mostly underwater near ruins"
+      },
+      {
+        "item": "Secret Source Airflow Accumulator",
+        "qty": "46",
+        "from": "Secret Source Automaton: Overseer Device, Fontaine"
+      },
+      {
+        "item": "Gears",
+        "qty": "18 meshing · 30 spur · 36 artificed dynamic",
+        "map": "clockwork-meka",
+        "from": "Clockwork Meka in Fontaine",
+        "note": "exactly the same gears Skirk needs — farm once, split two ways"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Justice",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Fontaine talent domain",
+        "note": "Tue / Fri / Sun only — Skirk's books are Mon/Thu/Sun, so Sunday covers both"
+      },
+      {
+        "item": "Gears",
+        "qty": "18 · 66 · 93",
+        "map": "clockwork-meka",
+        "from": "Clockwork Meka"
+      },
+      {
+        "item": "Eroded Horn",
+        "qty": "18",
+        "from": "Lord of Eroded Primal Fire trounce domain, Natlan",
+        "note": "same weekly boss as Varesa's Scale-Feather"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
+  }
+}
