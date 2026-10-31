@@ -13,6 +13,7 @@
     { href: 'reputation-quests.html', label: 'Reputation quests' },
     { href: 'reputation-compass.html', label: 'Compasses' },
     { href: 'collectible-map.html', label: 'Collectible maps' },
+    { href: 'domains.html', label: 'Domains' },
     { href: 'collectibles-status.html', label: 'Collectibles' },
     { href: 'build-coverage.html', label: 'Builds' },
     { href: 'farming/map.html', label: 'Saurian map' },

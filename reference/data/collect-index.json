@@ -110,5 +110,12 @@
   "count": 82,
   "stops": 11,
   "file": "collect-windwheel-aster.js"
+ },
+ "domains": {
+  "title": "Domains",
+  "feeds": "one-time clears — fixed Primogems, no resin",
+  "count": 74,
+  "stops": 74,
+  "file": "collect-domains.js"
  }
 }

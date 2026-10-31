@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domains — every entrance, ticked off</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/live-map.css">
+</head>
+<body>
+
+<h1>Domains <span class="dim">— all 74 entrances</span></h1>
+<p class="sub">
+  Every domain entrance in Teyvat on the real map. Click a dot to tick it off, or a
+  numbered circle to fly to it. The list on the right names each one by its nearest
+  landmark, since the map data gives domains no names of their own.
+</p>
+
+<div class="bar key">
+  <b>One-time domains are free Primogems.</b> First completion <b>costs no resin</b> — the
+  chest just opens — and the payout is <b>fixed</b>: it is the same at AR 45 as at AR 60.
+  Adventure Rank only gates access, never reward size, and World Level does not affect
+  domains at all. So nothing was lost by waiting, and nothing is gained by waiting longer.
+</div>
+
+<div class="bar warn">
+  <b>The map cannot tell the two kinds apart, so you tag them.</b> The official map has a
+  single <i>Domain</i> category and the pins carry <b>no names at all</b>. Nothing else fills
+  the gap either: the game lists 48 rotating talent and weapon domains, but those are
+  <i>instances</i> sharing a handful of physical doors, so no source maps a name to a
+  coordinate.
+  <br><br>
+  So: open one, and if it is a <b>talent, weapon or artifact domain that charges resin</b>,
+  press <b>tag</b> on its row. It greys out, drops out of the count, and <b>Hide resin
+  domains</b> removes it from view. One pass and this page shows only the free one-time
+  clears you actually want.
+</div>
+
+<div class="bar">
+  <b>The gate is party level, not Adventure Rank.</b> <i>Travels of the Moonlit Venturer</i>
+  asks for <b>party level 70</b>; your roster runs Varesa 70, Barbara 66, Skirk 60, Fischl 50.
+  Domains scale on their own fixed level rather than yours, so the high ones are a real fight.
+  Clear the low-recommendation ones first — those are free.
+</div>
+
+<div class="lmap-wrap">
+  <div>
+    <div class="lmap" id="map-canvas" data-set="domains" data-verb="cleared" data-group="" data-taggable="1"></div>
+    <div class="lmap-bar">
+      <span class="lmap-bar__status" id="cmap-status"></span>
+      <button type="button" id="cmap-out">&minus;</button>
+      <button type="button" id="cmap-in">+</button>
+      <button type="button" id="cmap-fit">Fit</button>
+      <label><input type="checkbox" id="cmap-hide-skipped"> Hide resin domains</label>
+      <button type="button" id="cmap-reset">Clear ticks</button>
+    </div>
+  </div>
+
+  <aside class="lmap-panel">
+    <h3 style="margin-top:0">Every domain, by nearest place</h3>
+    <ul class="cmap__list" id="cmap-stops"></ul>
+  </aside>
+</div>
+
+<div class="note">
+  <b>Worth doing now:</b> each one-time clear pays roughly <b>500 Adventure EXP</b> on top of
+  the Primogems and Mora, which is real progress toward <b>AR 50 and World Level 7</b> —
+  and unlike commissions or ley lines it costs you no resin to collect.
+  <a href="build-coverage.html">Who is levelled enough</a> ·
+  <a href="collectible-map.html">collectible routes</a>
+</div>
+
+<script src="app/map-core.js"></script>
+<script src="app/collect-map.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>

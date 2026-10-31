@@ -40,9 +40,11 @@
     }
 
     var names = Object.keys(index);
-    slug = new URLSearchParams(location.search).get('set');
-    if (!index[slug]) slug = names[0];
-    renderPicker(index, names);
+    /* A page may pin itself to one dataset (data-set) and skip the picker. */
+    var pinned = host.dataset.set;
+    slug = pinned || new URLSearchParams(location.search).get('set');
+    if (!index[slug]) slug = pinned || names[0];
+    if (!pinned) renderPicker(index, names);
 
     try {
       await loadScript('reference/data/' + index[slug].file);
@@ -70,7 +72,12 @@
 
   function start() {
     var STORE = 'collect:' + slug;
+    var SKIP = 'collect:skip:' + slug;
     var got = load();
+    /* The map has one Domain category and no names, so it cannot tell a
+       one-time clear from a resin domain. You tag them once; it remembers. */
+    var skip = loadSkip();
+    var hideSkipped = false;
     var activeStop = -1;
 
     function load() {
@@ -79,6 +86,13 @@
     }
     function save() {
       try { localStorage.setItem(STORE, JSON.stringify(got)); } catch (e) {}
+    }
+    function loadSkip() {
+      try { return JSON.parse(localStorage.getItem(SKIP)) || {}; }
+      catch (e) { return {}; }
+    }
+    function saveSkip() {
+      try { localStorage.setItem(SKIP, JSON.stringify(skip)); } catch (e) {}
     }
 
     core = window.MapCore(host, D, {
@@ -150,7 +164,9 @@
       D.stops.forEach(function (s, si) {
         var left = s.items.filter(function (i) { return !got[i]; }).length;
         var li = document.createElement('li');
+        if (hideSkipped && skip[si]) return;
         li.className = 'cmap__row' + (left === 0 ? ' is-clear' : '') +
+                       (skip[si] ? ' is-skipped' : '') +
                        (si === activeStop ? ' is-active' : '');
         li.innerHTML =
           '<b>' + (si + 1) + '</b>' +
@@ -159,6 +175,21 @@
                    : s.kind === 'domain' ? 'Domain' : 'Teleport waypoint') +
           '</em></span>' +
           '<span class="cmap__n">' + left + '<em>of ' + s.items.length + '</em></span>';
+        if (host.dataset.taggable) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'cmap__skip' + (skip[si] ? ' is-on' : '');
+          b.textContent = skip[si] ? 'resin' : 'tag';
+          b.title = skip[si]
+            ? 'Marked as a resin domain — click to un-mark'
+            : 'Mark this as a resin domain (talent, weapon or artifact)';
+          b.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (skip[si]) delete skip[si]; else skip[si] = 1;
+            saveSkip(); paint();
+          });
+          li.appendChild(b);
+        }
         if (s.offSurface) {
           li.querySelector('.cmap__where').insertAdjacentHTML('beforeend',
             '<em class="cmap__off">' + s.offSurface + ' not on the surface</em>');
@@ -178,9 +209,19 @@
     }
 
     function paint() {
-      var left = 0;
+      /* An item belongs to exactly one stop, so a skipped stop skips its items. */
+      var skipped = {};
+      D.stops.forEach(function (s, si) {
+        if (skip[si]) s.items.forEach(function (i) { skipped[i] = 1; });
+      });
+
+      var left = 0, counted = 0;
       D.items.forEach(function (p, i) {
         p._el.classList.toggle('is-got', !!got[i]);
+        p._el.classList.toggle('is-skipped', !!skipped[i]);
+        p._el.hidden = hideSkipped && !!skipped[i];
+        if (skipped[i]) return;
+        counted++;
         if (!got[i]) left++;
       });
       D.stops.forEach(function (s, si) {
@@ -195,10 +236,17 @@
       var out = document.getElementById('cmap-status');
       if (out) {
         var off = D.items.filter(function (p, i) {
-          return !got[i] && (p.layer || p.depth);
+          return !got[i] && !skipped[i] && (p.layer || p.depth);
         }).length;
-        out.innerHTML = '<b>' + (D.items.length - left) + ' / ' + D.items.length +
-          '</b> collected · ' + left + ' left across ' + D.stops.length + ' warps' +
+        /* Domains are "cleared", not "collected"; pages can say so. */
+        var verb = host.dataset.verb || 'collected';
+        var group = host.dataset.group !== undefined
+          ? host.dataset.group
+          : (' across ' + D.stops.length + ' warps');
+        var tagged = Object.keys(skip).length;
+        out.innerHTML = '<b>' + (counted - left) + ' / ' + counted +
+          '</b> ' + verb + ' · ' + left + ' left' + group +
+          (tagged ? ' · <b>' + tagged + '</b> tagged as resin domains' : '') +
           (off ? ' · <b>' + off + '</b> of those are underground or underwater' : '');
       }
       renderStops();
@@ -207,6 +255,12 @@
     core.buttons({
       in: 'cmap-in', out: 'cmap-out', fit: 'cmap-fit',
       onFit: function () { activeStop = -1; core.fit(); paint(); }
+    });
+
+    var hide = document.getElementById('cmap-hide-skipped');
+    if (hide) hide.addEventListener('change', function () {
+      hideSkipped = hide.checked;
+      paint();
     });
 
     var reset = document.getElementById('cmap-reset');
