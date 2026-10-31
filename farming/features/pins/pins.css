@@ -1,0 +1,80 @@
+/* Mark-your-own-spots map: dropzone, stage, and the pins themselves. */
+.mapdrop {
+  display: grid;
+  place-items: center;
+  gap: .5rem;
+  padding: clamp(2rem, 8vw, 4rem) 1.5rem;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink-soft);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.mapdrop:hover, .mapdrop.is-over {
+  border-color: var(--flame);
+  background: var(--surface-2);
+}
+.mapdrop:focus-visible { outline: 2px solid var(--flame); outline-offset: 3px; }
+.mapdrop b { color: var(--ink); font-weight: 600; }
+.mapdrop small { color: var(--ink-faint); }
+
+.mapstage { position: relative; }
+.mapstage img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.maplayer {
+  position: absolute;
+  inset: 0;
+  cursor: crosshair;
+}
+
+.pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.pin__n {
+  display: grid;
+  place-items: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--flame);
+  border: 2px solid #1a0d07;
+  box-shadow: 0 2px 8px rgba(0,0,0,.6);
+  color: #1a0d07;
+  font-size: .8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.pin__label {
+  padding: .15rem .45rem;
+  border-radius: 6px;
+  background: rgba(10,6,4,.82);
+  color: var(--ink);
+  font-size: .75rem;
+  white-space: nowrap;
+}
+.pin--cleared { opacity: .45; }
+.pin--cleared .pin__n { background: var(--jade); }
+.pin--cleared .pin__label { text-decoration: line-through; }
+
+.maptools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+.maptools__count { flex: 1; min-width: 12rem; font-size: .85rem; color: var(--ink-faint); }

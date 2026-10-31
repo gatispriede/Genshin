@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan — Tyrant's Fang</title>
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/nav.css">
+<link rel="stylesheet" href="features/planner/planner.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Genshin Impact · Natlan · Saurian materials</p>
+  <h1>Tyrant&rsquo;s Fang</h1>
+  <p class="lede">
+    Dropped by <strong>Lv.&nbsp;60+ Saurians</strong>, and Natlan is where they stand in numbers.
+    Everything here is about getting twelve of them out of the ground as fast as the
+    respawn timer allows.
+  </p>
+</header>
+
+<main>
+
+  <section class="verdict" aria-labelledby="verdict-h">
+    <p class="verdict__label">Best named spot</p>
+    <h2 id="verdict-h">Scions of the Canopy &mdash; Route&nbsp;1</h2>
+    <p class="verdict__meta">
+      <span class="tally">17</span> Saurians · start at the <strong>Tecicpac Peak</strong> waypoint
+    </p>
+    <p class="verdict__body">
+      Eight sit together at the water&rsquo;s edge southeast of the waypoint. If you only have
+      five minutes a day, do those eight and leave. <strong>The map finds a tighter cluster
+      still &mdash; 28 around Tezcatepetonco Range</strong>, so look at it
+      rather than read about it.
+    </p>
+    <ol class="verdict__steps">
+      <li>8 near the water&rsquo;s edge and the cliff southeast of the waypoint.</li>
+      <li>Climb the cliff: 1 to the north, 1 to the northeast.</li>
+      <li>2 under the southern cliff.</li>
+      <li>Head east (or follow the river) to 4 on the cliff near the bridge.</li>
+      <li>Go to the wooden scaffolding north, 2 in the valley below it.</li>
+    </ol>
+    <p style="margin:1.5rem 0 0"><a class="btn" href="map.html">Show me on the map &rarr;</a></p>
+  </section>
+
+  <section class="panel" aria-labelledby="planner-h">
+    <h2 id="planner-h">How much farming is left</h2>
+    <p class="panel__note">
+      Fangs convert upward at <strong>3&nbsp;:&nbsp;1</strong> each tier, so one Tyrant&rsquo;s Fang
+      is nine Juvenile Fangs. Enter what you&rsquo;re holding.
+    </p>
+
+    <div class="planner">
+      <label class="field"><span>Tyrant&rsquo;s Fang needed</span>
+        <input type="number" id="need" min="0" value="12"></label>
+      <label class="field"><span>Tyrant&rsquo;s Fang held</span>
+        <input type="number" id="haveTyrant" min="0" value="0"></label>
+      <label class="field"><span>Seasoned Fang held</span>
+        <input type="number" id="haveSeasoned" min="0" value="6"></label>
+      <label class="field"><span>Juvenile Fang held</span>
+        <input type="number" id="haveJuvenile" min="0" value="0"></label>
+      <label class="field field--wide">
+        <span>Assumed fangs per Saurian <em>(your own estimate)</em></span>
+        <input type="number" id="perKill" min="0.1" step="0.1" value="2"></label>
+    </div>
+
+    <output class="readout" id="readout" aria-live="polite"></output>
+  </section>
+
+  <section class="panel" aria-labelledby="rules-h">
+    <h2 id="rules-h">Rules that actually change your plan</h2>
+    <dl class="rules">
+      <div><dt>Level gate</dt>
+        <dd>Only Saurians at <strong>Lv.&nbsp;60 or above</strong> drop Tyrant&rsquo;s Fang.
+          Below that you get Juvenile and Seasoned only &mdash; still progress, they craft upward.
+          <br><span class="rule-ok">✓ Cleared: World Level 5 as of 30 Oct 2026, putting overworld
+          Saurians around Lv.&nbsp;69.</span></dd></div>
+      <div><dt>Crafting</dt>
+        <dd><strong>3 Seasoned Fang → 1 Tyrant&rsquo;s Fang</strong> at any Alchemy table, for a small
+          Mora fee. Never leave Seasoned Fangs in the bag when you&rsquo;re short.</dd></div>
+      <div><dt>Respawn</dt>
+        <dd>Overworld Saurians reset on the <strong>daily server reset (04:00 server time)</strong>.
+          This is a multi-day farm &mdash; run your best route once a day.</dd></div>
+      <div><dt>Shop top-up</dt>
+        <dd>The Stardust Exchange in <strong>Paimon&rsquo;s Bargains</strong> sells the base tier only
+          &mdash; <strong>Juvenile Fang, 3 for 5 Masterless Stardust</strong>, on a small monthly cap
+          that resets on the 1st. Worth a couple of Tyrant&rsquo;s Fang a month, never the bulk.</dd></div>
+      <div><dt>Type follows tribe</dt>
+        <dd>Each species clusters near its own tribe. Fangs are shared across all species, so farm
+          whichever region is densest, not whichever species you like.</dd></div>
+    </dl>
+  </section>
+
+  <nav class="next" aria-label="Keep going">
+    <a href="map.html"><b>See every spawn &rarr;</b><span>946 pins, circled and routed</span></a>
+    <a href="routes.html"><b>Written routes &rarr;</b><span>All 16, densest first</span></a>
+    <a href="field.html"><b>Field notes &rarr;</b><span>Where the guides are wrong</span></a>
+  </nav>
+
+</main>
+
+<script src="shared/nav.js"></script>
+<script src="shared/colophon.js"></script>
+<script src="features/routes/routes.data.js"></script>
+<script src="features/map/map.data.js"></script>
+<script src="features/planner/planner.js"></script>
+</body>
+</html>

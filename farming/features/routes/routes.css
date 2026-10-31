@@ -1,0 +1,80 @@
+/* Written-route list: filter chips, route cards, step directions. */
+.routes__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.filters { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip {
+  padding: .35rem .8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.chip:hover { border-color: var(--ink-faint); color: var(--ink); }
+.chip[aria-pressed="true"] {
+  border-color: var(--flame);
+  background: rgba(255,122,69,.13);
+  color: var(--ember);
+}
+
+.routes { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.route {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color .15s;
+}
+.route:hover { border-color: #4b362c; }
+.route[data-cleared="true"] { opacity: .5; }
+.route summary {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding: .9rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.route summary::-webkit-details-marker { display: none; }
+.route__count {
+  min-width: 2.5rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--ember);
+  font-variant-numeric: tabular-nums;
+}
+.route__name { flex: 1; }
+.route__name b { display: block; font-weight: 600; }
+.route__name span { font-size: .85rem; color: var(--ink-faint); }
+.route__body { padding: 0 1.1rem 1.1rem 5rem; }
+.route__body ol { margin: 0 0 .75rem; padding-left: 1.2rem; color: var(--ink-soft); }
+.route__body li { margin-bottom: .35rem; }
+.route__body li::marker { color: var(--ink-faint); }
+.route__warn { margin: 0 0 .75rem; font-size: .85rem; color: var(--ink-faint); }
+.route__clear {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .85rem; color: var(--ink-soft); cursor: pointer;
+}
+.route__clear input { accent-color: var(--flame); }
+
+
+.route__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1.25rem;
+}
+.route__map {
+  font-size: .85rem;
+  color: var(--ember);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.route__map:hover { border-bottom-color: currentColor; }

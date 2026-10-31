@@ -15,8 +15,8 @@
     { href: 'collectible-map.html', label: 'Collectible maps' },
     { href: 'collectibles-status.html', label: 'Collectibles' },
     { href: 'build-coverage.html', label: 'Builds' },
-    { href: 'http://localhost:5173/map.html', label: 'Saurian map ↗', ext: true },
-    { href: 'http://localhost:5173/index.html', label: "Tyrant's Fang ↗", ext: true }
+    { href: 'farming/map.html', label: 'Saurian map' },
+    { href: 'farming/index.html', label: "Tyrant's Fang" }
   ];
 
   var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();

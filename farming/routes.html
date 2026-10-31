@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Routes — Tyrant's Fang</title>
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/nav.css">
+<link rel="stylesheet" href="features/routes/routes.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Natlan · written routes</p>
+  <h1>All routes</h1>
+  <p class="lede">
+    Sixteen documented loops, densest first, each starting from a named waypoint.
+    Useful when you want words; the <a href="map.html">map</a> is better when you want to see it.
+  </p>
+</header>
+
+<main>
+
+  <section class="panel" aria-labelledby="routes-h" style="border-top:0;padding-top:0">
+    <div class="routes__head">
+      <h2 id="routes-h">Densest first</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter by region"></div>
+    </div>
+    <p class="panel__note" id="running-total"></p>
+    <ul class="routes" id="routes"></ul>
+
+    <p class="panel__note" style="margin-top:1.5rem">
+      <strong>These undersell the map.</strong> The tightest cluster in the pin data holds
+      <strong>28</strong> Saurians in one patch near Tezcatepetonco Range, against 17 for the best route here &mdash; the
+      written routes walk you between spawn groups instead of parking you on the fattest one.
+      <a href="map.html">See the clusters &rarr;</a>
+    </p>
+  </section>
+
+  <nav class="next" aria-label="Keep going">
+    <a href="map.html"><b>The map &rarr;</b><span>Circles, arrows, 946 pins</span></a>
+    <a href="index.html"><b>&larr; Back to the plan</b><span>Days left, crafting rules</span></a>
+  </nav>
+
+
+</main>
+
+<script src="shared/nav.js"></script>
+<script src="shared/colophon.js"></script>
+<script src="features/routes/routes.data.js"></script>
+<script src="features/map/map.data.js"></script>
+<script src="features/routes/routes.js"></script>
+</body>
+</html>

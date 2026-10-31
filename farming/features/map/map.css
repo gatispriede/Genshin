@@ -1,0 +1,206 @@
+/* The Saurian map: tiles, spawn dots, cluster rings, route arrows. */
+.smap {
+  position: relative;
+  height: clamp(420px, 68vh, 760px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #0c1418;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+.smap.is-grabbing { cursor: grabbing; }
+
+.smap__world {
+  position: absolute;
+  top: 0; left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+.smap__tile {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  /* Tiles butt together; a hairline of AA between them reads as a grid. */
+  outline: 1px solid transparent;
+}
+
+/* Every spawn, faint, so density is readable even when zoomed out. */
+.smap__dots { position: absolute; inset: 0; pointer-events: none; }
+.smap__dots i {
+  position: absolute;
+  width: calc(5px / var(--k, 1));
+  height: calc(5px / var(--k, 1));
+  margin: calc(-2.5px / var(--k, 1)) 0 0 calc(-2.5px / var(--k, 1));
+  border-radius: 50%;
+  background: #ffe2b4;
+  box-shadow: 0 0 0 calc(1.5px / var(--k, 1)) rgba(40, 18, 8, .75);
+}
+
+/* Place names, so a circle has something to be called. */
+.smap__places { position: absolute; inset: 0; pointer-events: none; }
+.smap__place {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: calc(1px / var(--k, 1)) calc(5px / var(--k, 1));
+  border-radius: calc(4px / var(--k, 1));
+  background: rgba(8, 5, 3, .55);
+  color: #ffeccd;
+  font-size: calc(10px / var(--k, 1));
+  letter-spacing: .04em;
+  white-space: nowrap;
+  text-shadow: 0 calc(1px / var(--k, 1)) calc(2px / var(--k, 1)) #000;
+}
+
+/* Where a deep link landed you. */
+.smap__ping {
+  position: absolute;
+  width: calc(44px / var(--k, 1));
+  height: calc(44px / var(--k, 1));
+  margin: calc(-22px / var(--k, 1)) 0 0 calc(-22px / var(--k, 1));
+  border: calc(3px / var(--k, 1)) solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 calc(2px / var(--k, 1)) rgba(0, 0, 0, .6);
+  pointer-events: none;
+  animation: smap-ping 1.4s ease-out 3;
+}
+@keyframes smap-ping {
+  0%   { opacity: 1; transform: scale(.6); }
+  70%  { opacity: .25; transform: scale(1.35); }
+  100% { opacity: .9; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .smap__ping { animation: none; }
+}
+
+.smap__svg { position: absolute; inset: 0; pointer-events: none; }
+.smap__leg {
+  stroke: #ff8f52;
+  stroke-width: calc(2.5px / var(--k, 1));
+  stroke-linecap: round;
+  stroke-dasharray: calc(9px / var(--k, 1)) calc(7px / var(--k, 1));
+  opacity: .95;
+}
+
+/* Rings are outlines, not fills — the terrain underneath is the point. */
+.smap__ring {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: calc(2px / var(--k, 1)) solid rgba(255, 190, 140, .7);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.smap__ring:hover { border-color: #fff; }
+.smap__ring.is-route {
+  border-color: #ff7a45;
+  border-width: calc(3.5px / var(--k, 1));
+  background: rgba(255, 122, 69, .10);
+}
+.smap__ring.is-cleared {
+  border-color: rgba(127, 200, 160, .8);
+  border-style: dashed;
+  background: transparent;
+}
+.smap__ring.is-cleared .smap__tag { background: #27553f; color: #cdeedd; }
+
+.smap__tag {
+  padding: calc(2px / var(--k, 1)) calc(7px / var(--k, 1));
+  border-radius: 999px;
+  background: #140b06;
+  color: #ffd9a0;
+  font-size: calc(12px / var(--k, 1));
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 0 calc(1px / var(--k, 1)) rgba(255, 190, 140, .35);
+}
+
+/* ── Controls ────────────────────────────────────────────────── */
+.smap-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  margin-top: .9rem;
+}
+.smap-bar__status {
+  flex: 1;
+  min-width: 14rem;
+  font-size: .85rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+.smap-bar label {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .82rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.smap-bar input { accent-color: var(--flame); }
+
+.smap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  font-size: .82rem;
+  color: var(--ink-soft);
+}
+.smap-legend li { display: flex; align-items: center; gap: .45rem; }
+.smap-legend i {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  flex: none;
+}
+.smap-legend .k-route { border: 3px solid var(--flame); background: rgba(255,122,69,.25); }
+.smap-legend .k-ring  { border: 3px solid rgba(255,178,122,.55); background: rgba(255,122,69,.14); }
+.smap-legend .k-done  { border: 3px solid rgba(127,200,160,.75); background: rgba(127,200,160,.15); }
+.smap-legend .k-dot   { background: #ffd9a0; width: 8px; height: 8px; }
+
+.smap-bar__target {
+  flex-basis: 100%;
+  font-size: .85rem;
+  color: var(--ember);
+}
+
+/* Too many names at once is noise; they fade in as you zoom. */
+.smap__world.is-far .smap__place { display: none; }
+
+/* Teleport waypoints — small diamonds, always a constant screen size. */
+.smap__waypoints { position: absolute; inset: 0; pointer-events: none; }
+.smap__wp {
+  position: absolute;
+  width: calc(11px / var(--k, 1));
+  height: calc(11px / var(--k, 1));
+  margin: calc(-5.5px / var(--k, 1)) 0 0 calc(-5.5px / var(--k, 1));
+  background: #8fd2ff;
+  border: calc(1.5px / var(--k, 1)) solid #06202e;
+  transform: rotate(45deg);
+  pointer-events: auto;
+}
+.smap__wp--statue {
+  background: #ffe9a8;
+  border-radius: 50%;
+  transform: none;
+  width: calc(14px / var(--k, 1));
+  height: calc(14px / var(--k, 1));
+  margin: calc(-7px / var(--k, 1)) 0 0 calc(-7px / var(--k, 1));
+}
+.smap__wp--domain { background: #c9a8ff; }
+
+.smap-legend .k-wp {
+  width: 10px; height: 10px;
+  background: #8fd2ff;
+  border: 2px solid #06202e;
+  border-radius: 0;
+  transform: rotate(45deg);
+}

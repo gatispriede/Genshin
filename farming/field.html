@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field notes — Tyrant's Fang</title>
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/nav.css">
+<link rel="stylesheet" href="features/field/field.css">
+<link rel="stylesheet" href="features/pins/pins.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Observed in game · version 7.1.0</p>
+  <h1>Field notes</h1>
+  <p class="lede">
+    What the guides and the official map get wrong, confirmed by what actually dropped.
+  </p>
+</header>
+
+<main>
+
+  <section class="correction" aria-labelledby="correction-h">
+    <p class="correction__label">Observed in game — not in any guide</p>
+    <h2 id="correction-h">Fangs drop outside Natlan too</h2>
+    <p>
+      Owl-shaped Saurians (<strong>Iktomisaurus</strong> / Iktomisaurus Chick) at
+      Lv.&nbsp;69&ndash;70 near <strong>Kamisato Estate, Inazuma</strong> drop
+      <strong>Tyrant&rsquo;s Fang</strong> directly, alongside Juvenile Fang, at a good rate.
+    </p>
+    <p>
+      Confirmed in <strong>single player, own world</strong> &mdash; so this is a real, repeatable
+      spawn, not a co-op guest&rsquo;s map. Every published guide says &ldquo;Natlan Saurians only,&rdquo;
+      and the official interactive map holds 946 Saurian pins with none outside Natlan.
+      Both are behind the game. The Lv.&nbsp;60+ gate holds; the region claim does not.
+    </p>
+    <p class="correction__tip">
+      Blue name = 3&#9733; = Tyrant&rsquo;s Fang. Grey = 1&#9733; Juvenile. Green = 2&#9733; Seasoned.
+    </p>
+  </section>
+
+  <section class="panel" aria-labelledby="mymap-h">
+    <h2 id="mymap-h">Mark the owls yourself</h2>
+    <p class="panel__note">
+      There is no published pin for the Inazuma owls to copy. Screenshot your in-game map
+      around Kamisato Estate, drop it here, and click where they stand. The image and the
+      pins stay on this machine.
+    </p>
+
+    <div class="mapdrop" id="map-drop" tabindex="0" role="button" aria-label="Add a map screenshot">
+      <b>Drop a map screenshot here</b>
+      <small>or click to pick a file &middot; or just paste from the clipboard</small>
+      <small>In-game screenshots land in <code>ScreenShot\</code> beside the game</small>
+    </div>
+    <input type="file" id="map-file" accept="image/*" class="visually-hidden">
+
+    <div class="mapstage" id="map-stage" hidden>
+      <img id="map-img" alt="Your map screenshot, with your own spawn pins on it">
+      <div class="maplayer" id="map-layer"></div>
+    </div>
+
+    <div class="maptools">
+      <span class="maptools__count" id="map-count"></span>
+      <button type="button" class="btn--ghost" id="map-clear">Clear pins</button>
+      <button type="button" class="btn--ghost" id="map-reset">Change image</button>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="official-h">
+    <h2 id="official-h">The official map</h2>
+    <p class="panel__note">
+      Still the right tool for Natlan, and it tracks what you&rsquo;ve collected against your own
+      account &mdash; the reason it&rsquo;s worth using for chests and collectibles too.
+    </p>
+    <p>
+      <a class="btn" href="https://act.hoyolab.com/ys/app/interactive-map/index.html"
+         target="_blank" rel="noopener">HoYoLAB Interactive Map →</a>
+    </p>
+  </section>
+
+  <nav class="next" aria-label="Keep going">
+    <a href="map.html"><b>The Natlan map &rarr;</b><span>946 pins, drawn here</span></a>
+    <a href="index.html"><b>&larr; Back to the plan</b><span>Days left, crafting rules</span></a>
+  </nav>
+
+</main>
+
+<script src="shared/nav.js"></script>
+<script src="shared/colophon.js"></script>
+<script src="features/pins/pins.js"></script>
+</body>
+</html>

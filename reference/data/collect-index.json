@@ -103,5 +103,12 @@
   "count": 105,
   "stops": 20,
   "file": "collect-beryl-conch.js"
+ },
+ "windwheel-aster": {
+  "title": "Windwheel Aster",
+  "feeds": "Sucrose ascension — 168 needed",
+  "count": 82,
+  "stops": 11,
+  "file": "collect-windwheel-aster.js"
  }
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reputation — Tyrant's Fang</title>
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/nav.css">
+<link rel="stylesheet" href="features/field/field.css">
+<link rel="stylesheet" href="features/reputation/reputation.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Every region · the treasure compass</p>
+  <h1>Reputation</h1>
+  <p class="lede">
+    The compass is the only reputation reward worth rushing &mdash; it finds chests for you,
+    which pays back every hour you spend on it. This is the shortest path to each one.
+  </p>
+</header>
+
+<main>
+
+  <section class="verdict" aria-labelledby="rep-verdict-h">
+    <p class="verdict__label">The thing that changes your plan</p>
+    <h2 id="rep-verdict-h">Weekly reputation is shared, not per region</h2>
+    <p class="verdict__body">
+      Three bounties and three requests per week &mdash; <strong>in total, across every region
+      and tribe</strong>, not three each. So you cannot grind Mondstadt and Inazuma in parallel;
+      splitting the week between two regions halves the rate for both.
+      <strong>Pick one region, finish its compass, then move on.</strong>
+    </p>
+    <p class="verdict__body" style="margin-bottom:0">
+      Claiming a bounty&rsquo;s reward instantly refreshes the slot everywhere except Natlan,
+      and only the hardest bounties are worth taking &mdash; 200 EXP against 120 for the easiest,
+      for roughly the same time.
+    </p>
+  </section>
+
+  <section class="panel" aria-labelledby="rep-table-h">
+    <h2 id="rep-table-h">Which compass, and how far away</h2>
+    <p class="panel__note" id="rep-rate"></p>
+
+    <label class="rep-toggle">
+      <input type="checkbox" id="rep-banked">
+      I&rsquo;ve already cleared that region&rsquo;s world quests and exploration milestones
+    </label>
+
+    <div class="rep-wrap">
+      <table class="rep">
+        <thead>
+          <tr>
+            <th scope="col">Region</th>
+            <th scope="col">Compass unlocks at</th>
+            <th scope="col">EXP to get there</th>
+            <th scope="col">World quests</th>
+            <th scope="col">Weeks, weekly only</th>
+          </tr>
+        </thead>
+        <tbody id="rep-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="rep-order-h">
+    <h2 id="rep-order-h">The shortest path, in order</h2>
+    <ol class="rep-steps">
+      <li>
+        <b>Clear that region&rsquo;s world quests first.</b> They pay <strong>100 EXP each</strong>
+        regardless of how long they take, so the short ones are pure profit and there is no
+        weekly cap on them. Liyue alone has 57.
+      </li>
+      <li>
+        <b>Claim exploration at 20%, 40% and 60%.</b> 100 EXP and 20,000 Mora each, one-time,
+        and you have probably already earned several without claiming them.
+      </li>
+      <li>
+        <b>Archon quests count too</b> &mdash; 200 EXP each in their region, which you likely
+        already have banked.
+      </li>
+      <li>
+        <b>Only then grind weekly.</b> Three bounties at 200 and three requests at 80,
+        on one region at a time.
+      </li>
+      <li>
+        <b>Forge the blueprint.</b> The compass is a diagram, not an item:
+        <span id="rep-forging"></span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="correction" aria-labelledby="rep-honest-h">
+    <p class="correction__label">Correction — this page used to claim otherwise</p>
+    <h2 id="rep-honest-h">The shortest quests are already ranked, elsewhere</h2>
+    <p>
+      This page previously said no per-quest length data existed and that any
+      &ldquo;shortest first&rdquo; ranking would be guesswork. <strong>That was wrong.</strong>
+      The Genshin notes project measures it from the wiki: the numbered objective count and the
+      dialogue length of every quest, pulled from each quest&rsquo;s own page.
+    </p>
+    <p>
+      <strong>172 world quests across Liyue, Inazuma, Sumeru and Fontaine are ranked shortest
+      first</strong>, tiered from &ldquo;Very short&rdquo; upward, and <strong>147 of them carry a
+      start-location map</strong> showing exactly where the quest begins. That is the list to
+      work from for a compass, not anything here.
+    </p>
+    <p class="correction__tip">
+      It lives in <code>D:\Work\Genshin impact project</code> &mdash; open
+      <code>quest-map.html</code> for the interactive version (every quest on the live
+      game map with teleports; click a dot for the NPC, length and start screenshot),
+      or <code>reputation-quests.html</code> for the ranked list. Run
+      <code>tools\serve.cmd</code> there, or the <code>genshin-notes</code> launch entry.
+    </p>
+  </section>
+
+  <section class="panel" aria-labelledby="rep-cant-h">
+    <h2 id="rep-cant-h">What still can&rsquo;t be mapped</h2>
+    <p class="panel__note">
+      Reputation bounties and requests <strong>cannot be mapped</strong>. They rotate weekly from
+      a per-region pool and have no fixed coordinates, which is why they appear in none of the
+      793 categories the official map tracks. <a href="quests.html">World quests can be
+      mapped</a>, and are &mdash; though those pins are unnamed, which is why the wiki-sourced
+      per-quest maps in the notes project are the better tool for picking a quest.
+    </p>
+  </section>
+
+  <nav class="next" aria-label="Keep going">
+    <a href="quests.html"><b>World quests on the map &rarr;</b><span>576 starts, all regions</span></a>
+    <a href="index.html"><b>&larr; Back to the plan</b><span>Tyrant&rsquo;s Fang farming</span></a>
+  </nav>
+
+</main>
+
+<script src="shared/nav.js"></script>
+<script src="shared/colophon.js"></script>
+<script src="features/reputation/reputation.data.js"></script>
+<script src="features/reputation/reputation.js"></script>
+<script>
+  document.getElementById('rep-forging').textContent = window.REPUTATION.forging;
+</script>
+</body>
+</html>

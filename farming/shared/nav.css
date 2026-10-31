@@ -1,0 +1,86 @@
+/* Sticky top nav, injected by nav.js on every page. */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0 calc(var(--pad) * -1);
+  padding: 0 var(--pad);
+  background: rgba(14, 10, 9, .86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: .7rem 0;
+}
+.nav__brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  text-decoration: none;
+  color: var(--ink);
+}
+.nav__brand b { font-family: var(--serif); font-weight: 500; font-size: 1.05rem; }
+.nav__brand span {
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.nav__list a {
+  display: block;
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: .88rem;
+  transition: background .15s, color .15s;
+}
+.nav__list a:hover { background: var(--surface-2); color: var(--ink); }
+.nav__list a[aria-current="page"] {
+  background: rgba(255, 122, 69, .15);
+  color: var(--ember);
+}
+
+/* Pages start under the nav, so the masthead loses its big top padding. */
+.masthead { padding-top: clamp(2rem, 6vw, 3.5rem); }
+
+/* Cross-links at the foot of a page. */
+.next {
+  display: grid;
+  gap: .6rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: clamp(2rem, 6vw, 3.5rem) 0 0;
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
+}
+.next a {
+  display: block;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  transition: border-color .15s;
+}
+.next a:hover { border-color: var(--flame); }
+.next b { display: block; color: var(--ink); font-weight: 600; }
+.next span { font-size: .85rem; color: var(--ink-faint); }
+
+/* Link out to the companion notes project; it runs on its own server. */
+.nav__list a.nav__ext { color: var(--ink-faint); }
+.nav__list a.nav__ext:hover { color: var(--ember); background: var(--surface-2); }

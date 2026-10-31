@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World quests — Tyrant's Fang</title>
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/nav.css">
+<link rel="stylesheet" href="features/map/map.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Teyvat · every world quest</p>
+  <h1>World quests</h1>
+  <p class="lede">
+    The same map, pointed at something else entirely &mdash; <strong>576 world quest
+    starts</strong> across all of Teyvat. Built with one command, from the same generator
+    that drew the Saurians.
+  </p>
+</header>
+
+<main>
+
+  <section class="panel" aria-labelledby="qmap-h" style="border-top:0;padding-top:0">
+    <h2 id="qmap-h" class="visually-hidden">World quest map</h2>
+
+    <ul class="smap-legend">
+      <li><i class="k-route"></i> Clustered &mdash; numbered in order</li>
+      <li><i class="k-ring"></i> Other cluster &mdash; number is the quest count</li>
+      <li><i class="k-done"></i> Done</li>
+      <li><i class="k-dot"></i> A single quest start</li>
+      <li><i class="k-wp"></i> Teleport waypoint &mdash; blue diamond, gold circle for a Statue</li>
+    </ul>
+
+    <div class="smap" id="map-canvas"
+         data-source="QUEST_MAP"
+         data-noun="quests"
+         data-names-from="0.5"></div>
+
+    <div class="smap-bar">
+      <span class="smap-bar__status" id="smap-status"></span>
+      <span class="smap-bar__target" id="smap-target" aria-live="polite"></span>
+      <label><input type="checkbox" id="smap-dots" checked> Show every quest</label>
+      <label><input type="checkbox" id="smap-wp" checked> Show teleports</label>
+      <button type="button" class="btn--ghost" id="smap-best">Jump to the densest</button>
+      <button type="button" class="btn--ghost" id="smap-out">&minus;</button>
+      <button type="button" class="btn--ghost" id="smap-in">+</button>
+      <button type="button" class="btn--ghost" id="smap-fit">Fit</button>
+    </div>
+
+    <p class="panel__note" style="margin-top:1.5rem">
+      This one spans the whole continent, so it is built at the coarsest tile level
+      (<code>--level 3</code>) &mdash; 90 tiles instead of the 1287 a full-resolution Teyvat
+      map would pull. Place names appear as you zoom in, or 292 of them would land on top
+      of each other.
+    </p>
+
+    <p class="panel__note">
+      <strong>Reputation quests are not on here, and cannot be.</strong> Checked against all
+      793 categories the official map carries: there is no Reputation, Bounty, Request or
+      Commission type. Reputation <em>Bounties</em> and <em>Requests</em> rotate weekly from a
+      per-region pool, so they have no fixed coordinates to pin &mdash; no map has them, this
+      one included. World quests are the nearest fixed thing.
+    </p>
+    <p class="panel__note">
+      Per-region datasets that <em>do</em> exist, if that was the shape you wanted: Shrines of
+      Depths, Mora chests and the offering trees each have their own label per region.
+      <code>node tools/build-map-data.mjs --labels</code> lists them.
+    </p>
+  </section>
+
+  <nav class="next" aria-label="Keep going">
+    <a href="map.html"><b>The Saurian map &rarr;</b><span>946 spawns, circled and routed</span></a>
+    <a href="index.html"><b>&larr; Back to the plan</b><span>Days left, crafting rules</span></a>
+  </nav>
+
+</main>
+
+<script src="shared/nav.js"></script>
+<script src="shared/colophon.js"></script>
+<script src="features/map/quests.data.js"></script>
+<script src="features/map/map.js"></script>
+</body>
+</html>

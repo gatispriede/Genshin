@@ -1,0 +1,60 @@
+/* Reputation: the per-region compass table and the ordered path. */
+.rep-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+  font-size: .88rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.rep-toggle input { accent-color: var(--flame); }
+
+.rep-wrap { overflow-x: auto; }
+
+.rep {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+}
+.rep th, .rep td {
+  padding: .7rem .8rem;
+  text-align: left;
+  vertical-align: top;
+}
+.rep thead th {
+  border-bottom: 1px solid var(--line);
+  font-size: .74rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.rep tbody th {
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.rep tbody td { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.rep tbody tr:not(.rep-note) { border-top: 1px solid var(--line); }
+.rep tbody tr:not(.rep-note):first-child { border-top: 0; }
+
+.rep-note td {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  font-size: .82rem;
+  color: var(--ink-faint);
+}
+.rep-now { color: var(--jade); }
+
+.rep-steps {
+  margin: 0;
+  padding-left: 1.3rem;
+  max-width: var(--measure);
+  color: var(--ink-soft);
+}
+.rep-steps li { margin-bottom: .9rem; }
+.rep-steps li::marker { color: var(--ember); font-variant-numeric: tabular-nums; }
+.rep-steps b { color: var(--ink); }
+.rep-steps strong { color: var(--ember); }

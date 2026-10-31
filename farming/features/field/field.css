@@ -1,0 +1,33 @@
+/* Field-observed correction block — outranks the researched routes, so it
+   reads louder than a panel and cooler than the volcanic verdict card. */
+.correction {
+  margin: clamp(2rem, 6vw, 3.5rem) 0;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid #2f4a52;
+  border-left: 3px solid var(--jade);
+  border-radius: var(--radius);
+  background: linear-gradient(150deg, rgba(127, 200, 160, .10), transparent 60%), var(--surface-2);
+}
+.correction__label {
+  margin: 0 0 .5rem;
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--jade);
+}
+.correction h2 {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  line-height: 1.1;
+}
+.correction p { max-width: var(--measure); margin: 0 0 .85rem; color: var(--ink-soft); }
+.correction p:last-child { margin-bottom: 0; }
+.correction strong { color: var(--ink); }
+.correction__tip {
+  padding-top: .85rem;
+  border-top: 1px solid #2f4a52;
+  font-size: .9rem;
+  color: var(--ink-faint);
+}

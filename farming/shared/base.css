@@ -1,0 +1,190 @@
+/* Natlan palette: obsidian ground, volcanic accent, bone-warm text. */
+:root {
+  --ink:        #f3e9e1;
+  --ink-soft:   #bda695;
+  --ink-faint:  #8a7466;
+  --ground:     #16100e;
+  --surface:    #211815;
+  --surface-2:  #2b1f1a;
+  --line:       #3a2a23;
+  --flame:      #ff7a45;
+  --ember:      #f5b971;
+  --jade:       #7fc8a0;
+
+  --measure: 68ch;
+  --pad: clamp(1rem, 4vw, 2.5rem);
+  --radius: 14px;
+
+  --sans: ui-sans-serif, "Segoe UI", system-ui, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 var(--pad) 5rem;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #3a1d12 0%, transparent 60%),
+    var(--ground);
+  color: var(--ink);
+  font: 16px/1.65 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+main { max-width: 900px; margin: 0 auto; }
+
+/* ── Masthead ───────────────────────────────────────────────── */
+.masthead {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(3rem, 10vw, 6rem) 0 clamp(2rem, 5vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: .75rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.masthead h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.75rem, 11vw, 5.5rem);
+  line-height: .95;
+  letter-spacing: -.02em;
+  background: linear-gradient(170deg, var(--ink) 20%, var(--ember) 115%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lede {
+  max-width: var(--measure);
+  margin: 1.25rem 0 0;
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  color: var(--ink-soft);
+}
+.lede strong { color: var(--ink); }
+
+/* ── Panels ─────────────────────────────────────────────────── */
+.panel {
+  margin: clamp(2rem, 6vw, 3.5rem) 0;
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
+}
+.panel h2 {
+  margin: 0 0 .75rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 3.5vw, 1.9rem);
+  letter-spacing: -.01em;
+}
+.panel__note { max-width: var(--measure); margin: 0 0 1.5rem; color: var(--ink-soft); }
+.panel__note em { color: var(--ink-faint); font-style: normal; }
+
+/* ── Planner ────────────────────────────────────────────────── */
+.planner {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.field { display: flex; flex-direction: column; gap: .4rem; }
+.field--wide { grid-column: 1 / -1; }
+.field span { font-size: .8rem; letter-spacing: .04em; color: var(--ink-faint); }
+.field input {
+  padding: .6rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+.field input:focus-visible { outline: 2px solid var(--flame); outline-offset: 1px; }
+
+.readout {
+  display: block;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ember);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.readout p { margin: 0 0 .5rem; color: var(--ink-soft); }
+.readout p:last-child { margin-bottom: 0; }
+.readout b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.readout .done { color: var(--jade); }
+
+/* ── Rules ──────────────────────────────────────────────────── */
+.rules { display: grid; gap: 1.25rem; margin: 0; }
+.rules dt {
+  margin-bottom: .25rem;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ember);
+}
+.rules dd { max-width: var(--measure); margin: 0; color: var(--ink-soft); }
+.rules dd strong { color: var(--ink); }
+
+/* ── Misc ───────────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: .7rem 1.2rem;
+  border: 1px solid var(--flame);
+  border-radius: 999px;
+  color: var(--ember);
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.btn:hover { background: var(--flame); color: #1a0d07; }
+
+a { color: var(--ember); }
+
+.colophon {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: .85rem;
+  color: var(--ink-faint);
+}
+.colophon p { max-width: var(--measure); margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ── Shared utilities ───────────────────────────────────────── */
+.btn--ghost {
+  padding: .45rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+.btn--ghost:hover { border-color: var(--ink-faint); color: var(--ink); }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.colophon__caveats {
+  margin: .75rem 0 0;
+  padding-left: 1.1rem;
+  max-width: var(--measure);
+}
+.colophon__caveats li { margin-bottom: .3rem; }
+
+.rule-ok {
+  display: inline-block;
+  margin-top: .4rem;
+  font-size: .85rem;
+  color: var(--jade);
+}

@@ -348,5 +348,62 @@
         "from": "Events, offering trees, Sacred Sakura"
       }
     ]
+  },
+  "Sucrose": {
+    "element": "Anemo",
+    "weapon": "Catalyst",
+    "mora": {
+      "ascension": 420000,
+      "talents": 4950000
+    },
+    "ascension": [
+      {
+        "item": "Vayuda Turquoise",
+        "qty": "1 sliver · 9 fragment · 9 chunk · 6 gemstone",
+        "from": "Anemo Hypostasis or Maguu Kenki",
+        "note": "the Hypostasis also drops her Hurricane Seeds — one boss, two columns. Gemstones need World Level 6+"
+      },
+      {
+        "item": "Windwheel Aster",
+        "qty": "168",
+        "map": "windwheel-aster",
+        "from": "Mondstadt local specialty",
+        "note": "82 nodes in 11 warps, all above ground"
+      },
+      {
+        "item": "Hurricane Seed",
+        "qty": "46",
+        "from": "Anemo Hypostasis, Stormbearer Point"
+      },
+      {
+        "item": "Whopperflower Nectar",
+        "qty": "18 nectar · 30 shimmering · 36 energy",
+        "from": "Whopperflowers anywhere"
+      }
+    ],
+    "talents": [
+      {
+        "item": "Philosophies of Freedom",
+        "qty": "9 teachings · 63 guide · 114 philosophies",
+        "from": "Forsaken Rift domain, Mondstadt",
+        "note": "Mon / Thu / Sun — same days and domain as Barbara"
+      },
+      {
+        "item": "Whopperflower Nectar",
+        "qty": "18 · 66 · 93",
+        "from": "Whopperflowers anywhere"
+      },
+      {
+        "item": "Spirit Locket of Boreas",
+        "qty": "18",
+        "from": "Andrius, Wolf of the North",
+        "note": "same weekly boss as Fischl's"
+      },
+      {
+        "item": "Crown of Insight",
+        "qty": "3",
+        "from": "Events, offering trees, Sacred Sakura"
+      }
+    ]
   }
 }
