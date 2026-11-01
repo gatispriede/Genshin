@@ -31,11 +31,16 @@ Crystallize** — every team wants Hydro + Electro paired, with Geo for Crystall
 
 ### Opening Characters — all six offered as Lv. 90 Trials
 
-| | Element |
-|---|---|
-| **Zhongli**, **Kachina** | Geo |
-| **Yelan**, **Aino** | Hydro |
-| **Flins**, **Fischl** | Electro |
+| Element | 5★ *(gold card)* | 4★ *(purple card)* |
+|---|---|---|
+| Geo | **Zhongli** | **Kachina** |
+| Hydro | **Yelan** | **Aino** |
+| Electro | **Flins** | **Fischl** |
+
+One 5★ and one 4★ per element. The card background colour is the tell on the cast row —
+gold is 5★, purple is 4★ — and it is what makes the "open weak" rule actionable: the three
+4★ already cover all three elements between them, so an opening team is *the three purples
+plus one gold*.
 
 **You own Fischl.** Owning an Opening Character grants **+20% Max HP, ATK and DEF for the
 whole season, inside *and* outside the theater** — so the Lv. 50 Fischl in the open world
@@ -66,19 +71,26 @@ which is why only 2 of 25 characters qualify.
 
 ## Team split
 
-Eight units, four slots per stage.
+**You can only field the Principal Cast.** Alternate Cast members are *not* playable until
+they are drafted into the Principal Cast after a won Battle. At Act 1 that means four of
+the six Trials and nothing else — Varesa and Barbara are bench stock for later rounds, not
+an opening team.
 
-**Team B — open with this**
-> Varesa (on-field) · Aino · Kachina · Barbara
+**Act 1 — open with this**
+> **Aino · Fischl · Kachina** (all three 4★) **+ Flins** (on-field)
 
-Aino and Barbara feed Hydro for Varesa to Electro-Charge off; Kachina covers Geo. Barbara
-is the only real healer available, and two healers are the standing advice for this season.
+The three purples already cover Hydro, Electro and Geo, so only one gold has to come along.
+Spend **Flins**, because Electro-Charged is the reaction sitting at Blessing Lv. 1 while the
+other two are at Lv. 0, and because Act 1 asks for damage rather than survivability —
+**80 seconds** against three identical enemies.
 
-**Team A — hold for the late Acts**
-> Flins (on-field) · Yelan · Fischl · Zhongli
+This leaves **Zhongli and Yelan at full Vigor**, which is the whole point.
 
-Yelan and Fischl both apply from off-field, so Electro-Charged runs without being touched.
-Zhongli shields and shreds RES. All four Lv. 90.
+**Hold for the late Acts**
+> **Zhongli** — the shield and the RES shred, worth most where damage actually threatens
+> **Yelan** — the strongest off-field applier and damage buff in the cast
+
+Pair them with whichever Electro still has Vigor, plus whatever got drafted in.
 
 ---
 
