@@ -119,3 +119,34 @@ Every damage figure in `big-numbers.html` therefore states the talent level it a
 (1 for the "today" rows, on the basis that the account was 11 days old). Talent 1 → 10
 is worth about **2×** on both characters' big hits, so this is worth reading off the
 character screen once.
+
+## Does Varesa's own hit count for her A4 Nightsoul Burst stack? (1 Nov 2026)
+
+Her A4 "The Hero Twice-Returned!" reads "when a **nearby party member** triggers a
+Nightsoul Burst." She is the on-field unit landing most of the Electro damage, so if
+her own hits do not count she could eat the 18s Nightsoul Burst cooldown and never
+receive her own buff.
+
+**Reasoned answer: they do count.** Skirk's A4 in the same Project Amber payload format
+says "nearby Cryo party members *apart from Skirk*" — the game spells self-exclusion
+out when it means it, and Varesa's text has no such clause. Prydwen also reports one
+stack is generally maintainable with her as the sole Natlan unit. **Inference, not
+verified** — a KQM theorycraft source or an in-game test would settle it.
+
+Either way the mitigation is already in her team: Fischl's Oz ticks off-field Electro
+continuously, so something that is not Varesa lands a hit the moment the cooldown
+lapses. See `big-numbers.html#nightsoul`.
+
+## Is Kachina still claimable, and from which Natlan act? (1 Nov 2026)
+
+She is the only *free* second Natlan character, and a second Natlan unit takes the
+Nightsoul Burst interval from 18s to 12s — which is what makes Varesa's A4 stack
+near-permanent rather than 67% uptime.
+
+Sources disagree on which act of *Flowers Resplendent on the Sun-Scorched Sojourn*
+hands her over, and one notes the Turbo Twirly event page closed after 6.0 while the
+event itself became permanent. Prerequisite is normally Chapter 4 Act 6, but
+**Quick Start opens the Natlan Archon Quest at AR 28** and this account is AR 40.
+
+**The check:** open the in-game Events menu and the Natlan Archon Quest entry.
+Natlan is at 2% exploration so this is almost certainly unclaimed.
