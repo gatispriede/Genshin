@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100k on screen — what it actually takes</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  /* page-local names are all bn-* so they cannot collide with map.css */
+  .bn-ladder { width:100%; border-collapse:collapse; margin-top:10px; font-size:.86rem; }
+  .bn-ladder th { text-align:left; color:#6f7a8c; font-size:.72rem;
+                  letter-spacing:.08em; text-transform:uppercase;
+                  padding:6px 8px; border-bottom:1px solid #2a3140; }
+  .bn-ladder td { padding:7px 8px; border-bottom:1px solid #222834; }
+  .bn-ladder td:first-child { color:#c9d4e3; }
+  .bn-ladder .bn-n { text-align:right; font-variant-numeric:tabular-nums; color:var(--dim); }
+  .bn-ladder .bn-crit { text-align:right; font-variant-numeric:tabular-nums;
+                        color:var(--paper); font-weight:600; }
+  .bn-ladder tr.bn-here td { background:#1b2230; }
+  .bn-ladder tr.bn-here td:first-child { color:var(--best); }
+  .bn-ladder tr.bn-cap td { border-top:1px solid #3a4454; }
+  .bn-ladder tr.bn-cap .bn-crit { color:var(--goal); }
+  .bn-gate { display:grid; gap:9px; margin-top:10px; }
+  .bn-lever { display:grid; grid-template-columns:34px 1fr 108px; gap:12px;
+              align-items:center; padding:11px 14px; background:var(--panel);
+              border-radius:8px; border-left:3px solid var(--off); }
+  .bn-lever.bn-1 { border-left-color:var(--do-now); }
+  .bn-lever.bn-2 { border-left-color:var(--warn); }
+  .bn-lever b.bn-rank { font-size:1.2rem; color:#6f7a8c; text-align:center; }
+  .bn-lever .bn-gain { text-align:right; font-size:.82rem; color:var(--best);
+                       font-variant-numeric:tabular-nums; }
+  @media (max-width:640px){
+    .bn-lever { grid-template-columns:28px 1fr; }
+    .bn-lever .bn-gain { grid-column:2; text-align:left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>100k on screen</h1>
+  <p class="sub">What it takes on <b>Varesa</b> and <b>Skirk</b> · computed 1 Nov 2026
+  from the 28 Oct Chronicle snapshot and the Project Amber talent data on disk.</p>
+
+  <div class="bar key">
+    <b>Character level is not the gate, and neither of them reaches 100k at C0 on
+    weapons you own.</b> Varesa at Lv 70 crits for about <b>7.6k</b> today. Taking her
+    to Lv 90 and nothing else gets her to roughly <b>17k</b>. The remaining 6× is
+    talents, main stats, CRIT and a resistance shred — and the last stretch needs her
+    signature catalyst. Skirk's realistic ceiling at C0 is about <b>74k</b>.
+  </div>
+
+  <h2>The honest target</h2>
+  <p>Aim for <b>50–75k crits</b>. That is reachable on this account with gear you can
+  farm. 100k needs either <b>Vivid Notions</b> (Varesa's 5★) or constellations.</p>
+
+  <h2>Varesa — the ladder</h2>
+  <p>Her biggest single number is the <b>Fiery Passion high-plunge ground impact</b>
+  with Rainbow Crash up: the plunge impact multiplier plus the <b>+180% of ATK</b> her
+  A1 passive adds to it. Against an enemy at <b>Lv 73</b> (your world level's boss tier).
+  "t" is talent level.</p>
+  <table class="bn-ladder">
+    <tr><th>Build</th><th>ATK</th><th>CR</th><th>CD</th><th>t</th>
+        <th class="bn-n">Average</th><th class="bn-crit">On a crit</th></tr>
+    <tr class="bn-here"><td>Today — Lv 70, Widsith L70, talents 1</td><td>1,091</td><td>24%</td><td>100%</td><td>1</td>
+        <td class="bn-n">4,723</td><td class="bn-crit">7,594</td></tr>
+    <tr><td>…talents to 6</td><td>1,091</td><td>24%</td><td>100%</td><td>6</td>
+        <td class="bn-n">6,025</td><td class="bn-crit">9,689</td></tr>
+    <tr><td>Ascend to Lv 80</td><td>1,149</td><td>29%</td><td>100%</td><td>6</td>
+        <td class="bn-n">6,778</td><td class="bn-crit">10,495</td></tr>
+    <tr><td>Lv 90 + Widsith to L90</td><td>1,335</td><td>34%</td><td>100%</td><td>9</td>
+        <td class="bn-n">11,677</td><td class="bn-crit">17,419</td></tr>
+    <tr><td>+ Electro goblet, ATK% sands, CRIT circlet</td><td>1,543</td><td>60%</td><td>160%</td><td>9</td>
+        <td class="bn-n">24,363</td><td class="bn-crit">32,319</td></tr>
+    <tr><td>+ talents 10, substats levelled</td><td>1,703</td><td>70%</td><td>200%</td><td>10</td>
+        <td class="bn-n">34,777</td><td class="bn-crit">43,471</td></tr>
+    <tr><td>+ her A4 passive, 1 stack (+35% ATK)</td><td>2,007</td><td>70%</td><td>200%</td><td>10</td>
+        <td class="bn-n">40,970</td><td class="bn-crit">51,213</td></tr>
+    <tr class="bn-cap"><td>+ Sucrose on 4pc Viridescent Venerer</td><td>2,007</td><td>70%</td><td>200%</td><td>10</td>
+        <td class="bn-n">59,179</td><td class="bn-crit">73,974</td></tr>
+    <tr class="bn-cap"><td>All of that <b>on Vivid Notions R1</b></td><td>2,631</td><td>70%</td><td>244%</td><td>10</td>
+        <td class="bn-n">87,588</td><td class="bn-crit">111,267</td></tr>
+  </table>
+  <div class="note">
+    <b>Where the 100k actually comes from:</b> Vivid Notions is 674 base ATK against
+    the Widsith's 510, carries 44.1% CRIT DMG, and its passive adds ATK and a large
+    Plunging-Attack CRIT DMG bonus. Swapping it in is worth about <b>+50%</b> on the
+    same hit. The plunge CRIT DMG figure is <b>unverified</b> — sources quote 28% ATK
+    and an 80% plunge CRIT DMG, and they disagree. Treat the last row as indicative.
+  </div>
+
+  <h2>Skirk — the ladder</h2>
+  <p>Her biggest single number is the <b>Havoc: Ruin final slash</b> at 61 Serpent's
+  Subtlety, with 4pc Finale of the Deep Galleries' +60% Burst bonus live (it always is —
+  her Elemental Energy is permanently 0).</p>
+  <table class="bn-ladder">
+    <tr><th>Build</th><th>ATK</th><th>CR</th><th>CD</th><th>t</th>
+        <th class="bn-n">Average</th><th class="bn-crit">On a crit</th></tr>
+    <tr class="bn-here"><td>Today — Lv 60, Prototype Rancour, talents 1</td><td>1,206</td><td>20%</td><td>106%</td><td>1</td>
+        <td class="bn-n">4,635</td><td class="bn-crit">7,847</td></tr>
+    <tr><td><b>Ascend past Lv 60</b> → Death's Crossing ×3</td><td>1,262</td><td>20%</td><td>106%</td><td>6</td>
+        <td class="bn-n">11,206</td><td class="bn-crit">18,969</td></tr>
+    <tr><td>Lv 90 + Exaiphanes Blade, talents 9</td><td>1,581</td><td>54%</td><td>125%</td><td>9</td>
+        <td class="bn-n">24,727</td><td class="bn-crit">33,327</td></tr>
+    <tr><td>+ ATK% sands, CRIT Rate circlet, talents 10</td><td>1,904</td><td>75%</td><td>170%</td><td>10</td>
+        <td class="bn-n">42,898</td><td class="bn-crit">50,912</td></tr>
+    <tr class="bn-cap"><td>+ Sucrose on 4pc Viridescent Venerer</td><td>1,904</td><td>75%</td><td>170%</td><td>10</td>
+        <td class="bn-n">61,964</td><td class="bn-crit">73,540</td></tr>
+  </table>
+  <p><b>Skirk structurally can't show 100k at C0.</b> She is a many-medium-hits
+  character — her Seven-Phase Flash N5 lands around <b>20k</b> a swing at that same
+  ceiling build. Her Burst final slash is the only hit with a big enough multiplier,
+  and it tops out near 74k. If you want one enormous number on screen, that's Varesa's job.</p>
+
+  <h2>The four levers that actually matter</h2>
+  <div class="bn-gate">
+    <div class="bn-lever bn-1">
+      <b class="bn-rank">1</b>
+      <div><b>Ascend Skirk past Lv 60.</b> She sits at the Ascension-3 cap, which means
+      <b>Return to Oblivion</b> — her A4 passive — is still locked. That passive is
+      <b>×1.6 on her Burst and ×1.7 on her Seven-Phase Flash Normal Attacks</b> at three
+      Death's Crossing stacks. It is the single largest multiplier anywhere on this
+      account, and one ascension unlocks it.</div>
+      <div class="bn-gain">×2.4</div>
+    </div>
+    <div class="bn-lever bn-1">
+      <b class="bn-rank">2</b>
+      <div><b>Talent levels.</b> Both are assumed at 1 here because the account is 11
+      days old. Talent 1 → 10 roughly <b>doubles</b> the plunge and slash multipliers,
+      and it costs no artifact luck. Varesa levels Normal Attack first (her plunges scale
+      off it); Skirk levels Elemental Skill, then Burst.</div>
+      <div class="bn-gain">≈ ×2</div>
+    </div>
+    <div class="bn-lever bn-2">
+      <b class="bn-rank">3</b>
+      <div><b>Varesa's goblet and circlet.</b> A DEF% goblet on a DPS contributes
+      nothing. Electro DMG 46.6% plus a CRIT Rate circlet is worth more than the whole
+      Lv 70 → 90 climb.</div>
+      <div class="bn-gain">×1.9</div>
+    </div>
+    <div class="bn-lever bn-2">
+      <b class="bn-rank">4</b>
+      <div><b>Sucrose on 4pc Viridescent Venerer.</b> −40% elemental RES turns the
+      resistance multiplier from 0.90 to 1.30 — a flat <b>+44%</b> on every hit from
+      both of them, and it works for Electro and Cryo alike. She has one VV piece.</div>
+      <div class="bn-gain">×1.44</div>
+    </div>
+  </div>
+
+  <h2>What character level is actually worth</h2>
+  <p>Lv 70 → 90 on Varesa moves her base ATK from <b>272 → 357</b> and her free CRIT
+  Rate from 14.6% → 24.2%. Because weapon and artifacts dominate the ATK pool, that is
+  only about <b>+13% total ATK</b>. The enemy-DEF multiplier improves from 0.496 to
+  0.523 — another <b>+5%</b>. Level is worth roughly <b>1.2×</b>; everything else on
+  this page is worth more.</p>
+  <div class="note">
+    Enemy level barely moves the number either. Varesa's ceiling-with-Widsith crit
+    against an enemy at Lv 1 is <b>92.3k</b>; against Lv 95 it is <b>69.7k</b>. Hitting
+    something weak gets you 32% more, not the 35% you'd still need. There is no cheap
+    target that makes 100k appear.
+  </div>
+
+  <h2>Two things to check in game, 30 seconds each</h2>
+  <ul>
+    <li><b>Is Skirk's second passive greyed out?</b> Open her talent screen. If
+    "Return to Oblivion" is locked she is on Ascension 3 and lever 1 above applies
+    exactly as written. Her +19.2% CRIT DMG is consistent with either Ascension 3 or 4,
+    so the snapshot can't settle it. <b>Unverified.</b></li>
+    <li><b>What are their actual talent levels?</b> The Chronicle snapshot doesn't carry
+    them, so every row above assumes a level and says which. <b>Unverified.</b></li>
+  </ul>
+
+  <h2>How these numbers were made</h2>
+  <p><code>tools/hit-calc.py</code>. Talent multipliers come straight from
+  <code>reference/data/char_10000111.json</code> and <code>char_10000114.json</code>,
+  so they can't go stale. Base ATK per level is rebuilt from the same payloads
+  (<code>initValue × curve(L) + ascension bonus</code>); the curve was solved from
+  Skirk's published per-level table and then checked against Varesa's independently
+  published Lv 80 and Lv 90 values — it reproduces both to within a point.</p>
+  <p>Damage formula:
+  <code>ATK × MV × (1 + DMG%) × finalMult × (1 + CD) × defMult × resMult</code>, with
+  <code>defMult = (charLv+100) / ((charLv+100) + (enemyLv+100))</code> and
+  <code>resMult = 1 − RES</code>. "Average" folds CRIT Rate in; "On a crit" is the
+  number you actually see pop.</p>
+  <div class="note">
+    <b>Assumptions worth knowing.</b> Varesa's plunges are treated as <b>high</b>
+    plunges (a low plunge is ~20% less). Long Night's Oath is at 5 stacks in the Lv 90
+    rows and 3 in the early ones. Skirk's Serpent's Subtlety bonus is applied to the
+    final slash as written ("the DMG dealt by an instance of this Elemental Burst").
+    Her artifact ATK% / flat split is back-solved from the Chronicle total, and
+    Prototype Rancour's Lv 70 base ATK (≈458) is <b>estimated</b> from its 565 Lv 90
+    tier — it only affects that split, by a couple of percent.
+  </div>
+
+  <p class="sub">Builds: <a href="varesa-build.html">Varesa</a> ·
+  <a href="skirk-build.html">Skirk</a>. Free 5★ sword:
+  <a href="exaiphanes-statues-map.html">Snezhnaya statues</a>. Artifacts:
+  <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a>.</p>
+
+</div>
+</body>
+</html>
