@@ -226,18 +226,33 @@
  "characters": [
   {
    "name": "Varesa",
-   "level": 70,
+   "level": 80,
    "series": "Conflict"
   },
   {
+   "name": "Skirk",
+   "level": 70,
+   "series": "Contention"
+  },
+  {
+   "name": "Tighnari",
+   "level": 70,
+   "series": "Admonition"
+  },
+  {
    "name": "Barbara",
-   "level": 66,
+   "level": 70,
    "series": "Freedom"
   },
   {
-   "name": "Skirk",
-   "level": 60,
-   "series": "Contention"
+   "name": "Escoffier",
+   "level": 68,
+   "series": "Justice"
+  },
+  {
+   "name": "Dahlia",
+   "level": 50,
+   "series": "Ballad"
   },
   {
    "name": "Fischl",
@@ -250,19 +265,19 @@
    "series": "Ballad"
   },
   {
-   "name": "Tighnari",
-   "level": 44,
-   "series": "Admonition"
+   "name": "Sucrose",
+   "level": 49,
+   "series": "Freedom"
   },
   {
    "name": "Mika",
-   "level": 40,
+   "level": 45,
    "series": "Ballad"
   },
   {
-   "name": "Sucrose",
+   "name": "Chongyun",
    "level": 40,
-   "series": "Freedom"
+   "series": "Diligence"
   },
   {
    "name": "Xiangling",
@@ -280,14 +295,14 @@
    "series": "Resistance"
   },
   {
+   "name": "Kaeya",
+   "level": 32,
+   "series": "Ballad"
+  },
+  {
    "name": "Alyosha",
    "level": 28,
    "series": "Fortitude"
-  },
-  {
-   "name": "Dahlia",
-   "level": 23,
-   "series": "Ballad"
   },
   {
    "name": "Manekina",
@@ -320,44 +335,14 @@
    "series": "Resistance"
   },
   {
-   "name": "Kaeya",
-   "level": 20,
-   "series": "Ballad"
-  },
-  {
-   "name": "Chongyun",
-   "level": 13,
-   "series": "Diligence"
+   "name": "Prune",
+   "level": 1,
+   "series": "Resistance"
   },
   {
    "name": "Collei",
    "level": 1,
    "series": "Praxis"
-  },
-  {
-   "name": "Neuvillette",
-   "level": 0,
-   "series": "Equity"
-  },
-  {
-   "name": "Wanderer",
-   "level": 0,
-   "series": "Praxis"
-  },
-  {
-   "name": "Escoffier",
-   "level": 0,
-   "series": "Justice"
-  },
-  {
-   "name": "Citlali",
-   "level": 0,
-   "series": "Kindling"
-  },
-  {
-   "name": "Prune",
-   "level": 0,
-   "series": "Resistance"
   }
  ]
 }

@@ -130,35 +130,36 @@
 
   // tier 1 own page · 2 audited in doc 05 · 3 doc 09 set tiers only · 4 nothing
   const SQ = "support-squad.html";
+  // Re-indexed 1 Nov 2026 against the HoYoLAB Battle Chronicle, which reports
+  // 25 characters. Neuvillette, Wanderer and Citlali were in this list at Lv. 0
+  // as wish targets; they are not owned, so they are gone. Levels and
+  // constellations below are what the Chronicle showed that day.
   const ROSTER = [
-    ["Varesa",   70, 0, "Electro", 1, "varesa-build.html"],
-    ["Barbara",  66, 0, "Hydro",   1, SQ, null, "Squad page"],
-    ["Skirk",    60, 0, "Cryo",    1, "skirk-build.html"],
+    ["Varesa",   80, 0, "Electro", 1, "varesa-build.html"],
+    ["Skirk",    70, 0, "Cryo",    1, "skirk-build.html"],
+    ["Tighnari", 70, 1, "Dendro",  1, "tighnari-build.html"],
+    ["Barbara",  70, 0, "Hydro",   1, SQ, null, "Squad page"],
+    ["Escoffier",68, 0, "Cryo",    1, "escoffier-build.html"],
+    ["Dahlia",   50, 6, "Hydro",   4, null, "NEXT"],
     ["Fischl",   50, 0, "Electro", 1, "fischl-build.html"],
     ["Lisa",     50, 0, "Electro", 2],
-    ["Tighnari", 44, 1, "Dendro",  1, "tighnari-build.html"],
-    ["Traveler", 40, 2, "Geo",     2],
-    ["Mika",     40, 6, "Cryo",    1, SQ, null, "Squad page"],
-    ["Sucrose",  40, 0, "Anemo",   1, "sucrose-build.html"],
+    ["Sucrose",  49, 0, "Anemo",   1, "sucrose-build.html"],
+    ["Mika",     45, 6, "Cryo",    1, SQ, null, "Squad page"],
+    ["Traveler", 40, 6, "Geo",     2],
+    ["Chongyun", 40, 1, "Cryo",    1, SQ, null, "Squad page"],
     ["Xiangling",40, 0, "Pyro",    2],
     ["Amber",    40, 1, "Pyro",    2],
     ["Noelle",   32, 0, "Geo",     2],
+    ["Kaeya",    32, 0, "Cryo",    1, SQ, null, "Squad page"],
     ["Alyosha",  28, 0, "Electro", 1, SQ, null, "Squad page"],
-    ["Dahlia",   23, 4, "Hydro",   4, null, "NEXT"],
     ["Manekina", 20, 0, "Geo",     4],
     ["Manekin",  20, 0, "Geo",     4],
     ["Lynette",  20, 0, "Anemo",   3],
     ["Candace",  20, 2, "Hydro",   4],
     ["Beidou",   20, 0, "Electro", 3],
     ["Razor",    20, 0, "Electro", 4],
-    ["Kaeya",    20, 0, "Cryo",    1, SQ, null, "Squad page"],
-    ["Chongyun", 13, 0, "Cryo",    1, SQ, null, "Squad page"],
-    ["Collei",    1, 0, "Dendro",  3],
-    ["Neuvillette", 0, 0, "Hydro", 4, null, "NEW"],
-    ["Wanderer",  0, 0, "Anemo",   4, null, "NEW"],
-    ["Escoffier", 0, 0, "Cryo",    1, "escoffier-build.html"],
-    ["Citlali",   0, 0, "Cryo",    4, null, "NEW"],
-    ["Prune",     0, 0, "Anemo",   4, null, "NEW"]
+    ["Prune",     1, 0, "Anemo",   4, null, "NEW"],
+    ["Collei",    1, 0, "Dendro",  3]
   ];
 
   const LABEL = { 1:"Build page", 2:"Audited", 3:"Set advice", 4:"No build" };
