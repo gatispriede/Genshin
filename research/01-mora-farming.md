@@ -34,10 +34,19 @@ Resin** to claim.
 
 ### Resin options
 - **20 Original Resin** — baseline.
-- **1 Condensed Resin** — doubles rewards for one run. Same Mora *per resin*, but half the
-  travel time. Worth it once you're farming seriously.
-- **Fragile / Transient Resin** — since 5.7 these can be spent directly for **3× rewards**.
-  Most time-efficient way to burn a stockpile.
+- **40 Original Resin** — 2× rewards in one claim.
+- **1 Condensed Resin** — **3×** rewards for one claim. Crafted from **60 Original
+  Resin** + 1 Crystal Core + 100 Mora. Same Mora *per resin*, a third of the travel
+  time. Worth it once you're farming seriously.
+- **Fragile / Transient Resin** — also **3× rewards** spent directly. Most
+  time-efficient way to burn a stockpile. Only offered when your Condensed Resin count
+  is **0**.
+
+> **Corrected 1 Nov 2026.** This said Condensed Resin cost **40 resin and doubled**
+> rewards, and that 3× was a Fragile/Transient-only perk added in 5.7. Version
+> **6.0 "Luna I"** moved Condensed Resin to **60 resin for triple** rewards. The
+> resin-per-reward ratio is unchanged at 20 either way, so the conclusions below still
+> hold — only the batch size moved. See `resin.html`.
 
 ### Battle Pass interaction
 Two different BP missions touch ley lines and they count differently:
@@ -62,8 +71,8 @@ A recurring event that **doubles** ley line rewards a limited number of times pe
 At WL 6–8: 60,000 → **120,000 Mora** per claim, 3 doubled claims/day = **360,000 Mora/day
 for 60 resin**, around **2.5 million** across a full seven-day event.
 
-**Important:** the double only triggers on **Original Resin**. Condensed Resin does *not*
-get the bonus. Claim your doubles with raw resin first, then craft Condensed afterwards
+**Important:** the event double only triggers on **Original Resin**. Condensed Resin
+does *not* get the bonus. Claim your doubles with raw resin first, then craft Condensed afterwards
 for domains.
 
 **Action:** when Ley Line Overflow appears in the events tab, drop everything and farm it.

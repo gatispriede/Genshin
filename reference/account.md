@@ -3,7 +3,18 @@
 **Pulled 28 Oct 2026** from the Battle Chronicle. Re-verify before relying on
 any of it — this account moved **AR 33 → AR 40 in a single week**.
 
-Europe · **AR 40** · 194 achievements ·
+> **⚠ Stale, 1 Nov 2026 — Adventure Rank and World Level below are out of date.**
+> `README.md` carries a newer Enka pull (30 Oct) reading **AR 45** and
+> **World Level 6, ascended 31 Oct**. Enka serves AR, World Level, achievements and
+> Abyss progress without authentication, so those four fields there beat this page.
+> The **roster, per-slot gear and exploration below are still the better record** —
+> README's copies of those come from an older 23 Oct pull and disagree with this one
+> (it reads Mondstadt 35.3% against 70.4% here, 127 waypoints against 163).
+> AR 45 matters: it opens **domain level IV** (a guaranteed 5★ artifact per run) and
+> the **Artifact Strongbox**, and it pays Fragile Resin on the way up. Re-pull both
+> halves and reconcile them.
+
+Europe · **AR 40** *(see the warning above — now AR 45)* · 194 achievements ·
 Spiral Abyss 10-3 · 163 waypoints · 19 domains · 11 days active
 
 ---
