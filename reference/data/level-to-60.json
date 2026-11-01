@@ -1,0 +1,79 @@
+{
+ "_checked": "2026-11-01",
+ "_goal": "Four characters to Lv. 60, which is what unlocks Normal Mode in Imaginarium Theater.",
+ "_note": "Quantities and icons are read out of the per-phase ascension data in reference/data/char_*.json. Nothing here is hand-typed except the source of each material, which the character files do not record.",
+ "_bill": "About 1,080,000 Mora and 200 Hero's Wit across all four. Lv. 50-60 alone is 854,125 EXP per character.",
+
+ "targets": [
+  { "name": "Dahlia",   "icon": "UI_AvatarIcon_Dahlia",     "element": "Hydro",   "from": 50, "to": 60, "wit": 42, "order": 1,
+    "why": "Eligible in November and December both — the rotation does not drop her." },
+  { "name": "Traveler", "icon": "UI_AvatarIcon_PlayerGirl", "element": "Geo",     "from": 40, "to": 60, "wit": 70, "order": 2,
+    "why": "Eligible in both months, and needs no world boss at all." },
+  { "name": "Fischl",   "icon": "UI_AvatarIcon_Fischl",     "element": "Electro", "from": 50, "to": 60, "wit": 42, "order": 3,
+    "why": "Only ten levels, carries this season's +20% Opening Character bonus, and is a strong unit outside the Theater." },
+  { "name": "Lisa",     "icon": "UI_AvatarIcon_Lisa",       "element": "Electro", "from": 50, "to": 60, "wit": 42, "order": 4,
+    "why": "Shares a boss with Fischl, so she is nearly free once Fischl is done. November only." }
+ ],
+
+ "groups": [
+  {
+   "kind": "guild",
+   "title": "Just go and claim it",
+   "where": "Katheryne, any Adventurers' Guild",
+   "cost": "Free",
+   "note": "Brilliant Diamond comes only from Adventure Rank rewards — 3 at AR 25, 2 each at AR 26, 28 and 30, which is exactly the 9 the Traveler needs. You are AR 45, so all of them are already unlocked. Check whether they are sitting unclaimed before you farm anything else.",
+   "items": [
+    { "name": "Brilliant Diamond Fragment", "icon": "UI_ItemIcon_104102", "qty": 9, "for": ["Traveler"] }
+   ]
+  },
+  {
+   "kind": "boss",
+   "title": "Electro Hypostasis",
+   "where": "Cape Oath, Mondstadt",
+   "cost": "40 resin a run",
+   "note": "Drops the boss material AND the gem, so one boss finishes Fischl and Lisa together.",
+   "items": [
+    { "name": "Lightning Prism", "icon": "UI_ItemIcon_113002", "qty": 8, "for": ["Fischl", "Lisa"] },
+    { "name": "Vajrada Amethyst Fragment", "icon": "UI_ItemIcon_104142", "qty": 12, "for": ["Fischl", "Lisa"] }
+   ]
+  },
+  {
+   "kind": "boss",
+   "title": "Secret Source Automaton: Overseer Device",
+   "where": "Atocpan, Natlan — indwell a Koholasaurus and swim southwest",
+   "cost": "40 resin a run · about 2 runs",
+   "note": "Also drops both halves of what Dahlia needs, and about 2.5 accumulators a clear. Cryo is roughly twice as effective against its Flow Momentum gauge — bring Skirk. The same boss later feeds Escoffier, so nothing farmed here is wasted.",
+   "items": [
+    { "name": "Secret Source Airflow Accumulator", "icon": "UI_ItemIcon_113076", "qty": 4, "for": ["Dahlia"] },
+    { "name": "Varunada Lazurite Fragment", "icon": "UI_ItemIcon_104122", "qty": 6, "for": ["Dahlia"] }
+   ]
+  },
+  {
+   "kind": "gather",
+   "title": "Gathering — all of it in Mondstadt",
+   "where": "Free, no resin. Every one has a mapped route that assumes you teleport.",
+   "cost": "Free",
+   "note": "Specialties respawn on a 48-hour timer, so start these first and let them tick while you do everything else.",
+   "items": [
+    { "name": "Windwheel Aster", "icon": "UI_ItemIcon_100024", "qty": 30, "for": ["Traveler"], "map": "windwheel-aster", "pins": 82 },
+    { "name": "Small Lamp Grass", "icon": "UI_ItemIcon_100055", "qty": 20, "for": ["Fischl"], "map": "small-lamp-grass", "pins": 85 },
+    { "name": "Calla Lily", "icon": "UI_ItemIcon_100056", "qty": 20, "for": ["Dahlia"], "map": "calla-lily", "pins": 60 },
+    { "name": "Valberry", "icon": "UI_ItemIcon_100022", "qty": 20, "for": ["Lisa"], "map": "valberry", "pins": 26,
+      "warn": "Only 26 pins on the whole map against 20 needed — this is the tightest item here. Expect two passes across the respawn timer." }
+   ]
+  },
+  {
+   "kind": "drop",
+   "title": "Common enemy drops",
+   "where": "Overworld, no resin",
+   "cost": "Free",
+   "note": "These accumulate on their own while you do anything else. Only chase them if you come up short.",
+   "items": [
+    { "name": "Sharp Arrowhead", "icon": "UI_ItemIcon_112012", "qty": 24, "for": ["Fischl", "Dahlia"], "from": "Hilichurl shooters" },
+    { "name": "Damaged Mask", "icon": "UI_ItemIcon_112005", "qty": 15, "for": ["Traveler"], "from": "Hilichurls" },
+    { "name": "Slime Secretions", "icon": "UI_ItemIcon_112003", "qty": 12, "for": ["Lisa"], "from": "Slimes" },
+    { "name": "Stained Mask", "icon": "UI_ItemIcon_112006", "qty": 12, "for": ["Traveler"], "from": "Hilichurls" }
+   ]
+  }
+ ]
+}

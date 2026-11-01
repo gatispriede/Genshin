@@ -172,6 +172,18 @@ and Brilliant Diamond. Cheapest of the four in materials despite needing twenty 
 
 ### Gatherable, free, all in Mondstadt
 
+All four have mapped routes on [`level-to-60.html`](../level-to-60.html). The map files are
+gitignored as generated output, so if they are missing, rebuild with:
+
+```
+python -I tools/build-collectible-map.py --label 29 --slug valberry   --title "Valberry"   --feeds "Lisa ascension"
+python -I tools/build-collectible-map.py --label 31 --slug calla-lily --title "Calla Lily" --feeds "Dahlia ascension"
+```
+
+Small Lamp Grass (label 33) and Windwheel Aster (label 43) already existed. Label ids come
+from `reference/data/hoyo_tree.json`, which is itself a regenerable cache.
+
+
 20 Small Lamp Grass (Fischl) · 20 Valberry (Lisa) · 20 Calla Lily (Dahlia) ·
 30 Windwheel Aster (Traveler). Common drops: 24 Sharp Arrowhead, 12 Slime Secretions,
 15 Damaged Mask, 12 Stained Mask.

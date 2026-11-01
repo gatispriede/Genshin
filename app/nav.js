@@ -19,6 +19,7 @@
     { href: 'build-coverage.html', label: 'Builds' },
     { href: 'talent-farming.html', label: 'Talent farming' },
     { href: 'theater.html', label: 'Theater' },
+    { href: 'level-to-60.html', label: 'Four to Lv.60' },
     { href: 'codes.html', label: 'Codes' },
     { href: 'tcg-swap.html', label: 'TCG swaps' },
     { href: 'farming/map.html', label: 'Saurian map' },

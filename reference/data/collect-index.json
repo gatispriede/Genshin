@@ -124,5 +124,19 @@
   "count": 36,
   "stops": 33,
   "file": "collect-local-legends.js"
+ },
+ "valberry": {
+  "title": "Valberry",
+  "feeds": "Lisa ascension",
+  "count": 26,
+  "stops": 6,
+  "file": "collect-valberry.js"
+ },
+ "calla-lily": {
+  "title": "Calla Lily",
+  "feeds": "Dahlia ascension",
+  "count": 60,
+  "stops": 16,
+  "file": "collect-calla-lily.js"
  }
 }
