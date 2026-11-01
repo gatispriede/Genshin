@@ -115,3 +115,24 @@ out; would need its own pull.
 - ~~Lunoculus total?~~ **271** as of 6.7.
 - ~~Who sells the Anemoculus Resonance Stone?~~ **Nobody** — Reputation Lv 2
   instructions, then Alchemy.
+
+## Is Skirk's A4 passive "Return to Oblivion" unlocked? (1 Nov 2026)
+
+She reads **Lv 60** in the Chronicle, which is the Ascension-3 level cap — so she is
+probably *not* ascended, and her second passive is probably still locked. Her
+**+19.2% CRIT DMG** is consistent with Ascension 3 *or* 4 (the Project Amber
+`addProps` give +19.2% for both), so the snapshot cannot settle it.
+
+This matters more than anything else on the account: at three Death's Crossing stacks
+the passive is **×1.6 on her Burst and ×1.7 on her Seven-Phase Flash Normal Attacks**.
+
+**The 30-second check:** open Skirk's talent screen. If "Return to Oblivion" is greyed
+out, one ascension roughly 2.4× her biggest hit. See `big-numbers.html`.
+
+## What talent levels are Varesa and Skirk actually on? (1 Nov 2026)
+
+The Battle Chronicle snapshot in `reference/account.md` does not carry talent levels.
+Every damage figure in `big-numbers.html` therefore states the talent level it assumes
+(1 for the "today" rows, on the basis that the account was 11 days old). Talent 1 → 10
+is worth about **2×** on both characters' big hits, so this is worth reading off the
+character screen once.
