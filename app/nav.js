@@ -19,6 +19,7 @@
     { href: 'build-coverage.html', label: 'Builds' },
     { href: 'talent-farming.html', label: 'Talent farming' },
     { href: 'codes.html', label: 'Codes' },
+    { href: 'tcg-swap.html', label: 'TCG swaps' },
     { href: 'farming/map.html', label: 'Saurian map' },
     { href: 'farming/index.html', label: "Tyrant's Fang" }
   ];

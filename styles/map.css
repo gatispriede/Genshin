@@ -362,3 +362,35 @@ td.bad  { color: var(--do-now); font-weight: 700; }
 .tal__yes { color: var(--goal); font-size: .76rem; }
 .tal__no { color: var(--dim); font-weight: 400; font-size: .76rem; }
 .tal__roster tr.is-open th[scope="row"] { color: var(--goal); }
+
+/* ── TCG swap reference ─────────────────────────────────────────────────── */
+.swap__grid {
+  display: grid; gap: 12px; margin: 14px 0 26px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.swap__card {
+  padding: 13px 15px 14px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel2);
+}
+.swap__card.is-pick { border-color: var(--goal); }
+.swap__card.is-owned { background: var(--panel); }
+.swap__card h3 { margin: 0 0 5px; font-size: 1rem; color: var(--goal); }
+.swap__own {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--dim); font-weight: 400;
+}
+.swap__meta { margin: 0 0 9px; font-size: .8rem; color: var(--dim); }
+.swap__tag {
+  display: inline-block; margin-left: 4px; padding: 1px 7px;
+  border: 1px solid var(--line); border-radius: 999px;
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .05em;
+}
+.swap__tag--pay { color: var(--goal); border-color: var(--goal); }
+.swap__tag--bad { color: #e6a2a2; border-color: #6b3b3b; }
+.swap__tag--locked { opacity: .6; }
+.swap__text {
+  margin: 0 0 8px; padding: 8px 11px;
+  border-left: 2px solid var(--line); background: var(--panel);
+  font-size: .83rem; line-height: 1.5; color: #c9d4e3;
+}
+.swap__why { margin: 0; font-size: .82rem; color: var(--dim); }

@@ -1,0 +1,228 @@
+{
+ "_checked": "2026-11-01",
+ "_source": "genshin-impact.fandom.com — Genius Invokation TCG Card List. All 194 Event, 284 Equipment and 289 Support card rows were scanned for 'switch'; the entries below are the full set of hits that matter, quoted verbatim.",
+ "_note": "Card text is quoted, not paraphrased. If a card reads oddly, that is how it is printed. Re-check after a version bump — balance changes hit this game often.",
+ "_why": "Varesa's Elemental Skill switches her out and her Apex Drive only pays out when she is switched back in. Her deck is a swap deck whether or not it was built as one, so switch cost is her real resource.",
+ "_reality": "There is no generic swap bonus in this game. Switching is a cost, and most of the card pool makes it cheaper rather than rewarding it. Only seven cards turn a switch into actual value, and the biggest one is Varesa's own Apex Drive. Everything else exists to let her do it more often.",
+ "keywords": [
+  {
+   "name": "Efficient Switch",
+   "text": "A stack makes your next Switch Character cost 1 less Elemental Die.",
+   "note": "Stacks. The cheap currency."
+  },
+  {
+   "name": "Agile Switch",
+   "text": "The next time you perform \"Switch Character\": This switch will be considered a Fast Action instead of a Combat Action. (Can stack, no stack limit)",
+   "note": "The expensive one. A Fast Action does not end your turn, so the switch is free in tempo, not just dice."
+  }
+ ],
+ "groups": [
+  {
+   "title": "The engine — persistent, fires every round",
+   "note": "These sit in your Support Zone and work without you spending an action on them.",
+   "cards": [
+    {
+     "name": "Red Feather Fan",
+     "type": "Item",
+     "cost": 2,
+     "pick": "best",
+     "text": "After you switch characters: Gain 1 stack of Efficient Switch and Agile Switch. (Once per Round)",
+     "why": "One switch pays for the next, in both currencies at once. Nothing else does both.",
+     "payoff": false
+    },
+    {
+     "name": "Liu Su",
+     "type": "Companion",
+     "cost": 1,
+     "uses": 2,
+     "text": "After you switch characters: If the character you switched to does not have Energy, they will gain 1 Energy. (Once per Round)",
+     "why": "Energy out of a thing you were doing anyway. Varesa swaps every round.",
+     "payoff": true
+    },
+    {
+     "name": "Dawn Winery",
+     "type": "Location",
+     "cost": 3,
+     "owned": true,
+     "text": "When you perform \"Switch Character\": Spend 1 less Elemental Die. (Twice per Round)",
+     "why": "Twice per round, not once. Already in your starter deck — check it is in the 30.",
+     "payoff": false
+    },
+    {
+     "name": "Katheryne",
+     "type": "Companion",
+     "cost": 1,
+     "text": "When you perform \"Switch Character\": The switch is considered a Fast Action instead of a Combat Action. (Once per Round)",
+     "why": "Agile Switch for one die, no character slot. Does what Iansan does without costing you a character.",
+     "payoff": false
+    },
+    {
+     "name": "\"Flower-Feather Clan\"",
+     "type": "Location",
+     "cost": 0,
+     "text": "After you Discard 2 cards: Your next off-field character gains 1 stack of \"The next time this character switches to become your active character, recover 1 Elemental Die of the corresponding color.\" (Can stack. Triggers 1 stack each time.)",
+     "why": "Free to play, but needs a discard deck to turn on. Skip unless you build for it.",
+     "payoff": true
+    }
+   ]
+  },
+  {
+   "title": "Keyed to Varesa specifically",
+   "note": "Her free Guardian Vent: Volcano Kablam is a prepared Skill and counts as a Plunging Attack. Both of those words appear on cards.",
+   "cards": [
+    {
+     "name": "Dyed Tassel",
+     "type": "Artifact",
+     "cost": 2,
+     "pick": "best",
+     "text": "After the attached character uses a Charged Attack: Deals +1 DMG. (Once per Round) After the attached character uses a Plunging Attack: Create 1 stack of Efficient Switch. (Once per Round)",
+     "why": "Volcano Kablam is a Plunging Attack, so every Apex Drive generates her own switch discount. Put it on Varesa.",
+     "payoff": false
+    },
+    {
+     "name": "\"Collective of Plenty\"",
+     "type": "Location",
+     "cost": 3,
+     "text": "When your character prepares a Skill: This character gains 3 Workout. After your character switches to become the active character: This character gains 2 Workout. (When Workout stacks reach 3, heal the corresponding character for 1 HP. When Workout stacks reach 5, the corresponding character deals +1 DMG)",
+     "why": "Apex Drive is a prepare triggered by switching in, so Varesa hits both clauses in one rotation and reaches 5 — heal and +1 DMG from her own loop.",
+     "payoff": true
+    },
+    {
+     "name": "Vermillion Hereafter",
+     "type": "Artifact",
+     "cost": 3,
+     "text": "When the character uses a Normal Attack or equips a Talent: Spend 1 less Elemental Die. (Once per Round) After a character is switched to the active character: During this Round, character deals +1 Normal Attack DMG.",
+     "why": "Her Normal Attack is the thing that builds Nightsoul points, and she is switched in constantly.",
+     "payoff": true
+    },
+    {
+     "name": "Plunging Strike",
+     "type": "Event · Combat Action",
+     "cost": 3,
+     "payoff": true,
+     "text": "Combat Action: Switch to the target character. That character then uses a Normal Attack.",
+     "why": "Switch plus an attack in one card. Varesa's By the Horns deals +1 when used as a Plunging Attack and gives her a Nightsoul point, and it feeds Dyed Tassel on the way through."
+    },
+    {
+     "name": "Conductor's Top Hat",
+     "type": "Artifact",
+     "cost": 1,
+     "text": "After you switch to the character to which this is attached: Discard the card with the highest original Elemental Dice Cost in your Hand and change 2 Elemental Dice into Omni Element, and spend 1 less Elemental Die the next time the character uses a Skill.",
+     "why": "Two Omni per switch-in is real dice fixing, but it eats your most expensive card each time.",
+     "payoff": true
+    }
+   ]
+  },
+  {
+   "title": "One-shots you already own",
+   "note": "All three came with the starter deck. Confirm they are actually in your 30 before buying anything above.",
+   "cards": [
+    {
+     "name": "Changing Shifts",
+     "type": "Event",
+     "cost": 0,
+     "owned": true,
+     "text": "The next time you perform \"Switch Character\": Spend 1 less Elemental Die.",
+     "why": "Free Efficient Switch.",
+     "payoff": false
+    },
+    {
+     "name": "Leave It to Me!",
+     "type": "Event",
+     "cost": 0,
+     "owned": true,
+     "text": "The next time you perform \"Switch Character\": The switch will be considered a Fast Action instead of a Combat Action.",
+     "why": "Free Agile Switch.",
+     "payoff": false
+    },
+    {
+     "name": "When the Crane Returned",
+     "type": "Event",
+     "cost": 1,
+     "owned": true,
+     "text": "The next time you use a Skill: Switch your next character in to be the active character.",
+     "why": "Switches for you off a Skill you were using regardless.",
+     "payoff": false
+    }
+   ]
+  },
+  {
+   "title": "Locked to you, recorded so you stop re-checking",
+   "cards": [
+    {
+     "name": "Elemental Resonance: Impetuous Winds",
+     "type": "Event",
+     "cost": 1,
+     "locked": "Needs 2 Anemo characters in the deck.",
+     "text": "The next time you perform \"Switch Character\": This action will be considered a Fast Action instead of a Combat Action. It will also cost 1 less Elemental Die. The next Swirl Reaction you trigger deals +1 DMG to all opposing characters."
+    },
+    {
+     "name": "Wind and Freedom",
+     "type": "Event",
+     "cost": 0,
+     "locked": "Needs 2 Mondstadt characters in the deck.",
+     "text": "During this turn, after one of your characters uses a Skill: Switch your next character in to be the active character."
+    }
+   ]
+  },
+  {
+   "title": "Played against you",
+   "cards": [
+    {
+     "name": "Falls and Fortune",
+     "type": "Event",
+     "cost": 0,
+     "hostile": true,
+     "text": "Can only be played when you have at least 8 Elemental Dice remaining and your opponent has not ended their Round: In this Round, both sides must spend 1 extra Elemental Die to switch characters.",
+     "why": "The counter to everything on this page. A swap deck is a deck with a known weakness — keep a round's worth of damage that does not need a switch."
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Varesa",
+   "element": "Electro",
+   "hp": 10,
+   "owned": true,
+   "text": "Skill: Deals 2 Electro DMG, applies Sudden Onrush to self … then switches to the next character. Passive: After Varesa uses a Skill, if she has 2 Nightsoul points, she consumes them and applies Apex Drive. Apex Drive: After Varesa is switched in to be the Active Character: Prepare Skill: Guardian Vent: Volcano Kablam (3 Electro DMG, 0 dice, considered a Plunging Attack).",
+   "why": "The engine. Her damage exists because she leaves and comes back."
+  },
+  {
+   "name": "Kuki Shinobu",
+   "element": "Electro",
+   "hp": 10,
+   "cost": "letter",
+   "text": "Grass Ring of Sanctification — After you switch characters: Deal 1 Electro DMG, heal the character on your team that has taken the most damage for 1 HP. (Once per Round) Usage(s): 3",
+   "why": "The best payoff card in the game for this deck: Varesa's own rotation triggers it, so the healing costs you nothing extra."
+  },
+  {
+   "name": "Keqing",
+   "element": "Electro",
+   "hp": 10,
+   "cost": "letter",
+   "text": "Lightning Stiletto — Combat Action: Switch your Keqing in to be your active character and immediately use Stellar Restoration once. This instance will grant Keqing Electro Infusion without creating another Lightning Stiletto.",
+   "why": "A switch-in and an attack on one card. Varesa swaps out, Keqing swaps in swinging."
+  },
+  {
+   "name": "Iansan",
+   "element": "Electro",
+   "hp": 11,
+   "cost": "letter",
+   "text": "Thunderbolt Rush creates 1 stack of Agile Switch. Burst creates Kinetic Energy Scale: When your character deals DMG: Deal +2 DMG for this instance. Usage(s): 2",
+   "why": "A character-slot version of Katheryne, plus a damage buff. Only worth it if you want the slot spent on switching."
+  },
+  {
+   "name": "Fischl",
+   "element": "Electro",
+   "hp": 10,
+   "cost": "free at Player Level 3",
+   "text": "Phantasmal Nocturne — Fast Action: Equip this to your Fischl. Summon Oz. While Oz is on the field, your Electro-Related Reactions deal +1 DMG. (3 times per Round)",
+   "why": "No Match Invitation Letter, and the Talent has no active-character clause — the only Electro card that contributes without ever being switched to."
+  }
+ ],
+ "caveats": [
+  "Mastery Talisman: Airborne Reinforcements and Mastery Talisman: Cycle Charge read perfectly for Varesa — Fast Action switches plus +2 DMG on Plunging Attacks — but they cost 0 and are listed beside Ley Line Disorder entries, which are stage modifiers. They are probably not deck-buildable. Unconfirmed; do not go hunting for them on this page's say-so.",
+  "Yae Miko and Kujou Sara are the two best off-field Electro cards and both are Inazuma. Inazuma characters cannot be invited until A Guest From Liyue, or Radiant Sakura in Raiden's story quest. Inazuma exploration on this account is 0%."
+ ]
+}

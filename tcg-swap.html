@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCG — what switching actually pays</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+
+<h1>Switching in TCG <span class="dim">— what it actually pays</span></h1>
+<p class="sub">
+  Every Event, Equipment and Support card in Genius Invokation was scanned for switch
+  effects. This is the complete set, quoted rather than summarised, split by whether the
+  card rewards a swap or only discounts one.
+</p>
+
+<div class="bar key">
+  <b>Why this matters for your deck.</b> Varesa's Elemental Skill
+  <i>"deals 2 Electro DMG … then <b>switches to the next character</b>,"</i> and her passive
+  turns 2 Nightsoul points into <b>Apex Drive</b>: <i>"After Varesa is switched in to be the
+  Active Character: Prepare Skill: Guardian Vent: Volcano Kablam"</i> — <b>3 Electro DMG for
+  0 dice</b>. Her damage exists because she leaves the field and comes back. She is the swap
+  bonus; the cards below just let her do it more often.
+</div>
+
+<div id="swap"></div>
+
+<h2>How to read this</h2>
+
+<table class="asc">
+  <tbody>
+    <tr><th scope="row">Efficient Switch</th>
+        <td>Your next switch costs <b>1 less Elemental Die</b>. The cheap currency.</td></tr>
+    <tr><th scope="row">Agile Switch</th>
+        <td>Your next switch is a <b>Fast Action</b> instead of a Combat Action — it does not
+            end your turn. This is the expensive one, and the reason a swap deck can work at
+            all.</td></tr>
+    <tr><th scope="row">"Pays you"</th>
+        <td>The card converts a switch into damage, healing, energy or dice.</td></tr>
+    <tr><th scope="row">"Cheaper only"</th>
+        <td>The card reduces what a switch costs. Still good — just not a bonus.</td></tr>
+  </tbody>
+</table>
+
+<div class="bar warn">
+  <b>Your deck has a named counter.</b> <i>Falls and Fortune</i> makes both sides spend
+  <b>1 extra die</b> to switch for a round. Everything on this page stops working the turn
+  someone plays it, so keep a line of damage that does not need a swap.
+</div>
+
+<div class="note">
+  <b>Where this came from.</b> The three card-list pages on the Genshin Impact Wiki —
+  194 Event, 284 Equipment and 289 Support rows — filtered for <code>switch</code> and again
+  for <code>Plunging</code>, since Varesa's free hit counts as a Plunging Attack. Card text is
+  quoted exactly. Balance changes land on this game often, so re-check after a version bump
+  rather than trusting the date.
+  <a href="tcg-skirk.html">How to get cards at all</a> is on the other TCG page.
+</div>
+
+<script src="app/tcg-swap.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>
