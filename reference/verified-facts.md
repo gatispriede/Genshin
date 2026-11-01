@@ -319,3 +319,34 @@ reputation. Its exact Reputation level wasn't confirmed.
 
 One talent from 1→10 costs 3 Teachings + 21 Guides + 38 Philosophies, plus 6
 weekly boss materials and a Crown.
+
+---
+
+## Resin sources — *verified 1 Nov 2026*
+
+**Original Resin** regenerates **1 per 8 minutes = 180/day**, capped at **200**
+(raised from 160 in 4.7). Empty → full is **26h 40m**, so one login a day
+overflows the cap and two does not.
+
+| Top-up | Gives | Where |
+|---|---|---|
+| **Fragile Resin** | 60, **never expires** | Adventure Rank level-ups (one at most ranks past AR 20), Battle Pass (5/cycle), events and mail |
+| **Condensed Resin** | one **3×** claim | Craft: **60 Original Resin + 1 Crystal Core + 100 Mora**. Instruction from **Liyue Reputation Lv 3** |
+| **Transient Resin** | 60, expires | Realm Depot, **1,200 Realm Currency**, 1/week, needs Serenitea Pot **Trust Rank 6** |
+| Primogem refill | 60 | **6/day** at **50 / 100 / 100 / 150 / 200 / 200** Primogems |
+
+**Claim screen since 6.0 "Luna I"**: 20 Original Resin → 1× · 40 Original Resin
+→ 2× · 1 Condensed Resin → 3× · 1 Fragile/Transient → 3×. **Every option is 20
+resin per reward set** — Condensed Resin buys travel time, never resin. The
+Fragile/Transient option only appears when Condensed Resin count is **0**.
+
+**Luna I changed Condensed Resin from 40-resin-for-double to 60-resin-for-triple.**
+`research/01-mora-farming.md` carried the old figures until 1 Nov 2026; corrected.
+
+**This account:** Condensed Resin is unlocked (Liyue Reputation Lv 4 ≥ 3).
+**Transient Resin is not** — the Serenitea Pot still needs *A New Star Approaches*
+(AR 28 requirement long passed). That quest is the only unclaimed *repeating*
+resin source on the account.
+
+*Not confirmed:* the Fragile Resin lifetime total from AR level-ups (76 vs 79
+across sources), and whether Fragile Resin can push Original Resin above 200.
