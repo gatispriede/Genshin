@@ -44,9 +44,24 @@ sword from *Everwinter Without Mercy*.
 | Passive | Traveler-only — but **base ATK and CRIT Rate apply to anyone** |
 | Levelling cost | **None.** No Mora, no enhancement ore |
 
-**How it levels:** the Traveler, in **Cryo** form, holding the blade, activates a
-**Snezhnaya Statue of the Seven** with a Cryo attack. Each statue is one upgrade. Five
-statues exist, so five upgrades are available — reported as enough to reach Lv 90.
+> **Do not "fix" the rarity above.** `reference/data/weapon_390003.json` reports
+> `rank: 4` and carries **zero ascension phases**. The rank is wrong — it is a 5-star —
+> and the missing ascension data is correct, because this weapon has no normal ascension
+> path at all. *(Checked 1 Nov 2026.)*
+
+**How it levels — the exact steps:**
+
+1. Be past **step 23 of *Great Deeds on the Tundra*** (Archon Quest Ch. VII Act I). The
+   enhance option does not appear before that.
+2. Put the Traveler in **Cryo** form — done by resonating at a Snezhnaya Statue of the Seven.
+3. Holding the blade, hit that Statue with a **Cryo Elemental Skill or Burst**.
+4. Interact with the Statue and choose **"Enhance Exaiphanes Blade."**
+
+Each Statue blesses the blade **once only**, and each blessing raises **level *and*
+Refinement together**. **Five Statues exist in Snezhnaya**, which is enough to reach
+**Lv. 90** — but full refinement reportedly wants seven, so R5 is not attainable yet.
+
+No Mora, no Enhancement Ore, no weapon ascension materials at any point.
 
 **Why this matters more than anything else:** Skirk is a sword user sitting at **20.5%
 CRIT Rate** with a weapon whose entire substat (Physical DMG 28.4%) applies to **none** of
