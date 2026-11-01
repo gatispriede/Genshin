@@ -307,3 +307,28 @@ td.bad  { color: var(--do-now); font-weight: 700; }
   object-fit: contain;
 }
 .ch .por--none { background: var(--panel2); opacity: .5; }
+
+/* ── Redeem codes table ─────────────────────────────────────────────────── */
+.code-table td { vertical-align: top; }
+.code-table td em { display: block; font-style: normal; font-size: .8rem; color: var(--dim); margin-top: 2px; }
+.code__text { font-size: 1rem; letter-spacing: .04em; user-select: all; }
+.code__when { color: var(--dim); font-size: .8rem; white-space: nowrap; }
+.code__perm { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--goal); }
+.code__tick {
+  width: 26px; height: 26px;
+  border: 1px solid var(--line); border-radius: 7px;
+  background: var(--panel2); color: var(--goal);
+  font-size: .9rem; cursor: pointer;
+}
+.code__tick:hover:not(:disabled) { border-color: var(--dim); }
+.code__tick:disabled { opacity: .3; cursor: default; }
+.code.is-used { opacity: .45; }
+.code.is-used .code__text { text-decoration: line-through; }
+.code.is-dead .code__text { text-decoration: line-through; color: var(--dim); }
+.btn-all {
+  padding: 6px 13px; margin-right: 6px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel2); color: var(--dim);
+  font: inherit; font-size: .84rem; cursor: pointer;
+}
+.btn-all:hover { color: var(--paper); border-color: var(--dim); }

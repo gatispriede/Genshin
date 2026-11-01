@@ -17,6 +17,7 @@
     { href: 'local-legends.html', label: 'Local Legends' },
     { href: 'collectibles-status.html', label: 'Collectibles' },
     { href: 'build-coverage.html', label: 'Builds' },
+    { href: 'codes.html', label: 'Codes' },
     { href: 'farming/map.html', label: 'Saurian map' },
     { href: 'farming/index.html', label: "Tyrant's Fang" }
   ];
