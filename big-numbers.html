@@ -6,6 +6,11 @@
 <title>100k on screen — what it actually takes</title>
 <link rel="stylesheet" href="styles/map.css">
 <style>
+  /* page-local names are all bn-* so they cannot collide with map.css.
+     map.css styles h1/h2 but not h3, and the browser default renders larger
+     than its own h2 — so this page sizes h3 as the sub-heading it is. */
+  h3 { font: 700 .95rem/1.3 "Segoe UI", sans-serif; color: var(--paper);
+       margin: 18px 0 6px; letter-spacing: 0; text-transform: none; }
   /* page-local names are all bn-* so they cannot collide with map.css */
   .bn-ladder { width:100%; border-collapse:collapse; margin-top:10px; font-size:.86rem; }
   .bn-ladder th { text-align:left; color:#6f7a8c; font-size:.72rem;
@@ -48,6 +53,8 @@
     to Lv 90 and nothing else gets her to roughly <b>17k</b>. The remaining 6× is
     talents, main stats, CRIT and a resistance shred — and the last stretch needs her
     signature catalyst. Skirk's realistic ceiling at C0 is about <b>74k</b>.
+    One of those rows has its own section:
+    <a href="#nightsoul">where Varesa's +35% ATK comes from</a>.
   </div>
 
   <h2>The honest target</h2>
@@ -87,6 +94,100 @@
     Plunging-Attack CRIT DMG bonus. Swapping it in is worth about <b>+50%</b> on the
     same hit. The plunge CRIT DMG figure is <b>unverified</b> — sources quote 28% ATK
     and an 80% plunge CRIT DMG, and they disagree. Treat the last row as indicative.
+  </div>
+
+  <h2 id="nightsoul">Nightsoul Burst — where that +35% comes from</h2>
+  <div class="bar key">
+    <b>You own exactly one Natlan character: Varesa.</b> That is enough to make
+    Nightsoul Bursts happen at all — but only at the slowest interval, which caps her
+    A4 passive at <b>one stack, about 67% of the time</b>. The second stack is
+    arithmetically out of reach until you own a second Natlan unit.
+  </div>
+
+  <p>Checked against the <code>region</code> field in every
+  <code>reference/data/char_*.json</code> on disk. Of the 23 characters in
+  <code>kits.md</code>:</p>
+  <table class="bn-ladder">
+    <tr><th>Region</th><th>Who you own</th></tr>
+    <tr class="bn-here"><td><b>Natlan</b></td><td><b>Varesa</b> — and nobody else</td></tr>
+    <tr><td>Mondstadt</td><td>Amber, Barbara, Dahlia, Fischl, Kaeya, Lisa, Mika, Noelle, Razor, Sucrose</td></tr>
+    <tr><td>Liyue</td><td>Beidou, Chongyun, Xiangling</td></tr>
+    <tr><td>Sumeru</td><td>Candace, Collei, Tighnari</td></tr>
+    <tr><td>Fontaine</td><td>Lynette</td></tr>
+    <tr><td>Snezhnaya</td><td>Alyosha</td></tr>
+    <tr><td>Other</td><td>Traveler, Manekin, Manekina · Skirk (no region)</td></tr>
+  </table>
+  <div class="note">
+    Citlali's data sits in <code>reference/data/</code> (<code>char_10000107.json</code>)
+    and she <i>is</i> Natlan — but she is not in the 23-character roster, so she is a
+    reference pull, not a character you own. Same for Escoffier, Neuvillette, Wanderer
+    and Prune.
+  </div>
+
+  <h3>How the mechanic actually works</h3>
+  <p>A Nightsoul Burst is a <b>trigger, not an attack</b> — it deals no damage of its
+  own, it just fires Natlan-tagged passives. It goes off when a party member deals
+  <b>Elemental DMG to an opponent</b>, provided the party holds at least one Natlan
+  character. Then it goes on cooldown, and the cooldown depends on how many Natlan
+  characters are in the party:</p>
+  <table class="bn-ladder">
+    <tr><th>Natlan characters in party</th><th>Burst interval</th>
+        <th>Varesa's A4 (12s, max 2 stacks)</th></tr>
+    <tr class="bn-here"><td><b>1</b> — all you can field</td><td><b>18s</b></td>
+        <td>1 stack, <b>67% uptime</b>. 2nd stack impossible</td></tr>
+    <tr><td>2</td><td>12s</td><td>1 stack at ~100%; 2nd stack only momentarily</td></tr>
+    <tr><td>3+</td><td>9s</td><td>2 stacks genuinely sustainable</td></tr>
+  </table>
+  <p>The buff lasts <b>12 seconds</b>. At a <b>18-second</b> interval it expires six
+  seconds before the next burst can fire, and two stacks would need two bursts inside
+  one 12-second window — which needs the 12s or 9s interval. That is the whole
+  constraint, and no amount of levelling changes it.</p>
+
+  <h3>What each stack is worth</h3>
+  <p>Her A4 is <b>+35% ATK per stack</b>, and ATK% applies to base ATK — character plus
+  weapon — so at Lv 90 on a Lv 90 Widsith each stack is worth <b>+303 ATK</b>. On the
+  polished Lv 90 build from the ladder above:</p>
+  <table class="bn-ladder">
+    <tr><th>A4 stacks</th><th>ATK</th><th class="bn-n">Crit, no shred</th>
+        <th class="bn-crit">Crit, with 4pc VV</th></tr>
+    <tr><td>0 — nothing triggering it</td><td>1,703</td>
+        <td class="bn-n">43,471</td><td class="bn-crit">62,792</td></tr>
+    <tr class="bn-here"><td><b>1 — your realistic case</b></td><td>2,007</td>
+        <td class="bn-n">51,213</td><td class="bn-crit">73,974</td></tr>
+    <tr class="bn-cap"><td>2 — needs 3 Natlan characters</td><td>2,310</td>
+        <td class="bn-n">58,954</td><td class="bn-crit">85,156</td></tr>
+  </table>
+  <p>So each stack is worth about <b>+18%</b> on her biggest hit. Worth having, not
+  worth reorganising the account around.</p>
+
+  <h3>Does Varesa's own hit count?</h3>
+  <p>Her A4 reads "when a <b>nearby party member</b> triggers a Nightsoul Burst." It
+  matters, because she is the on-field unit landing most of the Electro damage — if her
+  own hits don't count, she could consume the 18s cooldown and never get her own buff.</p>
+  <p><b>Reading the data on disk, they almost certainly do count.</b> Skirk's A4 in the
+  same payload format says "nearby Cryo party members <b>apart from Skirk</b>" — the
+  game spells out self-exclusion when it means it. Varesa's text has no such clause.
+  Prydwen also reports one stack is generally maintainable with her as the sole Natlan
+  unit, which fits. <b>Marked as a reasoned inference, not verified.</b></p>
+  <p>Either way the insurance is the same, and it is already in her recommended team:
+  <b>Fischl</b>. Oz ticks Electro damage off-field continuously, so the instant the 18s
+  cooldown lapses something that is not Varesa lands an elemental hit. Barbara's Melody
+  Loop and Xiangling's Guoba do the same job less reliably.</p>
+
+  <h3>The one real fix: a second Natlan character, free</h3>
+  <p><b>Kachina</b> is a free 4★ Natlan Geo unit from the Natlan Archon Quest,
+  <i>Flowers Resplendent on the Sun-Scorched Sojourn</i>. Picking her up takes the burst
+  interval from 18s to <b>12s</b>, which turns Varesa's one stack from 67% uptime into
+  near-permanent — and removes the trigger-attribution worry entirely, because Kachina
+  is unambiguously not Varesa.</p>
+  <p>You do not need to grind Fontaine first: the quest normally wants Chapter 4 Act 6
+  behind you, but <b>Quick Start opens it at AR 28</b> and you are AR 40. Natlan is at
+  2% exploration, so this is almost certainly unclaimed.</p>
+  <div class="note">
+    <b>Unverified:</b> sources disagree on which act hands Kachina over, and one notes
+    the Turbo Twirly event page closed after 6.0 while the event itself stayed
+    permanent. Check the in-game Events menu before planning around it. One copy only —
+    her constellations still need banner pulls.
   </div>
 
   <h2>Skirk — the ladder</h2>
