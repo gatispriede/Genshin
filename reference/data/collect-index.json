@@ -117,5 +117,12 @@
   "count": 74,
   "stops": 74,
   "file": "collect-domains.js"
+ },
+ "local-legends": {
+  "title": "Local Legends",
+  "feeds": "resinless, respawn daily — Valiant Chronicles needs AR 55",
+  "count": 36,
+  "stops": 33,
+  "file": "collect-local-legends.js"
  }
 }

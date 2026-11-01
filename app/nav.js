@@ -14,6 +14,7 @@
     { href: 'reputation-compass.html', label: 'Compasses' },
     { href: 'collectible-map.html', label: 'Collectible maps' },
     { href: 'domains.html', label: 'Domains' },
+    { href: 'local-legends.html', label: 'Local Legends' },
     { href: 'collectibles-status.html', label: 'Collectibles' },
     { href: 'build-coverage.html', label: 'Builds' },
     { href: 'farming/map.html', label: 'Saurian map' },

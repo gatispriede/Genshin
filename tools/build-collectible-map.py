@@ -33,15 +33,17 @@ def arg(name, default=None):
 
 
 def main():
-    label = int(arg("label", 141))
+    # One category, or several: --labels 547,741 draws them together.
+    labels = [int(x) for x in (arg("labels") or arg("label", "141")).split(",")]
+    label = labels[0]
     slug = arg("slug", "collectible")
     title = arg("title", "Collectible")
     feeds = arg("feeds", "")
 
     src = MapSource(map_id=arg("map", "2"), level=int(arg("level", 1)))
-    raw = src.labelled(label)
+    raw = [p for lid in labels for p in src.labelled(lid)]
     if not raw:
-        raise SystemExit("label %d has no pins" % label)
+        raise SystemExit("labels %s have no pins" % labels)
 
     floors = src.floors()
     pins = []
@@ -94,7 +96,7 @@ def main():
 
     data = {
         "generatedAt": datetime.date.today().isoformat(),
-        "basemap": src.version, "label": label, "slug": slug,
+        "basemap": src.version, "label": labels, "slug": slug,
         "title": title, "feeds": feeds,
         "tileSize": TILE, "size": {"w": win.w, "h": win.h},
         "tiles": win.tiles, "areas": areas, "waypoints": waypoints,

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Legends — all 36, and when you can claim them</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/live-map.css">
+</head>
+<body>
+
+<h1>Local Legends <span class="dim">— all 36 on the map</span></h1>
+<p class="sub">
+  Every Local Legend and Valiant Chronicles pin in Teyvat. Click a dot to tick it off, or a
+  numbered circle to fly to it. Each is named by its nearest landmark, because the map data
+  gives these pins no names of their own.
+</p>
+
+<div class="bar warn">
+  <b>The answer to "what AR do I need": 55 — but only for the rewards.</b>
+  The enemies stand in the open world at any rank, and you can fight them today.
+  What needs <b>Adventure Rank 55</b> is the <b>Valiant Chronicles</b> book from Katheryne,
+  which is what actually pays out the Primogems. At <b>AR 45</b> you can beat one and get
+  nothing recorded for it.
+  <br><br>
+  Several are also gated behind specific World or Archon Quests regardless of rank —
+  Nod-Krai's three all are, and Snezhnaya's Banje needs <i>Great Deeds on the Tundra</i>.
+</div>
+
+<div class="bar key">
+  <b>They cost no resin and respawn daily.</b> Local Legends are resinless, and the overworld
+  ones return at the <b>04:00 server reset</b>. So every attempt is free and a failure costs
+  you nothing but time — worth retrying a boss that beat you rather than saving up for it.
+  The Totem Challenge sort can be retried immediately, without even waiting for reset.
+</div>
+
+<div class="bar">
+  <b>Expect them to outlevel you.</b> These are tuned for the AR 55 bracket.
+  <b>Churldric at Windrest Peak is Lv. 83</b> against your Lv. 70 ceiling — a 13-level
+  deficit cuts your damage and raises his. Losing to one is usually the level gap, not
+  your play.
+</div>
+
+<div class="lmap-wrap">
+  <div>
+    <div class="lmap" id="map-canvas" data-set="local-legends"
+         data-verb="beaten" data-group="" data-taggable="1"></div>
+    <div class="lmap-bar">
+      <span class="lmap-bar__status" id="cmap-status"></span>
+      <button type="button" id="cmap-out">&minus;</button>
+      <button type="button" id="cmap-in">+</button>
+      <button type="button" id="cmap-fit">Fit</button>
+      <label><input type="checkbox" id="cmap-hide-skipped"> Hide tagged</label>
+      <button type="button" id="cmap-reset">Clear ticks</button>
+    </div>
+  </div>
+
+  <aside class="lmap-panel">
+    <h3 style="margin-top:0">Every legend, by nearest place</h3>
+    <ul class="cmap__list" id="cmap-stops"></ul>
+  </aside>
+</div>
+
+<h2>Which regions have them</h2>
+<table class="asc">
+  <tbody>
+    <tr><th scope="row">Natlan</th><td class="asc__qty">9</td>
+        <td>Polychrome Tri-Stars, Sappho Amidst the Waves, Balachko, Cocijo, Bronzelock,
+            Rilai, Battlegoat &amp; Ironclaw, The Peak, Infinitesimal</td></tr>
+    <tr><th scope="row">Fontaine</th><td class="asc__qty">8</td>
+        <td><b>Six are underwater.</b> Yseut is up the cliff by the Liffey Statue of The Seven;
+            Luachra the Brilliant is south of the Millennial Pearl Seahorse</td></tr>
+    <tr><th scope="row">Nod-Krai</th><td class="asc__qty">3</td>
+        <td>Sigurd, Crab Tsar, Raskolnikov — <b>all quest-locked</b>. Raskolnikov sits atop the
+            Kuuvahki Experimental Design Bureau after <i>The Shoemaker's Children Go Barefoot</i></td></tr>
+    <tr><th scope="row">Snezhnaya</th><td class="asc__qty">3</td>
+        <td>Churin at Fellfrost Peak, Banje underground at Svetloledovka, Furiosa in
+            Everfrozen Earth. All nine objectives together pay 180 Primogems</td></tr>
+    <tr><th scope="row">Mondstadt</th><td class="asc__qty">2</td>
+        <td>Includes <b>Churldric</b> at Windrest Peak, north of Cider Lake. One of the two
+            needs the Paradise quest finished</td></tr>
+    <tr><th scope="row">Chenyu Vale</th><td class="asc__qty">—</td>
+        <td>Has them; the published per-boss list is incomplete</td></tr>
+  </tbody>
+</table>
+
+<div class="bar warn">
+  <b>Why the table and the map disagree slightly.</b> The map gives <b>36 pins</b> across two
+  categories, <i>Local Legend</i> and <i>Valiant Chronicles</i>, and <b>none of them carry a
+  name</b>. The region counts above come from published guides, which were last complete
+  around v5.5. Treat the map as the authority on <i>where</i> and the table as a guide to
+  <i>what</i> — and use <b>tag</b> on any row that turns out to be something you do not want
+  to chase.
+</div>
+
+<div class="note">
+  <b>Churldric specifically:</b> the pot is a Geo construct, so it needs a claymore or Geo to
+  break. Let it finish and he gains <b>+110% resistance to everything</b> and heals 20% of his
+  max HP. <a href="build-coverage.html">Noelle is the only Geo claymore you own</a>, at Lv. 32 —
+  otherwise Overload from Xiangling and Fischl is the way through.
+</div>
+
+<script src="app/map-core.js"></script>
+<script src="app/collect-map.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>
