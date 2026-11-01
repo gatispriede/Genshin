@@ -332,3 +332,33 @@ td.bad  { color: var(--do-now); font-weight: 700; }
   font: inherit; font-size: .84rem; cursor: pointer;
 }
 .btn-all:hover { color: var(--paper); border-color: var(--dim); }
+
+/* ── Talent farming ─────────────────────────────────────────────────────── */
+.tal__grid {
+  display: grid; gap: 12px; margin: 14px 0 26px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+.tal__card {
+  padding: 13px 15px 14px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel2);
+}
+.tal__card h3 { margin: 0 0 4px; font-size: 1.05rem; color: var(--goal); }
+.tal__card.is-blocked { opacity: .5; }
+.tal__card.is-blocked h3 { color: var(--dim); }
+.tal__where { margin: 0 0 9px; font-size: .84rem; }
+.tal__where em { display: block; font-style: normal; color: var(--dim); font-size: .79rem; margin-top: 2px; }
+.tal__blocked { margin: 0 0 9px; font-size: .79rem; color: var(--warn, #e6a2a2); }
+.tal__owners { display: flex; flex-wrap: wrap; gap: 5px; }
+.tal__who {
+  padding: 3px 8px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--panel);
+  font-size: .78rem; color: var(--dim);
+}
+.tal__who.is-main { color: var(--paper); border-color: var(--dim); }
+.tal__who i { font-style: normal; opacity: .6; }
+.tal__week th[scope="row"] em,
+.tal__roster th[scope="row"] em { display: block; font-style: normal; font-size: .76rem; color: var(--dim); }
+.tal__week tr.is-blocked, .tal__roster tr.is-blocked { opacity: .45; }
+.tal__yes { color: var(--goal); font-size: .76rem; }
+.tal__no { color: var(--dim); font-weight: 400; font-size: .76rem; }
+.tal__roster tr.is-open th[scope="row"] { color: var(--goal); }

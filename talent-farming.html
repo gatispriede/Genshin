@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talent farming — what is open today</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+
+<h1>Talent farming <span class="dim">— what is open today</span></h1>
+<p class="sub">
+  Talent domains gate by day of the week, so the only question worth answering when you
+  log in is which books you can get right now and whether anyone you own needs them.
+</p>
+
+<div id="talents"></div>
+
+<h2>Resin, and why it is not your problem</h2>
+
+<div class="bar key">
+  <b>Resin income is fixed at 180 a day</b> — one every 8 minutes, capped at 200. Nothing
+  raises that. A talent domain run costs <b>20</b>, so a full day is nine runs. The lever is
+  never <i>more resin</i>, it is where it goes.
+</div>
+
+<table class="asc">
+  <tbody>
+    <tr><th scope="row">You are AR 45</th>
+        <td>This is the <b>top difficulty tier</b> for talent domains — they step at
+            AR 25 / 28 / 36 / 45. You crossed the last one on <b>31 October</b>. Same
+            20 resin, best payout. <b>Check the tier selector</b> inside the domain if you
+            have not since.</td></tr>
+    <tr><th scope="row">Serenitea Pot</th>
+        <td><b>Not unlocked yet</b> — it needs the quest <i>A New Star Approaches</i>.
+            Finishing it opens <b>Transient Resin: 60 resin every week, free</b>, for 1,200
+            Realm Currency at the Realm Depot (Trust Rank 6). It also pays roughly
+            300,000 Mora a week. This is the single biggest resin gain available to you.</td></tr>
+    <tr><th scope="row">Ranking up</th>
+        <td>AR 46 through 49 each hand over <b>2 Fragile Resin</b>. That is 8 Fragile,
+            <b>480 resin</b>, already banked ahead of you.</td></tr>
+    <tr><th scope="row">Condensed Resin</th>
+        <td>40 resin for a double-drop run. <b>Liyue Reputation 4</b> means you already have
+            the recipe. It saves <i>time</i>, not resin — and it does <b>not</b> work on
+            bosses.</td></tr>
+  </tbody>
+</table>
+
+<div class="bar warn">
+  <b>Do not crack Fragile Resin now.</b> During an <i>Overflowing Abundance</i> / <i>Overflowing
+  Mastery</i> double-drop you get double talent books, up to 3 claims a day — and
+  <b>Condensed Resin does not count toward those claims, only Original Resin</b>. That caps
+  the bonus at 60 Original a day, which is exactly one Fragile. Save them.
+  <br><br>
+  No 7.2 talent-book double-drop window is confirmed yet. <i>Ley Line Overflow</i> runs
+  <b>7–14 December</b> but pays Mora and EXP, not books.
+</div>
+
+<div class="bar">
+  <b>The real constraint is weeks, not resin.</b> Talents 7→10 need weekly boss materials and
+  a Crown of Insight — roughly <b>18 weeks</b> to take one character to 10/10/10. Spreading
+  180 resin a day across six characters gets all of them to 6 and none of them good. Pick one.
+  <br><br>
+  The <i>Grand Defense</i> event, <b>4 Nov – 16 Dec</b>, includes a <b>Crown of Insight</b>.
+</div>
+
+<div class="note">
+  <b>Where this comes from.</b> Each character's book is read out of the local character data
+  in <code>reference/data/</code>, and the roster and levels from the
+  <a href="build-coverage.html">builds page</a> — so neither can drift from the rest of the
+  project. The domain rotation was checked on 1 November 2026 against two independent
+  schedules plus <a href="reference/verified-facts.md">the project's own verified Snezhnaya
+  entry</a>. Rebuild with <code>python tools/build-talent-data.py</code>.
+</div>
+
+<script src="app/talents.js"></script>
+<script src="app/nav.js"></script>
+</body>
+</html>

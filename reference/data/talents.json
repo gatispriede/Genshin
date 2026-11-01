@@ -1,0 +1,363 @@
+{
+ "_generated": "2026-11-01",
+ "_by": "tools/build-talent-data.py",
+ "_note": "Character-to-book comes from the local char_*.json talent costs; levels come from the ROSTER array in build-coverage.html. Do not hand-edit — re-run the builder.",
+ "_sources": [
+  "char_*.json talent promote costItems (local, authoritative)",
+  "Domain rotation verified 1 Nov 2026 against two schedules plus reference/verified-facts.md for Snezhnaya"
+ ],
+ "_unmapped": [
+  "Traveler"
+ ],
+ "days": [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+ ],
+ "domains": [
+  {
+   "domain": "Forsaken Rift",
+   "region": "Mondstadt",
+   "where": "South of Springvale, below the cliffs",
+   "blocked": null,
+   "series": [
+    {
+     "name": "Freedom",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Resistance",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Ballad",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Taishan Mansion",
+   "region": "Liyue",
+   "where": "Jueyun Karst, on the lakeside",
+   "blocked": null,
+   "series": [
+    {
+     "name": "Prosperity",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Diligence",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Gold",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Violet Court",
+   "region": "Inazuma",
+   "where": "Kannazuka, north of Tatarasuna",
+   "blocked": "Never visited — 0% exploration. The domain cannot be entered.",
+   "series": [
+    {
+     "name": "Transience",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Elegance",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Light",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Steeple of Ignorance",
+   "region": "Sumeru",
+   "where": "Lokapala Jungle",
+   "blocked": "Never visited — 0% exploration. The domain cannot be entered.",
+   "series": [
+    {
+     "name": "Admonition",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Ingenuity",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Praxis",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Pale Forgotten Glory",
+   "region": "Fontaine",
+   "where": "Elynas, in the Fontaine wilds",
+   "blocked": null,
+   "series": [
+    {
+     "name": "Equity",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Justice",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Order",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Blazing Ruins",
+   "region": "Natlan",
+   "where": "Tezcatepetonco Range",
+   "blocked": null,
+   "series": [
+    {
+     "name": "Contention",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Kindling",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Conflict",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "Relics of the Fallen Grace",
+   "region": "Snezhnaya",
+   "where": "Fellfrost Peak",
+   "blocked": null,
+   "series": [
+    {
+     "name": "Charity",
+     "days": [
+      1,
+      4
+     ]
+    },
+    {
+     "name": "Fortitude",
+     "days": [
+      2,
+      5
+     ]
+    },
+    {
+     "name": "Glory",
+     "days": [
+      3,
+      6
+     ]
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "name": "Varesa",
+   "level": 70,
+   "series": "Conflict"
+  },
+  {
+   "name": "Barbara",
+   "level": 66,
+   "series": "Freedom"
+  },
+  {
+   "name": "Skirk",
+   "level": 60,
+   "series": "Contention"
+  },
+  {
+   "name": "Fischl",
+   "level": 50,
+   "series": "Ballad"
+  },
+  {
+   "name": "Lisa",
+   "level": 50,
+   "series": "Ballad"
+  },
+  {
+   "name": "Tighnari",
+   "level": 44,
+   "series": "Admonition"
+  },
+  {
+   "name": "Mika",
+   "level": 40,
+   "series": "Ballad"
+  },
+  {
+   "name": "Sucrose",
+   "level": 40,
+   "series": "Freedom"
+  },
+  {
+   "name": "Xiangling",
+   "level": 40,
+   "series": "Diligence"
+  },
+  {
+   "name": "Amber",
+   "level": 40,
+   "series": "Freedom"
+  },
+  {
+   "name": "Noelle",
+   "level": 32,
+   "series": "Resistance"
+  },
+  {
+   "name": "Alyosha",
+   "level": 28,
+   "series": "Fortitude"
+  },
+  {
+   "name": "Dahlia",
+   "level": 23,
+   "series": "Ballad"
+  },
+  {
+   "name": "Manekina",
+   "level": 20,
+   "series": "Conflict"
+  },
+  {
+   "name": "Manekin",
+   "level": 20,
+   "series": "Conflict"
+  },
+  {
+   "name": "Lynette",
+   "level": 20,
+   "series": "Order"
+  },
+  {
+   "name": "Candace",
+   "level": 20,
+   "series": "Admonition"
+  },
+  {
+   "name": "Beidou",
+   "level": 20,
+   "series": "Gold"
+  },
+  {
+   "name": "Razor",
+   "level": 20,
+   "series": "Resistance"
+  },
+  {
+   "name": "Kaeya",
+   "level": 20,
+   "series": "Ballad"
+  },
+  {
+   "name": "Chongyun",
+   "level": 13,
+   "series": "Diligence"
+  },
+  {
+   "name": "Collei",
+   "level": 1,
+   "series": "Praxis"
+  },
+  {
+   "name": "Neuvillette",
+   "level": 0,
+   "series": "Equity"
+  },
+  {
+   "name": "Wanderer",
+   "level": 0,
+   "series": "Praxis"
+  },
+  {
+   "name": "Escoffier",
+   "level": 0,
+   "series": "Justice"
+  },
+  {
+   "name": "Citlali",
+   "level": 0,
+   "series": "Kindling"
+  },
+  {
+   "name": "Prune",
+   "level": 0,
+   "series": "Resistance"
+  }
+ ]
+}
