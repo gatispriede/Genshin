@@ -394,3 +394,34 @@ td.bad  { color: var(--do-now); font-weight: 700; }
   font-size: .83rem; line-height: 1.5; color: #c9d4e3;
 }
 .swap__why { margin: 0; font-size: .82rem; color: var(--dim); }
+
+/* ── Imaginarium Theater cast ───────────────────────────────────────────── */
+.th__grid {
+  display: grid; gap: 14px; margin: 14px 0 26px;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+.th__grid--small { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.th__card {
+  margin: 0; padding: 0 0 12px;
+  border: 1px solid var(--line); border-radius: 12px;
+  background: var(--panel2); overflow: hidden;
+}
+.th__card.is-act1 { border-color: var(--goal); }
+.th__card.is-save { opacity: .66; }
+.th__shot { position: relative; background: #2b3344; }
+.th__card--r5 .th__shot { background: linear-gradient(160deg, #8a6a33, #c69a4e); }
+.th__card--r4 .th__shot { background: linear-gradient(160deg, #4f3f73, #7d64ad); }
+.th__shot img { display: block; width: 100%; height: auto; }
+.th__el, .th__rank {
+  position: absolute; top: 7px;
+  padding: 2px 8px; border-radius: 999px;
+  font-size: .68rem; font-weight: 700; letter-spacing: .03em;
+}
+.th__el { left: 7px; color: #10151d; }
+.th__rank { right: 7px; background: rgba(0,0,0,.55); color: #ffd98a; }
+.th__card figcaption { display: block; padding: 10px 12px 0; }
+.th__card figcaption b { font-size: 1.02rem; color: var(--paper); }
+.th__lv, .th__role, .th__why { display: block; }
+.th__lv { font-size: .78rem; color: var(--dim); margin-top: 1px; }
+.th__role { font-size: .8rem; color: var(--goal); margin-top: 3px; }
+.th__why { font-size: .8rem; color: var(--dim); margin-top: 7px; line-height: 1.45; }

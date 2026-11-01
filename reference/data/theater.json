@@ -1,0 +1,48 @@
+{
+ "_checked": "2026-11-01",
+ "_season": "Season 29 · 1 Nov – 1 Dec 2026",
+ "_elements": "Hydro · Electro · Geo",
+ "_reactions": "Electro-Charged, Lunar-Charged, Lunar Crystallize only",
+ "_note": "Portraits resolve from reference/data/_avatars_index.json, which is also where rank and element come from — so nothing here is read off a screenshot. Cast rotates on the 1st of the month; re-check then.",
+ "_rule": "Open with the weakest viable four. Characters spend Vigor, so the same four cannot carry a run — and the three 4-stars already cover all three elements between them.",
+
+ "act1": {
+  "goal": "Defeat all opponents — 90 Fantasia Flowers",
+  "star": "Defeat all opponents within 80 seconds",
+  "enemies": "Three of one armoured type",
+  "blessing": "Electro-Charged is at Blessing Lv. 1. The other two reactions are at Lv. 0."
+ },
+
+ "cast": [
+  { "name": "Aino", "icon": "UI_AvatarIcon_Aino", "rank": 4, "element": "Hydro",
+    "use": "act1", "role": "Hydro applier",
+    "why": "Your Hydro for Electro-Charged, and she is a 4-star — exactly the kind of unit you want spending Vigor early." },
+
+  { "name": "Fischl", "icon": "UI_AvatarIcon_Fischl", "rank": 4, "element": "Electro",
+    "use": "act1", "role": "Off-field Electro",
+    "why": "Oz applies Electro without you touching her. You also own Fischl, which is why she is worth knowing by face." },
+
+  { "name": "Kachina", "icon": "UI_AvatarIcon_Kachina", "rank": 4, "element": "Geo",
+    "use": "act1", "role": "Geo / Crystallize",
+    "why": "Covers Geo so the team has all three season elements. The only Geo you can field cheaply." },
+
+  { "name": "Flins", "icon": "UI_AvatarIcon_Flins", "rank": 5, "element": "Electro",
+    "use": "act1", "role": "On-field damage",
+    "why": "The one 5-star worth spending on Act 1 — Electro-Charged is the reaction at Blessing Lv. 1, and 80 seconds asks for damage rather than defence." },
+
+  { "name": "Zhongli", "icon": "UI_AvatarIcon_Zhongli", "rank": 5, "element": "Geo",
+    "use": "save", "role": "Shield + resistance shred",
+    "why": "Keep at full Vigor. A shield is worth most where damage actually threatens, which is not Act 1." },
+
+  { "name": "Yelan", "icon": "UI_AvatarIcon_Yelan", "rank": 5, "element": "Hydro",
+    "use": "save", "role": "Off-field Hydro + damage buff",
+    "why": "The strongest applier in the cast. Save her for Act 10's Radiant Moonfly, which resists both of its own elements." }
+ ],
+
+ "bench": [
+  { "name": "Varesa", "icon": "UI_AvatarIcon_Varesa", "rank": 5, "element": "Electro", "level": 80 },
+  { "name": "Barbara", "icon": "UI_AvatarIcon_Barbara", "rank": 4, "element": "Hydro", "level": 70 }
+ ],
+
+ "benchNote": "These two are your Alternate Cast. They are NOT playable yet — they only join the Principal Cast when you draft one after winning a Battle. You have no Geo on the bench at all, so take a Geo draft almost regardless of who it is."
+}

@@ -18,6 +18,7 @@
     { href: 'collectibles-status.html', label: 'Collectibles' },
     { href: 'build-coverage.html', label: 'Builds' },
     { href: 'talent-farming.html', label: 'Talent farming' },
+    { href: 'theater.html', label: 'Theater' },
     { href: 'codes.html', label: 'Codes' },
     { href: 'tcg-swap.html', label: 'TCG swaps' },
     { href: 'farming/map.html', label: 'Saurian map' },
