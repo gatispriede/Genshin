@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where resin comes from</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  /* page-local names are all rs-* so they cannot collide with map.css */
+  h3 { font: 700 .95rem/1.3 "Segoe UI", sans-serif; color: var(--paper);
+       margin: 18px 0 6px; letter-spacing: 0; text-transform: none; }
+  .rs-t { width:100%; border-collapse:collapse; margin-top:10px; font-size:.86rem; }
+  .rs-t th { text-align:left; color:#6f7a8c; font-size:.72rem;
+             letter-spacing:.08em; text-transform:uppercase;
+             padding:6px 8px; border-bottom:1px solid #2a3140; }
+  .rs-t td { padding:7px 8px; border-bottom:1px solid #222834; vertical-align:top; }
+  .rs-t td:first-child { color:#c9d4e3; white-space:nowrap; }
+  .rs-t .rs-num { text-align:right; font-variant-numeric:tabular-nums; }
+  .rs-t tr.rs-on  td:first-child { color:var(--goal); }
+  .rs-t tr.rs-off td:first-child { color:var(--do-now); }
+  .rs-do { display:grid; gap:9px; margin-top:10px; }
+  .rs-item { display:grid; grid-template-columns:34px 1fr; gap:12px;
+             align-items:center; padding:11px 14px; background:var(--panel);
+             border-radius:8px; border-left:3px solid var(--off); }
+  .rs-item.rs-hot { border-left-color:var(--do-now); }
+  .rs-item.rs-warm { border-left-color:var(--warn); }
+  .rs-item b.rs-n { font-size:1.2rem; color:#6f7a8c; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Where resin comes from</h1>
+  <p class="sub">Five sources, two of which you already have and one that's locked
+  behind a single quest · checked 1 Nov 2026.</p>
+
+  <div class="bar key">
+    <b>There is no way to farm resin.</b> It arrives on a clock — 1 point every
+    8 minutes, <b>180 a day</b>, capped at <b>200</b>. Everything else on this page is
+    a one-off top-up, not a tap you can open. The only real lever is not letting the
+    cap overflow, and the one unclaimed source you have is the Serenitea Pot.
+  </div>
+
+  <h2>The five sources</h2>
+  <table class="rs-t">
+    <tr><th>Source</th><th class="rs-num">Gives</th><th>Where from</th><th>You</th></tr>
+    <tr class="rs-on">
+      <td><b>Original Resin</b></td><td class="rs-num">1 / 8 min</td>
+      <td>Passive regeneration. <b>180/day</b>, cap <b>200</b>, so empty → full takes
+      <b>26h 40m</b></td><td>running</td></tr>
+    <tr class="rs-on">
+      <td><b>Fragile Resin</b></td><td class="rs-num">60 each</td>
+      <td>Adventure Rank level-ups (one at most ranks past AR 20, ~76–79 across a full
+      climb), Battle Pass (5 per cycle), events and mail. <b>Never expires.</b></td>
+      <td>stockpile — check</td></tr>
+    <tr class="rs-on">
+      <td><b>Condensed Resin</b></td><td class="rs-num">60 → 3×</td>
+      <td>Crafted: <b>60 Original Resin + 1 Crystal Core + 100 Mora</b>. Needs
+      <i>Instruction: Condensed Resin</i> from <b>Liyue Reputation Lv 3</b></td>
+      <td>unlocked</td></tr>
+    <tr class="rs-off">
+      <td><b>Transient Resin</b></td><td class="rs-num">60 each</td>
+      <td>Realm Depot, <b>1,200 Realm Currency</b>, one per week, needs Serenitea Pot
+      <b>Trust Rank 6</b>. Expires 7 days from the Monday after purchase</td>
+      <td><b>locked</b></td></tr>
+    <tr><td>Primogem refill</td><td class="rs-num">60 each</td>
+      <td>Up to <b>6 per day</b>, costing <b>50 / 100 / 100 / 150 / 200 / 200</b>
+      Primogems</td><td>don't</td></tr>
+  </table>
+
+  <h2>What the claim screen offers now</h2>
+  <p>At a domain or ley line outcrop you pick how much to spend. Since
+  <b>Version 6.0 "Luna I"</b> the options are:</p>
+  <table class="rs-t">
+    <tr><th>Spend</th><th class="rs-num">Reward sets</th><th class="rs-num">Resin per set</th></tr>
+    <tr><td>20 Original Resin</td><td class="rs-num">1×</td><td class="rs-num">20</td></tr>
+    <tr><td>40 Original Resin</td><td class="rs-num">2×</td><td class="rs-num">20</td></tr>
+    <tr><td>1 Condensed Resin</td><td class="rs-num">3×</td><td class="rs-num">20</td></tr>
+    <tr><td>1 Fragile or Transient Resin</td><td class="rs-num">3×</td><td class="rs-num">20</td></tr>
+  </table>
+  <p><b>Every row is 20 resin per reward set.</b> Condensed Resin buys you travel and
+  loading time, never resin. It is worth crafting when you are farming one domain hard,
+  and worth skipping when you want more independent rolls at the same expected value —
+  which is the case while you are still hunting main stats.</p>
+  <div class="note">
+    <b>Correction, 1 Nov 2026.</b> <code>research/01-mora-farming.md</code> said
+    Condensed Resin costs <b>40 resin and doubles</b> rewards, and that only
+    Fragile/Transient gave 3×. That was true before <b>6.0 "Luna I"</b>, which moved
+    Condensed to <b>60 resin for triple</b>. The resin-per-reward ratio did not change —
+    only the batch size — so none of the farming advice built on it was wrong. File
+    corrected.<br>
+    The Fragile/Transient 3× option is only offered when your Condensed Resin
+    count is <b>0</b>.
+  </div>
+
+  <h2>Do these, in order</h2>
+  <div class="rs-do">
+    <div class="rs-item rs-hot">
+      <b class="rs-n">1</b>
+      <div><b>Unlock the Serenitea Pot.</b> One quest — <i>A New Star Approaches</i> —
+      and you passed its AR 28 requirement long ago. It is the only <i>repeating</i>
+      resin source you don't have: a Transient Resin every week from the Realm Depot
+      once you reach Trust Rank 6. It also pays roughly <b>300,000 Mora a week</b> and
+      lets you park an Alchemist's Crafting Bench indoors.</div>
+    </div>
+    <div class="rs-item rs-hot">
+      <b class="rs-n">2</b>
+      <div><b>Count your Fragile Resin.</b> Inventory → Materials. You climbed
+      <b>AR 33 → 45</b> in about ten days, and most of those ranks hand one over, so
+      there is probably a pile sitting unspent. At AR 45 domain level IV drops a
+      guaranteed 5★ artifact, which is the first point in this account's life where
+      burning them is clearly worth it.</div>
+    </div>
+    <div class="rs-item rs-warm">
+      <b class="rs-n">3</b>
+      <div><b>Stop the cap overflowing.</b> 180 a day against a 200 cap means you have
+      to spend about 180 a day or you are throwing it away, and from empty it refills in
+      under 27 hours. Two logins a day covers it; one does not.</div>
+    </div>
+    <div class="rs-item">
+      <b class="rs-n">4</b>
+      <div><b>Keep Crystal Cores coming</b> if you want Condensed Resin. They drop from
+      Crystalflies, which sit in Mondstadt and Liyue — your two most-explored regions.
+      Nothing else gates the craft.</div>
+    </div>
+    <div class="rs-item">
+      <b class="rs-n">5</b>
+      <div><b>Don't buy refills with Primogems.</b> 50 Primogems for 60 resin on the
+      first one looks cheap and the sixth costs 200. Across a month that is wishes you
+      didn't make. The existing advice in
+      <code>research/01-mora-farming.md</code> — never buy resin for Mora — holds for
+      everything else too at this stage.</div>
+    </div>
+  </div>
+
+  <h2>What it's worth spending on</h2>
+  <p>Costs are verified in <code>reference/verified-facts.md</code>: domains, talent
+  domains and ley lines <b>20</b>; weekly bosses <b>30</b> discounted (3 claims a week,
+  shared across all Trounce Domains) and <b>60</b> after; world bosses <b>40</b>.
+  Condensed Resin does <b>not</b> work on bosses — domains and ley lines only.</p>
+  <p>The per-day plan for this account is in
+  <a href="research/06-artifact-plan.md">research/06-artifact-plan.md</a>,
+  and <a href="domains.html">domains.html</a> lists which ones are open.</p>
+
+  <div class="note">
+    <b>Unverified.</b> The Fragile Resin total from Adventure Rank level-ups is quoted
+    as 76 by one source and 79 by another, and the Battle Pass count may have moved
+    since those guides were written. Whether a Fragile Resin can push you above the 200
+    cap is also not confirmed here. None of it changes the advice — read your own
+    inventory count, which is authoritative.
+  </div>
+
+  <p class="sub">Spending plans: <a href="domains.html">domains</a> ·
+  <a href="big-numbers.html">what the damage is worth</a> ·
+  <a href="derelict-masonry-dock.html">Derelict Masonry Dock</a>.</p>
+
+</div>
+</body>
+</html>
