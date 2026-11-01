@@ -139,6 +139,63 @@ the whole gap between Easy and Normal — four characters, roughly 50 levels tot
 
 ---
 
+## The levelling plan — *costs pulled from char_\*.json, 1 Nov 2026*
+
+### What it costs
+
+| Character | From → To | Hero's Wit | Ascensions |
+|---|---|---|---|
+| Fischl | 50 → 60 | ~42 | A3 |
+| Lisa | 50 → 60 | ~42 | A3 |
+| Dahlia | 50 → 60 | ~42 | A3 |
+| Traveler | 40 → 60 | ~70 | A2 + A3 |
+| **All four** | | **~196** | **280,000 Mora** |
+
+Lv. 50→60 is **854,125 EXP** (≈42 Hero's Wit) and ~171,000 Mora in EXP alone; the A3
+ascension is another 60,000. Across all four that is roughly **1,080,000 Mora and 200
+Hero's Wit** — this is not a weekend.
+
+### Two bosses cover every non-gatherable material
+
+**Electro Hypostasis** — Cape Oath, Mondstadt. Drops **Lightning Prism** *and* **Vajrada
+Amethyst**, which is both the boss material and the gem for **Fischl and Lisa together**.
+Need 8 Prism + 12 Amethyst Fragment for the pair.
+
+**Secret Source Automaton: Overseer Device** — Atocpan, Natlan; swim southwest by
+Koholasaurus. Drops **Secret Source Airflow Accumulator** *and* **Varunada Lazurite**, so it
+covers both of Dahlia's. ~2.5 accumulators a clear, so **2 runs** at 40 resin. **Cryo
+roughly doubles** against its Flow Momentum gauge — bring Skirk. The same boss also feeds
+**Escoffier**, so nothing here is wasted.
+
+**The Traveler needs no world boss at all** — only Windwheel Aster, Damaged/Stained Masks
+and Brilliant Diamond. Cheapest of the four in materials despite needing twenty levels.
+
+### Gatherable, free, all in Mondstadt
+
+20 Small Lamp Grass (Fischl) · 20 Valberry (Lisa) · 20 Calla Lily (Dahlia) ·
+30 Windwheel Aster (Traveler). Common drops: 24 Sharp Arrowhead, 12 Slime Secretions,
+15 Damaged Mask, 12 Stained Mask.
+
+### Order to do it in — and why not to chase Normal this month
+
+> **Do not level for Season 29.** The required elements rotate on the 1st, and December is
+> leaked as **Pyro/Hydro/Geo** — which drops Fischl, Lisa *and Varesa* out of eligibility
+> and leaves Barbara alone. Four characters raced to Lv. 60 for November expire in thirty
+> days.
+
+Level for breadth instead, worst-first by how many seasons each one survives:
+
+1. **Dahlia** (Hydro) — eligible in November *and* December
+2. **Traveler** (Geo) — eligible in both, and needs no boss
+3. **Fischl** (Electro) — only +10 levels, carries this season's +20% Opening Character
+   bonus, and is a genuinely good unit outside the Theater
+4. **Xiangling** (Pyro, Lv. 40) — not eligible now, but December is Pyro and she is one of
+   the best 4★ in the game
+
+That bench survives rotation. Chasing Normal in November buys six Acts once.
+
+---
+
 ## Mechanics worth remembering
 
 - **Only Battle Events award Fantasia Flowers.** Every other card *costs* them.
