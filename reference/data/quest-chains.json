@@ -1,0 +1,52 @@
+{
+ "_checked": "2026-11-02",
+ "_why": "The reputation lists show only the quest that PAYS reputation. Where that quest is the last part of a World Quest series, the earlier parts pay no reputation and so never appear — which makes a five-quest chain look like one short quest. The length tiers on those rows measure the final part alone and are wrong.",
+ "_limit": "Detected by name. A quest gated behind a prerequisite with an unrelated name is not caught here — if a quest will not start in game, that is why, and it belongs in this file.",
+ "_sources": [
+  "Genshin Impact Wiki — World Quest series pages",
+  "Game8 — Agnihotra Sutra chain order, Memory's Final Chapter prerequisites",
+  "Tatara Tales series order and daily-reset gating cross-checked across two guides"
+ ],
+
+ "chains": [
+  { "quest": "Tatara Tales: The Last Act", "series": "Tatara Tales", "part": 8, "priors": 7,
+    "region": "Inazuma", "severity": "worst",
+    "note": "Eight quests, and most of them only unlock on the next Daily Reset — so this is about a week of real time, not an evening. Needs the Archon Quest Ritou Escape Plan first.",
+    "before": ["Tatara Tales", "Priority Investigation", "Purification Device", "Data Collection", "Process Is Everything", "Functional Test", "Final Preparations"] },
+
+  { "quest": "Memory's Final Chapter", "series": "Aranyaka", "part": null, "priors": null,
+    "region": "Sumeru", "severity": "worst",
+    "note": "Wants the entire Aranyaka line: the Dream Nursery series, plus Aragaru's Drawing, Aranakin's Old Friend and Aranaga's Memory — which themselves sit behind The Final Chapter. This is the largest hidden cost on the whole list.",
+    "before": ["Dream Nursery (series)", "The Final Chapter", "Aranaga's Memory", "Aranakin's Old Friend", "Aragaru's Drawing"] },
+
+  { "quest": "Orobashi's Legacy: Part V", "series": "Orobashi's Legacy", "part": 5, "priors": 4,
+    "region": "Inazuma", "severity": "bad",
+    "note": "Four earlier parts first. The listed length covers Part V only." },
+
+  { "quest": "Seirai Stormchasers: Part IV", "series": "Seirai Stormchasers", "part": 4, "priors": 3,
+    "region": "Inazuma", "severity": "bad",
+    "note": "Three earlier parts first. The listed length covers Part IV only." },
+
+  { "quest": "The Final Chapter", "series": "Agnihotra Sutra", "part": 3, "priors": 2,
+    "region": "Sumeru", "severity": "bad",
+    "note": "Third of the Agnihotra Sutra chain.",
+    "before": ["Starry Night Chapter", "Risen Moon Chapter"] },
+
+  { "quest": "Dune-Entombed Fecundity: Part III", "series": "Dune-Entombed Fecundity", "part": 3, "priors": 2,
+    "region": "Sumeru", "severity": "bad",
+    "note": "Two earlier parts first." },
+
+  { "quest": "Static Views, Part 2", "series": "Static Views", "part": 2, "priors": 1,
+    "region": "Sumeru", "severity": "mild", "note": "One earlier part first." },
+
+  { "quest": "The Hymn of Tir Yazad (Part 2)", "series": "The Hymn of Tir Yazad", "part": 2, "priors": 1,
+    "region": "Sumeru", "severity": "mild", "note": "One earlier part first." },
+
+  { "quest": "Strange Stone Chronicle (Part 2)", "series": "Strange Stone Chronicle", "part": 2, "priors": 1,
+    "region": "Fontaine", "severity": "mild", "note": "One earlier part first." },
+
+  { "quest": "Treasure Lost, Treasure Found (Part 2)", "series": "Treasure Lost, Treasure Found", "part": 2, "priors": 1,
+    "region": "Liyue", "severity": "ok",
+    "note": "The only chain here whose earlier part is also on the list and also pays reputation, so nothing is hidden." }
+ ]
+}

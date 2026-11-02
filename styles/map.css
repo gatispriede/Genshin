@@ -476,3 +476,20 @@ td.bad  { color: var(--do-now); font-weight: 700; }
   font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; color: var(--dim);
 }
 .lvl__tag--resin { color: #ffb4b4; border-color: #6b3b3b; }
+
+/* ── Quest chains you cannot start directly ─────────────────────────────── */
+.chain__badge {
+  display: inline-block; margin-left: 7px; padding: 1px 8px;
+  border-radius: 999px; border: 1px solid #6b3b3b;
+  background: rgba(120,50,50,.2); color: #e6a2a2;
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .05em;
+  white-space: nowrap; cursor: help;
+}
+.chain--mild .chain__badge { border-color: #6b5a3b; background: rgba(120,95,50,.18); color: #e3c58f; }
+.chain--worst .chain__badge { border-color: #8d3a3a; background: rgba(150,50,50,.3); color: #ffbdbd; }
+.chain__tierwarn {
+  display: block; margin-top: 3px; font-size: .66rem; color: #e6a2a2; cursor: help;
+}
+tr.chain td.q > a { text-decoration-style: dotted; }
+.chain__lede, .chain__bar { margin-top: 12px; }
+.chain__before { display: block; margin-top: 7px; font-size: .82rem; color: var(--dim); line-height: 1.5; }
