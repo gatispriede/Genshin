@@ -1,7 +1,7 @@
 {
  "_checked": "2026-11-02",
  "_source": "Genshin Impact Wiki — Stellar Glimmer Reaction, Stellar-Conduct, Stellar Swirl. Quoted, not paraphrased.",
- "_rule": "A Stellar Glimmer reaction only exists if a character with a Stellar Jubilee passive is in the party. Without one, Superconduct and Cryo Swirl stay ordinary. There is no artifact, weapon or stat that substitutes for this.",
+ "_rule": "A Stellar Glimmer reaction only exists if a character with a Stellar Jubilee passive is in the party. Without one, Superconduct and Cryo Swirl stay ordinary. There is no artifact, weapon or stat that substitutes for this. Four characters have the passive, and one of them only covers half of it.",
  "verdict": {
   "question": "Can Varesa do Stellar-Conduct?",
   "answer": "Yes — as the Electro half. She can never enable it.",
@@ -16,7 +16,8 @@
    "element": "Cryo",
    "owned": false,
    "talent": "Dance of Aurore",
-   "bonus": "0.7% per 100 ATK, max 14%"
+   "bonus": "0.7% per 100 ATK, max 14%",
+   "covers": "Both reactions"
   },
   {
    "name": "Traveler (Cryo)",
@@ -26,7 +27,8 @@
    "owned": true,
    "talent": "Illusory Frostmirror",
    "bonus": "0.35% per 100 ATK, max 7%",
-   "note": "Yours, and the weakest of the three — half the base DMG bonus the 5-stars give. It still flips the reaction on, which is the part that matters."
+   "note": "Yours, and the weakest of the three — half the base DMG bonus the 5-stars give. It still flips the reaction on, which is the part that matters.",
+   "covers": "Both reactions"
   }
  ],
  "enablersMissing": [
@@ -37,7 +39,19 @@
    "element": "Cryo",
    "owned": false,
    "talent": "Stellar Jubilee: Light of Rationalisme",
-   "bonus": "0.7% per 100 ATK, max 14%"
+   "bonus": "0.7% per 100 ATK, max 14%",
+   "covers": "Both reactions"
+  },
+  {
+   "name": "Vesna",
+   "icon": "UI_AvatarIcon_Vesna",
+   "rank": 5,
+   "element": "Anemo",
+   "owned": false,
+   "talent": "Splendid Prelude",
+   "bonus": "0.7% per 100 ATK, max 14%",
+   "covers": "Stellar Swirl ONLY",
+   "note": "The only partial enabler. Her passive converts Cryo Swirl to Stellar Swirl and says nothing about Superconduct, so she cannot turn on Stellar-Conduct. Being Anemo herself, she is also the swirler. Her banner, When Warm Winds Cavort, ended 13 October 2026 - she is not obtainable now and needs a rerun."
   }
  ],
  "reactions": [

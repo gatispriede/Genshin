@@ -39,6 +39,7 @@
         (c.role ? '<span class="st__role">' + esc(c.role) + '</span>' : '') +
         (c.talent ? '<span class="st__role">' + esc(c.talent) + '</span>' : '') +
         (c.bonus ? '<span class="st__bonus">' + esc(c.bonus) + '</span>' : '') +
+        (c.covers ? '<span class="st__covers' + (/ONLY/.test(c.covers) ? ' is-part' : '') + '">' + esc(c.covers) + '</span>' : '') +
         '<span class="st__why">' + esc(c.why || c.note || '') + '</span>' +
         (extra || '') +
       '</figcaption></figure>';
@@ -94,8 +95,8 @@
       '</div>' +
 
       '<h2>Every enabler in the game</h2>' +
-      '<p class="sub">Three characters carry a <b>Stellar Jubilee</b> passive. ' +
-      'Nothing else turns these reactions on.</p>' +
+      '<p class="sub"><b>Four</b> characters carry a <b>Stellar Jubilee</b> passive, and ' +
+      'one of them covers only half of it. Nothing else turns these reactions on.</p>' +
       '<div class="st__grid">' +
         d.enablers.concat(d.enablersMissing).map(function (c) { return face(c); }).join('') +
       '</div>' +
