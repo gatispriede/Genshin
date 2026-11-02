@@ -493,3 +493,5 @@ td.bad  { color: var(--do-now); font-weight: 700; }
 tr.chain td.q > a { text-decoration-style: dotted; }
 .chain__lede, .chain__bar { margin-top: 12px; }
 .chain__before { display: block; margin-top: 7px; font-size: .82rem; color: var(--dim); line-height: 1.5; }
+.chain--story .chain__badge, .chain--entry .chain__badge { display: none; }
+.chain--story > td.q, .chain--entry > td.q { opacity: 1; }
