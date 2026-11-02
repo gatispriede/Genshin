@@ -49,7 +49,12 @@ ENTRY = {
 # Prerequisites that are genuinely blocking for this account even though they
 # look routine. A New Star Approaches is the Serenitea Pot quest, still undone.
 NOTABLE = {
-    "A New Star Approaches": "the Serenitea Pot quest — still not done on this account",
+    # A New Star Approaches is DONE - it is in claimed.json as of 30 Oct 2026.
+    # It was wrongly annotated here as "the Serenitea Pot quest, still not done";
+    # the Pot quest is A Teapot to Call Home, which is the one still outstanding
+    # and which gates Interlude Act II onward.
+    "A Teapot to Call Home": "the Serenitea Pot quest - still outstanding, and it "
+                             "gates Interlude Act II, which gates Nod-Krai",
 }
 
 
