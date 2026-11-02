@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banner lineup</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  /* page-local names are all bl-* so they cannot collide with map.css */
+  h3 { font: 700 .95rem/1.3 "Segoe UI", sans-serif; color: var(--paper);
+       margin: 18px 0 6px; letter-spacing: 0; text-transform: none; }
+  .bl-t { width:100%; border-collapse:collapse; margin-top:10px; font-size:.86rem; }
+  .bl-t th { text-align:left; color:#6f7a8c; font-size:.72rem;
+             letter-spacing:.08em; text-transform:uppercase;
+             padding:6px 8px; border-bottom:1px solid #2a3140; }
+  .bl-t td { padding:7px 8px; border-bottom:1px solid #222834; vertical-align:top; }
+  .bl-t td:first-child { color:#c9d4e3; }
+  .bl-t tr.bl-now td { background:#1b2230; }
+  .bl-own { color:var(--goal); font-size:.78rem; }
+  .bl-pick { display:grid; gap:9px; margin-top:10px; }
+  .bl-opt { display:grid; grid-template-columns:96px 1fr; gap:12px;
+            padding:11px 14px; background:var(--panel); border-radius:8px;
+            border-left:3px solid var(--off); }
+  .bl-opt.bl-yes { border-left-color:var(--goal); }
+  .bl-opt.bl-maybe { border-left-color:var(--warn); }
+  .bl-opt.bl-no { border-left-color:var(--off); }
+  .bl-opt h4 { margin:0; font-size:.88rem; color:var(--paper); }
+  .bl-opt h4 small { display:block; color:#6f7a8c; font-size:.72rem;
+                     text-transform:uppercase; letter-spacing:.08em; margin-top:3px; }
+  .bl-opt div { font-size:.85rem; line-height:1.5; color:#c9d4e3; }
+  @media (max-width:640px){ .bl-opt { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Banner lineup</h1>
+  <p class="sub">Checked 2 Nov 2026 · game version <b>7.1 Phase 2</b>. This page is a
+  snapshot with an expiry date on it — everything in the first two sections is gone
+  after <b>3 November</b>.</p>
+
+  <div class="bar key">
+    <b>⏰ Your free standard 5★ selector expires tomorrow, 3 November.</b>
+    <code>research/02-wishes-and-primogems.md</code> still has it unticked, and none of
+    its eight characters are on your roster except Tighnari — so it looks unclaimed.
+    It is free, the only gate is having the Wish feature unlocked, and you are AR 45.
+    <b>Open the game and claim it.</b> My pick for your account is
+    <b>Mona</b>, reasoning below.
+  </div>
+
+  <h2>Live now — until 3 Nov</h2>
+  <table class="bl-t">
+    <tr><th>Banner</th><th>5★</th><th>4★ rate-ups</th></tr>
+    <tr class="bl-now">
+      <td><b>Character ×2</b></td>
+      <td><b>Skirk</b> (rerun) <span class="bl-own">· you own her</span><br>
+          <b>Escoffier</b> (rerun)</td>
+      <td>Mika · Candace · Dahlia
+          <span class="bl-own">· you own all three</span></td></tr>
+    <tr class="bl-now">
+      <td><b>Epitome Invocation</b><br><small>weapons</small></td>
+      <td>Azurelight <small>(Skirk's signature)</small><br>
+          Symphonist of Scents <small>(Escoffier's)</small></td>
+      <td>Sturdy Bone · Sacrificial Bow · Favonius Lance ·
+          <b>The Widsith</b> · Sacrificial Greatsword</td></tr>
+  </table>
+  <p>Both 5★ characters are Cryo reruns, no new units. The entire 4★ character rate-up
+  is people you already have — Mika is already C6, Dahlia C4, Candace C2 — so there is
+  no 4★ incentive here at all.</p>
+
+  <h2>Next — version 7.2, from 4 Nov</h2>
+  <table class="bl-t">
+    <tr><th>Phase</th><th>Dates</th><th>5★ characters</th><th>5★ weapons</th></tr>
+    <tr><td><b>1</b></td><td>4 – 24 Nov</td>
+        <td><b>Mitya</b> (new, Catalyst)<br><b>Furina</b> (rerun, Hydro sword)</td>
+        <td>Starsealed Edict<br>Splendor of Tranquil Waters</td></tr>
+    <tr><td><b>2</b></td><td>24 Nov – 15 Dec</td>
+        <td>Zibai (Geo Catalyst)<br>Linnea (Geo Bow)</td>
+        <td>Golden Frostbound Oath<br>Lightbearing Moonshard</td></tr>
+  </table>
+  <div class="note">
+    <b>Unverified in 7.2:</b> the 4★ rate-ups. Most sources name only <b>Valeriy</b> for
+    Phase 1; one adds Dehya and Sucrose, and the official recap hasn't listed either
+    phase in full. Phase 2's start is given as <b>24 Nov</b> by most and 25 Nov by one.
+    Phase 1's pairing is solid across sources.
+  </div>
+
+  <h2>What any of this is worth to you</h2>
+  <p><code>research/02</code>'s standing position is <b>don't pull, save</b>, and
+  nothing in this lineup changes that. Four notes against the specific items:</p>
+  <table class="bl-t">
+    <tr><th>Thing</th><th>Verdict</th></tr>
+    <tr><td><b>Azurelight</b><br><small>Skirk's signature</small></td>
+        <td><b>Skip.</b> The free <a href="exaiphanes-statues-map.html">Exaiphanes
+        Blade</a> already fixes her weapon slot — 608 base ATK and 33.1% CRIT Rate, no
+        ascension materials, no Mora. It is sitting on your Traveler at Lv 20.</td></tr>
+    <tr><td><b>Escoffier</b></td>
+        <td><b>Tempting, still skip.</b> She genuinely is Skirk's best teammate and this
+        project already wrote her a <a href="escoffier-build.html">build page</a>. But
+        the hole she fills — Skirk's third Death's Crossing stack — is already solvable
+        for free by levelling <b>Kaeya, Dahlia or Candace</b>. Ninety pulls for a
+        convenience is the wrong trade on an account with one half-built carry.</td></tr>
+    <tr><td><b>Vivid Notions</b><br><small>Varesa's signature</small></td>
+        <td><b>Not on either banner.</b> It is the last step to a 100k hit on Varesa
+        (see <a href="big-numbers.html">100k on screen</a>), and it is not in 7.1 or
+        7.2 — so there is nothing to plan or save around for it right now.</td></tr>
+    <tr><td><b>Furina</b><br><small>7.2 Phase 1, 4 Nov</small></td>
+        <td><b>The one to think about.</b> If you ever break the save rule, this is the
+        character: Hydro, so she is a Death's Crossing stack <i>and</i> keeps a mono
+        Hydro/Cryo team alive, and she is one of the strongest party-wide damage buffers
+        in the game. You have three weeks to decide, so decide later, not today.</td></tr>
+  </table>
+
+  <h2>The selector — pick one of eight, free, by tomorrow</h2>
+  <p>Pool: Jean · Diluc · Qiqi · Mona · Keqing · <b>Tighnari (already owned — don't)</b>
+  · Dehya · Yumemizuki Mizuki.</p>
+  <div class="bl-pick">
+    <div class="bl-opt bl-yes">
+      <h4>Mona<small>my pick</small></h4>
+      <div>Hydro, so she is Skirk's <b>third Death's Crossing stack</b> — and that step
+      is the biggest in Skirk's kit: two stacks multiply her Seven-Phase Flash Normal
+      Attacks by <b>1.20</b>, three by <b>1.70</b>. That is <b>+42% damage</b> from one
+      character. All-Hydro/Cryo also switches on Skirk's utility passive, giving the
+      whole party Elemental Skill +1.<br><br>
+      The decisive part for <i>this</i> account: her value is a buff, not her own
+      damage. Omen is <b>+42% DMG at Burst talent 1</b>, rising to +60% at talent 10 —
+      so she is worth having before you spend a single artifact, Mora or EXP book on
+      her. Nothing else in the pool is useful while unbuilt. Her Hydro also freezes
+      with Skirk's Cryo, which is what generates Void Rifts and her Serpent's
+      Subtlety.</div>
+    </div>
+    <div class="bl-opt bl-maybe">
+      <h4>Qiqi<small>close second</small></h4>
+      <div>Cryo, so she also gives the third stack and keeps the mono team. Her C6 is
+      reckoned the most valuable constellation in the standard pool. Ranked below Mona
+      here only because <b>you already have two healers</b> — Barbara at Lv 66 and a C6
+      Mika — and no second damage amplifier.</div>
+    </div>
+    <div class="bl-opt bl-maybe">
+      <h4>Yumemizuki Mizuki<small>the consensus pick</small></h4>
+      <div><b>General tier lists put her first of the eight</b>, and I am
+      deliberately not following them. She is an Anemo Swirl carry: she would eventually
+      replace Sucrose, hold 4pc Viridescent Venerer and group enemies under Varesa's
+      plunge — all real. But a carry needs the artifacts, EXP and Mora you do not have,
+      and Anemo breaks Skirk's mono Hydro/Cryo team. Pick her if you would rather have
+      the strongest character and build her in three months than the most useful one
+      tonight.</div>
+    </div>
+    <div class="bl-opt bl-no">
+      <h4>The rest<small>no</small></h4>
+      <div><b>Jean</b> — Anemo healer, flexible, but her shred wants C4 and Sucrose
+      covers the grouping. <b>Diluc / Keqing</b> — you do not need a third carry;
+      you cannot feed the two you have. <b>Dehya</b> — niche.
+      <b>Tighnari</b> — you own him at C1.</div>
+    </div>
+  </div>
+  <div class="note">
+    <b>Check in game, not here.</b> Sources disagree on whether the standard selector
+    and the limited one (already spent on Varesa) can both be claimed — most say yes and
+    describe them as independent events, one implies otherwise. One minute in the Events
+    menu settles it, and that is also where you claim it. Its event name is
+    <i>Across the Frozen Wilds: Honing One's Edge</i>.
+  </div>
+
+  <p class="sub">Related: <a href="research/02-wishes-and-primogems.md">wishes &amp;
+  primogem income</a> · <a href="big-numbers.html">what the damage is worth</a> ·
+  <a href="skirk-build.html">Skirk</a> · <a href="escoffier-build.html">Escoffier</a> ·
+  <a href="resin.html">resin</a>.</p>
+
+</div>
+</body>
+</html>
