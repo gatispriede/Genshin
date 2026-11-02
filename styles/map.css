@@ -534,3 +534,18 @@ tr.chain td.q > a { text-decoration-style: dotted; }
 .st__warn { color: #e6a2a2; }
 .st__list { margin: 12px 0 10px; padding-left: 20px; line-height: 1.6; }
 .st__list li { margin-bottom: 7px; }
+.st__team { margin: 14px 0; padding: 14px 16px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel2); }
+.st__team.is-pick { border-color: var(--goal); }
+.st__team h3 { margin: 0 0 10px; color: var(--paper); }
+.st__tag { margin-left: 9px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; color: var(--dim); font-weight: 400; }
+.st__team.is-pick .st__tag { color: var(--goal); border-color: var(--goal); }
+.st__line { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 11px; }
+.st__slot { margin: 0; width: 92px; }
+.st__slot img { display: block; width: 92px; height: 92px; object-fit: cover; border: 2px solid; border-radius: 10px; background: #2b3344; }
+.st__slot figcaption { display: block; margin-top: 4px; font-size: .76rem; line-height: 1.35; }
+.st__slot figcaption b { display: block; color: var(--paper); font-size: .8rem; }
+.st__slot figcaption span { display: block; color: var(--dim); }
+.st__slotrole { color: var(--goal) !important; }
+.st__wins, .st__costs { margin: 0 0 8px; padding-left: 19px; font-size: .84rem; line-height: 1.5; }
+.st__wins li { color: #bcd9c4; margin-bottom: 4px; }
+.st__costs li { color: #e6a2a2; margin-bottom: 4px; }

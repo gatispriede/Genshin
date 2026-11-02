@@ -52,6 +52,35 @@
         '<code>reference/data/stellar.json</code>.</div>';
     });
 
+  function teams(d) {
+    if (!d.teams) return '';
+    return '<h2>The teams</h2>' +
+      '<div class="bar key"><b>Verdict.</b> ' + esc(d.teams._verdict) + '</div>' +
+      '<div class="bar warn">' + esc(d.teams._kicker) + '</div>' +
+      d.teams.list.map(function (t) {
+        return '<div class="st__team' + (t.stellar ? '' : ' is-pick') + '">' +
+          '<h3>' + esc(t.name) +
+            '<span class="st__tag">' + esc(t.tag) + '</span></h3>' +
+          '<div class="st__line">' + t.members.map(function (m) {
+            var tint = TINT[m.element] || '#8899aa';
+            return '<figure class="st__slot">' +
+              '<img src="' + CDN + esc(m.icon) + '.png" alt="' + esc(m.name) +
+                '" loading="lazy" style="border-color:' + tint + '">' +
+              '<figcaption><b>' + esc(m.name) + '</b>' +
+                '<span>Lv. ' + m.level + '</span>' +
+                '<span class="st__slotrole">' + esc(m.role) + '</span>' +
+              '</figcaption></figure>';
+          }).join('') + '</div>' +
+          '<ul class="st__wins">' + t.wins.map(function (w) {
+            return '<li>' + esc(w) + '</li>';
+          }).join('') + '</ul>' +
+          '<ul class="st__costs">' + t.costs.map(function (c) {
+            return '<li>' + esc(c) + '</li>';
+          }).join('') + '</ul>' +
+        '</div>';
+      }).join('');
+  }
+
   function render(d) {
     var v = d.verdict;
     var html =
@@ -87,6 +116,7 @@
       '</ul>' +
       '<div class="note">' + esc(d.field.note) + '</div>' +
 
+      teams(d) +
       '<h2>Who on your roster touches this</h2>' +
       '<div class="st__grid">' +
         d.roster.map(function (c) { return face(c); }).join('') +

@@ -2,35 +2,60 @@
  "_checked": "2026-11-02",
  "_source": "Genshin Impact Wiki — Stellar Glimmer Reaction, Stellar-Conduct, Stellar Swirl. Quoted, not paraphrased.",
  "_rule": "A Stellar Glimmer reaction only exists if a character with a Stellar Jubilee passive is in the party. Without one, Superconduct and Cryo Swirl stay ordinary. There is no artifact, weapon or stat that substitutes for this.",
-
  "verdict": {
   "question": "Can Varesa do Stellar-Conduct?",
   "answer": "Yes — as the Electro half. She can never enable it.",
   "detail": "Stellar-Conduct is Cryo onto Electro or Electro onto Cryo. Varesa supplies the Electro perfectly well. But the reaction only exists at all if someone in the party carries a Stellar Jubilee passive, and only three characters in the game have one. You own exactly one of them: the Traveler, in Cryo form.",
   "catch": "This is why \"a Stellar-Conduct team without Cryo\" cannot be built. Cryo is half the reaction by definition, and your only enabler is itself the Cryo Traveler."
  },
-
  "enablers": [
-  { "name": "Odette", "icon": "UI_AvatarIcon_Odette", "rank": 5, "element": "Cryo",
-    "owned": false, "talent": "Dance of Aurore", "bonus": "0.7% per 100 ATK, max 14%" },
-  { "name": "Traveler (Cryo)", "icon": "UI_AvatarIcon_PlayerGirl", "rank": 5, "element": "Cryo",
-    "owned": true, "talent": "Illusory Frostmirror", "bonus": "0.35% per 100 ATK, max 7%",
-    "note": "Yours, and the weakest of the three — half the base DMG bonus the 5-stars give. It still flips the reaction on, which is the part that matters." }
+  {
+   "name": "Odette",
+   "icon": "UI_AvatarIcon_Odette",
+   "rank": 5,
+   "element": "Cryo",
+   "owned": false,
+   "talent": "Dance of Aurore",
+   "bonus": "0.7% per 100 ATK, max 14%"
+  },
+  {
+   "name": "Traveler (Cryo)",
+   "icon": "UI_AvatarIcon_PlayerGirl",
+   "rank": 5,
+   "element": "Cryo",
+   "owned": true,
+   "talent": "Illusory Frostmirror",
+   "bonus": "0.35% per 100 ATK, max 7%",
+   "note": "Yours, and the weakest of the three — half the base DMG bonus the 5-stars give. It still flips the reaction on, which is the part that matters."
+  }
  ],
  "enablersMissing": [
-  { "name": "Sandrone", "icon": "UI_AvatarIcon_MarionetteNew", "rank": 5, "element": "Cryo",
-    "owned": false, "talent": "Stellar Jubilee: Light of Rationalisme", "bonus": "0.7% per 100 ATK, max 14%" }
+  {
+   "name": "Sandrone",
+   "icon": "UI_AvatarIcon_MarionetteNew",
+   "rank": 5,
+   "element": "Cryo",
+   "owned": false,
+   "talent": "Stellar Jubilee: Light of Rationalisme",
+   "bonus": "0.7% per 100 ATK, max 14%"
+  }
  ],
-
  "reactions": [
-  { "name": "Stellar-Conduct", "recipe": "Cryo + Electro", "replaces": "Superconduct",
-    "text": "Triggered by inflicting Cryo on a target already affected by Electro or vice versa. Creates a Starlight Prism, which briefly transforms the surrounding area into a Polestar Field.",
-    "warn": "It deals no damage of its own. The Prism is the entire payoff — expecting a big number when it triggers is the usual mistake." },
-  { "name": "Stellar Swirl", "recipe": "Cryo + Anemo", "replaces": "Cryo Swirl",
-    "text": "Deals Anemo DMG and creates a Stellar Vortex that explodes after a delay for Cryo DMG. Triggering Stellar Swirl near an existing Vortex raises its level, so it hits harder over a larger area.",
-    "warn": "An active Polestar Field cannot be converted to the other Stellar type, so a hybrid Conduct-plus-Swirl team does not work. Pick one." }
+  {
+   "name": "Stellar-Conduct",
+   "recipe": "Cryo + Electro",
+   "replaces": "Superconduct",
+   "text": "Triggered by inflicting Cryo on a target already affected by Electro or vice versa. Creates a Starlight Prism, which briefly transforms the surrounding area into a Polestar Field.",
+   "warn": "It deals no damage of its own. The Prism is the entire payoff — expecting a big number when it triggers is the usual mistake."
+  },
+  {
+   "name": "Stellar Swirl",
+   "recipe": "Cryo + Anemo",
+   "replaces": "Cryo Swirl",
+   "text": "Deals Anemo DMG and creates a Stellar Vortex that explodes after a delay for Cryo DMG. Triggering Stellar Swirl near an existing Vortex raises its level, so it hits harder over a larger area.",
+   "warn": "An active Polestar Field cannot be converted to the other Stellar type, so a hybrid Conduct-plus-Swirl team does not work. Pick one."
+  }
  ],
-
  "field": {
   "name": "Polestar Field",
   "from": "Starlight Prism, 7 seconds, sustained for as long as the Prism lives",
@@ -42,41 +67,272 @@
   ],
   "note": "The hit that created the Prism does not count toward the tally. The count resets every 4 seconds, so the buffs want sustained Cryo and Electro application, not one big hit."
  },
-
  "roster": [
-  { "name": "Traveler", "icon": "UI_AvatarIcon_PlayerGirl", "role": "THE ENABLER",
-    "level": 40, "good": true,
-    "why": "Nothing happens without this. Must be in Cryo form, which you switch to at a Snezhnaya Statue of the Seven — the same trip that upgrades the Exaiphanes Blade." },
-  { "name": "Varesa", "icon": "UI_AvatarIcon_Varesa", "role": "Electro half",
-    "level": 80, "good": true,
-    "why": "Supplies the Electro. Your highest-level character, so she is the obvious damage seat." },
-  { "name": "Skirk", "icon": "UI_AvatarIcon_SkirkNew", "role": "Cryo half, and a payoff",
-    "level": 70, "good": true,
-    "why": "Her passive creates a Void Rift when a nearby party member triggers Stellar-Conduct or Stellar Swirl — so she converts the reaction straight into Serpent's Subtlety. This is the single best synergy you own." },
-  { "name": "Alyosha", "icon": "UI_AvatarIcon_Alyosha", "role": "Benefits, does not enable",
-    "level": 28, "good": false,
-    "why": "Enters Radiance: Stellar-Conduct inside a Polestar Field, which adds +20% Stellar-Conduct reaction DMG while on field. His headline passive was inert on this account until now — this is what it was waiting for." },
-  { "name": "Beidou", "icon": "UI_AvatarIcon_Beidou", "role": "Benefits, does not enable",
-    "level": 20, "good": false,
-    "why": "Also enters the Radiance: Stellar-Conduct state inside a Polestar Field." },
-  { "name": "Sucrose", "icon": "UI_AvatarIcon_Sucrose", "role": "Stellar Swirl route",
-    "level": 49, "good": true,
-    "why": "Her passive fires on Swirl or Stellar Swirl, sharing 50 Elemental Mastery. If you go the Swirl route instead of Conduct, she is the Anemo." },
-  { "name": "Escoffier", "icon": "UI_AvatarIcon_Escoffier", "role": "Cryo half",
-    "level": 68, "good": true,
-    "why": "Second-highest Cryo you own, and a stronger applier than most." }
+  {
+   "name": "Traveler",
+   "icon": "UI_AvatarIcon_PlayerGirl",
+   "role": "THE ENABLER",
+   "level": 40,
+   "good": true,
+   "why": "Nothing happens without this. Must be in Cryo form, which you switch to at a Snezhnaya Statue of the Seven — the same trip that upgrades the Exaiphanes Blade."
+  },
+  {
+   "name": "Varesa",
+   "icon": "UI_AvatarIcon_Varesa",
+   "role": "Electro half",
+   "level": 80,
+   "good": true,
+   "why": "Supplies the Electro. Your highest-level character, so she is the obvious damage seat."
+  },
+  {
+   "name": "Skirk",
+   "icon": "UI_AvatarIcon_SkirkNew",
+   "role": "Cryo half, and a payoff",
+   "level": 70,
+   "good": true,
+   "why": "Her passive creates a Void Rift when a nearby party member triggers Stellar-Conduct or Stellar Swirl — so she converts the reaction straight into Serpent's Subtlety. This is the single best synergy you own."
+  },
+  {
+   "name": "Alyosha",
+   "icon": "UI_AvatarIcon_Alyosha",
+   "role": "Benefits, does not enable",
+   "level": 28,
+   "good": false,
+   "why": "Enters Radiance: Stellar-Conduct inside a Polestar Field, which adds +20% Stellar-Conduct reaction DMG while on field. His headline passive was inert on this account until now — this is what it was waiting for."
+  },
+  {
+   "name": "Beidou",
+   "icon": "UI_AvatarIcon_Beidou",
+   "role": "Benefits, does not enable",
+   "level": 20,
+   "good": false,
+   "why": "Also enters the Radiance: Stellar-Conduct state inside a Polestar Field."
+  },
+  {
+   "name": "Sucrose",
+   "icon": "UI_AvatarIcon_Sucrose",
+   "role": "Stellar Swirl route",
+   "level": 49,
+   "good": true,
+   "why": "Her passive fires on Swirl or Stellar Swirl, sharing 50 Elemental Mastery. If you go the Swirl route instead of Conduct, she is the Anemo."
+  },
+  {
+   "name": "Escoffier",
+   "icon": "UI_AvatarIcon_Escoffier",
+   "role": "Cryo half",
+   "level": 68,
+   "good": true,
+   "why": "Second-highest Cryo you own, and a stronger applier than most."
+  }
  ],
-
  "artifacts": [
-  { "set": "Heart of the Furnace", "for": "Stellar Glimmer (both)",
-    "text": "4pc: +12% ATK for 12s on triggering or dealing Stellar Glimmer DMG, and +50% Stellar Glimmer reaction DMG to all nearby party members. Works off-field." },
-  { "set": "Disenchantment in Deep Shadow", "for": "Stellar-Conduct",
-    "text": "4pc: +80% Superconduct and +40% Stellar-Conduct reaction DMG; +16% CRIT Rate when attacking enemies affected by either." },
-  { "set": "Thundering Fury", "for": "Stellar-Conduct",
-    "text": "4pc: among much else, +20% Lunar-Charged and Stellar-Conduct DMG, and Elemental Skill CD reduced on trigger." },
-  { "set": "Scarlet Proof", "for": "Stellar Swirl",
-    "text": "4pc: +16% CRIT Rate and +40% Stellar Swirl DMG for 10s after triggering Stellar Swirl." },
-  { "set": "Viridescent Venerer", "for": "Stellar Swirl",
-    "text": "4pc: +20% Stellar Swirl DMG, and a Stellar Swirl also drops the target's Cryo RES by 40%." }
- ]
+  {
+   "set": "Heart of the Furnace",
+   "for": "Stellar Glimmer (both)",
+   "text": "4pc: +12% ATK for 12s on triggering or dealing Stellar Glimmer DMG, and +50% Stellar Glimmer reaction DMG to all nearby party members. Works off-field."
+  },
+  {
+   "set": "Disenchantment in Deep Shadow",
+   "for": "Stellar-Conduct",
+   "text": "4pc: +80% Superconduct and +40% Stellar-Conduct reaction DMG; +16% CRIT Rate when attacking enemies affected by either."
+  },
+  {
+   "set": "Thundering Fury",
+   "for": "Stellar-Conduct",
+   "text": "4pc: among much else, +20% Lunar-Charged and Stellar-Conduct DMG, and Elemental Skill CD reduced on trigger."
+  },
+  {
+   "set": "Scarlet Proof",
+   "for": "Stellar Swirl",
+   "text": "4pc: +16% CRIT Rate and +40% Stellar Swirl DMG for 10s after triggering Stellar Swirl."
+  },
+  {
+   "set": "Viridescent Venerer",
+   "for": "Stellar Swirl",
+   "text": "4pc: +20% Stellar Swirl DMG, and a Stellar Swirl also drops the target's Cryo RES by 40%."
+  }
+ ],
+ "teams": {
+  "_verdict": "Your instinct is right, and the reason is a cliff in Escoffier's passive. She shreds Cryo and Hydro RES by 5% / 10% / 15% / 55% for 1/2/3/4 Hydro-or-Cryo characters in the party. Going from three to four jumps it from 15% to 55%. Nothing on the Stellar side is worth 40 points of RES shred - and a fourth Hydro or Cryo body means no Electro and no Anemo, so no Stellar reaction can fire at all.",
+  "_kicker": "There is a second reason Stellar-Conduct is a poor fit for a Skirk team specifically. The Polestar Field's headline effect is -40% enemy Physical RES. Skirk's Seven-Phase Flash converts her attacks to Cryo, so she gains nothing from it.",
+  "list": [
+   {
+    "name": "Skirk mono-Cryo",
+    "tag": "your pick, and the best one",
+    "stellar": false,
+    "members": [
+     {
+      "name": "Skirk",
+      "icon": "UI_AvatarIcon_SkirkNew",
+      "element": "Cryo",
+      "level": 70,
+      "role": "On-field DPS"
+     },
+     {
+      "name": "Escoffier",
+      "icon": "UI_AvatarIcon_Escoffier",
+      "element": "Cryo",
+      "level": 68,
+      "role": "RES shred + heal"
+     },
+     {
+      "name": "Traveler (Cryo)",
+      "icon": "UI_AvatarIcon_PlayerGirl",
+      "element": "Cryo",
+      "level": 40,
+      "role": "Cryo body"
+     },
+     {
+      "name": "Barbara",
+      "icon": "UI_AvatarIcon_Barbara",
+      "element": "Hydro",
+      "level": 70,
+      "role": "Hydro + healer"
+     }
+    ],
+    "wins": [
+     "Escoffier hits 4 Hydro-or-Cryo: 55% Cryo and Hydro RES shred, up from 15%.",
+     "Skirk's Mutual Weapons Mentorship turns on - every party member's Elemental Skill Level +1. It needs all four to be Hydro or Cryo, with at least one of each.",
+     "Skirk's Return to Oblivion reaches 3 stacks of Death's Crossing - Escoffier, Traveler and Barbara each grant one.",
+     "Barbara's Hydro onto Cryo makes Frozen, which is on Skirk's Void Rift trigger list anyway."
+    ],
+    "costs": [
+     "No Stellar reaction at all. The Traveler is only a Cryo body here and the Stellar Jubilee passive does nothing."
+    ]
+   },
+   {
+    "name": "Stellar-Conduct",
+    "tag": "worse here",
+    "stellar": true,
+    "members": [
+     {
+      "name": "Skirk",
+      "icon": "UI_AvatarIcon_SkirkNew",
+      "element": "Cryo",
+      "level": 70,
+      "role": "On-field DPS"
+     },
+     {
+      "name": "Traveler (Cryo)",
+      "icon": "UI_AvatarIcon_PlayerGirl",
+      "element": "Cryo",
+      "level": 40,
+      "role": "THE ENABLER"
+     },
+     {
+      "name": "Escoffier",
+      "icon": "UI_AvatarIcon_Escoffier",
+      "element": "Cryo",
+      "level": 68,
+      "role": "RES shred"
+     },
+     {
+      "name": "Fischl",
+      "icon": "UI_AvatarIcon_Fischl",
+      "element": "Electro",
+      "level": 50,
+      "role": "Off-field Electro"
+     }
+    ],
+    "wins": [
+     "Stellar-Conduct fires, creating the Polestar Field: Cryo and Electro DMG Bonus plus a scaling reaction coefficient.",
+     "Oz applies Electro off-field continuously, which is exactly what the Prism's 4-second hit tally wants.",
+     "Skirk still gets Void Rifts - Stellar-Conduct is on her trigger list."
+    ],
+    "costs": [
+     "Escoffier drops to 3 Hydro-or-Cryo: 15% shred instead of 55%.",
+     "Skirk loses Mutual Weapons Mentorship entirely.",
+     "The field's -40% Physical RES is wasted on Skirk, whose damage converts to Cryo."
+    ]
+   },
+   {
+    "name": "Stellar Swirl",
+    "tag": "the Stellar team that is actually worth it",
+    "stellar": true,
+    "members": [
+     {
+      "name": "Skirk",
+      "icon": "UI_AvatarIcon_SkirkNew",
+      "element": "Cryo",
+      "level": 70,
+      "role": "On-field DPS"
+     },
+     {
+      "name": "Traveler (Cryo)",
+      "icon": "UI_AvatarIcon_PlayerGirl",
+      "element": "Cryo",
+      "level": 40,
+      "role": "THE ENABLER"
+     },
+     {
+      "name": "Escoffier",
+      "icon": "UI_AvatarIcon_Escoffier",
+      "element": "Cryo",
+      "level": 68,
+      "role": "RES shred"
+     },
+     {
+      "name": "Sucrose",
+      "icon": "UI_AvatarIcon_Sucrose",
+      "element": "Anemo",
+      "level": 49,
+      "role": "Swirls the Cryo"
+     }
+    ],
+    "wins": [
+     "Sucrose swirling Cryo becomes Stellar Swirl, which unlike Stellar-Conduct deals real damage - Anemo on hit plus a Stellar Vortex that explodes for Cryo.",
+     "Sucrose's Catalyst Conversion fires on Stellar Swirl, handing matching-element members +50 Elemental Mastery.",
+     "Viridescent Venerer on Sucrose gives +20% Stellar Swirl DMG and drops the target's Cryo RES by 40%, which stacks with Escoffier's shred rather than overlapping it.",
+     "Stellar Swirl is on Skirk's Void Rift list too."
+    ],
+    "costs": [
+     "Escoffier still only sees 3 Hydro-or-Cryo, so 15% shred.",
+     "Still no Mutual Weapons Mentorship."
+    ]
+   },
+   {
+    "name": "Varesa Stellar-Conduct",
+    "tag": "if you want Varesa in it",
+    "stellar": true,
+    "members": [
+     {
+      "name": "Varesa",
+      "icon": "UI_AvatarIcon_Varesa",
+      "element": "Electro",
+      "level": 80,
+      "role": "On-field DPS"
+     },
+     {
+      "name": "Traveler (Cryo)",
+      "icon": "UI_AvatarIcon_PlayerGirl",
+      "element": "Cryo",
+      "level": 40,
+      "role": "THE ENABLER"
+     },
+     {
+      "name": "Fischl",
+      "icon": "UI_AvatarIcon_Fischl",
+      "element": "Electro",
+      "level": 50,
+      "role": "Off-field Electro"
+     },
+     {
+      "name": "Escoffier",
+      "icon": "UI_AvatarIcon_Escoffier",
+      "element": "Cryo",
+      "level": 68,
+      "role": "Cryo + heal"
+     }
+    ],
+    "wins": [
+     "This is where the Polestar Field earns its keep - Varesa is Electro, so the field's Cryo and Electro DMG Bonus lands on your highest-level character.",
+     "Two Electro sources and two Cryo keep the Prism's hit tally fed, which is what scales the entire field."
+    ],
+    "costs": [
+     "Skirk is not in it. She and Varesa both want the field and only one can have it.",
+     "Escoffier is reduced to a Cryo applier and healer, well short of her 55% shred."
+    ]
+   }
+  ]
+ }
 }
