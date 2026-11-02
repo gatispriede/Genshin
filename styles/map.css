@@ -495,3 +495,42 @@ tr.chain td.q > a { text-decoration-style: dotted; }
 .chain__before { display: block; margin-top: 7px; font-size: .82rem; color: var(--dim); line-height: 1.5; }
 .chain--story .chain__badge, .chain--entry .chain__badge { display: none; }
 .chain--story > td.q, .chain--entry > td.q { opacity: 1; }
+
+/* ── Stellar Glimmer ────────────────────────────────────────────────────── */
+.st__verdict {
+  margin: 16px 0 24px; padding: 16px 18px 14px;
+  border: 1px solid var(--goal); border-radius: 12px; background: var(--panel2);
+}
+.st__verdict h2 { margin: 0 0 6px; font-size: 1.15rem; }
+.st__answer { margin: 0 0 10px; font-size: 1.05rem; color: var(--goal); font-weight: 700; }
+.st__verdict p { margin: 0 0 9px; line-height: 1.55; }
+.st__catch { color: #e6c08f; }
+.st__grid {
+  display: grid; gap: 13px; margin: 14px 0 26px;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+}
+.st__card {
+  margin: 0; padding: 13px 14px 14px; display: flex; gap: 12px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel2);
+}
+.st__card.is-owned { border-color: var(--goal); }
+.st__card.is-missing { opacity: .55; }
+.st__card.is-weak { opacity: .78; }
+.st__face { flex: 0 0 58px; border: 2px solid; border-radius: 10px; overflow: hidden; height: 58px; }
+.st__face img { display: block; width: 100%; height: auto; background: #2b3344; }
+.st__card figcaption { display: block; min-width: 0; }
+.st__card figcaption b { font-size: .97rem; color: var(--paper); }
+.st__own, .st__role, .st__bonus, .st__why { display: block; }
+.st__own { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--dim); }
+.st__role { font-size: .8rem; color: var(--goal); margin-top: 3px; }
+.st__bonus { font-size: .78rem; color: var(--dim); margin-top: 1px; }
+.st__why { font-size: .79rem; color: var(--dim); margin-top: 6px; line-height: 1.45; }
+.st__pair { display: grid; gap: 13px; margin: 14px 0 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.st__react { padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel2); }
+.st__react h3 { margin: 0 0 4px; color: var(--goal); }
+.st__react p { margin: 0 0 8px; font-size: .86rem; line-height: 1.5; }
+.st__recipe { font-weight: 700; color: var(--paper); }
+.st__recipe em { display: block; font-style: normal; font-weight: 400; font-size: .76rem; color: var(--dim); }
+.st__warn { color: #e6a2a2; }
+.st__list { margin: 12px 0 10px; padding-left: 20px; line-height: 1.6; }
+.st__list li { margin-bottom: 7px; }

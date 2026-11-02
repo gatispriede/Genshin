@@ -24,10 +24,13 @@ The icon is a crescent moon, not the usual resin symbol. The mechanic and
 timing are unmistakably a Trounce Domain, but if the cost draws on something
 else the resin budgeting in `verified-facts.md` needs adjusting.
 
-**Does Alyosha have a Stellar-Conduct enabler in the party?**
-His headline passive buffs Stellar-Conduct damage — an upgraded Superconduct
-that only exists when a party member carries the enabling passive. No candidate
-was found on this roster, so that part of his kit may be inert.
+**~~Does Alyosha have a Stellar-Conduct enabler in the party?~~** **Answered
+2026-11-02: yes — the Cryo Traveler.** The enabling passive is called *Stellar
+Jubilee*, and exactly three characters in the game carry one: Odette, Sandrone
+and the **Traveler in Cryo form**. The Traveler's version is the weakest of the
+three (0.35% per 100 ATK, max 7%, against 14% for the two 5-stars) but it still
+flips the reaction on, which is the part that matters. Alyosha's passive was
+never inert, just unreachable. See [`stellar.html`](../stellar.html).
 → *Read his passive text; check whether anything owned enables it.*
 
 ---
