@@ -75,6 +75,19 @@ Primogems.** That is worth more to you right now than optimising daily income.
 
 Both include **ascension materials up to Level 60**. Claim both. ✅ *Varesa already taken.*
 
+> **⏰ Updated 2 Nov 2026 — ONE DAY LEFT on the standard selector.** The window is
+> confirmed as 23 Sept → **3 Nov 2026**, and the only gate is having the Wish feature
+> unlocked (no quest requirement), so this account qualifies outright. Nothing on the
+> roster matches the pool except Tighnari, so it reads as unclaimed.
+> **Recommended pick for this account: Mona** — Hydro gives Skirk her third
+> Death's Crossing stack (×1.20 at two stacks → ×1.70 at three, so **+42%** on her
+> Seven-Phase Flash Normal Attacks), an all-Hydro/Cryo party switches on her
+> Elemental Skill +1 passive, and Omen is **+42% DMG at Burst talent 1** — valuable
+> before any artifacts, Mora or EXP go into her, which is the binding constraint here.
+> Qiqi is the close second; general tier lists prefer Yumemizuki Mizuki, who needs
+> investment this account does not have. Full reasoning in `banners.html`.
+> *Sources disagree on whether both selectors can be claimed — check the Events menu.*
+
 ---
 
 ## Wishing strategy for this account
@@ -92,6 +105,30 @@ Reasoning:
   guaranteed. Best Primogem value in the game.
 - A character that fills a **structural hole** in your account, not one that's merely strong.
 
+### Current lineup — *checked 2 Nov 2026*
+
+Snapshot; see `banners.html` for the reasoning and the dates.
+
+**7.1 Phase 2, until 3 Nov** — Skirk (rerun, owned) and Escoffier (rerun), both Cryo.
+4★ rate-ups Mika / Candace / Dahlia, **all three already owned**. Epitome Invocation:
+Azurelight (Skirk's signature) and Symphonist of Scents, with The Widsith among the 4★.
+
+**7.2 Phase 1, 4–24 Nov** — **Mitya** (new, Catalyst) and **Furina** (rerun, Hydro
+sword). Weapons: Starsealed Edict, Splendor of Tranquil Waters.
+
+**7.2 Phase 2, 24 Nov – 15 Dec** — Zibai (Geo Catalyst), Linnea (Geo Bow). Weapons:
+Golden Frostbound Oath, Lightbearing Moonshard.
+
+Nothing here overturns *don't pull, save*. **Azurelight is redundant** — the free
+Exaiphanes Blade already fixes Skirk's weapon. **Escoffier's** hole (Skirk's third
+stack) is solvable free by levelling Kaeya, Dahlia or Candace. **Vivid Notions**, the
+last step to a 100k Varesa hit, is in neither version, so there is nothing to save
+toward. **Furina** is the one that would qualify as a structural fill under the rule
+above — Hydro body plus a top-tier party damage buff — and she is three weeks away.
+
+*Unverified:* 7.2's 4★ rate-ups (most sources name only Valeriy; one adds Dehya and
+Sucrose) and whether Phase 2 starts 24 or 25 Nov.
+
 ### Banner mechanics worth knowing
 - **Soft pity** starts around pull 74 — 5-star rates spike sharply there.
 - **Losing 50/50** guarantees the *next* 5-star is the featured one.
@@ -105,7 +142,7 @@ Reasoning:
 
 - [ ] **HoYoLAB daily check-in** — free Primogems for one tap/day
 - [ ] Follow version livestreams for **redemption codes** (expire ~24h)
-- [ ] Claim both **5-star selectors** before Nov 3
+- [ ] **⏰ Claim the standard 5-star selector — expires 3 Nov 2026** (limited one already spent on Varesa)
 - [ ] Set up a **pity tracker** (paimon.moe) before you start pulling
 - [ ] Do every **event** — largest variable in your income
 
