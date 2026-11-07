@@ -73,7 +73,7 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 | [`research/05-current-loadouts.md`](research/05-current-loadouts.md) | **Audit of what you're actually running** — equipped weapons, crit stats, what's broken |
 | [`research/06-artifact-plan.md`](research/06-artifact-plan.md) | **Where to get goblets and crit circlets at AR 33** — Blizzard Strayer, Peak of Vindagnyr |
 | [`research/07-ore-farming.md`](research/07-ore-farming.md) | Dense ore routes near waypoints — Mt. Aocang, Mt. Aozang, Brightcrown Canyon |
-| [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, Red Beet and weapon diagrams |
+| [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, the Shadow Realm shooter mode and its 475 Primogems, Red Beet and weapon diagrams |
 | [`research/09-artifact-sets.md`](research/09-artifact-sets.md) | **Set bonuses by damage / support / utility**, per-character tier tables, farming order |
 | [`research/10-imaginarium-theater.md`](research/10-imaginarium-theater.md) | **Open with the weakest team, not the strongest** — Vigor, Season 29 cast, the Geo gap |
 

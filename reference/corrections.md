@@ -152,6 +152,18 @@ Real total nearer 320. I took one aggregator at face value and even told them
 to redeem the dead ones first.
 → *Fix: always cross-check two code sources plus a timestamped tracker.*
 
+**Called a wiki page a stub without reading to the end (7 Nov)**
+Asked what the Shadow Realm pays, I answered **225 Primogems**, then **325**, before the
+real figure — **475** — came out. Both misses were the same mistake twice: I read the
+first couple of thousand characters of a page and stopped. *Shadow Realm* has a
+**Mini Shadow Realm** rewards line (20 Primogems × 5) below the fold; *Edge of Survival*
+opens with a `{{Stub}}` banner and carries a full `==Rewards==` score-ladder table
+(15 Primogems at 50,000 and again at 200,000, **per stage**) near the bottom. I had even
+noted "the wiki is a stub here" as if that settled it.
+→ *Caught by the user's screenshot of the in-game Challenge Rewards tab, not by me.
+Fix: grep the whole page for the thing being counted before concluding it is absent. A
+stub banner describes the prose, not the tables.*
+
 **Hardcoded prose numbers in a generated page (7 Nov)**
 `build-reputation-pages.py` carried per-region sentences typed by hand:
 Inazuma *"45 quests = 4,500"*, Sumeru *"40 quests = 4,000"*, Fontaine
