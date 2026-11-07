@@ -26,14 +26,43 @@ NOTE = {
     "Liyue": "Geo Treasure Compass at Level 6. The in-game counter reads 8/60 "
              "- which is exactly the world-quest count below, so this list and "
              "the game agree.",
-    "Inazuma": "Electro Treasure Compass at Level 9 (5,000 EXP). 45 quests "
-               "= 4,500, so quests alone are not enough - weekly requests have "
-               "to make up the rest.",
-    "Sumeru": "Dendro Treasure Compass at Level 9 (5,000 EXP). 40 quests "
-              "= 4,000. Same shortfall, larger.",
-    "Fontaine": "Hydro Treasure Compass at Level 9 (5,000 EXP). 45 quests "
-                "= 4,500, still short without requests.",
 }
+
+# Regions whose note is arithmetic rather than prose: the compass sits at
+# Level 9, and whether the region's own quests can pay for it is a sum, not a
+# sentence to be retyped. These were hardcoded and had drifted - Inazuma read
+# "45 quests = 4,500" when the real pool is 42 world quests plus 3 story acts,
+# which is 4,800. Computed now so it cannot drift again.
+COMPASS = {
+    "Inazuma": "Electro",
+    "Sumeru": "Dendro",
+    "Fontaine": "Hydro",
+}
+TARGET_EXP = 5000
+
+
+def pool(quests):
+    """Reputation EXP the region's own quests can pay. Acts are worth 200."""
+    live = [q for q in quests if q.get("group") != "Request" and not q.get("missing")]
+    acts = [q for q in live if is_act(q)]
+    world = [q for q in live if not is_act(q)]
+    return len(world) * 100 + len(acts) * 200, len(world), len(acts)
+
+
+def note(region, quests):
+    if region in NOTE:
+        return NOTE[region]
+    if region not in COMPASS:
+        return ""
+    avail, n_wq, n_acts = pool(quests)
+    gap = TARGET_EXP - avail
+    tail = ("short by %s, which has to come from weekly requests and "
+            "exploration milestones." % "{:,}".format(gap) if gap > 0 else
+            "enough on its own, with %s to spare." % "{:,}".format(-gap))
+    return ("%s Treasure Compass at Level 9 (%s EXP). %d world quests at 100 "
+            "plus %d story acts at 200 = %s - %s"
+            % (COMPASS[region], "{:,}".format(TARGET_EXP), n_wq, n_acts,
+               "{:,}".format(avail), tail))
 
 
 def effort(q):
@@ -155,6 +184,22 @@ def is_act(q):
     return not q.get("dlg") and not q.get("steps")
 
 
+def act_note(region, acts):
+    """This used to read "at AR 40 these are almost certainly already banked",
+    which was a guess - and the Inazuma screenshots disproved it: two of three
+    are claimed and Omnipresence Over Mortals is not. Say what was read."""
+    keys, _ = load_claimed(region)
+    open_acts = [q["name"] for q in acts if not is_claimed(q, keys)]
+    if not keys:
+        return ("No Reputation screen has been read for this region, so none "
+                "are marked either way.")
+    if not open_acts:
+        return "All of them are claimed."
+    return ("<b>%d still unclaimed</b> on the last screen read — %s. At 200 "
+            "each that is worth two world quests apiece."
+            % (len(open_acts), ", ".join("<b>%s</b>" % esc(n) for n in open_acts)))
+
+
 def region_section(region, quests):
     live = [q for q in quests if not q.get("missing")]
     acts = [q for q in live if is_act(q)]
@@ -184,8 +229,16 @@ def region_section(region, quests):
                sum(q["steps"] for q in world[-n:]), n)
         )
 
+    # Acts are worth 200 each, so an unclaimed one is worth two world quests.
+    # Striking off the claimed ones is the only way to see which is left.
+    act_keys, _ = load_claimed(region)
     act_rows = "".join(
-        "<li><b>%s</b></li>" % esc(q["name"]) for q in acts)
+        '<li class="%s"><b>%s</b>%s</li>'
+        % ("done" if is_claimed(q, act_keys) else "",
+           esc(q["name"]),
+           ' <span class="ok">&#10003; claimed</span>'
+           if is_claimed(q, act_keys) else "")
+        for q in acts)
 
     return """
 <h2 id="%s">%s</h2>
@@ -193,13 +246,12 @@ def region_section(region, quests):
 %s
 <h3>Archon &amp; story acts — <b>200 EXP each</b> (%d)</h3>
 <div class="note">Index pages for multi-act chapters, so they carry no script or
-step list of their own and can't be ranked for length. At AR 40 these are
-almost certainly already banked.
+step list of their own and can't be ranked for length. %s
 <ul class="acts">%s</ul></div>
 
 <h3>World quests — <b>100 EXP each, uncapped</b> (%d)</h3>""" % (
-        region.lower(), region, NOTE.get(region, ""), head,
-        len(acts), act_rows, len(world)) + """
+        region.lower(), region, esc(note(region, quests)), head,
+        len(acts), act_note(region, acts), act_rows, len(world)) + """
 <p class="sub">Sorted shortest first. <b>Steps</b> is the wiki's numbered
 objective count; <b>Dialogue</b> is thousands of characters of script. Both come
 straight from the quest pages, so this is measured, not guessed.</p>
@@ -259,6 +311,8 @@ def main():
   .qt tr.done .thumb img{filter:grayscale(1) brightness(.55)}
   .qt tr.done .pill{opacity:.35}
   .ok{color:#5ec97f;text-decoration:none;display:inline-block}
+  .acts li.done b{color:#6d7b8c;text-decoration:line-through;text-decoration-color:#3c4a5a}
+  .acts li.done .ok{font-size:.74rem;letter-spacing:.04em}
   .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.72rem;
         letter-spacing:.04em;white-space:nowrap}
   .t1 .pill{background:#13351f;color:#7ee2a8}
@@ -313,10 +367,11 @@ that pays Reputation EXP. Generated from the wiki, %s. &middot; <a href="reputat
 </div>
 
 </div>
+<script src="app/quest-chains.js"></script>
 <script src="app/nav.js"></script>
 </body>
 </html>
-""" % ("30 Oct 2026", nav, body)
+""" % ("7 Nov 2026", nav, body)
 
     with io.open(OUT, "w", encoding="utf-8") as f:
         f.write(html)

@@ -41,6 +41,20 @@ never inert, just unreachable. See [`stellar.html`](../stellar.html).
 hit?** (TCG) The card says "double the DMG dealt for this instance." Affects
 whether the 7-stack Burst is 14 + 3 piercing or 14 + 6.
 
+**What Reputation level is Inazuma actually at?** (opened 7 Nov 2026)
+Screenshots of the Inazuma Reputation **quest list** arrived, and nine claimed
+rows are now recorded in `claimed.json` — 2 Archon acts ×200 plus 7 world
+quests ×100 = **1,100 EXP floor**. What they do *not* show is the **level bar**,
+and the capture is two scroll positions so rows between or below them may be
+missing. Until the bar is read, `build-reputation-pages.py` has no `KNOWN`
+entry for Inazuma, so the region gets no "take the top N and you're done"
+banner the way Liyue does.
+→ *30-second check: Reputation menu in Inazuma City, read the level and the
+`x/y` bar, same as Liyue's "Level 4, 40/460". Also worth re-reading **Inazuma
+exploration %** — `account.md` and `build-quest-maps-page.py` both still say
+**0%**, which nine claimed quests disprove. The 0% is now flagged stale in both
+and no longer printed on the page.*
+
 **Sumeru's quest EXP total — 4,300 or 4,700?**
 `verified-facts.md` records **4,300** from a wiki summary. Counting the actual
 quest list gives **4,700** (33 world quests ×100 + 7 Archon/story acts ×200).

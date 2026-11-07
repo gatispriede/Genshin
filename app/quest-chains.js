@@ -52,6 +52,10 @@
     var byName = {};
     d.chains.forEach(function (c) { byName[norm(c.quest)] = c; });
     var shown = 0;
+    /* Only quests actually on THIS page may be called "deepest here" - the
+       summary used to rank the whole dataset, so the Inazuma page cheerfully
+       named Sumeru quests. */
+    var onPage = [];
 
     Array.prototype.forEach.call(document.querySelectorAll('tr'), function (tr) {
       var cell = tr.querySelector('td.q');
@@ -61,6 +65,7 @@
       tr.classList.add('chain', 'chain--' + c.severity);
       if (!LOUD[c.severity]) return;
       shown++;
+      if (onPage.indexOf(c) < 0) onPage.push(c);
       cell.insertAdjacentHTML('beforeend',
         '<span class="chain__badge" title="' + esc(detail(c)) + '">' +
         esc(short(c)) + '</span>');
@@ -79,7 +84,7 @@
       h.insertAdjacentHTML('afterend', '<div class="bar warn chain__bar">' + full(c) + '</div>');
     });
 
-    if (shown) lede(d, shown);
+    if (shown) lede(d, shown, onPage);
   }
 
   function detail(c) {
@@ -111,12 +116,12 @@
     return out;
   }
 
-  function lede(d, shown) {
+  function lede(d, shown, onPage) {
     var h1 = document.querySelector('h1');
     if (!h1) return;
-    var worst = d.chains.filter(function (c) { return c.severity === 'worst'; })
-                        .sort(function (a, b) { return (b.priors || 0) - (a.priors || 0); })
-                        .slice(0, 3);
+    var worst = onPage.filter(function (c) { return c.priors; })
+                      .sort(function (a, b) { return b.priors - a.priors; })
+                      .slice(0, 3);
     h1.insertAdjacentHTML('afterend',
       '<div class="bar warn chain__lede">' +
       '<b>' + shown + ' of these cannot be started directly.</b> ' + esc(d._why) +

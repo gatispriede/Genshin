@@ -18,11 +18,17 @@ Spiral Abyss 10-3 · 163 waypoints · 19 domains · 11 days active
 | Natlan | 2 | |
 | Fontaine | 2 | Sea of Bygone Eras 0 |
 | Nod-Krai | 1 | |
-| Inazuma | 0 | Enkanomiya 0 |
+| Inazuma | **0 — stale** | Enkanomiya 0 |
 | Sumeru | 0 | |
 
 **Seven of eight regions are at 0–6%.** Any advice assuming open regions,
 unlocked systems or stocked materials is probably wrong. Check this table first.
+
+**Inazuma's 0 is out of date (7 Nov 2026).** Reputation screenshots show two
+Archon acts and seven Inazuma world quests claimed — Narukami, Kannazuka,
+Yashiori, Seirai and Enkanomiya have all been walked. The real figure has not
+been read yet; see `open-questions.md`. Treat the rest of this table as of
+30 Oct 2026.
 
 ## Collectibles
 

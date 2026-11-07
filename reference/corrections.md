@@ -152,6 +152,32 @@ Real total nearer 320. I took one aggregator at face value and even told them
 to redeem the dead ones first.
 → *Fix: always cross-check two code sources plus a timestamped tracker.*
 
+**Hardcoded prose numbers in a generated page (7 Nov)**
+`build-reputation-pages.py` carried per-region sentences typed by hand:
+Inazuma *"45 quests = 4,500"*, Sumeru *"40 quests = 4,000"*, Fontaine
+*"45 quests = 4,500"*. All three were wrong, and all three contradicted the
+figures the **same project** computes on the quest-map pages (4,800 / 4,700 /
+5,000) — the counts ignored that Archon acts pay **200**, not 100. They now
+come from the dataset.
+→ *Pattern: a number written into prose inside a generator will drift away
+from the number the generator computes. If the data can produce it, it must.*
+
+**"At AR 40 these are almost certainly already banked" (7 Nov)**
+Printed on every region's Archon-act list. The first Inazuma Reputation
+screenshot disproved it — *Omnipresence Over Mortals* is unclaimed, and at
+200 EXP it is worth two world quests. Replaced with what the screen actually
+showed, and with an explicit "no screen has been read for this region" where
+nothing has.
+→ *Cause: a guess dressed as a hedge. "Almost certainly" is still a claim.*
+
+**A builder that no longer reproduced its own output (7 Nov)**
+`reputation-quests.html` and all four `*-quest-maps.html` shipped
+`<script src="app/quest-chains.js">`; neither generator emitted it. Someone had
+patched the HTML by hand. Re-running either script would have silently deleted
+the chain warnings from every page.
+→ *Check before regenerating: does the generator reproduce the committed file
+byte for byte? Here it did not, and nothing would have reported it.*
+
 **TCG sharing codes**
 Claimed I could not produce one. True, and correctly stated — but I should have
 reached for **published decks with existing share codes** much sooner instead

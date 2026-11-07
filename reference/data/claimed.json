@@ -1,6 +1,8 @@
 {
- "_source": "In-game Reputation > Quests screenshots, 30 Oct 2026. Only quests showing 'Claimed' are listed. This is the one fact no API exposes - progress is server-side - so it has to be transcribed by hand.",
+ "_source": "In-game Reputation > Quests screenshots. Liyue 30 Oct 2026, Inazuma 7 Nov 2026. Only quests showing 'Claimed' are listed. This is the one fact no API exposes - progress is server-side - so it has to be transcribed by hand.",
  "_note": "Archon acts pay 200, world quests 100.",
+ "_names": "Entries use the WIKI title, not the in-game row, where the two differ. The game shows 'Sacred Sakura Cleansing Ritual: Yougou Cleansing'; the wiki page is 'Yougou Cleansing'. The game shows 'Seirai Stormchasers'; the wiki splits the series and only 'Seirai Stormchasers: Part IV' pays reputation, which the prefix match picks up.",
+ "_partial": "The Inazuma capture is two screenshots at different scroll positions, so rows between or below them may be missing. Treat the Inazuma list as a floor, not a complete count.",
  "Liyue": [
   "Of the Land Amidst Monoliths",
   "Farewell, Archaic Lord",
@@ -17,5 +19,16 @@
   "Treasure Lost, Treasure Found",
   "Perfect Shot",
   "On the Stage, Behind the Stage"
+ ],
+ "Inazuma": [
+  "The Immovable God and the Eternal Euthymia",
+  "Stillness, the Sublimation of Shadow",
+  "Katheryne in Inazuma",
+  "Dreams of Sword Art",
+  "Yougou Cleansing",
+  "Orobashi's Legacy: Part V",
+  "Gazing Three Thousand Miles Away",
+  "Seirai Stormchasers",
+  "Relics of Seirai"
  ]
 }

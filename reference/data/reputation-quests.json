@@ -2985,7 +2985,7 @@
     "Lanoire"
    ],
    "dlg": 11780,
-   "steps": 1
+   "steps": 3
   },
   {
    "name": "The Three Primary Colors of the Solar Corona",
@@ -3249,7 +3249,7 @@
    "npcs": [
     "Ahes"
    ],
-   "dlg": 25257,
+   "dlg": 25258,
    "steps": 15
   },
   {

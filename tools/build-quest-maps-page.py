@@ -35,6 +35,9 @@ REGIONS = {
     "Inazuma": {
         "target_exp": 5000,
         "target": "Level 9 and the <b>Electro Treasure Compass</b>",
+        # STALE as of 7 Nov 2026 - nine Inazuma quests are claimed, so this is
+        # no longer 0 and no longer printed. Left here only so the key exists;
+        # refresh it from the Battle Chronicle before trusting it again.
         "explored": "0%",
     },
     "Sumeru": {
@@ -189,14 +192,29 @@ def headline(region, cfg, todo, done):
         "start location of their own, so there is nothing to map for them."
         % n_wq)
 
+    # Two different situations, and quoting the wrong one makes the page lie.
+    # A region with nothing struck off is a route plan for later. A region with
+    # claimed quests is one you are standing in - and there the stored
+    # exploration figure is stale by definition, so it is not quoted at all.
+    if done:
+        where = (
+            "<br><br><b>%d of these are already struck off</b>, so you are in "
+            "this region and the Reputation board is open. The exploration "
+            "percentage on file predates that and is deliberately not quoted "
+            "here. The order below is by measured length, so work from the "
+            "top." % len(done))
+    else:
+        where = (
+            "<br><br><b>You have explored %s of this region</b>, so treat this "
+            "as a route plan rather than a to-do list — the Reputation board "
+            "itself unlocks behind that region's Archon quest, and most of "
+            "these start points sit behind waypoints you have not opened. The "
+            "flagged ones are simply the shortest, for whenever you do arrive."
+            % cfg["explored"])
+
     return BUFFER + 2, (
-        '<div class="bar warn"><b>Target: %s.</b> %s'
-        "<br><br><b>You have explored %s of this region</b>, so treat this as a "
-        "route plan rather than a to-do list — the Reputation board itself "
-        "unlocks behind that region's Archon quest, and most of these start "
-        "points sit behind waypoints you have not opened. The flagged ones are "
-        "simply the shortest, for whenever you do arrive.</div>"
-        % (cfg["target"], shortfall, cfg["explored"]))
+        '<div class="bar warn"><b>Target: %s.</b> %s%s</div>'
+        % (cfg["target"], shortfall, where))
 
 
 def build(region, quests):
@@ -310,6 +328,7 @@ first, with %d map and location shots pulled from the wiki.</p>
 </div>
 
 </div>
+<script src="app/quest-chains.js"></script>
 <script src="app/nav.js"></script>
 </body>
 </html>
