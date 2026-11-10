@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tactical Sweep — Dragonspine</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  /* page-local names are all tsw-* so they cannot collide with map.css */
+  h3 { font: 700 .95rem/1.3 "Segoe UI", sans-serif; color: var(--paper);
+       margin: 18px 0 6px; letter-spacing: 0; text-transform: none; }
+  .tsw-t { width:100%; border-collapse:collapse; margin-top:10px; font-size:.86rem; }
+  .tsw-t th { text-align:left; color:#6f7a8c; font-size:.72rem;
+              letter-spacing:.08em; text-transform:uppercase;
+              padding:6px 8px; border-bottom:1px solid #2a3140; }
+  .tsw-t td { padding:7px 8px; border-bottom:1px solid #222834; vertical-align:top; }
+  .tsw-t td:first-child { color:#c9d4e3; }
+  .tsw-t tr.tsw-hi td { background:#1b2230; }
+  .tsw-t tr.tsw-hi td:first-child { color:var(--best); }
+  .tsw-n { text-align:right; font-variant-numeric:tabular-nums; }
+  .tsw-steps { display:grid; gap:9px; margin-top:10px; }
+  .tsw-s { display:grid; grid-template-columns:34px 1fr; gap:12px;
+           padding:11px 14px; background:var(--panel); border-radius:8px;
+           border-left:3px solid var(--off); }
+  .tsw-s.tsw-key { border-left-color:var(--do-now); }
+  .tsw-s.tsw-mid { border-left-color:var(--warn); }
+  .tsw-s b.tsw-i { font-size:1.2rem; color:#6f7a8c; text-align:center; }
+  .tsw-s div { font-size:.86rem; line-height:1.55; color:#c9d4e3; }
+  .tsw-solve { padding:12px 14px; background:var(--panel); border-radius:8px;
+               border-left:3px solid var(--goal); margin-top:10px; font-size:.86rem;
+               line-height:1.6; color:#c9d4e3; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Tactical Sweep — Foothills of Wind and Snow</h1>
+  <p class="sub"><b>The Grand Defense: Defy the Unjust Judgment</b> · version 7.2 ·
+  runs to <b>16 Dec 2026</b> · stage entrance at the <b>Dragonspine Adventurer Camp</b>.
+  Checked 10 Nov 2026 against the Fandom event page.</p>
+
+  <div class="bar key">
+    <b>Two things decide your score, and neither is how well you play the boss.</b>
+    The difficulty you pick multiplies the score <b>×1, ×6 or ×18</b> — and the trial
+    characters are <b>Lv 90</b>, so the hardest tier is not gated by your own roster.
+    Then <b>Morale 30</b> gives the whole party <b>+40% ATK</b>. Your screenshot shows
+    you entered the boss short of 30.
+  </div>
+
+  <h2>Your deployment screen, solved</h2>
+  <p><b>Combat Patrol: Springvale Disturbance</b> pays <b>2–10</b>. There are five
+  Operation Requirements worth <b>2 each</b>, so all five = the full 10.</p>
+  <table class="tsw-t">
+    <tr><th>Requirement</th><th>Covered by</th></tr>
+    <tr><td>❗ Dispatched Support Squads ≥ 2</td><td>any 2 Support Squads</td></tr>
+    <tr><td>Support Squad Traits (Knights of Favonius) ≥ 2</td>
+        <td>Huffman's · Hedwig's · Ematol's · Glenfidia's Detachment —
+        the four with the green shield. <b>Not</b> the two Joint Contingents</td></tr>
+    <tr class="tsw-hi"><td>Main Force Weapon Types (Bow or Sword) ≥ 1</td>
+        <td><b>Bennett</b> — Sword</td></tr>
+    <tr class="tsw-hi"><td>Main Force Traits (Electro or Pyro) ≥ 1</td>
+        <td><b>Bennett</b> — Pyro</td></tr>
+    <tr class="tsw-hi"><td>Main Force Traits (Pyro or Anemo) ≥ 1</td>
+        <td><b>Bennett</b> — Pyro</td></tr>
+  </table>
+  <div class="tsw-solve">
+    <b>Deploy 2 Knights of Favonius detachments + Bennett alone. That is 10/10 from
+    three units.</b> Bennett is Pyro <i>and</i> a Sword user, so he satisfies three of
+    the five requirements by himself. Klee, Fischl, Prune, Mona, Rosaria and both Joint
+    Contingents stay free for the next node.
+  </div>
+  <p>That is the whole game of this mode: <b>read the requirement list and find the
+  one unit that ticks the most boxes.</b> Deployed units are busy until the operation
+  resolves, and the tutorial notes that a well-stocked roster can finish events
+  <i>early</i> and hand the unit back sooner — so spending three units where three will
+  do is what keeps the later nodes payable.</p>
+
+  <h2>Morale — what the thresholds actually give you</h2>
+  <table class="tsw-t">
+    <tr><th>Morale</th><th>Effect</th></tr>
+    <tr><td><b>10</b></td><td>A character who has completed <b>"Witch's Homework"</b>
+        triggering an Elemental Reaction unleashes a <b>True DMG</b> shockwave at the
+        opponent. Once every <b>6s</b>.</td></tr>
+    <tr><td><b>20</b></td><td>Stormterror fires targeted "Finale" wind bullets for
+        substantial <b>Anemo DMG</b>. <i>Also a reward objective — 40 Primogems.</i></td></tr>
+    <tr class="tsw-hi"><td><b>30</b></td><td>With the "Hexerei: Secret Rite" effect on
+        the party, <b>all party members' ATK +40%</b>. Characters who completed "Witch's
+        Homework" also gain extra Support Progress on triggering reactions.</td></tr>
+  </table>
+  <p>Morale is the running total on that bar, carried into the Boss Hunt. <b>Never start
+  the boss below 30.</b> The difference between 29 and 30 is +40% ATK on every hit.</p>
+
+  <h2>The lever everyone misses: the score multiplier</h2>
+  <table class="tsw-t">
+    <tr><th>Difficulty</th><th class="tsw-n">Score ×</th><th class="tsw-n">Enemy Lv</th></tr>
+    <tr><td>Standard Strike</td><td class="tsw-n">×1</td><td class="tsw-n">40</td></tr>
+    <tr><td>Crippling Blow</td><td class="tsw-n">×6</td><td class="tsw-n">—</td></tr>
+    <tr class="tsw-hi"><td><b>Brutal Eradication</b></td><td class="tsw-n"><b>×18</b></td>
+        <td class="tsw-n">90</td></tr>
+  </table>
+  <p>Score comes from <b>how much of the boss's HP you remove inside the time limit</b>,
+  then gets multiplied. The reward tiers are <b>6,000 / 18,000 / 36,000</b>. Your best is
+  <b>11,052</b> — past the first tier, short of the second. On ×1 you would have to take
+  off thirty-six thousand points' worth of HP to finish the chart; on ×18 the same run
+  clears everything. <b>The tier choice is worth more than any team change.</b></p>
+
+  <h2>The boss is a Cryo Regisvine</h2>
+  <p>"Snow-Tombed Aberrant Tree" is the event's name for an <b>Ever-Corroding Ancient
+  Frost Tree</b> — mechanically a <b>Cryo Regisvine</b>. Two consequences:</p>
+  <ul>
+    <li><b>Leave Skirk at home.</b> A Cryo boss resists Cryo. This is the one fight on
+    your account where your second-best carry is the wrong answer.</li>
+    <li>It is a <b>weak-point</b> boss — break the bulb, then the root — and Pyro is the
+    classic counter. Morale 10 rewards <b>triggering reactions</b>, which also points at
+    Pyro and Electro rather than more Cryo.</li>
+  </ul>
+
+  <h2>Use the trial characters</h2>
+  <p>The stage hands you five at <b>Lv 90</b>: <b>Xilonen · Klee · Prune · Fischl ·
+  Bennett</b>.</p>
+  <div class="bar key">
+    Your own best unit is Varesa at Lv 70 with talents around 1 and a DEF% goblet. These
+    trials are Lv 90 with real kits, and <b>Klee and Bennett are Pyro into a Cryo boss</b>.
+    Take the trial team. This is the rare content where your roster's state does not
+    matter — see <a href="big-numbers.html">100k on screen</a> for why your own
+    characters are not ready for an enemy-level-90 fight.
+  </div>
+
+  <h2>Steps, in order</h2>
+  <div class="tsw-steps">
+    <div class="tsw-s tsw-key"><b class="tsw-i">1</b>
+      <div><b>Finish both Allies in Action events for this region</b> if you have not —
+      <i>Allies in Action: Klee</i> unlocks Klee / Prune / Rosaria, and
+      <i>Allies in Action: Bennett</i> unlocks Bennett / Fischl / Mona. Your deployment
+      screen already shows all six, so this is done.</div></div>
+    <div class="tsw-s"><b class="tsw-i">2</b>
+      <div><b>Clear nodes for the full 10 each.</b> Open each one, read the five
+      requirements, and pick the smallest set of units that ticks all five — favour units
+      whose element <i>and</i> weapon both count.</div></div>
+    <div class="tsw-s tsw-key"><b class="tsw-i">3</b>
+      <div><b>Reach Morale 30 before you touch the Boss Hunt.</b> It unlocks after
+      Round 3, but unlocking it is not a reason to enter it. 30 is +40% party ATK.</div></div>
+    <div class="tsw-s tsw-key"><b class="tsw-i">4</b>
+      <div><b>Enter on the highest difficulty you can actually damage</b> — the ×18 tier
+      if the Lv 90 trial team holds up, ×6 otherwise. Re-running a cleared tier at ×1
+      cannot reach 36,000 however well you play.</div></div>
+    <div class="tsw-s tsw-mid"><b class="tsw-i">5</b>
+      <div><b>In the fight:</b> trial team, Pyro-led, no Cryo. Keep an Elemental Reaction
+      going roughly every 6s so the Morale-10 True DMG shockwave never idles. Break the
+      weak point rather than chipping the body.</div></div>
+  </div>
+
+  <h2>Rewards per stage</h2>
+  <table class="tsw-t">
+    <tr><th>Objective</th><th>Reward</th></tr>
+    <tr><td>Reach 20 overall Morale</td>
+        <td>40 Primogems · 100 Eastern Threat Suppression · 3 Hero's Wit</td></tr>
+    <tr><td>Top score 6,000</td>
+        <td>20 Primogems · 100 Eastern Threat Suppression · 3 Hero's Wit</td></tr>
+    <tr class="tsw-hi"><td>Top score 18,000</td>
+        <td>60,000 Mora · 6 Mystic Enhancement Ore · 3 Sanctifying Unction</td></tr>
+    <tr class="tsw-hi"><td>Top score 36,000</td>
+        <td>30,000 Mora · 3 Mystic Enhancement Ore · 3 Sanctifying Unction</td></tr>
+  </table>
+  <p>There are <b>four</b> regions with this same structure — Sumeru, Natlan, Mondstadt
+  and Inazuma — each paying the full reward list. 90,000 Mora and 6 Sanctifying Unction
+  per region is real money for an account at your stage.</p>
+
+  <div class="note">
+    <b>Not yet documented.</b> The wiki's Support Squad and Operations tables for every
+    region still read "To be added", and the enemy level for <b>Crippling Blow</b> is
+    blank — so the middle tier's difficulty is unknown. The Knights of Favonius reading
+    of the detachment icons comes from your own screenshot, not the wiki.
+  </div>
+
+  <p class="sub">Related: <a href="big-numbers.html">what your damage is worth</a> ·
+  <a href="banners.html">banner lineup</a> · <a href="skirk-build.html">Skirk</a> ·
+  <a href="varesa-build.html">Varesa</a>.</p>
+
+</div>
+</body>
+</html>

@@ -170,3 +170,26 @@ player has done.
 - Search engines are **stale on recent patches** — one insisted Snezhnaya isn't
   playable while the user's own account reported 19 Cryoculi. **The account
   always wins over a search result.**
+
+## Network access — *fixed 10 Nov 2026*
+
+Sessions used to run on the **Default** cloud environment, whose allowlist is empty.
+That blocked every source this file names: `genshin-impact.fandom.com` and
+`gi.yatta.moe` were refused by the proxy, and `game8.co` / `gamewith.net` did not even
+resolve. Four of this repo's own fetch scripts target those hosts, so
+`tools/fetch-reputation-quests.py` and `tools/fetch-map.py` could not have run either.
+
+A personal environment named **`genshin`** now exists, saved for `gatispriede/Genshin`,
+allowing exactly:
+
+```
+genshin-impact.fandom.com   gi.yatta.moe   sg-public-api.hoyolab.com
+act-webstatic.hoyoverse.com   game8.co   library.keqingmains.com
+```
+
+Confirmed working 10 Nov 2026: `game8.co` 200, `gi.yatta.moe` 200, and the Fandom
+**api.php** route 200. Fandom article HTML still answers **403** to a plain fetch — the
+`api.php` workaround at the top of `CLAUDE.md` is still the way in, and is what produced
+the Tactical Sweep data in `tactical-sweep.html`.
+
+If a lookup is refused in a future session, check which environment it is on first.
