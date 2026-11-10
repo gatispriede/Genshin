@@ -52,7 +52,10 @@ Loot in the revealed space: 3 Precious Chests, 1 Exquisite, 1 red-aura Luxurious
 ## What it unlocks
 
 - **Peak of Vindagnyr** domain — Blizzard Strayer + Heart of Depth
-- **Frostbearing Tree** — Dragonspine's offering system, its own reward track
+- **Frostbearing Tree** — Dragonspine's offering system, unlocked at **step 1** of this
+  quest. **600,000 Mora, a Crown of Insight and 6 Fates across its 12 levels, and no
+  Primogems** — full breakdown in `02-wishes-and-primogems.md`, Mora context in
+  `01-mora-farming.md`
 - **Cryo Hypostasis** boss — drops **Shivada Jade**, needed by Skirk, Mika, Kaeya and
   Chongyun (see `03-character-materials.md`)
 

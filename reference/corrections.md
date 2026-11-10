@@ -152,6 +152,16 @@ Real total nearer 320. I took one aggregator at face value and even told them
 to redeem the dead ones first.
 → *Fix: always cross-check two code sources plus a timestamped tracker.*
 
+**Took aggregator prose over the wiki's reward tables (8 Nov)**
+`02-wishes-and-primogems.md` carried three wrong income figures, all from guide sites:
+**Spiral Abyss 1,200/month** ("resets 1st and 16th, 600 each" — it now resets **once, on
+the 16th, for 800**), **Imaginarium Theater 420–800/season** (the per-season total is
+**1,000**), and daily commissions as **"30 + 30"** (it is **40 + 20**; the report-back
+bonus is 20). The wiki had exact tables for all three the whole time.
+→ *Pattern, and the second instance this week: the project's own rule says Fandom is the
+authority for numbers, and I keep reaching for a guide because it is phrased as an
+answer. Reward tables first, prose second.*
+
 **Called a wiki page a stub without reading to the end (7 Nov)**
 Asked what the Shadow Realm pays, I answered **225 Primogems**, then **325**, before the
 real figure — **475** — came out. Both misses were the same mistake twice: I read the
@@ -189,6 +199,14 @@ patched the HTML by hand. Re-running either script would have silently deleted
 the chain warnings from every page.
 → *Check before regenerating: does the generator reproduce the committed file
 byte for byte? Here it did not, and nothing would have reported it.*
+
+**A cross-reference to a doc that never existed (8 Nov)**
+`01-mora-farming.md` sent the reader to `05-quests-and-progression.md` for the Serenitea
+Pot unlock. There is no such file and there never was — doc 05 is `05-current-loadouts.md`,
+and **nothing in this repo covers quests and progression**. Found while filing the
+Frostbearing Tree, not by looking for it.
+→ *Fix: a `see other-doc.md` is a claim like any other. Check the filename resolves before
+writing it. Cheap to verify: `ls research/`.*
 
 **TCG sharing codes**
 Claimed I could not produce one. True, and correctly stated — but I should have

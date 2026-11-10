@@ -93,7 +93,9 @@ grind, not a casual session.
 
 ### Serenitea Pot
 Roughly **300,000 Mora weekly** via conversion once the Pot is running and furnished.
-Locked behind *A New Star Approaches* + AR 28 — see `05-quests-and-progression.md`.
+Locked behind *A New Star Approaches* + AR 28. *(This line used to point at
+`05-quests-and-progression.md`, which does not exist and never has — no doc in this repo
+covers quests and progression. Dead reference removed 2026-11-08.)*
 
 ---
 
@@ -120,6 +122,14 @@ Locked behind *A New Star Approaches* + AR 28 — see `05-quests-and-progression
 5. **Watch for Ley Line Overflow** in the events tab.
 
 ### Known one-off injections
+- **Frostbearing Tree, Dragonspine: 600,000 Mora** — 50,000 per offering level × 12,
+  plus 120 Mystic Enhancement Ore, 2,400 Adventure EXP, 10 Hero's Wit and a Crown of
+  Insight. **The largest one-off on this list, and the largest resin-free lump short of
+  the Battle Pass.** Costs **110 Crimson Agates**; only 80 exist in the world, so the
+  last 30 come from Crimson Wish at 5 per Mon/Fri reset. Dragonspine is **5.9% explored**,
+  so essentially all of it is unclaimed. Full reward breakdown in
+  `02-wishes-and-primogems.md` — it pays **no Primogems**, which is why it is filed here.
+  *Checked 2026-11-08.*
 - *Guizhong* quest chain (Liyue Act II): **24,250 Mora**
 - Archon Quest chains generally: 10k–25k per act
 - Blossom collect BP mission: **25,000 Mora** on completion
@@ -130,6 +140,7 @@ Locked behind *A New Star Approaches* + AR 28 — see `05-quests-and-progression
 - [Ley Line Outcrop — Fandom wiki](https://genshin-impact.fandom.com/wiki/Ley_Line_Outcrop)
 - [Ley line farming figures](https://news.bittopup.com/news/genshin-ley-line-farming-guide-60k-mora-per-20-resin)
 - [Ley Line Overflow doubling](https://buffget.com/news/genshin-ley-line-overflow-day-2-double-mora-guide-2026)
+- [Frostbearing Tree's Gratitude](https://genshin-impact.fandom.com/wiki/Frostbearing_Tree%27s_Gratitude) — the 600,000 Mora, off the wiki's Total Rewards table
 
 **Confidence note:** resin mechanics and the BP mission distinction are verified. Yield
 figures are community aggregates from guide sites rather than official data — directionally

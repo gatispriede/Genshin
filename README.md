@@ -66,8 +66,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 
 | File | Covers |
 |---|---|
-| [`research/01-mora-farming.md`](research/01-mora-farming.md) | Blossoms of Wealth, Ley Line Overflow, resin-free Mora, what not to do |
-| [`research/02-wishes-and-primogems.md`](research/02-wishes-and-primogems.md) | Primogem income, pity maths, free 5-star selectors, pull strategy |
+| [`research/01-mora-farming.md`](research/01-mora-farming.md) | Blossoms of Wealth, Ley Line Overflow, resin-free Mora, the Frostbearing Tree's 600,000 Mora, what not to do |
+| [`research/02-wishes-and-primogems.md`](research/02-wishes-and-primogems.md) | Primogem income verified per source (~40 wishes/mo floor, ~61 ceiling), pity maths and Capturing Radiance, pull strategy, why the Frostbearing Tree pays no Primogems |
 | [`research/03-character-materials.md`](research/03-character-materials.md) | Full 22-character roster, investment priority, talent domain schedule, gems by element |
 | [`research/04-weapons-and-artifacts.md`](research/04-weapons-and-artifacts.md) | Best 3-star weapons, per-character builds, the AR 45 artifact rule |
 | [`research/05-current-loadouts.md`](research/05-current-loadouts.md) | **Audit of what you're actually running** — equipped weapons, crit stats, what's broken |
