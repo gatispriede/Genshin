@@ -344,9 +344,13 @@ Fragile/Transient option only appears when Condensed Resin count is **0**.
 `research/01-mora-farming.md` carried the old figures until 1 Nov 2026; corrected.
 
 **This account:** Condensed Resin is unlocked (Liyue Reputation Lv 4 ≥ 3).
-**Transient Resin is not** — the Serenitea Pot still needs *A New Star Approaches*
+**Transient Resin is not** — the Serenitea Pot still needs ***A Teapot to Call Home***
 (AR 28 requirement long passed). That quest is the only unclaimed *repeating*
-resin source on the account.
+resin source on the account, and its Part I additionally gates Interlude Act II.
+
+> **Corrected 10 Nov 2026.** This named *A New Star Approaches*. Wrong twice: that
+> quest is Chapter I Act III and is already in `claimed.json` as of 30 Oct. The name
+> came from `README.md`, which carried the same error — see commit 2998d5c.
 
 *Not confirmed:* the Fragile Resin lifetime total from AR level-ups (76 vs 79
 across sources), and whether Fragile Resin can push Original Resin above 200.

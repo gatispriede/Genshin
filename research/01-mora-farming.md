@@ -102,7 +102,7 @@ grind, not a casual session.
 
 ### Serenitea Pot
 Roughly **300,000 Mora weekly** via conversion once the Pot is running and furnished.
-Locked behind *A New Star Approaches* + AR 28. *(This line used to point at
+Locked behind ***A Teapot to Call Home*** + AR 28. *(Corrected 10 Nov 2026 from* A New Star Approaches*, which is Chapter I Act III and already claimed.)* *(This line used to point at
 `05-quests-and-progression.md`, which does not exist and never has — no doc in this repo
 covers quests and progression. Dead reference removed 2026-11-08.)*
 

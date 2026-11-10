@@ -50,7 +50,9 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 > means a very large pool of unclaimed one-time Primogems and oculi is still sitting there.
 
 ### Milestones ahead
-- ✅ **AR 28 passed** — Serenitea Pot needs only the quest *A New Star Approaches* now
+- ✅ **AR 28 passed** — Serenitea Pot needs only the quest *A Teapot to Call Home* now
+  *(corrected 10 Nov 2026: this read* A New Star Approaches*, which is Chapter I Act III
+  and already claimed. This line is where that error spread from.)*
 - ✅ **Trounce Domains** (weekly bosses) are open and unused
 - ✅ **AR 45 reached and World Level 6 ascended (31 Oct 2026).** 5-star artifacts
   now drop, ley line Mora roughly doubled, and bosses now reach **Lv. 75+** — which
