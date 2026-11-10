@@ -1,11 +1,27 @@
 # Current Loadouts — Audit
 
-**Pulled:** 2026-10-27 from the HoYoLAB Battle Chronicle (live, per-slot artifact data)
-**Account:** AR 40 · World Level 5 · 23 characters · Spiral Abyss 10-3 · 192 achievements
+**Gear data pulled:** 2026-10-27 from the HoYoLAB Battle Chronicle (per-slot artifacts)
+**Account header corrected:** 2026-11-10 — **AR 51 · World Level 7 · 371 achievements ·
+Spiral Abyss 11-3, 24 stars** *(Enka, verified)*. It previously read *"AR 40 · World
+Level 5 · Spiral Abyss 10-3 · 192 achievements."*
 
-> This supersedes the 2026-10-23 audit, which was written at AR 33 and before per-slot
-> artifact data was available. Several of its conclusions no longer hold — see
-> *What changed since AR 33* at the bottom.
+> 🔴 **Every stat in this file is from 28 Oct and is two weeks and eleven Adventure Ranks
+> old. Re-read before acting on any single number.**
+>
+> The account has since passed **AR 50**, which raises the character cap from Lv 80 to
+> **Lv 90** — so any level below is a floor, not a reading. A 9 Nov screenshot showed the
+> **Traveler at Lv 90**; the table below says Lv 40.
+>
+> **This file cannot be refreshed automatically today, and that is fixable.** Enka serves
+> full per-slot build data for any character placed in the in-game **showcase** with
+> *Show Character Details* enabled. The showcase is currently **empty**, so
+> `curl -s "https://enka.network/api/uid/790160140/"` returns profile stats and nothing
+> else. Add your top five to the showcase once and this audit becomes a one-command
+> refresh instead of a manual HoYoLAB walk.
+>
+> What is still **structurally** reliable here: which sets are equipped, which weapons are
+> on which character, constellation counts, and the reasoning about what each character
+> wants. Those change slowly. The numbers do not.
 
 ---
 
@@ -173,8 +189,8 @@ that fine.
 A **C1 5-star** stuck at Lv 44 in 3-star artifacts. He has the only real elemental goblet
 on the account and it's a 3-star at +0.
 
-At AR 40 you can take him to **Lv 80**. If you want a second DPS that isn't Electro, he's
-the one you already own.
+At **AR 51** you can take him to **Lv 90** — the old text said Lv 80, which was the AR 40
+cap. If you want a second DPS that isn't Electro, he's the one you already own.
 
 ---
 
@@ -191,7 +207,8 @@ same ATK% 5.2%.
 
 🔴 **7.1% CRIT Rate** is the worst on the account. She crits one hit in fourteen.
 
-At AR 40 every 3-star piece she's wearing is replaceable from a single domain run.
+At **AR 51** every 3-star piece she's wearing is replaceable from a single domain run —
+and at Lv 90 domains that run **guarantees at least one 5-star**.
 
 ---
 
@@ -289,9 +306,10 @@ other three VV pieces are not.
 3. **Replace Varesa's DEF% goblet and HP% sands**, and level her +0 pieces. Her set is
    already correct; the slots are not.
 4. **Prototype Rancour → Noelle or Razor.** It is doing nothing on Skirk.
-5. **Ascend your top five to Lv 80** — AR 40 lifts the cap. Varesa, Skirk, Barbara,
-   Fischl, Tighnari.
-6. **Fischl's artifacts.** Five 3-star pieces at AR 40 is the cheapest large fix left.
+5. **Ascend your top five to Lv 90** — **AR 50 lifted the cap again**; this step used to
+   say Lv 80. Varesa, Skirk, Barbara, Fischl, Tighnari.
+6. **Fischl's artifacts.** Five 3-star pieces is the cheapest large fix left, and at
+   Lv 90 domains a single run is guaranteed to produce a 5-star replacement.
 7. **Arm Sucrose and Xiangling.** A Lv 1 and a Lv 20 weapon are wasted slots.
 8. **CRIT Rate everywhere.** Only Varesa (24.3%) is anywhere near functional.
 
@@ -311,3 +329,23 @@ other three VV pieces are not.
 
 Also new since then: **Tighnari** (5★ C1) and **Alyosha** joined the roster, and Spiral
 Abyss progress went from 4-3 to **10-3**.
+
+## What changed since AR 40 — *added 2026-11-10*
+
+Profile-level only. **No per-character data has been re-read**, so this section makes no
+claims about gear.
+
+| 27 Oct, AR 40 | 10 Nov, AR 51 |
+|---|---|
+| World Level 5 | **World Level 7** — enemies Lv 72–92, Normal Bosses **91** |
+| Character cap **Lv 80** | **Lv 90** (Ascension Phase 6, AR 50) |
+| Spiral Abyss 10-3 | **11-3, 24 stars** |
+| 192 achievements | **371** |
+| Artifact Strongbox locked until AR 45 | **Open** — three 5-stars become one of a chosen set |
+| 5-star artifacts drop, not guaranteed | **Lv 90 domains guarantee at least one per run** |
+| Imaginarium Theater untouched | **Act 3, 3 stars** |
+| Stygian Onslaught untouched | **Index 3**, best time 774s — and its **Dust of Enlightenment** is what powers artifact Reshaping |
+
+The practical consequence for this audit: **the three-slot Skirk plan at the top was
+written when a correct 5-star piece was a lucky drop. It is now a guaranteed one per run,
+and `06-artifact-plan.md` explains how to simply *define* the goblet outright.**

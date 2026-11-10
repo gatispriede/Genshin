@@ -132,7 +132,7 @@ Ancient Rime), not combat
    drops **Finale of the Deep Galleries** (Skirk) *and* **Long Night's Oath** (Varesa),
    and at AR 40 it drops **5★ pieces**. Both sets are already equipped, so you are
    farming for **main stats**: a **Cryo DMG goblet** and an **Electro DMG goblet**.
-2. **World bosses** — 40 resin, and at AR 40 they drop 5★ artifacts *plus* the ascension
+2. **World bosses** — 40 resin, and at AR 51 they drop 5★ artifacts *plus* the ascension
    gems you need. Best resin-per-purpose on the account.
 3. **Midsummer Courtyard** (Mondstadt, AR 22) — 2pc Thundering Fury for Fischl. Cheap,
    low priority.

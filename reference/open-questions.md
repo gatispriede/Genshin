@@ -37,6 +37,28 @@ never inert, just unreachable. See [`stellar.html`](../stellar.html).
 
 ## Needs a proper look
 
+**What is the roster actually at now?** (opened 10 Nov 2026)
+Enka confirms **AR 51, World Level 7, 371 achievements, Abyss 11-3 / 24 stars,
+Theater act 3, Stygian index 3** — but Enka only serves per-character builds for
+characters placed in the in-game **showcase**, and the showcase is **empty**, so
+it returns nothing about the roster. Meanwhile a 9 Nov screenshot shows the
+**Traveler at Lv 90, 18,745 HP**, against `account.md`'s 28 Oct reading of
+**Lv 40**. Lv 90 needs AR 50, which the account only just reached, so the whole
+roster table may be low. It is also not established whether that Lv 90 unit is
+the owned Traveler or a quest-provided one.
+→ *Two routes, either settles it. **Cheap:** add three or four characters to the
+in-game showcase with "Show Character Details" on, then `curl -s
+"https://enka.network/api/uid/790160140/"` returns their full builds — no login,
+repeatable, and it would keep this file honest from now on. **Thorough:** the
+HoYoLAB walk at the bottom of `account.md` for exploration %, oculi and chests,
+which Enka never serves.*
+
+**What are Snezhnaya's exploration and reputation actually at?** (opened 10 Nov 2026)
+`account.md` says **6%** from 28 Oct. As of 9 Nov the account is in Teplo Oasis
+running at least seven Snezhnaya world quests. The 6% is certainly wrong and the
+"seven of eight regions at 0–6%" line — repeated into doc 02 and the README as
+the reason to explore rather than optimise income — rests on it.
+
 **Does Mona's Illusory Bubble double Skirk's piercing damage, or only the main
 hit?** (TCG) The card says "double the DMG dealt for this instance." Affects
 whether the 7-stack Burst is 14 + 3 piercing or 14 + 6.

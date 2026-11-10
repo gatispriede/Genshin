@@ -5,7 +5,7 @@
 
 ---
 
-> 🔴 **The artifact section below is obsolete. You are AR 40.**
+> 🔴 **The artifact section below is obsolete. You are AR 51.**
 > Read [`06-artifact-plan.md`](06-artifact-plan.md) instead. Two corrections:
 > 5-star artifacts start dropping at **AR 40**, not AR 45 — so farming is on, now. And
 > **Blizzard Strayer is no longer the pick for Skirk**; she already wears 4-piece
@@ -17,7 +17,7 @@
 > ~~Do not seriously farm artifact domains before AR 45.~~
 > **Corrected 2026-10-27:** 5-star artifacts begin dropping at **AR 40** (domain level
 > III, and all world bosses). AR 45 adds domain level IV, which *guarantees* one per run,
-> plus the Artifact Strongbox. At AR 40 the correct move is to farm.
+> plus the Artifact Strongbox. At AR 51 the correct move is to farm.
 
 Still true at any rank:
 - Prioritise **correct main stat** over set bonus over substats
@@ -167,7 +167,8 @@ a Crit circlet are worth more than any set bonus at your stage.
 > your Traveler), not Harbinger of Dawn.
 
 1. ~~**Level Skirk** — she's Lv 40 with **Lv 1 talents**.~~ *She's Lv 60 now.* Ascending
-   toward **Lv 80** is open at AR 40.
+   toward **Lv 90** is open — AR 50 lifted the cap past the Lv 80 this line used to
+   name. *(Updated 2026-11-10.)*
 2. **Thrilling Tales on Barbara** — still a valid option, still not urgent.
 3. ~~**Harbinger of Dawn on Skirk.**~~ **Exaiphanes Blade on Skirk** instead.
 4. **Correct main stats** on whatever artifacts you already own.

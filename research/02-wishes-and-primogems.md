@@ -71,7 +71,7 @@ This is where a new account's real money is. You have barely touched any of it.
 
 | Source | Scale |
 |---|---|
-| **Spiral Abyss, floors 1–8** | **2,400**, one time, never resets |
+| ~~**Spiral Abyss, floors 1–8**~~ | ~~**2,400**, one time, never resets~~ — **already claimed**, see below |
 | **Imaginarium Theater, first clear** | **1,800**, plus a Crown of Insight and 6 Fragile Resin |
 | **Exploration chests** | Hundreds of chests × 2–10 Primogems each |
 | **Oculi → Statue levels** | Anemoculus/Geoculus offerings pay Primogems per level |
@@ -83,10 +83,12 @@ This is where a new account's real money is. You have barely touched any of it.
 | **First-time domain clears** | Small but adds up |
 | ~~Free 5-star selectors~~ | ~~Version 7.1 anniversary~~ — **expired 3 Nov 2026**, see below |
 
-**The Abyss Corridor is the single biggest unclaimed lump here.** Floors 1–8 pay
-**2,400 Primogems once** — 15 wishes — and unlike floors 9–12 they never reset, so they
-sit there until taken. They are also far easier than the Moon Spire. Worth checking
-whether any of it is already banked before planning anything else.
+> ❌ **Retracted 2026-11-10.** On 8 Nov this doc called Abyss floors 1–8 *"the single
+> biggest unclaimed lump here"* and told you to go clear them. **They were already
+> cleared.** Enka reports the deepest descent at **floor 11, chamber 3, with 24 stars** —
+> you cannot be at 11-3 without having taken floors 1–8 long ago. The 2,400 Primogems
+> are banked. I wrote "worth checking whether any of it is already banked" and then
+> didn't check, when a credential-free `curl` to Enka would have settled it in one call.
 
 **A new account exploring Mondstadt and Liyue thoroughly is worth several thousand
 Primogems.** That is worth more to you right now than optimising daily income.
@@ -132,20 +134,40 @@ still — crowns are among the scarcest items in the game and this is a permanen
 - Crimson Wish stops refreshing permanently at Lv 12, and leftover agates are kept. No
   reason to rush; no way to lose anything by going slowly.
 
-**Dragonspine is 5.9% explored on this account**, so effectively all 80 agates are
-unclaimed. Do it for the **600,000 Mora** and the crown, not for Primogems — and see
-`01-mora-farming.md`, where that Mora is the largest one-off listed.
+**How much of this is unclaimed is unknown.** On 8 Nov I wrote "Dragonspine is 5.9%
+explored" — that came from the README's **23 Oct** figure, and `account.md`'s **28 Oct**
+read already said **29.5%**. Two numbers for the same thing in the same repo, and I
+quoted the older one without checking. Neither is current. Do the tree for the
+**600,000 Mora** and the crown rather than for Primogems — see `01-mora-farming.md`,
+where that Mora is the largest one-off listed — but check the Offering level in game
+before assuming none of it is taken.
 
-### Why monthly rate is the wrong metric for this account
+### Where this account actually sits — rewritten 2026-11-10
 
-The ~61-wish ceiling assumes clears this account can't make. The **800 from Abyss floors
-9–12** needs two built teams; **Imaginarium Theater's 1,000** needs roster depth;
-**Stygian's 450** needs 150-per-medal clears at Normal through Hard. With one character
-approaching built, the realistic figure here is nearer the **40 floor**.
+**The previous version of this section was wrong in the account's favour.** It said the
+~61-wish ceiling assumed "clears this account can't make," that Abyss 9–12 "needs two
+built teams," that Theater "needs roster depth," that Stygian "needs clears you can't
+make yet with one character approaching built," and concluded the realistic figure was
+"nearer the 40 floor." Enka says otherwise, as of 10 Nov:
 
-Against that, seven of eight regions sit at **0–6% explored**. The one-time backlog is
-worth several months of dailies and **none of it is gated behind combat this account
-can't do**. Explore first; optimise income later.
+| Source | What the doc assumed | What Enka reports |
+|---|---|---|
+| **Spiral Abyss 9–12** | out of reach | **deepest 11-3, 24 stars** |
+| **Imaginarium Theater** | out of reach | **act 3, 3 stars** |
+| **Stygian Onslaught** | out of reach | **index 3**, best time 774s |
+| Adventure Rank | 40 | **51**, World Level **7** |
+
+So this account is **already drawing on the endgame sources** that section wrote off. It
+is not at the 40 floor; it is somewhere in the upper half of the 40–61 band, and the gap
+to the ceiling is a matter of finishing floors and acts rather than of building a roster
+from nothing.
+
+**What remains true:** the one-time backlog is still large and still the better target,
+because exploration income is uncapped by combat. But the exploration figures this
+argument rested on — *"seven of eight regions at 0–6%"* — are from **28 Oct at AR 40**
+and are **not safe to quote**; 371 achievements and an active Snezhnaya questline say
+they have moved. See `reference/account.md`. Re-read exploration before planning around
+it.
 
 ---
 
@@ -203,8 +225,10 @@ Reasoning:
 - [ ] **HoYoLAB daily check-in** — free Primogems for one tap/day
 - [ ] Follow version livestreams for **redemption codes** (expire ~24h)
 - [x] ~~Claim both 5-star selectors before Nov 3~~ — **window closed 3 Nov 2026**
-- [ ] **Clear Spiral Abyss floors 1–8** — 2,400 Primogems, one time, no reset, and much
-      easier than the Moon Spire. Biggest single unclaimed lump on the account
+- [x] ~~**Clear Spiral Abyss floors 1–8** — 2,400 Primogems, biggest single unclaimed
+      lump on the account~~ — **already done.** Enka shows 11-3 and 24 stars (10 Nov)
+- [ ] **Push Abyss 11-3 → 12-3** and finish the Theater run — these are the live
+      recurring sources now, not aspirational ones
 - [ ] Set up a **pity tracker** (paimon.moe) before you start pulling
 - [ ] Do every **event** — largest variable in your income
 

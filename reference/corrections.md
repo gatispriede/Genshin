@@ -208,6 +208,36 @@ Frostbearing Tree, not by looking for it.
 → *Fix: a `see other-doc.md` is a claim like any other. Check the filename resolves before
 writing it. Cheap to verify: `ls research/`.*
 
+**Told them to go claim 2,400 Primogems they had already claimed (10 Nov)**
+On 8 Nov I put Spiral Abyss floors 1–8 at the top of doc 02 as *"the single biggest
+unclaimed lump"* and onto the setup checklist. Enka reports the deepest descent at
+**floor 11, chamber 3, 24 stars** — floors 1–8 were taken long ago. The same pull
+flattened the rest of that section: Imaginarium Theater and Stygian Onslaught, both
+written off as "clears this account can't make," show **act 3** and **index 3**. And the
+account is **AR 51 / World Level 7**, not the AR 40 the file assumed.
+→ *The worst part is the sentence I wrote next to it: "worth checking whether any of it
+is already banked." I named the check and didn't run it. `curl -s
+"https://enka.network/api/uid/790160140/"` needs no credentials and answers all of it in
+one call. The README has documented that endpoint since 30 Oct.*
+
+**Quoted the older of two figures the repo already disagreed on (10 Nov)**
+Doc 02 said "Dragonspine is 5.9% explored." That is the README's **23 Oct** number;
+`account.md` had **29.5%** from **28 Oct**, five days newer, sitting in the same
+repository. I took the one I happened to read first.
+→ *Fix: when two files in this repo carry the same statistic, they are a dated series,
+not two sources. Take the newest and say when it was read.*
+
+**Invented an unlock condition for Sanctifying Elixir (10 Nov)**
+`06-artifact-plan.md` said *"Unlocking it needs 25 five-star artifacts"* and told you to
+revisit at AR 45. There is no such threshold. The **Artifact Transmuter** is a gadget
+claimed from the **Adventurer Handbook → Embattle: Chapter IV**; the 25 is the maximum
+number of artifacts selectable in one extraction batch, which I had read and converted
+into a gate. The mechanic itself was described right — set, main affix, two minor
+affixes — which is what made the wrong gate plausible.
+→ *Cause: a number seen near a mechanic became the rule for the mechanic. Also: a doc
+titled "at AR 40" went three Adventure Ranks past AR 45 still saying "revisit at AR 45,"
+because nothing re-reads a document's premise once it is written.*
+
 **TCG sharing codes**
 Claimed I could not produce one. True, and correctly stated — but I should have
 reached for **published decks with existing share codes** much sooner instead
@@ -231,8 +261,15 @@ Strayer plan were both internally sensible and both rested on something I never
 verified. Check the premise before building the plan on top of it.
 
 **4. Trusting stale recall over the live account.** The account moved AR 33 →
-40 in a week. Search engines still think Snezhnaya isn't playable while the
-Chronicle reports 19 Cryoculi. **The account is the authority.**
+40 in a week, then **40 → 51 in under two**. Search engines still think
+Snezhnaya isn't playable while the Chronicle reports 19 Cryoculi.
+**The account is the authority.**
+
+> This one keeps recurring and it is the most expensive of the four, because it
+> sends the user to do things they have already done. **Rule, as of 10 Nov:**
+> before writing any sentence about what this account has, hasn't, can or can't
+> do, run `curl -s "https://enka.network/api/uid/790160140/"`. It is free, needs
+> no credentials, and takes one call. There is no excuse for a stale AR again.
 
 The user's own standing rule covers all four: *verify the actual current state
 before acting on it.* Every entry here is a case of not doing that.

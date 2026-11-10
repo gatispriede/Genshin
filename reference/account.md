@@ -1,10 +1,61 @@
 # Account snapshot
 
-**Pulled 28 Oct 2026** from the Battle Chronicle. Re-verify before relying on
-any of it — this account moved **AR 33 → AR 40 in a single week**.
+**This file has two halves. The top is live. Everything below the rule is from
+28 Oct 2026 and is not to be relied on.**
 
-Europe · **AR 40** · 194 achievements ·
-Spiral Abyss 10-3 · 163 waypoints · 19 domains · 11 days active
+## Live — Enka, pulled 10 Nov 2026
+
+`Funisimo` · **UID 790160140** · region **EU**
+
+| | now (10 Nov) | was (28 Oct) |
+|---|---|---|
+| **Adventure Rank** | **51** | 40 |
+| **World Level** | **7** | 5 |
+| Achievements | **371** | 194 |
+| Spiral Abyss, deepest | **11-3** | 10-3 |
+| Abyss stars | **24** | — |
+| Imaginarium Theater | **act 3**, 3 stars | — |
+| Stygian Onslaught | **index 3**, best 774s | — |
+
+Refresh the whole top block with one command, no credentials:
+
+```bash
+curl -s "https://enka.network/api/uid/790160140/"
+```
+
+> **This changes the advice in docs 01 and 02.** At **World Level 7** the
+> 60,000-Mora ley line figure applies in full — doc 01 was written for "AR ~25,
+> World Level low" and told you to discount it. And **Spiral Abyss floors 1–8
+> are long since cleared** at 11-3, so the 2,400-Primogem "biggest unclaimed
+> lump" doc 02 claimed on 8 Nov was already banked. Both corrected 10 Nov.
+>
+> Theater act 3 and a Stygian index-3 clear also contradict doc 02's reasoning
+> that this account cannot reach the endgame Primogem sources. It can.
+
+### Observed in game, 9 Nov 2026 (screenshots)
+
+- **In Snezhnaya**, Teplo Oasis, running Snezhnaya world quests — *Dark Clouds
+  in a Wine Bottle*, *Swords and Secrets*, *Treasure Lost, Treasure Found*,
+  *Share Not Your Treasures*, *…What Do Adventurers Do Again?*, *A Saurian
+  Lover's Ordinary Days*, *In the Aftermath*
+- **Traveler shown at Lv 90, 18,745 HP.** The roster table below still says
+  Lv 40. Not re-read per-slot, and not confirmed whether this is the owned
+  Traveler or a quest-provided unit — treat the Lv 90 as observed, not as a
+  verified build. See `open-questions.md`.
+- *Dark Clouds in a Wine Bottle* is **not documented on the Fandom wiki** —
+  no page, and `Category:Teplo Oasis Quests` holds only *A Lovely Oasis
+  Holiday*. No walkthrough source exists for it yet.
+
+---
+
+## Stale — 28 Oct 2026, Battle Chronicle
+
+Everything from here down predates the AR 40 → 51 jump and **has not been
+re-read**. Enka serves only the top-line stats above; exploration, oculi, chests
+and per-character gear need the logged-in HoYoLAB route documented at the bottom
+of this file.
+
+163 waypoints · 19 domains · 11 days active
 
 ---
 
@@ -21,8 +72,13 @@ Spiral Abyss 10-3 · 163 waypoints · 19 domains · 11 days active
 | Inazuma | **0 — stale** | Enkanomiya 0 |
 | Sumeru | 0 | |
 
-**Seven of eight regions are at 0–6%.** Any advice assuming open regions,
-unlocked systems or stocked materials is probably wrong. Check this table first.
+> ⚠️ **"Seven of eight regions at 0–6%" is no longer safe to quote.** That line
+> has been repeated into doc 02 and the README as the reason to explore rather
+> than optimise income. It was true on 28 Oct at AR 40. At **AR 51 with 371
+> achievements** — 177 more than this table was read against — the real figures
+> are unknown and certainly higher. **Snezhnaya's 6% is known wrong**: as of
+> 9 Nov the account is playing Snezhnaya world quests (see above). Inazuma's 0
+> is known wrong too. Re-read the whole table before using any row of it.
 
 **Inazuma's 0 is out of date (7 Nov 2026).** Reputation screenshots show two
 Archon acts and seven Inazuma world quests claimed — Narukami, Kannazuka,
@@ -43,6 +99,13 @@ Chests: Common 234 · Exquisite 257 · Precious 69 · Luxurious 27 · Remarkable
 ## Roster — 23 characters
 
 Gear read per-slot on 28 Oct for the top twelve.
+
+> ⚠️ **Thirteen days and eleven Adventure Ranks out of date.** The Traveler row
+> says Lv 40; a 9 Nov screenshot showed Lv 90. Character levels above 80 need
+> AR 50, which this account did not have on 28 Oct and does now — so any row
+> here may be low. The showcase is empty, so Enka returns no build data and this
+> table can only be refreshed through HoYoLAB. **Do not build advice on a level
+> or a stat from this table without re-reading it.**
 
 | Character | Lv | C | Element | Weapon | Set / state |
 |---|---|---|---|---|---|

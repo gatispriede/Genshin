@@ -1,7 +1,10 @@
 # Mora Farming
 
 **Researched:** 2026-10-23 · **Game version:** 7.1
-**Account context:** AR ~25, World Level low, Liyue Archon Quest in progress
+**Account context corrected 2026-11-10:** **AR 51, World Level 7** (Enka, verified).
+This doc was written against *"AR ~25, World Level low, Liyue Archon Quest in progress"*
+and that framing was wrong by the time anyone read it — see the yield warning below,
+which has been inverted.
 
 ---
 
@@ -22,13 +25,15 @@ Resin** to claim.
 
 | World Level | Mora per 20 resin |
 |---|---|
-| WL 6+ (AR 45+) | ~60,000 — the ceiling |
+| **WL 6+ (AR 45+) — where you are, at WL 7** | **~60,000 — the ceiling** |
 | Mid WL | ~52,000–60,000 |
-| **Low WL (where you are)** | **Substantially less** |
+| Low WL | Substantially less |
 
-> ⚠️ The 60,000 figure quoted all over the internet is the **WL 6+** number. At your
-> current World Level you will see a fraction of that. Don't budget around 60k yet.
-> The WL5 → WL6 jump is the last big increase, which makes **AR 45 the real sweet spot**.
+> ✅ **Corrected 2026-11-10 — this warning used to say the opposite.** It read:
+> *"At your current World Level you will see a fraction of that. Don't budget around
+> 60k yet."* You are at **World Level 7**, so the 60,000-per-20-resin figure quoted
+> all over the internet **is your number**. Budget around it. The WL5 → WL6 jump that
+> this doc treated as a distant goal happened on 31 Oct.
 
 **Unlocks at Adventure Rank 12.** You have this.
 
@@ -114,8 +119,9 @@ covers quests and progression. Dead reference removed 2026-11-08.)*
 
 ## 5. Your action plan right now
 
-1. **Push AR.** Every Mora number in this document scales with World Level. AR 45 roughly
-   doubles your return on identical effort. Daily commissions are the fastest route.
+1. ~~**Push AR.**~~ **Done.** This step said "AR 45 roughly doubles your return." You are
+   at **AR 51, World Level 7** — past it. Every Mora figure in this doc now applies at
+   full value. *Updated 2026-11-10.*
 2. **Spend all resin on Blossoms of Wealth** until your Mora anxiety stops.
 3. **Set expeditions every single login.** Free, and you're already opening the game.
 4. **Destroy junk artifacts** rather than selling them.

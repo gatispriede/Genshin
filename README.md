@@ -7,18 +7,21 @@ account's situation, not generic wiki advice.
 
 ## Account snapshot
 
-Pulled from the Enka profile API, **2026-10-30**. The figures in brackets are the
-previous HoYoLAB snapshot (2026-10-23) — one week of very fast progress.
+Pulled from the Enka profile API, **2026-11-10**. Brackets are the 30 Oct pull.
 
 | | |
 |---|---|
-| **Adventure Rank** | **45** (was 33 on 23 Oct) |
-| **World Level** | **6** — ascended 31 Oct (was 3) |
-| Achievements | 272 (was 131) |
-| Spiral Abyss | Floor 10, Chamber 3 (was Floor 4) |
-| Characters | 22 |
-| Waypoints unlocked | 127 |
-| Domains unlocked | 15 |
+| **Adventure Rank** | **51** (was 45 on 30 Oct, 33 on 23 Oct) |
+| **World Level** | **7** (was 6) |
+| Achievements | **371** (was 272) |
+| Spiral Abyss | **Floor 11, Chamber 3 · 24 stars** (was 10-3) |
+| Imaginarium Theater | **Act 3**, 3 stars |
+| Stygian Onslaught | **Index 3**, best 774s |
+| Characters | 22 — *as of 23 Oct, not re-read* |
+| Waypoints unlocked | 127 — *as of 23 Oct, not re-read* |
+| Domains unlocked | 15 — *as of 23 Oct, not re-read* |
+
+`reference/account.md` is the authoritative snapshot and carries the refresh command.
 
 Enka serves Adventure Rank, World Level, achievements and Abyss progress without
 authentication; the character, exploration and chest figures below still come from
@@ -44,10 +47,11 @@ the older HoYoLAB pull and are the stale half of this page.
 ### Exploration
 Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 
-> **What this tells us:** you've touched Mondstadt, Liyue, Fontaine, Natlan and the
-> Cryo region, but never Inazuma or Sumeru. Natlan access is confirmed — so **Blazing
-> Ruins** (Skirk-era talent books) is reachable. Exploration is low everywhere, which
-> means a very large pool of unclaimed one-time Primogems and oculi is still sitting there.
+> ⚠️ **Stale — 23 Oct, at AR 33.** It said you had "never touched Inazuma or Sumeru";
+> Inazuma reputation screenshots from 7 Nov disprove the Inazuma half, and as of 9 Nov
+> the account is running **Snezhnaya** world quests. The conclusion that a large pool of
+> unclaimed one-time Primogems and oculi remains is probably still right, but **no row
+> above is safe to quote.** `reference/account.md` carries the current picture.
 
 ### Milestones ahead
 - ✅ **AR 28 passed** — Serenitea Pot needs only the quest *A New Star Approaches* now
@@ -56,7 +60,9 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
   now drop, ley line Mora roughly doubled, and bosses now reach **Lv. 75+** — which
   is the gate on **top-tier gemstones** (Shivada Jade Gemstone and the rest).
   Below WL6 only Chunks drop.
-- ⏳ **AR 50 / 55 / 58** — World Levels 7, 8 and 9. WL9 arrived in 5.0 and is the
+- ✅ **AR 50 passed — World Level 7 reached** (Enka, 10 Nov). Characters can now be
+  ascended to **Lv 90**, which AR 45 did not allow.
+- ⏳ **AR 55 / 58** — World Levels 8 and 9. WL9 arrived in 5.0 and is the
   real cap; several guides still say 8.
 - ⏳ **AR 60 is the ceiling.** Past it, Adventure EXP converts to Mora at 1:10.
 
@@ -70,8 +76,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 | [`research/02-wishes-and-primogems.md`](research/02-wishes-and-primogems.md) | Primogem income verified per source (~40 wishes/mo floor, ~61 ceiling), pity maths and Capturing Radiance, pull strategy, why the Frostbearing Tree pays no Primogems |
 | [`research/03-character-materials.md`](research/03-character-materials.md) | Full 22-character roster, investment priority, talent domain schedule, gems by element |
 | [`research/04-weapons-and-artifacts.md`](research/04-weapons-and-artifacts.md) | Best 3-star weapons, per-character builds, the AR 45 artifact rule |
-| [`research/05-current-loadouts.md`](research/05-current-loadouts.md) | **Audit of what you're actually running** — equipped weapons, crit stats, what's broken |
-| [`research/06-artifact-plan.md`](research/06-artifact-plan.md) | **Where to get goblets and crit circlets at AR 33** — Blizzard Strayer, Peak of Vindagnyr |
+| [`research/05-current-loadouts.md`](research/05-current-loadouts.md) | **Audit of what you're actually running** — equipped weapons, crit stats, what's broken. *Gear data is 28 Oct and stale; add characters to the in-game showcase to make it refreshable* |
+| [`research/06-artifact-plan.md`](research/06-artifact-plan.md) | **Artifact plan at AR 51** — Lv 90 domains guarantee a 5-star, the Strongbox is open, and the Transmuter lets you define a goblet outright |
 | [`research/07-ore-farming.md`](research/07-ore-farming.md) | Dense ore routes near waypoints — Mt. Aocang, Mt. Aozang, Brightcrown Canyon |
 | [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, the Shadow Realm shooter mode and its 475 Primogems, Red Beet and weapon diagrams |
 | [`research/09-artifact-sets.md`](research/09-artifact-sets.md) | **Set bonuses by damage / support / utility**, per-character tier tables, farming order |
@@ -111,7 +117,10 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 6. **Fischl has 284 ATK** on a Lv 20 Slingshot. Oz scales on her ATK — cheapest big fix.
 7. **Keep Noelle in the exploration party** — your only usable claymore.
 8. **Sunday is talent-book day.** Every book from every region is available.
-9. **Don't farm artifacts until AR 45.** 5-star artifacts don't drop before then.
+9. ~~**Don't farm artifacts until AR 45.**~~ **Moot — the account is AR 51.** 5-star
+   artifacts drop, the Strongbox is open, and the guaranteed-drop tier is active.
+   Findings 1–8 above are from the **23–28 Oct** reads and have not been re-verified
+   against the AR 51 account; treat them as leads, not facts.
 
 ---
 
@@ -119,7 +128,9 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 
 | Deadline | Item |
 |---|---|
-| **2026-11-03** | Free standard 5-star selector expires — needs only a login |
+| ~~**2026-11-03**~~ | ~~Free standard 5-star selector expires~~ — **window closed**, see `research/02-wishes-and-primogems.md` |
+
+*Nothing is currently time-sensitive.*
 
 ---
 
