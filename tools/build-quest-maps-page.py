@@ -17,9 +17,21 @@ import sys
 
 DATA = os.path.join("reference", "data", "quest-maps.json")
 
-# Mondstadt's level curve, confirmed against Liyue's in-game bar ("40/460" at
-# Level 4). Cumulative EXP. Liyue caps at 8; the others run to 10.
-CURVE = [0, 0, 400, 820, 1260, 1720, 2200, 2700, 3220, 3800, 4400]
+# Cumulative EXP per Reputation Level. THERE ARE TWO CURVES, verified 11 Nov 2026
+# against the wiki's per-region tables and confirmed by Inazuma's in-game bar
+# reading "130/750" at Level 7.
+#
+# Mondstadt and Liyue step 400/420/440/460/480/500/520 and cap at Level 8.
+# Inazuma, Sumeru, Fontaine and Natlan step 450/500/550/600/650/700/750/800/850
+# and run to Level 10 - a steeper curve, so the later regions cost far more.
+# Using the Mondstadt curve for Inazuma understates Level 9 by 1,200 EXP.
+CURVE_EARLY = [0, 0, 400, 820, 1260, 1720, 2200, 2700, 3220]
+CURVE_LATE = [0, 0, 450, 950, 1500, 2100, 2750, 3450, 4200, 5000, 5850]
+CURVE = CURVE_EARLY  # back-compat; prefer curve_for(region)
+
+
+def curve_for(region):
+    return CURVE_EARLY if region in ("Mondstadt", "Liyue") else CURVE_LATE
 
 # Per region: what the player is walking toward, and where they stand.
 # "confirmed" is only set where a Reputation screen has actually been read -
@@ -35,10 +47,14 @@ REGIONS = {
     "Inazuma": {
         "target_exp": 5000,
         "target": "Level 9 and the <b>Electro Treasure Compass</b>",
-        # STALE as of 7 Nov 2026 - nine Inazuma quests are claimed, so this is
-        # no longer 0 and no longer printed. Left here only so the key exists;
-        # refresh it from the Battle Chronicle before trusting it again.
-        "explored": "0%",
+        # Read off the in-game Reputation screen 11 Nov 2026: Level 7, 130/750
+        # into Level 8, Inazuma Quests 12/45, World Exploration 55%.
+        # Level 8 (4,200) pays the Electroculus Resonance Stone; the compass is
+        # Level 9 (5,000). That 5,000 is correct - it is the LATE curve.
+        "confirmed": 7,
+        "confirmed_note": "Level 7 with 130/750 into Level 8, read in game 11 Nov 2026. "
+                          "Level 8 pays the Electroculus Resonance Stone.",
+        "explored": "55%",
     },
     "Sumeru": {
         "target_exp": 5000,

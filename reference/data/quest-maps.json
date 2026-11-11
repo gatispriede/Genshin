@@ -1922,7 +1922,16 @@
    ],
    "dlg": 9043,
    "steps": 4,
-   "maps": []
+   "maps": [
+    {
+     "file": "world-quest-gourmet-supremos-assemble-start-location.png",
+     "context": false
+    },
+    {
+     "file": "world-quest-gourmet-supremos-assemble-start-location-context.png",
+     "context": true
+    }
+   ]
   },
   {
    "name": "Yae Publishing House's Invitation",
@@ -2207,6 +2216,10 @@
      "context": false
     },
     {
+     "file": "world-quest-the-seventh-samurai-start-location.png",
+     "context": false
+    },
+    {
      "file": "npc-location-xavier-3-context.png",
      "context": true
     }
@@ -2452,10 +2465,6 @@
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-2-start-location.png",
      "context": false
-    },
-    {
-     "file": "world-quest-the-phaethon-s-syrtos-start-location-context.png",
-     "context": true
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-1-start-location-context.png",
