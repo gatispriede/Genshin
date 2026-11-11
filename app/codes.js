@@ -53,6 +53,8 @@
           (c.status === 'permanent' ? ' <span class="code__perm">permanent</span>' : '') +
         '</td>' +
         '<td>' + esc(c.rewards) +
+          (c.expires ? '<em class="code__expires">Expires ' + esc(c.expires) + '</em>' : '') +
+          (c.conflict ? '<em class="code__conflict">\u26a0 ' + esc(c.conflict) + '</em>' : '') +
           (c.note ? '<em>' + esc(c.note) + '</em>' : '') + '</td>' +
         '<td class="code__when">' + esc(dateText) + '</td>' +
         '</tr>';
