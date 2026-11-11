@@ -5,7 +5,7 @@
   "web search cross-check, same day",
   "gachafeed.moe/genshin/codes — the 2026-11-01 baseline"
  ],
- "_note": "Codes perish. This is a timestamped snapshot, not a live feed. Re-check before trusting it. Account state on 2026-11-01: every code in THAT snapshot was already redeemed. Codes added on 2026-11-11 were not in that snapshot, so they are the ones worth trying — the six marked added 2026-08 / 2026-09 predate the baseline and were simply missed by the tracker, so their redemption status on this account is genuinely unknown. A dead or already-used code just errors, so there is no cost to trying any of them.",
+ "_note": "Codes perish, and aggregator 'active' lists run stale. Verified in game on 2026-11-11: of the nine codes this file gained that day, only KeepUpWithMitya and MIJIQ23V2437 redeemed — the other seven returned expired, including all three untried members of the GS71X group. Every code in the 2026-11-01 baseline had already been redeemed. So: nothing in this file is currently claimable, and the next real opportunity is the 7.3 Special Program. A dead or used code only errors, so trying one is always free.",
  "_next": "7.3 Special Program, roughly early December 2026 — three codes, ~300 Primogems, alive for about 24 hours",
  "_howto": "In game: Paimon Menu → Settings → Account → Redeem Code. Or the HoYoverse web redemption page. Needs AR 10; you are 45.",
  "codes": [
@@ -16,7 +16,8 @@
    "added": "2026-11-04",
    "status": "active",
    "expires": "2026-11-15 16:00 UTC",
-   "note": "7.2 'Keep Up With Mitya!' event code. Hard expiry — the only one here with a published death date. Two sources agree."
+   "note": "REDEEMED 2026-11-11 — confirmed working in game by the account holder. 7.2 'Keep Up With Mitya!' event code. Hard expiry — the only one here with a published death date. Two sources agree.",
+   "redeemed": "2026-11-11"
   },
   {
    "code": "MIJIQ23V2437",
@@ -24,91 +25,100 @@
    "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
    "added": "2026-11-04",
    "status": "active",
-   "note": "Two sources agree."
+   "note": "REDEEMED 2026-11-11 — confirmed working in game by the account holder. Two sources agree.",
+   "redeemed": "2026-11-11"
   },
   {
    "code": "CDOF4X83H7X2",
    "primogems": 0,
    "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
    "added": "2026-11-04",
-   "status": "active",
-   "note": "SINGLE SOURCE (wiki + KodeGG only). Costs nothing to try."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". SINGLE SOURCE (wiki + KodeGG only). Costs nothing to try."
   },
   {
    "code": "YOAL3V36XHS7",
    "primogems": 0,
    "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
    "added": "2026-09-02",
-   "status": "active",
-   "note": "On the wiki's active list with unknown expiry, but was never in this file — the 1 Nov tracker missed it. Predates the snapshot, so redemption status on this account is unknown."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". On the wiki's active list with unknown expiry, but was never in this file — the 1 Nov tracker missed it. Predates the snapshot, so redemption status on this account is unknown."
   },
   {
    "code": "DUGODWKRHAKDNJ",
    "primogems": 30,
    "rewards": "30 Primogems · 10,000 Mora · 3 Hero's Wit · 3 Mystic Enhancement Ore",
    "added": "2026-08-31",
-   "status": "active",
-   "note": "Same: on the wiki, never in this file. Worth trying."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". Same: on the wiki, never in this file. Worth trying."
   },
   {
    "code": "BALLETCOLLAB",
    "primogems": 30,
    "rewards": "30 Primogems · 10,000 Mora · 3 Hero's Wit · 3 Mystic Enhancement Ore",
    "added": "2026-08-16",
-   "status": "active",
-   "note": "Ballet collaboration code. Same: on the wiki, never in this file."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". Ballet collaboration code. Same: on the wiki, never in this file."
   },
   {
    "code": "GS71XAVWDS",
    "primogems": 0,
    "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
    "added": "2026-09-15",
-   "status": "active",
-   "note": "GROUP CODE with GS71XDYGEO / GS71XYNSYJ / GS71XOXYLG — redeeming any one makes the others unusable. This file only ever held GS71XYNSYJ."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". GROUP CODE with GS71XDYGEO / GS71XYNSYJ / GS71XOXYLG — redeeming any one makes the others unusable. This file only ever held GS71XYNSYJ."
   },
   {
    "code": "GS71XDYGEO",
    "primogems": 0,
    "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
    "added": "2026-09-15",
-   "status": "active",
-   "note": "Sibling of the GS71X group — see GS71XAVWDS."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". Sibling of the GS71X group — see GS71XAVWDS."
   },
   {
    "code": "GS71XOXYLG",
    "primogems": 0,
    "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
    "added": "2026-09-15",
-   "status": "active",
-   "note": "Sibling of the GS71X group — see GS71XAVWDS."
+   "status": "expired",
+   "note": "Tried in game 2026-11-11 and reported expired by the account holder. First-hand, so this overrides the wiki, which still listed it under Active Codes with expiry \"unknown\". Sibling of the GS71X group — see GS71XAVWDS."
   },
   {
    "code": "PJ2KEBRAYSRM",
    "primogems": 60,
    "rewards": "60 Primogems · 5 Adventurer's Experience",
    "added": "2026-10-23",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "NEEIJB764CA3",
    "primogems": 60,
    "rewards": "60 Primogems",
    "added": "2026-10-04",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "Y6JYMKV6JKSL",
    "primogems": 60,
    "rewards": "60 Primogems · 5 Adventurer's Experience",
    "added": "2026-09-24",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "6LS3F3LS5K87",
    "primogems": 20,
    "rewards": "20 Primogems · 160 Geode of Replication",
    "added": "2026-10-02",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "GENSHINGIFT",
@@ -116,29 +126,36 @@
    "rewards": "50 Primogems · 3 Hero's Wit",
    "added": "permanent",
    "status": "permanent",
-   "note": "Never expires. Most accounts have already used it — try it anyway, a used code just errors.",
-   "conflict": "Disputed: one tracker reports it hit its usage cap in May 2026, another says it works intermittently. Unresolved as of 2026-11-11."
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed. Never expires. Most accounts have already used it — try it anyway, a used code just errors.",
+   "conflict": "Disputed: one tracker reports it hit its usage cap in May 2026, another says it works intermittently. Unresolved as of 2026-11-11.",
+   "redeemed": "2026-11-01"
   },
   {
    "code": "OKTCV81F9H8D",
    "primogems": 0,
    "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
    "added": "2026-10-14",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "DATG5HG1PL89",
    "primogems": 0,
    "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
    "added": "2026-09-24",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "PNKZ3WLNN8G6",
    "primogems": 0,
    "rewards": "Teachings of Charity ×5 · Fortitude ×5 · Glory ×5",
    "added": "2026-09-25",
-   "status": "active"
+   "status": "active",
+   "redeemed": "2026-11-01",
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed."
   },
   {
    "code": "NEEI8A8341OW",
@@ -146,7 +163,8 @@
    "rewards": "rewards not published by the tracker",
    "added": "2026-09-30",
    "status": "active",
-   "note": "Listed as active but with no reward detail — costs nothing to try."
+   "note": "Redeemed on or before 2026-11-01 — carried from that snapshot, which recorded the whole list as already claimed. Listed as active but with no reward detail — costs nothing to try.",
+   "redeemed": "2026-11-01"
   },
   {
    "code": "HOUROFRUIN",
@@ -226,7 +244,7 @@
    "rewards": "—",
    "added": "",
    "status": "expired",
-   "conflict": "Marked expired here on 2026-11-01, but the Fandom Promotional Code page still lists it under Active Codes with expiry 'unknown' as of 2026-11-11. Unresolved — trying it costs nothing."
+   "conflict": "RESOLVED 2026-11-11: its three siblings were tried in game and came back expired, so the whole GS71X group is dead. The \"expired\" status recorded here on 1 Nov was right and the wiki's Active Codes listing was stale."
   }
  ]
 }
