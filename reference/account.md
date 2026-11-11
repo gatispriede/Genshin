@@ -86,6 +86,13 @@ Gear read per-slot on 28 Oct for the top twelve.
 > Varesa's A4 (*The Hero Twice-Returned*, +35% ATK) from roughly **67% uptime on one stack
 > to near-permanent**. Worth ~+18% on her biggest hit — see `big-numbers.html#nightsoul`.
 > Re-pull the roster to confirm her level and constellation.
+>
+> **How this account picks teams:** the exploration party is chosen for *utility*, not
+> damage — Kachina rides Turbo Twirly for climbing, and members get swapped by need as
+> the terrain changes. So seeing a character in the overworld party says nothing about
+> the combat roster. The Nightsoul Burst pairing above is an option for a **combat**
+> team with Varesa, not a passive benefit of owning Kachina. Advice that assumes one
+> fixed party is wrong here.
 
 **Standing facts about this roster**
 
