@@ -45,8 +45,8 @@
   {
    "quest": "Divine Plant of the Depths",
    "place": "Bourou Village, Watatsumi Island, Inazuma",
-   "how": null,
-   "source": null,
+   "how": "Start by talking to Komaki, the Bourou Village Elder, at the start pin in Bourou Village on Watatsumi Island.",
+   "source": "observed in game 11 Nov 2026 (wiki states no giver)",
    "has_start_shot": true
   },
   {
