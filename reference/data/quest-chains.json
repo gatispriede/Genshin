@@ -2050,5 +2050,29 @@
    "requirement": "",
    "note": ""
   }
- ]
+ ],
+ "_resetGated": {
+  "Through the Mists": {
+   "region": "Inazuma",
+   "note": "Quests in this series require the DAILY RESET to pass after completing the previous one. The chain cannot be cleared in a sitting - it is a background task that advances one step a day.",
+   "requires": "Seirai Stormchasers",
+   "order": [
+    "A Particularly Particular Author",
+    "Octave of the Maushiro",
+    "The Sea of Fog and the Rite of the Trees",
+    "The Sun-Wheel and Mt. Kanna"
+   ],
+   "paysReputation": [
+    "The Sun-Wheel and Mt. Kanna"
+   ],
+   "followUp": [
+    "The Saga of Mr. Forgetful"
+   ],
+   "followUpPaysReputation": [
+    "The Saga of Mr. Forgetful"
+   ],
+   "source": "Fandom /Through the Mists, read 11 Nov 2026"
+  }
+ },
+ "_resetGatedNote": "Series listed here are gated by daily reset between parts, so their length score understates them badly: a 3-part tail is 3 days minimum regardless of how short each part reads. Check this before telling anyone to 'just finish the chain'. Run reset-gated chains in parallel with ungated quests, never instead of them."
 }
