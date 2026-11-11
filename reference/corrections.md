@@ -244,6 +244,32 @@ code costs nothing but a moment.
 Useful corollary: because trying is free, a wrong guess here is cheap and worth
 making. The failure was in how it was framed, not in surfacing the codes.
 
+## Gave a quest list without the one fact that makes it work (11 Nov)
+
+I ranked the shortest Inazuma reputation quests, mapped them, published the maps —
+and never said that **finishing them awards nothing at the time**. The EXP is banked
+and has to be collected from the Reputation NPC. The account holder did the quests,
+saw the bar not move, and reported that none of them paid.
+
+The galling part: `verified-facts.md` already said so, in a line I had read earlier
+in the same session while pulling resin costs out of that very file. I quoted the
+page's weekly-Request cap from four lines above it and walked straight past the claim
+mechanic.
+
+**What made it invisible.** I was answering "which are shortest", so I checked length,
+gates and prerequisites — everything that decides *which quest to pick*. The claim step
+is not a property of any quest, so nothing in the per-quest data could surface it. It
+lives one level up, in how the system pays out.
+
+**The rule.** Before handing over a list of things to go and do, ask separately: *what
+does the reward actually require, beyond doing the thing?* Length, gates and
+prerequisites answer "can I start it" and "how long is it". They never answer "how do I
+get paid". Those are different questions and the second one has to be asked on purpose.
+
+Also recorded, because it was missing entirely: the Inazuma Reputation NPC is
+**Madarame Hyakubei**. Only Mondstadt's and Liyue's were in the file, in a section
+whose own heading warns that Katheryne is not the Reputation NPC.
+
 ---
 
 ## Patterns
