@@ -2125,5 +2125,22 @@
     "payoff": "Completing it unlocks Enkanomiya's southernmost Teleport Waypoint and the achievement N-Thousand Leagues Under the Sea."
    }
   }
+ },
+ "_plan": {
+  "decided": "11 Nov 2026",
+  "plan": "Switch to storyline now; return to reputation next week and take Level 9 and the Electro Treasure Compass from weekly Bounties rather than quests.",
+  "why": "620 to Level 9. Three 5-star Bounties pay 600 + 90,000 Mora in a week; six world quests pay the same reputation for far more time.",
+  "nextWeek": [
+   "Hyakubei -> Bounties. Take the highest-value one, complete it, and the list refreshes - repeat for all 3 claims.",
+   "Then 3 Requests at 80 each if the compass is still short.",
+   "Only then quests."
+  ],
+  "storylineOverlap": "Through the Mists on Tsurumi is BOTH storyline and reputation: it is reset-gated one step per day, and ends in The Sun-Wheel and Mt. Kanna (100) with The Saga of Mr. Forgetful (100) after it. Advancing it daily during storyline weeks costs nothing extra and banks 200.",
+  "loose": [
+   "Treatment on the Island - if started, step 4 needs 18:00-21:00 in game.",
+   "The Entrance to Tokoyo - worth finishing for Enkanomiya's southernmost waypoint, so later trips skip the descent.",
+   "Inazuma exploration 55%; the 60% milestone pays 200."
+  ],
+  "unverified": "The weekly reset day/time for Bounties and Requests is not stated on the Reputation page. Trounce Domain claims reset Monday 04:00 server time and these likely match, but that is an assumption."
  }
 }
