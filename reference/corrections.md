@@ -213,6 +213,37 @@ Claimed I could not produce one. True, and correctly stated — but I should hav
 reached for **published decks with existing share codes** much sooner instead
 of hand-building a list from card text.
 
+## Two agreeing sources still got 7 of 9 codes wrong (11 Nov)
+
+I checked `reference/data/codes.json` against the Fandom *Promotional Code* page
+and cross-checked it with a web search, found nine codes the file was missing,
+and reported them. The account holder redeemed them the same day:
+**two worked, seven came back expired.**
+
+The two that worked — `KeepUpWithMitya` and `MIJIQ23V2437` — were the two added
+after the file's 1 Nov baseline. Everything older was dead, including all three
+untried members of the `GS71X` group, which settles a conflict I had logged as
+unresolved: the file's "expired" on `GS71XYNSYJ` was right and the wiki's
+*Active Codes* listing was stale.
+
+**What I actually got wrong.** Not the sourcing — the confidence. The wiki lists
+a code as active until someone edits it, and "expiry: unknown" means *nobody
+recorded a death date*, not *this is alive*. I treated absence of an expiry as
+evidence of life. The one code I flagged as single-source and low-confidence,
+`CDOF4X83H7X2`, was dead; so were five I had not flagged at all. My confidence
+markings were not wrong where I made them, they were missing where it mattered.
+
+**The rule this refines.** Pattern 2 below says one source is a hypothesis and
+two agreeing is a fact. That holds for stable facts. For **perishable** ones —
+codes, banners, event windows — two agreeing sources are still only a
+hypothesis, because both can be downstream of the same stale edit and neither
+re-tests anything. The only validation is redemption. So: report perishable
+finds as *candidates to try*, never as *available*, and say plainly that a dead
+code costs nothing but a moment.
+
+Useful corollary: because trying is free, a wrong guess here is cheap and worth
+making. The failure was in how it was framed, not in surfacing the codes.
+
 ---
 
 ## Patterns

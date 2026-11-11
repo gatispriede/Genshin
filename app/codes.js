@@ -113,7 +113,7 @@
     var out = document.getElementById('codes-total');
     if (!out) return;
     var live = d.codes.filter(function (c) { return c.status !== 'expired'; });
-    var left = live.filter(function (c) { return !used[c.code]; });
+    var left = live.filter(function (c) { return !used[c.code] && !c.redeemed; });
     var gems = left.reduce(function (a, c) { return a + (c.primogems || 0); }, 0);
     out.innerHTML = left.length
       ? '<b>' + gems + ' Primogems</b> still unclaimed across <b>' + left.length +
