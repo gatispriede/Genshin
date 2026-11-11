@@ -69,5 +69,6 @@
   "The Gourmet Supremos: On the Road",
   "The Gourmet Supremos: The Importance of Eating Well"
  ],
- "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list."
+ "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list.",
+ "_inazuma_status": "In-game Reputation screen, 11 Nov 2026: Reputation Level 7, 130/750 into Level 8. Inazuma Quests 12/45. World Exploration 55%. Weekly Bounties 3/3 and Requests 3/3 already spent this week. Total EXP is therefore 3,580 - far above the 1,500 the 12 claimed quests account for, because Bounties, Requests and the 20%/40% exploration milestones have been feeding it all along. Quest EXP alone is NOT the reputation total; do not infer a level from it."
 }

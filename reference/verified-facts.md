@@ -87,6 +87,16 @@ World Exploration **200** each at 20% / 40% / 60%.
 Liyue's menu opens after Archon Ch. I Act II + AR 25 + the world quest
 *Ministry Missions*.
 
+> **Two different level curves — verified 11 Nov 2026 against the wiki's per-region
+> tables and confirmed by Inazuma's in-game bar reading "130/750" at Level 7.**
+> Mondstadt and Liyue step 400/420/440/460/480/500/520 and cap at **Level 8**.
+> **Inazuma, Sumeru, Fontaine and Natlan step 450/500/550/600/650/700/750/800/850**
+> and run to **Level 10** — a steeper curve, so the later regions cost far more.
+> Inazuma totals: 450 · 950 · 1,500 · 2,100 · 2,750 · 3,450 · **4,200 (Electroculus
+> Resonance Stone)** · **5,000 (Electro Treasure Compass)** · 5,850.
+> Applying the Mondstadt curve to Inazuma understates Level 9 by **1,200 EXP** —
+> `tools/build-quest-maps-page.py` did exactly that until it was fixed.
+
 **Mondstadt levels** (cumulative EXP)
 
 | Lv | Total | Reward |

@@ -34,7 +34,12 @@ OUT = os.path.join("reference", "data", "quest-maps.json")
 # Coverage comes from two places, because neither alone is complete: the quest
 # page's own "Start Location" shot, and - for the ~half of quests that have
 # none - the giver NPC's page, which almost always carries "NPC Location X".
-WANTED = re.compile(r"([A-Za-z0-9 ,'\.\-]*?Location[^|\]\n=]*?\.png)", re.I)
+# The character class must cover every character a quest title can contain, or a
+# filename is silently truncated at the first one it misses and the image is lost.
+# "!" cost us World Quest Gourmet Supremos, Assemble! Start Location.png, which
+# matched as " Start Location.png" and resolved to nothing. Quest titles also carry
+# ? : " and the typographic apostrophe.
+WANTED = re.compile(r"([A-Za-z0-9 ,'\"\.\-!?:\u2019]*?Location[^|\]\n=]*?\.png)", re.I)
 
 
 def curl(url, binary=False):
