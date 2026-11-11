@@ -2089,5 +2089,28 @@
    "source": "Fandom /Harrison"
   }
  },
- "_timeGatedNote": "Time-of-day and next-day gates are invisible to the dlg+steps length score. Check here before calling a quest short: a 20.6 that needs an 18:00-21:00 window tomorrow is worse than a 33.7 you can finish now."
+ "_timeGatedNote": "Time-of-day and next-day gates are invisible to the dlg+steps length score. Check here before calling a quest short: a 20.6 that needs an 18:00-21:00 window tomorrow is worse than a 33.7 you can finish now.",
+ "_series": {
+  "The Moon-Bathed Deep": {
+   "region": "Inazuma",
+   "startsWith": "Talk to Tsuyuko, north of Mouun Shrine on Watatsumi Island. Requires A New Star Approaches and Ritou Escape Plan - both done, so this is startable now.",
+   "order": [
+    "The Moon-Bathed Deep",
+    "\"Eye of Watatsumi\"",
+    "\"Fang of Watatsumi\"",
+    "\"Fin of Watatsumi\"",
+    "\"Tail of Watatsumi\"",
+    "\"Heart of Watatsumi\""
+   ],
+   "thenChapter": "The Still Water's Flow",
+   "paysReputation": {
+    "\"Heart of Watatsumi\"": 100,
+    "The Still Water's Flow": 100
+   },
+   "unlocks": "Enkanomiya, via The Still Water's Flow. That opens The Subterranean Trials of Drake and Serpent, and behind it Collection of Dragons and Snakes, Lotus Eater, The Phaethons' Syrtos and The Three Great Martial Trials - five more reputation quests.",
+   "note": "Seven quests for 200 reputation directly, but it is the single biggest unlock left: five further quests sit behind it. Everything else still outstanding is gated on chains like this one.",
+   "repAmtConflict": "The wiki infobox gives \"Heart of Watatsumi\" repAmt=20, but the in-game Not-achieved list shows it at 100. The game screen wins; flagged in case the wiki value turns out to be right.",
+   "source": "Fandom /The Moon-Bathed Deep, /The Still Water's Flow, read 11 Nov 2026"
+  }
+ }
 }
