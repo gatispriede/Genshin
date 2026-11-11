@@ -341,6 +341,28 @@ so `Orobashi's Legacy: Part V` satisfies "Orobashi's Legacy series", and carries
 an explicit allowlist of story quests known finished from progress rather than
 from the reputation list.
 
+## Ran a counter off chat instead of the screen (11 Nov)
+
+I tracked the user's reputation by incrementing my own tally every time they
+said "done" or "nice next". After six of those the Reputation screen read
+**16/45, Level 7, 530/750** — 3,980 EXP. My record said 17 claimed and 4,080.
+
+Two things made it drift. Messages like "great next" are ambiguous between *I
+finished one, what's next* and *great — what's next*, and I resolved them the
+flattering way every time. And the in-game counter tracks **claimed**, not
+completed, so even a genuinely finished quest does not move it until the user
+walks back to Madarame Hyakubei. My tally had no way to represent
+"done but not claimed", so it recorded the optimistic state as fact.
+
+**The rule, already written in this very file.** Pattern 4 says *the account is
+the authority*. I had the authority available — the user had been sending
+screenshots all session — and I still preferred my own arithmetic because it was
+cheaper than asking. A derived counter must never outrank a direct reading, and
+when the two disagree the derived one is wrong by default.
+
+`claimed.json` now carries the warning in `_inazuma_status`: do not increment
+this list from conversation, only from the screen.
+
 ---
 
 ## Patterns
