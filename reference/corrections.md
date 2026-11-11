@@ -309,6 +309,38 @@ Fixed: new `tools/fetch-quest-starts.py` records how each quest really begins,
 `fetch-quest-maps.py` now ranks a Start Location shot above an NPC shot, and the
 filename regex no longer drops names containing `!`, `?`, `:` or quotes.
 
+## Substring-matched a conjunction (11 Nov)
+
+I sent the user to Aratani for *Yae Publishing House's Invitation*. Right NPC,
+right spot, map correct — and the quest would not start, because it needs
+**Bookworm Swordsman** first.
+
+The requirement string is `"Complete Bookworm Swordsman and Ritou Escape Plan"`.
+My filter for "is this gated?" was:
+
+    req and "Ritou Escape Plan" not in req
+
+Ritou Escape Plan *is* in the string, so the test said ungated. But the string is
+a **conjunction** — it names two prerequisites, and I only looked for one. A
+substring test answers "is this name mentioned", never "is this the whole
+condition".
+
+**What it cost.** Not one bad recommendation but a whole bad picture. Running a
+proper check, only **6 of 31** outstanding Inazuma quests are startable; I had
+been ranking as though most were. Three of the four I had called "clear of
+gates" over the last several turns were not.
+
+**The rule.** When a field is prose written for humans, parse it or quote it —
+never pattern-match a fragment of it and treat the match as the answer. If
+parsing is too fragile, show the user the raw requirement and let them judge.
+
+Fixed by `tools/quest-gates.py`, which splits requirements on `and` / `;` /
+commas, strips the "Complete"/"Start" verbs and "N times" tails, and checks every
+name against claimed.json. It also credits a claimed series part for its series,
+so `Orobashi's Legacy: Part V` satisfies "Orobashi's Legacy series", and carries
+an explicit allowlist of story quests known finished from progress rather than
+from the reputation list.
+
 ---
 
 ## Patterns
