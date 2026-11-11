@@ -2110,7 +2110,14 @@
    "unlocks": "Enkanomiya, via The Still Water's Flow. That opens The Subterranean Trials of Drake and Serpent, and behind it Collection of Dragons and Snakes, Lotus Eater, The Phaethons' Syrtos and The Three Great Martial Trials - five more reputation quests.",
    "note": "Seven quests for 200 reputation directly, but it is the single biggest unlock left: five further quests sit behind it. Everything else still outstanding is gated on chains like this one.",
    "repAmtConflict": "The wiki infobox gives \"Heart of Watatsumi\" repAmt=20, but the in-game Not-achieved list shows it at 100. The game screen wins; flagged in case the wiki value turns out to be right.",
-   "source": "Fandom /The Moon-Bathed Deep, /The Still Water's Flow, read 11 Nov 2026"
+   "source": "Fandom /The Moon-Bathed Deep, /The Still Water's Flow, read 11 Nov 2026",
+   "sealSolutions": {
+    "\"Eye of Watatsumi\"": "Elemental Sight finds 3 Elemental Orbs; disperse each with PYRO, CRYO, ANEMO or GEO. Electro and Hydro DO NOT work - Hydro visually Electro-Charges the orb, which looks like progress and is not. Enemies spawn but need not be killed. CLEARED 11 Nov 2026.",
+    "\"Fang of Watatsumi\"": "Protect a Ley Line Monolith through 5 waves. The only one of the four that is a straight fight, so bring the damage.",
+    "\"Fin of Watatsumi\"": "Rotate the fish statues so a blue line of the circle shows below, then interact with the Mysterious Pillar. The two discs do NOT need to be aligned at the same time, which is the part people fight against.",
+    "\"Tail of Watatsumi\"": "Use an Electrogranum to light 6 Electric Lamps, then beat a Fatui ambush (Hydrogunner, Cryogunner, Pyroslinger).",
+    "_note": "Eye, Fang, Fin and Tail can be done in ANY order; all four Spirit Pearls are needed before the fifth seal, the Heart, opens."
+   }
   }
  }
 }
