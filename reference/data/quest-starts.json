@@ -1,0 +1,919 @@
+{
+ "Inazuma": [
+  {
+   "quest": "\"Heart of Watatsumi\"",
+   "place": "Sangonomiya Shrine, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "\"The Seventh Samurai\"",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Battle of Revenge",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Chisato's Letter",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Clean House",
+   "place": "Sangonomiya Shrine, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Collection of Dragons and Snakes",
+   "place": "The Narrows, Enkanomiya, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Divine Plant of the Depths",
+   "place": "Bourou Village, Watatsumi Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Dreams of Sword Art",
+   "place": "Kannazuka, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Fate of a Fighter",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Fertilizer... Salesperson?",
+   "place": "Watatsumi Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Gazing Three Thousand Miles Away",
+   "place": "Jakotsu Mine, Yashiori Island",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Gourmet Supremos, Assemble!",
+   "place": "Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Hiromi's Watch",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Home Lies Over the Ocean",
+   "place": "Liyue Harbor, Liyue",
+   "how": "is a World Quest obtained from Atsuko in Liyue Harbor.",
+   "source": "lede sentence",
+   "has_start_shot": false
+  },
+  {
+   "quest": "In Another Land",
+   "place": "Ritou, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "International Travel Log",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Katheryne in Inazuma",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Lotus Eater",
+   "place": "The Serpent's Heart, Enkanomiya, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "O Archon, Have I Done Right?",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Omnipresence Over Mortals",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Orobashi's Legacy: Part V",
+   "place": "Fort Fujitou",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Relics of Seirai",
+   "place": "Koseki Village, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Reminiscence of Seirai",
+   "place": "Seirai Island, Inazuma",
+   "how": "Start the quest by picking up the near a shrine northeast of Seirai Island's Statue of The Seven.",
+   "source": "Starting Location section",
+   "has_start_shot": true
+  },
+  {
+   "quest": "Sakura Arborism",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Seirai Stormchasers: Part IV",
+   "place": "Seirai Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Solitary Sea-Beast",
+   "place": "Watatsumi Island, Inazuma",
+   "how": "Start the quest by talking to Kumi at the beach south of Watatsumi Island's Statue of The Seven.",
+   "source": "Starting Location section",
+   "has_start_shot": false
+  },
+  {
+   "quest": "Stillness, the Sublimation of Shadow",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Storytelling Method",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Tatara Tales: The Last Act",
+   "place": "Tatarasuna, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Art of Horticulture",
+   "place": "Kamisato Estate, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Farmer's Treasure",
+   "place": "Jinren Island, Narukami Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Gourmet Supremos: On the Road",
+   "place": "Inazuma City, Narukami Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "The Gourmet Supremos: The Importance of Eating Well",
+   "place": "Inazuma City, Narukami Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "The Immovable God and the Eternal Euthymia",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Narukami Trail",
+   "place": "Asase Shrine, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Phaethons' Syrtos",
+   "place": "Evernight Temple, Enkanomiya, Inazuma",
+   "how": "To start this quest requires the completion of The Subterranean Trials of Drake and Serpent.",
+   "source": "lede sentence",
+   "has_start_shot": true
+  },
+  {
+   "quest": "The Ritou Road",
+   "place": "Ritou, Inazuma",
+   "how": "To start this quest, interact with (View) the trapdoor behind the house on the south side of Ritou, where Harrison usually stands.",
+   "source": "lede sentence",
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Saga of Mr. Forgetful",
+   "place": "Tsurumi Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Still Water's Flow",
+   "place": "Sangonomiya Shrine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Subterranean Trials of Drake and Serpent",
+   "place": "Enkanomiya",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Sun-Wheel and Mt. Kanna",
+   "place": "Tsurumi Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Three Great Martial Trials",
+   "place": "Enkanomiya",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Treatment on the Island",
+   "place": "Yashiori Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Yae Publishing House's Invitation",
+   "place": "Inazuma City, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Yougou Cleansing",
+   "place": "Konda Village, Narukami Island, Inazuma",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  }
+ ],
+ "Sumeru": [
+  {
+   "quest": "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"",
+   "place": "Land of Grounded Dreams, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Delicacy for Nara",
+   "place": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Prayer for Rain on the Fecund Land",
+   "place": "Apam Woods, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Short Encounter with a Rare Bird",
+   "place": "Ashavan Realm, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Adventure Takes Courage! (World Quest)",
+   "place": "Sumeru City, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Afratu's Dilemma",
+   "place": "Valley of Dahri, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Akasha Pulses, the Kalpa Flame Rises",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "An Unwavering Culinary Dream",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Blooming Sands",
+   "place": "Aaru Village, Sumeru",
+   "how": "* Start the quest by talking to Raef during daytime.",
+   "source": "Starting Location section",
+   "has_start_shot": false
+  },
+  {
+   "quest": "Cost-Effective Hook",
+   "place": "Port Ormos, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Courage Is in the Heart",
+   "place": "Lokapala Jungle, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Dreams Beneath the Searing Sand",
+   "place": "Sobek Oasis, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Dreams, Emptiness, Deception",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Dual Evidence",
+   "place": "Aaru Village, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Dune-Entombed Fecundity: Part III",
+   "place": "Desert of Hadramaveth, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Even Beasts Stumble",
+   "place": "Yasna Monument, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "For a Dream I Tarry",
+   "place": "Lokapala Jungle, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Garcia's Paean: A Gift of Compatibility",
+   "place": "Treasures Street, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Gourmet Supremos: Within Our Duties",
+   "place": "Port Ormos, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Join the Eremites and Embrace a Wonderful New Life!",
+   "place": "Aaru Village, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "King Deshret and the Three Magi",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Memory's Final Chapter",
+   "place": "Mawtiyima Forest, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Purbiruni's Commandment",
+   "place": "The Akademiya, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Soheil's Wish",
+   "place": "Aaru Village, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Static Views, Part 2",
+   "place": "",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Eternal Dream, Ever Lush",
+   "place": "The Orchard of Pairidaeza, Desert of Hadramaveth, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Final Chapter",
+   "place": "Mawtiyima Forest, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Foolish Fatuus",
+   "place": "",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Hymn of Tir Yazad (Part 2)",
+   "place": "Tunigi Hollow, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Morn a Thousand Roses Brings",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Path of Papers",
+   "place": "The Akademiya, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "The Price",
+   "place": "Port Ormos, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "The Temple Where Sand Flows Like Tears",
+   "place": "The Temples Forsaken, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Through Mists of Smoke and Forests Dark",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Treasure of Wisdom: A New Plan",
+   "place": "Sumeru City, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Until Vana is Healed",
+   "place": "Ardravi Valley, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Vimana Agama",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Vimana Agama: Dev Delver Chapter",
+   "place": "Devantaka Mountain, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Where Are the Fierce Creatures?",
+   "place": "Lokapala Jungle, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars",
+   "place": "Treasures Street, Sumeru",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  }
+ ],
+ "Fontaine": [
+  {
+   "quest": "\"Hey, This Isn't Pumpkin Soup...\"",
+   "place": "Merusea Village, Fontaine",
+   "how": "To start this quest, talk to Verenata in Merusea Village, Fontaine.",
+   "source": "lede sentence",
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Certain Notice",
+   "place": "Palais Mermonia, Fontaine.",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "A Certain Stamp",
+   "place": "Palais Mermonia, <!--Court of Fontaine, Court of Fontaine Region?-->Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Certain Trifle",
+   "place": "Palais Mermonia,<!--Court of Fontaine, Court of Fontaine Region?--> Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "A Letter",
+   "place": "New Fontaine Research Institute, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "An Expected Lie",
+   "place": "Fort Charybdis Ruins, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Another Horizon of Adventure",
+   "place": "Court of Fontaine: Quartier Lyonnais, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Aqueous Tidemarks",
+   "place": "Court of Fontaine: Palais Mermonia, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "As Light Rain Falls Without Reason",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Both Brains and Brawn",
+   "place": "Administrative Area, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Cataclysm's Quickening",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Danger Lurks Everywhere in Fontaine",
+   "place": "Marcotte Station, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Daydreams Beyond Space and Time",
+   "place": "Court of Fontaine, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Echoes of the Ancient World",
+   "place": "Merusea Village, Fontaine",
+   "how": "Start the quest by talking to Verenata in Merusea Village",
+   "source": "Starting Location section",
+   "has_start_shot": false
+  },
+  {
+   "quest": "Fishing Game",
+   "place": "Merusea Village, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Fontaine Research Institute, Stagnating in the Rubble",
+   "place": "Liffey Region, Fontaine",
+   "how": "Start the quest by either talking to Fontaine's Katheryne or approaching the two s accosting Desnos on the ground floor of the Qualifications Review Representative Office.",
+   "source": "Starting Location section",
+   "has_start_shot": true
+  },
+  {
+   "quest": "Fortune Plango Vulnera",
+   "place": "Sea of Bygone Eras, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Free Verse",
+   "place": "Erinnyes Forest, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Happy Birthday",
+   "place": "Court of Fontaine Region, Fontaine",
+   "how": "Start the quest by talking to Earnshaw southeast of his house 1 in-game day after completing the .",
+   "source": "Starting Location section",
+   "has_start_shot": true
+  },
+  {
+   "quest": "Hereafter...",
+   "place": "Court of Fontaine Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Impromptu Poem of the Crimson Dawn",
+   "place": "Erinnyes Forest, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "In Search of Lost Time",
+   "place": "New Fontaine Research Institute, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Latecoming Homecoming",
+   "place": "Petrichor, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Leroy: Beautiful Friends",
+   "place": "Court of Fontaine: Vasari Passage, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Limner, Dreamer, and Robotic Dog",
+   "place": "{{LL",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Mary-Ann's Story",
+   "place": "Court of Fontaine Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Masquerade of the Guilty",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Our Purpose Is in Another Canal",
+   "place": "Liffey Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Prelude of Blancheur and Noirceur",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Questions and Answers",
+   "place": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Road to the Singularity",
+   "place": "Kuisel's Clockwork Workshop, Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Rowboat's Wake (Quest)",
+   "place": "Genesis of a Certain Micro-Universe, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Strange Stone Chronicle (Part 2)",
+   "place": "Merusea Village, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Fountain Flows Again",
+   "place": "Court of Fontaine Region, Fontaine",
+   "how": "Start the quest by inspecting the small fountain between Marcotte Station and the Fountain of Lucine.",
+   "source": "Starting Location section",
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Lone Phantom Sail",
+   "place": "{{LL",
+   "how": "Start the quest by talking to Ahes, who becomes available after completing the",
+   "source": "Starting Location section",
+   "has_start_shot": false
+  },
+  {
+   "quest": "The Three Primary Colors of the Solar Corona",
+   "place": "",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "To the Stars Shining in the Depths",
+   "place": null,
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Treacherous Light of the Depths",
+   "place": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Truly Mouthwatering!",
+   "place": "West Slopes of Mont Automnequi, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Upon a Flowery Field of Grass",
+   "place": "Court of Fontaine Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  },
+  {
+   "quest": "Villains",
+   "place": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Were It So Easy",
+   "place": "Merusea Village, Beryl Region, Fontaine",
+   "how": "To start this quest, talk to Cosanzeana in Merusea Village, Fontaine, an in-game day after completing Cosanzeana's request from the .",
+   "source": "lede sentence",
+   "has_start_shot": true
+  },
+  {
+   "quest": "Where His Life Lies",
+   "place": "Court of Fontaine: Court Region Waterway Hub, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Wish-Fulfilling Treasure Hunt",
+   "place": "Tower of Ipsissimus, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": true
+  },
+  {
+   "quest": "Within the Depths of Erinnyes",
+   "place": "Marcotte Station, Fontaine",
+   "how": null,
+   "source": null,
+   "has_start_shot": false
+  }
+ ],
+ "Natlan": []
+}

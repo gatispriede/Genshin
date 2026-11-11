@@ -270,6 +270,45 @@ Also recorded, because it was missing entirely: the Inazuma Reputation NPC is
 **Madarame Hyakubei**. Only Mondstadt's and Liyue's were in the file, in a section
 whose own heading warns that Katheryne is not the Reputation NPC.
 
+## Read a cast list as a quest giver (11 Nov)
+
+I sent the user to **Harrison** for *The Ritou Road* and **Furuya Noboru** for
+*Reminiscence of Seirai*. Neither starts their quest. The Ritou Road begins at a
+**trapdoor** behind a house in Ritou — Harrison happens to stand there, and only
+**at night**. Reminiscence of Seirai begins by **picking up an item** near a shrine
+north-east of Seirai's Statue of the Seven. The user walked to both NPCs, got
+nothing, and reported them as busts.
+
+**Where it came from.** `tools/fetch-reputation-quests.py` fills `npcs` from the
+infobox `characters` field minus Traveler and Paimon. That field is the **cast
+list** — everyone who appears — in no particular order. I read `npcs[0]` as "start
+NPC" and printed it in every ranking I gave.
+
+The wiki had the right answer the whole time, in a `==Starting Location==` section
+with its own prose and its own `World Quest X Start Location.png` screenshot. I
+never looked at it, and worse, `fetch-quest-maps.py` sorted images by name length,
+so the shorter `NPC Location X.png` beat the real start shot. Across Inazuma, Sumeru
+and Fontaine, **37 quests** were leading with a picture of a bystander.
+
+Two related finds in the same pass:
+- `Home Lies Over the Ocean` is an **Inazuma** reputation quest whose `startLocation`
+  is **Liyue Harbor**. The quest's `area` and its start are different fields and can
+  disagree; I had been using `area`.
+- The Gourmet Supremos chain interleaves paying and non-paying parts. *Assemble!*,
+  *On the Road* and *The Importance of Eating Well* pay 100 each; the four parts
+  between them pay nothing. A user doing the chain in order gets reputation on some
+  quests and not others, which looks exactly like the system being broken.
+
+**The rule.** A field named for its contents is not a field named for its role.
+`characters` lists who is in the quest; it does not say who gives it. Before telling
+someone where to go, find the field or section that actually answers *that* question
+— here `startLocation` and `==Starting Location==` — and when neither exists, say the
+start is unknown rather than promoting a cast member.
+
+Fixed: new `tools/fetch-quest-starts.py` records how each quest really begins,
+`fetch-quest-maps.py` now ranks a Start Location shot above an NPC shot, and the
+filename regex no longer drops names containing `!`, `?`, `:` or quotes.
+
 ---
 
 ## Patterns

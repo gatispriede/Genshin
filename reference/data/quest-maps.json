@@ -1814,6 +1814,10 @@
    "steps": 4,
    "maps": [
     {
+     "file": "world-quest-reminiscence-of-seirai-start-location.png",
+     "context": false
+    },
+    {
      "file": "npc-location-noboru.png",
      "context": false
     },
@@ -1834,15 +1838,11 @@
      "context": false
     },
     {
-     "file": "world-quest-reminiscence-of-seirai-start-location.png",
-     "context": false
-    },
-    {
-     "file": "npc-location-noboru-context.png",
+     "file": "world-quest-reminiscence-of-seirai-start-location-context.png",
      "context": true
     },
     {
-     "file": "world-quest-reminiscence-of-seirai-start-location-context.png",
+     "file": "npc-location-noboru-context.png",
      "context": true
     }
    ]
@@ -1996,11 +1996,11 @@
    "steps": 6,
    "maps": [
     {
-     "file": "npc-location-eboshi.png",
+     "file": "world-quest-the-three-great-martial-trials-start-location.png",
      "context": false
     },
     {
-     "file": "world-quest-the-three-great-martial-trials-start-location.png",
+     "file": "npc-location-eboshi.png",
      "context": false
     },
     {
@@ -2158,19 +2158,19 @@
    "steps": 8,
    "maps": [
     {
-     "file": "npc-location-junkichi-shigeru.png",
-     "context": false
-    },
-    {
      "file": "world-quest-storytelling-method-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-junkichi-shigeru-context.png",
-     "context": true
+     "file": "npc-location-junkichi-shigeru.png",
+     "context": false
     },
     {
      "file": "world-quest-storytelling-method-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-junkichi-shigeru-context.png",
      "context": true
     }
    ]
@@ -2212,11 +2212,11 @@
    "steps": 6,
    "maps": [
     {
-     "file": "npc-location-xavier-3.png",
+     "file": "world-quest-the-seventh-samurai-start-location.png",
      "context": false
     },
     {
-     "file": "world-quest-the-seventh-samurai-start-location.png",
+     "file": "npc-location-xavier-3.png",
      "context": false
     },
     {
@@ -2239,11 +2239,11 @@
    "steps": 11,
    "maps": [
     {
-     "file": "fate-of-a-fighter-enemy-camp-location.png",
+     "file": "world-quest-fate-of-a-fighter-start-location.png",
      "context": false
     },
     {
-     "file": "world-quest-fate-of-a-fighter-start-location.png",
+     "file": "fate-of-a-fighter-enemy-camp-location.png",
      "context": false
     },
     {
@@ -2568,19 +2568,19 @@
    "steps": 11,
    "maps": [
     {
-     "file": "npc-location-komaki.png",
-     "context": false
-    },
-    {
      "file": "world-quest-divine-plant-of-the-depths-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-komaki-context.png",
-     "context": true
+     "file": "npc-location-komaki.png",
+     "context": false
     },
     {
      "file": "world-quest-divine-plant-of-the-depths-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-komaki-context.png",
      "context": true
     }
    ]
@@ -2600,6 +2600,10 @@
    "steps": 13,
    "maps": [
     {
+     "file": "sakura-arborism-start-location.png",
+     "context": false
+    },
+    {
      "file": "thunder-sakura-1-location.png",
      "context": false
     },
@@ -2617,10 +2621,6 @@
     },
     {
      "file": "thunder-sakura-5-location.png",
-     "context": false
-    },
-    {
-     "file": "sakura-arborism-start-location.png",
      "context": false
     }
    ]
@@ -2714,19 +2714,19 @@
    "steps": 8,
    "maps": [
     {
-     "file": "npc-location-hiromi-2.png",
-     "context": false
-    },
-    {
      "file": "world-quest-hiromi-s-watch-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-hiromi-2-context.png",
-     "context": true
+     "file": "npc-location-hiromi-2.png",
+     "context": false
     },
     {
      "file": "world-quest-hiromi-s-watch-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-hiromi-2-context.png",
      "context": true
     }
    ]
@@ -2988,19 +2988,19 @@
    "steps": 3,
    "maps": [
     {
-     "file": "npc-location-khayyam.png",
-     "context": false
-    },
-    {
      "file": "world-quest-memory-s-final-chapter-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-khayyam-context.png",
-     "context": true
+     "file": "npc-location-khayyam.png",
+     "context": false
     },
     {
      "file": "world-quest-memory-s-final-chapter-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-khayyam-context.png",
      "context": true
     }
    ]
@@ -3353,19 +3353,19 @@
    "steps": 9,
    "maps": [
     {
-     "file": "npc-location-alexandra-przheva.png",
-     "context": false
-    },
-    {
      "file": "world-quest-the-price-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-alexandra-przheva-context.png",
-     "context": true
+     "file": "npc-location-alexandra-przheva.png",
+     "context": false
     },
     {
      "file": "world-quest-the-price-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-alexandra-przheva-context.png",
      "context": true
     }
    ]
@@ -3498,19 +3498,19 @@
    "steps": 18,
    "maps": [
     {
-     "file": "npc-location-arashakun.png",
-     "context": false
-    },
-    {
      "file": "world-quest-courage-is-in-the-heart-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-arashakun-context.png",
-     "context": true
+     "file": "npc-location-arashakun.png",
+     "context": false
     },
     {
      "file": "world-quest-courage-is-in-the-heart-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-arashakun-context.png",
      "context": true
     }
    ]
@@ -3898,11 +3898,11 @@
      "context": false
     },
     {
-     "file": "npc-location-cosanzeana-context.png",
+     "file": "were-it-so-easy-start-location-context.png",
      "context": true
     },
     {
-     "file": "were-it-so-easy-start-location-context.png",
+     "file": "npc-location-cosanzeana-context.png",
      "context": true
     }
    ]
@@ -3921,7 +3921,7 @@
     "Lanoire"
    ],
    "dlg": 11780,
-   "steps": 1,
+   "steps": 3,
    "maps": [
     {
      "file": "happy-birthday-start-location.png",
@@ -3971,11 +3971,11 @@
    "steps": 6,
    "maps": [
     {
-     "file": "npc-location-arouet.png",
+     "file": "world-quest-danger-lurks-everywhere-in-fontaine-start-location.png",
      "context": false
     },
     {
-     "file": "world-quest-danger-lurks-everywhere-in-fontaine-start-location.png",
+     "file": "npc-location-arouet.png",
      "context": false
     },
     {
@@ -4169,19 +4169,19 @@
    "steps": 7,
    "maps": [
     {
-     "file": "npc-location-choiseul.png",
-     "context": false
-    },
-    {
      "file": "world-quest-a-letter-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-choiseul-context.png",
-     "context": true
+     "file": "npc-location-choiseul.png",
+     "context": false
     },
     {
      "file": "world-quest-a-letter-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-choiseul-context.png",
      "context": true
     }
    ]
@@ -4307,7 +4307,15 @@
      "context": false
     },
     {
+     "file": "hey-this-isn-t-pumpkin-soup-location.png",
+     "context": false
+    },
+    {
      "file": "npc-location-verenata-context.png",
+     "context": true
+    },
+    {
+     "file": "hey-this-isn-t-pumpkin-soup-location-context.png",
      "context": true
     }
    ]
@@ -4532,19 +4540,19 @@
    "steps": 27,
    "maps": [
     {
-     "file": "npc-location-bricole.png",
-     "context": false
-    },
-    {
      "file": "road-to-the-singularity-start-location.png",
      "context": false
     },
     {
-     "file": "npc-location-bricole-context.png",
-     "context": true
+     "file": "npc-location-bricole.png",
+     "context": false
     },
     {
      "file": "road-to-the-singularity-start-location-context.png",
+     "context": true
+    },
+    {
+     "file": "npc-location-bricole-context.png",
      "context": true
     }
    ]
@@ -4559,7 +4567,7 @@
    "npcs": [
     "Ahes"
    ],
-   "dlg": 25257,
+   "dlg": 25258,
    "steps": 15,
    "maps": [
     {
@@ -4603,11 +4611,11 @@
    "steps": 8,
    "maps": [
     {
-     "file": "npc-location-nadia-fontaine-daytime.png",
+     "file": "wish-fulfilling-treasure-hunt-start-location.png",
      "context": false
     },
     {
-     "file": "wish-fulfilling-treasure-hunt-start-location.png",
+     "file": "npc-location-nadia-fontaine-daytime.png",
      "context": false
     },
     {
@@ -4619,11 +4627,11 @@
      "context": false
     },
     {
-     "file": "npc-location-nadia-fontaine-context-daytime.png",
+     "file": "wish-fulfilling-treasure-hunt-start-location-context.png",
      "context": true
     },
     {
-     "file": "wish-fulfilling-treasure-hunt-start-location-context.png",
+     "file": "npc-location-nadia-fontaine-context-daytime.png",
      "context": true
     },
     {
@@ -4826,7 +4834,12 @@
    ],
    "dlg": 58224,
    "steps": 45,
-   "maps": []
+   "maps": [
+    {
+     "file": "achievement-in-the-language-of-flowers-the-lumidouce-bell-means-location.png",
+     "context": false
+    }
+   ]
   },
   {
    "name": "Fontaine Research Institute, Stagnating in the Rubble",
@@ -4874,15 +4887,15 @@
      "context": false
     },
     {
+     "file": "fontaine-research-institute-stagnating-in-the-rubble-start-location-context.png",
+     "context": true
+    },
+    {
      "file": "npc-location-broglie-context.png",
      "context": true
     },
     {
      "file": "npc-location-broglie-context-02.png",
-     "context": true
-    },
-    {
-     "file": "fontaine-research-institute-stagnating-in-the-rubble-start-location-context.png",
      "context": true
     }
    ]
