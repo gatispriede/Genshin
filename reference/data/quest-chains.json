@@ -2117,6 +2117,12 @@
     "\"Fin of Watatsumi\"": "Rotate the fish statues so a blue line of the circle shows below, then interact with the Mysterious Pillar. The two discs do NOT need to be aligned at the same time, which is the part people fight against.",
     "\"Tail of Watatsumi\"": "Use an Electrogranum to light 6 Electric Lamps, then beat a Fatui ambush (Hydrogunner, Cryogunner, Pyroslinger).",
     "_note": "Eye, Fang, Fin and Tail can be done in ANY order; all four Spirit Pearls are needed before the fifth seal, the Heart, opens."
+   },
+   "progress": "All four Spirit Pearls obtained and \"Heart of Watatsumi\" completed 11 Nov 2026. Fin was the one that stalled: each seal is a separate world quest picked up by reading its stone tablet on site, so it never appeared in the log until the user walked there.",
+   "stillWatersFlow": {
+    "steps": "Tsuyuko -> Tsuyuko at the altar -> find 2 Key Sigils -> activate 2 altars -> Tsuyuko -> descend into Enkanomiya -> investigate the cavern.",
+    "keySigils": "One at Fin of Watatsumi (Ruin Defender, Ruin Scout), one at Heart of Watatsumi (Fatui Hydrogunner, Mirror Maiden). The sigils can be picked up WITHOUT fighting - the enemies are scenery, not a gate.",
+    "payoff": "Completing it unlocks Enkanomiya's southernmost Teleport Waypoint and the achievement N-Thousand Leagues Under the Sea."
    }
   }
  }
