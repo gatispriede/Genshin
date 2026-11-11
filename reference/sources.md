@@ -185,7 +185,28 @@ allowing exactly:
 ```
 genshin-impact.fandom.com   gi.yatta.moe   sg-public-api.hoyolab.com
 act-webstatic.hoyoverse.com   game8.co   library.keqingmains.com
+static.wikia.nocookie.net
 ```
+
+**`static.wikia.nocookie.net` was added 11 Nov**, after `tools/fetch-quest-maps.py`
+failed on it. The wiki serves article text from `genshin-impact.fandom.com` but image
+**blobs** from `static.wikia.nocookie.net`, so allowing the first without the second
+gets you wikitext and no screenshots. It was missed when the environment was built
+because the host scrape over `tools/*.py` reported it truncated as `static.wikia...`
+and I dropped it rather than resolving it.
+
+**`assets/quest-maps/` is gitignored and empty in a fresh container.** The pages that
+use it render every map broken until you run the fetcher — that is by design, not a
+bug. One command per region:
+
+```
+python -I tools/fetch-quest-maps.py Inazuma     # ~126 images, 28 MB
+python -I tools/build-quest-maps-page.py Inazuma
+```
+
+Run it **without a count**: the script replaces a whole region's entry in
+`quest-maps.json` rather than merging inside it, so `... Inazuma 12` would silently
+drop the other 30 quests' map references.
 
 Confirmed working 10 Nov 2026: `game8.co` 200, `gi.yatta.moe` 200, and the Fandom
 **api.php** route 200. Fandom article HTML still answers **403** to a plain fetch — the
