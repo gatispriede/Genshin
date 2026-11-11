@@ -80,6 +80,13 @@ Gear read per-slot on 28 Oct for the top twelve.
 | **Chongyun** | 13 | 0 | Cryo claymore | Debate Club 3★ L50 R5 | 2pc Finale + 2pc Berserker. **CRIT 20.5/54.4 at Lv 13** — best-built per level |
 | Collei | 1 | 0 | Dendro | — | |
 
+> **Kachina acquired — seen in the overworld party 11 Nov 2026.** Not in the 23-character
+> roster below, which predates her. She is the account's **second Natlan character**, and
+> that is not cosmetic: the Nightsoul Burst interval drops from **18s to 12s**, which takes
+> Varesa's A4 (*The Hero Twice-Returned*, +35% ATK) from roughly **67% uptime on one stack
+> to near-permanent**. Worth ~+18% on her biggest hit — see `big-numbers.html#nightsoul`.
+> Re-pull the roster to confirm her level and constellation.
+
 **Standing facts about this roster**
 
 - Only real damage: **Varesa, Skirk, Fischl**. Tighnari is a C1 5★ sitting unbuilt.
