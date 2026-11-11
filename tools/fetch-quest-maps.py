@@ -108,8 +108,16 @@ def main():
                 f = m.strip()
                 if f and f not in files:
                     files.append(f)
-        # Close-ups first, "Context" orientation shots after.
-        files.sort(key=lambda f: ("context" in f.lower(), len(f)))
+        # A quest's own "Start Location" shot outranks an NPC's location shot:
+        # the infobox `characters` field is a cast list, so the first name is
+        # often not the giver at all. The Ritou Road is started by a trapdoor
+        # and Reminiscence of Seirai by picking up an item, yet both list an
+        # NPC first - sorting by name length put that NPC's map on top.
+        # Then close-ups, then "Context" orientation shots.
+        def rank(f):
+            fl = f.lower()
+            return ("context" in fl, 0 if "start location" in fl else 1, len(f))
+        files.sort(key=rank)
         found[q["name"]] = files
         all_files.update(files)
 
