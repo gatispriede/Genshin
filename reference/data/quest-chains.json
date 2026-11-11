@@ -2074,5 +2074,20 @@
    "source": "Fandom /Through the Mists, read 11 Nov 2026"
   }
  },
- "_resetGatedNote": "Series listed here are gated by daily reset between parts, so their length score understates them badly: a 3-part tail is 3 days minimum regardless of how short each part reads. Check this before telling anyone to 'just finish the chain'. Run reset-gated chains in parallel with ungated quests, never instead of them."
+ "_resetGatedNote": "Series listed here are gated by daily reset between parts, so their length score understates them badly: a 3-part tail is 3 days minimum regardless of how short each part reads. Check this before telling anyone to 'just finish the chain'. Run reset-gated chains in parallel with ungated quests, never instead of them.",
+ "_timeGated": {
+  "Treatment on the Island": {
+   "region": "Inazuma",
+   "gate": "Wait until 18:00-21:00 THE NEXT DAY and talk to Yasumoto",
+   "note": "Two sittings minimum, and the second needs a specific evening window. Its length score of 20.6 is badly misleading. Also wants 12 Naku Weeds gathered and two combat waves.",
+   "source": "Fandom /Treatment on the Island, read 11 Nov 2026"
+  },
+  "The Ritou Road": {
+   "region": "Inazuma",
+   "gate": "Harrison is only present at night",
+   "note": "Cleared 11 Nov 2026. Recorded because the score gave no hint of it.",
+   "source": "Fandom /Harrison"
+  }
+ },
+ "_timeGatedNote": "Time-of-day and next-day gates are invisible to the dlg+steps length score. Check here before calling a quest short: a 20.6 that needs an 18:00-21:00 window tomorrow is worse than a 33.7 you can finish now."
 }
