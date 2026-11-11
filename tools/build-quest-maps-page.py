@@ -82,6 +82,27 @@ def slug(s):
 # A name matching several wiki entries (the game merges "Treasure Lost,
 # Treasure Found" into one row, the wiki splits it into Parts 1 and 2) marks
 # every match, and is flagged on the page rather than silently resolved.
+_STARTS = {}
+
+
+def load_starts(region):
+    """How each quest really begins - see tools/fetch-quest-starts.py.
+
+    Needed because `npcs` is the infobox cast list, not a giver: The Ritou Road
+    starts at a trapdoor and Reminiscence of Seirai by picking up an item, yet
+    both name an NPC first.
+    """
+    if region in _STARTS:
+        return _STARTS[region]
+    path = os.path.join("reference", "data", "quest-starts.json")
+    try:
+        with io.open(path, encoding="utf-8") as f:
+            _STARTS[region] = {r["quest"]: r for r in json.load(f).get(region, [])}
+    except (IOError, ValueError):
+        _STARTS[region] = {}
+    return _STARTS[region]
+
+
 def load_claimed(region):
     path = os.path.join("reference", "data", "claimed.json")
     if not os.path.exists(path):
@@ -99,7 +120,7 @@ def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def card(i, q, state):
+def card(i, q, state, region):
     maps = q.get("maps") or []
     close = [m for m in maps if not m["context"]]
     context = [m for m in maps if m["context"]]
@@ -116,12 +137,22 @@ def card(i, q, state):
                  'this one, and the official map\'s quest pins are unnamed — '
                  'so there is nothing to show that would not be invented. '
                  'Head for <b>%s</b> and look for %s.</div>'
-                 % (esc(q.get("subarea") or q.get("area") or "the area"),
-                    ("<b>%s</b>" % esc(q["npcs"][0])) if q.get("npcs")
-                    else "the quest marker"))
+                 % (esc(q.get("start") or q.get("subarea")
+                        or q.get("area") or "the area"),
+                    "the quest marker"))
 
-    giver = (q.get("npcs") or [None])[0]
-    where = q.get("subarea") or q.get("area") or "—"
+    # `start` is where you GO; `area`/`subarea` is how the quest is filed, and
+    # the two can name different regions - Home Lies Over the Ocean is an
+    # Inazuma reputation quest obtained from Atsuko in Liyue Harbor.
+    where = q.get("start") or q.get("subarea") or q.get("area") or "—"
+    st = load_starts(region).get(q["name"]) or {}
+    how = st.get("how")
+    if how:
+        begins = esc(how[:150])
+    elif q.get("npcs"):
+        begins = "Cast includes <b>%s</b> — the wiki does not say who starts it" % esc(q["npcs"][0])
+    else:
+        begins = "<i>Start not documented</i>"
     extra = len(maps) - len(close[:1] + context[:1])
     more = ('<p class="more">%d more shot%s on the wiki page.</p>'
             % (extra, "" if extra == 1 else "s")) if extra > 0 else ""
@@ -142,8 +173,7 @@ def card(i, q, state):
         {"done": '<span class="qtag ok">&#10003; claimed</span> ',
          "pri": '<span class="qtag">do this one</span> ',
          "spare": '<span class="qtag sp">spare</span> '}.get(state, ""),
-        ("Talk to <b>%s</b>" % esc(giver)) if giver
-        else "<i>No giver — starts when you arrive</i>",
+        begins,
         esc(where), q["steps"], "" if q["steps"] == 1 else "s",
         q["dlg"] / 1000.0, shots, more)
 
@@ -253,7 +283,7 @@ def build(region, quests):
         r = rank[q["name"]]
         return "pri" if r <= needed else ("spare" if r <= priority else "")
 
-    cards = "".join(card(i, q, state(q)) for i, q in enumerate(quests, 1))
+    cards = "".join(card(i, q, state(q), region) for i, q in enumerate(quests, 1))
     nomaps = [q["name"] for q in quests if not q.get("maps")]
     shots = sum(len(q.get("maps") or []) for q in quests)
 
