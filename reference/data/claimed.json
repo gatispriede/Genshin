@@ -36,7 +36,8 @@
   "Gourmet Supremos, Assemble!",
   "Reminiscence of Seirai",
   "The Ritou Road",
-  "Home Lies Over the Ocean"
+  "Home Lies Over the Ocean",
+  "Divine Plant of the Depths"
  ],
  "Inazuma_outstanding": [
   "\"Heart of Watatsumi\"",
@@ -44,7 +45,6 @@
   "Battle of Revenge",
   "Clean House",
   "Collection of Dragons and Snakes",
-  "Divine Plant of the Depths",
   "Fate of a Fighter",
   "Fertilizer... Salesperson?",
   "Hiromi's Watch",
@@ -70,9 +70,7 @@
   "Yae Publishing House's Invitation"
  ],
  "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list.",
- "_inazuma_status": "Reputation screen read 11 Nov 2026: Level 7, 530/750 into Level 8 = 3,980 EXP, Inazuma Quests 16/45. THIS SCREEN IS THE AUTHORITY - the counter tracks CLAIMED, not completed, so a finished-but-unclaimed quest shows in neither the count nor the bar. International Travel Log was recorded as claimed off a chat 'done' and rolled back when the screen disagreed; it is either unfinished or finished and waiting at Madarame Hyakubei. Do not increment this list from conversation - only from the screen.",
- "Inazuma_completed_unclaimed": [
-  "Divine Plant of the Depths"
- ],
+ "_inazuma_status": "Reputation screen read 11 Nov 2026 (second reading): Level 7, 630/750 into Level 8 = 4080 EXP, Inazuma Quests 17/45. Confirms Divine Plant of the Depths claimed, and confirms International Travel Log was NOT done - the earlier rollback from 17 to 16 was correct. Only screen readings move this list.",
+ "Inazuma_completed_unclaimed": [],
  "_pending": "Inazuma_completed_unclaimed: finished in game but NOT yet seen as Claimed on the Reputation screen. These move to Inazuma and leave Inazuma_outstanding only when a screen reading confirms them. Keeping them separate is what the 16/45-vs-17 drift on 11 Nov cost; a finished quest pays nothing until collected from Madarame Hyakubei, so 'done' and 'claimed' are genuinely different states and the data needs both."
 }
