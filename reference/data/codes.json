@@ -1,53 +1,232 @@
 {
-  "_checked": "2026-11-01",
-  "_sources": [
-    "gachafeed.moe/genshin/codes — dated tracker, splits active from expired",
-    "web search cross-check, same day"
-  ],
-  "_note": "Codes perish. This is a timestamped snapshot, not a live feed. Re-check before trusting it — reference/corrections.md records the time half an aggregator's list was already dead. Account state on 2026-11-01: every code in this snapshot was already redeemed, so the snapshot is a baseline, not a to-do list.",
-  "_next": "7.3 Special Program, roughly early December 2026 — three codes, ~300 Primogems, alive for about 24 hours",
-  "_howto": "In game: Paimon Menu → Settings → Account → Redeem Code. Or the HoYoverse web redemption page. Needs AR 10; you are 45.",
-
-  "codes": [
-    { "code": "PJ2KEBRAYSRM", "primogems": 60,
-      "rewards": "60 Primogems · 5 Adventurer's Experience", "added": "2026-10-23", "status": "active" },
-    { "code": "NEEIJB764CA3", "primogems": 60,
-      "rewards": "60 Primogems", "added": "2026-10-04", "status": "active" },
-    { "code": "Y6JYMKV6JKSL", "primogems": 60,
-      "rewards": "60 Primogems · 5 Adventurer's Experience", "added": "2026-09-24", "status": "active" },
-    { "code": "6LS3F3LS5K87", "primogems": 20,
-      "rewards": "20 Primogems · 160 Geode of Replication", "added": "2026-10-02", "status": "active" },
-    { "code": "GENSHINGIFT", "primogems": 50,
-      "rewards": "50 Primogems · 3 Hero's Wit", "added": "permanent", "status": "permanent",
-      "note": "Never expires. Most accounts have already used it — try it anyway, a used code just errors." },
-    { "code": "OKTCV81F9H8D", "primogems": 0,
-      "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food", "added": "2026-10-14", "status": "active" },
-    { "code": "DATG5HG1PL89", "primogems": 0,
-      "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food", "added": "2026-09-24", "status": "active" },
-    { "code": "PNKZ3WLNN8G6", "primogems": 0,
-      "rewards": "Teachings of Charity ×5 · Fortitude ×5 · Glory ×5", "added": "2026-09-25", "status": "active" },
-    { "code": "NEEI8A8341OW", "primogems": 0,
-      "rewards": "rewards not published by the tracker", "added": "2026-09-30", "status": "active",
-      "note": "Listed as active but with no reward detail — costs nothing to try." },
-
-    { "code": "HOUROFRUIN", "primogems": 100,
-      "rewards": "100 Primogems · 10 Mystic Enhancement Ore", "added": "2026-10-23", "status": "expired",
-      "note": "7.2 livestream code. Died 26 Oct." },
-    { "code": "EXPERTMITYA", "primogems": 100,
-      "rewards": "100 Primogems · 5 Hero's Wit", "added": "2026-10-23", "status": "expired",
-      "note": "7.2 livestream code. Died 26 Oct." },
-    { "code": "PHOTOTIME", "primogems": 100,
-      "rewards": "100 Primogems · 50,000 Mora", "added": "2026-10-23", "status": "expired",
-      "note": "7.2 livestream code. Died 26 Oct." },
-    { "code": "OPERACOLLAB", "primogems": 30, "rewards": "30 Primogems · 2 Hero's Wit · 20,000 Mora",
-      "added": "", "status": "expired", "note": "Still listed as active by several aggregators. It is not." },
-    { "code": "VESNAONPATROL", "primogems": 40, "rewards": "40 Primogems · 3 Hero's Wit · 20,000 Mora",
-      "added": "", "status": "expired", "note": "Still listed as active by several aggregators. It is not." },
-    { "code": "EPIC2026", "primogems": 40, "rewards": "40 Primogems · 5 Hero's Wit · 20,000 Mora",
-      "added": "", "status": "expired", "note": "Still listed as active by several aggregators. It is not." },
-    { "code": "2BJ64QRZ7RT8", "primogems": 0, "rewards": "—", "added": "", "status": "expired" },
-    { "code": "Y1INABQB6DEX", "primogems": 0, "rewards": "—", "added": "", "status": "expired" },
-    { "code": "PLDXI8VFKI7C", "primogems": 0, "rewards": "—", "added": "", "status": "expired" },
-    { "code": "GS71XYNSYJ", "primogems": 0, "rewards": "—", "added": "", "status": "expired" }
-  ]
+ "_checked": "2026-11-11",
+ "_sources": [
+  "genshin-impact.fandom.com /Promotional Code via api.php — dated, splits active from expired",
+  "web search cross-check, same day",
+  "gachafeed.moe/genshin/codes — the 2026-11-01 baseline"
+ ],
+ "_note": "Codes perish. This is a timestamped snapshot, not a live feed. Re-check before trusting it. Account state on 2026-11-01: every code in THAT snapshot was already redeemed. Codes added on 2026-11-11 were not in that snapshot, so they are the ones worth trying — the six marked added 2026-08 / 2026-09 predate the baseline and were simply missed by the tracker, so their redemption status on this account is genuinely unknown. A dead or already-used code just errors, so there is no cost to trying any of them.",
+ "_next": "7.3 Special Program, roughly early December 2026 — three codes, ~300 Primogems, alive for about 24 hours",
+ "_howto": "In game: Paimon Menu → Settings → Account → Redeem Code. Or the HoYoverse web redemption page. Needs AR 10; you are 45.",
+ "codes": [
+  {
+   "code": "KeepUpWithMitya",
+   "primogems": 0,
+   "rewards": "Guide to Charity ×3 · \"Energy-Replenishing Meal\" ×3 · Kristallfold ×3",
+   "added": "2026-11-04",
+   "status": "active",
+   "expires": "2026-11-15 16:00 UTC",
+   "note": "7.2 'Keep Up With Mitya!' event code. Hard expiry — the only one here with a published death date. Two sources agree."
+  },
+  {
+   "code": "MIJIQ23V2437",
+   "primogems": 0,
+   "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
+   "added": "2026-11-04",
+   "status": "active",
+   "note": "Two sources agree."
+  },
+  {
+   "code": "CDOF4X83H7X2",
+   "primogems": 0,
+   "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
+   "added": "2026-11-04",
+   "status": "active",
+   "note": "SINGLE SOURCE (wiki + KodeGG only). Costs nothing to try."
+  },
+  {
+   "code": "YOAL3V36XHS7",
+   "primogems": 0,
+   "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
+   "added": "2026-09-02",
+   "status": "active",
+   "note": "On the wiki's active list with unknown expiry, but was never in this file — the 1 Nov tracker missed it. Predates the snapshot, so redemption status on this account is unknown."
+  },
+  {
+   "code": "DUGODWKRHAKDNJ",
+   "primogems": 30,
+   "rewards": "30 Primogems · 10,000 Mora · 3 Hero's Wit · 3 Mystic Enhancement Ore",
+   "added": "2026-08-31",
+   "status": "active",
+   "note": "Same: on the wiki, never in this file. Worth trying."
+  },
+  {
+   "code": "BALLETCOLLAB",
+   "primogems": 30,
+   "rewards": "30 Primogems · 10,000 Mora · 3 Hero's Wit · 3 Mystic Enhancement Ore",
+   "added": "2026-08-16",
+   "status": "active",
+   "note": "Ballet collaboration code. Same: on the wiki, never in this file."
+  },
+  {
+   "code": "GS71XAVWDS",
+   "primogems": 0,
+   "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
+   "added": "2026-09-15",
+   "status": "active",
+   "note": "GROUP CODE with GS71XDYGEO / GS71XYNSYJ / GS71XOXYLG — redeeming any one makes the others unusable. This file only ever held GS71XYNSYJ."
+  },
+  {
+   "code": "GS71XDYGEO",
+   "primogems": 0,
+   "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
+   "added": "2026-09-15",
+   "status": "active",
+   "note": "Sibling of the GS71X group — see GS71XAVWDS."
+  },
+  {
+   "code": "GS71XOXYLG",
+   "primogems": 0,
+   "rewards": "30,000 Mora · 3 Hero's Wit · 5 Mystic Enhancement Ore",
+   "added": "2026-09-15",
+   "status": "active",
+   "note": "Sibling of the GS71X group — see GS71XAVWDS."
+  },
+  {
+   "code": "PJ2KEBRAYSRM",
+   "primogems": 60,
+   "rewards": "60 Primogems · 5 Adventurer's Experience",
+   "added": "2026-10-23",
+   "status": "active"
+  },
+  {
+   "code": "NEEIJB764CA3",
+   "primogems": 60,
+   "rewards": "60 Primogems",
+   "added": "2026-10-04",
+   "status": "active"
+  },
+  {
+   "code": "Y6JYMKV6JKSL",
+   "primogems": 60,
+   "rewards": "60 Primogems · 5 Adventurer's Experience",
+   "added": "2026-09-24",
+   "status": "active"
+  },
+  {
+   "code": "6LS3F3LS5K87",
+   "primogems": 20,
+   "rewards": "20 Primogems · 160 Geode of Replication",
+   "added": "2026-10-02",
+   "status": "active"
+  },
+  {
+   "code": "GENSHINGIFT",
+   "primogems": 50,
+   "rewards": "50 Primogems · 3 Hero's Wit",
+   "added": "permanent",
+   "status": "permanent",
+   "note": "Never expires. Most accounts have already used it — try it anyway, a used code just errors.",
+   "conflict": "Disputed: one tracker reports it hit its usage cap in May 2026, another says it works intermittently. Unresolved as of 2026-11-11."
+  },
+  {
+   "code": "OKTCV81F9H8D",
+   "primogems": 0,
+   "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
+   "added": "2026-10-14",
+   "status": "active"
+  },
+  {
+   "code": "DATG5HG1PL89",
+   "primogems": 0,
+   "rewards": "10,000 Mora · 10 Adventurer's Experience · 5 Fine Enhancement Ore · food",
+   "added": "2026-09-24",
+   "status": "active"
+  },
+  {
+   "code": "PNKZ3WLNN8G6",
+   "primogems": 0,
+   "rewards": "Teachings of Charity ×5 · Fortitude ×5 · Glory ×5",
+   "added": "2026-09-25",
+   "status": "active"
+  },
+  {
+   "code": "NEEI8A8341OW",
+   "primogems": 0,
+   "rewards": "rewards not published by the tracker",
+   "added": "2026-09-30",
+   "status": "active",
+   "note": "Listed as active but with no reward detail — costs nothing to try."
+  },
+  {
+   "code": "HOUROFRUIN",
+   "primogems": 100,
+   "rewards": "100 Primogems · 10 Mystic Enhancement Ore",
+   "added": "2026-10-23",
+   "status": "expired",
+   "note": "7.2 livestream code. Died 26 Oct."
+  },
+  {
+   "code": "EXPERTMITYA",
+   "primogems": 100,
+   "rewards": "100 Primogems · 5 Hero's Wit",
+   "added": "2026-10-23",
+   "status": "expired",
+   "note": "7.2 livestream code. Died 26 Oct."
+  },
+  {
+   "code": "PHOTOTIME",
+   "primogems": 100,
+   "rewards": "100 Primogems · 50,000 Mora",
+   "added": "2026-10-23",
+   "status": "expired",
+   "note": "7.2 livestream code. Died 26 Oct."
+  },
+  {
+   "code": "OPERACOLLAB",
+   "primogems": 30,
+   "rewards": "30 Primogems · 2 Hero's Wit · 20,000 Mora",
+   "added": "",
+   "status": "expired",
+   "note": "Still listed as active by several aggregators. It is not.",
+   "conflict": "Marked expired here on 2026-11-01, but the Fandom Promotional Code page still lists it under Active Codes with expiry 'unknown' as of 2026-11-11. Unresolved — trying it costs nothing."
+  },
+  {
+   "code": "VESNAONPATROL",
+   "primogems": 40,
+   "rewards": "40 Primogems · 3 Hero's Wit · 20,000 Mora",
+   "added": "",
+   "status": "expired",
+   "note": "Still listed as active by several aggregators. It is not."
+  },
+  {
+   "code": "EPIC2026",
+   "primogems": 40,
+   "rewards": "40 Primogems · 5 Hero's Wit · 20,000 Mora",
+   "added": "",
+   "status": "expired",
+   "note": "Still listed as active by several aggregators. It is not.",
+   "conflict": "Marked expired here on 2026-11-01, but the Fandom Promotional Code page still lists it under Active Codes with expiry 'unknown' as of 2026-11-11. Unresolved — trying it costs nothing."
+  },
+  {
+   "code": "2BJ64QRZ7RT8",
+   "primogems": 0,
+   "rewards": "—",
+   "added": "",
+   "status": "expired",
+   "conflict": "Marked expired here on 2026-11-01, but the Fandom Promotional Code page still lists it under Active Codes with expiry 'unknown' as of 2026-11-11. Unresolved — trying it costs nothing."
+  },
+  {
+   "code": "Y1INABQB6DEX",
+   "primogems": 0,
+   "rewards": "—",
+   "added": "",
+   "status": "expired"
+  },
+  {
+   "code": "PLDXI8VFKI7C",
+   "primogems": 0,
+   "rewards": "—",
+   "added": "",
+   "status": "expired"
+  },
+  {
+   "code": "GS71XYNSYJ",
+   "primogems": 0,
+   "rewards": "—",
+   "added": "",
+   "status": "expired",
+   "conflict": "Marked expired here on 2026-11-01, but the Fandom Promotional Code page still lists it under Active Codes with expiry 'unknown' as of 2026-11-11. Unresolved — trying it costs nothing."
+  }
+ ]
 }

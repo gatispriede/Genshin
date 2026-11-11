@@ -325,6 +325,10 @@ td.bad  { color: var(--do-now); font-weight: 700; }
 .code.is-used { opacity: .45; }
 .code.is-used .code__text { text-decoration: line-through; }
 .code.is-dead .code__text { text-decoration: line-through; color: var(--dim); }
+.code__expires { display: block; color: var(--do-now); font-style: normal;
+                 font-size: .76rem; font-weight: 600; margin-top: 3px; }
+.code__conflict { display: block; color: var(--warn); font-style: normal;
+                  font-size: .76rem; margin-top: 3px; }
 .btn-all {
   padding: 6px 13px; margin-right: 6px;
   border: 1px solid var(--line); border-radius: 999px;
