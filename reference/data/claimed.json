@@ -32,7 +32,8 @@
   "Relics of Seirai",
   "Omnipresence Over Mortals",
   "Chisato's Letter",
-  "The Art of Horticulture"
+  "The Art of Horticulture",
+  "Gourmet Supremos, Assemble!"
  ],
  "Inazuma_outstanding": [
   "The Phaethons' Syrtos",
@@ -56,7 +57,6 @@
   "\"Heart of Watatsumi\"",
   "Hiromi's Watch",
   "\"The Seventh Samurai\"",
-  "Gourmet Supremos, Assemble!",
   "Tatara Tales: The Last Act",
   "Sakura Arborism",
   "Home Lies Over the Ocean",
@@ -70,5 +70,5 @@
   "The Gourmet Supremos: The Importance of Eating Well"
  ],
  "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list.",
- "_inazuma_status": "In-game Reputation screen, 11 Nov 2026: Reputation Level 7, 130/750 into Level 8. Inazuma Quests 12/45. World Exploration 55%. Weekly Bounties 3/3 and Requests 3/3 already spent this week. Total EXP is therefore 3,580 - far above the 1,500 the 12 claimed quests account for, because Bounties, Requests and the 20%/40% exploration milestones have been feeding it all along. Quest EXP alone is NOT the reputation total; do not infer a level from it."
+ "_inazuma_status": "In-game Reputation screen, 11 Nov 2026: Level 7, 130/750 into Level 8, Quests 12/45, Exploration 55%, weekly Bounties 3/3 and Requests 3/3 spent. Total 3,580. Gourmet Supremos, Assemble! cleared later the same day -> 13/45 and 3,680 once claimed. Quest EXP alone is NOT the reputation total: Bounties, Requests and the 20%/40% exploration milestones account for most of it. Never infer a level from quest EXP."
 }
