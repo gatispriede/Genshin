@@ -73,7 +73,8 @@
  "_inazuma_status": "Direct evidence 11 Nov 2026: International Travel Log shows Claimed, so the earlier rollback was wrong - it was done, just not yet collected when the 16/45 screen was read. Per-quest list is now 18. The last COUNTER reading was 17/45 at 4,080 EXP (Level 7, 630/750), which is consistent if that shot predates this claim: at that moment 5 of the 6 post-baseline quests were collected, and ITL made the sixth. INFERRED current state: 18/45, 4,180 EXP, 20 short of Level 8 (4,200). Inferred, not read - confirm against the bar before trusting it.",
  "Inazuma_completed_unclaimed": [
   "Solitary Sea-Beast",
-  "\"Heart of Watatsumi\""
+  "\"Heart of Watatsumi\"",
+  "The Still Water's Flow"
  ],
  "_pending": "Inazuma_completed_unclaimed: finished in game but NOT yet seen as Claimed on the Reputation screen. These move to Inazuma and leave Inazuma_outstanding only when a screen reading confirms them. Keeping them separate is what the 16/45-vs-17 drift on 11 Nov cost; a finished quest pays nothing until collected from Madarame Hyakubei, so 'done' and 'claimed' are genuinely different states and the data needs both."
 }
