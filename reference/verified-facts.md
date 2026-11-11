@@ -84,6 +84,31 @@ Inazuma: *The Commission's Commission*. Sumeru: *Corps of Thirty Recruitment*.
 Weekly Request **80** + 20,000 Mora (3/week shared across all nations) ·
 World Exploration **200** each at 20% / 40% / 60%.
 
+### Weekly Bounties are the best reputation rate in the game — *verified 11 Nov 2026*
+
+| Bounty | Reputation | Mora |
+|---|---|---|
+| 3★ | 120 | 20,000 |
+| 4★ | 160 | 25,000 |
+| **5★** | **200** | **30,000** |
+
+**The available bounties reset after you complete one, so the highest-value bounty can
+be taken three times.** That is **600 reputation + 90,000 Mora per week** from three
+short hunts — accept from the Reputation NPC, Elemental Sight to find the target, kill
+it, claim.
+
+With Requests (80 × 3) the weekly ceiling is **840 reputation** without touching a
+single quest chain.
+
+**Put that against a world quest: 100.** One 5★ bounty is worth two world quests and
+takes a fraction of the time. *The Subterranean Trials of Drake and Serpent* — the
+Enkanomiya gateway, length score **54.0**, one of the longest in the region — pays
+**100**. Three bounties pay six times that.
+
+**So: bounties and requests first, every week, before any quest.** Quests are for the
+weeks when the weekly caps are already spent, or for unlocking regions. Ranking quests
+by length was optimising the wrong axis.
+
 Liyue's menu opens after Archon Ch. I Act II + AR 25 + the world quest
 *Ministry Missions*.
 
