@@ -1,8 +1,8 @@
 {
- "_source": "In-game Reputation > Quests screenshots. Liyue 30 Oct 2026, Inazuma 7 Nov 2026. Only quests showing 'Claimed' are listed. This is the one fact no API exposes - progress is server-side - so it has to be transcribed by hand.",
+ "_source": "In-game Reputation > Quests screenshots. Liyue 30 Oct 2026, Inazuma 7 Nov 2026, Inazuma re-read 11 Nov 2026. Only quests showing 'Claimed' are listed. This is the one fact no API exposes - progress is server-side - so it has to be transcribed by hand.",
  "_note": "Archon acts pay 200, world quests 100.",
  "_names": "Entries use the WIKI title, not the in-game row, where the two differ. The game shows 'Sacred Sakura Cleansing Ritual: Yougou Cleansing'; the wiki page is 'Yougou Cleansing'. The game shows 'Seirai Stormchasers'; the wiki splits the series and only 'Seirai Stormchasers: Part IV' pays reputation, which the prefix match picks up.",
- "_partial": "The Inazuma capture is two screenshots at different scroll positions, so rows between or below them may be missing. Treat the Inazuma list as a floor, not a complete count.",
+ "_partial": "Every Inazuma capture so far is a set of screenshots at different scroll positions, so rows between or below them may be missing. Treat the Inazuma list as a FLOOR, not a complete count. The 11 Nov read showed 12 rows Claimed across three shots.",
  "Liyue": [
   "Of the Land Amidst Monoliths",
   "Farewell, Archaic Lord",
@@ -29,6 +29,45 @@
   "Orobashi's Legacy: Part V",
   "Gazing Three Thousand Miles Away",
   "Seirai Stormchasers",
-  "Relics of Seirai"
- ]
+  "Relics of Seirai",
+  "Omnipresence Over Mortals",
+  "Chisato's Letter",
+  "The Art of Horticulture"
+ ],
+ "Inazuma_outstanding": [
+  "The Phaethons' Syrtos",
+  "The Still Water's Flow",
+  "Collection of Dragons and Snakes",
+  "The Three Great Martial Trials",
+  "The Sun-Wheel and Mt. Kanna",
+  "The Saga of Mr. Forgetful",
+  "Clean House",
+  "The Subterranean Trials of Drake and Serpent",
+  "Lotus Eater",
+  "Divine Plant of the Depths",
+  "Solitary Sea-Beast",
+  "Storytelling Method",
+  "The Narukami Trail",
+  "Fertilizer... Salesperson?",
+  "The Farmer's Treasure",
+  "Treatment on the Island",
+  "Fate of a Fighter",
+  "Reminiscence of Seirai",
+  "\"Heart of Watatsumi\"",
+  "Hiromi's Watch",
+  "\"The Seventh Samurai\"",
+  "Gourmet Supremos, Assemble!",
+  "Tatara Tales: The Last Act",
+  "Sakura Arborism",
+  "Home Lies Over the Ocean",
+  "O Archon, Have I Done Right?",
+  "Battle of Revenge",
+  "Yae Publishing House's Invitation",
+  "The Ritou Road",
+  "In Another Land",
+  "International Travel Log",
+  "The Gourmet Supremos: On the Road",
+  "The Gourmet Supremos: The Importance of Eating Well"
+ ],
+ "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list."
 }
