@@ -63,9 +63,26 @@ is exactly at the threshold where weekly bosses start being worth the resin.
 **World quest EXP is retroactive but must be claimed by hand** in the
 Reputation menu's World Quests / World Exploration tabs.
 
-**Reputation NPCs** — Mondstadt: **Hertha**. Liyue: **Ms. Yu**, east of the
-teleport waypoint, north of the blacksmith. *Not Katheryne — she runs the
+> **Re-confirmed 11 Nov 2026, after it bit.** Finishing a reputation world quest
+> awards **nothing at the time** — the bar does not move and there is no popup. The
+> game's own tutorial text is explicit: *"Through Madarame Hyakubei … you can also
+> **collect** Reputation EXP for World Exploration and Inazuma Quests."* The EXP sits
+> banked until you walk to the Reputation NPC and claim it, so a batch of finished
+> quests looks exactly like a batch of quests that paid nothing.
+> **Always state this alongside any list of reputation quests.**
+
+**Reputation NPCs** — *all five verified 11 Nov 2026 against the wiki's Reputation
+table.* Mondstadt: **Hertha**. Liyue: **Ms. Yu**, east of the teleport waypoint, north
+of the blacksmith. Inazuma: **Madarame Hyakubei**, Yashiro Commission Representative.
+Sumeru: **Effendi**. Fontaine: **Euphrasie**. *Not Katheryne — she runs the
 Adventurers' Guild.*
+
+**Unlock quests** — Mondstadt: *Knight of the Realm*. Liyue: *Ministry Missions*.
+Inazuma: *The Commission's Commission*. Sumeru: *Corps of Thirty Recruitment*.
+
+**Per-quest values, confirmed:** World Quest **100** · Archon Quest Act **200** ·
+Weekly Request **80** + 20,000 Mora (3/week shared across all nations) ·
+World Exploration **200** each at 20% / 40% / 60%.
 
 Liyue's menu opens after Archon Ch. I Act II + AR 25 + the world quest
 *Ministry Missions*.
