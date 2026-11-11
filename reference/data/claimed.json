@@ -38,10 +38,12 @@
   "The Ritou Road",
   "Home Lies Over the Ocean",
   "Divine Plant of the Depths",
-  "International Travel Log"
+  "International Travel Log",
+  "Solitary Sea-Beast",
+  "\"Heart of Watatsumi\"",
+  "The Still Water's Flow"
  ],
  "Inazuma_outstanding": [
-  "\"Heart of Watatsumi\"",
   "\"The Seventh Samurai\"",
   "Battle of Revenge",
   "Clean House",
@@ -53,7 +55,6 @@
   "Lotus Eater",
   "O Archon, Have I Done Right?",
   "Sakura Arborism",
-  "Solitary Sea-Beast",
   "Storytelling Method",
   "Tatara Tales: The Last Act",
   "The Farmer's Treasure",
@@ -62,7 +63,6 @@
   "The Narukami Trail",
   "The Phaethons' Syrtos",
   "The Saga of Mr. Forgetful",
-  "The Still Water's Flow",
   "The Subterranean Trials of Drake and Serpent",
   "The Sun-Wheel and Mt. Kanna",
   "The Three Great Martial Trials",
@@ -70,11 +70,7 @@
   "Yae Publishing House's Invitation"
  ],
  "_outstanding": "Inazuma_outstanding is the in-game 'Not achieved' list, read from screenshots on 11 Nov 2026. Unlike the claimed list this one IS complete: 12 claimed + 33 outstanding = 45, which equals the 60 rows in reputation-quests.json minus its 15 Requests. Requests live in their own tab and are not in either list.",
- "_inazuma_status": "Direct evidence 11 Nov 2026: International Travel Log shows Claimed, so the earlier rollback was wrong - it was done, just not yet collected when the 16/45 screen was read. Per-quest list is now 18. The last COUNTER reading was 17/45 at 4,080 EXP (Level 7, 630/750), which is consistent if that shot predates this claim: at that moment 5 of the 6 post-baseline quests were collected, and ITL made the sixth. INFERRED current state: 18/45, 4,180 EXP, 20 short of Level 8 (4,200). Inferred, not read - confirm against the bar before trusting it.",
- "Inazuma_completed_unclaimed": [
-  "Solitary Sea-Beast",
-  "\"Heart of Watatsumi\"",
-  "The Still Water's Flow"
- ],
+ "_inazuma_status": "Reputation screen read 11 Nov 2026 (third reading): LEVEL 8, 180/800 into Level 9 = 4380 EXP, Inazuma Quests 20/45. Solitary Sea-Beast, Heart of Watatsumi and The Still Water's Flow all collected; Level 8 pays the Electroculus Resonance Stone. NOTE: I inferred 4,480 and it is 4,380 - I double-counted International Travel Log, adding 100 for it on top of a 4,080 reading that already included it. 17/45 @ 4,080 plus three claims is exactly 20/45 @ 4,380. Arithmetic on top of a screen reading is still arithmetic; re-read rather than extrapolate.",
+ "Inazuma_completed_unclaimed": [],
  "_pending": "Inazuma_completed_unclaimed: finished in game but NOT yet seen as Claimed on the Reputation screen. These move to Inazuma and leave Inazuma_outstanding only when a screen reading confirms them. Keeping them separate is what the 16/45-vs-17 drift on 11 Nov cost; a finished quest pays nothing until collected from Madarame Hyakubei, so 'done' and 'claimed' are genuinely different states and the data needs both."
 }
