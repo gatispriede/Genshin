@@ -154,8 +154,12 @@ def main():
         recs = quests(titles)
         recs.sort(key=lambda r: r.get("dlg") or 0)
         data[region] = recs
-        world = [r for r in recs if r.get("group") != "Request"
-                 and r.get("type") != "Archon" and not r.get("missing")]
+        # Count only |type = World. Archon acts and quest-series container
+        # pages (e.g. "Vimana Agama") carry a BLANK type, not "Archon", so
+        # excluding type == "Archon" never excluded anything and inflated this
+        # count by the Archon act count. Positive match is the robust form.
+        world = [r for r in recs if r.get("type") == "World"
+                 and r.get("group") != "Request" and not r.get("missing")]
         print("%-9s %3d total  %3d world quests  %2d weekly requests"
               % (region, len(recs), len(world),
                  sum(1 for r in recs if r.get("group") == "Request")),

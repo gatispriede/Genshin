@@ -243,6 +243,58 @@ Claimed I could not produce one. True, and correctly stated — but I should hav
 reached for **published decks with existing share codes** much sooner instead
 of hand-building a list from card text.
 
+**Announced seven missing quests that were never missing (12 Nov)**
+Comparing `reputation-quests.html` against the wiki's reputation category, I reported that
+our Inazuma list carried 35 world quests to the wiki's 42, called out "seven quests — 700
+EXP — missing from that page," and wrote it into the page as a red warning. All 42 were
+there. The seven I could not see are the seven **marked done**: completed rows render as
+`<td class="q"><span class="ok">&#10003;</span> <a…>`, and the pattern I counted with
+(`<td class="q">(?:<a[^>]*>)?([^<]+)`) matched the `<span>` and captured nothing. Every
+completed quest in every region was invisible to my count.
+→ *Cause: I measured a file with a throwaway regex, got a number, and trusted it over the
+generator that produced the file. The tell was there — Liyue showed 13 "missing" too, and I
+read that as the page being broadly stale instead of my count being wrong. **Re-running the
+pipeline produced a byte-identical file**, which should have been my first check, not my
+last.*
+
+> Rule: when a count disagrees with a generated artifact, **re-run the generator and diff**
+> before writing the discrepancy down as fact. One `git diff` would have killed this in
+> seconds. Writing it into the page as a warning made a private measurement error into a
+> published one.
+
+**Tactical Sweep: diagnosed the difficulty multiplier without looking at the screen (10 Nov)**
+Four scores clustered in a narrow 16k–24k band across four unrelated bosses. I read that
+as the signature of a shared multiplicative ceiling and concluded the account was running
+a low difficulty — recommending a step up to Brutal Eradication's ×18. The user's next
+screenshot read **`Goldflame Qucusaur Tyrant — Lv. 90`**, which *is* Brutal Eradication.
+They were already on the top difficulty and already taking the ×18.
+→ *Cause: an elegant inference from aggregate numbers, offered before asking for the one
+screen that settles it. The clustering was real; my explanation for it was not. Pattern 3
+again — a plan built on an unchecked premise — except here the premise was checkable in a
+single screenshot I had not requested. **Ask for the state before theorising about it.***
+
+> What saved it: the same screenshot showed the party was one Lv 90 trial plus three own
+> characters including a **Lv 32**, which was the actual cause. Swapping to four trials
+> measured **+20%** immediately. The right answer came from reading the screen, not from
+> the inference.
+
+**Treated "the wiki has no section for it" as "there is nothing there" (10 Nov)**
+I built a whole Tactical Sweep analysis from Fandom's stat tables and boss pages, and it
+held up. But the wiki's **Operations** section reads `''To be added''` for all four stages,
+and I quietly skipped past it — so I described Morale as "resolving events before the boss"
+and moved on. The user pushed back: *"you are guessing look answers on reddit or google."*
+Community guides document the whole system — rounds with **deployment objectives** (element,
+weapon type, member count, support faction), harder operations paying more Morale, and
+**deployment order mattering because a deployed character is spent for that round.** That
+last point is a real tactic I had no idea existed.
+→ *Cause: I treated one source's silence as the absence of a mechanic. **A stub is a gap in
+the source, not a gap in the game.** When a wiki section says "to be added" on the exact
+thing being asked about, that is the signal to go elsewhere, not to route around it.*
+
+> Worth recording honestly: the wiki-derived half was **confirmed** by the community guides,
+> not contradicted — "preferably with Pyro to break the boss's shields" on Mondstadt matched
+> the resistance tables exactly. The failure was one of **coverage, not accuracy.**
+
 ---
 
 ## Patterns

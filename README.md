@@ -82,6 +82,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 | [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, the Shadow Realm shooter mode and its 475 Primogems, Red Beet and weapon diagrams |
 | [`research/09-artifact-sets.md`](research/09-artifact-sets.md) | **Set bonuses by damage / support / utility**, per-character tier tables, farming order |
 | [`research/10-imaginarium-theater.md`](research/10-imaginarium-theater.md) | **Open with the weakest team, not the strongest** — Vigor, Season 29 cast, the Geo gap |
+| [`research/11-tactical-sweep.md`](research/11-tactical-sweep.md) | **Getting all four Tactical Sweep stages to 36,000** — pick for the Morale condition (measured +31%), hold the −50% RES debuff, and the Witch's Homework lock that kept Mondstadt down |
+| [`research/11a-tactical-sweep-bosses.md`](research/11a-tactical-sweep-bosses.md) | **Sweep boss mechanics** — shields, paralysis windows and resistance tables. Every boss has a state worth 4–6× damage, all gated on an element rather than a stat |
 
 ### Interactive reference pages
 | File | Covers |
@@ -128,9 +130,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 
 | Deadline | Item |
 |---|---|
+| **2026-12-16** | **The Grand Defense: Defy the Unjust Judgment** ends. Four Tactical Sweep stages are short of their 36,000 tier and Mondstadt is short of 18,000 — 180,000 Mora, 18 Mystic Enhancement Ore and 15 Sanctifying Unction outstanding. See [`research/11-tactical-sweep.md`](research/11-tactical-sweep.md). *All Primogem tiers are already claimed.* |
 | ~~**2026-11-03**~~ | ~~Free standard 5-star selector expires~~ — **window closed**, see `research/02-wishes-and-primogems.md` |
-
-*Nothing is currently time-sensitive.*
 
 ---
 
