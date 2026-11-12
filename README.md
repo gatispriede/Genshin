@@ -17,7 +17,7 @@ Pulled from the Enka profile API, **2026-11-10**. Brackets are the 30 Oct pull.
 | Spiral Abyss | **Floor 11, Chamber 3 · 24 stars** (was 10-3) |
 | Imaginarium Theater | **Act 3**, 3 stars |
 | Stygian Onslaught | **Index 3**, best 774s |
-| Characters | 22 — *as of 23 Oct, not re-read* |
+| Characters | **33** — HoYoLAB, 12 Nov. *Was 22 on 23 Oct; `research/03-character-materials.md` still describes the old roster* |
 | Waypoints unlocked | 127 — *as of 23 Oct, not re-read* |
 | Domains unlocked | 15 — *as of 23 Oct, not re-read* |
 
@@ -81,9 +81,16 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 | [`research/07-ore-farming.md`](research/07-ore-farming.md) | Dense ore routes near waypoints — Mt. Aocang, Mt. Aozang, Brightcrown Canyon |
 | [`research/08-snezhnaya-mechanics.md`](research/08-snezhnaya-mechanics.md) | Prime Ice Constructs, melting ice, the cold gauge, the Shadow Realm shooter mode and its 475 Primogems, Red Beet and weapon diagrams |
 | [`research/09-artifact-sets.md`](research/09-artifact-sets.md) | **Set bonuses by damage / support / utility**, per-character tier tables, farming order |
-| [`research/10-imaginarium-theater.md`](research/10-imaginarium-theater.md) | **Open with the weakest team, not the strongest** — Vigor, Season 29 cast, the Geo gap |
+| [`research/10-imaginarium-theater.md`](research/10-imaginarium-theater.md) | **Normal Mode: 24 Vigor for 24 slots, so nothing can be wasted** — the Vigor rules, card priority and blessing path |
+| [`research/10a-theater-normal-run.md`](research/10a-theater-normal-run.md) | **The run that reached Act 5** — act-by-act log, the Lord of the Hidden Depths fight (failing its 18s shield timer is what *gives* you the damage window), and the three things the plan got wrong |
 | [`research/11-tactical-sweep.md`](research/11-tactical-sweep.md) | **Getting all four Tactical Sweep stages to 36,000** — pick for the Morale condition (measured +31%), hold the −50% RES debuff, and the Witch's Homework lock that kept Mondstadt down |
 | [`research/11a-tactical-sweep-bosses.md`](research/11a-tactical-sweep-bosses.md) | **Sweep boss mechanics** — shields, paralysis windows and resistance tables. Every boss has a state worth 4–6× damage, all gated on an element rather than a stat |
+| [`research/12-varesa-team.md`](research/12-varesa-team.md) | **Varesa's team and the Electro RES question** — no character on the account shreds RES, only two sets in the game do, and Mizuki already wears one. The Nightsoul Burst interval table, and why Varesa's goblet costs more than any teammate swap |
+
+> **[`reference/research-coverage.md`](reference/research-coverage.md) — read this first.**
+> The ledger of what has already been researched: every character's kit status, gear
+> freshness, which artifact sets are catalogued, which mechanics are settled. It names the
+> five characters nobody has ever looked up, so a session only researches what is new.
 
 ### Interactive reference pages
 | File | Covers |
@@ -110,6 +117,9 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 
 1. **No one has an Elemental DMG goblet.** Every audited character shows 0.0% elemental
    damage bonus except Skirk. Biggest systemic gap on the account.
+   **Re-confirmed 12 Nov on Varesa** — Lv 90, the account's best character, still reads
+   **0.0% Electro DMG Bonus** and wears five different artifact sets, so no set bonus
+   either. See [`research/12-varesa-team.md`](research/12-varesa-team.md).
 2. **Crit Rate is near-base across the roster** — 7–9% on most characters. Noelle has
    97.9% Crit DMG at 9.7% Crit Rate, which almost never fires.
 3. **Skirk's weapon substat is dead.** Prototype Rancour gives 25.4% *Physical* DMG, and

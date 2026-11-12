@@ -297,6 +297,41 @@ thing being asked about, that is the signal to go elsewhere, not to route around
 
 ---
 
+## Told the user not to level, and it was the wrong call (1 Nov → 12 Nov)
+
+`research/10-imaginarium-theater.md` said in bold: *"Do not level for Season 29 …
+Four characters raced to Lv. 60 for November expire in thirty days."*
+
+They levelled anyway. Alyosha, Valeriy, Lisa and Dahlia reaching Lv. 60 took the
+Theater cast from 8 to 12 and unlocked **Normal Mode — six Acts instead of three.**
+
+Two things were wrong with the reasoning:
+
+- **It priced only one use.** Lv. 60 is a floor for Spiral Abyss, Stygian Onslaught and
+  event combat as well. A level does not expire when the Theater element rotates.
+- **It treated a rotating requirement as a sunk cost.** Doubling this season's Acts was
+  worth more than the rotation cost, and the characters stay levelled afterwards.
+
+*Lesson: when advice is "don't invest", check what else the investment unlocks before
+writing it in bold. A narrow cost-benefit on one system is not a verdict on the account.*
+
+---
+
+## Claimed Lunar blessings existed without checking the branch list (1 Nov → 12 Nov)
+
+The Season 29 section asserted the available reactions were "Electro-Charged, **Lunar-Charged
+and Lunar Crystallize**". The wiki's Brilliant Blessing page lists eighteen branches and
+**none of them is Lunar.** The claim was inferred from the season's three elements rather
+than read off the source.
+
+It mattered: the Act 6 villain card says *"Lunar reactions have an advantage"*, so a plan
+built on that sentence would have chased a blessing line that may not be purchasable.
+
+*Lesson: deriving "what reactions are available" from "what elements are required" is a
+guess. The blessing branches are a published list — read it.*
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.

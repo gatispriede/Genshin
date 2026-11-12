@@ -319,3 +319,35 @@ reputation. Its exact Reputation level wasn't confirmed.
 
 One talent from 1→10 costs 3 Teachings + 21 Guides + 38 Philosophies, plus 6
 weekly boss materials and a Crown.
+
+---
+
+## Nightsoul Burst — *verified 12 Nov 2026*
+
+Source: Fandom, *Nightsoul's Blessing* → Nightsoul Burst section.
+
+> Nightsoul Bursts are triggered when dealing Elemental DMG to an opponent **while the
+> party contains a Natlanese character.**
+
+| Natlan characters in party | Interval between bursts |
+|---|---|
+| 1 | **18s** |
+| 2 | **12s** |
+| 3 or more | **9s** |
+
+On their own, Nightsoul Bursts do nothing — talents and artifact sets hook onto them.
+**This account owns two Natlan characters, Varesa and Kachina**, so 12s is the floor it
+can reach. See `research/12-varesa-team.md` for what that costs Varesa.
+
+---
+
+## RES reduction — *verified 12 Nov 2026*
+
+**Exactly two artifact sets in the game reduce elemental RES:** Deepwood Memories
+(Dendro −30%, 8s) and Viridescent Venerer (the swirled element, −40%, 10s). Checked
+against the full wiki set category.
+
+**Superconduct reduces Physical RES only** — not Cryo, not Electro.
+
+**No character on this account reduces elemental RES.** Fourteen candidates' talent text
+was searched; see `reference/research-coverage.md`.

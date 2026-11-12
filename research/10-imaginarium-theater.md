@@ -39,8 +39,16 @@ The Acts that bite in the longer modes:
 ## Season 29 cast
 
 **Required elements: Hydro · Electro · Geo.**
-Available reactions are therefore only **Electro-Charged, Lunar-Charged and Lunar
-Crystallize** — every team wants Hydro + Electro paired, with Geo for Crystallize shields.
+Every team wants Hydro + Electro paired, with Geo for Crystallize shields.
+
+> ⚠️ **Corrected 12 Nov.** This section originally said the available reactions were
+> "Electro-Charged, **Lunar-Charged and Lunar Crystallize**". The wiki's Brilliant
+> Blessing branch list carries **no Lunar branch at all** — the branches are Bloom,
+> Burning, Catalyze, Electro-Charged, Frozen, Melt, Overloaded, Rimegrass, Superconduct,
+> Vaporize, Aquabreeze, Frostsquall, Stormgale, Flamewind and the four Crystal lines.
+> For this cast that leaves **Electro-Charged** plus **Electro Crystal / Hydro Crystal**.
+> The Act 6 villain card does say *"Lunar reactions have an advantage"*, so something
+> may exist in-game that the wiki does not list — **do not plan around it.**
 
 ### Opening Characters — all six offered as Lv. 90 Trials
 
@@ -72,6 +80,11 @@ Blessing text promising Guest Stars **+100% buff effect** is dead weight on this
 | Varesa | Electro | 80 |
 | Barbara | Hydro | 70 |
 | — | **Geo** | **none** |
+
+> ⚠️ **Stale — this was 1 Nov.** By 12 Nov the bench is **six**: Varesa (Electro, Lv 90),
+> Barbara (Hydro, 70), Alyosha, Valeriy and Lisa (Electro, 60) and Dahlia (Hydro, 60).
+> That is what unlocked Normal Mode. **Geo is still zero.** See the Normal Mode section
+> at the end of this file.
 
 Alternate Cast must match one of the season's three elements *and* clear a minimum level,
 which is why only 2 of 25 characters qualify.
@@ -126,6 +139,11 @@ exactly what this account had, which is why Easy was the ceiling, not a choice.
 |---|---|
 | Varesa | Lv. 80 Electro |
 | Barbara | Lv. 70 Hydro |
+
+> ✅ **Done — Normal Mode reached, 12 Nov.** Alyosha, Valeriy, Lisa and Dahlia all hit
+> Lv. 60, which took the bench from 2 to 6 and the cast from 8 to 12. The levelling plan
+> below is therefore **complete for Normal**; it still stands for Hard, which needs 16
+> characters at Lv. 70.
 
 **Cheapest four to add:** Dahlia (Lv. 50 Hydro), Fischl (Lv. 50 Electro) and Lisa
 (Lv. 50 Electro) each need **+10 levels**; then Traveler (Lv. 40 Geo) needs +20. That is
@@ -195,6 +213,12 @@ from `reference/data/hoyo_tree.json`, which is itself a regenerable cache.
 > and leaves Barbara alone. Four characters raced to Lv. 60 for November expire in thirty
 > days.
 
+> ❌ **This call was wrong, 12 Nov.** The levelling happened anyway and bought a **Normal
+> Mode run — six Acts instead of three**, which is double the rewards this season, not
+> "six Acts once". The advice also weighed only Theater eligibility: Lv. 60 is a floor for
+> Spiral Abyss, Stygian Onslaught and event combat too, and Alyosha and Valeriy are
+> genuinely useful outside it. **Breadth at Lv. 60 pays even when the element rotates out.**
+
 Level for breadth instead, worst-first by how many seasons each one survives:
 
 1. **Dahlia** (Hydro) — eligible in November *and* December
@@ -232,3 +256,130 @@ so the Alternate Cast problem gets worse, not better.
 **Sources:** Genshin Impact Wiki *Imaginarium Theater* and *Seasons/2026-11-01*; season
 cast cross-checked against the in-game Act 1 screen on 1 Nov 2026. Re-check the cast each
 month — it rotates on the 1st.
+
+---
+
+# Season 29 — Normal Mode run
+
+**Planned 2026-11-12.** Six Acts, 12 characters. The Easy-mode plan above is kept for
+its reasoning, but **every number in it is superseded by this section.**
+
+> ⚠️ **The run was played the same day and reached Act 5. The schedule below did not
+> survive contact** — see [`10a-theater-normal-run.md`](10a-theater-normal-run.md) for
+> the act-by-act log, the Act 6 boss mechanics, and the three things this plan got wrong:
+> it treated twelve *eligible* bodies as twelve *usable* ones, it never accounted for
+> Star Challenge timers, and it had no rule reserving the geared units for the final act.
+> The Vigor arithmetic below is still correct. The team assignments are not.
+
+## The maths, before anything else
+
+| | |
+|---|---|
+| Acts | **6** |
+| Characters on stage per act | **4** |
+| Total slots | **24** |
+| Characters in the cast | **12** (6 Opening trials + 6 of your own) |
+| Vigor each | **2** |
+| **Total Vigor** | **24** |
+
+> **Zero slack. Every character plays exactly two acts.** One wasted Vigor and you
+> physically cannot field four bodies in Act 5 or 6.
+
+Three consequences that are easy to get wrong:
+
+1. **Nobody can be saved for the final act with both Vigor.** A character fills one slot
+   per act, so holding someone back entirely strands a Vigor point. Everyone needs two
+   *different* acts.
+2. **Vigor cannot be restored** — *"Vigor cannot be restored normally, though there is a
+   potential to have it restored under certain Mystery Cache options."* Mystery Cache
+   costs **0 Flowers**. Always open it.
+3. **The free drafts are not enough.** One free Alternate Cast pick follows each Battle.
+   The one drafted after Act 5 can only play Act 6 — one Vigor, not two. Left alone that
+   is 21 usable Vigor against 24 slots. **Two Companion events must be bought.**
+
+## The cast, by role
+
+Roles are the game's own On-Field / Off-Field tag plus what each kit actually does.
+**Only Flins and Varesa are tagged On-Field in the entire cast** — Normal recommends
+3+, so this run is one carry short and the schedule has to ration them.
+
+| Role | Character | Purpose |
+|---|---|---|
+| **Main DPS** | **Flins** | On-field Electro carry (Trial, Lv 90) |
+| | **Varesa** | On-field Electro plunge carry (own, Lv 90) |
+| **Heal** | **Barbara** | Hydro healing field (own, Lv 70) |
+| | **Alyosha** | Tugarin heals 120% of his ATK while he is off-field (own, Lv 60) |
+| **Support DPS** | **Yelan** | Off-field Hydro, party damage amp (Trial) |
+| | **Fischl** | Oz — off-field Electro ticks (Trial) |
+| | **Kachina** | Turbo Twirly — off-field Geo (Trial) |
+| | **Aino** | Off-field Hydro application (Trial) |
+| | **Lisa** | Electro, −15% enemy DEF for 10s on burst (own, Lv 60) |
+| **Support Sustain** | **Zhongli** | Jade Shield — 150% absorption, **−20% Elemental *and* Physical RES** (Trial) |
+| | **Valeriy** | Supercharged Shield, 250% absorption vs Electro (own, Lv 60) |
+| | **Dahlia** | Shield of Sacred Favor, scales on his Max HP (own, Lv 60) |
+
+**No Geo on the bench.** Geo exists only in Zhongli and Kachina — 4 Vigor for the season.
+
+## The schedule
+
+❌ **Removed 12 Nov — it did not survive the run.** The act-by-act assignments that stood
+here balanced roles and Vigor across all twelve characters as though they were
+interchangeable. They are not: four of the twelve are bare Lv 60s, and the first team
+built to that plan could not clear Act 2 at all.
+
+**The real schedule, the one that reached Act 5, is in
+[`10a-theater-normal-run.md`](10a-theater-normal-run.md)**, together with the three rules
+that replaced it:
+
+1. Sort the cast into *can carry an act* and *passenger* before planning Vigor. Every act
+   needs one of the former.
+2. Account for the **Star Challenge** on each act — usually a 65–75s timer. A carry-less
+   team clears a soft act but misses its star.
+3. Your best four each need **one early act plus the final act** — not zero, since a
+   character held back entirely strands a Vigor point.
+
+**Draft deadlines still hold.** Act 2 needs one Heal and one Sustain on the bench; Act 3
+needs the second of each; everyone must be drafted by the end of Act 4. Two bought
+Companions — one after Act 1, one after Act 2 — hits every deadline.
+
+## Card priority
+
+Mystery Cache is free and restores Vigor; it is never a decision. Everything else, in
+order:
+
+| Priority | Card | Cost | Why |
+|---|---|---|---|
+| **1** | **Companion: Random** | −80 | **Mandatory ×2.** Without them you cannot field four bodies in Acts 5–6. Bodies beat every buff until all six alternates are drafted |
+| **2** | **Electro-Charged blessing** | −60 | The only reaction line this cast can run, and it is what breaks the Act 6 shield |
+| **3** | **Battle: Elite Assault / High-Pressure Defense** | **+110** | +20 over a normal Battle. Take it on acts where the team is strong (1, 3, 6); take the +90 on Acts 4–5 |
+| **4** | **Mystery Cache: Rare** | −40 | Cheapest non-free card and can carry a Vigor restore |
+| **5** | **Wondrous Boon** | −60 | Flat combat buffs. Same price as a blessing node that compounds all run — so always lose to one |
+| **6** | **Companion: Invite** | −100 | Never. You need **all six** alternates, so a wider pool buys nothing. Pay 80, not 100 |
+
+> **Because you need every one of the six, draft order barely matters — but take a
+> Healer and a Shielder with the first two picks**, since Act 2 wants one of each.
+
+### Blessing path
+
+| Level | Take | Why |
+|---|---|---|
+| 1 | **Electro-Charged: Origin** | Electrosurge for 3s: **+250%** Electro-Charged DMG |
+| 2 | **Basic Thundercloud** | Every 2s, either a Strike (Electro DMG + **2 Energy** to the active character) or a Rainstorm (Hydro DMG + **5% HP heal**). The rival option, Basic Driftthunder, is pure damage — but this roster is energy-starved and has no healer in Acts 1 or 6 |
+| 3 | **Evolution** | Raises the base effect of *every* blessing; Electro-Charged gains another +50% |
+| 4 | **Extreme Thunderstrike** | Guaranteed Strikes at **1s** intervals. By Act 5 survival comes from the Zhongli / Dahlia / Valeriy shields, not 5% heals — take the energy and damage |
+
+Flower budget: start 100 → Origin (−60) → Act 1 (+90) → Companion (−80) → Act 2 (+90) →
+Companion (−80) → Act 3 Climactic (+125). That leaves ~185 going into Act 4, which covers
+the rest of the blessing line comfortably.
+
+## Fix before next season
+
+- **A Supporting Cast invite from a friend is a 13th body — +2 Vigor of slack.** It is set
+  at run start and removes the zero-margin problem entirely. This run went without one.
+- **Traveler to Lv 60** closes the Geo gap and adds that same slack.
+- Only Flins and Varesa are On-Field. A third on-field character would mean every act
+  gets a carry.
+
+**Sources:** Fandom *Imaginarium Theater* (Cast, Difficulty Level) and
+*Imaginarium Theater/Events*; villain cards and cast read from the in-game screens,
+12 Nov 2026.

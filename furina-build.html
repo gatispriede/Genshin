@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Furina — build and priority</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/gear.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pagechar"><span data-char="Furina"></span><h1>Furina</h1></div>
+  <p class="sub">5&#9733; Hydro sword &middot; <b>off-field</b> (the game's own role tag) &middot;
+  pulled 12 Nov 2026 &middot; Lv 27/40. Stats read live from the character screen that day.</p>
+
+  <div class="bar key">
+    <b>Her party buff does not read her level, her HP or her ATK.</b> It reads
+    <b>Fanfare stacks</b> and <b>Elemental Burst talent level</b> &mdash; nothing else. A Lv 27
+    Furina and a Lv 90 Furina hand the party the same damage bonus. That makes her burst
+    talent the single highest-return investment on this account, and it is the exact
+    opposite of Varesa, who is Lv 90 and underperforming because her gear is absent.
+  </div>
+
+  <h2>Measured on arrival</h2>
+  <p class="sub">Lv 27/40, Favonius Sword Lv 31/40, 12 Nov 2026.</p>
+  <table>
+    <tr><th>Stat</th><th>Now</th><th>Verdict</th></tr>
+    <tr><td>Max HP</td><td>4,823 <span class="num">+2,867</span> = 7,690</td><td class="bad">low &mdash; levels fix this</td></tr>
+    <tr><td>ATK</td><td>315 +106</td><td>irrelevant to her</td></tr>
+    <tr><td>Elemental Mastery</td><td>19</td><td class="good">leave it there</td></tr>
+    <tr><td>CRIT Rate</td><td><b>44.6%</b></td><td class="good">right where it should be</td></tr>
+    <tr><td>CRIT DMG</td><td>55.0%</td><td>fine, not a priority</td></tr>
+    <tr><td>Energy Recharge</td><td><b>192.4%</b></td><td class="warn">overshot &mdash; her burst costs 60</td></tr>
+  </table>
+
+  <div class="note">
+    <b>CRIT Rate matters only because of the sword.</b> Favonius Sword's <i>Windfall</i>
+    needs a <b>CRIT hit</b> to have its 60% chance to make particles. With no crit the
+    passive never fires and you are left with the substat alone. 44.6% is enough; don't
+    chase more.
+  </div>
+
+  <h2>The burst is the whole character</h2>
+  <p class="sub"><b>Let the People Rejoice</b> &mdash; 60 Energy &middot; 30s duration &middot; 15s cooldown.</p>
+
+  <p>It puts the party into <b>Universal Revelry</b>. Every time a party member's HP rises
+  <i>or falls</i>, Furina gains <b>1 Fanfare per percentage point of their Max HP</b>, and
+  Fanfare raises the DMG dealt and Incoming Healing Bonus of every nearby party member.
+  Maximum <b>300 Fanfare</b>.</p>
+
+  <div class="bar key">
+    <b>Party DMG bonus = Fanfare &times; conversion ratio.</b> The ratio is set by burst
+    talent level, and it more than triples from 1 to 10.
+  </div>
+
+  <table>
+    <tr><th>Burst talent</th><th>Conversion</th><th>Party DMG bonus at 300 Fanfare</th></tr>
+    <tr><td><b>1</b> &mdash; where she is</td><td>0.07%</td><td class="bad"><b>+21%</b></td></tr>
+    <tr><td>2</td><td>0.09%</td><td>+27%</td></tr>
+    <tr><td>4</td><td>0.13%</td><td>+39%</td></tr>
+    <tr><td>6</td><td>0.17%</td><td>+51%</td></tr>
+    <tr><td>8</td><td>0.21%</td><td>+63%</td></tr>
+    <tr><td><b>10</b> &mdash; your ceiling</td><td>0.25%</td><td class="good"><b>+75%</b></td></tr>
+    <tr><td>13 <i>&mdash; needs C3, not reachable</i></td><td>0.31%</td><td class="off">+93%</td></tr>
+  </table>
+
+  <div class="note">
+    <b>She is C0 and will stay C0.</b> No 5&#9733; on this account has a constellation, so
+    talent <b>10 is the real ceiling</b> &mdash; levels 11&ndash;13 need C3 and C5. That is
+    fine: 1 &rarr; 10 is already a 3.5&times; increase in the buff.
+  </div>
+
+  <div class="note">
+    <b>To actually reach 300 Fanfare you need HP churn.</b> It counts changes in either
+    direction, so a healer in the party feeds it as much as damage taken does.
+    <b>Barbara is the natural partner</b> &mdash; and Furina's own Salon Members drain the
+    active character's HP, which also counts.
+  </div>
+
+  <h2>Investment order</h2>
+  <table>
+    <tr><th>#</th><th>Do this</th><th>Why</th></tr>
+    <tr><td><b>1</b></td><td><b>Elemental Burst talent, 1 &rarr; 10</b></td>
+      <td>Takes the party-wide bonus from +21% to +75%. Buffs everyone, not just her.
+      Nothing else on this account returns as much. Sunday is the all-regions book day.</td></tr>
+    <tr><td><b>2</b></td><td><b>Character level to 60, then 80</b></td>
+      <td>Lv 60 is the Theater Normal gate, Lv 70 the Hard gate. Levels add only her
+      <i>own</i> damage &mdash; the buff is unaffected.</td></tr>
+    <tr><td><b>3</b></td><td><b>HP% sands and HP% goblet</b></td>
+      <td>Her Salon Members and the burst's AoE scale on Max HP. Convert the surplus
+      Energy Recharge into this.</td></tr>
+    <tr><td><b>4</b></td><td><b>Nothing on Elemental Mastery</b></td>
+      <td>See below &mdash; it buys a reaction trigger you are trying to avoid.</td></tr>
+  </table>
+
+  <h3>Base HP by level</h3>
+  <table>
+    <tr><th>Level</th><th>Base HP</th></tr>
+    <tr><td><b>27</b> &mdash; now</td><td>4,823</td></tr>
+    <tr><td>40</td><td>6,154</td></tr>
+    <tr><td><b>60</b> &mdash; Theater Normal gate</td><td><b>9,930</b></td></tr>
+    <tr><td>70 &mdash; Theater Hard gate</td><td>11,712</td></tr>
+    <tr><td>80</td><td>13,505</td></tr>
+    <tr><td>90</td><td>15,307</td></tr>
+  </table>
+
+  <div class="bar warn">
+    <b>Do not build Elemental Mastery on her.</b> EM only affects reactions she
+    <i>personally triggers</i> &mdash; and in an Electro-Charged team you specifically want a
+    Lv 90 doing the triggering, not her. Electro-Charged damage scales off the level and EM
+    of whoever applies the <i>second</i> element. EM on Furina buys a trigger you are trying
+    to avoid.
+  </div>
+
+  <h2>Weapon &mdash; Favonius Sword, and level it</h2>
+  <p class="sub">R1, equipped 12 Nov. The correct pick from the inventory: Energy Recharge
+  substat plus a passive that makes more energy.</p>
+
+  <table>
+    <tr><th>Weapon level</th><th>Base ATK</th><th>Energy Recharge</th></tr>
+    <tr><td><b>31</b> &mdash; now</td><td>158</td><td class="bad"><b>28.9%</b></td></tr>
+    <tr><td>40</td><td>210</td><td>34.3%</td></tr>
+    <tr><td>60</td><td>319</td><td>45.1%</td></tr>
+    <tr><td>70</td><td>373</td><td>50.5%</td></tr>
+    <tr><td>80</td><td>427</td><td>55.9%</td></tr>
+    <tr><td>90</td><td>454</td><td class="good"><b>61.3%</b></td></tr>
+  </table>
+
+  <div class="note">
+    <b>Weapon EXP is cheap next to character EXP.</b> Taking the sword from 31 to 90 more
+    than doubles its Energy Recharge and nearly triples its base ATK. Her Energy Recharge
+    is already past what a 60-cost burst needs, so treat this as headroom to move artifact
+    rolls off ER and onto HP% rather than as a reason to stack more.
+  </div>
+
+  <h2>The team she belongs in</h2>
+  <div class="bar key">
+    <b>Varesa</b> <i>(main dps, Electro)</i> &middot; <b>Furina</b> <i>(buff + Hydro)</i> &middot;
+    <b>Barbara</b> <i>(heal &mdash; feeds Fanfare)</i> &middot; <b>one Electro</b> <i>(holds the aura)</i>
+  </div>
+
+  <p>Measured on 12 Nov: adding her <b>roughly doubled Varesa's damage</b> &mdash; at burst
+  talent level 1 and Lv 27. Two things are happening at once:</p>
+  <ul>
+    <li><b>The Fanfare buff</b>, which every party member gets.</li>
+    <li><b>Hydro application</b>, which turns Varesa's Electro into Electro-Charged.</li>
+  </ul>
+
+  <p>It is also the first team on this account built entirely from <b>owned</b> characters
+  rather than Imaginarium Theater trials.</p>
+
+  <div class="note">
+    <b>Season rotation.</b> Season 29 (to 1 Dec) requires Hydro / Electro / Geo, so Furina
+    qualifies now; December is leaked as Pyro / Hydro / Geo, where she still qualifies and
+    Varesa does not. See <a href="research/10-imaginarium-theater.md">10-imaginarium-theater.md</a>
+    and the run log in <a href="research/10a-theater-normal-run.md">10a-theater-normal-run.md</a>.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> kit text, Fanfare conversion table, energy cost and the HP and weapon
+    scaling tables parsed from the Genshin Impact Wiki on 12 Nov 2026; the on-field /
+    off-field role from the wiki's own character-role category. Her live stats and equipped
+    weapon were read from the in-game character screen the same day.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<div id="ascension" data-character="Furina"></div>
+<script src="app/ascension.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>
