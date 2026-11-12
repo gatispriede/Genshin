@@ -30,7 +30,7 @@ The roster grew from **22 → 33** since the 30 Oct pull. README's account snaps
 | Escoffier | 70 | 🟡 | raw JSON only — `data/char_10000112.json`, **not written up** |
 | Tighnari | 70 | ✅ | `kits.md` |
 | Barbara | 70 | ✅ | `kits.md` |
-| **Yumemizuki Mizuki** | 60 | 🟡 | full wiki read 12 Nov → `research/12-varesa-team.md`. **No `kits.md` entry, no raw JSON** |
+| **Yumemizuki Mizuki** | 60 | ✅ | full wiki read 12 Nov → `research/12-varesa-team.md` + `mizuki-build.html` (swirl team, rotation, gear). **No `kits.md` entry, no raw JSON** |
 | Alyosha | 60 | ✅ ✅ | `kits.md` + full wiki read 12 Nov |
 | **Valeriy** | 60 | 🟡 | full wiki read 12 Nov → `research/12-varesa-team.md`. **No `kits.md` entry, no raw JSON** |
 | Dahlia | 60 | ✅ ✅ | `kits.md` + full wiki read 12 Nov |
@@ -140,6 +140,7 @@ Derived conclusions already drawn from that table — don't re-derive:
 | **Theater difficulty gates** — Easy 3 acts / 8 chars, Normal 6 / 12, Hard 8 / 16, Visionary 10 / 22, Lunar 12 / 28 | `research/10-imaginarium-theater.md` |
 | **Theater event costs** — every Battle, Companion, Blessing and Cache card priced | `research/10-imaginarium-theater.md` |
 | **On-field / off-field tags** for the Season 29 cast — only Flins and Varesa are On-Field | `research/10-imaginarium-theater.md` |
+| **Swirl damage** — fixed, scales on **character level and EM only**; not ATK, CRIT, Elemental DMG%, generic DMG% or talent level. Hydro Swirl deals no AoE. 2 instances/0.5s per target, **separate limit per swirled element** | `mizuki-build.html` |
 | RES → damage multiplier formula, all three branches | `research/11a-tactical-sweep-bosses.md` |
 | Boss shields, paralysis windows, resistance tables | `research/11a-tactical-sweep-bosses.md` |
 | Resin costs, Trounce discount | `verified-facts.md` |

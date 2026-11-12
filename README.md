@@ -97,6 +97,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 |---|---|
 | [`starfell-valley-guide.html`](starfell-valley-guide.html) | Annotated Mondstadt map — priority spots, chest zones, waypoints |
 | [`reaction-combos.html`](reaction-combos.html) | Element pair picker — which reaction, what it does, who goes first |
+| [`mizuki-build.html`](mizuki-build.html) | **Mizuki as a swirl carry** — swirl scales on level and EM *only*, so ATK, CRIT and DMG% buffs do nothing. Team, rotation, and why Hydro is the wrong aura |
+| [`furina-build.html`](furina-build.html) | **Furina** — her party buff ignores her level, so the burst talent is the account's best investment |
 | [`dragonspine-quest-map.html`](dragonspine-quest-map.html) | Annotated Dragonspine map — the *In the Mountains* route to Peak of Vindagnyr |
 | [`redbeet-map.html`](redbeet-map.html) | Your Everfrozen Earth map with the Red Beet corridor shaded |
 
