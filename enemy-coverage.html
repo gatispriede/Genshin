@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enemy shields — what this account can and cannot break</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/gear.css">
+<style>
+  table.coef td, table.coef th { text-align:center; }
+  table.coef td:first-child, table.coef th:first-child { text-align:left; }
+  .x2 { color:var(--goal); font-weight:800; }
+  .x1 { color:var(--paper); }
+  .half { color:var(--off); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Enemy shields</h1>
+  <p class="sub">What the three teams can break, what they cannot, and the one gap that is
+  not a gear problem. Mechanics verified against the Genshin Impact Wiki's
+  <i>Ward</i> and <i>Ward/Gauge Data</i> pages, <b>12 Nov 2026</b>.</p>
+
+  <div class="bar key">
+    <b>Enemy shields come down on elemental <i>reactions</i>, not on damage.</b> Each
+    element removes gauge units from a ward at a fixed rate. Hitting a ward with the wrong
+    element is close to pointless no matter how hard you hit it.
+  </div>
+
+  <div class="bar warn">
+    <b>Anemo and Geo are 0.5 against every ward.</b> Swirl and Crystallize &mdash; two of
+    this account's main damage engines &mdash; contribute almost nothing to breaking
+    shields. Mizuki and Sucrose are passengers in these fights.
+  </div>
+
+  <h2>The breaker table</h2>
+  <p class="sub"><b>2</b> is double speed and the best answer. <b>DoT</b> means the reaction
+  drains the ward over time instead of instantly &mdash; 0.4 gauge units per second.</p>
+
+  <table class="coef">
+    <tr><th>Ward</th><th>Pyro</th><th>Hydro</th><th>Electro</th><th>Cryo</th><th>Dendro</th><th>Anemo</th><th>Geo</th></tr>
+    <tr><td><b>Pyro</b></td><td>&mdash;</td><td class="x2">2</td><td class="x1">1</td><td class="half">0.5</td><td>&mdash;</td><td class="half">0.5</td><td class="half">0.5</td></tr>
+    <tr><td><b>Hydro</b></td><td class="half">0.5</td><td>&mdash;</td><td>DoT</td><td class="x1">1</td><td class="x2">2</td><td class="half">0.5</td><td class="half">0.5</td></tr>
+    <tr><td><b>Electro</b></td><td class="x1">1</td><td>DoT</td><td>&mdash;</td><td class="x1">1</td><td class="x1">1</td><td class="half">0.5</td><td class="half">0.5</td></tr>
+    <tr><td><b>Cryo / Frozen</b></td><td class="x2">2</td><td>&mdash;</td><td class="x1">1</td><td>&mdash;</td><td>&mdash;</td><td class="half">0.5</td><td class="half">0.5</td></tr>
+    <tr><td><b>Dendro</b></td><td>DoT</td><td class="half">0.5</td><td class="x1">1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+    <tr><td><b>Geo</b></td><td class="x2">2</td><td class="x2">2</td><td class="x2">2</td><td class="x2">2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Geo wards are a two-step.</b> You must apply Cryo, Electro, Hydro or Pyro
+    <i>first</i>, then manually apply Geo to trigger <b>Crystallize</b>. The amount consumed
+    scales with how much of the first aura is still on the target, so do it quickly.
+  </div>
+
+  <h2>What each team brings to a ward</h2>
+  <table>
+    <tr><th>Team</th><th>Elements</th><th>Useful against wards</th></tr>
+    <tr><td><b>1 · Skirk freeze</b></td><td>Cryo · Hydro</td><td>Cryo, Hydro</td></tr>
+    <tr><td><b>2 · Mizuki Stellar Swirl</b></td><td>Anemo · Cryo · Hydro</td><td>Cryo, Hydro — <i>Anemo is 0.5, it adds nothing</i></td></tr>
+    <tr><td><b>3 · Varesa Electro-Charged</b></td><td>Electro · Hydro · Geo · Anemo</td><td>Electro, Hydro, Geo</td></tr>
+  </table>
+
+  <div class="bar warn">
+    <b>Teams 1 and 2 are the same tool.</b> For breaking shields they field an identical
+    pair — Cryo and Hydro — because Mizuki's Anemo is 0.5 against everything. So three teams
+    give you <b>two</b> ward profiles, not three. Switch between 1 and 2 for playstyle or
+    survivability, never to solve a shield.
+  </div>
+
+  <h2>Which team to switch to</h2>
+  <table>
+    <tr><th>Ward you meet</th><th>Team 1 / 2<br><i>Cryo + Hydro</i></th><th>Team 3<br><i>Electro + Hydro + Geo</i></th><th>Bring</th></tr>
+    <tr><td><b>Pyro</b><br><i>Pyro Abyss Mage 12 · Abyss Lector: Fathomless Flames 72 · Pyro Hypostasis 28</i></td>
+      <td class="good">Hydro &times;2</td><td class="good">Hydro &times;2</td><td class="good"><b>Any</b> — every team has Hydro</td></tr>
+    <tr><td><b>Hydro</b><br><i>Hydro Abyss Mage 12 · Abyss Herald: Wicked Torrents 36</i></td>
+      <td class="x1">Cryo &times;1</td><td class="warn">Electro-Charged DoT</td><td><b>Team 1 or 2</b> — a flat &times;1 beats a drip</td></tr>
+    <tr><td><b>Electro</b><br><i>Electro Abyss Mage 8 · Abyss Lector: Violet Lightning 36</i></td>
+      <td class="x1">Cryo &times;1</td><td class="warn">Electro-Charged DoT</td><td><b>Team 1 or 2</b></td></tr>
+    <tr><td><b>Cryo / Frozen</b><br><i>Cryo Hypostasis 88 · Abyss Herald: Frost Fall 56 · Cryo Abyss Mage 12</i></td>
+      <td class="bad">nothing — Cryo does <b>0</b></td><td class="x1">Electro &times;1</td>
+      <td class="warn"><b>Team 3, and only team 3</b></td></tr>
+    <tr><td><b>Geo</b><br><i>Large Geo Slime 8</i></td>
+      <td class="bad">no Geo to Crystallize with</td><td class="good">Kachina &times;2</td>
+      <td class="good"><b>Team 3</b></td></tr>
+    <tr><td><b>Dendro</b><br><i>Sumeru enemies</i></td>
+      <td class="bad">nothing</td><td class="x1">Electro &times;1</td><td class="good"><b>Team 3</b> — &times;1 is the best anyone gets</td></tr>
+  </table>
+
+  <div class="bar key">
+    <b>Team 3 is your specialist.</b> It is the <i>only</i> one of the three that can touch
+    a <b>Cryo, Geo or Dendro</b> ward at all. Teams 1 and 2 are the better pick for
+    <b>Pyro, Hydro and Electro</b> wards.
+  </div>
+
+  <h2>And the enemy's own element</h2>
+  <p class="sub">Separate from wards: most enemies resist the element they are made of, so
+  the team that breaks the shield is not always the team that kills the thing behind it.</p>
+  <table>
+    <tr><th>Enemy alignment</th><th>Weak team</th><th>Switch to</th></tr>
+    <tr><td><b>Cryo</b> — Cryo Regisvine, Cryo Hypostasis, most of Snezhnaya</td>
+      <td class="bad">Teams 1 and 2 — both are Cryo carries</td><td class="good"><b>Team 3</b></td></tr>
+    <tr><td><b>Electro</b> — Thunder Manifestation, Electro Hypostasis, Primordial Bathysmal Vishap</td>
+      <td class="bad">Team 3 — Varesa is Electro</td><td class="good"><b>Team 1 or 2</b></td></tr>
+    <tr><td><b>Hydro</b> — Hydro Hypostasis, Rhodeia</td>
+      <td class="warn">All three carry Hydro supports</td><td>Team 1 — Skirk's Cryo still lands, and Frozen holds them</td></tr>
+    <tr><td><b>Pyro</b> — Pyro Regisvine, Pyro Hypostasis</td>
+      <td>—</td><td class="good"><b>Any</b> — nothing you own is Pyro, so nothing is resisted</td></tr>
+  </table>
+
+  <div class="bar bad">
+    <b>Cryo enemies are the one place both effects stack against you.</b> A Cryo-aligned
+    enemy with a Frozen ward resists Teams 1 and 2 <i>and</i> is immune to their
+    shield-breaking. That leaves exactly one option — Team 3, at half rate.
+  </div>
+
+  <div class="note">
+    <b>Worst case on the board:</b> the <b>Cryo Hypostasis</b>. An <b>88 GU</b> Frozen
+    revival ward you can only chip at <b>&times;1</b> with Varesa's Electro, on a boss that
+    <b>revives</b> if you do not break it in time — and your two strongest teams cannot
+    help at all.
+  </div>
+
+  <div class="note">
+    <b>This already showed up in play.</b> In the 7.2 Tactical Sweep, <b>Mondstadt's Cryo
+    Regisvine was the worst of the four stages</b> and the only one still short of 18,000.
+    <a href="research/11a-tactical-sweep-bosses.md">11a-tactical-sweep-bosses.md</a> records
+    that it takes <b>18.5% damage while shielded</b>. Same cause.
+  </div>
+
+  <h2>The fix is one character, not gear</h2>
+
+  <div class="bar key">
+    <b>Xiangling, currently Lv 40.</b> Pyro, and she applies it <b>off-field</b> through
+    Guoba and Pyronado — so she breaks Cryo wards without taking field time from a carry.
+    She is also widely rated the best 4&#9733; in the game, and already the Pyro slot in the
+    Mizuki swirl variant.
+  </div>
+
+  <p>She does not just patch a gap &mdash; she gives you a <b>third ward profile</b>. Right
+  now three teams offer two, and <b>Cryo / Frozen is &times;1 at best</b>. One Pyro slot
+  makes it <b>&times;2</b>, and makes it available from whichever team she joins rather than
+  forcing you into team 3.</p>
+
+  <p>Pair her with <b>&ldquo;The Catch&rdquo;</b> from the Inazuma Fishing Association &mdash;
+  Elemental Burst DMG and Energy Recharge, refined to R5 from the shop without duplicates.
+  She also unlocks <b>Burning</b> against Dendro wards and <b>Melt</b> alongside your Cryo
+  teams.</p>
+
+  <table>
+    <tr><th>Priority</th><th>Who</th><th>Closes</th></tr>
+    <tr><td><b>1</b></td><td><b>Xiangling</b> Lv 40 → 70+</td><td class="good">Cryo and Frozen wards, from &times;1 to &times;2. Also enables Burning against Dendro wards</td></tr>
+    <tr><td><b>2</b></td><td><b>Tighnari</b> Lv 70</td><td class="warn">Hydro wards, from &times;1 to &times;2. Lower priority — Cryo already gets there</td></tr>
+    <tr><td>—</td><td>Amber Lv 40, Collei Lv 20</td><td class="off">Same elements, further behind. Not worth the investment over the two above</td></tr>
+  </table>
+
+  <div class="bar good">
+    <b>This is the one finding on this account that artifacts cannot fix.</b> Everything else
+    in the build pages is gear. Pyro is simply absent from all three teams, and no goblet,
+    set or talent level changes that.
+  </div>
+
+  <div class="note">
+    <b>Sources:</b> the Reaction Coefficient table and the per-enemy ward gauge figures are
+    from the Genshin Impact Wiki's <i>Ward</i> and <i>Ward/Gauge Data</i> pages, read
+    12 Nov 2026. Note that <i>Ward/Gauge Data</i> is flagged by the wiki as
+    community-derived rather than official. Team compositions are from
+    <a href="teams.html">teams.html</a>; character levels from the in-game Party Setup
+    screens the same day.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>

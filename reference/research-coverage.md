@@ -141,6 +141,7 @@ Derived conclusions already drawn from that table — don't re-derive:
 | **Theater event costs** — every Battle, Companion, Blessing and Cache card priced | `research/10-imaginarium-theater.md` |
 | **On-field / off-field tags** for the Season 29 cast — only Flins and Varesa are On-Field | `research/10-imaginarium-theater.md` |
 | **Swirl damage** — fixed, scales on **character level and EM only**; not ATK, CRIT, Elemental DMG%, generic DMG% or talent level. Hydro Swirl deals no AoE. 2 instances/0.5s per target, **separate limit per swirled element** | `mizuki-build.html` |
+| **Enemy wards** — the full Reaction Coefficient table (which element breaks which shield, and how fast), plus per-enemy gauge units. **Anemo and Geo are 0.5 against everything** | `enemy-coverage.html` |
 | RES → damage multiplier formula, all three branches | `research/11a-tactical-sweep-bosses.md` |
 | Boss shields, paralysis windows, resistance tables | `research/11a-tactical-sweep-bosses.md` |
 | Resin costs, Trounce discount | `verified-facts.md` |
