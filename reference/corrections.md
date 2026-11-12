@@ -332,6 +332,40 @@ guess. The blessing branches are a published list — read it.*
 
 ---
 
+## Built a whole build page on the wrong damage source (12 Nov)
+
+`mizuki-build.html` was written around one sentence from the wiki's Swirl page:
+*"Swirl damage is fixed damage based only on character level and elemental
+mastery."* From that I concluded CRIT was irrelevant on her, told the user not
+to build it, and judged the Cryo Traveler a downgrade because converting Cryo
+Swirl into Stellar Swirl more than halves the EM coefficient.
+
+Every step of that reasoning was sound. The premise was the wrong premise.
+
+**Mizuki's damage is not Swirl.** Her Witch's Revelation passive, *Vast Be the
+Dream*, adds **1,000% of her Elemental Mastery** to her next periodic AoE Anemo
+hit after she triggers a Swirl. That is an ordinary damage instance carrying a
+large additive base — it **crits**, and it takes DMG% buffs. The swirl is the
+trigger; that hit is the payload. **Radiance: Stellar Swirl** then adds a second
+instance at another 1,000% of EM — so a Stellar enabler roughly **doubles** her
+biggest hit, which is exactly why the community builds her around it.
+
+So the advice inverted: build CRIT, want the Cryo Traveler, run the Cryo team,
+and move Viridescent Venerer onto Sucrose.
+
+**How it was caught:** the user's own three team screenshots — one of which was
+already the Cryo Traveler team I had argued against — plus a cross-check of
+KQM, Prydwen and Mobalytics through Google's AI search, at the user's
+suggestion.
+
+*Lesson: I read the reaction's mechanics page and stopped. I never read the
+character's own passive list to the end — the passive that mattered was the one
+I skipped as flavour. **Read the whole kit before reasoning from a mechanic.**
+And when the user's build disagrees with mine, check their premise before
+defending mine: they had been playing the correct team all along.*
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.
