@@ -66,8 +66,14 @@ def note(region, quests):
 
 
 def effort(q):
-    """Rough minutes-ish score. Dialogue dominates; each step adds walking."""
-    return (q.get("dlg") or 0) / 1000.0 + (q.get("steps") or 0) * 0.6
+    """Rough minutes-ish score. Dialogue dominates; each step adds walking.
+
+    Prior quests count too. Ranking on the paying quest's own length alone was
+    wrong: Soheil's Wish measures as Medium while hiding five prerequisites.
+    q["_priors"] is attached in region_section before any sort happens.
+    """
+    own = (q.get("dlg") or 0) / 1000.0 + (q.get("steps") or 0) * 0.6
+    return own + (q.get("_priors") or 0) * PRIOR_COST
 
 
 def tier(score):
@@ -128,6 +134,49 @@ def load_maps():
 MAPS = load_maps()
 MAP_PAGE = {r: "%s-quest-maps.html" % r.lower()
             for r in ("Liyue", "Inazuma", "Sumeru", "Fontaine")}
+
+
+def load_chains():
+    """Prior-quest counts from tools/fetch-quest-prereqs.py.
+
+    Only the quest that PAYS reputation is listed on this page. Where it ends a
+    World Quest series the earlier parts pay nothing and never appear, so a
+    five-quest chain used to render as one short row. This is what fixes that.
+    """
+    path = os.path.join("reference", "data", "quest-chains.json")
+    if not os.path.exists(path):
+        return {}
+    data = json.load(io.open(path, encoding="utf-8"))
+    out = {}
+    for c in data.get("chains", []):
+        out.setdefault(c.get("region"), {})[c["quest"]] = c
+    return out
+
+
+CHAINS = load_chains()
+
+# What one unpaid prior quest costs, in the same "minutes-ish" units as effort().
+# Across the dataset the median quest scores 16.9 and the lower quartile 8.7; a
+# prior is a whole quest, so 12 is deliberately conservative - it keeps chains
+# from swamping the ranking while stopping a 9-prior quest from posing as short.
+PRIOR_COST = 12.0
+
+
+def priors_of(region, q):
+    """How many unpaid quests stand in front of this one.
+
+    Two things this number does NOT capture, so the ranking understates rather
+    than overstates:
+
+      - 28 quests are absent from the chain file (mostly Liyue) and score 0 here.
+        Absent is not the same as standalone; it means nobody checked.
+      - `priors` only walks the wiki's `prev` field. Every quest that scores 0
+        still carries a free-text `requirement`, and those range from "kill one
+        Shroomboar" to "complete Aranyaka". app/quest-chains.js renders that text
+        inline because it cannot be scored - read the badge, not just the rank.
+    """
+    c = CHAINS.get(region, {}).get(q["name"])
+    return (c.get("priors") or 0) if c else 0
 
 
 def thumb(region, q):
@@ -202,6 +251,8 @@ def act_note(region, acts):
 
 def region_section(region, quests):
     live = [q for q in quests if not q.get("missing")]
+    for q in live:
+        q["_priors"] = priors_of(region, q)
     acts = [q for q in live if is_act(q)]
     req = [q for q in live if q.get("group") == "Request" and not is_act(q)]
     world = [q for q in live if q.get("group") != "Request" and not is_act(q)]
