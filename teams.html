@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The three teams — roles, sets, alternatives</title>
+<link rel="stylesheet" href="styles/map.css">
+<link rel="stylesheet" href="styles/gear.css">
+<style>
+  .team { border-left:3px solid var(--off); padding:10px 0 10px 14px; margin:14px 0; }
+  .team.cryo    { border-left-color:var(--cryo); }
+  .team.anemo   { border-left-color:var(--anemo); }
+  .team.electro { border-left-color:var(--electro); }
+  .lineup { font-size:1.02rem; line-height:1.7; color:var(--paper); margin:0 0 4px; }
+  .lineup b { color:var(--best); }
+  .lineup i { color:var(--dim); font-style:normal; font-size:.86rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>The three teams</h1>
+  <p class="sub">All three were built and played by the account owner and all three work.
+  This page records <b>why</b> they work, the artifact set each slot wants, and which
+  alternatives exist on this roster. Verified <b>12 Nov 2026</b> against the Genshin Impact
+  Wiki for mechanics and against KQM, Prydwen, Mobalytics and the character subreddits
+  through Google's AI search for set and team consensus.</p>
+
+  <div class="bar key">
+    <b>Two domains cover almost everything below.</b> <b>Sanctum of Rainbow Spirits</b>
+    (Obsidian Codex + Scroll of the Hero of Cinder City) serves Varesa, Escoffier and
+    Kachina. <b>Derelict Masonry Dock</b> (Finale of the Deep Galleries) serves Skirk.
+  </div>
+
+  <h2>1 · Skirk freeze</h2>
+  <div class="team cryo">
+    <p class="lineup"><b>Skirk</b> <i>Lv 80 · main DPS</i> · <b>Mona</b> <i>Lv 58 · buffer</i>
+    · <b>Escoffier</b> <i>Lv 70 · Cryo + heals</i> · <b>Mika</b> <i>Lv 45 · 4th</i></p>
+  </div>
+
+  <h3>Why it works — her two passives, read from the wiki</h3>
+
+  <div class="bar key">
+    <b>Reason Beyond Reason.</b> When nearby party members trigger <b>Frozen, Superconduct,
+    Stellar-Conduct, Cryo Swirl, Stellar Swirl or Cryo Crystallize</b>, a <b>Void Rift</b>
+    spawns near that opponent — once every 2.5s, max 3 at a time. Skirk absorbs them for
+    <b>Death's Crossing</b> stacks, each worth <b>+10% / +20% / +40% ATK</b>.
+  </div>
+
+  <p>That is the real constraint: the team has to keep <b>Cryo reactions happening</b>.
+  Mona's Hydro onto Escoffier's Cryo makes Frozen on repeat, which is the engine.</p>
+
+  <div class="bar warn">
+    <b>Correcting a widely repeated claim.</b> Community guides say Skirk "heavily punishes"
+    non-Hydro / non-Cryo teammates. She does not. The relevant passive, <b>Mutual Weapons
+    Mentorship</b>, reads: <i>"When all party members are either Hydro or Cryo, and if there
+    is at least 1 Hydro and 1 Cryo character, your own party members' Elemental Skill Level
+    is increased by 1."</i> It is a <b>bonus you forgo</b>, not a penalty — useful to know
+    before you refuse a better off-element support.
+  </div>
+
+  <h3>Sets</h3>
+  <table>
+    <tr><th>Slot</th><th>Set</th><th>Main stats</th></tr>
+    <tr><td><b>Skirk</b></td><td><b>4pc Finale of the Deep Galleries</b><br><i>Derelict Masonry Dock</i></td>
+      <td>ATK% sands · <b>Cryo goblet</b> · CRIT circlet · <b>0% ER needed</b></td></tr>
+    <tr><td><b>Escoffier</b></td><td><b>4pc Scroll of the Hero of Cinder City</b><br><i>alt: Golden Troupe</i></td>
+      <td>~165%+ ER, then ATK% and CRIT</td></tr>
+    <tr><td><b>Mona</b></td><td><b>4pc Noblesse Oblige</b><br><i>alt: Tenacity, Emblem</i></td>
+      <td><b>200%+ ER first</b> · Hydro DMG / CRIT second</td></tr>
+  </table>
+
+  <div class="bar good">
+    <b>Give Mona <i>Thrilling Tales of the Dragon Slayers</i></b> and swap straight from her
+    into Skirk at the end of setup — it hands Skirk a <b>48% ATK</b> buff. Mona's job in this
+    team is the buff, not her own damage.
+  </div>
+
+  <h3>The 4th slot, from this roster</h3>
+  <table>
+    <tr><th>Who</th><th>Brings</th><th>Set</th></tr>
+    <tr><td><b>Mika</b> Lv 45 <i>current</i></td><td>Healing, Cryo resonance, up to <b>25% ATK SPD</b> for Skirk's normal-attack combos</td><td>Noblesse Oblige / Song of Days Past · HP goblet · Healing circlet</td></tr>
+    <tr><td><b>Rosaria</b> Lv 1</td><td>Up to <b>15% team CRIT Rate</b>, Cryo resonance, real sub-DPS</td><td>Noblesse Oblige / Emblem · Cryo goblet · CRIT circlet · <b>Favonius Lance</b></td></tr>
+    <tr><td><b>Charlotte</b> Lv 50</td><td>Team healing and a 48% ATK buff — but Mona already holds TTDS</td><td>Noblesse Oblige</td></tr>
+    <tr><td><b>Furina</b> Lv 27</td><td class="good">The strongest of the four once levelled, and legal here (Hydro)</td><td>Golden Troupe</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Escoffier already heals</b>, so on paper <b>Rosaria's CRIT share beats Mika's</b>
+    second healer. In practice she is <b>Lv 1 against Mika's 45</b> — keep Mika until that
+    changes.
+    <br><br>
+    <b>Do not stack duplicate sets.</b> If Mona wears Noblesse Oblige, the 4th slot wants
+    <b>Scroll of the Hero of Cinder City</b> or <b>The Exile</b> instead — a second Noblesse
+    does nothing.
+  </div>
+
+  <h2>2 · Mizuki Stellar Swirl</h2>
+  <div class="team anemo">
+    <p class="lineup"><b>Yumemizuki Mizuki</b> <i>Lv 60 · on-field</i> ·
+    <b>Funisimo (Traveler, Cryo)</b> <i>Lv 40 · Stellar enabler</i> ·
+    <b>Rosaria</b> <i>Lv 1 · second Cryo</i> · <b>Barbara</b> <i>Lv 70 · Hydro, heals</i></p>
+  </div>
+
+  <div class="bar good">
+    <b>This team is correct and I argued against it.</b> Mizuki's damage is not Swirl — it
+    is <b>Vast Be the Dream</b>, which adds <b>1,000% of her Elemental Mastery</b> to her
+    next AoE Anemo hit, and <b>Radiance: Stellar Swirl</b>, which adds a <i>second</i>
+    instance at another 1,000% of EM. The Cryo Traveler is the only Stellar Jubilee passive
+    on this account, and he roughly <b>doubles her biggest hit</b>.
+  </div>
+
+  <p>Full build, sets and the rotation are on
+  <a href="mizuki-build.html"><b>mizuki-build.html</b></a>. The short version: <b>EM sands,
+  EM goblet, CRIT circlet</b>, 4pc Gilded Dreams or 2pc/2pc EM, and move <b>Viridescent
+  Venerer onto Sucrose</b>.</p>
+
+  <div class="note">
+    <b>Why Rosaria and not another Hydro:</b> a second Cryo turns on <b>Cryo resonance,
+    +15% CRIT Rate</b> against Cryo-affected and Frozen targets — which matters here because
+    Mizuki's payload is an ordinary damage instance that crits.
+    <br><br>
+    <b>Mizuki cannot Normal Attack in Dreamdrifter</b>, so Xingqiu- and Yelan-style appliers
+    that key off the active character's Normal Attacks do nothing. Every applier in this team
+    has to tick on its own.
+  </div>
+
+  <h2>3 · Varesa Electro-Charged</h2>
+  <div class="team electro">
+    <p class="lineup"><b>Varesa</b> <i>Lv 90 · main DPS</i> · <b>Furina</b> <i>Lv 27 · Hydro + buff</i>
+    · <s>Charlotte</s> <b>→ Kachina</b> <i>Natlan buffer</i> · <b>Sucrose</b> <i>Lv 50 · VV</i></p>
+  </div>
+
+  <div class="bar bad">
+    <b>Charlotte is working against this team.</b> Cryo in an Electro + Hydro line-up does
+    two unhelpful things: <b>Cryo + Furina's Hydro freezes the target</b>, which locks the
+    aura and shuts Electro-Charged off entirely; and <b>Cryo + Varesa's Electro is
+    Superconduct</b>, which shreds <b>Physical</b> RES and is worth nothing to her.
+  </div>
+
+  <div class="bar good">
+    <b>Swap her for Kachina on 4pc Scroll of the Hero of Cinder City.</b> Kachina triggers
+    the set through Crystallize and, because she is Natlan and in Nightsoul's Blessing,
+    reaches its big half — <b>+40% Elemental DMG Bonus for the whole party</b>. She is free
+    from the Archon Quest and needs almost no investment to do this one job.
+  </div>
+
+  <h3>Sets</h3>
+  <table>
+    <tr><th>Slot</th><th>Set</th><th>Main stats</th></tr>
+    <tr><td><b>Varesa</b></td><td><b>4pc Long Night's Oath</b> is BiS (+100% Plunge DMG);
+      <b>4pc Obsidian Codex</b> lands within 1–5% and is far cheaper to farm</td>
+      <td>ATK% sands · <b>Electro goblet</b> · CRIT circlet</td></tr>
+    <tr><td><b>Furina</b></td><td>4pc Golden Troupe</td><td>HP% · HP% · CRIT or HP%</td></tr>
+    <tr><td><b>Kachina</b></td><td><b>4pc Scroll of the Hero of Cinder City</b></td>
+      <td>ER / ATK% · Geo% · CRIT Rate</td></tr>
+    <tr><td><b>Sucrose</b></td><td><b>4pc Viridescent Venerer</b> — the pieces currently on Mizuki</td>
+      <td>EM throughout</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Alternative 4th: Barbara on <i>Thrilling Tales of the Dragon Slayers</i></b>, for a
+    48% ATK pass to Varesa plus healing, if you would rather have that than Sucrose's RES
+    shred. Varesa's full build is on <a href="varesa-build.html">varesa-build.html</a>.
+    <br><br>
+    With heavy DMG% buffers like Furina in the team, an <b>ATK% goblet</b> is defensible on
+    Varesa — but at <b>0.0% Electro DMG Bonus and no set bonus at all</b>, the Electro goblet
+    is still her larger gain today.
+  </div>
+
+  <h2>What you cannot have at once</h2>
+  <div class="bar warn">
+    <b>Two allocation conflicts, and neither is solved by farming.</b>
+  </div>
+  <table>
+    <tr><th>Contested</th><th>Wanted by</th><th>Call</th></tr>
+    <tr><td><b>Furina</b></td><td>Skirk's 4th slot <i>and</i> Varesa's team</td>
+      <td>Varesa — Electro-Charged needs the Hydro, and Skirk has three other legal 4ths</td></tr>
+    <tr><td><b>4pc Viridescent Venerer</b></td><td>Sucrose (Varesa team) <i>and</i> Mizuki</td>
+      <td>Sucrose — in a Stellar Swirl team Mizuki wants EM and CRIT, not a 2pc Anemo bonus</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Sources:</b> Skirk's <i>Reason Beyond Reason</i> and <i>Mutual Weapons Mentorship</i>,
+    Mizuki's <i>Vast Be the Dream</i>, the Stellar Jubilee enabler list and all artifact set
+    text from the Genshin Impact Wiki, 12 Nov 2026. Set and slot consensus cross-checked
+    against KQM, Prydwen, Mobalytics, GameWith and the character subreddits via Google's AI
+    search the same day. Character levels read from the in-game Party Setup screens.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>
