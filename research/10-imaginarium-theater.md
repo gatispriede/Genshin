@@ -190,7 +190,8 @@ and Brilliant Diamond. Cheapest of the four in materials despite needing twenty 
 
 ### Gatherable, free, all in Mondstadt
 
-All four have mapped routes on [`level-to-60.html`](../level-to-60.html). The map files are
+All four reached Lv. 60; that goal is complete and the page is now
+[`character-roadmap.html`](../character-roadmap.html). The map files are
 gitignored as generated output, so if they are missing, rebuild with:
 
 ```
