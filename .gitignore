@@ -18,3 +18,5 @@ Thumbs.db
 # churn that git would keep forever.
 reference/data/hoyo_points.json
 reference/data/hoyo_tree.json
+node_modules/
+dist/

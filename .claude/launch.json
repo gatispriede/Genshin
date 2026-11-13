@@ -1,6 +1,17 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "genshin-guides", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8788"], "port": 8788 }
+    {
+      "name": "genshin-app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 5180
+    },
+    {
+      "name": "genshin-guides",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8788"],
+      "port": 8788
+    }
   ]
 }

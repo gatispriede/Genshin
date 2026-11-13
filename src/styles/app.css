@@ -1,0 +1,133 @@
+/* Only what the shell needs. Page content keeps using map.css and gear.css. */
+
+.shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 18px 60px;
+}
+
+.shell__bar {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px 0 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 18px;
+}
+
+.shell__brand {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.shell__links { display: flex; gap: 4px; flex-wrap: wrap; }
+
+.shell__link {
+  color: var(--dim);
+  text-decoration: none;
+  font-size: 0.84rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.shell__link:hover { color: var(--paper); background: var(--panel); }
+.shell__link.is-active { color: var(--paper); background: var(--panel); }
+
+.shell__search {
+  margin-left: auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--paper);
+  border-radius: 7px;
+  padding: 7px 11px;
+  font: inherit;
+  font-size: 0.84rem;
+  min-width: 230px;
+}
+.shell__search::placeholder { color: #6f7a8c; }
+
+/* Card grid, matching the look of index.html without importing its markup */
+.grid2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.tile {
+  display: block;
+  padding: 12px 14px;
+  background: var(--panel);
+  border-radius: 9px;
+  border-left: 3px solid var(--off);
+  text-decoration: none;
+  color: inherit;
+}
+.tile:hover { border-left-color: var(--best); }
+.tile b { display: block; color: var(--paper); font-size: 0.92rem; margin-bottom: 3px; }
+.tile span { display: block; color: var(--dim); font-size: 0.8rem; line-height: 1.5; }
+
+.tile--Pyro    { border-left-color: var(--pyro); }
+.tile--Hydro   { border-left-color: var(--hydro); }
+.tile--Electro { border-left-color: var(--electro); }
+.tile--Cryo    { border-left-color: var(--cryo); }
+.tile--Anemo   { border-left-color: var(--anemo); }
+.tile--Geo     { border-left-color: var(--geo); }
+.tile--Dendro  { border-left-color: var(--dendro); }
+
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 16px; }
+.chip {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--dim);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.79rem;
+  cursor: pointer;
+}
+.chip.is-on { color: var(--ink); background: var(--best); border-color: var(--best); font-weight: 700; }
+
+.meta { color: var(--dim); font-size: 0.8rem; }
+
+/* Section folds on the hub. 82 pages in one flat list is what we moved away from. */
+details { margin: 14px 0; }
+details > summary {
+  cursor: pointer;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  list-style: none;
+}
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before {
+  content: '▸';
+  color: var(--dim);
+  display: inline-block;
+  width: 1.1em;
+}
+details[open] > summary::before { content: '▾'; }
+details > summary b { color: var(--paper); font-size: 0.92rem; }
+details > summary + .grid2 { margin-top: 10px; }
+
+.frame {
+  width: 100%;
+  height: calc(100vh - 150px);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #fff;
+}
+
+.tierflag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+.tierflag--1 { background: var(--goal); color: var(--ink); }
+.tierflag--2 { background: var(--hub); color: var(--ink); }
+.tierflag--3 { background: var(--off); color: var(--paper); }
