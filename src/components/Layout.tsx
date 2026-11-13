@@ -53,22 +53,33 @@ export default function Layout({ children }: { children: ReactNode }) {
               width: 360, background: 'var(--panel)', border: '1px solid var(--line)',
               borderRadius: 9, padding: 6, maxHeight: '70vh', overflowY: 'auto',
             }}>
-              {results.map((r) => (
-                <button
-                  key={r.kind + r.to}
-                  onClick={() => { navigate(r.to); setQ(''); setOpen(false); }}
-                  style={{
-                    display: 'block', width: '100%', textAlign: 'left', background: 'none',
-                    border: 'none', color: 'inherit', font: 'inherit', cursor: 'pointer',
-                    padding: '7px 9px', borderRadius: 6,
-                  }}
-                >
-                  <b style={{ color: 'var(--paper)', fontSize: '.86rem' }}>{r.title}</b>
-                  <span style={{ display: 'block', color: 'var(--dim)', fontSize: '.76rem' }}>
-                    {r.kind} · {r.hint}
-                  </span>
-                </button>
-              ))}
+              {results.map((r) => {
+                const body = (
+                  <>
+                    <b style={{ color: 'var(--paper)', fontSize: '.86rem' }}>{r.title}</b>
+                    <span style={{ display: 'block', color: 'var(--dim)', fontSize: '.76rem' }}>
+                      {r.kind} · {r.hint}
+                    </span>
+                  </>
+                );
+                const style = {
+                  display: 'block', width: '100%', textAlign: 'left' as const, background: 'none',
+                  border: 'none', color: 'inherit', font: 'inherit', cursor: 'pointer',
+                  padding: '7px 9px', borderRadius: 6, textDecoration: 'none',
+                };
+                // Page hits are real files — an anchor, so ctrl-click still works.
+                return r.external ? (
+                  <a key={r.kind + r.to} href={r.to} style={style}>{body}</a>
+                ) : (
+                  <button
+                    key={r.kind + r.to}
+                    onClick={() => { navigate(r.to); setQ(''); setOpen(false); }}
+                    style={style}
+                  >
+                    {body}
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>

@@ -59,7 +59,7 @@ export default function Teams() {
           {t.note && <p className="note">{t.note}</p>}
           {t.page && (
             <p className="meta">
-              <Link to={`/page/${encodeURIComponent(t.page)}`}>Full write-up →</Link>
+              <a href={t.page}>Full write-up →</a>
             </p>
           )}
         </section>

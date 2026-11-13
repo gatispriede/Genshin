@@ -1,6 +1,6 @@
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
-import { cpSync, readdirSync, mkdirSync } from 'node:fs';
+import { cpSync, readdirSync, mkdirSync, renameSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 /**
@@ -13,14 +13,23 @@ const ASSET_DIRS = ['styles', 'app', 'reference', 'img', 'farming', 'research', 
 const ROOT_FILES = ['CLAUDE.md'];
 
 /**
- * The React bundle is only half the site: every page under /page/ is a real
- * .html file at the project root, loaded in an iframe. Vite would ship dist/
- * with just app.html, so the frames would come up empty on the server. Copy
- * the static half in after the bundle is written.
+ * index.html is the hand-maintained hub and the input to
+ * tools/build-pages-index.py, so it stays in the repo — but the React app
+ * takes its place in a build, because Caddy serves index.html for a directory
+ * request and app/nav.js already points "Home" at index.html.
  */
-function copyStaticPages(): Plugin {
+const HUB = 'index.html';
+const APP_ENTRY = 'app.html';
+
+/**
+ * The React bundle is only half the site: every page the catalogue lists is a
+ * real .html file. Vite would ship dist/ with just the bundle, so those links
+ * would 404 on the server. Copy the static half in after the bundle is written
+ * and promote the app to index.html.
+ */
+function buildStaticHalf(): Plugin {
   return {
-    name: 'copy-static-pages',
+    name: 'build-static-half',
     apply: 'build',
     closeBundle() {
       const out = resolve(__dirname, 'dist');
@@ -28,7 +37,8 @@ function copyStaticPages(): Plugin {
 
       let html = 0;
       for (const file of readdirSync(__dirname)) {
-        if (!file.endsWith('.html') || file === 'app.html') continue;
+        // The hub is replaced by the app below; the entry is already in dist/.
+        if (!file.endsWith('.html') || file === APP_ENTRY || file === HUB) continue;
         cpSync(resolve(__dirname, file), resolve(out, file));
         html++;
       }
@@ -51,18 +61,26 @@ function copyStaticPages(): Plugin {
         }
       }
 
-      this.info(`copied ${html} static pages and ${copied.join(', ')} into dist/`);
+      renameSync(resolve(out, APP_ENTRY), resolve(out, HUB));
+
+      this.info(
+        `copied ${html} static pages and ${copied.join(', ')} into dist/, ` +
+        `and promoted ${APP_ENTRY} to ${HUB}`,
+      );
     },
   };
 }
 
 // The project root is also the web root, so every existing .html page,
 // styles/, app/ script and reference/data/*.json stays reachable unchanged.
-// The React app is a second entry point at /app.html — index.html is left
-// alone so the old hub keeps working while pages migrate across.
+//
+// base: './' because the build is served from a subdirectory — flux serves it
+// at /bundles/genshin/, not at a domain root. Absolute /assets/… URLs would
+// 404 there. Relative URLs work in both places.
 export default defineConfig({
   root: '.',
-  plugins: [react(), copyStaticPages()],
-  server: { port: 5180, open: '/app.html' },
-  build: { rollupOptions: { input: 'app.html' } },
+  base: './',
+  plugins: [react(), buildStaticHalf()],
+  server: { port: 5180, open: `/${APP_ENTRY}` },
+  build: { rollupOptions: { input: APP_ENTRY } },
 });

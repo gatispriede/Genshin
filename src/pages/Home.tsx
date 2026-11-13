@@ -79,10 +79,11 @@ export default function Home() {
             {pages
               .filter((p) => p.section === section)
               .map((p) => (
-                <Link key={p.href} to={`/page/${encodeURIComponent(p.href)}`} className="tile">
+                // A real file, opened directly — see LegacyPage for why not a frame.
+                <a key={p.href} href={p.href} className="tile">
                   <b>{p.title}</b>
                   <span>{p.blurb}</span>
-                </Link>
+                </a>
               ))}
           </div>
         </details>

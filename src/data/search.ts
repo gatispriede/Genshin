@@ -7,6 +7,8 @@ export interface Hit {
   title: string;
   hint: string;
   to: string;
+  /** Page hits are real .html files, opened directly rather than routed to. */
+  external?: boolean;
 }
 
 /**
@@ -45,7 +47,7 @@ export function search(query: string): Hit[] {
 
   for (const p of pages) {
     if ((p.title + ' ' + p.blurb + ' ' + p.section).toLowerCase().includes(q)) {
-      hits.push({ kind: 'Page', title: p.title, hint: p.section, to: `/page/${encodeURIComponent(p.href)}` });
+      hits.push({ kind: 'Page', title: p.title, hint: p.section, to: p.href, external: true });
     }
   }
 

@@ -178,7 +178,7 @@ export default function CharacterDetail() {
 
       {c.page && (
         <p className="meta">
-          <Link to={`/page/${encodeURIComponent(c.page)}`}>Full write-up →</Link>
+          <a href={c.page}>Full write-up →</a>
         </p>
       )}
     </>
