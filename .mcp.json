@@ -1,5 +1,10 @@
 {
   "mcpServers": {
+    "vault": {
+      "command": "D:\\Work\\Secret management\\secrets.exe",
+      "args": ["mcp"],
+      "description": "Local encrypted secret vault, managed by name only. Claude can create a secret as a schema of named fields and pop a fill window for the user; it can never read or set a value."
+    },
     "flux-prod": {
       "type": "http",
       "url": "https://flux.siaup.store/mcp",
