@@ -40,6 +40,8 @@ Neither edits the other's tree. Gaps go in the table below, not into a direct fi
 | Missing functionality goes through the platform thread | Gatis | 13 Nov |
 | **No Caddyfile or `X-Frame-Options` change** — the iframe was removed instead | content thread | 13 Nov |
 | Map module to be scoped (below) | Gatis | 13 Nov |
+| **Accept losing site-wide search and migrate anyway** — taken knowingly, with the build cost in front of him. Platform thread must NOT start the Search feature | Gatis | 13 Nov |
+| flux MCP fixed by `--transport http-only`; Desktop config now launches it through the vault bridge | content thread | 13 Nov |
 | Backup set stays a separate change | content thread | 13 Nov |
 
 ## Required on the code / module side
