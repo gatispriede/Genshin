@@ -16,10 +16,17 @@
 set -u
 
 URL="https://flux.siaup.store/mcp"
-# Tool name and JSON arguments come in as positional args, so the caller can
-# be driven by `secrets run flux-mcp-call <tool> <json>`.
+# Tool name is the first positional. Arguments come from tools/.flux-args.json
+# when it exists, because passing JSON through the binding layer silently
+# dropped it for some payloads — the tool saw {} and reported a missing field
+# that had in fact been supplied.
 TOOL="${1:-page.list}"
-ARGS="${2:-{\}}"
+ARGS_FILE="tools/.flux-args.json"
+if [ -f "$ARGS_FILE" ]; then
+  ARGS=$(cat "$ARGS_FILE")
+else
+  ARGS="${2:-}"
+fi
 [ -z "$ARGS" ] && ARGS='{}'
 
 if [ -z "${FLUX_TOKEN:-}" ]; then

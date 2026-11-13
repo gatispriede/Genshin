@@ -20,3 +20,4 @@ reference/data/hoyo_points.json
 reference/data/hoyo_tree.json
 node_modules/
 dist/
+tools/.flux-args.json

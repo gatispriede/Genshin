@@ -65,11 +65,19 @@ async function rpc(method, params) {
   return payload.result;
 }
 
+/**
+ * Strict on purpose. An unknown tool or a wrong argument shape comes back as
+ * isError at the MCP layer with a body of {code, message} and NO ok:false —
+ * so checking only parsed.ok reports success for a call that never ran. That
+ * is exactly how every page.update silently failed and left the whole tree
+ * unparented, with every nested URL 404ing.
+ */
 async function call(name, args = {}) {
   const r = await rpc('tools/call', { name, arguments: args });
   const text = r?.content?.[0]?.text;
   const parsed = text ? JSON.parse(text) : r;
-  if (parsed && parsed.ok === false) throw new Error(name + ': ' + JSON.stringify(parsed));
+  const ok = r?.isError !== true && parsed?.ok !== false && !parsed?.code;
+  if (!ok) throw new Error(`${name}: ${JSON.stringify(parsed).slice(0, 200)}`);
   return parsed?.data ?? parsed;
 }
 
@@ -92,6 +100,13 @@ async function connect() {
 
 const json = (o) => JSON.stringify(o);
 
+/**
+ * Name -> {name, url}, filled during the create pass and read during the
+ * module pass. This is what lets a team roster link to character pages and a
+ * character link back to its team, instead of printing a bare id.
+ */
+const links = { characters: {}, teams: {} };
+
 function heading(eyebrow, h, subtitle) {
   return { type: 'SECTION_HEADING', style: 'editorial',
            content: json({ eyebrow, heading: h, subtitle, align: 'left' }) };
@@ -110,7 +125,12 @@ function characterModules(c, teamName) {
     { label: 'Constellation', value: c.constellation === null ? 'not verified' : 'C' + c.constellation },
     c.paidIn && { label: 'Pays off in', value: c.paidIn },
     c.targetSet && { label: 'Target set', value: c.targetSet },
-    c.teams.length && { label: 'Fielded in', value: c.teams.join(', ') },
+    // Team display names with a link through, not the raw ids — "varesa" told
+    // the reader nothing and went nowhere.
+    ...c.teams.map((id) => {
+      const t = links.teams[id];
+      return t ? { label: 'Fielded in', value: t.name, href: t.url } : null;
+    }),
     c.weapon && { label: 'Weapon', value: `${c.weapon.name} Lv ${c.weapon.level}` +
       (c.weapon.refinement ? ` R${c.weapon.refinement}` : '') },
     c.verified && { label: 'Read from game', value: c.verified },
@@ -157,6 +177,8 @@ function teamModules(t) {
     items: t.members.map((m) => ({
       label: m.character, value: m.role,
       meta: m.set || undefined,
+      // Links through to the character's own page where one exists.
+      href: links.characters[m.character]?.url,
     })),
   }) });
 
@@ -180,17 +202,27 @@ function teamModules(t) {
 
 /* ----------------------------------------------------------------- run --- */
 
-async function makePage(name, parentId, modules) {
+/**
+ * Creates the page and parents it, but writes no modules — those come in a
+ * second pass, once every page exists and its real slug is known, so content
+ * can link to URLs instead of guessing at them.
+ *
+ * page.setParent {pageId, parentId} is the working shape. page.update with a
+ * `parent` field returns isError and does nothing.
+ */
+async function makePage(name, parentId) {
   await call('page.create', { page: name });
   const pages = await call('page.list', {});
   const row = pages.filter((p) => p.page === name).pop();
   if (!row) throw new Error('page vanished after create: ' + name);
-  if (parentId) await call('page.update', { pageId: row.id, parent: parentId });
-  if (modules.length) {
-    const { sectionId } = await call('section.create', { pageId: row.id, type: 1 });
-    await call('module.add', { items: modules.map((m) => ({ sectionId, module: m })) });
-  }
+  if (parentId) await call('page.setParent', { pageId: row.id, parentId });
   return row;
+}
+
+async function writeModules(row, modules) {
+  if (!modules.length) return;
+  const { sectionId } = await call('section.create', { pageId: row.id, type: 1 });
+  await call('module.add', { items: modules.map((m) => ({ sectionId, module: m })) });
 }
 
 const main = async () => {
@@ -205,16 +237,43 @@ const main = async () => {
 
   await connect();
 
-  // 1. clear operator-authored pages. System pages are never touched.
+  // 1. Clear only the pages this script owns, so a re-run is idempotent
+  // without touching system pages or anything authored elsewhere.
+  const owned = new Set([
+    'Genshin notes', 'Builds', 'Teams',
+    ...characters.map((c) => c.name), ...teams.map((t) => t.name),
+  ]);
   const before = await call('page.list', {});
-  const doomed = before.filter((p) => p.source !== 'system-page');
-  for (const p of doomed) {
-    await call('page.delete', { pageId: p.id });
-  }
-  console.log(`deleted ${doomed.length} pages: ${doomed.map((p) => p.page).join(', ')}`);
+  const doomed = before.filter((p) => p.source !== 'system-page' && owned.has(p.page));
+  // page.delete takes `id`, not `pageId` — unlike setParent and section.create.
+  for (const p of doomed) await call('page.delete', { id: p.id });
+  console.log(`cleared ${doomed.length} previously pushed pages`);
 
-  // 2. root
-  const root = await makePage('Genshin notes', null, [
+  // 2. every page first, so phase three can link to real URLs.
+  const root = await makePage('Genshin notes', null);
+  const buildsRoot = await makePage('Builds', root.id);
+  const teamsRoot = await makePage('Teams', root.id);
+
+  const rootUrl = `/${root.slug}`;
+  const buildsUrl = `${rootUrl}/${buildsRoot.slug}`;
+  const teamsUrl = `${rootUrl}/${teamsRoot.slug}`;
+
+  const charRows = [];
+  for (const c of characters) {
+    const row = await makePage(c.name, buildsRoot.id);
+    charRows.push([c, row]);
+    links.characters[c.name] = { name: c.name, url: `${buildsUrl}/${row.slug}` };
+  }
+  const teamRows = [];
+  for (const t of teams) {
+    const row = await makePage(t.name, teamsRoot.id);
+    teamRows.push([t, row]);
+    links.teams[t.id] = { name: t.name, url: `${teamsUrl}/${row.slug}` };
+  }
+  console.log(`created ${3 + charRows.length + teamRows.length} pages`);
+
+  // 3. modules, now that every href resolves.
+  await writeModules(root, [
     heading('Genshin Impact', 'Account notes',
       `${data.characters.filter((c) => c.owned).length} characters · ${teams.length} teams · read 2026-11-12`),
     { type: 'FEATURE_GRID', style: 'default', content: json({
@@ -224,27 +283,49 @@ const main = async () => {
         description: t.members.map((m) => m.character).join(' · '),
       })),
     }) },
+    { type: 'LIST', style: 'default', content: json({
+      title: 'Sections',
+      items: [
+        { label: 'Builds', value: `${characters.length} characters`, href: buildsUrl },
+        { label: 'Teams', value: `${teams.length} teams`, href: teamsUrl },
+      ],
+    }) },
   ]);
 
-  // 3. two parents
-  const buildsRoot = await makePage('Builds', root.id, [
-    heading('Characters', 'Builds', `${characters.length} characters currently fielded`)]);
-  const teamsRoot = await makePage('Teams', root.id, [
-    heading('Teams', 'Teams', 'What each can break, and what it cannot')]);
+  await writeModules(buildsRoot, [
+    heading('Characters', 'Builds', `${characters.length} characters currently fielded`),
+    { type: 'LIST', style: 'cards', content: json({
+      title: 'Characters',
+      items: charRows.map(([c]) => ({
+        label: c.name,
+        value: `${c.element} · Lv ${c.level}`,
+        meta: c.targetSet || undefined,
+        href: links.characters[c.name].url,
+      })),
+    }) },
+  ]);
 
-  // 4. leaves
-  const made = [];
-  for (const c of characters) {
-    const row = await makePage(c.name, buildsRoot.id, characterModules(c));
-    made.push(`/genshin-notes/builds/${row.slug}`);
-  }
-  for (const t of teams) {
-    const row = await makePage(t.name, teamsRoot.id, teamModules(t));
-    made.push(`/genshin-notes/teams/${row.slug}`);
-  }
+  await writeModules(teamsRoot, [
+    heading('Teams', 'Teams', 'What each can break, and what it cannot'),
+    { type: 'LIST', style: 'cards', content: json({
+      title: 'Teams',
+      items: teamRows.map(([t]) => ({
+        label: t.name,
+        value: t.members.map((m) => m.character).join(' · '),
+        href: links.teams[t.id].url,
+      })),
+    }) },
+  ]);
 
-  console.log(`\ncreated ${made.length + 3} pages`);
-  made.forEach((u) => console.log('  ' + u));
+  for (const [c, row] of charRows) await writeModules(row, characterModules(c));
+  for (const [t, row] of teamRows) await writeModules(row, teamModules(t));
+
+  console.log('\nlinked tree:');
+  console.log('  ' + rootUrl);
+  console.log('  ' + buildsUrl);
+  charRows.forEach(([c]) => console.log('    ' + links.characters[c.name].url));
+  console.log('  ' + teamsUrl);
+  teamRows.forEach(([t]) => console.log('    ' + links.teams[t.id].url));
 };
 
 main().catch((e) => { console.error('FAILED:', e.message); process.exit(1); });
