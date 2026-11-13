@@ -180,6 +180,24 @@ gitignored and re-fetchable via `tools/fetch-quest-maps.py`. Those belong to
 item 5's pages. **Do not upload them to the CMS** — third-party images, and
 storage the tenant should not be carrying.
 
+## Module schemas
+
+Authoring reference lives in [cms-module-schemas.md](cms-module-schemas.md)
+— read from the module `.types.ts` files by the platform thread, 13 Nov.
+Two things that catch you out: `content` is a JSON **string**, and `style`
+is a sibling field on the item, not part of `content`.
+
+Corrections to earlier assumptions recorded there:
+
+- **`TIMELINE` is unusable** for roadmap tiers or ascension steps. It is a
+  CV timeline requiring `start`/`end`/`company`/`role`. Use `LIST` with
+  `style: "timeline"` or `"numbered"`.
+- **There is no page depth cap.** `page.update`'s description claimed a
+  3-level limit; the code only logs past 8 and never throws. The
+  description was wrong and has been fixed. Nest freely.
+- **Slugs are derived server-side**, and reserved names are auto-prefixed
+  rather than rejected — a page named "Blog" becomes `page-blog`.
+
 ## Required on the content side
 
 Owned by the content thread.
