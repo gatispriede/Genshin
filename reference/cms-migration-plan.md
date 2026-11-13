@@ -50,7 +50,7 @@ Platform thread owns all of these. Status is the platform thread's to update.
 |---|---|---|---|
 | 1 | **Sanitizer: structural table attributes** | `colspan`/`rowspan` were stripped by an `ALLOWED_URI_REGEXP` bug | Fixed on `develop`, **not yet on flux** |
 | 2 | **`MAP_ANNOTATED` module** | 19 pages are declarative pin-over-image maps with no home | **Scoped below, not started** |
-| 3 | **Site search across pages** | Gatis asked for "wide search/filter"; unknown whether the CMS has it | **Open question — answer needed** |
+| 3 | **Site search across pages** | Gatis asked for "wide search/filter"; unknown whether the CMS has it | **Answered by platform thread: it does not exist.** See below — Gatis must decide before batch C |
 | 4 | **Dataset upload** | 24 MB of `reference/data/*.json` has no home | **Not needed** — see below |
 | 5 | **Heavier map engines** | `map-core`, `live-map`, `collect-map` (8 pages) | **Out of scope** — see below |
 
@@ -71,6 +71,45 @@ Revisit only if item 5 is ever reopened.
 depend on `reference/data/hoyo_points.json` — 21 MB, gitignored, regenerable.
 Porting them means porting an API client, not a module. They stay as local
 pages unless Gatis says otherwise.
+
+### Item 3 — answered: there is no site-wide content search
+
+**Answered by the platform thread from the code, 13 Nov. The CMS cannot search
+across page content today.** This is the one finding that should reach Gatis
+before 30 pages move, because "wide search/filter" was his stated reason.
+
+Verified absences:
+
+- No `Search` feature folder in `services/features/` (50+ folders, none match).
+- No `/search` route in `ui/client/app/`, and no search endpoint under
+  `ui/client/pages/api/`.
+- **No Mongo text index anywhere** — zero `createIndex` calls with `text` in
+  `services/`.
+
+Four things exist that look like search and are not:
+
+| Surface | What it actually searches | Why it doesn't count |
+|---|---|---|
+| Command palette (⌘K) | Admin pane names | Admin-only navigation; never touches content |
+| `anchor.search` / `linkTarget_*` | **Labels and hrefs only** | `AnchorRegistry` extracts only `title` / `sectionTitle` from parsed module content. Body text is never indexed. It exists to pick link targets |
+| FacetedFilter + saved searches | The product catalogue | Per-route facet configs over `Products`; not pages or sections |
+| `docs.search` | The `docs/` tree | Operator help for the platform, not tenant content |
+
+**So migrating as-is trades a working client-side search for none.** Every page
+would be individually readable and collectively unsearchable.
+
+What it would cost to add (platform thread's estimate): `IItem.content` is a
+JSON string, so a naive `$text` index would match JSON keys and HTML tags. It
+needs a derived plain-text field per item, maintained on section save — and the
+extraction primitive **already exists**: `htmlToBlocks()` in
+`shared/utils/htmlBlocks.ts` turns HTML into block text segments and is already
+used for translations. On top of that: a `Search` feature folder (loader +
+service + `search.*` MCP tools, per the registry pattern), a `$text` index, a
+public route and a search module. Mid-sized — bigger than `MAP_ANNOTATED`,
+far smaller than checkout.
+
+**Not started, and not to be started without Gatis.** It is a platform feature
+in its own right, not a detail of this migration.
 
 ## Item 2 — `MAP_ANNOTATED` module scope
 

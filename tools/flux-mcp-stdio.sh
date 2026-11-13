@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 # stdio <-> http bridge for the flux CMS MCP endpoint.
 #
-# Why this exists: .mcp.json cannot hold the token (plaintext) and the
-# "${FLUX_PROD_MCP_TOKEN}" form only resolves if Claude Code itself was
-# launched through the vault. This bridge moves the credential one process
-# down — the vault injects $FLUX_TOKEN here, so Claude Code needs nothing in
-# its own environment and does not have to be relaunched.
+# --transport http-only is load-bearing, not a preference. Measured:
 #
-# Wired up as:
-#   .mcp.json  "flux-prod": { "command": "secrets.exe", "args": ["launch","flux-mcp-bridge"] }
-#   vault      binding flux-mcp-bridge -> FLUX_TOKEN = flux-mcp.token
+#   flux.siaup.store/mcp   SSE GET -> 400   POST -> 200
+#   funisimo.pro/mcp       SSE GET -> 401   POST -> 401
+#
+# flux does not implement the SSE transport at all. mcp-remote tries SSE
+# first, reads the 400 as an auth problem, falls into OAuth discovery, gets
+# the Next.js 404 page from /.well-known/oauth-authorization-server and dies
+# parsing HTML as JSON. That is the crash filling mcp-server-flux-prod.log.
+# funisimo still speaks SSE, which is why the identical invocation works there.
+#
+# The token arrives as $FLUX_TOKEN from the vault binding flux-mcp-bridge —
+# never on the command line, where Claude Desktop's config currently puts it
+# and where it lands in process listings.
 #
 # stdio is passed straight through, so this must print nothing of its own.
 
@@ -22,4 +27,6 @@ if [ -z "${FLUX_TOKEN:-}" ]; then
   exit 2
 fi
 
-exec npx -y mcp-remote "$URL" --header "Authorization: Bearer ${FLUX_TOKEN}"
+exec npx -y mcp-remote "$URL" \
+  --transport http-only \
+  --header "Authorization: Bearer ${FLUX_TOKEN}"
