@@ -6,11 +6,9 @@
       "description": "Local encrypted secret vault, managed by name only. Claude can create a secret as a schema of named fields and pop a fill window for the user; it can never read or set a value."
     },
     "flux-prod": {
-      "type": "http",
-      "url": "https://flux.siaup.store/mcp",
-      "headers": {
-        "Authorization": "Bearer ${FLUX_PROD_MCP_TOKEN}"
-      }
+      "command": "D:\\Work\\Secret management\\secrets.exe",
+      "args": ["launch", "flux-mcp-bridge"],
+      "description": "flux.siaup.store CMS over MCP. The vault injects the bearer token into the bridge process, so no credential lives in this file and Claude Code needs nothing in its own environment."
     }
   }
 }

@@ -36,6 +36,7 @@ Neither edits the other's tree. Gaps go in the table below, not into a direct fi
 |---|---|---|
 | Content goes to flux **via MCP**, not by deploying code | Gatis | 13 Nov |
 | **No rsync / static deploy.** `/bundles/*` route dropped | Gatis | 13 Nov |
+| Static deploy is **cancelled, not blocked** — re-confirmed when the lifted hold was put to him against the MCP-only plan | Gatis | 13 Nov |
 | Missing functionality goes through the platform thread | Gatis | 13 Nov |
 | **No Caddyfile or `X-Frame-Options` change** — the iframe was removed instead | content thread | 13 Nov |
 | Map module to be scoped (below) | Gatis | 13 Nov |
@@ -149,20 +150,40 @@ Owned by the content thread.
 | C | Push the build pages — table-heavy, no merged cells | Not started |
 | D | Push character/team pages generated from `src/data/*.ts` | Not started |
 
-### A — why flux MCP is not attached
+### A — flux MCP: the endpoint works, only the client is unattached
 
-Not an auth failure. `enabledMcpjsonServers` is `[]` for this project, so the
-project `.mcp.json` is not being read at all. Two gates, both Gatis's:
+**Proven, not inferred.** The vault binding `flux-mcp-probe` runs a real
+JSON-RPC handshake against `https://flux.siaup.store/mcp` with the token
+injected by the vault:
 
-1. Approve the project MCP servers (`/mcp` from an interactive `claude` here).
-2. Launch via `secrets launch claude-genshin` so `FLUX_PROD_MCP_TOKEN` is in
-   the environment.
+```
+initialize  -> HTTP 200, Mcp-Session-Id: c9140f0a-…
+               serverInfo { name: "redis-node-js-cloud-cms", version: "0.1.0" }
+tools/list  -> returns the tool set (page.list, …)
+```
 
-Step 2 without step 1 changes nothing.
+So the credential, the endpoint and the protocol are all good. The only thing
+missing is Claude Code's own MCP client connection.
 
-The token itself is **good**: validated through the vault binding
-`flux-mcp-check` → `400 invalid or missing Mcp-Session-Id header`, not 401.
-Stored as `flux-mcp.token`; no plaintext anywhere in this project.
+**Gate 2 is now removed.** `.mcp.json` hosts `flux-prod` through
+`secrets launch flux-mcp-bridge`, which runs `tools/flux-mcp-stdio.sh`. The
+vault injects the token into *that* process, so Claude Code needs nothing in
+its own environment and does **not** have to be relaunched through the vault.
+
+**Gate 1 remains, and is Gatis's:** `enabledMcpjsonServers` is `[]`, so the
+project `.mcp.json` is not read at all. Approve the project MCP servers —
+`/mcp` from an interactive `claude` in this directory — and `flux-prod`
+attaches on the next session.
+
+Vault objects backing this, all by name, no value ever exposed:
+
+| Name | Kind | Purpose |
+|---|---|---|
+| `flux-mcp` | secret | one field, `token` |
+| `flux-mcp-bridge` | binding | hosts the stdio bridge for `.mcp.json` |
+| `flux-mcp-probe` | binding | full handshake check |
+| `flux-mcp-check` | binding | quick auth check (400 = good, 401 = bad) |
+| `claude-genshin` | binding | launches Claude with the token in env (now optional) |
 
 ### B — content must be the rendered DOM, not the source HTML
 
@@ -174,6 +195,36 @@ from `reference/data/*.json`.
 Copying source HTML into RICH_TEXT ships **empty placeholders**. The pipeline
 must load each page, let the scripts run, serialise the result, strip the nav,
 and push that.
+
+### B.1 — icons get uploaded, not hotlinked
+
+`app/icons.js`, `app/stellar.js` and `app/theater.js` all emit
+`<img src="https://gi.yatta.moe/assets/UI/…png">`. Those `<img>` tags survive
+the sanitizer intact, so serialised DOM would work as-is — and would make flux
+**hotlink a third-party fan CDN on every page view, forever**. If that host
+rate-limits or disappears, the pages silently lose their icons.
+
+**Decision (content thread): upload them and rewrite `src` during
+serialisation.** The volume is tens of files, not hundreds — 8 distinct
+`data-char` and 2 `data-set` across the build pages, plus the season cast on
+`theater` and `stellar`. That is cheap enough that a permanent visitor-side
+dependency on someone else's infrastructure isn't worth it, and durability is
+the whole reason for moving into the CMS.
+
+This is deliberately *not* the same call as `assets/quest-maps/`, which stays
+out: that is 101 MB of full-size wiki screenshots serving out-of-scope pages,
+against ~50 small UI icons the pages already display either way.
+
+### B.2 — inline SVG is dropped whole, and costs one page
+
+DOMPurify runs with the html profile only, no svg profile, so an inline `<svg>`
+is deleted rather than degraded. Exactly **one** page is affected:
+`wuwang-statue-puzzle.html`. Of the `app/` scripts only `collect-map.js` uses
+`createElementNS`, and that is out-of-scope map machinery.
+
+**Not worth widening the sanitizer for.** Enabling the svg profile across a
+multi-tenant platform for one puzzle page is the wrong trade. If that page
+matters, rasterise its SVG to PNG and upload it.
 
 ### C — merged cells are not blocking the first batch
 
