@@ -276,7 +276,9 @@ item 1 reaches flux. `character-roadmap` has 8 and must wait for it.
 
 | Question | For | Blocking |
 |---|---|---|
-| Does the CMS have site-wide search across pages? | platform | Item 3 |
+| **Accept losing search, or build item 3 first?** Answered below: the CMS has none. This was the stated reason for the move | **Gatis** | **Batch C — decide before 30 pages move** |
+| For `MAP_ANNOTATED`: how does a control module reach a display module? Platform thread recommends URL params (deep-links, survives reload) over `refreshBus` | Gatis | Sets precedent for every future module pair |
+| Does a map controller ship in v1 at all? 19 maps are useful with no controller, since the originals have no layer toggle | Gatis | Only if filtering is wanted |
 | Once content is in the CMS, does the local React app stay as the working copy? | Gatis | Nothing yet |
 
 ## Known gaps in earlier verification
