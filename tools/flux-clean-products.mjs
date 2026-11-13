@@ -53,9 +53,9 @@ const main = async () => {
   });
 
   const { data: products } = await call('product.list', {});
-  console.log(`${products.length} products in the catalogue`);
+  const drafts = products.filter((p) => p.draft === true).length;
+  console.log(`${products.length} products — ${drafts} draft, ${products.length - drafts} published`);
   if (!APPLY) {
-    console.log(products.map((p) => '  ' + p.title).join('\n'));
     console.log('\ndry run — pass --apply to remove');
     return;
   }
