@@ -101,6 +101,8 @@ export interface TeamMember {
 
 export interface Team {
   id: string;
+  /** Investment order, 1 first. Roadmaps sort by it. */
+  priority?: number;
   name: string;
   element: Element;
   members: TeamMember[];

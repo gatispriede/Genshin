@@ -160,8 +160,8 @@ export function artifactRoadmap(): CharacterGaps[] {
     gaps.filter((g) => g.kind === 'set' || g.kind === 'main').reduce((s, g) => s + g.weight, 0)
     * (role === 'main-dps' ? 2 : 1);
   return fielded()
-    .map(({ character, team, role }) => ({ character, team, role, gaps: gapsFor(character) }))
-    .sort((a, b) => score(b.gaps, b.role) - score(a.gaps, a.role))
+    .map(({ character, team, role, priority }) => ({ character, team, role, priority, gaps: gapsFor(character) }))
+    .sort((a, b) => a.priority - b.priority || score(b.gaps, b.role) - score(a.gaps, a.role))
     .map(({ character, team, gaps }) => ({ character, team, gaps }));
 }
 
@@ -195,16 +195,17 @@ export interface CharacterStep {
   warnings: string[];
 }
 
-function fielded(): { character: Character; team: string; role: string }[] {
-  const out: { character: Character; team: string; role: string }[] = [];
+function fielded(): { character: Character; team: string; role: string; priority: number }[] {
+  const out: { character: Character; team: string; role: string; priority: number }[] = [];
   for (const t of teams) {
     for (const m of t.members) {
       const c = characters.find((x) => x.name === m.character && x.owned);
       // The team's set assignment stands in when the profile records none (Mika).
-      if (c) out.push({ character: { ...c, targetSet: c.targetSet ?? m.set }, team: t.name, role: m.role });
+      if (c) out.push({ character: { ...c, targetSet: c.targetSet ?? m.set }, team: t.name, role: m.role, priority: t.priority ?? 9 });
     }
   }
-  return out.sort((a, b) => tierRank(a.character) - tierRank(b.character)
+  // Team priority first (Varesa and Skirk before Mizuki), then levelling tier.
+  return out.sort((a, b) => a.priority - b.priority || tierRank(a.character) - tierRank(b.character)
     || (b.role === 'main-dps' ? 1 : 0) - (a.role === 'main-dps' ? 1 : 0));
 }
 

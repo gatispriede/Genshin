@@ -7,6 +7,7 @@ import type { Team } from './types';
 export const teams: Team[] = [
   {
     id: 'skirk',
+    priority: 1,
     name: 'Skirk freeze',
     element: 'Cryo',
     members: [
@@ -22,6 +23,7 @@ export const teams: Team[] = [
   },
   {
     id: 'mizuki',
+    priority: 2,
     name: 'Mizuki Stellar Swirl',
     element: 'Anemo',
     members: [
@@ -37,6 +39,7 @@ export const teams: Team[] = [
   },
   {
     id: 'varesa',
+    priority: 1,
     name: 'Varesa Electro-Charged',
     element: 'Electro',
     members: [

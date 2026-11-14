@@ -34,7 +34,16 @@ interface LiveCharacter {
 const READ_AT = roster.readAt.slice(0, 10);
 // External data enters here. JSON arrays cannot infer as tuples, so this is
 // the one deliberate cast; the extract script is what guarantees the shape.
-const live = new Map((roster.characters as unknown as LiveCharacter[]).map((c) => [c.n, c]));
+// HoYoLAB writes some labels with a non-breaking space ("CRIT Rate"),
+// which silently misses any lookup by "CRIT Rate". Normalise once, here.
+const clean = <T,>(v: T): T => JSON.parse(JSON.stringify(v).replace(/ /g, ' ')) as T;
+const live = new Map(clean(roster.characters as unknown as LiveCharacter[]).map((c) => [c.n, c]));
+
+/**
+ * Normal attack / skill / burst. A few kits list a fourth, alternate-sprint
+ * talent third (Mona's Illusory Torrent); drop it so burst stays last.
+ */
+const talentLevels = (sk: number[]) => (sk.length === 4 ? [sk[0], sk[1], sk[3]] : sk);
 
 const SLOT: Record<string, Slot> = {
   Flower: 'Flower', Plume: 'Plume', Sands: 'Sands', Goblet: 'Goblet', Circlet: 'Circlet',
@@ -89,7 +98,7 @@ export function mergeLive(profiles: Character[]): Character[] {
       level: l.lv,
       rarity: l.r,
       constellation: l.c,
-      talents: l.sk,
+      talents: talentLevels(l.sk),
       weapon: weapon(l.w),
       artifacts: artifacts(l),
       stats: stats(l.st),
