@@ -234,6 +234,17 @@ thread, in value order:
 
 Until it ships, routine updates go through targeted MCP writes.
 
+**Status 14 Nov: built, not deployed.** Branch `feat/mcp-bundle-scoped-transfer`
+(local only). Three tools: `bundle.exportScoped` (named pages, inline,
+structure-only), `bundle.plan` (dry run, per-collection add/replace/delete),
+`bundle.importScoped` (inline; `merge` default upserts by id and deletes
+nothing; `replace` refused for scoped bundles). Every write-mode import now
+writes a backup first and refuses to proceed if it cannot. Inline cap 256 KB;
+one page is ~2 KB. Whole-site inline export was dropped deliberately:
+measured at 2.8 MB / ~840k tokens, it would land in the client's context.
+Item 6 (explicit null) still awaits Gatis. None of it exists on flux until
+the branch is deployed.
+
 ## Required on the content side
 
 Owned by the content thread.
