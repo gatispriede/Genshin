@@ -10,7 +10,11 @@ import io
 import json
 import os
 import re
+import sys
 from urllib.parse import quote
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import reputation_chains  # noqa: E402  (chains render in their own module)
 
 DATA = os.path.join("reference", "data", "reputation-quests.json")
 OUT = "reputation-quests.html"
@@ -257,6 +261,13 @@ def region_section(region, quests):
     req = [q for q in live if q.get("group") == "Request" and not is_act(q)]
     world = [q for q in live if q.get("group") != "Request" and not is_act(q)]
     world.sort(key=effort)
+    # Final parts of a series move to their own subsection: they cannot be
+    # started until the earlier, unpaid parts are done.
+    chains_here = CHAINS.get(region, {})
+    world, chained = reputation_chains.split(world, chains_here)
+    chain_keys, _ = load_claimed(region)
+    chain_html = reputation_chains.section(
+        region, chained, chains_here, lambda q: is_claimed(q, chain_keys))
     req.sort(key=effort)
 
     head = ""
@@ -310,7 +321,7 @@ straight from the quest pages, so this is measured, not guessed.</p>
 <tr><th></th><th>Quest</th><th>Start NPC</th><th>Where</th><th>Steps</th><th>Dialogue</th><th></th><th></th></tr>
 %s
 </table>
-
+%s
 <h3>Weekly Reputation Requests - <b>80 EXP, capped 3/week</b> (%d)</h3>
 <div class="note"><b>These are not world quests.</b> They repeat weekly, pay 80
 rather than 100, and the cap of 3 per week is <b>shared across every nation</b>
@@ -320,7 +331,7 @@ they cannot be farmed.</div>
 <tr><th></th><th>Request</th><th>NPC</th><th>Where</th><th>Steps</th><th>Dialogue</th><th></th><th></th></tr>
 %s
 </table>
-""" % (rows(region, world), len(req), rows(region, req))
+""" % (rows(region, world), chain_html, len(req), rows(region, req))
 
 
 def main():
@@ -373,7 +384,7 @@ def main():
   .nav{margin:10px 0 4px;font-size:.92rem}
   .nav a{color:var(--best);text-decoration:none;margin-right:4px}
   .nav a:hover{text-decoration:underline}
-</style>
+%s</style>
 </head>
 <body>
 <div class="wrap">
@@ -422,7 +433,7 @@ that pays Reputation EXP. Generated from the wiki, %s. &middot; <a href="reputat
 <script src="app/nav.js"></script>
 </body>
 </html>
-""" % ("7 Nov 2026", nav, body)
+""" % (reputation_chains.CSS, "7 Nov 2026", nav, body)
 
     with io.open(OUT, "w", encoding="utf-8") as f:
         f.write(html)
