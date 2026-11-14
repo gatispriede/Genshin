@@ -59,7 +59,15 @@ if (process.argv.includes('--compare')) {
 await connect('genshin-settings');
 const seo = await call('seo.get', {});
 const footer = await call('footer.get', {}).catch((e) => ({ error: e.message }));
-const snapshot = normalise({ siteSeo: seo.siteSeo, siteFlags: seo.siteFlags, footer });
+// activeThemeId is overwritten by import too; record which theme is active
+// and the set of theme names, since ids differ between instances.
+const themes = await call('theme.list', { includeUsage: true }).catch((e) => ({ error: e.message }));
+const list = Array.isArray(themes) ? themes : (themes.themes || []);
+const theme = {
+  active: list.filter((t) => t.isActive).map((t) => t.name).join(',') || '(none)',
+  names: list.map((t) => t.name).sort(),
+};
+const snapshot = normalise({ siteSeo: seo.siteSeo, siteFlags: seo.siteFlags, footer, theme });
 
 mkdirSync(DIR, { recursive: true });
 const name = LOCAL ? 'local' : 'flux';
