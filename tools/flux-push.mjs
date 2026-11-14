@@ -18,6 +18,8 @@ import { build } from 'esbuild';
 import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { connect, call } from './flux-client.mjs';
+import { pageSections } from './flux-layout.mjs';
+import { sourceHtml } from './flux-catalogue.mjs';
 
 const APPLY = process.argv.includes('--apply');
 
@@ -186,6 +188,20 @@ function packSections(modules) {
   return sections;
 }
 
+/** Find-or-create a page and empty its sections, keeping its id and children. */
+async function reusePage(name, parentId) {
+  const existing = (await call('page.list', {}))
+    .filter((p) => p.page === name && p.source !== 'system-page').pop();
+  if (!existing) return makePage(name, parentId);
+  for (const sectionId of existing.sections || []) {
+    await call('section.delete', { id: sectionId });
+  }
+  if (parentId && existing.parent !== parentId) {
+    await call('page.setParent', { pageId: existing.id, parentId });
+  }
+  return existing;
+}
+
 async function writeModules(row, modules) {
   for (const group of packSections(modules)) {
     const { sectionId } = await call('section.create', { pageId: row.id, type: group.length });
@@ -193,9 +209,25 @@ async function writeModules(row, modules) {
   }
 }
 
+/**
+ * The character's build write-up, appended below the generated stats.
+ * Rendered DOM (tools/render-pages.mjs) so script-built tables are included;
+ * the write-up's own title is dropped, since the page already has one.
+ */
+async function writeWriteUp(row, c) {
+  if (!c.page) return;
+  const sections = pageSections(sourceHtml({ href: c.page }), c.name);
+  const body = sections[0]?.modules[0]?.type === 'SECTION_HEADING' ? sections.slice(1) : sections;
+  for (const s of body) {
+    const { sectionId } = await call('section.create', { pageId: row.id, type: s.columns });
+    await call('module.add', { items: s.modules.map((module) => ({ sectionId, module })) });
+  }
+}
+
 const main = async () => {
   const data = await loadData();
-  const characters = data.characters.filter((c) => c.owned && c.teams.length > 0);
+  // Fielded characters, plus anyone with a build write-up (Tighnari, Fischl).
+  const characters = data.characters.filter((c) => c.owned && (c.teams.length > 0 || c.page));
   const teams = data.teams;
 
   console.log(`plan: delete operator pages, then create ${1 + 2 + characters.length + teams.length} pages`);
@@ -208,7 +240,6 @@ const main = async () => {
   // 1. Clear only the pages this script owns, so a re-run is idempotent
   // without touching system pages or anything authored elsewhere.
   const owned = new Set([
-    'Genshin notes', 'Builds', 'Teams',
     ...characters.map((c) => c.name), ...teams.map((t) => t.name),
   ]);
   const before = await call('page.list', {});
@@ -218,9 +249,12 @@ const main = async () => {
   console.log(`cleared ${doomed.length} previously pushed pages`);
 
   // 2. every page first, so phase three can link to real URLs.
-  const root = await makePage('Genshin notes', null);
-  const buildsRoot = await makePage('Builds', root.id);
-  const teamsRoot = await makePage('Teams', root.id);
+  // Structural pages are reused, never recreated: Guides, Maps, Research
+  // and the rest are parented to the root by id, and a recreated root would
+  // orphan all of them. Only their own sections are cleared and rewritten.
+  const root = await reusePage('Genshin notes', null);
+  const buildsRoot = await reusePage('Builds', root.id);
+  const teamsRoot = await reusePage('Teams', root.id);
 
   const rootUrl = `/${root.slug}`;
   const buildsUrl = `${rootUrl}/${buildsRoot.slug}`;
@@ -285,7 +319,10 @@ const main = async () => {
     }) },
   ]);
 
-  for (const [c, row] of charRows) await writeModules(row, characterModules(c));
+  for (const [c, row] of charRows) {
+    await writeModules(row, characterModules(c));
+    await writeWriteUp(row, c);
+  }
   for (const [t, row] of teamRows) await writeModules(row, teamModules(t));
 
   console.log('\nlinked tree:');

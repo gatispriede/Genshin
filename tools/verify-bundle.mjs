@@ -44,7 +44,11 @@ function pageModules(nav) {
   return (nav.sections || []).flatMap((id) => sectionById.get(id)?.content || []);
 }
 
-const words = (s) => (s.toLowerCase().match(/[\p{L}\p{N}%★'’.-]+/gu) || [])
+/** Decode entities first: &#39; and &amp; otherwise split words and inflate 'missing'. */
+const unentity = (s) => s.replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
+  .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&');
+const words = (s) => (unentity(s).replace(/['’]/g, '').toLowerCase().match(/[\p{L}\p{N}%★'’.-]+/gu) || [])
   .map((w) => w.replace(/^[.'’-]+|[.'’-]+$/g, '')).filter(Boolean);
 
 function recall(src, out) {
