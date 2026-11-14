@@ -138,5 +138,12 @@
   "count": 60,
   "stops": 16,
   "file": "collect-calla-lily.js"
+ },
+ "keys": {
+  "title": "Keys",
+  "feeds": "",
+  "count": 32,
+  "stops": 24,
+  "file": "collect-keys.js"
  }
 }

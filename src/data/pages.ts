@@ -26,6 +26,7 @@ export const pages: PageEntry[] = [
   { href: "redbeet-map.html", title: "Red Beet", blurb: "Everfrozen Earth corridor", kind: "map", section: "Maps" },
   { href: "eye-of-graeae-map.html", title: "Eye of Graeae", blurb: "Three fragment questlines", kind: "map", section: "Maps" },
   { href: "yaodie-valley-map.html", title: "Yaodie Valley", blurb: "Chenyu Vale \u2014 hidden quest cave", kind: "map", section: "Maps" },
+  { href: "arsenal-keys.html", title: "The Arsenal \u2014 3 keys", blurb: "Tatarasuna: where each Key to Some Place is, with the wiki's map and close-up", kind: "map", section: "Maps" },
   { href: "vault-of-qingce.html", title: "Vault of Qingce", blurb: "Why the gate is locked", kind: "map", section: "Maps" },
   { href: "chi-of-yore-puzzles.html", title: "Chi of Yore \u2014 statues", blurb: "Both Qingce puzzles", kind: "map", section: "Maps" },
   { href: "wuwang-statue-puzzle.html", title: "Wuwang Hill \u2014 8 statues", blurb: "Diagram with compass", kind: "map", section: "Maps" },
