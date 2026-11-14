@@ -84,6 +84,7 @@ export const pages: PageEntry[] = [
   { href: "research/11-tactical-sweep.md", title: "11 \u00b7 Tactical Sweep", blurb: "All four stages to 36,000 \u2014 pick for the Morale condition, hold \u221250% RES, and why Mondstadt was locked", kind: "doc", section: "Research" },
   { href: "research/11a-tactical-sweep-bosses.md", title: "11a \u00b7 Sweep boss mechanics", blurb: "Shields, paralysis windows and resistance tables \u2014 every boss has a 4\u20136\u00d7 damage state", kind: "doc", section: "Research" },
   { href: "research/12-varesa-team.md", title: "12 \u00b7 Varesa's team", blurb: "Nothing you own shreds Electro RES \u2014 but Mizuki's Viridescent Venerer already does. Nightsoul Burst cadence, and the goblet worth more than any swap", kind: "doc", section: "Research" },
+  { href: "research/13-varesa-damage-gap.md", title: "13 \u00b7 Varesa's damage gap", blurb: "Why ~50k when clips show ~150k: five gaps that multiply, modelled hit by hit \u2014 and the Skill \u2192 plunge \u2192 Kablam sequence", kind: "doc", section: "Research" },
   { href: "CLAUDE.md", title: "CLAUDE.md", blurb: "Working rules \u2014 loads automatically every session", kind: "doc", section: "Reference" },
   { href: "reference/account.md", title: "Account snapshot", blurb: "Roster, gear, exploration \u2014 and how to refresh it", kind: "doc", section: "Reference" },
   { href: "reference/verified-facts.md", title: "Verified facts", blurb: "Checked numbers with dates. Anything not here, look up again", kind: "doc", section: "Reference" },

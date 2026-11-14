@@ -197,6 +197,6 @@ export function pageSections(html, title) {
 export function moduleText(m) {
   const c = JSON.parse(m.content);
   if (c.value) return text(c.value);
-  return [c.eyebrow, c.heading, c.subtitle,
+  return [c.eyebrow, c.heading, c.subtitle, c.title,
     ...(c.items || []).flatMap((i) => [i.label, i.value])].filter(Boolean).join(' ');
 }
