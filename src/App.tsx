@@ -5,6 +5,7 @@ import Characters from './pages/Characters';
 import CharacterDetail from './pages/CharacterDetail';
 import Teams from './pages/Teams';
 import LegacyPage from './pages/LegacyPage';
+import Roadmap from './pages/Roadmap';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/characters" element={<Characters />} />
         <Route path="/characters/:name" element={<CharacterDetail />} />
         <Route path="/teams" element={<Teams />} />
+        <Route path="/roadmap" element={<Roadmap />} />
         {/* Everything not yet migrated renders as itself, framed by the shell. */}
         <Route path="/page/:href" element={<LegacyPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

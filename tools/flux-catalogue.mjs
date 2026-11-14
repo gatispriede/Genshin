@@ -30,6 +30,7 @@ const SKIP = {
   'app/annotate.js': 'code file, not content',
   'CLAUDE.md': 'instructions for the AI assistant, not site content',
   'docs/AUTHORING.md': 'authoring guide for editors, not site content',
+  'character-roadmap.html': 'superseded by the generated Character roadmap (flux-push.mjs)',
 };
 
 /** Pages driven by engines that will not run in the CMS. */

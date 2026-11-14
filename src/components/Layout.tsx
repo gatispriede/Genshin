@@ -7,6 +7,7 @@ const LINKS = [
   { to: '/', label: 'Home', end: true },
   { to: '/characters', label: 'Characters' },
   { to: '/teams', label: 'Teams' },
+  { to: '/roadmap', label: 'Roadmap' },
 ];
 
 export default function Layout({ children }: { children: ReactNode }) {

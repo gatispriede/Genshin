@@ -28,6 +28,7 @@ const profiles: Character[] = [
     ],
     stats: { maxHp: 19690, atk: 2304, def: 947, em: 63, critRate: '44.9%', critDmg: '123.0%', energyRecharge: '116.3%', elementalDmgBonus: '0.0%' },
     teams: ['varesa'], tier: null, paidIn: 'gear',
+    targetMains: { sands: 'ATK%', goblet: 'Electro DMG', circlet: 'CRIT DMG' }, // varesa-build.html
     targetSet: "Long Night's Oath (BiS) or Obsidian Codex",
     note: 'Max level, wearing all five pieces of Long Night’s Oath (4-piece bonus active). Corrected 14 Nov from HoYoLAB: earlier notes read the five piece names as five sets and concluded she had no set bonus. Still true: the goblet is ATK%, so Electro DMG Bonus is 0.0% — an Electro goblet is the biggest single gain.',
     page: 'varesa-build.html', verified: '2026-11-12',
@@ -45,6 +46,7 @@ const profiles: Character[] = [
     ],
     stats: { maxHp: 12023, atk: 733, def: 615, em: 426, critRate: '8.9%', critDmg: '63.2%', energyRecharge: '115.5%', elementalDmgBonus: '15.0%' },
     teams: ['mizuki'], tier: 1, paidIn: 'levels',
+    targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'CRIT Rate or CRIT DMG' }, // mizuki-build.html
     targetSet: 'Gilded Dreams, or 2pc/2pc EM',
     note: 'Stellar Swirl carry. 4pc Viridescent Venerer is already live. 8.9% CRIT Rate is the gap - her payload crits.',
     page: 'mizuki-build.html', verified: '2026-11-12',
@@ -63,7 +65,8 @@ const profiles: Character[] = [
   {
     name: 'Skirk', element: 'Cryo', weaponType: 'Sword', rarity: 5, level: 90,
     constellation: 0, owned: true, fieldRole: 'on-field', teams: ['skirk'], tier: null,
-    paidIn: 'gear', targetSet: 'Finale of the Deep Galleries',
+    paidIn: 'gear', targetMains: { sands: 'ATK%', goblet: 'Cryo DMG or ATK%', circlet: 'CRIT' }, // skirk-build.html
+    targetSet: 'Finale of the Deep Galleries',
     note: 'Max level. Needs Cryo reactions nearby to spawn Void Rifts for her ATK stacks.',
     page: 'skirk-build.html', verified: '2026-11-12',
   },
@@ -126,7 +129,8 @@ const profiles: Character[] = [
   },
   {
     name: 'Mika', element: 'Cryo', weaponType: 'Polearm', rarity: 4, level: 45,
-    constellation: null, owned: true, teams: ['skirk'], tier: 3, paidIn: 'gear',
+    constellation: null, owned: true, teams: ['skirk'], tier: 3, targetMains: { sands: 'HP%', goblet: 'HP%', circlet: 'Healing Bonus' }, // support-squad.html
+    paidIn: 'gear',
     note: 'Likely replaced by Rosaria once she is levelled.', verified: '2026-11-12',
   },
   {

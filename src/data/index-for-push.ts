@@ -7,3 +7,4 @@
 
 export { characters } from './characters';
 export { teams } from './teams';
+export { artifactRoadmap, characterRoadmap, domainPriority } from './roadmap';
