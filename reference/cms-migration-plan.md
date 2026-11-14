@@ -44,6 +44,24 @@ Neither edits the other's tree. Gaps go in the table below, not into a direct fi
 | flux MCP fixed by `--transport http-only`; Desktop config now launches it through the vault bridge | content thread | 13 Nov |
 | Backup set stays a separate change | content thread | 13 Nov |
 
+## Migration route — bundle (decided 14 Nov)
+
+Author into a **local** CMS instance via MCP, `bundle.export` there, then
+`bundle.import` on flux. Chosen over direct live writes: no rate limits, the
+whole site is reviewable locally first, and one import replaces hundreds of
+production writes. Content still goes in **batches** with a review between
+each, locally.
+
+- **Transport:** Gatis uploads the bundle to the flux server; `bundle.import`
+  reads a server-side `path`. Gatis confirmed this and that versions are
+  compatible.
+- **Backup taken first:** `/tmp/flux-backup-2026-11-14-pre-genshin-import.json`
+  on the flux server — 97,954 bytes, 111 sections, 0 assets. **`/tmp` may not
+  survive a restart; move it somewhere durable before importing.**
+- **Still open (platform thread):** whether the overwrite also replaces system
+  pages, feature flags and `siteIdentity` (Q3), and how to start the local
+  instance with MCP (Q4).
+
 ## Required on the code / module side
 
 Platform thread owns all of these. Status is the platform thread's to update.
