@@ -42,7 +42,12 @@ async function call(name, args = {}) {
   const r = await rpc('tools/call', { name, arguments: args });
   const t = r?.content?.[0]?.text;
   const parsed = t ? JSON.parse(t) : r;
-  const ok = r?.isError !== true && parsed?.ok !== false && !parsed?.code;
+  // !parsed?.error is load-bearing: runMutation catches every throw and
+  // RESOLVES with {"error": "..."}, so a failed write comes back with no
+  // isError, no ok:false and no code. All three protocol signals say
+  // success while nothing was written. 49 call sites share this hole.
+  const ok = r?.isError !== true && parsed?.ok !== false
+    && !parsed?.code && !parsed?.error;
   if (!ok) throw new Error(`${name}: ${JSON.stringify(parsed).slice(0, 180)}`);
   return parsed?.data ?? parsed;
 }

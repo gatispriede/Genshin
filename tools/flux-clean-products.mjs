@@ -42,7 +42,12 @@ async function call(name, args = {}) {
   // An unknown tool comes back as isError at the MCP layer with no ok:false
   // in the body — checking only parsed.ok reports success for a call that
   // never ran. Both have to be checked.
-  const ok = r?.isError !== true && parsed?.ok !== false && !parsed?.code;
+  // !parsed?.error is load-bearing: runMutation catches every throw and
+  // RESOLVES with {"error": "..."}, so a failed write comes back with no
+  // isError, no ok:false and no code. All three protocol signals say
+  // success while nothing was written. 49 call sites share this hole.
+  const ok = r?.isError !== true && parsed?.ok !== false
+    && !parsed?.code && !parsed?.error;
   return { ok, data: parsed?.data ?? parsed, raw: parsed };
 }
 

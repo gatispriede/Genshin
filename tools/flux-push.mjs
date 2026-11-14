@@ -15,17 +15,11 @@
  */
 
 import { build } from 'esbuild';
-import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';
+import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { connect, call } from './flux-client.mjs';
 
-const URL_ = 'https://flux.siaup.store/mcp';
-const TOKEN = process.env.FLUX_TOKEN;
 const APPLY = process.argv.includes('--apply');
-
-if (!TOKEN) {
-  console.error('FLUX_TOKEN is not set — run through the vault binding.');
-  process.exit(2);
-}
 
 /* ---------------------------------------------------------------- data --- */
 
@@ -38,62 +32,6 @@ async function loadData() {
   const mod = await import('file://' + tmp + '?t=' + Date.now());
   try { unlinkSync(tmp); } catch {}
   return mod;
-}
-
-/* ----------------------------------------------------------------- mcp --- */
-
-let session = null;
-
-async function rpc(method, params) {
-  const headers = {
-    Authorization: `Bearer ${TOKEN}`,
-    'Content-Type': 'application/json',
-    Accept: 'application/json, text/event-stream',
-  };
-  if (session) headers['Mcp-Session-Id'] = session;
-
-  const res = await fetch(URL_, {
-    method: 'POST', headers,
-    body: JSON.stringify({ jsonrpc: '2.0', id: Date.now(), method, params }),
-  });
-  if (!session) session = res.headers.get('mcp-session-id');
-
-  const text = await res.text();
-  const line = text.split('\n').find((l) => l.startsWith('data: '));
-  const payload = JSON.parse(line ? line.slice(6) : text || '{}');
-  if (payload.error) throw new Error(method + ': ' + JSON.stringify(payload.error));
-  return payload.result;
-}
-
-/**
- * Strict on purpose. An unknown tool or a wrong argument shape comes back as
- * isError at the MCP layer with a body of {code, message} and NO ok:false —
- * so checking only parsed.ok reports success for a call that never ran. That
- * is exactly how every page.update silently failed and left the whole tree
- * unparented, with every nested URL 404ing.
- */
-async function call(name, args = {}) {
-  const r = await rpc('tools/call', { name, arguments: args });
-  const text = r?.content?.[0]?.text;
-  const parsed = text ? JSON.parse(text) : r;
-  const ok = r?.isError !== true && parsed?.ok !== false && !parsed?.code;
-  if (!ok) throw new Error(`${name}: ${JSON.stringify(parsed).slice(0, 200)}`);
-  return parsed?.data ?? parsed;
-}
-
-async function connect() {
-  await rpc('initialize', {
-    protocolVersion: '2025-06-18', capabilities: {},
-    clientInfo: { name: 'genshin-push', version: '1' },
-  });
-  await fetch(URL_, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json',
-      Accept: 'application/json, text/event-stream', 'Mcp-Session-Id': session,
-    },
-    body: JSON.stringify({ jsonrpc: '2.0', method: 'notifications/initialized' }),
-  });
 }
 
 /* ------------------------------------------------------------- builders --- */
@@ -135,8 +73,6 @@ function characterModules(c, teamName) {
       (c.weapon.refinement ? ` R${c.weapon.refinement}` : '') },
     c.verified && { label: 'Read from game', value: c.verified },
   ].filter(Boolean);
-  mods.push({ type: 'KEY_VALUE_DOSSIER', style: 'spec',
-              content: json({ title: 'Vitals', items: vitals }) });
 
   if (c.stats) {
     const s = c.stats;
@@ -150,6 +86,11 @@ function characterModules(c, teamName) {
     if (cells.length) mods.push({ type: 'STATS_STRIP', style: 'editorial',
                                   content: json({ cells }) });
   }
+
+  // After the full-width stats band, so vitals and artifacts are
+  // neighbours and packSections() puts them side by side.
+  mods.push({ type: 'KEY_VALUE_DOSSIER', style: 'spec',
+              content: json({ title: 'Vitals', items: vitals }) });
 
   if (c.artifacts?.length) {
     const items = c.artifacts.map((a) => ({
@@ -219,10 +160,34 @@ async function makePage(name, parentId) {
   return row;
 }
 
+/** Module types compact enough to sit side by side in a 2-column section. */
+const PAIRABLE = new Set(['KEY_VALUE_DOSSIER', 'LIST']);
+
+/**
+ * Consecutive pairable modules share a 2-column section (vitals beside
+ * artifacts, roster beside shield coverage); everything else takes a full row.
+ * In an N-column section, content index i lands in column i — probed on flux.
+ */
+function packSections(modules) {
+  const sections = [];
+  for (let i = 0; i < modules.length; i++) {
+    const m = modules[i];
+    const next = modules[i + 1];
+    if (PAIRABLE.has(m.type) && next && PAIRABLE.has(next.type)) {
+      sections.push([m, next]);
+      i++;
+    } else {
+      sections.push([m]);
+    }
+  }
+  return sections;
+}
+
 async function writeModules(row, modules) {
-  if (!modules.length) return;
-  const { sectionId } = await call('section.create', { pageId: row.id, type: 1 });
-  await call('module.add', { items: modules.map((m) => ({ sectionId, module: m })) });
+  for (const group of packSections(modules)) {
+    const { sectionId } = await call('section.create', { pageId: row.id, type: group.length });
+    await call('module.add', { items: group.map((m) => ({ sectionId, module: m })) });
+  }
 }
 
 const main = async () => {
@@ -235,7 +200,7 @@ const main = async () => {
   console.log(`  teams     : ${teams.map((t) => t.name).join(', ')}`);
   if (!APPLY) { console.log('\ndry run — pass --apply to write'); return; }
 
-  await connect();
+  await connect('genshin-push');
 
   // 1. Clear only the pages this script owns, so a re-run is idempotent
   // without touching system pages or anything authored elsewhere.
