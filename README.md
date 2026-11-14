@@ -122,8 +122,8 @@ Mondstadt **35.3%** · Windrest Peak **32.2%** · Dragonspine **5.9%**
 1. **No one has an Elemental DMG goblet.** Every audited character shows 0.0% elemental
    damage bonus except Skirk. Biggest systemic gap on the account.
    **Re-confirmed 12 Nov on Varesa** — Lv 90, the account's best character, still reads
-   **0.0% Electro DMG Bonus** and wears five different artifact sets, so no set bonus
-   either. See [`research/12-varesa-team.md`](research/12-varesa-team.md).
+   **0.0% Electro DMG Bonus**. (An earlier note here said she had no set bonus; HoYoLAB
+   shows full Long Night's Oath — corrected 14 Nov.) See [`research/12-varesa-team.md`](research/12-varesa-team.md).
 2. **Crit Rate is near-base across the roster** — 7–9% on most characters. Noelle has
    97.9% Crit DMG at 9.7% Crit Rate, which almost never fires.
 3. **Skirk's weapon substat is dead.** Prototype Rancour gives 25.4% *Physical* DMG, and

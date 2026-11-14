@@ -1,4 +1,5 @@
 import type { Character } from './types';
+import { mergeLive } from './live';
 
 /**
  * THE SOURCE OF TRUTH for this account's roster.
@@ -13,7 +14,7 @@ import type { Character } from './types';
  * `constellation: null` means not verified. Every 5-star on this account is C0;
  * several 4-stars are high but no individual count has been confirmed.
  */
-export const characters: Character[] = [
+const profiles: Character[] = [
   {
     name: 'Varesa', element: 'Electro', weaponType: 'Catalyst', rarity: 5,
     level: 90, constellation: 0, owned: true, fieldRole: 'on-field',
@@ -28,7 +29,7 @@ export const characters: Character[] = [
     stats: { maxHp: 19690, atk: 2304, def: 947, em: 63, critRate: '44.9%', critDmg: '123.0%', energyRecharge: '116.3%', elementalDmgBonus: '0.0%' },
     teams: ['varesa'], tier: null, paidIn: 'gear',
     targetSet: "Long Night's Oath (BiS) or Obsidian Codex",
-    note: 'Max level. Five pieces from five sets, so no set bonus at all, and an ATK% goblet means 0.0% Electro DMG Bonus.',
+    note: 'Max level, wearing all five pieces of Long Night’s Oath (4-piece bonus active). Corrected 14 Nov from HoYoLAB: earlier notes read the five piece names as five sets and concluded she had no set bonus. Still true: the goblet is ATK%, so Electro DMG Bonus is 0.0% — an Electro goblet is the biggest single gain.',
     page: 'varesa-build.html', verified: '2026-11-12',
   },
   {
@@ -157,6 +158,10 @@ export const characters: Character[] = [
   { name: 'Prune', element: 'Anemo', weaponType: 'Catalyst', level: 12, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Sayu', element: 'Anemo', weaponType: 'Claymore', level: 1, constellation: null, owned: true, teams: [], tier: null, unresearched: true, verified: '2026-11-12' },
 ];
+
+/** Profiles with HoYoLAB's facts laid over them — see live.ts. */
+export const characters: Character[] = mergeLive(profiles);
+
 
 export const byName = (name: string): Character | undefined =>
   characters.find((c) => c.name.toLowerCase() === name.toLowerCase());

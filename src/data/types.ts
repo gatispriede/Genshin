@@ -29,6 +29,11 @@ export interface EquippedArtifact {
   set: string;
   level: number;
   main: string;
+  /** Piece name, e.g. "Lightkeeper's Pledge" — not the set name. */
+  piece?: string;
+  rarity?: number;
+  /** Substats as read from the game, e.g. "CRIT Rate 8.7%(3), ATK 16". */
+  subs?: string;
   /** true when this piece belongs to no active set bonus */
   offSet?: boolean;
 }
@@ -67,6 +72,8 @@ export interface Character {
   weapon?: EquippedWeapon;
   artifacts?: EquippedArtifact[];
   stats?: Stats;
+  /** Normal attack / skill / burst talent levels, from the game. */
+  talents?: number[];
   /** Team ids this character is currently fielded in. */
   teams: string[];
   /** Roadmap tier: 1 = do now, 3 = leave alone, null = not in a team. */

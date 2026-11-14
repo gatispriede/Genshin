@@ -23,7 +23,7 @@ Read off HoYoLAB, 12 Nov 2026.
 | **Electro DMG Bonus** | **0.0%** |
 | Energy Recharge | 116.3% |
 | Elemental Mastery | 63 |
-| Artifacts | **five different sets**, Lv 16–20 — *no set bonus at all* |
+| Artifacts | **5-piece Long Night's Oath**, Lv 16–20 — 4pc active. *(Corrected 14 Nov: this row once read the five piece names as five sets.)* |
 
 Her five pieces are Lightkeeper's…, Nightingale's Tail…, Undying One's…, A Horn
 Unwinded and Dyed Tassel. Three of them roll ATK% mains (46.6 / 34.8 / 34.8), which
