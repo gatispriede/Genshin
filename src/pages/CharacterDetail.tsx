@@ -3,6 +3,8 @@ import { byName } from '../data/characters';
 import { teams } from '../data/teams';
 import type { Character, Stats } from '../data/types';
 
+const PROGRESS = { none: 'not started', partial: 'partly collected', complete: 'complete' } as const;
+
 const STAT_LABELS: [keyof Stats, string][] = [
   ['maxHp', 'Max HP'],
   ['atk', 'ATK'],
@@ -122,8 +124,19 @@ export default function CharacterDetail() {
           </tr>
           <tr>
             <td>Target set</td>
-            <td className="goal">{c.targetSet ?? '—'}</td>
+            <td className="goal">
+              {c.targetSet ?? '—'}
+              {c.setProgress && <span className="meta"> · {PROGRESS[c.setProgress]}</span>}
+            </td>
           </tr>
+          {c.targetMains && (
+            <tr>
+              <td>Main stats</td>
+              <td>
+                Sands {c.targetMains.sands} · Goblet {c.targetMains.goblet} · Circlet {c.targetMains.circlet}
+              </td>
+            </tr>
+          )}
           <tr>
             <td>Fielded in</td>
             <td>

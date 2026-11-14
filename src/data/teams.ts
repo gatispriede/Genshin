@@ -11,7 +11,7 @@ export const teams: Team[] = [
     element: 'Cryo',
     members: [
       { character: 'Skirk', role: 'main-dps', set: 'Finale of the Deep Galleries' },
-      { character: 'Mona', role: 'enabler', set: 'Tenacity of the Millelith or Scroll of the Hero of Cinder City' },
+      { character: 'Mona', role: 'enabler', set: 'Tenacity of the Millelith' },
       { character: 'Escoffier', role: 'heal', set: 'Golden Troupe' },
       { character: 'Mika', role: 'sustain', set: 'Noblesse Oblige' },
     ],

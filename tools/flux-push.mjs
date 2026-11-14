@@ -62,7 +62,10 @@ function characterModules(c, teamName) {
     { label: 'Level', value: String(c.level) },
     { label: 'Constellation', value: c.constellation === null ? 'not verified' : 'C' + c.constellation },
     c.paidIn && { label: 'Pays off in', value: c.paidIn },
-    c.targetSet && { label: 'Target set', value: c.targetSet },
+    c.targetSet && { label: 'Target set', value: c.targetSet
+      + (c.setProgress ? ` (${{ none: 'not started', partial: 'partly collected', complete: 'complete' }[c.setProgress]})` : '') },
+    c.targetMains && { label: 'Main stats', value:
+      `Sands ${c.targetMains.sands} · Goblet ${c.targetMains.goblet} · Circlet ${c.targetMains.circlet}` },
     // Team display names with a link through, not the raw ids — "varesa" told
     // the reader nothing and went nowhere.
     ...c.teams.map((id) => {

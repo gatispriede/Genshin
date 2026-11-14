@@ -44,6 +44,16 @@ export interface Stats {
   elementalDmgBonus?: string;
 }
 
+/** How far a character's target 4-piece set has been collected. */
+export type SetProgress = 'none' | 'partial' | 'complete';
+
+/** Target main stats; alternatives are written as 'A or B'. */
+export interface TargetMains {
+  sands: string;
+  goblet: string;
+  circlet: string;
+}
+
 export interface Character {
   name: string;
   element: Element;
@@ -63,6 +73,10 @@ export interface Character {
   tier: 1 | 2 | 3 | null;
   paidIn?: PaidIn;
   targetSet?: string;
+  /** How much of targetSet is equipped: none, some pieces, or the full 4-piece. */
+  setProgress?: SetProgress;
+  /** Main stats to aim for on the three variable slots. */
+  targetMains?: TargetMains;
   /** Never looked up — flagged in reference/research-coverage.md. */
   unresearched?: boolean;
   note?: string;
