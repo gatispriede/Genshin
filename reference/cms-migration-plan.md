@@ -216,6 +216,24 @@ Corrections to earlier assumptions recorded there:
 - **Slugs are derived server-side**, and reserved names are auto-prefixed
   rather than rejected — a page named "Blog" becomes `page-blog`.
 
+### Item 6 — external bundle export/import over MCP (requested 14 Nov)
+
+Gatis: "MCP should have a way to export / import from external." Today both
+bundle tools read and write the server's own disk, so an MCP client on another
+machine can neither receive an export nor send an import. Asked of the platform
+thread, in value order:
+
+1. Inline (chunked) export in the tool result.
+2. Inline (chunked) import — upload session or capped inline field.
+3. Scoped import — merge mode or a page/collection filter, so a routine status
+   edit does not wipe-and-replace every collection. **The one Gatis's
+   status-update workflow depends on.**
+4. Dry-run diff before commit.
+5. Automatic backup before any import.
+6. Explicit `null` for absent settings, so an import can clear them.
+
+Until it ships, routine updates go through targeted MCP writes.
+
 ## Required on the content side
 
 Owned by the content thread.
