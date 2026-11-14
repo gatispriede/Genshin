@@ -75,9 +75,12 @@ with no farming at all.
 | | Electro RES | Multiplier |
 |---|---|---|
 | Before | 10% | 0.90 |
-| After VV | −30% | 1.30 |
+| After VV | −30% | 1.15 |
 
-**+44% Electro damage**, for the cost of putting her in the party.
+**+28% Electro damage**, for the cost of putting her in the party.
+
+> *Corrected 14 Nov: this said +44%, using a multiplier of 1.30. Below zero RES the
+> multiplier is `1 − RES/2`, so −30% gives 1.15, not 1.30 — a +28% gain over 0.90.*
 
 > **The holder must be on-field at the instant the swirl triggers.** The wiki's gameplay
 > notes are explicit: *"the RES reduction cannot be applied if the equipping character is
@@ -195,7 +198,7 @@ Sanctum of Rainbow Spirits.** One domain outfits Varesa and Kachina both.
 
 1. **Electro DMG goblet on Varesa** — +46.6% at Lv 20 5★, the same scaling as the 46.6%
    ATK% sands she is already wearing. She currently has **zero**.
-2. **Mizuki in the party** — +44%, available right now, costs nothing.
+2. **Mizuki in the party** — +28%, available right now, costs nothing.
 3. **Obsidian Codex 4pc** — CRIT Rate 45% → 85%.
 4. **Kachina in the party** — +35% ATK from ~67% to ~100% uptime, so roughly +12% average.
 5. **Alyosha in the party** — +15–20% ATK, plus the heal that frees a slot.
