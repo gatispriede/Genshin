@@ -6,7 +6,12 @@
  * file or the command line.
  */
 
-const URL_ = 'https://flux.siaup.store/mcp';
+// Production by default. --local points the same scripts at the local CMS
+// instance for the bundle route: author there, review, export, import.
+// (A flag, not an env var: vault bindings inject secrets only.)
+const LOCAL_URL = 'http://127.0.0.1:8788/mcp';
+const URL_ = process.argv.includes('--local') ? LOCAL_URL : 'https://flux.siaup.store/mcp';
+export const TARGET = URL_;
 
 let session = null;
 
@@ -38,6 +43,7 @@ async function rpc(method, params) {
 
 export async function connect(clientName) {
   requireToken();
+  console.error(`target: ${URL_}`);
   await rpc('initialize', {
     protocolVersion: '2025-06-18', capabilities: {},
     clientInfo: { name: clientName, version: '1' },
