@@ -92,8 +92,10 @@
 
     var img = q.img
       ? '<a class="lmap__shot" href="' + DATA.imageBase + esc(q.img) +
-        '" target="_blank" rel="noopener">' +
-        '<img src="' + DATA.imageBase + esc(q.img) + '" alt="Where ' +
+        // The wiki's CDN serves a placeholder to any foreign Referer, so
+        // neither the link nor the image may send one.
+        '" target="_blank" rel="noopener noreferrer">' +
+        '<img referrerpolicy="no-referrer" src="' + DATA.imageBase + esc(q.img) + '" alt="Where ' +
         esc(q.name) + ' starts"></a>'
       : '<p class="lmap__noshot">No start-location screenshot on the wiki for ' +
         'this one — use the NPC name in game.</p>';

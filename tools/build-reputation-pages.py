@@ -14,6 +14,7 @@ import sys
 from urllib.parse import quote
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import wiki_image  # noqa: E402
 import reputation_chains  # noqa: E402  (chains render in their own module)
 
 DATA = os.path.join("reference", "data", "reputation-quests.json")
@@ -191,8 +192,8 @@ def thumb(region, q):
     if not page or not close:
         return '<td class="thumb"><span class="dim">—</span></td>'
     return ('<td class="thumb"><a href="%s#%s" title="Where %s starts">'
-            '<img loading="lazy" src="assets/quest-maps/%s" alt=""></a></td>'
-            % (page, anchor(q["name"]), esc(q["name"]), close[0]["file"]))
+            '<img loading="lazy" referrerpolicy="no-referrer" src="%s" alt=""></a></td>'
+            % (page, anchor(q["name"]), esc(q["name"]), esc(wiki_image.src(close[0]))))
 
 
 def rows(region, quests):

@@ -28,6 +28,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import wiki_image  # noqa: E402
 from mapsource import MapSource, TILE          # noqa: E402
 
 LEVEL = 2                      # N2: quarter scale, enough for four regions
@@ -137,8 +138,9 @@ def main():
                 "tier": ("very short" if score < 7 else
                          "short" if score < 14 else
                          "medium" if score < 30 else "long"),
-                "img": close["file"] if close else None,
-                "wide": wide["file"] if wide else None,
+                # Full source (wiki URL when indexed), so imageBase is empty.
+                "img": wiki_image.src(close),
+                "wide": wiki_image.src(wide),
                 "done": q["name"].lower() in done,
             })
 
@@ -174,7 +176,7 @@ def main():
         "basemap": version,
         "tileSize": TILE,
         "size": {"w": win.w, "h": win.h},
-        "imageBase": "assets/quest-maps/",
+        "imageBase": "",
         "tiles": tiles,
         "areas": rebase(areas),
         "waypoints": rebase(waypoints),

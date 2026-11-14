@@ -126,7 +126,11 @@ def main():
                     continue
                 with open(path, "wb") as fh:
                     fh.write(blob)
+            # Keep the wiki's own URL: pages reference it directly, so the
+            # images work wherever the page is published (the CMS has no copy
+            # of assets/quest-maps/, which is gitignored).
             local.append({"file": name.replace("\\", "/"),
+                          "url": url,
                           "context": "context" in f.lower()})
         manifest.append({**q, "maps": local})
         print("%-42s %d map%s" % (q["name"][:42], len(local),

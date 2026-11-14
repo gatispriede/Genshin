@@ -15,10 +15,12 @@
    "maps": [
     {
      "file": "npc-location-changchang.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/NPC_Location_Changchang.png/revision/latest?cb=20241016091707",
      "context": false
     },
     {
      "file": "npc-location-changchang-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/NPC_Location_Changchang_Context.png/revision/latest?cb=20240620032341",
      "context": true
     }
    ]
@@ -39,14 +41,17 @@
    "maps": [
     {
      "file": "npc-location-huai-an.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/NPC_Location_Huai%27an.png/revision/latest?cb=20240326230445",
      "context": false
     },
     {
      "file": "world-quest-a-provisional-arrangement-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/World_Quest_A_Provisional_Arrangement_Start_Location.png/revision/latest?cb=20221229072620",
      "context": false
     },
     {
      "file": "npc-location-huai-an-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/93/NPC_Location_Huai%27an_Context.png/revision/latest?cb=20211002173025",
      "context": true
     }
    ]
@@ -66,14 +71,17 @@
    "maps": [
     {
      "file": "location-emerald-maple-inn.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Location_Emerald_Maple_Inn.png/revision/latest?cb=20230129035817",
      "context": false
     },
     {
      "file": "world-quest-old-tastes-die-hard-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/World_Quest_Old_Tastes_Die_Hard_Start_Location.png/revision/latest?cb=20230102115812",
      "context": false
     },
     {
      "file": "npc-location-mr-zhu-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/NPC_Location_Mr._Zhu_Context.png/revision/latest?cb=20230303094435",
      "context": true
     }
    ]
@@ -94,10 +102,12 @@
    "maps": [
     {
      "file": "npc-location-starsnatcher.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/NPC_Location_Starsnatcher.png/revision/latest?cb=20230129044841",
      "context": false
     },
     {
      "file": "npc-location-starsnatcher-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/NPC_Location_Starsnatcher_Context.png/revision/latest?cb=20220410105943",
      "context": true
     }
    ]
@@ -117,6 +127,7 @@
    "maps": [
     {
      "file": "npc-location-ji-tong.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/NPC_Location_Ji_Tong.png/revision/latest?cb=20221216051332",
      "context": false
     }
    ]
@@ -136,10 +147,12 @@
    "maps": [
     {
      "file": "npc-location-jiayi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/NPC_Location_Jiayi.png/revision/latest?cb=20230104111123",
      "context": false
     },
     {
      "file": "npc-location-jiayi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/NPC_Location_Jiayi_Context.png/revision/latest?cb=20230503062410",
      "context": true
     }
    ]
@@ -159,10 +172,12 @@
    "maps": [
     {
      "file": "world-quest-book-in-the-woods-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fa/World_Quest_Book_in_the_Woods_Location.png/revision/latest?cb=20221230174023",
      "context": false
     },
     {
      "file": "world-quest-book-in-the-woods-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/World_Quest_Book_in_the_Woods_Location_Context.png/revision/latest?cb=20250415190548",
      "context": true
     }
    ]
@@ -180,18 +195,22 @@
    "maps": [
     {
      "file": "world-quest-share-not-your-treasures-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/World_Quest_Share_Not_Your_Treasures_Start_Location.png/revision/latest?cb=20230102163549",
      "context": false
     },
     {
      "file": "world-quest-share-not-your-treasures-final-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/World_Quest_Share_Not_Your_Treasures_Final_Location.png/revision/latest?cb=20230102163801",
      "context": false
     },
     {
      "file": "world-quest-share-not-your-treasures-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/28/World_Quest_Share_Not_Your_Treasures_Start_Location_Context.png/revision/latest?cb=20230303094758",
      "context": true
     },
     {
      "file": "world-quest-share-not-your-treasures-final-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/World_Quest_Share_Not_Your_Treasures_Final_Location_Context.png/revision/latest?cb=20230303094837",
      "context": true
     }
    ]
@@ -211,14 +230,17 @@
    "maps": [
     {
      "file": "npc-location-qiaoxi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/NPC_Location_Qiaoxi.png/revision/latest?cb=20240311165101",
      "context": false
     },
     {
      "file": "world-quest-overstretched-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/World_Quest_Overstretched_Start_Location.png/revision/latest?cb=20230102121120",
      "context": false
     },
     {
      "file": "npc-location-qiaoxi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/NPC_Location_Qiaoxi_Context.png/revision/latest?cb=20211012193958",
      "context": true
     }
    ]
@@ -240,10 +262,12 @@
    "maps": [
     {
      "file": "npc-location-granny-shan-manager-kuan-yiran.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/NPC_Location_Granny_Shan%2C_Manager_Kuan_%26_Yiran.png/revision/latest?cb=20221230173048",
      "context": false
     },
     {
      "file": "npc-location-granny-shan-manager-kuan-yiran-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/NPC_Location_Granny_Shan%2C_Manager_Kuan_%26_Yiran_Context.png/revision/latest?cb=20220227041535",
      "context": true
     }
    ]
@@ -265,18 +289,22 @@
    "maps": [
     {
      "file": "npc-location-gentry-de-an.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/NPC_Location_Gentry_De%27an.png/revision/latest?cb=20241109181423",
      "context": false
     },
     {
      "file": "gentry-de-an-nighttime-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Gentry_De%27an_Nighttime_Location.png/revision/latest?cb=20220305060413",
      "context": false
     },
     {
      "file": "npc-gentry-de-an-nighttime-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/NPC_Gentry_De%27an_Nighttime_Location.png/revision/latest?cb=20241022212359",
      "context": false
     },
     {
      "file": "npc-location-gentry-de-an-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c1/NPC_Location_Gentry_De%27an_Context.png/revision/latest?cb=20211012142252",
      "context": true
     }
    ]
@@ -294,14 +322,17 @@
    "maps": [
     {
      "file": "world-quest-the-yaksha-s-wish-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/World_Quest_The_Yaksha%27s_Wish_Start_Location.png/revision/latest?cb=20230104062135",
      "context": false
     },
     {
      "file": "world-quest-the-yaksha-s-wish-clue-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/World_Quest_The_Yaksha%27s_Wish_Clue_Locations.png/revision/latest?cb=20240525023515",
      "context": false
     },
     {
      "file": "world-quest-the-yaksha-s-wish-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/World_Quest_The_Yaksha%27s_Wish_Start_Location_Context.png/revision/latest?cb=20220909174158",
      "context": true
     }
    ]
@@ -322,10 +353,12 @@
    "maps": [
     {
      "file": "npc-location-katheryne-liyue-harbor.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/NPC_Location_Katheryne_%28Liyue_Harbor%29.png/revision/latest?cb=20221113020400",
      "context": false
     },
     {
      "file": "npc-location-lan-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/NPC_Location_Lan_Context.png/revision/latest?cb=20211119180747",
      "context": true
     }
    ]
@@ -348,14 +381,17 @@
    "maps": [
     {
      "file": "location-lost-notes-house.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Location_Lost_Notes_House.png/revision/latest?cb=20201004203419",
      "context": false
     },
     {
      "file": "world-quest-the-tree-who-stands-alone-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/World_Quest_The_Tree_who_Stands_Alone_Start_Location.png/revision/latest?cb=20230104055617",
      "context": false
     },
     {
      "file": "world-quest-the-tree-who-stands-alone-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/World_Quest_The_Tree_who_Stands_Alone_Start_Location_Context.png/revision/latest?cb=20230311083439",
      "context": true
     }
    ]
@@ -375,14 +411,17 @@
    "maps": [
     {
      "file": "npc-location-muning.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/NPC_Location_Muning.png/revision/latest?cb=20250210152831",
      "context": false
     },
     {
      "file": "chasm-archaic-stones-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Chasm_Archaic_Stones_Locations.png/revision/latest?cb=20240703082530",
      "context": false
     },
     {
      "file": "npc-location-muning-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/NPC_Location_Muning_Context.png/revision/latest?cb=20220330195712",
      "context": true
     }
    ]
@@ -402,10 +441,12 @@
    "maps": [
     {
      "file": "npc-location-granny-shan-manager-kuan-yiran.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/NPC_Location_Granny_Shan%2C_Manager_Kuan_%26_Yiran.png/revision/latest?cb=20221230173048",
      "context": false
     },
     {
      "file": "npc-location-granny-shan-manager-kuan-yiran-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/NPC_Location_Granny_Shan%2C_Manager_Kuan_%26_Yiran_Context.png/revision/latest?cb=20220227041535",
      "context": true
     }
    ]
@@ -426,18 +467,22 @@
    "maps": [
     {
      "file": "location-jade-chamber.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Location_Jade_Chamber.png/revision/latest?cb=20230129053342",
      "context": false
     },
     {
      "file": "world-quest-fishing-for-jade-and-return-of-the-jade-chamber-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/09/World_Quest_Fishing_for_Jade_and_Return_of_the_Jade_Chamber_Start_Location.png/revision/latest?cb=20241029211905",
      "context": false
     },
     {
      "file": "npc-location-kun-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/NPC_Location_Kun_Context.png/revision/latest?cb=20220620001923",
      "context": true
     },
     {
      "file": "npc-location-baiwen-context-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/NPC_Location_Baiwen_Context_1.png/revision/latest?cb=20240620034832",
      "context": true
     }
    ]
@@ -458,10 +503,12 @@
    "maps": [
     {
      "file": "npc-location-katheryne-liyue-harbor.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/NPC_Location_Katheryne_%28Liyue_Harbor%29.png/revision/latest?cb=20221113020400",
      "context": false
     },
     {
      "file": "npc-location-lan-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/NPC_Location_Lan_Context.png/revision/latest?cb=20211119180747",
      "context": true
     }
    ]
@@ -482,18 +529,22 @@
    "maps": [
     {
      "file": "npc-location-bao-er.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ca/NPC_Location_Bao%27er.png/revision/latest?cb=20230128165513",
      "context": false
     },
     {
      "file": "npc-location-landa-tia.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/99/NPC_Location_Landa_%26_Tia.png/revision/latest?cb=20221230171125",
      "context": false
     },
     {
      "file": "npc-location-bao-er-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/NPC_Location_Bao%27er_Context.png/revision/latest?cb=20210818164307",
      "context": true
     },
     {
      "file": "npc-location-landa-tia-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6b/NPC_Location_Landa_%26_Tia_Context.png/revision/latest?cb=20211002172818",
      "context": true
     }
    ]
@@ -513,18 +564,22 @@
    "maps": [
     {
      "file": "world-quest-in-another-land-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/World_Quest_In_Another_Land_Start_Location.png/revision/latest?cb=20260102200541",
      "context": false
     },
     {
      "file": "world-quest-endless-research-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Endless_Research_Start_Location.png/revision/latest?cb=20260219064323",
      "context": false
     },
     {
      "file": "world-quest-in-another-land-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/World_Quest_In_Another_Land_Start_Location_Context.png/revision/latest?cb=20210825132753",
      "context": true
     },
     {
      "file": "world-quest-endless-research-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/World_Quest_Endless_Research_Start_Location_Context.png/revision/latest?cb=20260223112627",
      "context": true
     }
    ]
@@ -545,10 +600,12 @@
    "maps": [
     {
      "file": "npc-location-clitopho.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/NPC_Location_Clitopho.png/revision/latest?cb=20250210152640",
      "context": false
     },
     {
      "file": "npc-location-clitopho-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/NPC_Location_Clitopho_Context.png/revision/latest?cb=20240701144407",
      "context": true
     }
    ]
@@ -570,10 +627,12 @@
    "maps": [
     {
      "file": "npc-location-fan-er-ye.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/NPC_Location_Fan_Er%27ye.png/revision/latest?cb=20241109180817",
      "context": false
     },
     {
      "file": "npc-location-fan-er-ye-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/NPC_Location_Fan_Er%27ye_Context.png/revision/latest?cb=20210831215036",
      "context": true
     }
    ]
@@ -593,10 +652,12 @@
    "maps": [
     {
      "file": "npc-location-zhiping.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/NPC_Location_Zhiping.png/revision/latest?cb=20240529062533",
      "context": false
     },
     {
      "file": "quest-no-restoring-this-past-land-of-beauty-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Quest_No_Restoring_This_Past_Land_of_Beauty_Location.png/revision/latest?cb=20241029210041",
      "context": false
     }
    ]
@@ -616,10 +677,12 @@
    "maps": [
     {
      "file": "npc-location-starsnatcher.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/NPC_Location_Starsnatcher.png/revision/latest?cb=20230129044841",
      "context": false
     },
     {
      "file": "npc-location-starsnatcher-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/NPC_Location_Starsnatcher_Context.png/revision/latest?cb=20220410105943",
      "context": true
     }
    ]
@@ -639,10 +702,12 @@
    "maps": [
     {
      "file": "npc-location-katheryne-liyue-harbor.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/NPC_Location_Katheryne_%28Liyue_Harbor%29.png/revision/latest?cb=20221113020400",
      "context": false
     },
     {
      "file": "npc-location-lan-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/NPC_Location_Lan_Context.png/revision/latest?cb=20211119180747",
      "context": true
     }
    ]
@@ -662,50 +727,62 @@
    "maps": [
     {
      "file": "quest-and-this-treasure-goes-to-location-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Quest_And_This_Treasure_Goes_To_Location_1.png/revision/latest?cb=20250210153426",
      "context": false
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6b/Quest_And_This_Treasure_Goes_To_Location_2.png/revision/latest?cb=20250210153525",
      "context": false
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/Quest_And_This_Treasure_Goes_To_Location_3.png/revision/latest?cb=20250210153550",
      "context": false
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-4.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/43/Quest_And_This_Treasure_Goes_To_Location_4.png/revision/latest?cb=20250210153613",
      "context": false
     },
     {
      "file": "world-quest-in-another-land-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/World_Quest_In_Another_Land_Start_Location.png/revision/latest?cb=20260102200541",
      "context": false
     },
     {
      "file": "world-quest-endless-research-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Endless_Research_Start_Location.png/revision/latest?cb=20260219064323",
      "context": false
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-context-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Quest_And_This_Treasure_Goes_To_Location_Context_3.png/revision/latest?cb=20220202154002",
      "context": true
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-context-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Quest_And_This_Treasure_Goes_To_Location_Context_1.png/revision/latest?cb=20220202152405",
      "context": true
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-context-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Quest_And_This_Treasure_Goes_To_Location_Context_2.png/revision/latest?cb=20220202153950",
      "context": true
     },
     {
      "file": "quest-and-this-treasure-goes-to-location-context-4.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Quest_And_This_Treasure_Goes_To_Location_Context_4.png/revision/latest?cb=20220202154326",
      "context": true
     },
     {
      "file": "world-quest-in-another-land-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/World_Quest_In_Another_Land_Start_Location_Context.png/revision/latest?cb=20210825132753",
      "context": true
     },
     {
      "file": "world-quest-endless-research-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/World_Quest_Endless_Research_Start_Location_Context.png/revision/latest?cb=20260223112627",
      "context": true
     }
    ]
@@ -727,18 +804,22 @@
    "maps": [
     {
      "file": "npc-location-clerk-zhao-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/NPC_Location_Clerk_Zhao_%28Nighttime%29.png/revision/latest?cb=20230102141301",
      "context": false
     },
     {
      "file": "npc-location-big-footed-dajiao-clerk-zhao.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/NPC_Location_Big-Footed_Dajiao_%26_Clerk_Zhao.png/revision/latest?cb=20230128170257",
      "context": false
     },
     {
      "file": "npc-location-clerk-zhao-nighttime-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/NPC_Location_Clerk_Zhao_%28Nighttime%29_Context.png/revision/latest?cb=20230307103647",
      "context": true
     },
     {
      "file": "npc-location-big-footed-dajiao-clerk-zhao-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/NPC_Location_Big-Footed_Dajiao_%26_Clerk_Zhao_Context.png/revision/latest?cb=20211009230457",
      "context": true
     }
    ]
@@ -786,10 +867,12 @@
    "maps": [
     {
      "file": "npc-location-chef-mao.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/NPC_Location_Chef_Mao.png/revision/latest?cb=20241016065407",
      "context": false
     },
     {
      "file": "npc-location-chef-mao-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/NPC_Location_Chef_Mao_Context.png/revision/latest?cb=20210819071824",
      "context": true
     }
    ]
@@ -812,10 +895,12 @@
    "maps": [
     {
      "file": "npc-location-ivanovich.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/NPC_Location_Ivanovich.png/revision/latest?cb=20241029213629",
      "context": false
     },
     {
      "file": "npc-location-ivanovich-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/NPC_Location_Ivanovich_Context.png/revision/latest?cb=20211012141527",
      "context": true
     }
    ]
@@ -835,22 +920,27 @@
    "maps": [
     {
      "file": "npc-location-soraya.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/NPC_Location_Soraya.png/revision/latest?cb=20241029212925",
      "context": false
     },
     {
      "file": "item-transcription-from-a-ruin-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Item_Transcription_from_a_ruin_Locations.png/revision/latest?cb=20230201073146",
      "context": false
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/World_Quest_Treasure_Lost%2C_Treasure_Found_Start_Location.png/revision/latest?cb=20230104103703",
      "context": false
     },
     {
      "file": "npc-location-soraya-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/NPC_Location_Soraya_Context.png/revision/latest?cb=20211002172927",
      "context": true
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/World_Quest_Treasure_Lost%2C_Treasure_Found_Start_Location_Context.png/revision/latest?cb=20240227061604",
      "context": true
     }
    ]
@@ -870,42 +960,52 @@
    "maps": [
     {
      "file": "npc-location-vermeer-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/NPC_Location_Vermeer_2.png/revision/latest?cb=20230102074628",
      "context": false
     },
     {
      "file": "world-quest-luhua-landscape-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/World_Quest_Luhua_Landscape_Start_Location.png/revision/latest?cb=20230102074057",
      "context": false
     },
     {
      "file": "item-painting-tools-world-quest-luhua-landscape-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/Item_Painting_Tools_World_Quest_Luhua_Landscape_Locations.png/revision/latest?cb=20221206030713",
      "context": false
     },
     {
      "file": "item-strange-stones-world-quest-luhua-landscape-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/Item_Strange_Stones_World_Quest_Luhua_Landscape_Locations.png/revision/latest?cb=20221206032102",
      "context": false
     },
     {
      "file": "npc-location-vermeer-2-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a7/NPC_Location_Vermeer_2_Context.png/revision/latest?cb=20220101194749",
      "context": true
     },
     {
      "file": "item-painting-tool-1-world-quest-luhua-landscape-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Item_Painting_Tool_1_World_Quest_Luhua_Landscape_Location_Context.png/revision/latest?cb=20221206030833",
      "context": true
     },
     {
      "file": "item-painting-tool-2-world-quest-luhua-landscape-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/Item_Painting_Tool_2_World_Quest_Luhua_Landscape_Location_Context.png/revision/latest?cb=20221206030855",
      "context": true
     },
     {
      "file": "item-strange-stone-1-world-quest-luhua-landscape-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Item_Strange_Stone_1_World_Quest_Luhua_Landscape_Location_Context.png/revision/latest?cb=20221206032316",
      "context": true
     },
     {
      "file": "item-strange-stone-2-world-quest-luhua-landscape-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/eb/Item_Strange_Stone_2_World_Quest_Luhua_Landscape_Location_Context.png/revision/latest?cb=20221206032416",
      "context": true
     },
     {
      "file": "item-strange-stone-3-world-quest-luhua-landscape-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/de/Item_Strange_Stone_3_World_Quest_Luhua_Landscape_Location_Context.png/revision/latest?cb=20221206032458",
      "context": true
     }
    ]
@@ -928,18 +1028,22 @@
    "maps": [
     {
      "file": "npc-location-jinwu.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/NPC_Location_Jinwu.png/revision/latest?cb=20230129113510",
      "context": false
     },
     {
      "file": "world-quest-the-missing-miner-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/99/World_Quest_The_Missing_Miner_Start_Location.png/revision/latest?cb=20231214203257",
      "context": false
     },
     {
      "file": "npc-location-jinwu-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/NPC_Location_Jinwu_Context.png/revision/latest?cb=20230307103752",
      "context": true
     },
     {
      "file": "world-quest-the-missing-miner-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/World_Quest_The_Missing_Miner_Start_Location_Context.png/revision/latest?cb=20221127220443",
      "context": true
     }
    ]
@@ -959,18 +1063,22 @@
    "maps": [
     {
      "file": "npc-location-childish-jiang.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/NPC_Location_Childish_Jiang.png/revision/latest?cb=20250210152608",
      "context": false
     },
     {
      "file": "a-little-game-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/A_Little_Game_Start_Location.png/revision/latest?cb=20221229070758",
      "context": false
     },
     {
      "file": "npc-location-childish-jiang-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/NPC_Location_Childish_Jiang_Context.png/revision/latest?cb=20240620032559",
      "context": true
     },
     {
      "file": "a-little-game-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/A_Little_Game_Start_Location_Context.png/revision/latest?cb=20231227005759",
      "context": true
     }
    ]
@@ -992,18 +1100,22 @@
    "maps": [
     {
      "file": "npc-location-jiayi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/NPC_Location_Jiayi.png/revision/latest?cb=20230104111123",
      "context": false
     },
     {
      "file": "npc-location-granny-ruoxin.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/NPC_Location_Granny_Ruoxin.png/revision/latest?cb=20230128172209",
      "context": false
     },
     {
      "file": "npc-location-jiayi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/NPC_Location_Jiayi_Context.png/revision/latest?cb=20230503062410",
      "context": true
     },
     {
      "file": "npc-location-granny-ruoxin-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/NPC_Location_Granny_Ruoxin_Context.png/revision/latest?cb=20240328221116",
      "context": true
     }
    ]
@@ -1021,10 +1133,12 @@
    "maps": [
     {
      "file": "world-quest-trails-in-tianqiu-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/World_Quest_Trails_in_Tianqiu_Start_Location.png/revision/latest?cb=20230104103336",
      "context": false
     },
     {
      "file": "world-quest-trails-in-tianqiu-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/World_Quest_Trails_in_Tianqiu_Start_Location_Context.png/revision/latest?cb=20250328111358",
      "context": true
     }
    ]
@@ -1056,18 +1170,22 @@
    "maps": [
     {
      "file": "the-dealing-sands-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/The_Dealing_Sands_Start_Location.png/revision/latest?cb=20240205192250",
      "context": false
     },
     {
      "file": "npc-location-hongyu-lingxiao-qingye-and-yijun.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/36/NPC_Location_Hongyu%2C_Lingxiao%2C_Qingye%2C_and_Yijun.png/revision/latest?cb=20240227150326",
      "context": false
     },
     {
      "file": "the-dealing-sands-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5f/The_Dealing_Sands_Start_Location_Context.png/revision/latest?cb=20240204192833",
      "context": true
     },
     {
      "file": "npc-location-hongyu-lingxiao-qingye-and-yijun-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/NPC_Location_Hongyu%2C_Lingxiao%2C_Qingye%2C_and_Yijun_Context.png/revision/latest?cb=20240201092023",
      "context": true
     }
    ]
@@ -1088,22 +1206,27 @@
    "maps": [
     {
      "file": "npc-location-bolai.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/NPC_Location_Bolai.png/revision/latest?cb=20220704093400",
      "context": false
     },
     {
      "file": "nine-pillars-of-peace-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Nine_Pillars_of_Peace_Location.png/revision/latest?cb=20230102093655",
      "context": false
     },
     {
      "file": "nine-pillars-of-peace-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Nine_Pillars_of_Peace_Start_Location.png/revision/latest?cb=20230102093616",
      "context": false
     },
     {
      "file": "npc-location-bolai-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/NPC_Location_Bolai_Context.png/revision/latest?cb=20250209074955",
      "context": true
     },
     {
      "file": "nine-pillars-of-peace-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Nine_Pillars_of_Peace_Start_Location_Context.png/revision/latest?cb=20230303094123",
      "context": true
     }
    ]
@@ -1126,10 +1249,12 @@
    "maps": [
     {
      "file": "world-quest-temporary-acclimatization-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/World_Quest_Temporary_Acclimatization_Start_Location.png/revision/latest?cb=20240228130519",
      "context": false
     },
     {
      "file": "world-quest-temporary-acclimatization-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/World_Quest_Temporary_Acclimatization_Start_Location_Context.png/revision/latest?cb=20240506104043",
      "context": true
     }
    ]
@@ -1150,18 +1275,22 @@
    "maps": [
     {
      "file": "world-quest-the-roaming-abode-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/World_Quest_The_Roaming_Abode_Start_Location.png/revision/latest?cb=20240227011346",
      "context": false
     },
     {
      "file": "npc-location-uncle-luo-after-threefold-expectations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/67/NPC_Location_Uncle_Luo_%28After_Threefold_Expectations%29.png/revision/latest?cb=20240219205529",
      "context": false
     },
     {
      "file": "world-quest-the-roaming-abode-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/World_Quest_The_Roaming_Abode_Start_Location_Context.png/revision/latest?cb=20240227220223",
      "context": true
     },
     {
      "file": "npc-location-uncle-luo-after-threefold-expectations-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/NPC_Location_Uncle_Luo_%28After_Threefold_Expectations%29_Context.png/revision/latest?cb=20240219205621",
      "context": true
     }
    ]
@@ -1185,10 +1314,12 @@
    "maps": [
     {
      "file": "point-of-interest-hezhe-post-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Point_of_Interest_Hezhe_Post_Map_Location.png/revision/latest?cb=20240204211838",
      "context": false
     },
     {
      "file": "npc-location-fangju-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/NPC_Location_Fangju_Context.png/revision/latest?cb=20240204211736",
      "context": true
     }
    ]
@@ -1208,26 +1339,32 @@
    "maps": [
     {
      "file": "npc-location-soraya.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/NPC_Location_Soraya.png/revision/latest?cb=20241029212925",
      "context": false
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-jade-plate-locations.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/World_Quest_Treasure_Lost%2C_Treasure_Found_Jade_Plate_Locations.png/revision/latest?cb=20230127160332",
      "context": false
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-final-ruins-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/World_Quest_Treasure_Lost%2C_Treasure_Found_Final_Ruins_Location.png/revision/latest?cb=20230127160604",
      "context": false
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-part-2-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/World_Quest_Treasure_Lost%2C_Treasure_Found_Part_2_Start_Location.png/revision/latest?cb=20240827182936",
      "context": false
     },
     {
      "file": "npc-location-soraya-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/NPC_Location_Soraya_Context.png/revision/latest?cb=20211002172927",
      "context": true
     },
     {
      "file": "world-quest-treasure-lost-treasure-found-part-2-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/World_Quest_Treasure_Lost%2C_Treasure_Found_Part_2_Start_Location_Context.png/revision/latest?cb=20260921201017",
      "context": true
     }
    ]
@@ -1248,26 +1385,32 @@
    "maps": [
     {
      "file": "npc-location-hautemontagne.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/NPC_Location_Hautemontagne.png/revision/latest?cb=20240215011056",
      "context": false
     },
     {
      "file": "world-quest-threefold-expectations-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/World_Quest_Threefold_Expectations_Start_Location.png/revision/latest?cb=20240206133205",
      "context": false
     },
     {
      "file": "npc-location-little-mao-hautemontagne-yilong-wharf.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/NPC_Location_Little_Mao_%26_Hautemontagne_%28Yilong_Wharf%29.png/revision/latest?cb=20240220234244",
      "context": false
     },
     {
      "file": "npc-location-hautemontagne-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/NPC_Location_Hautemontagne_Context.png/revision/latest?cb=20240215011259",
      "context": true
     },
     {
      "file": "world-quest-threefold-expectations-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/World_Quest_Threefold_Expectations_Start_Location_Context.png/revision/latest?cb=20240206141857",
      "context": true
     },
     {
      "file": "npc-location-little-mao-hautemontagne-yilong-wharf-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/NPC_Location_Little_Mao_%26_Hautemontagne_%28Yilong_Wharf%29_Context.png/revision/latest?cb=20240226113440",
      "context": true
     }
    ]
@@ -1294,26 +1437,32 @@
    "maps": [
     {
      "file": "npc-location-atsuko.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/NPC_Location_Atsuko.png/revision/latest?cb=20241016070038",
      "context": false
     },
     {
      "file": "npc-location-nervous-an.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/NPC_Location_Nervous_An.png/revision/latest?cb=20221229090554",
      "context": false
     },
     {
      "file": "npc-location-atsuko-inazuma.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/NPC_Location_Atsuko_Inazuma.png/revision/latest?cb=20250210154402",
      "context": false
     },
     {
      "file": "npc-location-atsuko-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/86/NPC_Location_Atsuko_Context.png/revision/latest?cb=20211009225513",
      "context": true
     },
     {
      "file": "npc-location-nervous-an-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/NPC_Location_Nervous_An_Context.png/revision/latest?cb=20211012065154",
      "context": true
     },
     {
      "file": "npc-location-atsuko-inazuma-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/NPC_Location_Atsuko_Inazuma_Context.png/revision/latest?cb=20220228133114",
      "context": true
     }
    ]
@@ -1334,6 +1483,7 @@
    "maps": [
     {
      "file": "world-quest-qiaoying-the-village-of-many-tales-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/World_Quest_Qiaoying%2C_the_Village_of_Many_Tales_Start_Location.png/revision/latest?cb=20240806215035",
      "context": false
     }
    ]
@@ -1357,14 +1507,17 @@
    "maps": [
     {
      "file": "npc-location-kun.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/NPC_Location_Kun.png/revision/latest?cb=20241016095055",
      "context": false
     },
     {
      "file": "world-quest-fishing-for-jade-and-return-of-the-jade-chamber-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/09/World_Quest_Fishing_for_Jade_and_Return_of_the_Jade_Chamber_Start_Location.png/revision/latest?cb=20241029211905",
      "context": false
     },
     {
      "file": "npc-location-kun-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/NPC_Location_Kun_Context.png/revision/latest?cb=20220620001923",
      "context": true
     }
    ]
@@ -1385,10 +1538,12 @@
    "maps": [
     {
      "file": "npc-location-old-chou.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/NPC_Location_Old_Chou.png/revision/latest?cb=20250210152943",
      "context": false
     },
     {
      "file": "npc-location-old-chou-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/NPC_Location_Old_Chou_Context.png/revision/latest?cb=20220403010224",
      "context": true
     }
    ]
@@ -1409,10 +1564,12 @@
    "maps": [
     {
      "file": "npc-location-wang.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/NPC_Location_Wang.png/revision/latest?cb=20230128072533",
      "context": false
     },
     {
      "file": "npc-location-wang-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/NPC_Location_Wang_Context.png/revision/latest?cb=20220404150455",
      "context": true
     }
    ]
@@ -1436,34 +1593,42 @@
    "maps": [
     {
      "file": "npc-location-chili-pepper-and-yunyun.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b4/NPC_Location_Chili_Pepper_and_Yunyun.png/revision/latest?cb=20240226190010",
      "context": false
     },
     {
      "file": "world-quest-chili-con-cloudy-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d0/World_Quest_Chili_Con_Cloudy_Start_Location.png/revision/latest?cb=20240228130929",
      "context": false
     },
     {
      "file": "world-quest-chili-con-cloudy-start-location-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/World_Quest_Chili_Con_Cloudy_Start_Location_2.png/revision/latest?cb=20240228130852",
      "context": false
     },
     {
      "file": "npc-location-chili-pepper-and-yunyun-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/NPC_Location_Chili_Pepper_and_Yunyun_Nighttime.png/revision/latest?cb=20240226190130",
      "context": false
     },
     {
      "file": "npc-location-chili-pepper-and-yunyun-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/49/NPC_Location_Chili_Pepper_and_Yunyun_Context.png/revision/latest?cb=20240226185733",
      "context": true
     },
     {
      "file": "world-quest-chili-con-cloudy-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/World_Quest_Chili_Con_Cloudy_Start_Location_Context.png/revision/latest?cb=20260627204312",
      "context": true
     },
     {
      "file": "world-quest-chili-con-cloudy-start-location-2-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/World_Quest_Chili_Con_Cloudy_Start_Location_2_Context.png/revision/latest?cb=20240304071348",
      "context": true
     },
     {
      "file": "npc-location-chili-pepper-and-yunyun-context-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/42/NPC_Location_Chili_Pepper_and_Yunyun_Context_Nighttime.png/revision/latest?cb=20240226185223",
      "context": true
     }
    ]
@@ -1511,14 +1676,17 @@
    "maps": [
     {
      "file": "npc-location-chaoxi-sisi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/NPC_Location_Chaoxi_%26_Sisi.png/revision/latest?cb=20241016091611",
      "context": false
     },
     {
      "file": "point-of-interest-pearl-galley-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Point_of_Interest_Pearl_Galley_Map_Location.png/revision/latest?cb=20230128091500",
      "context": false
     },
     {
      "file": "npc-location-chaoxi-sisi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/NPC_Location_Chaoxi_%26_Sisi_Context.png/revision/latest?cb=20211002175521",
      "context": true
     }
    ]
@@ -1547,14 +1715,17 @@
    "maps": [
     {
      "file": "npc-location-bolai.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/NPC_Location_Bolai.png/revision/latest?cb=20220704093400",
      "context": false
     },
     {
      "file": "point-of-interest-alcor-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8b/Point_of_Interest_Alcor_Location.png/revision/latest?cb=20230129042922",
      "context": false
     },
     {
      "file": "npc-location-bolai-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/NPC_Location_Bolai_Context.png/revision/latest?cb=20250209074955",
      "context": true
     }
    ]
@@ -1577,10 +1748,12 @@
    "maps": [
     {
      "file": "location-undetected-infiltration-start.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Location_Undetected_Infiltration_Start.png/revision/latest?cb=20230127070114",
      "context": false
     },
     {
      "file": "location-undetected-infiltration-start-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Location_Undetected_Infiltration_Start_Context.png/revision/latest?cb=20220330190955",
      "context": true
     }
    ]
@@ -1608,30 +1781,37 @@
    "maps": [
     {
      "file": "npc-location-granny-ruoxin.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/NPC_Location_Granny_Ruoxin.png/revision/latest?cb=20230128172209",
      "context": false
     },
     {
      "file": "location-chi-of-guyun-geo-statues.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/19/Location_Chi_of_Guyun_geo_statues.png/revision/latest?cb=20240327191406",
      "context": false
     },
     {
      "file": "item-collected-fragment-03-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/Item_Collected_Fragment_03_Location.png/revision/latest?cb=20230205010033",
      "context": false
     },
     {
      "file": "item-collected-fragment-02-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c1/Item_Collected_Fragment_02_Location.png/revision/latest?cb=20230205005844",
      "context": false
     },
     {
      "file": "world-quest-the-chi-of-yore-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/World_Quest_The_Chi_of_Yore_Start_Location.png/revision/latest?cb=20230103072143",
      "context": false
     },
     {
      "file": "npc-location-granny-ruoxin-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/NPC_Location_Granny_Ruoxin_Context.png/revision/latest?cb=20240328221116",
      "context": true
     },
     {
      "file": "world-quest-the-chi-of-yore-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/World_Quest_The_Chi_of_Yore_Start_Location_Context.png/revision/latest?cb=20240220234844",
      "context": true
     }
    ]
@@ -1652,10 +1832,12 @@
    "maps": [
     {
      "file": "npc-location-muning.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/NPC_Location_Muning.png/revision/latest?cb=20250210152831",
      "context": false
     },
     {
      "file": "npc-location-muning-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/NPC_Location_Muning_Context.png/revision/latest?cb=20220330195712",
      "context": true
     }
    ]
@@ -1681,30 +1863,37 @@
    "maps": [
     {
      "file": "npc-location-clitopho.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/NPC_Location_Clitopho.png/revision/latest?cb=20250210152640",
      "context": false
     },
     {
      "file": "npc-location-clitopho-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/NPC_Location_Clitopho_Context.png/revision/latest?cb=20240701144407",
      "context": true
     },
     {
      "file": "chasm-delvers-item-crystal-1-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/Chasm_Delvers_Item_Crystal_1_Location_Context.png/revision/latest?cb=20231010010946",
      "context": true
     },
     {
      "file": "chasm-delvers-item-crystal-2-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Chasm_Delvers_Item_Crystal_2_Location_Context.png/revision/latest?cb=20231010011447",
      "context": true
     },
     {
      "file": "chasm-delvers-item-crystal-3-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/Chasm_Delvers_Item_Crystal_3_Location_Context.png/revision/latest?cb=20231010011945",
      "context": true
     },
     {
      "file": "chasm-delvers-item-crystal-4-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Chasm_Delvers_Item_Crystal_4_Location_Context.png/revision/latest?cb=20231010012034",
      "context": true
     },
     {
      "file": "chasm-delvers-item-crystal-5-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Chasm_Delvers_Item_Crystal_5_Location_Context.png/revision/latest?cb=20231010012411",
      "context": true
     }
    ]
@@ -1740,10 +1929,12 @@
    "maps": [
     {
      "file": "npc-location-kaji-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/NPC_Location_Kaji_2.png/revision/latest?cb=20231214201112",
      "context": false
     },
     {
      "file": "npc-location-kaji-context-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/NPC_Location_Kaji_Context_2.png/revision/latest?cb=20210806204554",
      "context": true
     }
    ]
@@ -1764,10 +1955,12 @@
    "maps": [
     {
      "file": "npc-location-madame-ping.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/NPC_Location_Madame_Ping.png/revision/latest?cb=20231213091413",
      "context": false
     },
     {
      "file": "npc-location-madame-ping-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/19/NPC_Location_Madame_Ping_Context.png/revision/latest?cb=20211010230034",
      "context": true
     }
    ]
@@ -1787,14 +1980,17 @@
    "maps": [
     {
      "file": "npc-location-harrison.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/NPC_Location_Harrison.png/revision/latest?cb=20230502031737",
      "context": false
     },
     {
      "file": "world-quest-the-ritou-road-destination-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/World_Quest_The_Ritou_Road_Destination_Location.png/revision/latest?cb=20241024112630",
      "context": false
     },
     {
      "file": "npc-location-harrison-context-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/NPC_Location_Harrison_Context_Nighttime.png/revision/latest?cb=20210822135433",
      "context": true
     }
    ]
@@ -1815,34 +2011,42 @@
    "maps": [
     {
      "file": "npc-location-noboru.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/NPC_Location_Noboru.png/revision/latest?cb=20241111180655",
      "context": false
     },
     {
      "file": "reminiscence-of-seirai-photo-i-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Reminiscence_of_Seirai_Photo_I_Location.png/revision/latest?cb=20240113160644",
      "context": false
     },
     {
      "file": "reminiscence-of-seirai-photo-ii-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Reminiscence_of_Seirai_Photo_II_Location.png/revision/latest?cb=20240113160650",
      "context": false
     },
     {
      "file": "reminiscence-of-seirai-photo-iv-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Reminiscence_of_Seirai_Photo_IV_Location.png/revision/latest?cb=20240113160702",
      "context": false
     },
     {
      "file": "reminiscence-of-seirai-photo-iii-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Reminiscence_of_Seirai_Photo_III_Location.png/revision/latest?cb=20240113160656",
      "context": false
     },
     {
      "file": "world-quest-reminiscence-of-seirai-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/World_Quest_Reminiscence_of_Seirai_Start_Location.png/revision/latest?cb=20240113155810",
      "context": false
     },
     {
      "file": "npc-location-noboru-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/NPC_Location_Noboru_Context.png/revision/latest?cb=20210727181433",
      "context": true
     },
     {
      "file": "world-quest-reminiscence-of-seirai-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/World_Quest_Reminiscence_of_Seirai_Start_Location_Context.png/revision/latest?cb=20260516205312",
      "context": true
     }
    ]
@@ -1865,10 +2069,12 @@
    "maps": [
     {
      "file": "npc-location-hiiragi-chisato-sasaki.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/NPC_Location_Hiiragi_Chisato_%26_Sasaki.png/revision/latest?cb=20230523133855",
      "context": false
     },
     {
      "file": "npc-location-hiiragi-chisato-sasaki-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/NPC_Location_Hiiragi_Chisato_%26_Sasaki_Context.png/revision/latest?cb=20210726132443",
      "context": true
     }
    ]
@@ -1888,22 +2094,27 @@
    "maps": [
     {
      "file": "npc-location-asakura.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/NPC_Location_Asakura.png/revision/latest?cb=20250210154257",
      "context": false
     },
     {
      "file": "npc-location-asakura-an-art-to-be-honed.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/NPC_Location_Asakura_An_Art_to_Be_Honed.png/revision/latest?cb=20260529135119",
      "context": false
     },
     {
      "file": "npc-location-asakura-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/NPC_Location_Asakura_Context.png/revision/latest?cb=20210815093346",
      "context": true
     },
     {
      "file": "npc-location-asakura-an-art-to-be-honed-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/NPC_Location_Asakura_An_Art_to_Be_Honed_Context.png/revision/latest?cb=20210830120623",
      "context": true
     },
     {
      "file": "npc-location-asakura-duel-before-the-throne-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/NPC_Location_Asakura_Duel_Before_the_Throne_Context.png/revision/latest?cb=20210917060021",
      "context": true
     }
    ]
@@ -1941,10 +2152,12 @@
    "maps": [
     {
      "file": "npc-location-aratani.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Location_Yae_Publishing_House.png/revision/latest?cb=20250210154057",
      "context": false
     },
     {
      "file": "npc-location-aratani-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/NPC_Location_Aratani_Context.png/revision/latest?cb=20240620080640",
      "context": true
     }
    ]
@@ -1965,10 +2178,12 @@
    "maps": [
     {
      "file": "npc-location-etsuko.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/NPC_Location_Etsuko.png/revision/latest?cb=20240113155814",
      "context": false
     },
     {
      "file": "npc-location-etsuko-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/NPC_Location_Etsuko_Context.png/revision/latest?cb=20211206163134",
      "context": true
     }
    ]
@@ -1988,14 +2203,17 @@
    "maps": [
     {
      "file": "npc-location-eboshi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/NPC_Location_Eboshi.png/revision/latest?cb=20230202181545",
      "context": false
     },
     {
      "file": "world-quest-the-three-great-martial-trials-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/World_Quest_The_Three_Great_Martial_Trials_Start_Location.png/revision/latest?cb=20230114205958",
      "context": false
     },
     {
      "file": "world-quest-the-three-great-martial-trials-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/World_Quest_The_Three_Great_Martial_Trials_Start_Location_Context.png/revision/latest?cb=20230114205955",
      "context": true
     }
    ]
@@ -2015,30 +2233,37 @@
    "maps": [
     {
      "file": "npc-location-ema.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/NPC_Location_Ema.png/revision/latest?cb=20230202182009",
      "context": false
     },
     {
      "file": "collection-of-dragons-and-snakes-1-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/67/Collection_of_Dragons_and_Snakes_1_Location.png/revision/latest?cb=20231202123303",
      "context": false
     },
     {
      "file": "collection-of-dragons-and-snakes-2-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Collection_of_Dragons_and_Snakes_2_Location.png/revision/latest?cb=20231202150250",
      "context": false
     },
     {
      "file": "npc-location-ema-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/NPC_Location_Ema_Context.png/revision/latest?cb=20220115055542",
      "context": true
     },
     {
      "file": "npc-location-ema-entrance-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/NPC_Location_Ema_Entrance_Context.png/revision/latest?cb=20230307144201",
      "context": true
     },
     {
      "file": "collection-of-dragons-and-snakes-1-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Collection_of_Dragons_and_Snakes_1_Location_Context.png/revision/latest?cb=20230925083300",
      "context": true
     },
     {
      "file": "collection-of-dragons-and-snakes-2-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/49/Collection_of_Dragons_and_Snakes_2_Location_Context.png/revision/latest?cb=20220106063808",
      "context": true
     }
    ]
@@ -2060,18 +2285,22 @@
    "maps": [
     {
      "file": "npc-location-shouta.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/NPC_Location_Shouta.png/revision/latest?cb=20230114224428",
      "context": false
     },
     {
      "file": "npc-location-kouichi-midori.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/NPC_Location_Kouichi_%26_Midori.png/revision/latest?cb=20240515105632",
      "context": false
     },
     {
      "file": "npc-location-shouta-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/NPC_Location_Shouta_Context.png/revision/latest?cb=20210825120305",
      "context": true
     },
     {
      "file": "npc-location-kouichi-midori-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/NPC_Location_Kouichi_%26_Midori_Context.png/revision/latest?cb=20210923210744",
      "context": true
     }
    ]
@@ -2092,10 +2321,12 @@
    "maps": [
     {
      "file": "npc-location-inagi-hotomi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b4/NPC_Location_Inagi_Hotomi.png/revision/latest?cb=20241109182251",
      "context": false
     },
     {
      "file": "npc-location-inagi-hotomi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/NPC_Location_Inagi_Hotomi_Context.png/revision/latest?cb=20210729040731",
      "context": true
     }
    ]
@@ -2118,18 +2349,22 @@
    "maps": [
     {
      "file": "npc-location-atsuko.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/NPC_Location_Atsuko.png/revision/latest?cb=20241016070038",
      "context": false
     },
     {
      "file": "npc-location-atsuko-inazuma.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/NPC_Location_Atsuko_Inazuma.png/revision/latest?cb=20250210154402",
      "context": false
     },
     {
      "file": "npc-location-atsuko-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/86/NPC_Location_Atsuko_Context.png/revision/latest?cb=20211009225513",
      "context": true
     },
     {
      "file": "npc-location-atsuko-inazuma-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/NPC_Location_Atsuko_Inazuma_Context.png/revision/latest?cb=20220228133114",
      "context": true
     }
    ]
@@ -2150,18 +2385,22 @@
    "maps": [
     {
      "file": "npc-location-junkichi-shigeru.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/NPC_Location_Junkichi_%26_Shigeru.png/revision/latest?cb=20230620153246",
      "context": false
     },
     {
      "file": "world-quest-storytelling-method-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/World_Quest_Storytelling_Method_Start_Location.png/revision/latest?cb=20230112223716",
      "context": false
     },
     {
      "file": "npc-location-junkichi-shigeru-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/NPC_Location_Junkichi_%26_Shigeru_Context.png/revision/latest?cb=20230620170429",
      "context": true
     },
     {
      "file": "world-quest-storytelling-method-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/World_Quest_Storytelling_Method_Start_Location_Context.png/revision/latest?cb=20230112223812",
      "context": true
     }
    ]
@@ -2184,6 +2423,7 @@
    "maps": [
     {
      "file": "the-gourmet-supremos-4-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/The_Gourmet_Supremos_4_Start_Location.png/revision/latest?cb=20221207194248",
      "context": false
     }
    ]
@@ -2204,10 +2444,12 @@
    "maps": [
     {
      "file": "npc-location-xavier-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/NPC_Location_Xavier_3.png/revision/latest?cb=20231214201135",
      "context": false
     },
     {
      "file": "npc-location-xavier-3-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/NPC_Location_Xavier_3_Context.png/revision/latest?cb=20210813232836",
      "context": true
     }
    ]
@@ -2227,14 +2469,17 @@
    "maps": [
     {
      "file": "fate-of-a-fighter-enemy-camp-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Fate_of_a_Fighter_Enemy_Camp_Location.png/revision/latest?cb=20240212035838",
      "context": false
     },
     {
      "file": "world-quest-fate-of-a-fighter-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/World_Quest_Fate_of_a_Fighter_Start_Location.png/revision/latest?cb=20230131160700",
      "context": false
     },
     {
      "file": "npc-location-inaba-kyuuzou-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/NPC_Location_Inaba_Kyuuzou_Context.png/revision/latest?cb=20210810165101",
      "context": true
     }
    ]
@@ -2254,46 +2499,57 @@
    "maps": [
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-4.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/World_Quest_Mr_Forgetful_Location_Mural_Spot_4.png/revision/latest?cb=20231216091151",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-5.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/World_Quest_Mr_Forgetful_Location_Mural_Spot_5.png/revision/latest?cb=20231216091251",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-6.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/World_Quest_Mr_Forgetful_Location_Mural_Spot_6.png/revision/latest?cb=20231216091619",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-4-image.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4f/World_Quest_Mr_Forgetful_Location_Mural_4_Image.png/revision/latest?cb=20260104171202",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-5-image.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/World_Quest_Mr_Forgetful_Location_Mural_5_Image.png/revision/latest?cb=20260104171720",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-6-image.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/World_Quest_Mr_Forgetful_Location_Mural_6_Image.png/revision/latest?cb=20260104172138",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-1-2-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/99/World_Quest_Mr_Forgetful_Location_Mural_Spot_1-2-3.png/revision/latest?cb=20231216091035",
      "context": false
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-4-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/World_Quest_Mr_Forgetful_Location_Mural_Spot_4_Context.png/revision/latest?cb=20211014182920",
      "context": true
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-5-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/World_Quest_Mr_Forgetful_Location_Mural_Spot_5_Context.png/revision/latest?cb=20211120172754",
      "context": true
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-6-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/World_Quest_Mr_Forgetful_Location_Mural_Spot_6_Context.png/revision/latest?cb=20211014183051",
      "context": true
     },
     {
      "file": "world-quest-mr-forgetful-location-mural-spot-1-2-3-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/World_Quest_Mr_Forgetful_Location_Mural_Spot_1-2-3_Context.png/revision/latest?cb=20211120172448",
      "context": true
     }
    ]
@@ -2313,26 +2569,32 @@
    "maps": [
     {
      "file": "npc-location-tsuyuko-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/NPC_Location_Tsuyuko_2.png/revision/latest?cb=20240113143535",
      "context": false
     },
     {
      "file": "npc-location-tsuyuko-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/NPC_Location_Tsuyuko_1.png/revision/latest?cb=20240113143528",
      "context": false
     },
     {
      "file": "world-quest-heart-of-watatsumi-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/World_Quest_Heart_of_Watatsumi_Location.png/revision/latest?cb=20240113145716",
      "context": false
     },
     {
      "file": "npc-location-tsuyuko-context-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/NPC_Location_Tsuyuko_Context_2.png/revision/latest?cb=20210915194120",
      "context": true
     },
     {
      "file": "npc-location-tsuyuko-context-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/NPC_Location_Tsuyuko_Context_3.png/revision/latest?cb=20240309230336",
      "context": true
     },
     {
      "file": "npc-location-tsuyuko-context-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/NPC_Location_Tsuyuko_Context_1.png/revision/latest?cb=20211031010655",
      "context": true
     }
    ]
@@ -2355,18 +2617,22 @@
    "maps": [
     {
      "file": "location-komore-teahouse.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/Location_Komore_Teahouse.png/revision/latest?cb=20230201080511",
      "context": false
     },
     {
      "file": "npc-location-kouichi-midori.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/NPC_Location_Kouichi_%26_Midori.png/revision/latest?cb=20240515105632",
      "context": false
     },
     {
      "file": "npc-location-heihachi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/NPC_Location_Heihachi_Context.png/revision/latest?cb=20210812205644",
      "context": true
     },
     {
      "file": "npc-location-kouichi-midori-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/NPC_Location_Kouichi_%26_Midori_Context.png/revision/latest?cb=20210923210744",
      "context": true
     }
    ]
@@ -2386,30 +2652,37 @@
    "maps": [
     {
      "file": "npc-location-tsuyuko-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/NPC_Location_Tsuyuko_2.png/revision/latest?cb=20240113143535",
      "context": false
     },
     {
      "file": "npc-location-tsuyuko-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/NPC_Location_Tsuyuko_1.png/revision/latest?cb=20240113143528",
      "context": false
     },
     {
      "file": "item-key-sigil-type-1-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Item_Key_Sigil_Type_1_Location.png/revision/latest?cb=20240113154728",
      "context": false
     },
     {
      "file": "item-key-sigil-type-5-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/Item_Key_Sigil_Type_5_Location.png/revision/latest?cb=20240113154734",
      "context": false
     },
     {
      "file": "npc-location-tsuyuko-context-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/NPC_Location_Tsuyuko_Context_2.png/revision/latest?cb=20210915194120",
      "context": true
     },
     {
      "file": "npc-location-tsuyuko-context-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/NPC_Location_Tsuyuko_Context_3.png/revision/latest?cb=20240309230336",
      "context": true
     },
     {
      "file": "npc-location-tsuyuko-context-1.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/NPC_Location_Tsuyuko_Context_1.png/revision/latest?cb=20211031010655",
      "context": true
     }
    ]
@@ -2443,26 +2716,32 @@
    "maps": [
     {
      "file": "world-quest-the-phaethon-s-syrtos-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/World_Quest_The_Phaethon%27s_Syrtos_Start_Location.png/revision/latest?cb=20230127165715",
      "context": false
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-1-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/World_Quest_The_Phaethon%27s_Syrtos_Seelie_1_Start_Location.png/revision/latest?cb=20230127165613",
      "context": false
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-2-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/World_Quest_The_Phaethon%27s_Syrtos_Seelie_2_Start_Location.png/revision/latest?cb=20230127165651",
      "context": false
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/World_Quest_The_Phaethon%27s_Syrtos_Start_Location_Context.png/revision/latest?cb=20231001101502",
      "context": true
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-1-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/eb/World_Quest_The_Phaethon%27s_Syrtos_Seelie_1_Start_Location_Context.png/revision/latest?cb=20220109005341",
      "context": true
     },
     {
      "file": "world-quest-the-phaethon-s-syrtos-seelie-2-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/World_Quest_The_Phaethon%27s_Syrtos_Seelie_2_Start_Location_Context.png/revision/latest?cb=20220109005322",
      "context": true
     }
    ]
@@ -2487,26 +2766,32 @@
    "maps": [
     {
      "file": "world-quest-in-another-land-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/World_Quest_In_Another_Land_Start_Location.png/revision/latest?cb=20260102200541",
      "context": false
     },
     {
      "file": "world-quest-endless-research-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Endless_Research_Start_Location.png/revision/latest?cb=20260219064323",
      "context": false
     },
     {
      "file": "world-quest-fertilizer-salesperson-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/World_Quest_Fertilizer..._Salesperson_Start_Location.png/revision/latest?cb=20230109235838",
      "context": false
     },
     {
      "file": "world-quest-in-another-land-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/World_Quest_In_Another_Land_Start_Location_Context.png/revision/latest?cb=20210825132753",
      "context": true
     },
     {
      "file": "world-quest-endless-research-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/World_Quest_Endless_Research_Start_Location_Context.png/revision/latest?cb=20260223112627",
      "context": true
     },
     {
      "file": "world-quest-fertilizer-salesperson-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/World_Quest_Fertilizer..._Salesperson_Start_Location_Context.png/revision/latest?cb=20230109235944",
      "context": true
     }
    ]
@@ -2529,18 +2814,22 @@
    "maps": [
     {
      "file": "world-quest-in-another-land-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/World_Quest_In_Another_Land_Start_Location.png/revision/latest?cb=20260102200541",
      "context": false
     },
     {
      "file": "world-quest-endless-research-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Endless_Research_Start_Location.png/revision/latest?cb=20260219064323",
      "context": false
     },
     {
      "file": "world-quest-in-another-land-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/World_Quest_In_Another_Land_Start_Location_Context.png/revision/latest?cb=20210825132753",
      "context": true
     },
     {
      "file": "world-quest-endless-research-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/World_Quest_Endless_Research_Start_Location_Context.png/revision/latest?cb=20260223112627",
      "context": true
     }
    ]
@@ -2560,18 +2849,22 @@
    "maps": [
     {
      "file": "npc-location-komaki.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/NPC_Location_Komaki.png/revision/latest?cb=20240113143435",
      "context": false
     },
     {
      "file": "world-quest-divine-plant-of-the-depths-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/World_Quest_Divine_Plant_of_the_Depths_Start_Location.png/revision/latest?cb=20230114235204",
      "context": false
     },
     {
      "file": "npc-location-komaki-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/NPC_Location_Komaki_Context.png/revision/latest?cb=20210901043243",
      "context": true
     },
     {
      "file": "world-quest-divine-plant-of-the-depths-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/World_Quest_Divine_Plant_of_the_Depths_Start_Location_Context.png/revision/latest?cb=20230114235307",
      "context": true
     }
    ]
@@ -2592,26 +2885,32 @@
    "maps": [
     {
      "file": "thunder-sakura-1-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/76/Thunder_Sakura_1_Location.png/revision/latest?cb=20231216093430",
      "context": false
     },
     {
      "file": "thunder-sakura-2-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Thunder_Sakura_2_Location.png/revision/latest?cb=20231216093532",
      "context": false
     },
     {
      "file": "thunder-sakura-3-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Thunder_Sakura_3_Location.png/revision/latest?cb=20231216093644",
      "context": false
     },
     {
      "file": "thunder-sakura-4-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/Thunder_Sakura_4_Location.png/revision/latest?cb=20231216093733",
      "context": false
     },
     {
      "file": "thunder-sakura-5-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Thunder_Sakura_5_Location.png/revision/latest?cb=20231216093851",
      "context": false
     },
     {
      "file": "sakura-arborism-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/Sakura_Arborism_Start_Location.png/revision/latest?cb=20231214190745",
      "context": false
     }
    ]
@@ -2646,18 +2945,22 @@
    "maps": [
     {
      "file": "world-quest-lotus-eater-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/World_Quest_Lotus_Eater_Start_Location.png/revision/latest?cb=20230127061602",
      "context": false
     },
     {
      "file": "world-quest-lotus-eater-start-location-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e0/World_Quest_Lotus_Eater_Start_Location_2.png/revision/latest?cb=20230127061941",
      "context": false
     },
     {
      "file": "world-quest-lotus-eater-start-location-npc.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/eb/World_Quest_Lotus_Eater_Start_Location_NPC.png/revision/latest?cb=20230116183835",
      "context": false
     },
     {
      "file": "world-quest-lotus-eater-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/World_Quest_Lotus_Eater_Start_Location_Context.png/revision/latest?cb=20230116183423",
      "context": true
     }
    ]
@@ -2679,10 +2982,12 @@
    "maps": [
     {
      "file": "world-quest-clean-house-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/World_Quest_Clean_House_Start_Location.png/revision/latest?cb=20240113144242",
      "context": false
     },
     {
      "file": "world-quest-clean-house-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/World_Quest_Clean_House_Start_Location_Context.png/revision/latest?cb=20211013155208",
      "context": true
     }
    ]
@@ -2706,18 +3011,22 @@
    "maps": [
     {
      "file": "npc-location-hiromi-2.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/NPC_Location_Hiromi_2.png/revision/latest?cb=20240507180232",
      "context": false
     },
     {
      "file": "world-quest-hiromi-s-watch-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/World_Quest_Hiromi%27s_Watch_Start_Location.png/revision/latest?cb=20240507120314",
      "context": false
     },
     {
      "file": "npc-location-hiromi-2-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/NPC_Location_Hiromi_2_Context.png/revision/latest?cb=20210723205548",
      "context": true
     },
     {
      "file": "world-quest-hiromi-s-watch-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/World_Quest_Hiromi%27s_Watch_Start_Location_Context.png/revision/latest?cb=20210825020357",
      "context": true
     }
    ]
@@ -2740,10 +3049,12 @@
    "maps": [
     {
      "file": "world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c7/World_Quest_The_Gourmet_Supremos_The_Importance_of_Eating_Well_Start_Location.png/revision/latest?cb=20230214193300",
      "context": false
     },
     {
      "file": "world-quest-the-gourmet-supremos-the-importance-of-eating-well-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/World_Quest_The_Gourmet_Supremos_The_Importance_of_Eating_Well_Start_Location_Context.png/revision/latest?cb=20230214192756",
      "context": true
     }
    ]
@@ -2764,10 +3075,12 @@
    "maps": [
     {
      "file": "npc-location-xavier-3.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/NPC_Location_Xavier_3.png/revision/latest?cb=20231214201135",
      "context": false
     },
     {
      "file": "npc-location-xavier-3-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/NPC_Location_Xavier_3_Context.png/revision/latest?cb=20210813232836",
      "context": true
     }
    ]
@@ -2787,10 +3100,12 @@
    "maps": [
     {
      "file": "npc-location-fujiwara-toshiko.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/NPC_Location_Fujiwara_Toshiko.png/revision/latest?cb=20230502030913",
      "context": false
     },
     {
      "file": "npc-location-fujiwara-toshiko-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/NPC_Location_Fujiwara_Toshiko_Context.png/revision/latest?cb=20210803150654",
      "context": true
     }
    ]
@@ -2811,18 +3126,22 @@
    "maps": [
     {
      "file": "npc-location-anisa.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ca/NPC_Location_Anisa.png/revision/latest?cb=20240113143409",
      "context": false
     },
     {
      "file": "world-quest-solitary-sea-beast-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7d/World_Quest_Solitary_Sea-Beast_Location.png/revision/latest?cb=20231210225724",
      "context": false
     },
     {
      "file": "npc-location-anisa-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/NPC_Location_Anisa_Context.png/revision/latest?cb=20240620033149",
      "context": true
     },
     {
      "file": "world-quest-solitary-sea-beast-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/World_Quest_Solitary_Sea-Beast_Location_Context.png/revision/latest?cb=20261015214439",
      "context": true
     }
    ]
@@ -2842,6 +3161,7 @@
    "maps": [
     {
      "file": "world-quest-gazing-three-thousand-miles-away-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/World_Quest_Gazing_Three_Thousand_Miles_Away_Start_Location.png/revision/latest?cb=20230131091025",
      "context": false
     }
    ]
@@ -2864,26 +3184,32 @@
    "maps": [
     {
      "file": "npc-location-nameless.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/NPC_Location_Nameless.png/revision/latest?cb=20221026060819",
      "context": false
     },
     {
      "file": "npc-location-ishikawa.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dc/NPC_Location_Ishikawa.png/revision/latest?cb=20231214201106",
      "context": false
     },
     {
      "file": "npc-location-nameless-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/NPC_Location_Nameless_Context.png/revision/latest?cb=20210926203322",
      "context": true
     },
     {
      "file": "npc-location-ishikawa-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/NPC_Location_Ishikawa_Context.png/revision/latest?cb=20210804215158",
      "context": true
     },
     {
      "file": "item-discarded-blade-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Item_Discarded_Blade_Location_Context.png/revision/latest?cb=20210831075229",
      "context": true
     },
     {
      "file": "item-a-masterless-blade-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Item_A_Masterless_Blade_Location_Context.png/revision/latest?cb=20210831075141",
      "context": true
     }
    ]
@@ -2905,10 +3231,12 @@
    "maps": [
     {
      "file": "npc-location-saimon-eri.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/NPC_Location_Saimon_Eri.png/revision/latest?cb=20240513152834",
      "context": false
     },
     {
      "file": "npc-location-futaba-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/NPC_Location_Futaba_Context.png/revision/latest?cb=20210822140218",
      "context": true
     }
    ]
@@ -2980,18 +3308,22 @@
    "maps": [
     {
      "file": "npc-location-khayyam.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/NPC_Location_Khayyam.png/revision/latest?cb=20230127091924",
      "context": false
     },
     {
      "file": "world-quest-memory-s-final-chapter-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Memory%27s_Final_Chapter_Start_Location.png/revision/latest?cb=20230102223123",
      "context": false
     },
     {
      "file": "npc-location-khayyam-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/NPC_Location_Khayyam_Context.png/revision/latest?cb=20230307144537",
      "context": true
     },
     {
      "file": "world-quest-memory-s-final-chapter-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/World_Quest_Memory%27s_Final_Chapter_Start_Location_Context.png/revision/latest?cb=20230102224312",
      "context": true
     }
    ]
@@ -3014,10 +3346,12 @@
    "maps": [
     {
      "file": "world-quest-a-short-encounter-with-a-rare-bird-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/World_Quest_A_Short_Encounter_with_a_Rare_Bird_Start_Location.png/revision/latest?cb=20230130071139",
      "context": false
     },
     {
      "file": "world-quest-a-short-encounter-with-a-rare-bird-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/World_Quest_A_Short_Encounter_with_a_Rare_Bird_Start_Location_Context.png/revision/latest?cb=20221108151001",
      "context": true
     }
    ]
@@ -3041,10 +3375,12 @@
    "maps": [
     {
      "file": "npc-location-arachatora-arapacati-araphala-arasaka.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/NPC_Location_Arachatora%2C_Arapacati%2C_Araphala%2C_Arasaka.png/revision/latest?cb=20221103225131",
      "context": false
     },
     {
      "file": "npc-location-arachatora-arapacati-araphala-arasaka-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/NPC_Location_Arachatora%2C_Arapacati%2C_Araphala%2C_Arasaka_Context.png/revision/latest?cb=20220924204904",
      "context": true
     }
    ]
@@ -3064,6 +3400,7 @@
    "maps": [
     {
      "file": "world-quest-treasure-of-wisdom-a-new-plan-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/World_Quest_Treasure_of_Wisdom_A_New_Plan_Location.png/revision/latest?cb=20221020183802",
      "context": false
     }
    ]
@@ -3084,6 +3421,7 @@
    "maps": [
     {
      "file": "while-the-dream-lingers-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/While_the_Dream_Lingers_Map_Location.png/revision/latest?cb=20230130072403",
      "context": false
     }
    ]
@@ -3105,14 +3443,17 @@
    "maps": [
     {
      "file": "npc-location-azalai.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3c/NPC_Location_Azalai.png/revision/latest?cb=20221001075333",
      "context": false
     },
     {
      "file": "blooming-sands-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Blooming_Sands_Location.png/revision/latest?cb=20230929191835",
      "context": false
     },
     {
      "file": "npc-location-azalai-sania-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/NPC_Location_Azalai_%26_Sania_Context.png/revision/latest?cb=20221002202328",
      "context": true
     }
    ]
@@ -3132,10 +3473,12 @@
    "maps": [
     {
      "file": "world-quest-even-beasts-stumble-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/World_Quest_Even_Beasts_Stumble_Start_Location.png/revision/latest?cb=20230128065743",
      "context": false
     },
     {
      "file": "world-quest-even-beasts-stumble-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/09/World_Quest_Even_Beasts_Stumble_Location_Context.png/revision/latest?cb=20220829084452",
      "context": true
     }
    ]
@@ -3173,26 +3516,32 @@
    "maps": [
     {
      "file": "world-quest-in-another-land-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/World_Quest_In_Another_Land_Start_Location.png/revision/latest?cb=20260102200541",
      "context": false
     },
     {
      "file": "world-quest-endless-research-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/World_Quest_Endless_Research_Start_Location.png/revision/latest?cb=20260219064323",
      "context": false
     },
     {
      "file": "world-quest-the-path-of-papers-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/World_Quest_The_Path_of_Papers_Start_Location.png/revision/latest?cb=20230110002845",
      "context": false
     },
     {
      "file": "world-quest-in-another-land-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/World_Quest_In_Another_Land_Start_Location_Context.png/revision/latest?cb=20210825132753",
      "context": true
     },
     {
      "file": "world-quest-endless-research-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/World_Quest_Endless_Research_Start_Location_Context.png/revision/latest?cb=20260223112627",
      "context": true
     },
     {
      "file": "world-quest-the-path-of-papers-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/World_Quest_The_Path_of_Papers_Start_Location_Context.png/revision/latest?cb=20230110002539",
      "context": true
     }
    ]
@@ -3231,10 +3580,12 @@
    "maps": [
     {
      "file": "npc-location-soheil.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/NPC_Location_Soheil.png/revision/latest?cb=20221106060622",
      "context": false
     },
     {
      "file": "npc-location-soheil-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/NPC_Location_Soheil_Context.png/revision/latest?cb=20230812000252",
      "context": true
     }
    ]
@@ -3257,34 +3608,42 @@
    "maps": [
     {
      "file": "npc-location-santon.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/NPC_Location_Santon.png/revision/latest?cb=20230805105628",
      "context": false
     },
     {
      "file": "where-are-the-fierce-creatures-gator-raja-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Where_Are_the_Fierce_Creatures_Gator_Raja_Location.png/revision/latest?cb=20230128114646",
      "context": false
     },
     {
      "file": "where-are-the-fierce-creatures-rishboland-raja-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Where_Are_the_Fierce_Creatures_Rishboland_Raja_Location.png/revision/latest?cb=20230128114353",
      "context": false
     },
     {
      "file": "where-are-the-fierce-creatures-sumpter-beastlord-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e2/Where_Are_the_Fierce_Creatures_Sumpter_Beastlord_Location.png/revision/latest?cb=20230128114940",
      "context": false
     },
     {
      "file": "npc-location-santon-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/NPC_Location_Santon_Context.png/revision/latest?cb=20230805104714",
      "context": true
     },
     {
      "file": "where-are-the-fierce-creatures-gator-raja-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/99/Where_Are_the_Fierce_Creatures_Gator_Raja_Location_Context.png/revision/latest?cb=20230805114029",
      "context": true
     },
     {
      "file": "where-are-the-fierce-creatures-rishboland-raja-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Where_Are_the_Fierce_Creatures_Rishboland_Raja_Location_Context.png/revision/latest?cb=20230805114205",
      "context": true
     },
     {
      "file": "where-are-the-fierce-creatures-sumpter-beastlord-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Where_Are_the_Fierce_Creatures_Sumpter_Beastlord_Location_Context.png/revision/latest?cb=20230805114119",
      "context": true
     }
    ]
@@ -3304,10 +3663,12 @@
    "maps": [
     {
      "file": "npc-location-ararycan.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/NPC_Location_Ararycan.png/revision/latest?cb=20240413094819",
      "context": false
     },
     {
      "file": "npc-location-ararycan-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/NPC_Location_Ararycan_Context.png/revision/latest?cb=20220919092840",
      "context": true
     }
    ]
@@ -3345,18 +3706,22 @@
    "maps": [
     {
      "file": "npc-location-alexandra-przheva.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/NPC_Location_Alexandra%2C_Przheva.png/revision/latest?cb=20240327192721",
      "context": false
     },
     {
      "file": "world-quest-the-price-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/db/World_Quest_The_Price_Start_Location.png/revision/latest?cb=20240206174524",
      "context": false
     },
     {
      "file": "npc-location-alexandra-przheva-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/NPC_Location_Alexandra%2C_Przheva_Context.png/revision/latest?cb=20221122022044",
      "context": true
     },
     {
      "file": "world-quest-the-price-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a7/World_Quest_The_Price_Start_Location_Context.png/revision/latest?cb=20240314010923",
      "context": true
     }
    ]
@@ -3380,10 +3745,12 @@
    "maps": [
     {
      "file": "npc-location-atiyah.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/NPC_Location_Atiyah.png/revision/latest?cb=20221013035453",
      "context": false
     },
     {
      "file": "npc-location-atiyah-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4d/NPC_Location_Atiyah_Context.png/revision/latest?cb=20230616174258",
      "context": true
     }
    ]
@@ -3404,10 +3771,12 @@
    "maps": [
     {
      "file": "npc-location-araminali.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7d/NPC_Location_Araminali.png/revision/latest?cb=20240411223246",
      "context": false
     },
     {
      "file": "npc-location-araminali-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/NPC_Location_Araminali_Context.png/revision/latest?cb=20240411223406",
      "context": true
     }
    ]
@@ -3430,10 +3799,12 @@
    "maps": [
     {
      "file": "npc-location-arabalika-arakunti-arapandu.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7c/NPC_Location_Arabalika%2C_Arakunti%2C_Arapandu.png/revision/latest?cb=20240404124044",
      "context": false
     },
     {
      "file": "npc-location-arabalika-arakunti-arapandu-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/NPC_Location_Arabalika%2C_Arakunti%2C_Arapandu_Context.png/revision/latest?cb=20220926200223",
      "context": true
     }
    ]
@@ -3453,6 +3824,7 @@
    "maps": [
     {
      "file": "world-quest-afratu-s-dilemma-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/World_Quest_Afratu%27s_Dilemma_Start_Location.png/revision/latest?cb=20240327224520",
      "context": false
     }
    ]
@@ -3490,18 +3862,22 @@
    "maps": [
     {
      "file": "npc-location-arashakun.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/NPC_Location_Arashakun.png/revision/latest?cb=20240327192613",
      "context": false
     },
     {
      "file": "world-quest-courage-is-in-the-heart-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/World_Quest_Courage_is_in_the_Heart_Start_Location.png/revision/latest?cb=20230306141554",
      "context": false
     },
     {
      "file": "npc-location-arashakun-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/NPC_Location_Arashakun_Context.png/revision/latest?cb=20220914195442",
      "context": true
     },
     {
      "file": "world-quest-courage-is-in-the-heart-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/World_Quest_Courage_is_in_the_Heart_Start_Location_Context.png/revision/latest?cb=20230720134801",
      "context": true
     }
    ]
@@ -3541,10 +3917,12 @@
    "maps": [
     {
      "file": "the-foolish-fatuus-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/The_Foolish_Fatuus_Location.png/revision/latest?cb=20230128065618",
      "context": false
     },
     {
      "file": "the-foolish-fatuus-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c5/The_Foolish_Fatuus_Location_Context.png/revision/latest?cb=20220921172025",
      "context": true
     }
    ]
@@ -3566,10 +3944,12 @@
    "maps": [
     {
      "file": "babel-s-tent-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/Babel%27s_Tent_Location.png/revision/latest?cb=20241224213440",
      "context": false
     },
     {
      "file": "babel-s-tent-location-context-after-death.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Babel%27s_Tent_Location_Context_After_Death.png/revision/latest?cb=20241224213520",
      "context": true
     }
    ]
@@ -3612,10 +3992,12 @@
    "maps": [
     {
      "file": "npc-location-aderfi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/NPC_Location_Aderfi.png/revision/latest?cb=20240416073224",
      "context": false
     },
     {
      "file": "npc-location-aderfi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/NPC_Location_Aderfi_Context.png/revision/latest?cb=20240420101815",
      "context": true
     }
    ]
@@ -3636,10 +4018,12 @@
    "maps": [
     {
      "file": "npc-location-ararycan.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/NPC_Location_Ararycan.png/revision/latest?cb=20240413094819",
      "context": false
     },
     {
      "file": "npc-location-ararycan-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/NPC_Location_Ararycan_Context.png/revision/latest?cb=20220919092840",
      "context": true
     }
    ]
@@ -3661,10 +4045,12 @@
    "maps": [
     {
      "file": "npc-location-aragaru.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/NPC_Location_Aragaru.png/revision/latest?cb=20240410174810",
      "context": false
     },
     {
      "file": "npc-location-aragaru-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/NPC_Location_Aragaru_Context.png/revision/latest?cb=20221211054426",
      "context": true
     }
    ]
@@ -3695,10 +4081,12 @@
    "maps": [
     {
      "file": "world-quest-gourmet-supremos-within-our-duties-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/World_Quest_Gourmet_Supremos_Within_Our_Duties_Start_Location.png/revision/latest?cb=20231126152453",
      "context": false
     },
     {
      "file": "world-quest-gourmet-supremos-within-our-duties-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/World_Quest_Gourmet_Supremos_Within_Our_Duties_Start_Location_Context.png/revision/latest?cb=20231126152250",
      "context": true
     }
    ]
@@ -3722,10 +4110,12 @@
    "maps": [
     {
      "file": "npc-location-aderfi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/NPC_Location_Aderfi.png/revision/latest?cb=20240416073224",
      "context": false
     },
     {
      "file": "npc-location-aderfi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/NPC_Location_Aderfi_Context.png/revision/latest?cb=20240420101815",
      "context": true
     }
    ]
@@ -3754,10 +4144,12 @@
    "maps": [
     {
      "file": "npc-location-bonifaz-nachtigal.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/da/NPC_Location_Bonifaz%2C_Nachtigal.png/revision/latest?cb=20221104025211",
      "context": false
     },
     {
      "file": "npc-location-bonifaz-nachtigal-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/NPC_Location_Bonifaz%2C_Nachtigal_Context.png/revision/latest?cb=20230108234638",
      "context": true
     }
    ]
@@ -3811,10 +4203,12 @@
    "maps": [
     {
      "file": "npc-location-chesil.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4d/NPC_Location_Chesil.png/revision/latest?cb=20230929082422",
      "context": false
     },
     {
      "file": "npc-location-chesil-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/NPC_Location_Chesil_Context.png/revision/latest?cb=20230817210607",
      "context": true
     }
    ]
@@ -3834,10 +4228,12 @@
    "maps": [
     {
      "file": "npc-location-iara.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/NPC_Location_Iara.png/revision/latest?cb=20230828133519",
      "context": false
     },
     {
      "file": "npc-location-iara-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/NPC_Location_Iara_Context.png/revision/latest?cb=20230817224435",
      "context": true
     }
    ]
@@ -3859,10 +4255,12 @@
    "maps": [
     {
      "file": "item-location-autumn-s-gift.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Item_Location_Autumn%27s_Gift.png/revision/latest?cb=20231229194649",
      "context": false
     },
     {
      "file": "item-location-autumn-s-gift-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Item_Location_Autumn%27s_Gift_Context.png/revision/latest?cb=20231229194129",
      "context": true
     }
    ]
@@ -3882,18 +4280,22 @@
    "maps": [
     {
      "file": "npc-location-cosanzeana.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/NPC_Location_Cosanzeana.png/revision/latest?cb=20230929081600",
      "context": false
     },
     {
      "file": "world-quest-were-it-so-easy-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/World_Quest_Were_It_So_Easy_Location.png/revision/latest?cb=20230929082036",
      "context": false
     },
     {
      "file": "npc-location-cosanzeana-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/NPC_Location_Cosanzeana_Context.png/revision/latest?cb=20230818201829",
      "context": true
     },
     {
      "file": "were-it-so-easy-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Were_It_So_Easy_Start_Location_Context.png/revision/latest?cb=20230925211731",
      "context": true
     }
    ]
@@ -3912,14 +4314,16 @@
     "Lanoire"
    ],
    "dlg": 11780,
-   "steps": 1,
+   "steps": 3,
    "maps": [
     {
      "file": "happy-birthday-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Happy_Birthday_Start_Location.png/revision/latest?cb=20240423105052",
      "context": false
     },
     {
      "file": "happy-birthday-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Happy_Birthday_Start_Location_Context.png/revision/latest?cb=20260802184733",
      "context": true
     }
    ]
@@ -3939,10 +4343,12 @@
    "maps": [
     {
      "file": "npc-location-sluasi.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/NPC_Location_Sluasi.png/revision/latest?cb=20230828133912",
      "context": false
     },
     {
      "file": "npc-location-sluasi-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/NPC_Location_Sluasi_Context.png/revision/latest?cb=20230818185802",
      "context": true
     }
    ]
@@ -3963,18 +4369,22 @@
    "maps": [
     {
      "file": "npc-location-arouet.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/NPC_Location_Arouet.png/revision/latest?cb=20230929082155",
      "context": false
     },
     {
      "file": "world-quest-danger-lurks-everywhere-in-fontaine-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/World_Quest_Danger_Lurks_Everywhere_in_Fontaine_Start_Location.png/revision/latest?cb=20230928230758",
      "context": false
     },
     {
      "file": "npc-location-arouet-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/NPC_Location_Arouet_Context.png/revision/latest?cb=20230817010511",
      "context": true
     },
     {
      "file": "npc-location-danger-lurks-everywhere-in-fontaine-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/NPC_Location_Danger_Lurks_Everywhere_in_Fontaine_Context.png/revision/latest?cb=20230918161502",
      "context": true
     }
    ]
@@ -3997,6 +4407,7 @@
    "maps": [
     {
      "file": "the-fountain-flows-again-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/The_Fountain_Flows_Again_Location.png/revision/latest?cb=20230828122742",
      "context": false
     }
    ]
@@ -4020,10 +4431,12 @@
    "maps": [
     {
      "file": "point-of-interest-palais-mermonia-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Point_of_Interest_Palais_Mermonia_Map_Location.png/revision/latest?cb=20230822225001",
      "context": false
     },
     {
      "file": "npc-location-cornelia-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/NPC_Location_Cornelia_Context.png/revision/latest?cb=20230826173949",
      "context": true
     }
    ]
@@ -4060,26 +4473,32 @@
    "maps": [
     {
      "file": "npc-location-aigouy.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/NPC_Location_Aigouy.png/revision/latest?cb=20231225012857",
      "context": false
     },
     {
      "file": "quest-location-our-purpose-is-in-another-canal.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Quest_Location_Our_Purpose_Is_in_Another_Canal.png/revision/latest?cb=20231030064206",
      "context": false
     },
     {
      "file": "npc-location-aigouy-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/28/NPC_Location_Aigouy_Context.png/revision/latest?cb=20231007051130",
      "context": true
     },
     {
      "file": "npc-location-our-purpose-is-in-another-canal-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/NPC_Location_Our_Purpose_Is_in_Another_Canal_Context.png/revision/latest?cb=20231030061301",
      "context": true
     },
     {
      "file": "quest-location-our-purpose-is-in-another-canal-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/66/Quest_Location_Our_Purpose_Is_in_Another_Canal_Context.png/revision/latest?cb=20231030064405",
      "context": true
     },
     {
      "file": "our-purpose-is-in-another-canal-handwheel-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Our_Purpose_Is_in_Another_Canal_Handwheel_Location_Context.png/revision/latest?cb=20231007045840",
      "context": true
     }
    ]
@@ -4104,10 +4523,12 @@
    "maps": [
     {
      "file": "point-of-interest-palais-mermonia-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Point_of_Interest_Palais_Mermonia_Map_Location.png/revision/latest?cb=20230822225001",
      "context": false
     },
     {
      "file": "npc-location-cornelia-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/NPC_Location_Cornelia_Context.png/revision/latest?cb=20230826173949",
      "context": true
     }
    ]
@@ -4128,18 +4549,22 @@
    "maps": [
     {
      "file": "npc-location-broglie.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9f/NPC_Location_Broglie.png/revision/latest?cb=20240321032810",
      "context": false
     },
     {
      "file": "npc-location-broglie-02.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/NPC_Location_Broglie_02.png/revision/latest?cb=20240321032910",
      "context": false
     },
     {
      "file": "npc-location-broglie-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/NPC_Location_Broglie_Context.png/revision/latest?cb=20240131155335",
      "context": true
     },
     {
      "file": "npc-location-broglie-context-02.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/NPC_Location_Broglie_Context_02.png/revision/latest?cb=20250209100343",
      "context": true
     }
    ]
@@ -4161,18 +4586,22 @@
    "maps": [
     {
      "file": "npc-location-choiseul.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/NPC_Location_Choiseul.png/revision/latest?cb=20231028190406",
      "context": false
     },
     {
      "file": "world-quest-a-letter-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b0/World_Quest_A_Letter_Start_Location.png/revision/latest?cb=20250717004036",
      "context": false
     },
     {
      "file": "npc-location-choiseul-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/NPC_Location_Choiseul_Context.png/revision/latest?cb=20240328214929",
      "context": true
     },
     {
      "file": "world-quest-a-letter-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/World_Quest_A_Letter_Start_Location_Context.png/revision/latest?cb=20260914175648",
      "context": true
     }
    ]
@@ -4194,10 +4623,12 @@
    "maps": [
     {
      "file": "npc-location-remaudiere-keratry.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/NPC_Location_Remaudiere_Keratry.png/revision/latest?cb=20230928230452",
      "context": false
     },
     {
      "file": "npc-location-remaudiere-keratry-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/NPC_Location_Remaudiere_Keratry_Context.png/revision/latest?cb=20230818003151",
      "context": true
     }
    ]
@@ -4219,10 +4650,12 @@
    "maps": [
     {
      "file": "truly-mouthwatering-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Truly_Mouthwatering_Start_Location.png/revision/latest?cb=20230824034026",
      "context": false
     },
     {
      "file": "truly-mouthwatering-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fb/Truly_Mouthwatering_Start_Location_Context.png/revision/latest?cb=20230828124338",
      "context": true
     }
    ]
@@ -4245,10 +4678,12 @@
    "maps": [
     {
      "file": "world-quest-where-his-life-lies-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/World_Quest_Where_His_Life_Lies_Start_Location.png/revision/latest?cb=20240427143304",
      "context": false
     },
     {
      "file": "world-quest-where-his-life-lies-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/World_Quest_Where_His_Life_Lies_Start_Location_Context.png/revision/latest?cb=20240427032139",
      "context": true
     }
    ]
@@ -4272,10 +4707,12 @@
    "maps": [
     {
      "file": "impromptu-poem-of-the-crimson-dawn-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Impromptu_Poem_of_the_Crimson_Dawn_Start_Location.png/revision/latest?cb=20231124172502",
      "context": false
     },
     {
      "file": "impromptu-poem-of-the-crimson-dawn-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Impromptu_Poem_of_the_Crimson_Dawn_Start_Location_Context.png/revision/latest?cb=20231202174201",
      "context": true
     }
    ]
@@ -4295,10 +4732,12 @@
    "maps": [
     {
      "file": "npc-location-verenata.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/NPC_Location_Verenata.png/revision/latest?cb=20230929081719",
      "context": false
     },
     {
      "file": "npc-location-verenata-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/NPC_Location_Verenata_Context.png/revision/latest?cb=20230817195635",
      "context": true
     }
    ]
@@ -4323,10 +4762,12 @@
    "maps": [
     {
      "file": "world-quest-latecoming-homecoming-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/World_Quest_Latecoming_Homecoming_Start_Location.png/revision/latest?cb=20240525023721",
      "context": false
     },
     {
      "file": "world-quest-latecoming-homecoming-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/World_Quest_Latecoming_Homecoming_Start_Location_Context.png/revision/latest?cb=20240426030626",
      "context": true
     }
    ]
@@ -4350,10 +4791,12 @@
    "maps": [
     {
      "file": "npc-location-earnshaw.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/56/NPC_Location_Earnshaw.png/revision/latest?cb=20230828141102",
      "context": false
     },
     {
      "file": "npc-location-earnshaw-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/NPC_Location_Earnshaw_Context.png/revision/latest?cb=20230828141349",
      "context": true
     }
    ]
@@ -4397,10 +4840,12 @@
    "maps": [
     {
      "file": "npc-location-chaussivert-lemarcq.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/NPC_Location_Chaussivert_%26_Lemarcq.png/revision/latest?cb=20231206222429",
      "context": false
     },
     {
      "file": "npc-location-chaussivert-lemarcq-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/NPC_Location_Chaussivert_%26_Lemarcq_Context.png/revision/latest?cb=20231206222031",
      "context": true
     }
    ]
@@ -4423,10 +4868,12 @@
    "maps": [
     {
      "file": "point-of-interest-palais-mermonia-map-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Point_of_Interest_Palais_Mermonia_Map_Location.png/revision/latest?cb=20230822225001",
      "context": false
     },
     {
      "file": "world-quest-a-certain-notice-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/World_Quest_A_Certain_Notice_Start_Location_Context.png/revision/latest?cb=20230824045129",
      "context": true
     }
    ]
@@ -4447,18 +4894,22 @@
    "maps": [
     {
      "file": "npc-location-chisseray.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/NPC_Location_Chisseray.png/revision/latest?cb=20240113051611",
      "context": false
     },
     {
      "file": "treacherous-light-of-the-depths-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/Treacherous_Light_of_the_Depths_Location.png/revision/latest?cb=20231028192006",
      "context": false
     },
     {
      "file": "npc-location-chisseray-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/NPC_Location_Chisseray_Context.png/revision/latest?cb=20240419213039",
      "context": true
     },
     {
      "file": "treacherous-light-of-the-depths-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Treacherous_Light_of_the_Depths_Location_Context.png/revision/latest?cb=20230928220229",
      "context": true
     }
    ]
@@ -4499,10 +4950,12 @@
    "maps": [
     {
      "file": "world-quest-daydreams-beyond-space-and-time-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/World_Quest_Daydreams_Beyond_Space_and_Time_Start_Location.png/revision/latest?cb=20240425192911",
      "context": false
     },
     {
      "file": "world-quest-daydreams-beyond-space-and-time-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7d/World_Quest_Daydreams_Beyond_Space_and_Time_Start_Location_Context.png/revision/latest?cb=20240425191714",
      "context": true
     }
    ]
@@ -4524,18 +4977,22 @@
    "maps": [
     {
      "file": "npc-location-bricole.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/NPC_Location_Bricole.png/revision/latest?cb=20231116164722",
      "context": false
     },
     {
      "file": "road-to-the-singularity-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Road_to_the_Singularity_Start_Location.png/revision/latest?cb=20231207013304",
      "context": false
     },
     {
      "file": "npc-location-bricole-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/NPC_Location_Bricole_Context.png/revision/latest?cb=20231116164643",
      "context": true
     },
     {
      "file": "road-to-the-singularity-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/Road_to_the_Singularity_Start_Location_Context.png/revision/latest?cb=20231005084710",
      "context": true
     }
    ]
@@ -4550,31 +5007,37 @@
    "npcs": [
     "Ahes"
    ],
-   "dlg": 25257,
+   "dlg": 25258,
    "steps": 15,
    "maps": [
     {
      "file": "npc-location-ahes.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/NPC_Location_Ahes.png/revision/latest?cb=20230928224218",
      "context": false
     },
     {
      "file": "the-lone-phantom-sail-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0c/The_Lone_Phantom_Sail_Location.png/revision/latest?cb=20230826175140",
      "context": false
     },
     {
      "file": "achievement-fontaine-expects-that-everyone-will-do-their-duty-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Achievement_Fontaine_Expects_That_Everyone_Will_Do_Their_Duty_Location.png/revision/latest?cb=20230928205819",
      "context": false
     },
     {
      "file": "npc-location-ahes-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/NPC_Location_Ahes_Context.png/revision/latest?cb=20230920134837",
      "context": true
     },
     {
      "file": "the-lone-phantom-sail-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/The_Lone_Phantom_Sail_Location_Context.png/revision/latest?cb=20230826174757",
      "context": true
     },
     {
      "file": "achievement-fontaine-expects-that-everyone-will-do-their-duty-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Achievement_Fontaine_Expects_That_Everyone_Will_Do_Their_Duty_Location_Context.png/revision/latest?cb=20230820212411",
      "context": true
     }
    ]
@@ -4595,30 +5058,37 @@
    "maps": [
     {
      "file": "npc-location-nadia-fontaine-daytime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/NPC_Location_Nadia_%28Fontaine%29_%28Daytime%29.png/revision/latest?cb=20231217001513",
      "context": false
     },
     {
      "file": "wish-fulfilling-treasure-hunt-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/28/Wish-Fulfilling_Treasure_Hunt_Start_Location.png/revision/latest?cb=20240827184404",
      "context": false
     },
     {
      "file": "npc-location-nadia-fontaine-urville-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/NPC_Location_Nadia_%28Fontaine%29_%26_Urville_%28Nighttime%29.png/revision/latest?cb=20231217001520",
      "context": false
     },
     {
      "file": "wish-fulfilling-treasure-hunt-pre-quest-nadia-and-urville-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Wish-Fulfilling_Treasure_Hunt_Pre-Quest_Nadia_and_Urville_Location.png/revision/latest?cb=20240215050707",
      "context": false
     },
     {
      "file": "npc-location-nadia-fontaine-context-daytime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/NPC_Location_Nadia_%28Fontaine%29_Context_%28Daytime%29.png/revision/latest?cb=20231217001124",
      "context": true
     },
     {
      "file": "wish-fulfilling-treasure-hunt-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Wish-Fulfilling_Treasure_Hunt_Start_Location_Context.png/revision/latest?cb=20240421133246",
      "context": true
     },
     {
      "file": "npc-location-nadia-fontaine-urville-context-nighttime.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/NPC_Location_Nadia_%28Fontaine%29_%26_Urville_Context_%28Nighttime%29.png/revision/latest?cb=20231217001026",
      "context": true
     }
    ]
@@ -4661,18 +5131,22 @@
    "maps": [
     {
      "file": "npc-location-carabosse.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4d/NPC_Location_Carabosse.png/revision/latest?cb=20230822015854",
      "context": false
     },
     {
      "file": "world-quest-echoes-of-the-ancient-world-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/World_Quest_Echoes_of_the_Ancient_World_Location.png/revision/latest?cb=20230822024114",
      "context": false
     },
     {
      "file": "npc-location-carabosse-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/NPC_Location_Carabosse_Context.png/revision/latest?cb=20230822020305",
      "context": true
     },
     {
      "file": "world-quest-echoes-of-the-ancient-world-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/World_Quest_Echoes_of_the_Ancient_World_Location_Context.png/revision/latest?cb=20230821090122",
      "context": true
     }
    ]
@@ -4711,14 +5185,17 @@
    "maps": [
     {
      "file": "npc-location-luca-sonny.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/NPC_Location_Luca_Sonny.png/revision/latest?cb=20230929080413",
      "context": false
     },
     {
      "file": "aqueous-tidemarks-pre-quest-sonny-and-luca-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/Aqueous_Tidemarks_Pre-Quest_Sonny_and_Luca_Location.png/revision/latest?cb=20230907012434",
      "context": false
     },
     {
      "file": "npc-location-luca-sonny-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/NPC_Location_Luca_Sonny_Context.png/revision/latest?cb=20230819182347",
      "context": true
     }
    ]
@@ -4740,10 +5217,12 @@
    "maps": [
     {
      "file": "free-verse-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/Free_Verse_Start_Location.png/revision/latest?cb=20231202123608",
      "context": false
     },
     {
      "file": "free-verse-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Free_Verse_Start_Location_Context.png/revision/latest?cb=20260802084036",
      "context": true
     }
    ]
@@ -4785,10 +5264,12 @@
    "maps": [
     {
      "file": "villains-start-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Villains_Start_Location.png/revision/latest?cb=20231028192007",
      "context": false
     },
     {
      "file": "villains-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Villains_Start_Location_Context.png/revision/latest?cb=20231008164605",
      "context": true
     }
    ]
@@ -4850,30 +5331,37 @@
    "maps": [
     {
      "file": "npc-location-broglie.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9f/NPC_Location_Broglie.png/revision/latest?cb=20240321032810",
      "context": false
     },
     {
      "file": "npc-location-broglie-02.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/NPC_Location_Broglie_02.png/revision/latest?cb=20240321032910",
      "context": false
     },
     {
      "file": "npc-location-katheryne-court-of-fontaine.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/NPC_Location_Katheryne_%28Court_of_Fontaine%29.png/revision/latest?cb=20230929174106",
      "context": false
     },
     {
      "file": "qualifications-review-representative-office-location.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Qualifications_Review_Representative_Office_Location.png/revision/latest?cb=20250821201527",
      "context": false
     },
     {
      "file": "npc-location-broglie-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/NPC_Location_Broglie_Context.png/revision/latest?cb=20240131155335",
      "context": true
     },
     {
      "file": "npc-location-broglie-context-02.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/NPC_Location_Broglie_Context_02.png/revision/latest?cb=20250209100343",
      "context": true
     },
     {
      "file": "fontaine-research-institute-stagnating-in-the-rubble-start-location-context.png",
+     "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a7/Fontaine_Research_Institute%2C_Stagnating_in_the_Rubble_Start_Location_Context.png/revision/latest?cb=20260730210438",
      "context": true
     }
    ]

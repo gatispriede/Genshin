@@ -9,6 +9,10 @@ map crop of where it starts.
 With no arguments it rebuilds every region present in the manifest.
 """
 
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+import wiki_image  # noqa: E402
 import io
 import json
 import os
@@ -92,9 +96,9 @@ def card(i, q, state):
     for m in close[:1] + context[:1]:
         # "Context" files are in-world photos of the surroundings, not maps.
         label = "What you'll see there" if m["context"] else "Exact spot"
-        shots += ('<figure><img loading="lazy" src="assets/quest-maps/%s" '
+        shots += ('<figure><img loading="lazy" referrerpolicy="no-referrer" src="%s" '
                   'alt="%s map"><figcaption>%s</figcaption></figure>'
-                  % (m["file"], esc(q["name"]), label))
+                  % (esc(wiki_image.src(m)), esc(q["name"]), label))
     if not shots:
         shots = ('<div class="nomap">No location shot exists on the wiki for '
                  'this one, and the official map\'s quest pins are unnamed — '
