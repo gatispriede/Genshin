@@ -1,90 +1,124 @@
 /**
- * Migrates the unblocked static pages to flux as CMS sections and modules.
+ * Migrates every catalogued page (except build write-ups, which attach to the
+ * character pages in flux-push.mjs) to the CMS, in batches.
  *
- * Module choice and side-by-side packing live in flux-layout.mjs; this file
- * only lists the pages, gates on text coverage, and writes.
+ *     node tools/flux-migrate-html.mjs                       # plan, all pages
+ *     node tools/flux-migrate-html.mjs --section Research    # plan, one batch
+ *     node tools/flux-migrate-html.mjs --only codes.html
+ *     ... --local --apply                                    # write to local CMS
+ *     secrets run flux-migrate-html --section Maps --apply   # write to flux
  *
- *     secrets run flux-migrate-html                    # plan only
- *     secrets run flux-migrate-html --apply
- *     secrets run flux-migrate-html --only codes.html [--apply]
- *
- * Only pages tools/classify-pages.py reports as blocker-free are listed.
- * Build pages need their scripts run first; map pages need MAP_ANNOTATED.
+ * Run tools/render-pages.mjs first so script-generated content is included.
+ * Routing and sources: flux-catalogue.mjs. Layout: flux-layout.mjs.
  */
 
-import { readFileSync } from 'node:fs';
-import { connect, call, findPage, recreatePage } from './flux-client.mjs';
-import { pageSections, moduleText } from './flux-layout.mjs';
-import { text, pageContent } from './html-blocks.mjs';
+import { connect, call, findPage, recreatePage, TARGET } from './flux-client.mjs';
+import { pageSections, moduleText, enginePlaceholder } from './flux-layout.mjs';
+import { contentText } from './html-blocks.mjs';
+import { catalogue, route, sourceHtml, usesEngine, isRendered } from './flux-catalogue.mjs';
 
-const APPLY = process.argv.includes('--apply');
-const ONLY = (() => {
-  const i = process.argv.indexOf('--only');
+const arg = (name) => {
+  const i = process.argv.indexOf(name);
   return i === -1 ? null : process.argv[i + 1];
-})();
-
-/** Blocker-free pages, from tools/classify-pages.py. */
-const PAGES = [
-  ['character-roadmap.html', 'Character roadmap'],
-  ['enemy-coverage.html', 'Enemy shields'],
-  ['teams.html', 'The three teams'],
-  ['build-coverage.html', 'Build coverage'],
-  ['stellar.html', 'Stellar Glimmer'],
-  ['talent-farming.html', 'Talent farming'],
-  ['codes.html', 'Redeem codes'],
-  ['collectibles-status.html', 'Collectibles status'],
-  ['reputation-compass.html', 'Treasure Compasses'],
-  ['reputation-quests.html', 'Reputation quests'],
-  ['reaction-combos.html', 'Reaction combos'],
-  ['theater.html', 'Imaginarium Theater'],
-  ['tcg-swap.html', 'TCG swaps'],
-  ['support-squad.html', 'Support squad'],
-];
+};
+const APPLY = process.argv.includes('--apply');
+const SECTION = arg('--section');
+const ONLY = arg('--only');
 
 /** Below this, blocks are being dropped — the 4% lesson. Refuse to write. */
 const MIN_COVERAGE = 95;
 
-function plan([file, title]) {
-  const html = readFileSync(file, 'utf8');
-  const sections = pageSections(html, title);
+function plan(entry, parent) {
+  const html = sourceHtml(entry);
+  const sections = pageSections(html, entry.title);
+  if (usesEngine(entry)) {
+    // After the title heading, before the carried-over notes.
+    sections.splice(1, 0, { columns: 1, modules: [enginePlaceholder()] });
+  }
   const modules = sections.flatMap((s) => s.modules);
-  const src = text(pageContent(html)).length;
+  const src = contentText(html).length;
   const out = modules.map(moduleText).join(' ').length;
-  const multi = sections.filter((s) => s.columns > 1).length;
-  return { file, title, sections, modules,
-           coverage: src ? Math.round((100 * out) / src) : 100, multi };
+  return {
+    entry, parent, sections, modules,
+    coverage: src ? Math.round((100 * out) / src) : 100,
+    maps: modules.filter((m) => m.content.includes('MAP_ANNOTATED_PLACEHOLDER')).length,
+    rendered: isRendered(entry),
+  };
 }
 
-const chosen = ONLY ? PAGES.filter(([f]) => f === ONLY) : PAGES;
-if (!chosen.length) { console.error('no matching page'); process.exit(1); }
-const plans = chosen.map(plan);
+/* ------------------------------------------------------------- routing --- */
 
-for (const p of plans) {
-  const flag = p.coverage < MIN_COVERAGE ? '  <- CONTENT LOST' : '';
-  console.log(`${p.title.padEnd(22)} ${String(p.sections.length).padStart(3)} sections`
-    + ` (${p.multi} multi-column)  ${String(p.modules.length).padStart(3)} modules`
-    + `  ${String(p.coverage).padStart(3)}% text${flag}`);
+const all = catalogue();
+const skipped = [];
+const builds = [];
+const plans = [];
+
+for (const entry of all) {
+  if (ONLY && entry.href !== ONLY) continue;
+  if (SECTION && entry.section !== SECTION) continue;
+  const r = route(entry);
+  if (r.action === 'skip') skipped.push(`${entry.href} — ${r.reason}`);
+  else if (r.action === 'builds') builds.push(entry.href);
+  else plans.push(plan(entry, r.parent));
 }
+
+/* -------------------------------------------------------------- report --- */
+
+let lastParent = null;
+for (const p of plans.sort((a, b) => a.parent.localeCompare(b.parent))) {
+  if (p.parent !== lastParent) { console.log(`\n${p.parent}`); lastParent = p.parent; }
+  const flags = [
+    p.coverage < MIN_COVERAGE ? 'CONTENT LOST' : '',
+    p.maps ? `${p.maps} map placeholder(s)` : '',
+    usesEngine(p.entry) ? 'engine placeholder' : '',
+    p.entry.href.endsWith('.html') && !p.rendered ? 'NOT RENDERED' : '',
+  ].filter(Boolean).join(', ');
+  console.log(`  ${p.entry.title.slice(0, 40).padEnd(40)} ${String(p.sections.length).padStart(3)} sect`
+    + `  ${String(p.coverage).padStart(3)}%${flags ? '  ' + flags : ''}`);
+}
+if (builds.length) console.log(`\nBuilds (${builds.length}) — attached to character pages by flux-push.mjs`);
+if (skipped.length) {
+  console.log(`\nSkipped (${skipped.length}):`);
+  skipped.forEach((s) => console.log('  ' + s));
+}
+console.log(`\n${plans.length} pages to migrate`
+  + `${SECTION ? ` in section ${SECTION}` : ''}, of ${all.length} catalogued`);
 
 const lost = plans.filter((p) => p.coverage < MIN_COVERAGE);
 if (lost.length) {
-  console.error(`\nrefusing to write: ${lost.map((p) => p.file).join(', ')} below ${MIN_COVERAGE}% coverage`);
+  console.error(`refusing to write: ${lost.map((p) => p.entry.href).join(', ')} below ${MIN_COVERAGE}%`);
   process.exit(1);
 }
-if (!APPLY) { console.log('\ndry run — pass --apply to write'); process.exit(0); }
+if (!APPLY) { console.log('dry run — pass --apply to write'); process.exit(0); }
+
+/* --------------------------------------------------------------- write --- */
 
 await connect('genshin-migrate');
+console.log(`writing to ${TARGET}`);
 
 const root = await findPage('Genshin notes');
-if (!root) { console.error('no Genshin notes root — run flux-push first'); process.exit(1); }
-let guides = await findPage('Guides');
-if (!guides) guides = await recreatePage('Guides', root.id);
+if (!root) { console.error('no "Genshin notes" root — run flux-push first'); process.exit(1); }
 
+const parents = {};
 for (const p of plans) {
-  const row = await recreatePage(p.title, guides.id);
+  if (!parents[p.parent]) {
+    parents[p.parent] = (await findPage(p.parent)) || (await recreatePage(p.parent, root.id));
+    // A whole-section batch owns that section: clear children that are no
+    // longer in the catalogue (renamed or retired), so they don't linger as
+    // orphans beside their replacements. Never on --only, never system pages.
+    if (!ONLY) {
+      const keep = new Set(plans.filter((x) => x.parent === p.parent).map((x) => x.entry.title));
+      const stale = (await call('page.list', {})).filter((x) =>
+        x.parent === parents[p.parent].id && x.source !== 'system-page' && !keep.has(x.page));
+      for (const s of stale) await call('page.delete', { id: s.id });
+      if (stale.length) console.log(`  cleared ${stale.length} stale under ${p.parent}: ${stale.map((s) => s.page).join(', ')}`);
+    }
+  }
+  const parent = parents[p.parent];
+  const row = await recreatePage(p.entry.title, parent.id);
   for (const s of p.sections) {
     const { sectionId } = await call('section.create', { pageId: row.id, type: s.columns });
     await call('module.add', { items: s.modules.map((module) => ({ sectionId, module })) });
   }
-  console.log(`  /${root.slug}/${guides.slug}/${row.slug}  (${p.sections.length} sections)`);
+  console.log(`  /${root.slug}/${parent.slug}/${row.slug}`);
 }

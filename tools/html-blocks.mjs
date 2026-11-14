@@ -53,6 +53,16 @@ export const decode = (s) => s
 
 export const classOf = (attrs) => (attrs.match(/class="([^"]*)"/) || [, ''])[1];
 
+/**
+ * A page's migratable text: everything except map containers, which the CMS
+ * holds a placeholder for until MAP_ANNOTATED exists.
+ */
+export function contentText(html) {
+  return topLevelBlocks(pageContent(html))
+    .filter((b) => !/\bmap-wrap\b/.test(classOf(b.attrs)))
+    .map((b) => text(b.html)).join(' ');
+}
+
 /** The page body inside .wrap, with scripts, styles and nav removed. */
 export function pageContent(html) {
   const body = strip((html.match(/<body[^>]*>([\s\S]*)<\/body>/i) || [, html])[1]);

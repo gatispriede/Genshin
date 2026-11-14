@@ -68,14 +68,14 @@ export const characters: Character[] = [
   {
     name: 'Escoffier', element: 'Cryo', weaponType: 'Polearm', rarity: 5, level: 70,
     constellation: 0, owned: true, fieldRole: 'off-field', teams: ['skirk'], tier: 3,
-    paidIn: 'talents', targetSet: 'Scroll of the Hero of Cinder City',
+    paidIn: 'talents', targetSet: 'Golden Troupe',
     note: 'Cryo RES shred is talent-scaled, so books beat levels.',
     page: 'escoffier-build.html', verified: '2026-11-12',
   },
   {
     name: 'Mona', element: 'Hydro', weaponType: 'Catalyst', level: 57,
     constellation: null, owned: true, teams: ['skirk'], tier: 2, paidIn: 'gear',
-    targetSet: 'Noblesse Oblige', unresearched: true,
+    targetSet: 'Tenacity of the Millelith or Scroll of the Hero of Cinder City', unresearched: true,
     note: 'Wants 200%+ ER and Thrilling Tales of the Dragon Slayers to pass ATK to Skirk.',
     verified: '2026-11-12',
   },

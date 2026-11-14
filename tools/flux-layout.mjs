@@ -46,6 +46,24 @@ function calloutVariant(cls) {
   return 'note';
 }
 
+/** Stand-in for a map until MAP_ANNOTATED exists. Marked so it can be found and replaced. */
+export function mapPlaceholder(alt, img) {
+  const label = alt || 'Map';
+  const src = img ? ` <span style="opacity:.7">(${img})</span>` : '';
+  return calloutModule(
+    `<b>${label}</b> — interactive map coming with the map module.${src}`
+    + '<!-- MAP_ANNOTATED_PLACEHOLDER -->',
+    'note');
+}
+
+/** Stand-in for a page whose main view is a live engine that cannot run in the CMS. */
+export function enginePlaceholder() {
+  return calloutModule(
+    '<b>Interactive view not available here.</b> This page’s main content is a live map '
+    + 'built from game data; the notes below are carried over, the map is not.',
+    'warn');
+}
+
 /* ------------------------------------------------------------- modules --- */
 
 function headingModule(heading, eyebrow, subtitle) {
@@ -154,6 +172,15 @@ export function pageSections(html, title) {
       flushProse();
       const inner = b.html.replace(/^<div[^>]*>/, '').replace(/<\/div>$/, '');
       place(calloutModule(inner, /\bnote\b/.test(cls) ? 'note' : calloutVariant(cls)), false);
+      continue;
+    }
+    if (b.name === 'div' && /\bmap-wrap\b/.test(cls)) {
+      // The map itself waits for MAP_ANNOTATED. Hold its place, full width,
+      // naming the image so the slot is easy to fill later.
+      flushProse();
+      const alt = (b.attrs.match(/data-alt="([^"]*)"/) || [, ''])[1];
+      const img = (b.attrs.match(/data-map="([^"]*)"/) || [, ''])[1];
+      place(mapPlaceholder(alt, img), true);
       continue;
     }
     if (b.name === 'table') { flushProse(); place(...tableBlock(b.html)); continue; }

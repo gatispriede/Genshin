@@ -21,3 +21,5 @@ reference/data/hoyo_tree.json
 node_modules/
 dist/
 tools/.flux-args.json
+tools/.rendered/
+tools/.bundles/

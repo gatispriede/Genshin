@@ -11,13 +11,13 @@ export const teams: Team[] = [
     element: 'Cryo',
     members: [
       { character: 'Skirk', role: 'main-dps', set: 'Finale of the Deep Galleries' },
-      { character: 'Mona', role: 'enabler', set: 'Noblesse Oblige' },
-      { character: 'Escoffier', role: 'heal', set: 'Scroll of the Hero of Cinder City' },
+      { character: 'Mona', role: 'enabler', set: 'Tenacity of the Millelith or Scroll of the Hero of Cinder City' },
+      { character: 'Escoffier', role: 'heal', set: 'Golden Troupe' },
       { character: 'Mika', role: 'sustain', set: 'Noblesse Oblige' },
     ],
     breaks: ['Pyro x2', 'Hydro x1', 'Electro x1'],
     cannotBreak: ['Cryo / Frozen', 'Geo', 'Dendro'],
-    note: 'Mona Hydro onto Escoffier Cryo makes Frozen on repeat, which is what spawns Skirk’s Void Rifts. Rosaria beats Mika here on paper and loses on levels.',
+    note: 'Mona Hydro onto Escoffier Cryo makes Frozen on repeat, which is what spawns Skirk’s Void Rifts. Rosaria beats Mika here on paper and loses on levels. Sets (14 Nov, via Google AI): only Mika holds Noblesse Oblige — two copies do not stack, and Mona carried a second one. Mona moves to Tenacity of the Millelith (her Skill ticks trigger it) or Scroll; Escoffier to Golden Troupe for her off-field damage. Farm Denouement of Sin: Golden Troupe there serves Escoffier and Furina at once.',
     page: 'teams.html',
   },
   {
