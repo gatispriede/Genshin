@@ -50,7 +50,7 @@ export const characters: Character[] = [
   },
   {
     name: 'Furina', element: 'Hydro', weaponType: 'Sword', rarity: 5,
-    level: 27, constellation: 0, owned: true, fieldRole: 'off-field',
+    level: 40, constellation: 0, owned: true, fieldRole: 'off-field',
     weapon: { name: 'Favonius Sword', level: 31, refinement: 1, substat: 'Energy Recharge', substatValue: '28.9%' },
     stats: { maxHp: 7690, atk: 421, def: 267, em: 19, critRate: '44.6%', critDmg: '55.0%', energyRecharge: '192.4%' },
     teams: ['varesa'], tier: 2, paidIn: 'talents',
@@ -102,9 +102,9 @@ export const characters: Character[] = [
   },
   {
     name: 'Kachina', element: 'Geo', weaponType: 'Polearm', rarity: 4, level: 50,
-    constellation: null, owned: true, fieldRole: 'off-field', teams: ['varesa'], tier: 3,
+    constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null,
     paidIn: 'gear', targetSet: 'Scroll of the Hero of Cinder City',
-    note: 'Her job is triggering the set through Crystallize for +40% party Elemental DMG. Level-independent.',
+    note: 'Not built — no levels or artifacts worth fielding; used for exploring only (14 Nov). Was the Varesa team enabler on paper; Charlotte has the slot.',
     verified: '2026-11-12',
   },
   {
@@ -118,7 +118,7 @@ export const characters: Character[] = [
   },
   {
     name: 'Xiangling', element: 'Pyro', weaponType: 'Polearm', rarity: 4, level: 40,
-    constellation: null, owned: true, fieldRole: 'off-field', teams: ['pyro'], tier: 1,
+    constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: 1,
     paidIn: 'levels',
     note: 'The only elemental hole on the account. Pyro breaks Cryo and Frozen wards at x2 and no current team has any.',
     verified: '2026-11-12',
@@ -130,7 +130,7 @@ export const characters: Character[] = [
   },
   {
     name: 'Bennett', element: 'Pyro', weaponType: 'Sword', rarity: 4, level: 0,
-    constellation: null, owned: false, teams: ['pyro'], tier: 1, paidIn: 'levels',
+    constellation: null, owned: false, teams: [], tier: 1, paidIn: 'levels',
     targetSet: 'Noblesse Oblige',
     note: 'Not owned yet. His ATK buff is a share of Base ATK, so levels raise the buff. C6 Pyro-infuses swords and would overwrite Skirk.',
   },
@@ -141,7 +141,7 @@ export const characters: Character[] = [
   { name: 'Dahlia', element: 'Hydro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Fischl', element: 'Electro', weaponType: 'Bow', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null, page: 'fischl-build.html', verified: '2026-11-12' },
   { name: 'Lisa', element: 'Electro', weaponType: 'Catalyst', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
-  { name: 'Charlotte', element: 'Cryo', weaponType: 'Catalyst', level: 50, constellation: null, owned: true, teams: [], tier: null, unresearched: true, targetSet: 'Noblesse Oblige', setProgress: 'none', targetMains: { sands: 'ER%', goblet: 'ATK%', circlet: 'Healing Bonus or ATK%' }, note: 'Removed from the Varesa team - her Cryo froze targets and shut off Electro-Charged.', verified: '2026-11-12' },
+  { name: 'Charlotte', element: 'Cryo', weaponType: 'Catalyst', level: 50, constellation: null, owned: true, teams: ['varesa'], tier: 2, unresearched: true, targetSet: 'Noblesse Oblige', setProgress: 'none', targetMains: { sands: 'ER%', goblet: 'ATK%', circlet: 'Healing Bonus or ATK%' }, note: 'Back in the Varesa team as healer (14 Nov, in-game). Burst heals the party to max Furina’s Fanfare; Noblesse Oblige gives Varesa +20% ATK. Her Cryo meets Furina’s Hydro as Freeze, which competes with Electro-Charged.', verified: '2026-11-14' },
   { name: 'Chongyun', element: 'Cryo', weaponType: 'Claymore', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Noelle', element: 'Geo', weaponType: 'Claymore', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Amber', element: 'Pyro', weaponType: 'Bow', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },

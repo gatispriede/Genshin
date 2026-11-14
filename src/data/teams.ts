@@ -42,26 +42,13 @@ export const teams: Team[] = [
     members: [
       { character: 'Varesa', role: 'main-dps', set: "Long Night's Oath or Obsidian Codex" },
       { character: 'Furina', role: 'support-dps', set: 'Golden Troupe' },
-      { character: 'Kachina', role: 'enabler', set: 'Scroll of the Hero of Cinder City' },
+      { character: 'Charlotte', role: 'heal', set: 'Noblesse Oblige' },
       { character: 'Sucrose', role: 'support-dps', set: 'Viridescent Venerer' },
     ],
     breaks: ['Pyro x2', 'Cryo x1', 'Geo x2', 'Dendro x1', 'Hydro DoT', 'Electro DoT'],
     cannotBreak: [],
-    note: 'The specialist. The only team that can touch a Cryo, Geo or Dendro ward at all. Charlotte was swapped out — her Cryo froze targets and shut off Electro-Charged.',
+    note: 'The specialist. As played, 14 Nov (in-game screenshot): Varesa 90, Charlotte 50, Furina 40, Sucrose 50. Charlotte replaced Kachina, who is not built. Charlotte heals to max Furina’s Fanfare and carries Noblesse Oblige for +20% ATK on Varesa. Trade-off on record: her Cryo meets Furina’s Hydro as Freeze, which competes with Electro-Charged. Breaks list not yet re-derived for this lineup.',
     page: 'teams.html',
-  },
-  {
-    id: 'pyro',
-    name: 'Pyro core (planned)',
-    element: 'Pyro',
-    members: [
-      { character: 'Bennett', role: 'heal', set: 'Noblesse Oblige' },
-      { character: 'Xiangling', role: 'support-dps' },
-    ],
-    breaks: ['Cryo / Frozen x2', 'Geo x2', 'Dendro DoT'],
-    cannotBreak: ['Pyro'],
-    note: 'The missing fourth ward profile. Needs Bennett, and Xiangling levelled from 40.',
-    page: 'enemy-coverage.html',
   },
 ];
 
