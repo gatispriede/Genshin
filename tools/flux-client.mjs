@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+
 /**
  * Shared MCP client for the flux CMS. Every tools/flux-*.mjs script imports
  * this instead of carrying its own copy of the handshake and error gate.
@@ -15,7 +17,26 @@ export const TARGET = URL_;
 
 let session = null;
 
+// Local dev instance only: Gatis allows a plaintext dev token there (14 Nov).
+// Production never reads a file — it stays vault-injected.
+const LOCAL_TOKEN_FILE = 'D:/Work/redis-node-js-cloud/tools/mcp.dev.json';
+
+/** Find the first mcpsk_ string anywhere in the dev-token file, whatever its key. */
+function localDevToken() {
+  try {
+    const found = JSON.stringify(JSON.parse(readFileSync(LOCAL_TOKEN_FILE, 'utf8')))
+      .match(/mcpsk_[A-Za-z0-9]+/);
+    return found ? found[0] : null;
+  } catch {
+    return null;
+  }
+}
+
 export function requireToken() {
+  if (!process.env.FLUX_TOKEN && URL_ === LOCAL_URL) {
+    const t = localDevToken();
+    if (t) process.env.FLUX_TOKEN = t;
+  }
   if (!process.env.FLUX_TOKEN) {
     console.error('FLUX_TOKEN is not set — run through a vault binding.');
     process.exit(2);
