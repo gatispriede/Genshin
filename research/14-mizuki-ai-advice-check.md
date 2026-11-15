@@ -302,6 +302,15 @@ Team: Mizuki · Traveler · Faruzan · Sucrose. The supports dealt 0 damage.
   are confirmed.**
 - ~1,100 EM is what "Built" assumed above.
 - Enemy level is not shown; Lv 90 was assumed for DEF.
+- **Where the −10% Anemo RES comes from** (a second frame from the same test
+  set-up, user screenshot): the target's base RES is **10% for every element**.
+  The −10% in the damage log is therefore a 20% shred: Mizuki's **C2** (−20%
+  Pyro/Hydro/Cryo/Electro/Anemo RES during her Skill, per the guide [28:41]).
+  The showcase Mizuki is C2 or higher; the 39,903 hit is her C1 instance. This
+  account's C0 Mizuki gets shred only from 4pc VV (−40% Anemo when she swirls).
+  That is similar in size, so the calibration holds.
+- The same frame confirms the vortex: **3 s after a Stellar Swirl it explodes
+  for Stellar Swirl Cryo DMG**, as the wiki's formula section says.
 
 **For this account, once the talent is unlocked:** the nuke scales on EM roughly
 quadratically, since EM sits in both the base and the bonus.
