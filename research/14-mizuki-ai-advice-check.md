@@ -184,3 +184,8 @@ buff:
 So **~4k is her normal non-crit enhanced hit.** It is not a bug, and it confirms
 the model. Crits of 6–7k are rare because her CRIT Rate is 15%. **CRIT Rate is
 the gap you can see**; EM from levels is the next one.
+
+**Status:** Furina was a one-off test, because she has been levelled up since the
+14 Nov roster (Lv 40 there). She stays in the Varesa team. The Mizuki team
+stays Mizuki · Traveler · Rosaria · Valeriy. Re-read HoYoLAB before quoting
+Furina's level or stats.
