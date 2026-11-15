@@ -152,3 +152,22 @@ Charge, Into the Breach, Ranks That Charge as One, and the rest.
 Against Barbara he trades healing and Freeze for +100 EM and a shield. That is
 likely a damage gain, but **confirm it with the same clear-time test**: three
 runs each, same chamber, same rotation.
+
+## Field note — Furina in for Rosaria (15 Nov, user)
+
+The user played Mizuki · Traveler · **Furina** · Valeriy and **cleared a Lv 90
+material domain**. That is a pass/fail result, not a comparison: no clear time,
+and no run with Rosaria in the same domain.
+
+**On paper:**
+- Furina's fanfare is a party-wide DMG% buff, which Mizuki's enhanced hits take.
+  Her Hydro meets the Traveler's Cryo as Freeze, a Cryo aura Mizuki can still
+  Stellar Swirl.
+- The team loses Rosaria's second Cryo: Cryo resonance (+15% CRIT Rate against
+  Cryo/Frozen targets) and the extra Cryo application that keeps Radiance up.
+
+**Constraint:** Furina is also in the Varesa team. In the Abyss, with 8 distinct
+characters, she can sit in only one of the two.
+
+**To settle it:** time the same domain with Rosaria and with Furina, three runs
+each.
