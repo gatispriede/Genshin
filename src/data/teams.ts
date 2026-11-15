@@ -34,7 +34,7 @@ export const teams: Team[] = [
     ],
     breaks: ['Pyro x1', 'Hydro x1', 'Electro x1', 'Cryo / Frozen x1', 'Dendro x1'],
     cannotBreak: ['Geo'],
-    note: 'Valeriy replaced Barbara on 15 Nov: his C2 gives the party +100 EM for 18s on a 10s Skill, so it is always up, and Mizuki’s payload is 10× EM. His shield covers interruption; her Burst heals. His Electro meets the Cryo as Superconduct only on his casts, far less often than Fischl’s Oz. Not yet confirmed by an in-game clear-time test (research/14).',
+    note: 'NOT WORKING YET (15 Nov): Mizuki’s damage talent Vast Be the Dream is locked. It needs her at Lv 70 (she is 60), then the quests Revelations by Chance and Witch’s Revelation: Instruction Beyond Dreams (Court of Fontaine). Until then the team does plain Swirl damage. Valeriy replaced Barbara on 15 Nov: his C2 gives the party +100 EM for 18s on a 10s Skill, so it is always up, and Mizuki’s payload is 10× EM. His shield covers interruption; her Burst heals. His Electro meets the Cryo as Superconduct only on his casts, far less often than Fischl’s Oz. Not yet confirmed by an in-game clear-time test (research/14).',
     page: 'mizuki-build.html',
   },
   {

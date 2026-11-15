@@ -246,3 +246,23 @@ The only owned piece of the community core is Sucrose, and she is committed to
 Varesa. **The current line-up stays: Mizuki · Traveler · Rosaria · Valeriy.**
 The lesson from that list matches the correction above: **keep Cryo constant
 and stack EM.**
+
+## 🔒 Root cause: Vast Be the Dream is locked (15 Nov, user's talent screen)
+
+Every damage figure above for the payload and the Stellar instance assumes
+**Vast Be the Dream**. On this account it is **locked**. It is a Witch's
+Revelation talent, unlocked by a quest (wiki, read 15 Nov):
+
+1. Mizuki at **Lv 70+**. She is 60.
+2. **Revelations by Chance**: booth outside the Court of Fontaine. Needs only
+   *Song of the Dragon and Freedom*, which is long done. Gives the Witch's
+   Revelation Case.
+3. **Witch's Revelation: Instruction Beyond Dreams**: same area. Trial Mizuki
+   + Layla, three waves, no falling. Unlocks the talent.
+
+The Furina test's ~4k was therefore **plain Swirl and her ordinary periodic
+hits**. It was not a Cryo shortage; that read-out is withdrawn. Cryo uptime
+matters again once the talent is unlocked.
+
+**Order for this team is now:** Mizuki to 70 → the two quests → re-test (expect
+17–22k Stellar numbers with Rosaria in) → everything else on this page.

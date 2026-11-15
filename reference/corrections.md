@@ -390,6 +390,31 @@ at, not the one you already know.*
 
 ---
 
+## Built every Mizuki plan on a talent the account hadn't unlocked (12–15 Nov)
+
+From 12 Nov, the Mizuki page, the team pages and research/14 all reasoned from
+**Vast Be the Dream**: the 1,000%-EM payload and Radiance: Stellar Swirl. I read
+the talent text from the wiki and never checked whether **this account** had it.
+
+It doesn't. It is a **Witch's Revelation** talent, unlocked by a quest that
+needs Mizuki at **Lv 70**. She is 60.
+
+**How it was caught:** the user's ~4k ceiling in a Lv 90 domain. Then their
+screenshot of the talent screen showing the lock and "Complete the relevant
+Witch's Revelation quest to unlock".
+
+My own 15 Nov read-out of the ~4k ("Radiance never triggered, Cryo was too
+thin") was a sound inference from a false premise, the same shape as the
+12 Nov entry. The Cryo point still matters, but only after the unlock.
+
+*Lesson: a talent on the wiki is not a talent on the account. Any talent
+marked "Witch's Revelation", "Hexerei" or similar is quest-gated. research/11
+already knew this for Fischl and Sucrose's Witch's Homework, also gated at
+Lv 70. **Before reasoning from a talent, confirm it is unlocked: the level
+gate, the quest gate, or the in-game talent screen.***
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.
