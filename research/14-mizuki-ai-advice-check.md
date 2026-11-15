@@ -171,3 +171,16 @@ characters, she can sit in only one of the two.
 
 **To settle it:** time the same domain with Rosaria and with Furina, three runs
 each.
+
+**Observed max hit: ~4k** (user, same run). The model gives her enhanced hit
+against Lv 90 enemies, with Valeriy's +100 EM (715 total) and before Furina's
+buff:
+
+| | non-crit | crit |
+|---|---|---|
+| without VV shred | 3.6k | 5.8k |
+| with VV shred | 4.6k | 7.5k |
+
+So **~4k is her normal non-crit enhanced hit.** It is not a bug, and it confirms
+the model. Crits of 6–7k are rare because her CRIT Rate is 15%. **CRIT Rate is
+the gap you can see**; EM from levels is the next one.
