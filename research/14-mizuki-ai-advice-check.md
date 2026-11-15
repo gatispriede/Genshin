@@ -281,3 +281,30 @@ Team: Traveler · Faruzan · Odette · Mizuki, against a **Lv 100** enemy.
 - **Timing rule (from the guide): the 2.5 s cooldown starts when the Swirl is
   triggered**, not when the enhanced hit lands. The payload rides her next
   periodic hit after that Swirl.
+
+### Second calibration — damage log, Lv 90 Mizuki (user screenshot, 15 Nov)
+
+Team: Mizuki · Traveler · Faruzan · Sucrose. The supports dealt 0 damage.
+- **Panel:** ATK 1,049; CRIT DMG 167%; CRIT Rate 169%, which includes a
+  +102.61% test bonus, so every hit crits. All DMG bonuses 0%; Anemo RES −10%.
+  EM is cut off.
+- **Log:** Stellar-Swirl, then hits of 14,496 and 15,694 (enhanced), 39,903, and
+  **99,758** (the nuke).
+
+**Fit:**
+
+| | Formula | Result |
+|---|---|---|
+| The nuke, solved for EM | Stellar: 10·EM × 1.03 × (1 + 6·EM/(EM+2000)) × RES × CRIT, **no DEF** | **EM ≈ 1,100** |
+| Enhanced hit at that EM | Ordinary: (0.5·ATK + 10·EM) × DEF 0.5 × RES × CRIT | **16.2k**, against **14.5k / 15.7k** logged |
+
+- One EM value explains both the nuke and the enhanced hits. **Both formulas
+  are confirmed.**
+- ~1,100 EM is what "Built" assumed above.
+- Enemy level is not shown; Lv 90 was assumed for DEF.
+
+**For this account, once the talent is unlocked:** the nuke scales on EM roughly
+quadratically, since EM sits in both the base and the bonus.
+- 1,100 EM → ~100k on a crit.
+- 715 EM (Mizuki now, plus Valeriy) → ~36k.
+- **EM is the stat to build, and CRIT Rate decides how often the nuke crits.**
