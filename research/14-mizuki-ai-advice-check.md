@@ -53,3 +53,34 @@ Cryo) and drops the dedicated healer; Mizuki's Burst heals through snacks.
 4. Rosaria past A4, only if she stays in the team, and with a 3★ placeholder
    polearm for now.
 5. Traveler to 70+.
+
+## Barbara or Fischl? (user: swap only if it adds damage; this is the ranged team)
+
+Both are ranged, so range doesn't decide it. On-field it's Mizuki either way.
+
+**Rules that decide it** (wiki, fetched 15 Nov):
+- **Stellar Swirl is Anemo + Cryo only.** Mizuki's second 1,000%-EM instance
+  needs her Radiance state, which a Stellar Swirl starts and which lasts 8s.
+- Her first 1,000%-EM bonus fires on *any* Swirl, once every 2.5s.
+- Fischl is Hexerei, but Secret Rite needs two Hexerei characters and Fischl at
+  Lv 70+. Nobody else in this team is Hexerei, so **no Secret Rite here**.
+
+**What each brings, at current stats** (roster 14 Nov; rough, before enemy DEF/RES):
+
+| | Damage | Cost |
+|---|---|---|
+| Barbara | ~0 | — her Hydro on Cryo makes Frozen. That is crowd control, and a Cryo aura Mizuki can still Stellar Swirl. |
+| Fischl (Lv 60, 875 ATK, 43.7/65.5, E lv 4) | Oz ≈ 1.1–1.3k per hit, about 1 hit/s at ~80% uptime, plus A4 strikes at 80% ATK → **roughly +1–1.5k DPS** | Electro + Cryo = Superconduct, which **eats the Cryo aura** Mizuki needs for Stellar Swirl. No healer. |
+
+For scale: Mizuki has 615 EM, so each 1,000%-EM instance has a base of ~6,150,
+and the Stellar one comes at most every 2.5s. That is ~2.5k DPS. Losing Radiance
+even a third of the time cancels most of what Oz adds.
+
+**Verdict:** Fischl *probably* adds a little. Whether he does depends on how often
+Superconduct starves the Cryo, and that can't be computed from here. **Don't
+change the team on paper; test it:**
+1. Same Domain or Abyss chamber, same rotation, three runs each line-up.
+2. Compare clear times.
+3. Fischl stays only if his times are faster.
+
+Until then the team stays Mizuki · Traveler · Rosaria · Barbara.
