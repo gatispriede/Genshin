@@ -84,3 +84,48 @@ change the team on paper; test it:**
 3. Fischl stays only if his times are faster.
 
 Until then the team stays Mizuki · Traveler · Rosaria · Barbara.
+
+## "That's low next to Varesa and Skirk — what gets it above 100k?" (15 Nov)
+
+**These are two different numbers.**
+- The AI's 45–55k is **team DPS**: all four characters' damage per second over a
+  rotation.
+- Varesa's ~50k (and the ~150k in showcase clips) is **one hit**
+  (research/13).
+- Varesa's team DPS is in the same tens-of-thousands range. A 45–55k team is not
+  a weak team.
+
+**Per hit, Mizuki never gets near 100k.** Her damage is many mid-size AoE hits,
+not one nuke. Rough model: crit hit = (0.5×ATK + 10×EM) × DMG × DEF × RES ×
+(1+CRIT DMG), against a Lv 100 enemy.
+- **Now** (Lv 60, 615 EM, 63% CRIT DMG): about **4.9k**.
+- **Built** (Lv 90, ~1,050 EM, 100% CRIT DMG, VV shred): about **14k**, plus a
+  Stellar instance of roughly the same size.
+
+The talent part of the formula is approximated. The EM term dominates, so the
+error is small.
+
+**100k team DPS** is beyond this account's 4★ weapons for any team.
+
+### What raises her damage, biggest first
+1. **Level 60 → 90, EM pieces to +20, Sacrificial Fragments to 90.** Takes EM
+   from 615 to ~1,000: **≈ ×1.6** on the payload, which is 10× EM.
+2. **CRIT Rate.** At 15% her average multiplier is ×1.09; 50/100 gives ×1.5.
+   **≈ ×1.35** on average.
+3. **A DMG buffer.** Furina (fanfare, up to +75% DMG) or Mona (Omen, +DMG taken)
+   multiply everything. Both are owned but sit in the Varesa and Skirk teams.
+   Abyss needs 8 different characters, so Mizuki can borrow only from the team
+   that isn't on the other half.
+4. **Constant Cryo** keeps Radiance (the ×2) up.
+   - Escoffier, Charlotte and Mika are Cryo too, but are already in teams.
+   - Free Cryo characters: Chongyun Lv 40, Kaeya Lv 32 (both melee, both
+     unbuilt), and Rosaria.
+   - Escoffier's RES shred is Hydro/Cryo only, so it does nothing for Anemo.
+
+### Roster check (14 Nov): who's free for this team
+- **Not in the Varesa or Skirk teams:** Traveler, Rosaria, Barbara, Fischl,
+  Chongyun, Kaeya, Lisa, Dahlia, Tighnari, Lynette, Sayu, plus unbuilt
+  4★s/5★s.
+- **None of them is a damage multiplier on Furina/Mona's level.** The current
+  four, Mizuki · Traveler · Rosaria · Barbara, is already the best free line-up.
+  The gains are in levelling it, not in swapping.
