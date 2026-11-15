@@ -366,6 +366,30 @@ defending mine: they had been playing the correct team all along.*
 
 ---
 
+## Sized Mizuki's Stellar hit with the wrong formula (15 Nov)
+
+In research/14 I modelled Mizuki's damage with the ordinary formula
+(ATK/EM base × DMG% × DEF × RES × CRIT). I then assumed her **Radiance: Stellar
+Swirl** instance was "roughly the same size" and told the user she "never gets
+near 100k per hit".
+
+That instance is **Stellar Glimmer reaction DMG**, and it uses the Lunar formula:
+- no DEF multiplier;
+- generic DMG% does not apply;
+- a (1 + 6·EM/(EM+2000)) EM bonus, on top of a base that is already 1,000% of EM.
+
+At 715 EM it is ~17–22k before crits, not ~4.6k. Built, it crits for ~80k+.
+
+**How it was caught:** the user's screenshot of a showcase with ~500k numbers.
+
+*Lesson: "considered Stellar Swirl reaction DMG" was in the talent text I quoted.
+That phrase names the formula. When a talent says its damage counts as a
+reaction, look up that reaction's damage formula before estimating it. This is
+the same failure as 12 Nov, one level down: read the mechanic the text points
+at, not the one you already know.*
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.

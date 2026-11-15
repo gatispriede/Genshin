@@ -72,9 +72,9 @@ Both are ranged, so range doesn't decide it. On-field it's Mizuki either way.
 | Barbara | ~0 | — her Hydro on Cryo makes Frozen. That is crowd control, and a Cryo aura Mizuki can still Stellar Swirl. |
 | Fischl (Lv 60, 875 ATK, 43.7/65.5, E lv 4) | Oz ≈ 1.1–1.3k per hit, about 1 hit/s at ~80% uptime, plus A4 strikes at 80% ATK → **roughly +1–1.5k DPS** | Electro + Cryo = Superconduct, which **eats the Cryo aura** Mizuki needs for Stellar Swirl. No healer. |
 
-For scale: Mizuki has 615 EM, so each 1,000%-EM instance has a base of ~6,150,
-and the Stellar one comes at most every 2.5s. That is ~2.5k DPS. Losing Radiance
-even a third of the time cancels most of what Oz adds.
+For scale: ~~the Stellar instance is ~2.5k DPS~~ — **corrected 15 Nov, see
+"Correction: the Stellar instance" below.** It is about 4× that, so losing
+Radiance costs far more than Oz adds. That makes the case against Fischl stronger.
 
 **Verdict:** Fischl *probably* adds a little. Whether he does depends on how often
 Superconduct starves the Cryo, and that can't be computed from here. **Don't
@@ -95,15 +95,15 @@ Until then the team stays Mizuki · Traveler · Rosaria · Barbara.
 - Varesa's team DPS is in the same tens-of-thousands range. A 45–55k team is not
   a weak team.
 
-**Per hit, Mizuki never gets near 100k.** Her damage is many mid-size AoE hits,
-not one nuke. Rough model: crit hit = (0.5×ATK + 10×EM) × DMG × DEF × RES ×
-(1+CRIT DMG), against a Lv 100 enemy.
+~~Per hit, Mizuki never gets near 100k.~~ **Wrong — corrected below.** The model
+here is right for her *enhanced hit* (ordinary Anemo DMG): crit hit =
+(0.5×ATK + 10×EM) × DMG × DEF × RES × (1+CRIT DMG), against a Lv 100 enemy.
 - **Now** (Lv 60, 615 EM, 63% CRIT DMG): about **4.9k**.
-- **Built** (Lv 90, ~1,050 EM, 100% CRIT DMG, VV shred): about **14k**, plus a
-  Stellar instance of roughly the same size.
+- **Built** (Lv 90, ~1,050 EM, 100% CRIT DMG, VV shred): about **14k**.
 
-The talent part of the formula is approximated. The EM term dominates, so the
-error is small.
+It was wrong to assume her *Stellar instance* is about the same size. It uses a
+different formula and is several times larger; see "Correction: the Stellar
+instance".
 
 **100k team DPS** is beyond this account's 4★ weapons for any team.
 
@@ -189,3 +189,60 @@ the gap you can see**; EM from levels is the next one.
 14 Nov roster (Lv 40 there). She stays in the Varesa team. The Mizuki team
 stays Mizuki · Traveler · Rosaria · Valeriy. Re-read HoYoLAB before quoting
 Furina's level or stats.
+
+## Correction: the Stellar instance (15 Nov)
+
+Prompted by a showcase thumbnail with ~500k hits. That thumbnail is unverified,
+but it exposed the error.
+
+**The wiki's Damage page** ("Lunar and Stellar Glimmer Reaction Damage", fetched
+15 Nov): Stellar Swirl and Stellar-Conduct share the Lunar formula. Direct
+Stellar DMG counts as reaction DMG:
+
+> DMG = talent% × stat × (1 + Reaction Base DMG Bonus) × (1 + 6·EM/(EM+2000) +
+> Reaction Bonus) × RES × CRIT
+
+- **No DEF multiplier.**
+- **Generic DMG% does not apply.**
+- EM counts twice: once in the base (1,000% of EM) and again in the bonus.
+- Base bonus comes from the Stellar Jubilee passive: Cryo Traveler up to +7%
+  (0.35% per 100 of his ATK); Odette, Sandrone and Vesna up to +14%.
+- CRIT uses ordinary CRIT stats.
+
+**Mizuki's Radiance instance** (1,000% of EM):
+
+| | EM | non-crit, no shred | with VV shred | crit (with shred) |
+|---|---|---|---|---|
+| Now + Valeriy | 715 | ~17k | ~22k | ~36k (at 63% CRIT DMG) |
+| Built | ~1,100 | ~37k | ~42k | ~83k (at 100% CRIT DMG) |
+
+- **100k+ per hit is reachable** with more CRIT DMG or a +14% enabler. The 500k
+  in the thumbnail is beyond that and is not explained here (constellations,
+  Theater buffs, or several targets).
+- **Valeriy's +100 EM is worth more than estimated:** 615 → 715 EM raises this
+  instance by **~24%**, not ~16%.
+
+**Read-out for the Furina test (max ~4k):** the Stellar instance should show as
+~17–22k. It never appeared, so **Radiance never triggered**.
+- Traveler's passive has no unlock condition: it turns every Cryo Swirl and
+  every Superconduct into its Stellar version.
+- Without Rosaria, his Skill was the only Cryo source. Mizuki mostly swirled
+  Furina's Hydro and Valeriy's Electro, which give plain Swirl and no Radiance.
+- **Test with Rosaria back:** numbers around 17–22k (36k on crits) mean the
+  team is working. If they never show, Cryo is still too thin.
+
+## Community team list (user screenshot of Google AI, 15 Nov)
+
+**Baseline:** Mizuki · Cryo Traveler/Odette · Sucrose/C6 Faruzan · Qiqi/Diona.
+"Core": Mizuki / Cryo Traveler / Sucrose / Odette.
+
+| Pick | Owned? | Note |
+|---|---|---|
+| Odette | **No** | +14% Stellar base, double the Traveler's +7% |
+| Sucrose | Yes, Lv 50 — **in the Varesa team** | Shares 20% of her EM; swirls Cryo herself, which also puts Mizuki into Radiance. Weak at 94 EM today. |
+| Faruzan, Kazuha, Qiqi, Diona, Vodyanitsa | **No** | Diona C6 would add +40% Reaction Bonus to Stellar Swirl |
+
+The only owned piece of the community core is Sucrose, and she is committed to
+Varesa. **The current line-up stays: Mizuki · Traveler · Rosaria · Valeriy.**
+The lesson from that list matches the correction above: **keep Cryo constant
+and stack EM.**
