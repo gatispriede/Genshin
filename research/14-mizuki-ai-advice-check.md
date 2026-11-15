@@ -266,3 +266,16 @@ matters again once the talent is unlocked.
 
 **Order for this team is now:** Mizuki to 70 → the two quests → re-test (expect
 17–22k Stellar numbers with Rosaria in) → everything else on this page.
+
+## Showcase calibration (user screenshot of a rotation guide, 15 Nov)
+
+Team: Traveler · Faruzan · Odette · Mizuki, against a **Lv 100** enemy.
+- A single hit of **102,726**. This matches the corrected model: built crit
+  ~83k with the Traveler's +7%, and Odette's +14% plus Faruzan's buffs carry it
+  past 100k. The "100k+ per hit is reachable" correction holds; the old "never
+  near 100k" is confirmed wrong.
+- **DPS meter 39,029** (2 s into the fight, so not a rotation average). That is
+  the same order as the AI's 45–55k team-DPS claim, with premium supports.
+- **Timing rule (from the guide): the 2.5 s cooldown starts when the Swirl is
+  triggered**, not when the enhanced hit lands. The payload rides her next
+  periodic hit after that Swirl.
