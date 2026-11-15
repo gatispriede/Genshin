@@ -129,3 +129,26 @@ error is small.
 - **None of them is a damage multiplier on Furina/Mona's level.** The current
   four, Mizuki · Traveler · Rosaria · Barbara, is already the best free line-up.
   The gains are in levelling it, not in swapping.
+
+## Valeriy (C6) instead of Fischl? (15 Nov)
+
+Kit from the wiki, fetched 15 Nov. His talent pages: Active Defense: Bastion
+Charge, Into the Breach, Ranks That Charge as One, and the rest.
+
+| | For Mizuki | Note |
+|---|---|---|
+| **C2** — all party members **+100 EM for 18s** after his E; **E cooldown 10s** | **Permanent +100 EM.** Her payload is 10× EM, so +1,000 base on each instance: **≈ +16% now, ≈ +10% built**, on both the Swirl and the Stellar hit | The deciding line |
+| Supercharged Shield (ATK-scaled; 250% vs Electro) | Covers the interruption Barbara's healing covered | Mizuki's own burst heals too |
+| Offensive Directive (A1) | **Nothing.** It buffs Electro DMG only | — |
+| C6 — his charged attack and burst shells +100% DMG | His own damage only | Off-field burst damage is a bonus |
+| Electro application | Superconduct eats Cryo, as with Fischl | Only on his E/Q casts, so **less often than Oz** |
+
+**Verdict: Valeriy beats Fischl here.**
+- He gives a flat, always-on buff to Mizuki's main stat.
+- He uses up less Cryo.
+- He's melee, but he only swaps in to cast E every 10s. Mizuki stays the one on
+  the field, so the team still fights at range.
+
+Against Barbara he trades healing and Freeze for +100 EM and a shield. That is
+likely a damage gain, but **confirm it with the same clear-time test**: three
+runs each, same chamber, same rotation.
