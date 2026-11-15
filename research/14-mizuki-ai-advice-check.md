@@ -308,3 +308,60 @@ quadratically, since EM sits in both the base and the bonus.
 - 1,100 EM → ~100k on a crit.
 - 715 EM (Mizuki now, plus Valeriy) → ~36k.
 - **EM is the stat to build, and CRIT Rate decides how often the nuke crits.**
+
+## Cross-check: Zajef77, "The Ultimate Mizuki Guide (Part 1)" (recorded 7.1)
+
+Source: `reference/transcripts/zajef-mizuki-guide-part1.md`. Read 15 Nov: the
+kit, damage, constellations, weapons, artifacts, damage-expectation and team
+chapters (0:09:58–1:15:19). Not read: the rotation chapters (1:15:19 on) and
+the minor weapons (0:42:11–0:51:54). Timestamps are in brackets.
+
+**Confirms what this file already says**
+- **Stellar damage ignores DEF; EM counts twice** (base and multiplier) [22:17,
+  23:19]. This is the 15 Nov correction.
+- **Character level does not raise the Stellar nuke** [22:41]. Only the
+  vortex/reaction part scales on level [25:34].
+- **The enhanced "fart" is ~15k, the nuke ~100k** [18:48, 19:20]. This matches
+  the damage-log calibration at ~1,100 EM.
+- **Most of her damage is the Stellar passive (Vast Be the Dream)** [18:06].
+  The farts and burst barely matter.
+- **Skill first; burst is mostly defensive; she doesn't need the crown**
+  [32:43].
+- **Mains: EM / EM / CRIT circlet.** An EM circlet is fine while EM is low.
+  ATK, HP, DEF and ER don't matter [55:04].
+
+**New, and relevant to this account**
+- **Double Cryo is close to mandatory** [58:43]. "The nuke will just get skipped
+  if you're not triggering reactions." Swirling other elements works only if a
+  Stellar Swirl is re-triggered at least every 8 s to keep Radiance [59:17].
+  **Keep Rosaria.**
+- **Valeriy is a fallback, not a pick:** "Valeri if you have a C2… if you want a
+  shielder", then "you don't care about getting a shielder" [1:10:34]. Her farts
+  continue through stagger.
+  - Separate risk: Electro → Superconduct → **Stellar-Conduct**. He warns that
+    Stellar-Conduct "makes Cryo MC worse" as a support, because it costs the
+    off-field Cryo application that keeps her swirls coming [1:05:13, about
+    Yae]. The same applies to Valeriy.
+  - His +100 EM is still real. **Re-test Valeriy against Barbara and Sucrose
+    once the talent is unlocked.**
+- **His last-slot ranking:** Faruzan C6 > Vodyanitsa > Sucrose, all close
+  [1:02:12]. Sucrose is the one this account owns, and she is in the Varesa
+  team.
+- **Sacrificial Fragments needs R4+** for its double-skill tech [37:08]. **This
+  account's is R2**, so it is an EM stat stick only. R1 Widsith is worse than
+  R1 Sac Frag on stats [41:52].
+- **Sets: Gilded ≈ 2p/2p EM ≈ 4pc VV.** Pick by substats [53:59]. VV on Mizuki
+  is best when the second Anemo wears Instructor.
+- **Cryo Traveler without Odette** should wear the Stellar team set (caption:
+  "furnace" — name unverified) [1:06:30]. Otherwise ATK 2p/2p or Tenacity [1:07:38].
+- **Not worth it:** Kazuha (DMG% does nothing for her) [1:11:07], or random
+  small EM passives [1:11:40].
+
+**Unresolved:** the 0:56:22 table's "DMG CRIT" row reads 21,286–39,209 (frame
+checked at full resolution). The narration around it says "north of 200k to
+280–290" and "350… upwards of 400k". Either the auto-captions are wrong or the
+two describe different measures. **Don't quote either until the video is
+checked by ear.**
+
+**Not in the guide at all:** the quest lock on Vast Be the Dream. Guides assume
+it is unlocked.
