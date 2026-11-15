@@ -270,10 +270,12 @@ matters again once the talent is unlocked.
 ## Showcase calibration (user screenshot of a rotation guide, 15 Nov)
 
 Team: Traveler · Faruzan · Odette · Mizuki, against a **Lv 100** enemy.
-- A single hit of **102,726**. This matches the corrected model: built crit
-  ~83k with the Traveler's +7%, and Odette's +14% plus Faruzan's buffs carry it
-  past 100k. The "100k+ per hit is reachable" correction holds; the old "never
-  near 100k" is confirmed wrong.
+- A single hit of **102,726**, at 1.98 s, **with no support buffs cast yet** (user).
+  Passives still apply without casting: Odette's Stellar Jubilee (+14% Stellar
+  base DMG, always on) and the Traveler's conversion. The showcase's own build
+  (weapon, constellations, EM, CRIT) is not visible, so the gap to the model's
+  ~83k built crit can't be split between gear and passives. The direction holds:
+  "100k+ per hit is reachable", and "never near 100k" is confirmed wrong.
 - **DPS meter 39,029** (2 s into the fight, so not a rotation average). That is
   the same order as the AI's 45–55k team-DPS claim, with premium supports.
 - **Timing rule (from the guide): the 2.5 s cooldown starts when the Swirl is
