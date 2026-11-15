@@ -88,8 +88,8 @@ const profiles: Character[] = [
   },
   {
     name: 'Barbara', element: 'Hydro', weaponType: 'Catalyst', rarity: 4, level: 70,
-    constellation: null, owned: true, fieldRole: 'off-field', teams: ['mizuki'], tier: 3,
-    paidIn: 'gear', verified: '2026-11-12',
+    constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null,
+    note: 'Left the Mizuki team on 15 Nov for Valeriy (+100 EM from his C2).', verified: '2026-11-12',
   },
   {
     name: 'Rosaria', element: 'Cryo', weaponType: 'Polearm', level: 1,
@@ -142,7 +142,7 @@ const profiles: Character[] = [
 
   { name: 'Tighnari', element: 'Dendro', weaponType: 'Bow', rarity: 5, level: 70, constellation: null, owned: true, teams: [], tier: null, note: 'Only levelled Dendro. Dendro breaks Hydro wards at x2 where the teams manage x1.', page: 'tighnari-build.html', verified: '2026-11-12' },
   { name: 'Alyosha', element: 'Electro', weaponType: 'Polearm', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
-  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
+  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: ['mizuki'], tier: 3, paidIn: 'levels', note: 'Mizuki team from 15 Nov. C6 on the account: his C2 gives the party +100 EM for 18s after his Skill (10s cooldown), so it never drops. Swap in, Skill, swap out. Levels only grow his shield.', verified: '2026-11-15' },
   { name: 'Dahlia', element: 'Hydro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Fischl', element: 'Electro', weaponType: 'Bow', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null, page: 'fischl-build.html', verified: '2026-11-12' },
   { name: 'Lisa', element: 'Electro', weaponType: 'Catalyst', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
