@@ -374,3 +374,22 @@ checked by ear.**
 
 **Not in the guide at all:** the quest lock on Vast Be the Dream. Guides assume
 it is unlocked.
+
+### Weapon ranking frame (Zajef guide, 0:41:57; user screenshot)
+
+Relative damage, **Widsith R5 = 100%**. From the top: Starsealed Edict 110.4%,
+Sunny Morning Sleep-In (signature) 109.1%, Widsith R5 reset for the EM buff
+107.5%, Reliquary of Truth 106.9%, Starcaller's Watch 103.1%, Sac Jade R5
+102.0%, Thousand Floating Dreams 101.8%. Further down:
+
+| Weapon | % | Owned? |
+|---|---|---|
+| Widsith R1 | 97.8 | **R2**, on Varesa: ~98% |
+| **Sac Frag, only 1 skill** | **97.3** | **R2, on Mizuki.** Below R4 it never gets the double-skill tech, so this row is the one that applies |
+| No weapon | 88.7 | — |
+
+**Verdict:** taking the Widsith from Varesa would gain about 1% for Mizuki and
+cost Varesa her weapon. **Keep Sacrificial Fragments on Mizuki.** The owned
+catalysts not in the frame (Otherworldly Story, Favonius Codex, Emerald Orb,
+Thrilling Tales) were not ranked; this file makes no claim about them. Weapon
+choice is the smallest lever she has. EM and the unlock come first.
