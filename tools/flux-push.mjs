@@ -16,6 +16,7 @@
 
 import { build } from 'esbuild';
 import { gearRows, idealRows } from './gear-check.mjs';
+import { homeModules } from './flux-home.mjs';
 import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { connect, call } from './flux-client.mjs';
@@ -338,24 +339,8 @@ const main = async () => {
   console.log(`created ${3 + charRows.length + teamRows.length} pages`);
 
   // 3. modules, now that every href resolves.
-  await writeModules(root, [
-    heading('Genshin Impact', 'Account notes',
-      `${data.characters.filter((c) => c.owned).length} characters · ${teams.length} teams · read 2026-11-12`),
-    { type: 'FEATURE_GRID', style: 'default', content: json({
-      columns: 2,
-      features: teams.map((t) => ({
-        key: t.id, title: t.name,
-        description: t.members.map((m) => m.character).join(' · '),
-      })),
-    }) },
-    { type: 'LIST', style: 'default', content: json({
-      title: 'Sections',
-      items: [
-        { label: 'Builds', value: `${characters.length} characters`, href: buildsUrl },
-        { label: 'Teams', value: `${teams.length} teams`, href: teamsUrl },
-      ],
-    }) },
-  ]);
+  await writeModules(root, homeModules({ rootUrl, teams, characters: data.characters, pages: data.pages,
+                                         liveReadAt: data.liveReadAt, links }));
 
   await writeModules(buildsRoot, [
     heading('Characters', 'Builds', `${characters.length} characters currently fielded`),
