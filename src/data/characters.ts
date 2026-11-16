@@ -31,7 +31,7 @@ const profiles: Character[] = [
     targetMains: { sands: 'ATK%', goblet: 'Electro DMG', circlet: 'CRIT DMG' }, // varesa-build.html
     targetSet: "Long Night's Oath (BiS) or Obsidian Codex",
     note: 'Max level, wearing all five pieces of Long Night’s Oath (4-piece bonus active). Corrected 14 Nov from HoYoLAB: earlier notes read the five piece names as five sets and concluded she had no set bonus. Still true: the goblet is ATK%, so Electro DMG Bonus is 0.0% — an Electro goblet is the biggest single gain.',
-    page: 'varesa-build.html', verified: '2026-11-12',
+    page: 'varesa-build.html', targetSubs: ["CRIT Rate", "CRIT DMG", "ATK%", "ATK"], targetWeapon: "The Widsith (owned); her signature is better", gearSource: "varesa-build.html: ER to her need, then CRIT, ATK%, flat ATK", verified: '2026-11-12',
   },
   {
     name: 'Yumemizuki Mizuki', element: 'Anemo', weaponType: 'Catalyst', rarity: 5,
@@ -49,7 +49,7 @@ const profiles: Character[] = [
     targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'CRIT Rate or CRIT DMG' }, // mizuki-build.html
     targetSet: 'Viridescent Venerer (with Sucrose on Instructor), or Gilded Dreams / 2pc-2pc EM',
     note: 'Stellar Swirl carry. Vast Be the Dream unlocked 16 Nov at Lv 70: ~23k often, ~65k crits. 15% CRIT Rate is the gap - her payload crits.',
-    page: 'mizuki-build.html', verified: '2026-11-12',
+    page: 'mizuki-build.html', targetSubs: ["Elemental Mastery", "CRIT Rate", "CRIT DMG", "Energy Recharge"], targetWeapon: "Sacrificial Fragments (owned, R2)", gearSource: "mizuki-build.html and Zajef's guide: EM about equal to CRIT", verified: '2026-11-12',
   },
   {
     name: 'Furina', element: 'Hydro', weaponType: 'Sword', rarity: 5,
@@ -60,7 +60,7 @@ const profiles: Character[] = [
     targetSet: 'Golden Troupe', setProgress: 'partial',
     targetMains: { sands: 'ER% or HP%', goblet: 'HP%', circlet: 'CRIT' },
     note: 'Her party buff ignores her level - burst talent 1 to 10 takes it from +21% to +75%. Level to 60 and stop.',
-    page: 'furina-build.html', verified: '2026-11-12',
+    page: 'furina-build.html', targetSubs: ["HP%", "CRIT Rate", "CRIT DMG", "Energy Recharge"], targetWeapon: "Favonius Sword (owned)", gearSource: "furina-build.html: HP% sands and goblet; her buff reads Fanfare and talent, not stats", verified: '2026-11-12',
   },
   {
     name: 'Skirk', element: 'Cryo', weaponType: 'Sword', rarity: 5, level: 90,
@@ -68,7 +68,7 @@ const profiles: Character[] = [
     paidIn: 'gear', targetMains: { sands: 'ATK%', goblet: 'Cryo DMG or ATK%', circlet: 'CRIT' }, // skirk-build.html
     targetSet: 'Finale of the Deep Galleries',
     note: 'Max level. Needs Cryo reactions nearby to spawn Void Rifts for her ATK stacks.',
-    page: 'skirk-build.html', verified: '2026-11-12',
+    page: 'skirk-build.html', targetSubs: ["CRIT Rate", "CRIT DMG", "ATK%", "ATK"], targetWeapon: "The Black Sword (owned)", gearSource: "skirk-build.html: CRIT, ATK%, flat ATK; ER and EM are dead rolls", verified: '2026-11-12',
   },
   {
     name: 'Escoffier', element: 'Cryo', weaponType: 'Polearm', rarity: 5, level: 70,
@@ -76,7 +76,7 @@ const profiles: Character[] = [
     paidIn: 'talents', targetSet: 'Golden Troupe', setProgress: 'partial',
     targetMains: { sands: 'ATK%', goblet: 'Cryo DMG%', circlet: 'CRIT' },
     note: 'Cryo RES shred is talent-scaled, so books beat levels.',
-    page: 'escoffier-build.html', verified: '2026-11-12',
+    page: 'escoffier-build.html', targetSubs: ["Energy Recharge", "ATK%", "CRIT DMG", "CRIT Rate"], targetWeapon: "Prototype Starglitter (owned)", gearSource: "escoffier-build.html: ER until her Burst is reliable, then ATK% and CRIT; her healing scales on ATK", verified: '2026-11-12',
   },
   {
     name: 'Mona', element: 'Hydro', weaponType: 'Catalyst', level: 57,
@@ -84,7 +84,7 @@ const profiles: Character[] = [
     targetSet: 'Tenacity of the Millelith', setProgress: 'partial',
     targetMains: { sands: 'ER%', goblet: 'Hydro DMG% or ATK%', circlet: 'CRIT or HP%' }, unresearched: true,
     note: 'Wants 200%+ ER and Thrilling Tales of the Dragon Slayers to pass ATK to Skirk.',
-    verified: '2026-11-12',
+    targetSubs: ["Energy Recharge", "ATK%", "CRIT Rate", "CRIT DMG"], targetWeapon: "Thrilling Tales of Dragon Slayers (passes ATK to Skirk)", gearSource: "unresearched: teams.ts note and characters.ts; ER first for her Omen Burst", verified: '2026-11-12',
   },
   {
     name: 'Barbara', element: 'Hydro', weaponType: 'Catalyst', rarity: 4, level: 70,
@@ -96,13 +96,13 @@ const profiles: Character[] = [
     constellation: null, owned: true, teams: ['mizuki', 'skirk'], tier: 2, paidIn: 'levels',
     unresearched: true,
     note: 'Wanted by two teams and still Lv 1. Up to 15% team CRIT Rate, plus Cryo resonance.',
-    verified: '2026-11-12',
+    targetSet: 'The Exile (party energy) or 2pc/2pc ER', targetMains: { sands: 'Energy Recharge', goblet: 'ATK% or Cryo DMG', circlet: 'CRIT Rate' }, targetSubs: ["Energy Recharge", "CRIT Rate", "ATK%"], targetWeapon: "Favonius Lance (not owned); Dragon's Bane for now", gearSource: "unresearched: her job in the Mizuki team is Burst uptime (Ice Lance Cryo), so ER first; CRIT Rate for her party CRIT share once ascended", verified: '2026-11-12',
   },
   {
     name: 'Traveler', element: 'Cryo', weaponType: 'Sword', rarity: 5, level: 40,
     constellation: null, owned: true, teams: ['mizuki'], tier: 1, paidIn: 'gear',
     note: 'Cryo form is the only Stellar Jubilee passive owned - it converts Cryo Swirl into Stellar Swirl. His own damage is level-independent, so level him only to survive.',
-    verified: '2026-11-12',
+    targetSet: 'Heart of the Furnace', targetMains: { sands: 'ATK% or Elemental Mastery', goblet: 'Cryo DMG or ATK%', circlet: 'CRIT Rate or CRIT DMG' }, targetSubs: ["CRIT Rate", "CRIT DMG", "ATK%", "Elemental Mastery"], targetWeapon: "Exaiphanes Blade (owned)", gearSource: "Zajef's Mizuki guide, 1:06:30-1:09: Heart of the Furnace without Odette; ATK and EM about equal for his Stellar reaction share", verified: '2026-11-12',
   },
   {
     name: 'Kachina', element: 'Geo', weaponType: 'Polearm', rarity: 4, level: 50,
@@ -118,7 +118,7 @@ const profiles: Character[] = [
     // EM in all three slots, per sucrose-build.html.
     targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'Elemental Mastery' },
     note: 'Mizuki team from 16 Nov. Mollis Favonius gives the party 20% of her EM - a gear number, not a level one. 4pc Instructor (VV stays on Mizuki); Fruit of Fulfillment from a Midlander catalyst billet.',
-    page: 'sucrose-build.html', verified: '2026-11-12',
+    page: 'sucrose-build.html', targetSubs: ["Elemental Mastery", "Energy Recharge", "CRIT Rate"], targetWeapon: "Fruit of Fulfillment (owned); Sacrificial Fragments for the extra Skill", gearSource: "sucrose-build.html: EM, then ER to need", verified: '2026-11-12',
   },
   {
     name: 'Xiangling', element: 'Pyro', weaponType: 'Polearm', rarity: 4, level: 40,
@@ -131,7 +131,7 @@ const profiles: Character[] = [
     name: 'Mika', element: 'Cryo', weaponType: 'Polearm', rarity: 4, level: 45,
     constellation: null, owned: true, teams: ['skirk'], tier: 3, targetMains: { sands: 'HP%', goblet: 'HP%', circlet: 'Healing Bonus' }, // support-squad.html
     paidIn: 'gear',
-    note: 'Likely replaced by Rosaria once she is levelled.', verified: '2026-11-12',
+    note: 'Likely replaced by Rosaria once she is levelled.', targetSet: 'Noblesse Oblige', targetSubs: ["HP%", "Energy Recharge"], targetWeapon: "Favonius Lance (not owned)", gearSource: "characters.ts: healing scales on HP", verified: '2026-11-12',
   },
   {
     name: 'Bennett', element: 'Pyro', weaponType: 'Sword', rarity: 4, level: 0,
@@ -142,11 +142,11 @@ const profiles: Character[] = [
 
   { name: 'Tighnari', element: 'Dendro', weaponType: 'Bow', rarity: 5, level: 70, constellation: null, owned: true, teams: [], tier: null, note: 'Only levelled Dendro. Dendro breaks Hydro wards at x2 where the teams manage x1.', page: 'tighnari-build.html', verified: '2026-11-12' },
   { name: 'Alyosha', element: 'Electro', weaponType: 'Polearm', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
-  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: ['varesa'], tier: 3, paidIn: 'levels', note: 'Varesa team from 16 Nov (was Mizuki, 15 Nov): Offensive Directive adds to on-field Electro hits, C6 gives +10% Electro CRIT Rate on enemies he hits, and his shield covers Varesa’s plunges. C2: party +100 EM for 18s after his Skill (10s cooldown). Also the Theater Act 4-6 support, 16 Nov.', verified: '2026-11-16' },
+  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: ['varesa'], tier: 3, paidIn: 'levels', note: 'Varesa team from 16 Nov (was Mizuki, 15 Nov): Offensive Directive adds to on-field Electro hits, C6 gives +10% Electro CRIT Rate on enemies he hits, and his shield covers Varesa’s plunges. C2: party +100 EM for 18s after his Skill (10s cooldown). Also the Theater Act 4-6 support, 16 Nov.', targetSet: 'Tenacity of the Millelith (worn) or 2pc/2pc ATK%', targetMains: { sands: 'ATK% or Energy Recharge', goblet: 'ATK%', circlet: 'ATK% or CRIT' }, targetSubs: ["ATK%", "Energy Recharge", "CRIT Rate", "CRIT DMG"], targetWeapon: "Favonius Sword (owned)", gearSource: "unresearched: his shield and Offensive Directive both scale on his ATK", verified: '2026-11-16' },
   { name: 'Dahlia', element: 'Hydro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Fischl', element: 'Electro', weaponType: 'Bow', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null, page: 'fischl-build.html', verified: '2026-11-12' },
   { name: 'Lisa', element: 'Electro', weaponType: 'Catalyst', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
-  { name: 'Charlotte', element: 'Cryo', weaponType: 'Catalyst', level: 50, constellation: null, owned: true, teams: ['varesa'], tier: 2, unresearched: true, targetSet: 'Noblesse Oblige', setProgress: 'none', targetMains: { sands: 'ER%', goblet: 'ATK%', circlet: 'Healing Bonus or ATK%' }, note: 'Back in the Varesa team as healer (14 Nov, in-game). Burst heals the party to max Furina’s Fanfare; Noblesse Oblige gives Varesa +20% ATK. Her Cryo meets Furina’s Hydro as Freeze, which competes with Electro-Charged.', verified: '2026-11-14' },
+  { name: 'Charlotte', element: 'Cryo', weaponType: 'Catalyst', level: 50, constellation: null, owned: true, teams: ['varesa'], tier: 2, unresearched: true, targetSet: 'Noblesse Oblige', setProgress: 'none', targetMains: { sands: 'ER%', goblet: 'ATK%', circlet: 'Healing Bonus or ATK%' }, note: 'Back in the Varesa team as healer (14 Nov, in-game). Burst heals the party to max Furina’s Fanfare; Noblesse Oblige gives Varesa +20% ATK. Her Cryo meets Furina’s Hydro as Freeze, which competes with Electro-Charged.', page: 'charlotte-build.html', targetSubs: ["ATK%", "Energy Recharge", "ATK"], targetWeapon: "Thrilling Tales of Dragon Slayers R5 (owned; +48% ATK to Varesa)", gearSource: "charlotte-build.html: her healing scales on ATK only", verified: '2026-11-14' },
   { name: 'Chongyun', element: 'Cryo', weaponType: 'Claymore', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Noelle', element: 'Geo', weaponType: 'Claymore', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Amber', element: 'Pyro', weaponType: 'Bow', rarity: 4, level: 40, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },

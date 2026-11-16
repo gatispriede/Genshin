@@ -84,6 +84,12 @@ export interface Character {
   setProgress?: SetProgress;
   /** Main stats to aim for on the three variable slots. */
   targetMains?: TargetMains;
+  /** Substat priority, best first, in HoYoLAB's stat names ("CRIT Rate", "ATK%"). */
+  targetSubs?: string[];
+  /** The weapon the job wants: owned, or worth getting. */
+  targetWeapon?: string;
+  /** Where the targets come from; "unresearched" targets say so here. */
+  gearSource?: string;
   /** Never looked up — flagged in reference/research-coverage.md. */
   unresearched?: boolean;
   note?: string;
@@ -110,5 +116,9 @@ export interface Team {
   breaks: string[];
   cannotBreak: string[];
   note?: string;
+  /** Rotation, in order. Each step: who, and what to press and why. */
+  rotation?: { who: string; does: string }[];
+  /** Where the rotation comes from, and what it assumes. */
+  rotationNote?: string;
   page?: string;
 }

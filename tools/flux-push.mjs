@@ -15,6 +15,7 @@
  */
 
 import { build } from 'esbuild';
+import { gearRows, idealRows } from './gear-check.mjs';
 import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { connect, call } from './flux-client.mjs';
@@ -107,6 +108,11 @@ function characterModules(c, teamName) {
       content: json({ title: allOff ? 'Artifacts — no set bonus active' : 'Artifacts', items }) });
   }
 
+  // Equipped gear against target, then the ideal build (tools/gear-check.mjs).
+  for (const [title, items] of [['Gear vs target', gearRows(c)], ['Ideal build', idealRows(c)]]) {
+    if (items.length) mods.push({ type: 'KEY_VALUE_DOSSIER', style: 'spec', content: json({ title, items }) });
+  }
+
   if (c.note) {
     mods.push({ type: 'FAQ_ACCORDION', style: 'bordered',
       content: json({ title: 'Notes', mode: 'single',
@@ -136,6 +142,18 @@ function teamModules(t) {
         value: t.cannotBreak.length ? t.cannotBreak.join(', ') : 'nothing — covers everything' },
     ],
   }) });
+
+  if (t.rotation?.length) {
+    mods.push({ type: 'LIST', style: 'numbered', content: json({
+      title: 'Rotation',
+      items: t.rotation.map((s) => ({ label: s.who, value: s.does })),
+    }) });
+    if (t.rotationNote) {
+      const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+      mods.push({ type: 'RICH_TEXT', style: 'default', content: json({
+        value: `<p style="font-size:.9rem;opacity:.8"><i>${esc(t.rotationNote)}</i></p>` }) });
+    }
+  }
 
   if (t.note) {
     mods.push({ type: 'FAQ_ACCORDION', style: 'bordered', content: json({
