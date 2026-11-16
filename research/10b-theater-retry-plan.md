@@ -107,7 +107,7 @@ That is enough to expect a clear. The ⭐ is a stretch.
 
 ---
 
-## Result: full clear, every star (16 Nov 2026)
+## Result: full clear, every star (16 Nov 2026) - 6/6 stars, total 8m 10s, record Act 6
 
 The plan changed during the run (see below). What was played:
 
