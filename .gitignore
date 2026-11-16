@@ -25,3 +25,4 @@ tools/.rendered/
 tools/.bundles/
 __pycache__/
 tools/.map-upload/
+tools/.route-tiles/

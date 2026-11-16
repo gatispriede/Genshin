@@ -1,7 +1,9 @@
 """Place every reputation quest on the real game map.
 
-The official interactive map's 576 World Quest pins carry no names, so they
-cannot be tied to a quest. What the wiki *does* record exactly is each quest's
+The official interactive map's World Quest pins carry no names IN THE POINT
+LIST, which is what this script reads. (Each pin's own record does name its
+quest - see tools/fetch-wq-pins.py, used by tools/build-rep-route.py for exact
+starts. This map has not been switched over yet.) What the wiki *does* record exactly is each quest's
 subarea - "Liyue Harbor", "Mondstadt City", "Sumeru City" - and the map's own
 anchor list gives every named area a bounding box. Matching the two puts each
 quest on the map at its named place, which is honest: area-accurate, not

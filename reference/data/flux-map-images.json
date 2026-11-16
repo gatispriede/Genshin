@@ -17,5 +17,7 @@
   "assets/windwail-map.webp": "api/windwail-map.webp",
   "assets/wuwang-player-map.webp": "api/wuwang-player-map.webp",
   "assets/bishui-map.webp": "api/bishui-map.webp",
-  "assets/chenyu-south-map.webp": "api/chenyu-south-map.webp"
+  "assets/chenyu-south-map.webp": "api/chenyu-south-map.webp",
+  "assets/sumeru-city-rep-route.webp": "api/sumeru-city-rep-route.webp",
+  "assets/sumeru-rep-route-map.webp": "api/sumeru-rep-route-map.webp"
 }

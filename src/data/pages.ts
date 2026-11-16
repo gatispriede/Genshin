@@ -33,6 +33,7 @@ export const pages: PageEntry[] = [
   { href: "theater-picks.html", title: "Theater \u2014 Act 1 picks", blurb: "Which four of the six trial characters, with portraits", kind: "tool", section: "Tools" },
   { href: "liyue-quest-maps.html", title: "Liyue quests \u2014 start maps", blurb: "All 57, shortest first, with the wiki's in-game crop of each start spot", kind: "map", section: "Maps" },
   { href: "inazuma-quest-maps.html", title: "Inazuma quests \u2014 start maps", blurb: "Toward the Electro Treasure Compass", kind: "map", section: "Maps" },
+  { href: "sumeru-rep-route.html", title: "Sumeru rep quests — route", blurb: "Every quest that pays Sumeru reputation, shortest first, chains included, with each start on one map", kind: "map", section: "Maps" },
   { href: "sumeru-quest-maps.html", title: "Sumeru quests \u2014 start maps", blurb: "Toward the Dendro Treasure Compass", kind: "map", section: "Maps" },
   { href: "fontaine-quest-maps.html", title: "Fontaine quests \u2014 start maps", blurb: "Toward the Hydro Treasure Compass", kind: "map", section: "Maps" },
   { href: "local-legends.html", title: "Local Legends \u2014 all 36", blurb: "Resinless bosses that respawn daily. Mapped, with the AR 55 catch on the rewards", kind: "map", section: "Maps" },

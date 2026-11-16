@@ -1,0 +1,1572 @@
+{
+ "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"": {
+  "area": "Lost Nursery",
+  "dlg": 11580,
+  "firstStep": "Talk to Arana",
+  "npcs": [
+   "Arana",
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Land of Grounded Dreams, Sumeru",
+  "steps": 3,
+  "subarea": "Old Vanarana",
+  "type": "World"
+ },
+ "A Delicacy for Nara": {
+  "area": "Vanarana (Area)",
+  "dlg": 7498,
+  "firstStep": "Report back to Arapacati",
+  "npcs": [
+   "Arachatora",
+   "Arapacati",
+   "Arapas",
+   "Araphala",
+   "Arasaka"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 1,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
+ "A Prayer for Rain on the Fecund Land": {
+  "area": "Ashavan Realm",
+  "dlg": 17618,
+  "firstStep": "Head to the rest stop",
+  "npcs": [
+   "Arabalika",
+   "Arakunti",
+   "Aranakula",
+   "Arapandu"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Apam Woods, Sumeru",
+  "steps": 11,
+  "subarea": "Apam Woods",
+  "type": "World"
+ },
+ "A Short Encounter with a Rare Bird": {
+  "area": "Ashavan Realm",
+  "dlg": 0,
+  "firstStep": "Talk to the Forest Ranger",
+  "npcs": [
+   "Ferit",
+   "Pamuk",
+   "Shefket",
+   "Orhan"
+  ],
+  "region": "Sumeru",
+  "requirement": "Kill a particular Shroomboar near the Caravan Ribat.",
+  "start": "Ashavan Realm, Sumeru",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Adventure Takes Courage! (World Quest)": {
+  "area": "Avidya Forest",
+  "dlg": 2892,
+  "firstStep": "Talk to Katheryne",
+  "npcs": [
+   "Katheryne (Sumeru)"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete The Morn a Thousand Roses Brings and wait until Reset",
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Afratu's Dilemma": {
+  "area": "Land of Upper Setekh",
+  "dlg": 14428,
+  "firstStep": "Talk to the researcher",
+  "npcs": [
+   "Afratu"
+  ],
+  "region": "Sumeru",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Valley of Dahri, Sumeru",
+  "steps": 17,
+  "subarea": "Valley of Dahri",
+  "type": "World"
+ },
+ "Akasha Pulses, the Kalpa Flame Rises": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Amir's Raw Meat Commission": {
+  "area": "Avidya Forest",
+  "dlg": 1913,
+  "firstStep": "Give Amir eight serving of Raw Meat",
+  "npcs": [
+   "Amir"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Gandharva Ville, Sumeru",
+  "steps": 1,
+  "subarea": "Gandharva Ville",
+  "type": "World"
+ },
+ "An Introduction to Indoor Archaeology": {
+  "area": "Hypostyle Desert",
+  "dlg": 38649,
+  "firstStep": "Go to the oasis",
+  "npcs": [
+   "Bonifaz",
+   "Tirzad",
+   "Jeht",
+   "Jebrael",
+   "Nachtigal",
+   "Mirsad",
+   "Omid",
+   "Benben"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sobek Oasis, Sumeru",
+  "steps": 11,
+  "subarea": "Sobek Oasis",
+  "type": "World"
+ },
+ "An Unwavering Culinary Dream": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Aragaru's Drawing": {
+  "area": "Lokapala Jungle",
+  "dlg": 4762,
+  "firstStep": "Talk to Aragaru",
+  "npcs": [
+   "Aragaru",
+   "Azrul"
+  ],
+  "region": "Sumeru",
+  "requirement": "Aranyaka: Part II - Dream Nursery",
+  "start": "Chatrakam Cave, Sumeru",
+  "steps": 3,
+  "subarea": "Chatrakam Cave",
+  "type": "World"
+ },
+ "Arayesh's Jam": {
+  "area": "Ardravi Valley",
+  "dlg": 1421,
+  "firstStep": "Give two jars of Jam to Arayesh",
+  "npcs": [
+   "Arayesh"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Port Ormos, Sumeru",
+  "steps": 1,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Arina's Nilotpala Lotuses": {
+  "area": "Avidya Forest",
+  "dlg": 2008,
+  "firstStep": "Give five Nilotpala Lotuses to Arina",
+  "npcs": [
+   "Arina"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "As the Khvarena's Light Shows": {
+  "area": "Gavireh Lajavard",
+  "dlg": 41326,
+  "firstStep": "Talk to Zurvan",
+  "npcs": [
+   "Nasejuna",
+   "Klingsor",
+   "Pyrrho",
+   "Sorush",
+   "Zurvan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vourukasha Oasis, Sumeru",
+  "steps": 27,
+  "subarea": "Vourukasha Oasis",
+  "type": "World"
+ },
+ "Asipattravana Itihasa": {
+  "area": "Gavireh Lajavard",
+  "dlg": 25383,
+  "firstStep": "Go to Asipattravana Swamp to search for Mihir",
+  "npcs": [
+   "Mihir",
+   "Sorush"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Asipattravana Swamp, Sumeru",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Blooming Sands": {
+  "area": "Land of Lower Setekh",
+  "dlg": 8458,
+  "firstStep": "Talk to Raef",
+  "npcs": [
+   "Azalai",
+   "Raef",
+   "Nermin"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete King Deshret and the Three Magi",
+  "start": "Aaru Village, Sumeru",
+  "steps": 6,
+  "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Children of the Forest": {
+  "area": null,
+  "dlg": 1640,
+  "firstStep": "Adventure with Aranara",
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Cooking, a Pleasant Memory": {
+  "area": "Avidya Forest",
+  "dlg": 16006,
+  "firstStep": "Look for Arasaka",
+  "npcs": [
+   "Arasaka",
+   "Iaanesh"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Avidya Forest, Sumeru",
+  "steps": 6,
+  "subarea": null,
+  "type": "World"
+ },
+ "Cooking, the Flavor of Nature": {
+  "area": "Vissudha Field",
+  "dlg": 12290,
+  "firstStep": "Look for a rising pillar of smoke",
+  "npcs": [
+   "Arachatora"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete The World of Aranara",
+  "start": "Vissudha Field, Sumeru",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "Cost-Effective Hook": {
+  "area": "Ardravi Valley",
+  "dlg": 12983,
+  "firstStep": "Talk to Helbet and Kayvan",
+  "npcs": [
+   "Helbet",
+   "Kayvan"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete Supreme Hookshot? three times and wait for daily reset",
+  "start": "Port Ormos, Sumeru",
+  "steps": 12,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Courage Is in the Heart": {
+  "area": "Lokapala Jungle",
+  "dlg": 14441,
+  "firstStep": "Defeat the hilichurls by the house",
+  "npcs": [
+   "Arashakun"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete Static Views",
+  "start": "Lokapala Jungle, Sumeru",
+  "steps": 18,
+  "subarea": null,
+  "type": "World"
+ },
+ "Dreams Beneath the Searing Sand": {
+  "area": "Hypostyle Desert",
+  "dlg": 57423,
+  "firstStep": "Return to the oasis",
+  "npcs": [
+   "Bonifaz",
+   "Tirzad",
+   "Jeht",
+   "Jebrael",
+   "Nachtigal",
+   "Benben",
+   "Samail",
+   "Mirsad",
+   "Omid",
+   "\"Cyrus\""
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sobek Oasis, Sumeru",
+  "steps": 40,
+  "subarea": "Sobek Oasis",
+  "type": "World"
+ },
+ "Dreams, Emptiness, Deception": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Dual Evidence": {
+  "area": "Land of Lower Setekh",
+  "dlg": 29732,
+  "firstStep": "Enter Aaru Village with Kalantari",
+  "npcs": [
+   "Kalantari",
+   "Soheil",
+   "Hulwani"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete {{Quest|Golden Slumber|showType=0}}",
+  "start": "Aaru Village, Sumeru",
+  "steps": 15,
+  "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Dune-Entombed Fecundity: Part I": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 36550,
+  "firstStep": "Speak with Jeht and Azariq",
+  "npcs": [
+   "Azariq",
+   "Babel",
+   "Jeht",
+   "Liloupar"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Tanit Camps, Sumeru",
+  "steps": 32,
+  "subarea": "Tanit Camps",
+  "type": "World"
+ },
+ "Dune-Entombed Fecundity: Part II": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 24303,
+  "firstStep": "Go to the place Azariq mentioned",
+  "npcs": [
+   "Azariq",
+   "Jeht",
+   "Liloupar"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Desert of Hadramaveth, Sumeru",
+  "steps": 33,
+  "subarea": null,
+  "type": "World"
+ },
+ "Dune-Entombed Fecundity: Part III": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 31005,
+  "firstStep": "Return to the surface",
+  "npcs": [
+   "Aderfi",
+   "Azariq",
+   "Ferigees",
+   "Jeht",
+   "Liloupar"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Desert of Hadramaveth, Sumeru",
+  "steps": 42,
+  "subarea": null,
+  "type": "World"
+ },
+ "Dwarkanath's White Iron Chunks": {
+  "area": "Avidya Forest",
+  "dlg": 1654,
+  "firstStep": "Give five White Iron Chunks to Dwarkanath",
+  "npcs": [
+   "Dwarkanath"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 2,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Endless Research": {
+  "area": "Sea of Clouds",
+  "dlg": 6557,
+  "firstStep": "Talk to Alrani",
+  "npcs": [
+   "Alrani"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete the {{Quest|A New Star Approaches}}",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 6,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Eremite Mayhem": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": "Defeat The Eremites",
+  "npcs": [
+   "Araby",
+   "Tanamart",
+   "Arshia"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Even Beasts Stumble": {
+  "area": "Ashavan Realm",
+  "dlg": 8720,
+  "firstStep": "Rescue the person surrounded by monsters Dendro Samachurl; Wooden Shield Hilichurl Guard; Hilichurl",
+  "npcs": [
+   "Elber"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Yasna Monument, Sumeru",
+  "steps": 7,
+  "subarea": "Yasna Monument",
+  "type": "World"
+ },
+ "Fatuous Farce (Sumeru)": {
+  "area": "Avidya Forest",
+  "dlg": 0,
+  "firstStep": "Defeat the Fatui",
+  "npcs": [
+   "Shams"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Avidya Forest, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Fertilizer... Salesperson?": {
+  "area": "Watatsumi Island",
+  "dlg": 15012,
+  "firstStep": "Return the next day and appraise the fertilizer situation",
+  "npcs": [
+   "Alrani",
+   "Gorou",
+   "Hiroyuki",
+   "Iwata",
+   "Kaushik",
+   "Ookubo Daisuke"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete the {{Quest|In Another Land}}",
+  "start": "Watatsumi Island, Inazuma",
+  "steps": 10,
+  "subarea": "Bourou Village",
+  "type": "World"
+ },
+ "Festival Utsava": {
+  "area": "Vanarana (Area)",
+  "dlg": 32732,
+  "firstStep": "Talk to Araja",
+  "npcs": [
+   "Aragaru",
+   "Araja",
+   "Arakavi",
+   "Arakunti",
+   "Arama",
+   "Arana",
+   "Aranaga",
+   "Aranakula",
+   "Arapandu",
+   "Aranakin",
+   "Ararycan",
+   "Aramuhukunda",
+   "Arayuta",
+   "Aradashan",
+   "Aradanish",
+   "Arakara",
+   "Arasaka",
+   "Arachatora",
+   "Arakarman",
+   "Arasaha",
+   "Arasudraka",
+   "Aradasa",
+   "Arayasa",
+   "Arasata",
+   "Aralila",
+   "Arayash",
+   "Aramani",
+   "Arakanta",
+   "Arabalika",
+   "Araphala",
+   "Arasaha"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 6,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
+ "For A Better Reunion": {
+  "area": "Ardravi Valley",
+  "dlg": 11901,
+  "firstStep": "Return to where Rana is",
+  "npcs": [
+   "Arana",
+   "Arama",
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "For All Children Who Long for Life": {
+  "area": "Lost Nursery",
+  "dlg": 19337,
+  "firstStep": "Go to the deepest part of the cave",
+  "npcs": [
+   "Arama",
+   "Arana",
+   "Arakavi",
+   "Arapacati",
+   "Arapandu"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Land of Grounded Dreams, Sumeru",
+  "steps": 8,
+  "subarea": "Old Vanarana",
+  "type": "World"
+ },
+ "For Fruits, Seeds, and Trees": {
+  "area": "Vanarana (Area)",
+  "dlg": 14439,
+  "firstStep": "Meet up with Arama",
+  "npcs": [
+   "Arama"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 9,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
+ "For a Dream I Tarry": {
+  "area": "Lokapala Jungle",
+  "dlg": 8962,
+  "firstStep": "Help Javi look for his \"dream\"",
+  "npcs": [
+   "Javi",
+   "Ami"
+  ],
+  "region": "Sumeru",
+  "requirement": "Sumeru's Archon Quest and Aranyaka",
+  "start": "Lokapala Jungle, Sumeru",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "For the Children of the Past": {
+  "area": "Vissudha Field",
+  "dlg": 36790,
+  "firstStep": "Follow Arama into \"Old Vanarana\"",
+  "npcs": [
+   "Arama",
+   "Aramuhukunda"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Fane of Ashvattha, Sumeru",
+  "steps": 29,
+  "subarea": "Fane of Ashvattha",
+  "type": "World"
+ },
+ "Fungal Fracas": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": "Defeat the Fungi",
+  "npcs": [
+   "Hawad",
+   "Pam",
+   "Kira (Sumeru)"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Garcia's Paean": {
+  "area": "Bishui Plain",
+  "dlg": 13111,
+  "firstStep": "Talk to Garcia and Lutong",
+  "npcs": [
+   "Garcia",
+   "Lutong",
+   "Smiley Yanxiao"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Wangshu Inn, Liyue",
+  "steps": 5,
+  "subarea": "Wangshu Inn",
+  "type": "World"
+ },
+ "Garcia's Paean: A Gift of Compatibility": {
+  "area": "Avidya Forest",
+  "dlg": 22019,
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Lutong",
+   "Ahangar",
+   "Sheikh Zubayr",
+   "Kaia"
+  ],
+  "region": "Sumeru",
+  "requirement": "Obtain the {{Achievement|Principia Arithmetica}}",
+  "start": "Treasures Street, Sumeru",
+  "steps": 5,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Garcia's Paean: By Bearings": {
+  "area": "Avidya Forest",
+  "dlg": 4972,
+  "firstStep": "Talk to Ahangar",
+  "npcs": [
+   "Ahangar",
+   "Garcia",
+   "Lutong"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete ''Garcia's Paean: Key Items'' and ''Garcia's Paean: Substitutes'' three times each.",
+  "start": "Sumeru City, Sumeru",
+  "steps": 3,
+  "subarea": "Sumeru City",
+  "type": "Commission"
+ },
+ "Garcia's Paean: Easy Peasy": {
+  "area": "Avidya Forest",
+  "dlg": 9682,
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Lutong",
+   "Ahangar"
+  ],
+  "region": "Sumeru",
+  "requirement": "",
+  "start": "Sumeru City, Sumeru",
+  "steps": 3,
+  "subarea": "Sumeru City",
+  "type": "Commission"
+ },
+ "Garcia's Paean: Key Items": {
+  "area": "Lokapala Jungle",
+  "dlg": 10460,
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Lutong"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Lokapala Jungle, Sumeru",
+  "steps": 3,
+  "subarea": null,
+  "type": "Commission"
+ },
+ "Garcia's Paean: Substitutes": {
+  "area": "Avidya Forest",
+  "dlg": 7271,
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Lutong"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 3,
+  "subarea": "Sumeru City",
+  "type": "Commission"
+ },
+ "Garcia's Paean: the Echo of Someone": {
+  "area": "Avidya Forest",
+  "dlg": 5244,
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Kaia",
+   "Lutong"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete {{Quest|Garcia's Paean: Easy Peasy|showType=0}} correctly four times",
+  "start": "Sumeru City, Sumeru",
+  "steps": 4,
+  "subarea": "Sumeru City",
+  "type": "Commission"
+ },
+ "Gourmet Supremos: Within Our Duties": {
+  "area": "Ardravi Valley",
+  "dlg": 38207,
+  "firstStep": "Go to Sumeru City",
+  "npcs": [
+   "Farzah",
+   "Julie",
+   "Kamal",
+   "Kamei Munehisa",
+   "Maryam",
+   "Nabati",
+   "Neriman",
+   "Nète",
+   "Parvaneh",
+   "Shevirme",
+   "Xudong",
+   "Yunus"
+  ],
+  "region": "Sumeru",
+  "requirement": "{{Achievement|Meal For Two;A Question of Diet;Samurice|display = bullet}}",
+  "start": "Port Ormos, Sumeru",
+  "steps": 24,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Hilichurl Hullaballoo (Sumeru)": {
+  "area": "Ashavan Realm",
+  "dlg": 0,
+  "firstStep": "Defeat the Hilichurls",
+  "npcs": [
+   "Yinjie"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ashavan Realm, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Housein's Harra Fruits": {
+  "area": "Avidya Forest",
+  "dlg": 1925,
+  "firstStep": "Give ten Harra Fruits to Housein",
+  "npcs": [
+   "Housein"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "In Another Land": {
+  "area": "Narukami Island",
+  "dlg": 17428,
+  "firstStep": "Take a photo of Eipekkusu and its owner",
+  "npcs": [
+   "Alrani",
+   "Kaede",
+   "Obata",
+   "Vahid"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Start the {{Quest|Stillness, the Sublimation of Shadow}}",
+  "start": "Ritou, Inazuma",
+  "steps": 6,
+  "subarea": "Ritou",
+  "type": "World"
+ },
+ "Jahan's Sugar": {
+  "area": "Avidya Forest",
+  "dlg": 1462,
+  "firstStep": "Give five jars of Sugar to Jahan",
+  "npcs": [
+   "Jahan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Join the Eremites and Embrace a Wonderful New Life!": {
+  "area": "Land of Lower Setekh",
+  "dlg": 16034,
+  "firstStep": "Wait till daytime (6:00 – 19:00)",
+  "npcs": [
+   "Atiyah",
+   "Ayten",
+   "Fodil",
+   "Karima",
+   "Sania"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete King Deshret and the Three Magi",
+  "start": "Aaru Village, Sumeru",
+  "steps": 10,
+  "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Kamla's Berries": {
+  "area": "Ardravi Valley",
+  "dlg": 1657,
+  "firstStep": "Give fifteen Berries to Kamla",
+  "npcs": [
+   "Kamla"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Port Ormos, Sumeru",
+  "steps": 1,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "King Deshret and the Three Magi": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Kourosh's Sumeru Roses": {
+  "area": "Avidya Forest",
+  "dlg": 1560,
+  "firstStep": "Give ten Sumeru Roses to Kourosh",
+  "npcs": [
+   "Kourosh"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Lost in the Sands": {
+  "area": "Land of Lower Setekh",
+  "dlg": 51204,
+  "firstStep": "Go to Aaru Village and look for the merchant from Mondstadt <small>''(if commission was received from Katheryne)''</small>",
+  "npcs": [
+   "Bonifaz",
+   "Tirzad",
+   "Jeht",
+   "Jebrael",
+   "Nachtigal",
+   "Mirsad",
+   "Omid",
+   "Benben",
+   "Katheryne (Sumeru)"
+  ],
+  "region": "Sumeru",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Aaru Village, Sumeru",
+  "steps": 33,
+  "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Memory of Stone": {
+  "area": "Ashavan Realm",
+  "dlg": 17354,
+  "firstStep": "Head to the Yasna Monument and look for Aranakula",
+  "npcs": [
+   "Aranakula",
+   "Arapandu"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Yasna Monument, Sumeru",
+  "steps": 14,
+  "subarea": "Yasna Monument",
+  "type": "World"
+ },
+ "Memory's Final Chapter": {
+  "area": "Lokapala Jungle",
+  "dlg": 4917,
+  "firstStep": "Reach the Mawtiyima Forest",
+  "npcs": [
+   "Khayyam",
+   "Aragaru",
+   "Aranaga",
+   "Aranakin"
+  ],
+  "region": "Sumeru",
+  "requirement": "Dream Nursery",
+  "start": "Mawtiyima Forest, Sumeru",
+  "steps": 3,
+  "subarea": "Mawtiyima Forest",
+  "type": "World"
+ },
+ "Peseng's Zaytun Peaches": {
+  "area": "Ardravi Valley",
+  "dlg": 2150,
+  "firstStep": "Give ten Zaytun Peaches to Peseng",
+  "npcs": [
+   "Peseng"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Port Ormos, Sumeru",
+  "steps": 1,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Purbiruni's Commandment": {
+  "area": "Avidya Forest",
+  "dlg": 13098,
+  "firstStep": "Search for the Purbiruni scholar",
+  "npcs": [
+   "Dara",
+   "Hawa",
+   "Iris (Sumeru City)",
+   "Khedive",
+   "Sadife"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete Solitary Sea-Beast",
+  "start": "The Akademiya, Sumeru",
+  "steps": 8,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Risen Moon Chapter": {
+  "area": "Lokapala Jungle",
+  "dlg": 19195,
+  "firstStep": "Find Aragaru ''(if Starry Night Chapter was completed first)''",
+  "npcs": [
+   "Aragaru"
+  ],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": "Lokapala Jungle, Sumeru",
+  "steps": 17,
+  "subarea": null,
+  "type": "World"
+ },
+ "Ruin Drake Maelstrom (Sumeru)": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": "Defeat the Ruin Drakes",
+  "npcs": [
+   "Armin",
+   "Baharak"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vissudha Field, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Soheil's Wish": {
+  "area": "Land of Lower Setekh",
+  "dlg": 16311,
+  "firstStep": "Go deeper into the desert and explore according to Soheil's archaeology notes (0/3)",
+  "npcs": [
+   "Soheil",
+   "Hulwani"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete {{Quest|Golden Slumber|showType=0}}",
+  "start": "Aaru Village, Sumeru",
+  "steps": 3,
+  "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Static Views": {
+  "area": "Vanarana (Area)",
+  "dlg": 3652,
+  "firstStep": "Claim the painting in mailbox",
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": null,
+  "steps": 8,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
+ "Static Views, Part 2": {
+  "area": null,
+  "dlg": 12686,
+  "firstStep": "Find the last place according to the vibration of the seed and the content of the picture",
+  "npcs": [
+   "Araminali",
+   "Aranimba"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete Static Views",
+  "start": null,
+  "steps": 16,
+  "subarea": null,
+  "type": "World"
+ },
+ "Supreme Hookshot?": {
+  "area": "Ardravi Valley",
+  "dlg": 7582,
+  "firstStep": "Talk to Kayvan",
+  "npcs": [
+   "Kayvan"
+  ],
+  "region": "Sumeru",
+  "requirement": "",
+  "start": "Port Ormos, Sumeru",
+  "steps": 8,
+  "subarea": "Port Ormos",
+  "type": "Commission"
+ },
+ "The Eternal Dream, Ever Lush": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 25416,
+  "firstStep": "Exit the cave",
+  "npcs": [
+   "Babel",
+   "Jeht",
+   "Liloupar"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "The Orchard of Pairidaeza, Desert of Hadramaveth, Sumeru",
+  "steps": 12,
+  "subarea": "Mt. Damavand",
+  "type": "World"
+ },
+ "The Final Chapter": {
+  "area": "Lokapala Jungle",
+  "dlg": 25511,
+  "firstStep": "Go to the Mawtiyima Forest",
+  "npcs": [
+   "Aragaru",
+   "Aranaga",
+   "Aranakin"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Mawtiyima Forest, Sumeru",
+  "steps": 33,
+  "subarea": "Mawtiyima Forest",
+  "type": "World"
+ },
+ "The Foolish Fatuus": {
+  "area": "Ashavan Realm",
+  "dlg": 19323,
+  "firstStep": "Fight Oleg",
+  "npcs": [
+   "Kasim",
+   "Oleg",
+   "Rukh Shah"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete 8 Strange Energy Extraction Device puzzles in Eremite camps.",
+  "start": null,
+  "steps": 22,
+  "subarea": "Yasna Monument",
+  "type": "World"
+ },
+ "The Gourmet Supremos: Breakthrough Thinking": {
+  "area": "Narukami Island",
+  "dlg": 9772,
+  "firstStep": "Talk to Xudong",
+  "npcs": [
+   "Chef Mao",
+   "Xiangling",
+   "Xudong"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 7,
+  "subarea": "Inazuma City",
+  "type": "Commission"
+ },
+ "The Gourmet Supremos: Of Shrines and Sakura": {
+  "area": "Narukami Island",
+  "dlg": 2141,
+  "firstStep": "Go to the Grand Narukami Shrine",
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Grand Narukami Shrine, Narukami Island, Inazuma",
+  "steps": 2,
+  "subarea": "Grand Narukami Shrine (Subarea)",
+  "type": "World"
+ },
+ "The Gourmet Supremos: On the Road": {
+  "area": "Narukami Island",
+  "dlg": 12030,
+  "firstStep": "Talk to Xudong",
+  "npcs": [
+   "Xudong",
+   "Parvaneh",
+   "Julie",
+   "Kamei Munehisa"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Inazuma City, Narukami Island, Inazuma",
+  "steps": 6,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "The Gourmet Supremos: The Deep Divers": {
+  "area": "Yashiori Island",
+  "dlg": 7544,
+  "firstStep": "Talk to Xudong",
+  "npcs": [
+   "Xudong",
+   "Parvaneh",
+   "Julie"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Yashiori Island, Inazuma",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Gourmet Supremos: The Importance of Eating Well": {
+  "area": "Narukami Island",
+  "dlg": 20653,
+  "firstStep": "Talk to Parvaneh",
+  "npcs": [
+   "Julie",
+   "Kamei Munehisa",
+   "Parvaneh",
+   "Xudong"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete Xiangling's ending of The Gourmet Supremos: Breakthrough Thinking",
+  "start": "Inazuma City, Narukami Island, Inazuma",
+  "steps": 15,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "The Gourmet Supremos: The Seashore Strider": {
+  "area": "Kannazuka",
+  "dlg": 7180,
+  "firstStep": "Talk to the Gourmet Supremos",
+  "npcs": [
+   "Xudong",
+   "Parvaneh",
+   "Julie"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Kujou Encampment, Kannazuka, Inazuma",
+  "steps": 6,
+  "subarea": "Kujou Encampment",
+  "type": "World"
+ },
+ "The Gourmet Supremos: Where'd the Ingredients Go?": {
+  "area": "Narukami Island",
+  "dlg": 4954,
+  "firstStep": "Talk to Julie",
+  "npcs": [
+   "Julie"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete The Gourmet Supremos: The Importance of Eating Well",
+  "start": "Narukami Island, Inazuma",
+  "steps": 3,
+  "subarea": null,
+  "type": "Commission"
+ },
+ "The Hymn of Tir Yazad (Part 1)": {
+  "area": "Gavireh Lajavard",
+  "dlg": 17799,
+  "firstStep": "Go to the Vourukasha Oasis",
+  "npcs": [
+   "Mihir",
+   "Rashnu",
+   "Sorush",
+   "Zurvan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vourukasha Oasis, Sumeru",
+  "steps": 23,
+  "subarea": "Vourukasha Oasis",
+  "type": "World"
+ },
+ "The Hymn of Tir Yazad (Part 2)": {
+  "area": "Gavireh Lajavard",
+  "dlg": 17150,
+  "firstStep": "Pass through the path in the depths",
+  "npcs": [
+   "Katheryne (Sumeru)",
+   "Mihir",
+   "Rashnu",
+   "Sorush",
+   "Zurvan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Tunigi Hollow, Sumeru",
+  "steps": 16,
+  "subarea": "Tunigi Hollow",
+  "type": "World"
+ },
+ "The Morn a Thousand Roses Brings": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "The Path of Papers": {
+  "area": "Avidya Forest",
+  "dlg": 13722,
+  "firstStep": "Look for Alrani",
+  "npcs": [
+   "Alrani",
+   "Gobley",
+   "Narzam",
+   "Niloofar"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete the {{Quest|The Morn a Thousand Roses Brings}}",
+  "start": "The Akademiya, Sumeru",
+  "steps": 6,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "The Price": {
+  "area": "Ardravi Valley",
+  "dlg": 15960,
+  "firstStep": "Talk to Paimon after getting the mysterious item",
+  "npcs": [
+   "Alexandra",
+   "Berat",
+   "Nika",
+   "Przheva"
+  ],
+  "region": "Sumeru",
+  "requirement": "* Complete the {{Quest|The End of the Sabzeruz Festival}}",
+  "start": "Port Ormos, Sumeru",
+  "steps": 9,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "The Secret of Al-Ahmar": {
+  "area": "Hypostyle Desert",
+  "dlg": 33518,
+  "firstStep": "Enter the secret passage behind the mural",
+  "npcs": [
+   "Benben",
+   "Jebrael",
+   "Jeht",
+   "Samail",
+   "Tirzad"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Khemenu Temple, Sumeru",
+  "steps": 23,
+  "subarea": "Khemenu Temple",
+  "type": "World"
+ },
+ "The Splendorous Sky That Day": {
+  "area": "Gavireh Lajavard",
+  "dlg": 60277,
+  "firstStep": "Search for the strange object",
+  "npcs": [
+   "Katheryne (Sumeru)",
+   "Nasejuna",
+   "Pyrrho",
+   "Sorush",
+   "Zurvan"
+  ],
+  "region": "Sumeru",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Gavireh Lajavard, Sumeru",
+  "steps": 22,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Temple Where Sand Flows Like Tears": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 63302,
+  "firstStep": "Go to the temple on the outskirts of Gurabad",
+  "npcs": [
+   "Azariq",
+   "Babel",
+   "Jeht",
+   "Liloupar"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "The Temples Forsaken, Sumeru",
+  "steps": 47,
+  "subarea": "Safhe Shatranj",
+  "type": "World"
+ },
+ "The World of Aranara": {
+  "area": "Ardravi Valley",
+  "dlg": 33653,
+  "firstStep": "Talk to Paimon",
+  "npcs": [
+   "Amadhiah",
+   "Araesha",
+   "Araja",
+   "Arakanta",
+   "Arakara",
+   "Arakavi",
+   "Aralila",
+   "Arama",
+   "Aramani",
+   "Arana",
+   "Aranaga",
+   "Aranishat",
+   "Arapacati",
+   "Araprabhu",
+   "Aravinay",
+   "Arayash",
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Vimara Village, Sumeru",
+  "steps": 23,
+  "subarea": "Vimara Village",
+  "type": "World"
+ },
+ "Through Mists of Smoke and Forests Dark": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Treasure of Wisdom: A New Plan": {
+  "area": "Avidya Forest",
+  "dlg": 9511,
+  "firstStep": "Set up the riddles with Drusus",
+  "npcs": [
+   "Drusus"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete Drusus's Riddles and wait for the daily reset",
+  "start": "Sumeru City, Sumeru",
+  "steps": 2,
+  "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Until Vana is Healed": {
+  "area": "Ardravi Valley",
+  "dlg": 26000,
+  "firstStep": "Talk to Ararycan",
+  "npcs": [
+   "Ararycan",
+   "Jazari"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete Step 2 of Aranyaka: Part III - Nursery of Lost Dreams, Part 1: ''For Fruits, Seeds, and Trees''",
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 29,
+  "subarea": null,
+  "type": "World"
+ },
+ "Varuna Gatha": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Vimana Agama": {
+  "area": null,
+  "dlg": 0,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Vimana Agama: Dev Delver Chapter": {
+  "area": "Ardravi Valley",
+  "dlg": 6631,
+  "firstStep": "Leave the Ruin Golem",
+  "npcs": [
+   "Ararycan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Devantaka Mountain, Sumeru",
+  "steps": 21,
+  "subarea": "Devantaka Mountain",
+  "type": "World"
+ },
+ "Vimana Agama: First Chapter": {
+  "area": "Ardravi Valley",
+  "dlg": 32009,
+  "firstStep": "Investigate the strange spot",
+  "npcs": [
+   "Jazari",
+   "Royinjan",
+   "Ararycan"
+  ],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": "Devantaka Mountain, Sumeru",
+  "steps": 10,
+  "subarea": "Devantaka Mountain",
+  "type": "World"
+ },
+ "Vimana Agama: Jazari's Chapter": {
+  "area": "Ardravi Valley",
+  "dlg": 18746,
+  "firstStep": "Open the Ruin Golem seal",
+  "npcs": [
+   "Jazari"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 14,
+  "subarea": null,
+  "type": "World"
+ },
+ "Vimana Agama: Royinjan's Chapter": {
+  "area": "Ardravi Valley",
+  "dlg": 24057,
+  "firstStep": "Find the secret base",
+  "npcs": [
+   "Amadhiah",
+   "Ararycan",
+   "Jazari",
+   "Royinjan"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Port Ormos, Sumeru",
+  "steps": 12,
+  "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Where Are the Fierce Creatures?": {
+  "area": "Lokapala Jungle",
+  "dlg": 13345,
+  "firstStep": "Talk to Santon located south of the Palace of Alcazarzaray.",
+  "npcs": [
+   "Santon",
+   "Najib",
+   "Anaya",
+   "Hong"
+  ],
+  "region": "Sumeru",
+  "requirement": "Talk to Santon and kill creatures described by him",
+  "start": "Lokapala Jungle, Sumeru",
+  "steps": 9,
+  "subarea": null,
+  "type": "World"
+ },
+ "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars": {
+  "area": "Desert of Hadramaveth",
+  "dlg": 31106,
+  "firstStep": "Katheryne seems to be looking for you...",
+  "npcs": [
+   "Aderfi",
+   "Babel",
+   "Hugeweh",
+   "Jeht",
+   "Katheryne (Sumeru)",
+   "Masseira",
+   "Mendas",
+   "Yuften"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Treasures Street, Sumeru",
+  "steps": 14,
+  "subarea": null,
+  "type": "World"
+ },
+ "Yavanani's Apples": {
+  "area": "Avidya Forest",
+  "dlg": 1930,
+  "firstStep": "Give five Apples to Yavanani",
+  "npcs": [
+   "Yavanani"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Sumeru City, Sumeru",
+  "steps": 1,
+  "subarea": "Sumeru City",
+  "type": "World"
+ }
+}
