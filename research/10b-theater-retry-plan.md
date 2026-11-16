@@ -104,3 +104,38 @@ That is enough to expect a clear. The ⭐ is a stretch.
   must be re-cleared. Don't finalize straight after a rewind.
 - The season ends **1 Dec**. December's cast is Pyro / Hydro / Geo (leaked), where
   Varesa and Barbara don't qualify. **This is Varesa's last Theater month.**
+
+---
+
+## Result: full clear, every star (16 Nov 2026)
+
+The plan changed during the run (see below). What was played:
+
+| Act | Team (slot order) | Time | Star |
+|---|---|---|---|
+| 1 | Fischl · Aino · Kachina · Zhongli | 1:01 | ✅ 80s |
+| 2 | Alyosha · Aino · Kachina · Flins | ✅ | ✅ |
+| 3 · Jadeplume | Varesa · Yelan · Zhongli · Fischl | **0:55** | ✅ 70s (**new**) |
+| 4 · Defense | Valeriy · Barbara · Alyosha · Aino | 2:17 | ✅ monolith ≥35% |
+| 5 · 24 opponents | Valeriy · Furina · Barbara · Varesa | ✅ | ✅ |
+| 6 · Lord of the Hidden Depths | Valeriy · Yelan · Furina · **Flins** | **1:15** | ✅ 75s (**new**) |
+
+**What changed from the written plan, and why it worked:**
+
+1. **Zhongli, not Flins, filled Act 1.** Act 1 can only use the six trials, so one
+   gold had to play it. Zhongli's other play was the late game anyway. This kept a
+   carry in every Act after the first: the 12 Nov run failed Act 2 because it had none.
+2. **Flins took Act 6, Varesa Act 5** (the user's call). The boss card reads "Lunar
+   reactions have an advantage", and its shield takes 300% from Lunar reaction damage;
+   Flins with Yelan's Hydro plays into that. Varesa had already cleared Act 5 ungeared
+   on 12 Nov.
+3. **Valeriy played Acts 4, 5 and 6** as the fixed support: shield, +100 EM (Lunar
+   reactions scale on EM) and +10% Electro CRIT Rate on enemies he hits.
+4. **Alyosha's Burst taunt saved the Defense act**: it pulls enemies off the monolith.
+   Bring her to any Defense Sequence.
+5. Drafts didn't follow the priority list: Alyosha came before Varesa. Re-planning
+   at each draft screen beat a fixed table.
+
+**Act 6 went from "best result 40% HP left" (12 Nov) to cleared with the star.**
+The difference: a Lunar-Charged carry for a Lunar-weak boss, Furina at Lv 60, and
+Valeriy's shield and EM.
