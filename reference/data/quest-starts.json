@@ -2,6 +2,7 @@
  "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"": {
   "area": "Lost Nursery",
   "dlg": 11580,
+  "firstSpeaker": "Arana",
   "firstStep": "Talk to Arana",
   "npcs": [
    "Arana",
@@ -17,6 +18,7 @@
  "A Delicacy for Nara": {
   "area": "Vanarana (Area)",
   "dlg": 7498,
+  "firstSpeaker": "Arapacati",
   "firstStep": "Report back to Arapacati",
   "npcs": [
    "Arachatora",
@@ -35,6 +37,7 @@
  "A Prayer for Rain on the Fecund Land": {
   "area": "Ashavan Realm",
   "dlg": 17618,
+  "firstSpeaker": "Arapandu",
   "firstStep": "Head to the rest stop",
   "npcs": [
    "Arabalika",
@@ -52,6 +55,7 @@
  "A Short Encounter with a Rare Bird": {
   "area": "Ashavan Realm",
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Talk to the Forest Ranger",
   "npcs": [
    "Ferit",
@@ -69,6 +73,7 @@
  "Adventure Takes Courage! (World Quest)": {
   "area": "Avidya Forest",
   "dlg": 2892,
+  "firstSpeaker": "Katheryne",
   "firstStep": "Talk to Katheryne",
   "npcs": [
    "Katheryne (Sumeru)"
@@ -83,6 +88,7 @@
  "Afratu's Dilemma": {
   "area": "Land of Upper Setekh",
   "dlg": 14428,
+  "firstSpeaker": "???",
   "firstStep": "Talk to the researcher",
   "npcs": [
    "Afratu"
@@ -97,6 +103,7 @@
  "Akasha Pulses, the Kalpa Flame Rises": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -109,6 +116,7 @@
  "Amir's Raw Meat Commission": {
   "area": "Avidya Forest",
   "dlg": 1913,
+  "firstSpeaker": "Amir",
   "firstStep": "Give Amir eight serving of Raw Meat",
   "npcs": [
    "Amir"
@@ -123,6 +131,7 @@
  "An Introduction to Indoor Archaeology": {
   "area": "Hypostyle Desert",
   "dlg": 38649,
+  "firstSpeaker": "Nachtigal",
   "firstStep": "Go to the oasis",
   "npcs": [
    "Bonifaz",
@@ -144,6 +153,7 @@
  "An Unwavering Culinary Dream": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -156,6 +166,7 @@
  "Aragaru's Drawing": {
   "area": "Lokapala Jungle",
   "dlg": 4762,
+  "firstSpeaker": "The Farrokhzadan",
   "firstStep": "Talk to Aragaru",
   "npcs": [
    "Aragaru",
@@ -171,6 +182,7 @@
  "Arayesh's Jam": {
   "area": "Ardravi Valley",
   "dlg": 1421,
+  "firstSpeaker": "Arayesh",
   "firstStep": "Give two jars of Jam to Arayesh",
   "npcs": [
    "Arayesh"
@@ -185,6 +197,7 @@
  "Arina's Nilotpala Lotuses": {
   "area": "Avidya Forest",
   "dlg": 2008,
+  "firstSpeaker": "Arina",
   "firstStep": "Give five Nilotpala Lotuses to Arina",
   "npcs": [
    "Arina"
@@ -199,6 +212,7 @@
  "As the Khvarena's Light Shows": {
   "area": "Gavireh Lajavard",
   "dlg": 41326,
+  "firstSpeaker": "Zurvan",
   "firstStep": "Talk to Zurvan",
   "npcs": [
    "Nasejuna",
@@ -217,6 +231,7 @@
  "Asipattravana Itihasa": {
   "area": "Gavireh Lajavard",
   "dlg": 25383,
+  "firstSpeaker": "Sorush",
   "firstStep": "Go to Asipattravana Swamp to search for Mihir",
   "npcs": [
    "Mihir",
@@ -232,6 +247,7 @@
  "Blooming Sands": {
   "area": "Land of Lower Setekh",
   "dlg": 8458,
+  "firstSpeaker": "Raef",
   "firstStep": "Talk to Raef",
   "npcs": [
    "Azalai",
@@ -248,6 +264,7 @@
  "Children of the Forest": {
   "area": null,
   "dlg": 1640,
+  "firstSpeaker": null,
   "firstStep": "Adventure with Aranara",
   "npcs": [],
   "region": "Sumeru",
@@ -260,6 +277,7 @@
  "Cooking, a Pleasant Memory": {
   "area": "Avidya Forest",
   "dlg": 16006,
+  "firstSpeaker": "???",
   "firstStep": "Look for Arasaka",
   "npcs": [
    "Arasaka",
@@ -275,6 +293,7 @@
  "Cooking, the Flavor of Nature": {
   "area": "Vissudha Field",
   "dlg": 12290,
+  "firstSpeaker": "???",
   "firstStep": "Look for a rising pillar of smoke",
   "npcs": [
    "Arachatora"
@@ -289,6 +308,7 @@
  "Cost-Effective Hook": {
   "area": "Ardravi Valley",
   "dlg": 12983,
+  "firstSpeaker": "Kayvan",
   "firstStep": "Talk to Helbet and Kayvan",
   "npcs": [
    "Helbet",
@@ -304,6 +324,7 @@
  "Courage Is in the Heart": {
   "area": "Lokapala Jungle",
   "dlg": 14441,
+  "firstSpeaker": "Inconsistently-Written Notes",
   "firstStep": "Defeat the hilichurls by the house",
   "npcs": [
    "Arashakun"
@@ -318,6 +339,7 @@
  "Dreams Beneath the Searing Sand": {
   "area": "Hypostyle Desert",
   "dlg": 57423,
+  "firstSpeaker": "Nachtigal",
   "firstStep": "Return to the oasis",
   "npcs": [
    "Bonifaz",
@@ -341,6 +363,7 @@
  "Dreams, Emptiness, Deception": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -353,6 +376,7 @@
  "Dual Evidence": {
   "area": "Land of Lower Setekh",
   "dlg": 29732,
+  "firstSpeaker": "???",
   "firstStep": "Enter Aaru Village with Kalantari",
   "npcs": [
    "Kalantari",
@@ -369,6 +393,7 @@
  "Dune-Entombed Fecundity: Part I": {
   "area": "Desert of Hadramaveth",
   "dlg": 36550,
+  "firstSpeaker": "Jeht",
   "firstStep": "Speak with Jeht and Azariq",
   "npcs": [
    "Azariq",
@@ -386,6 +411,7 @@
  "Dune-Entombed Fecundity: Part II": {
   "area": "Desert of Hadramaveth",
   "dlg": 24303,
+  "firstSpeaker": "Azariq",
   "firstStep": "Go to the place Azariq mentioned",
   "npcs": [
    "Azariq",
@@ -402,6 +428,7 @@
  "Dune-Entombed Fecundity: Part III": {
   "area": "Desert of Hadramaveth",
   "dlg": 31005,
+  "firstSpeaker": "Jeht",
   "firstStep": "Return to the surface",
   "npcs": [
    "Aderfi",
@@ -420,6 +447,7 @@
  "Dwarkanath's White Iron Chunks": {
   "area": "Avidya Forest",
   "dlg": 1654,
+  "firstSpeaker": "Dwarkanath",
   "firstStep": "Give five White Iron Chunks to Dwarkanath",
   "npcs": [
    "Dwarkanath"
@@ -434,6 +462,7 @@
  "Endless Research": {
   "area": "Sea of Clouds",
   "dlg": 6557,
+  "firstSpeaker": "Alrani",
   "firstStep": "Talk to Alrani",
   "npcs": [
    "Alrani"
@@ -448,6 +477,7 @@
  "Eremite Mayhem": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Defeat The Eremites",
   "npcs": [
    "Araby",
@@ -464,6 +494,7 @@
  "Even Beasts Stumble": {
   "area": "Ashavan Realm",
   "dlg": 8720,
+  "firstSpeaker": "Elber",
   "firstStep": "Rescue the person surrounded by monsters Dendro Samachurl; Wooden Shield Hilichurl Guard; Hilichurl",
   "npcs": [
    "Elber"
@@ -478,6 +509,7 @@
  "Fatuous Farce (Sumeru)": {
   "area": "Avidya Forest",
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Defeat the Fatui",
   "npcs": [
    "Shams"
@@ -492,6 +524,7 @@
  "Fertilizer... Salesperson?": {
   "area": "Watatsumi Island",
   "dlg": 15012,
+  "firstSpeaker": "Iwata",
   "firstStep": "Return the next day and appraise the fertilizer situation",
   "npcs": [
    "Alrani",
@@ -511,6 +544,7 @@
  "Festival Utsava": {
   "area": "Vanarana (Area)",
   "dlg": 32732,
+  "firstSpeaker": "Araja",
   "firstStep": "Talk to Araja",
   "npcs": [
    "Aragaru",
@@ -555,6 +589,7 @@
  "For A Better Reunion": {
   "area": "Ardravi Valley",
   "dlg": 11901,
+  "firstSpeaker": "Arama",
   "firstStep": "Return to where Rana is",
   "npcs": [
    "Arana",
@@ -571,6 +606,7 @@
  "For All Children Who Long for Life": {
   "area": "Lost Nursery",
   "dlg": 19337,
+  "firstSpeaker": "Arama",
   "firstStep": "Go to the deepest part of the cave",
   "npcs": [
    "Arama",
@@ -589,6 +625,7 @@
  "For Fruits, Seeds, and Trees": {
   "area": "Vanarana (Area)",
   "dlg": 14439,
+  "firstSpeaker": "Arama",
   "firstStep": "Meet up with Arama",
   "npcs": [
    "Arama"
@@ -603,6 +640,7 @@
  "For a Dream I Tarry": {
   "area": "Lokapala Jungle",
   "dlg": 8962,
+  "firstSpeaker": "Javi",
   "firstStep": "Help Javi look for his \"dream\"",
   "npcs": [
    "Javi",
@@ -618,6 +656,7 @@
  "For the Children of the Past": {
   "area": "Vissudha Field",
   "dlg": 36790,
+  "firstSpeaker": "Arama",
   "firstStep": "Follow Arama into \"Old Vanarana\"",
   "npcs": [
    "Arama",
@@ -633,6 +672,7 @@
  "Fungal Fracas": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Defeat the Fungi",
   "npcs": [
    "Hawad",
@@ -649,6 +689,7 @@
  "Garcia's Paean": {
   "area": "Bishui Plain",
   "dlg": 13111,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia and Lutong",
   "npcs": [
    "Garcia",
@@ -665,6 +706,7 @@
  "Garcia's Paean: A Gift of Compatibility": {
   "area": "Avidya Forest",
   "dlg": 22019,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia",
   "npcs": [
    "Garcia",
@@ -683,6 +725,7 @@
  "Garcia's Paean: By Bearings": {
   "area": "Avidya Forest",
   "dlg": 4972,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Ahangar",
   "npcs": [
    "Ahangar",
@@ -699,6 +742,7 @@
  "Garcia's Paean: Easy Peasy": {
   "area": "Avidya Forest",
   "dlg": 9682,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia",
   "npcs": [
    "Garcia",
@@ -715,6 +759,7 @@
  "Garcia's Paean: Key Items": {
   "area": "Lokapala Jungle",
   "dlg": 10460,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia",
   "npcs": [
    "Garcia",
@@ -730,6 +775,7 @@
  "Garcia's Paean: Substitutes": {
   "area": "Avidya Forest",
   "dlg": 7271,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia",
   "npcs": [
    "Garcia",
@@ -745,6 +791,7 @@
  "Garcia's Paean: the Echo of Someone": {
   "area": "Avidya Forest",
   "dlg": 5244,
+  "firstSpeaker": "Garcia",
   "firstStep": "Talk to Garcia",
   "npcs": [
    "Garcia",
@@ -761,6 +808,7 @@
  "Gourmet Supremos: Within Our Duties": {
   "area": "Ardravi Valley",
   "dlg": 38207,
+  "firstSpeaker": "Xudong",
   "firstStep": "Go to Sumeru City",
   "npcs": [
    "Farzah",
@@ -786,6 +834,7 @@
  "Hilichurl Hullaballoo (Sumeru)": {
   "area": "Ashavan Realm",
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Defeat the Hilichurls",
   "npcs": [
    "Yinjie"
@@ -800,6 +849,7 @@
  "Housein's Harra Fruits": {
   "area": "Avidya Forest",
   "dlg": 1925,
+  "firstSpeaker": "Housein",
   "firstStep": "Give ten Harra Fruits to Housein",
   "npcs": [
    "Housein"
@@ -814,6 +864,7 @@
  "In Another Land": {
   "area": "Narukami Island",
   "dlg": 17428,
+  "firstSpeaker": "Alrani",
   "firstStep": "Take a photo of Eipekkusu and its owner",
   "npcs": [
    "Alrani",
@@ -831,6 +882,7 @@
  "Jahan's Sugar": {
   "area": "Avidya Forest",
   "dlg": 1462,
+  "firstSpeaker": "Jahan",
   "firstStep": "Give five jars of Sugar to Jahan",
   "npcs": [
    "Jahan"
@@ -845,6 +897,7 @@
  "Join the Eremites and Embrace a Wonderful New Life!": {
   "area": "Land of Lower Setekh",
   "dlg": 16034,
+  "firstSpeaker": "Atiyah",
   "firstStep": "Wait till daytime (6:00 – 19:00)",
   "npcs": [
    "Atiyah",
@@ -863,6 +916,7 @@
  "Kamla's Berries": {
   "area": "Ardravi Valley",
   "dlg": 1657,
+  "firstSpeaker": "Kamla",
   "firstStep": "Give fifteen Berries to Kamla",
   "npcs": [
    "Kamla"
@@ -877,6 +931,7 @@
  "King Deshret and the Three Magi": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -889,6 +944,7 @@
  "Kourosh's Sumeru Roses": {
   "area": "Avidya Forest",
   "dlg": 1560,
+  "firstSpeaker": "Kourosh",
   "firstStep": "Give ten Sumeru Roses to Kourosh",
   "npcs": [
    "Kourosh"
@@ -903,6 +959,7 @@
  "Lost in the Sands": {
   "area": "Land of Lower Setekh",
   "dlg": 51204,
+  "firstSpeaker": "Katheryne",
   "firstStep": "Go to Aaru Village and look for the merchant from Mondstadt <small>''(if commission was received from Katheryne)''</small>",
   "npcs": [
    "Bonifaz",
@@ -925,6 +982,7 @@
  "Memory of Stone": {
   "area": "Ashavan Realm",
   "dlg": 17354,
+  "firstSpeaker": "Aranakula",
   "firstStep": "Head to the Yasna Monument and look for Aranakula",
   "npcs": [
    "Aranakula",
@@ -940,6 +998,7 @@
  "Memory's Final Chapter": {
   "area": "Lokapala Jungle",
   "dlg": 4917,
+  "firstSpeaker": "Khayyam",
   "firstStep": "Reach the Mawtiyima Forest",
   "npcs": [
    "Khayyam",
@@ -957,6 +1016,7 @@
  "Peseng's Zaytun Peaches": {
   "area": "Ardravi Valley",
   "dlg": 2150,
+  "firstSpeaker": "Peseng",
   "firstStep": "Give ten Zaytun Peaches to Peseng",
   "npcs": [
    "Peseng"
@@ -971,6 +1031,7 @@
  "Purbiruni's Commandment": {
   "area": "Avidya Forest",
   "dlg": 13098,
+  "firstSpeaker": "Iris",
   "firstStep": "Search for the Purbiruni scholar",
   "npcs": [
    "Dara",
@@ -989,6 +1050,7 @@
  "Risen Moon Chapter": {
   "area": "Lokapala Jungle",
   "dlg": 19195,
+  "firstSpeaker": "???",
   "firstStep": "Find Aragaru ''(if Starry Night Chapter was completed first)''",
   "npcs": [
    "Aragaru"
@@ -1003,6 +1065,7 @@
  "Ruin Drake Maelstrom (Sumeru)": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": "Defeat the Ruin Drakes",
   "npcs": [
    "Armin",
@@ -1018,6 +1081,7 @@
  "Soheil's Wish": {
   "area": "Land of Lower Setekh",
   "dlg": 16311,
+  "firstSpeaker": "Soheil",
   "firstStep": "Go deeper into the desert and explore according to Soheil's archaeology notes (0/3)",
   "npcs": [
    "Soheil",
@@ -1033,6 +1097,7 @@
  "Static Views": {
   "area": "Vanarana (Area)",
   "dlg": 3652,
+  "firstSpeaker": null,
   "firstStep": "Claim the painting in mailbox",
   "npcs": [],
   "region": "Sumeru",
@@ -1045,6 +1110,7 @@
  "Static Views, Part 2": {
   "area": null,
   "dlg": 12686,
+  "firstSpeaker": "???",
   "firstStep": "Find the last place according to the vibration of the seed and the content of the picture",
   "npcs": [
    "Araminali",
@@ -1060,6 +1126,7 @@
  "Supreme Hookshot?": {
   "area": "Ardravi Valley",
   "dlg": 7582,
+  "firstSpeaker": "Kayvan",
   "firstStep": "Talk to Kayvan",
   "npcs": [
    "Kayvan"
@@ -1074,6 +1141,7 @@
  "The Eternal Dream, Ever Lush": {
   "area": "Desert of Hadramaveth",
   "dlg": 25416,
+  "firstSpeaker": "Jeht",
   "firstStep": "Exit the cave",
   "npcs": [
    "Babel",
@@ -1090,6 +1158,7 @@
  "The Final Chapter": {
   "area": "Lokapala Jungle",
   "dlg": 25511,
+  "firstSpeaker": "???",
   "firstStep": "Go to the Mawtiyima Forest",
   "npcs": [
    "Aragaru",
@@ -1106,6 +1175,7 @@
  "The Foolish Fatuus": {
   "area": "Ashavan Realm",
   "dlg": 19323,
+  "firstSpeaker": "Kasim",
   "firstStep": "Fight Oleg",
   "npcs": [
    "Kasim",
@@ -1122,6 +1192,7 @@
  "The Gourmet Supremos: Breakthrough Thinking": {
   "area": "Narukami Island",
   "dlg": 9772,
+  "firstSpeaker": "Xudong",
   "firstStep": "Talk to Xudong",
   "npcs": [
    "Chef Mao",
@@ -1138,6 +1209,7 @@
  "The Gourmet Supremos: Of Shrines and Sakura": {
   "area": "Narukami Island",
   "dlg": 2141,
+  "firstSpeaker": null,
   "firstStep": "Go to the Grand Narukami Shrine",
   "npcs": [],
   "region": "Sumeru",
@@ -1150,6 +1222,7 @@
  "The Gourmet Supremos: On the Road": {
   "area": "Narukami Island",
   "dlg": 12030,
+  "firstSpeaker": "Xudong",
   "firstStep": "Talk to Xudong",
   "npcs": [
    "Xudong",
@@ -1167,6 +1240,7 @@
  "The Gourmet Supremos: The Deep Divers": {
   "area": "Yashiori Island",
   "dlg": 7544,
+  "firstSpeaker": "Xudong",
   "firstStep": "Talk to Xudong",
   "npcs": [
    "Xudong",
@@ -1183,6 +1257,7 @@
  "The Gourmet Supremos: The Importance of Eating Well": {
   "area": "Narukami Island",
   "dlg": 20653,
+  "firstSpeaker": "Parvaneh",
   "firstStep": "Talk to Parvaneh",
   "npcs": [
    "Julie",
@@ -1200,6 +1275,7 @@
  "The Gourmet Supremos: The Seashore Strider": {
   "area": "Kannazuka",
   "dlg": 7180,
+  "firstSpeaker": "Xudong",
   "firstStep": "Talk to the Gourmet Supremos",
   "npcs": [
    "Xudong",
@@ -1216,6 +1292,7 @@
  "The Gourmet Supremos: Where'd the Ingredients Go?": {
   "area": "Narukami Island",
   "dlg": 4954,
+  "firstSpeaker": "Julie",
   "firstStep": "Talk to Julie",
   "npcs": [
    "Julie"
@@ -1230,6 +1307,7 @@
  "The Hymn of Tir Yazad (Part 1)": {
   "area": "Gavireh Lajavard",
   "dlg": 17799,
+  "firstSpeaker": "Sorush",
   "firstStep": "Go to the Vourukasha Oasis",
   "npcs": [
    "Mihir",
@@ -1247,6 +1325,7 @@
  "The Hymn of Tir Yazad (Part 2)": {
   "area": "Gavireh Lajavard",
   "dlg": 17150,
+  "firstSpeaker": "Sorush",
   "firstStep": "Pass through the path in the depths",
   "npcs": [
    "Katheryne (Sumeru)",
@@ -1265,6 +1344,7 @@
  "The Morn a Thousand Roses Brings": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -1277,6 +1357,7 @@
  "The Path of Papers": {
   "area": "Avidya Forest",
   "dlg": 13722,
+  "firstSpeaker": "Niloofar",
   "firstStep": "Look for Alrani",
   "npcs": [
    "Alrani",
@@ -1294,6 +1375,7 @@
  "The Price": {
   "area": "Ardravi Valley",
   "dlg": 15960,
+  "firstSpeaker": "Przheva",
   "firstStep": "Talk to Paimon after getting the mysterious item",
   "npcs": [
    "Alexandra",
@@ -1311,6 +1393,7 @@
  "The Secret of Al-Ahmar": {
   "area": "Hypostyle Desert",
   "dlg": 33518,
+  "firstSpeaker": "Tirzad",
   "firstStep": "Enter the secret passage behind the mural",
   "npcs": [
    "Benben",
@@ -1329,6 +1412,7 @@
  "The Splendorous Sky That Day": {
   "area": "Gavireh Lajavard",
   "dlg": 60277,
+  "firstSpeaker": "Katheryne",
   "firstStep": "Search for the strange object",
   "npcs": [
    "Katheryne (Sumeru)",
@@ -1347,6 +1431,7 @@
  "The Temple Where Sand Flows Like Tears": {
   "area": "Desert of Hadramaveth",
   "dlg": 63302,
+  "firstSpeaker": "Jeht",
   "firstStep": "Go to the temple on the outskirts of Gurabad",
   "npcs": [
    "Azariq",
@@ -1364,6 +1449,7 @@
  "The World of Aranara": {
   "area": "Ardravi Valley",
   "dlg": 33653,
+  "firstSpeaker": "Arana",
   "firstStep": "Talk to Paimon",
   "npcs": [
    "Amadhiah",
@@ -1394,6 +1480,7 @@
  "Through Mists of Smoke and Forests Dark": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -1406,6 +1493,7 @@
  "Treasure of Wisdom: A New Plan": {
   "area": "Avidya Forest",
   "dlg": 9511,
+  "firstSpeaker": "Drusus",
   "firstStep": "Set up the riddles with Drusus",
   "npcs": [
    "Drusus"
@@ -1420,6 +1508,7 @@
  "Until Vana is Healed": {
   "area": "Ardravi Valley",
   "dlg": 26000,
+  "firstSpeaker": "Ararycan",
   "firstStep": "Talk to Ararycan",
   "npcs": [
    "Ararycan",
@@ -1435,6 +1524,7 @@
  "Varuna Gatha": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -1447,6 +1537,7 @@
  "Vimana Agama": {
   "area": null,
   "dlg": 0,
+  "firstSpeaker": null,
   "firstStep": null,
   "npcs": [],
   "region": "Sumeru",
@@ -1459,6 +1550,7 @@
  "Vimana Agama: Dev Delver Chapter": {
   "area": "Ardravi Valley",
   "dlg": 6631,
+  "firstSpeaker": "Ararycan",
   "firstStep": "Leave the Ruin Golem",
   "npcs": [
    "Ararycan"
@@ -1473,6 +1565,7 @@
  "Vimana Agama: First Chapter": {
   "area": "Ardravi Valley",
   "dlg": 32009,
+  "firstSpeaker": "Ararycan",
   "firstStep": "Investigate the strange spot",
   "npcs": [
    "Jazari",
@@ -1489,6 +1582,7 @@
  "Vimana Agama: Jazari's Chapter": {
   "area": "Ardravi Valley",
   "dlg": 18746,
+  "firstSpeaker": "Jazari",
   "firstStep": "Open the Ruin Golem seal",
   "npcs": [
    "Jazari"
@@ -1503,6 +1597,7 @@
  "Vimana Agama: Royinjan's Chapter": {
   "area": "Ardravi Valley",
   "dlg": 24057,
+  "firstSpeaker": "Ararycan",
   "firstStep": "Find the secret base",
   "npcs": [
    "Amadhiah",
@@ -1520,6 +1615,7 @@
  "Where Are the Fierce Creatures?": {
   "area": "Lokapala Jungle",
   "dlg": 13345,
+  "firstSpeaker": "???",
   "firstStep": "Talk to Santon located south of the Palace of Alcazarzaray.",
   "npcs": [
    "Santon",
@@ -1537,6 +1633,7 @@
  "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars": {
   "area": "Desert of Hadramaveth",
   "dlg": 31106,
+  "firstSpeaker": "Katheryne",
   "firstStep": "Katheryne seems to be looking for you...",
   "npcs": [
    "Aderfi",
@@ -1558,6 +1655,7 @@
  "Yavanani's Apples": {
   "area": "Avidya Forest",
   "dlg": 1930,
+  "firstSpeaker": "Yavanani",
   "firstStep": "Give five Apples to Yavanani",
   "npcs": [
    "Yavanani"

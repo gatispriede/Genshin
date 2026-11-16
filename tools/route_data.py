@@ -92,7 +92,8 @@ def route(region, home_area, home_names):
         s = starts.get(name, {})
         r = rep.get(name, {})
         where = s.get("subarea") or s.get("area")
-        entry = {"name": name, "npc": (s.get("npcs") or [None])[0], "npcs": s.get("npcs") or [], "firstStep": s.get("firstStep"),
+        entry = {"name": name, "npc": (s.get("npcs") or [None])[0], "npcs": s.get("npcs") or [],
+                 "firstStep": s.get("firstStep"), "firstSpeaker": s.get("firstSpeaker"),
                  "where": where, "requirement": s.get("requirement"), "effort": effort(s)}
         if r.get("group") == "Request":
             entry["start"] = "request"

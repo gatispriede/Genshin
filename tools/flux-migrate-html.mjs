@@ -25,6 +25,16 @@ const APPLY = process.argv.includes('--apply');
 const SECTION = arg('--section');
 const ONLY = arg('--only');
 
+/**
+ * Same-page query links (href="?map-…=…", e.g. a route map's "show only this
+ * quest") lose their href on flux: the sanitizer keeps only paths and URLs.
+ * Prefix the page's own path, known once the page exists.
+ */
+function withPagePath(module, path) {
+  if (!module.content.includes('href=\\"?')) return module;
+  return { ...module, content: module.content.split('href=\\"?').join(`href=\\"${path}?`) };
+}
+
 /** Below this, blocks are being dropped — the 4% lesson. Refuse to write. */
 const MIN_COVERAGE = 95;
 
@@ -116,9 +126,10 @@ for (const p of plans) {
   }
   const parent = parents[p.parent];
   const row = await recreatePage(p.entry.title, parent.id);
+  const path = `/${root.slug}/${parent.slug}/${row.slug}`;
   for (const s of p.sections) {
     const { sectionId } = await call('section.create', { pageId: row.id, type: s.columns });
-    await call('module.add', { items: s.modules.map((module) => ({ sectionId, module })) });
+    await call('module.add', { items: s.modules.map((module) => ({ sectionId, module: withPagePath(module, path) })) });
   }
-  console.log(`  /${root.slug}/${parent.slug}/${row.slug}`);
+  console.log(`  ${path}`);
 }

@@ -84,5 +84,13 @@ export function mapModule(attrs, html) {
       .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
     content.legendFromRoles = false;
   }
+  // data-label-min-zoom="0" shows captions at every zoom (the module default
+  // hides them below 1.4x to keep dense maps clean).
+  const minZoom = (attrs.match(/data-label-min-zoom="([^"]*)"/) || [, ''])[1];
+  if (minZoom !== '') content.labelMinZoom = Number(minZoom);
+  // data-height overrides the module's clamp(320px, 60vh, 640px) viewport, which
+  // crops the bottom of a tall map (the image fits the width, not the height).
+  const height = (attrs.match(/data-height="([^"]*)"/) || [, ''])[1];
+  if (height) content.height = height;
   return { type: 'MAP_ANNOTATED', style: 'default', name: id || undefined, content: JSON.stringify(content) };
 }

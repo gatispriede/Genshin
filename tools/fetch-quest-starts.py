@@ -42,6 +42,27 @@ def first_step(wt):
     return re.sub(r"\s+", " ", t).strip()
 
 
+NOT_A_GIVER = {"paimon", "traveler", "aether", "lumine", "player", "choose", "option"}
+
+
+def first_speaker(wt):
+    """First named speaker in ==Dialogue== who is not Paimon or the Traveler.
+
+    Usually the quest giver: the wiki writes dialogue as '''Name:''' lines in
+    the order the quest plays. Steps like "Head to the rest stop" name nobody,
+    and the infobox character list is in order of appearance, not "who gives
+    it", so this is the most reliable name a page has.
+    """
+    m = re.search(r"==\s*Dialogue\s*==", wt)
+    if not m:
+        return None
+    for s in re.finditer(r"'''\s*([^':\n{}\[\]]{2,40}?)\s*:\s*'''", wt[m.end():m.end() + 20000]):
+        name = s.group(1).strip()
+        if name.lower() not in NOT_A_GIVER and "(" not in name:
+            return name
+    return None
+
+
 def titles_for(region):
     reps = json.load(io.open(os.path.join("reference", "data", "reputation-quests.json"), encoding="utf-8"))[region]
     reps = reps.get("world") if isinstance(reps, dict) else reps
@@ -75,6 +96,7 @@ def main():
                 "requirement": rep.delink(rep.field(box, "requirement")),
                 "npcs": [c.strip() for c in chars.split(";") if c.strip() and c.strip() not in ("Traveler", "Paimon")],
                 "firstStep": first_step(wt),
+                "firstSpeaker": first_speaker(wt),
                 "dlg": dlg,
                 "steps": steps,
             }

@@ -62,6 +62,10 @@ def locate(region_cfg, src, entries):
     box = (min(x for x, _ in pts) - 60, min(y for _, y in pts) - 60,
            max(x for x, _ in pts) + 60, max(y for _, y in pts) + 60)
     inside = lambda x, y: box[0] <= x <= box[2] and box[1] <= y <= box[3]
+    # "Another region" needs a clear miss: a border place's anchor can sit just
+    # past the outermost pin (Valley of Dahri, 64px) while Wangshu Inn is ~900px out.
+    FAR = 300
+    elsewhere = lambda x, y: not (box[0] - FAR <= x <= box[2] + FAR and box[1] - FAR <= y <= box[3] + FAR)
     areas = src.areas()
 
     def area_xy(where):
@@ -72,7 +76,7 @@ def locate(region_cfg, src, entries):
 
     for q in entries:
         named = area_xy(q["where"])
-        if named and not inside(*named) and q["start"] in ("pin", "area", "follow"):
+        if named and elsewhere(*named) and q["start"] in ("pin", "area", "follow"):
             # The wiki names a place outside the region: no pin overrides that
             # (a series name like "Garcia's Paean" matches other quests' pins).
             q["start"] = "elsewhere"
@@ -183,16 +187,20 @@ def assemble(region):
 
 
 def giver(q):
-    """Who starts the quest: step 1's "Talk to X", then the pin's "Starting
-    NPC: X", then the wiki's first listed character (often not the giver)."""
+    """Who starts the quest, best evidence first: step 1's "Talk to X", the
+    pin's "Starting NPC: X", the first speaker in the wiki's dialogue, and only
+    then the wiki's character list (in order of appearance, often not the giver)."""
+    # "???" is the wiki's unnamed speaker; Paimon is in every quest; "…Note" or
+    # "…Letter" is a thing you read. None of them is who to talk to.
+    person = lambda s: bool(s) and "?" not in s and s != "Paimon" and not re.search(
+        r"\b(note|letter|book|notice|diary|journal|record|sign|inscription|tablet|mural|message|memo)s?\b", s, re.I)
     # Case-insensitive verb, case-SENSITIVE name: "Find the last place..." names nobody.
     m = re.match(r"(?i:talk to|speak (?:to|with)|meet(?: up)? with|find)\s+(?:the\s+)?([A-Z][\w'.-]*(?: [A-Z][\w'.-]*)*)",
                  q.get("firstStep") or "")
-    if m and m.group(1) != "Paimon":          # "Talk to Paimon after..." names no giver
-        return m.group(1)
-    m = re.search(r"Starting NPC:\s*([^\n]+)", (q.get("pin") or {}).get("content") or "")
-    if m:
-        return m.group(1).strip()
+    m2 = re.search(r"Starting NPC:\s*([^\n]+)", (q.get("pin") or {}).get("content") or "")
+    for cand in (m and m.group(1), m2 and m2.group(1).strip(), q.get("firstSpeaker")):
+        if person(cand):
+            return cand
     # The wiki's character list is in order of appearance, not "who gives it":
     # trust it only when it names a single NPC. Otherwise the caller uses the quest name.
     npcs = [n for n in (q.get("npcs") or []) if n != "Paimon"]
@@ -248,9 +256,13 @@ def route_html(region, routed):
         chain_html = ('<details class="chain"><summary>%d quest%s first%s</summary><ol class="steps">%s</ol></details>'
                       % (len(chain), "" if len(chain) == 1 else "s",
                          (" (%d new)" % len(todo)) if len(todo) != len(chain) else "", steps)) if chain else ""
+        slug = REGIONS[region]["slug"]
+        solo = rm.solo_query(e["n"], len(routed), [slug + "Route", slug + "City"])
         out.append('<div class="stop" id="q%d" style="%s"><div><span style="%s">%d</span> <b>%s</b> '
-                   '<span style="opacity:.65;font-size:.85rem;margin-left:6px">%s</span></div><div>%s</div>%s%s</div>'
-                   % (e["n"], CARD, PILL, e["n"], esc(q["name"]), tier, where_line(q), shot(q), chain_html))
+                   '<span style="opacity:.65;font-size:.85rem;margin-left:6px">%s</span> '
+                   '<a href="%s" style="font-size:.85rem;margin-left:6px">show only this on the map</a></div>'
+                   '<div>%s</div>%s%s</div>'
+                   % (e["n"], CARD, PILL, e["n"], esc(q["name"]), tier, esc(solo), where_line(q), shot(q), chain_html))
     return "\n".join(out)
 
 
@@ -297,11 +309,13 @@ def main():
     stitch(city_win, city_img, scale_to=1024, enlarge=True)
 
     is_main = lambda q: q["label"].isdigit()
-    main_markers = [marker(q, main_win, is_main(q)) for q in outside]
+    # City starts go on the main map too, so its legend lists every quest; the
+    # close-up repeats them at a scale where they can be told apart.
+    main_markers = [marker(q, main_win, is_main(q)) for q in placed]
     x0, y0 = pct(main_win, (city_win.off_x, city_win.off_y))
     x1, y1 = pct(main_win, (city_win.off_x + city_win.w, city_win.off_y + city_win.h))
     main_markers.append({"zone": True, "rect": True, "x": x0, "y": y0, "w": round(x1 - x0, 2), "h": round(y1 - y0, 2),
-                         "role": "hub", "tag": "%s: %d starts, close-up below" % (cfg["city"], len(in_city))})
+                         "role": "hub", "tag": "%s: close-up below" % cfg["city"]})
     city_markers = rm.merge_stacked([marker(q, city_win, is_main(q)) for q in in_city])
     main_markers = rm.merge_stacked(main_markers)
     main_legend, city_legend = rm.legend(routed, main_markers), rm.legend(routed, city_markers)
@@ -325,13 +339,13 @@ def main():
   Generated %(date)s from the official map's quest pins and the wiki.</p>
 
   <div class="bar key"><b>Reading the map.</b> Green pins are the quests that pay; small red pins are chain
-  pre-quests. Yellow dots are approximate: the wiki names only the area. A pin ending in <b>+</b> is several
-  starts at one spot; its caption lists them all. Every quest has its own toggle under the map, and its chain
-  goes with it. City starts are on the close-up below. Zoom in to read the names.</div>
+  pre-quests. Yellow dots are approximate: the wiki names only the area. Each pin is captioned with who to talk
+  to. A pin ending in <b>+</b> is several starts of one quest at one spot; its caption lists them. Every quest
+  has its own toggle under the map, and its chain goes with it. City starts are also on the close-up below.</div>
 
-  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s"></div>
+  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s" data-label-min-zoom="0" data-height="%(main_height)s"></div>
   <h2>%(city)s close-up</h2>
-  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s"></div>
+  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s" data-label-min-zoom="0"></div>
 
   <h2>The route</h2>
   <div class="note">Shortest first, counting the whole chain, with each pre-quest's own length. Pictures are the
@@ -367,6 +381,8 @@ def main():
                                "another region.", side["elsewhere"]),
         "main_markers": json.dumps(main_markers, ensure_ascii=False),
         "main_legend": esc(json.dumps(main_legend, ensure_ascii=False)),
+        # Viewport as tall as the image is at full width, capped near a screen height.
+        "main_height": "min(%.0fvw, %dpx)" % (100.0 * main_win.h / main_win.w, int(1200 * main_win.h / main_win.w)),
         "city_legend": esc(json.dumps(city_legend, ensure_ascii=False)),
         "city_markers": json.dumps(city_markers, ensure_ascii=False),
     }
