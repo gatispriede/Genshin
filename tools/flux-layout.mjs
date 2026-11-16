@@ -15,6 +15,7 @@
  */
 
 import { topLevelBlocks, text, decode, classOf, pageContent } from './html-blocks.mjs';
+import { mapModule } from './flux-maps.mjs';
 
 const json = (o) => JSON.stringify(o);
 
@@ -46,7 +47,7 @@ function calloutVariant(cls) {
   return 'note';
 }
 
-/** Stand-in for a map until MAP_ANNOTATED exists. Marked so it can be found and replaced. */
+/** Stand-in for a map whose image is not uploaded yet (tools/flux-upload-map-images.mjs). Marked so it can be found. */
 export function mapPlaceholder(alt, img) {
   const label = alt || 'Map';
   const src = img ? ` <span style="opacity:.7">(${img})</span>` : '';
@@ -175,12 +176,13 @@ export function pageSections(html, title) {
       continue;
     }
     if (b.name === 'div' && /\bmap-wrap\b/.test(cls)) {
-      // The map itself waits for MAP_ANNOTATED. Hold its place, full width,
-      // naming the image so the slot is easy to fill later.
+      // A real MAP_ANNOTATED, built from the page's own drawMap() data
+      // (tools/flux-maps.mjs). Full width. Until its image is uploaded, a
+      // named placeholder holds the slot instead.
       flushProse();
       const alt = (b.attrs.match(/data-alt="([^"]*)"/) || [, ''])[1];
       const img = (b.attrs.match(/data-map="([^"]*)"/) || [, ''])[1];
-      place(mapPlaceholder(alt, img), true);
+      place(mapModule(b.attrs, html) || mapPlaceholder(alt, img), true);
       continue;
     }
     if (b.name === 'table') { flushProse(); place(...tableBlock(b.html)); continue; }

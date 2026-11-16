@@ -69,7 +69,7 @@ Platform thread owns all of these. Status is the platform thread's to update.
 | # | Item | Why | Status |
 |---|---|---|---|
 | 1 | **Sanitizer: structural table attributes** | `colspan`/`rowspan` were stripped by an `ALLOWED_URI_REGEXP` bug | Fixed on `develop`, **not yet on flux** |
-| 2 | **`MAP_ANNOTATED` module** | 19 pages are declarative pin-over-image maps with no home | **Scoped below, not started** |
+| 2 | **`MAP_ANNOTATED` module** | 19 pages are declarative pin-over-image maps with no home | **Done 16 Nov** — live on flux; all 24 maps on 19 pages pushed as real modules (see below) |
 | 3 | **Site search across pages** | Gatis asked for "wide search/filter"; unknown whether the CMS has it | **Answered by platform thread: it does not exist.** See below — Gatis must decide before batch C |
 | 4 | **Dataset upload** | 24 MB of `reference/data/*.json` has no home | **Not needed** — see below |
 | 5 | **Heavier map engines** | `map-core`, `live-map`, `collect-map` (8 pages) | **Out of scope** — see below |
@@ -132,6 +132,18 @@ far smaller than checkout.
 in its own right, not a detail of this migration.
 
 ## Item 2 — `MAP_ANNOTATED` module scope
+
+> **Status 16 Nov: shipped and in use.** The module is registered on flux
+> (`module.listTypes`), documented in the CMS repo at
+> `docs/current/modules/map-annotated.md`. Content side:
+> `tools/flux-upload-map-images.mjs` uploads the map images (manifest:
+> `reference/data/flux-map-images.json`; two files over ~700 KB had to be
+> shrunk first, because larger MCP payloads hit the request-body limit).
+> `tools/flux-maps.mjs` turns each page's `drawMap()` data into module content,
+> and `tools/flux-layout.mjs` emits it in place of the old placeholder.
+> **No `MAP_CONTROL` in v1:** each map's own legend already toggles layers, and
+> hidden layers go in the URL as the module's `?map-<name>=…`. The scope below
+> is kept as the record of what was asked for.
 
 ### What it is
 

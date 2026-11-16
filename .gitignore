@@ -24,3 +24,4 @@ tools/.flux-args.json
 tools/.rendered/
 tools/.bundles/
 __pycache__/
+tools/.map-upload/

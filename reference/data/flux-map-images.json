@@ -1,0 +1,21 @@
+{
+  "assets/atocpan-domain.png": "api/atocpan-domain.png",
+  "assets/chasm-player-map.webp": "api/chasm-player-map.webp",
+  "assets/dragonspine-player-map.webp": "api/dragonspine-player-map.webp",
+  "assets/everfrozen-earth-map.webp": "api/everfrozen-earth-map.webp",
+  "assets/hoyolab-marked-pins.jpg": "api/hoyolab-marked-pins.jpg",
+  "assets/hoyolab-pin-popup.jpg": "api/hoyolab-pin-popup.jpg",
+  "assets/hoyolab-settings.jpg": "api/hoyolab-settings.jpg",
+  "assets/liyue-quests.jpg": "api/liyue-quests.jpg",
+  "assets/mondstadt-city.jpg": "api/mondstadt-city.jpg",
+  "assets/mondstadt-map.webp": "api/mondstadt-map.webp",
+  "assets/natlan-overview.jpg": "api/natlan-overview.jpg",
+  "assets/qingce-player-map.webp": "api/qingce-player-map.webp",
+  "assets/snezhnaya-statues.jpg": "api/snezhnaya-statues.jpg",
+  "assets/stormbearer-map.webp": "api/stormbearer-map.webp",
+  "assets/vault-qingce-map.webp": "api/vault-qingce-map.webp",
+  "assets/windwail-map.webp": "api/windwail-map.webp",
+  "assets/wuwang-player-map.webp": "api/wuwang-player-map.webp",
+  "assets/bishui-map.webp": "api/bishui-map.webp",
+  "assets/chenyu-south-map.webp": "api/chenyu-south-map.webp"
+}
