@@ -31,8 +31,10 @@ const ONLY = arg('--only');
  * Prefix the page's own path, known once the page exists.
  */
 function withPagePath(module, path) {
-  if (!module.content.includes('href=\\"?')) return module;
-  return { ...module, content: module.content.split('href=\\"?').join(`href=\\"${path}?`) };
+  let content = module.content;
+  // Same page: "?query" (map filters) and "#anchor" (a map picture's "Full entry" link).
+  for (const lead of ['?', '#']) content = content.split(`href=\\"${lead}`).join(`href=\\"${path}${lead}`);
+  return content === module.content ? module : { ...module, content };
 }
 
 /** Below this, blocks are being dropped — the 4% lesson. Refuse to write. */

@@ -15,6 +15,21 @@ import re
 STACK_PCT = 0.9
 
 
+def shot_fields(q, resize):
+    """Extra marker fields for a click-to-open picture on flux.
+
+    The local drawMap() ignores them; tools/flux-maps.mjs turns them into a
+    MAP_ANNOTATED block anchored to the marker: the pin's screenshot, the
+    quest, its first step and a link down to its full entry (#q<n>).
+    """
+    img = (q.get("pin") or {}).get("img")
+    if not img:
+        return {}
+    n = re.match(r"\d+", q["label"]).group(0)
+    lines = [l for l in (q.get("firstStep") and "Step 1: " + q["firstStep"], q.get("where")) if l]
+    return {"shot": img + resize, "card": "#q" + n, "info": " · ".join(lines)}
+
+
 def quest_layer(label):
     return "q%s" % re.match(r"\d+", label).group(0)
 
@@ -48,6 +63,8 @@ def merge_stacked(markers):
         first["label"] = labels[0] + "+"
         first["tag"] = "%s: %s" % (" · ".join(labels), g[0]["tag"])
         first["title"] = " / ".join(m["title"] for m in g)
+        if not first.get("shot"):          # keep a picture if any stacked start has one
+            first.update({k: v for m in g for k, v in m.items() if k in ("shot", "card", "info")})
         if any(m["role"] == "goal" for m in g):
             first["role"] = "goal"
             first.pop("size", None)

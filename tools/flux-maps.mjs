@@ -74,8 +74,23 @@ export function mapModule(attrs, html) {
   const alt = (attrs.match(/data-alt="([^"]*)"/) || [, ''])[1];
   const src = imageUrl(img);
   if (!src) return null;
-  const markers = (markersById(html).get(id) || []).map((m, i) => toModuleMarker(m, `#${id} marker ${i}`));
+  const raw = markersById(html).get(id) || [];
+  const markers = raw.map((m, i) => toModuleMarker(m, `#${id} marker ${i}`));
   const content = { image: { src, alt: alt || undefined }, markers };
+  // Click-to-open pictures: a marker carrying `shot` gets a block anchored to
+  // it (same index), hidden until the marker is clicked. tools/route_markers.py
+  // sets shot / card / info on route maps; other maps carry none.
+  const boxW = Number((attrs.match(/data-block-w="([^"]*)"/) || [, '22'])[1]);
+  const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const blocks = raw.flatMap((m, i) => (m.shot ? [{
+    id: `${id}-${i}`, at: i, reveal: 'click', w: boxW,
+    placement: m.y > 75 ? 'top' : m.x > 55 ? 'left' : 'right',
+    html: `<img src="${esc(m.shot)}" alt="Where ${esc(m.title)} starts" style="width:100%;border-radius:6px">`
+      + `<p style="margin:6px 0 0;font-size:.85rem"><b>${esc(m.label)} · ${esc(m.title)}</b>`
+      + (m.info ? `<br>${esc(m.info)}` : '')
+      + (m.card ? `<br><a href="${esc(m.card)}">Full entry ↓</a>` : '') + '</p>',
+  }] : []));
+  if (blocks.length) content.blocks = blocks;
   // data-legend='[{layer, text, role}]' replaces the role-derived legend, e.g.
   // one toggle per quest on a route map (tools/route_markers.py).
   const legendAttr = (attrs.match(/data-legend="([^"]*)"/) || [, ''])[1];

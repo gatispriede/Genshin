@@ -213,7 +213,7 @@ def marker(q, window, main):
     tag = giver(q) or q["name"]
     return {"x": x, "y": y, "role": "warn" if approx else ("goal" if main else "do-now"),
             "layer": rm.quest_layer(q["label"]), "label": q["label"], "tag": ("≈ " if approx else "") + (tag if len(tag) <= 24 else tag[:23] + "…"),
-            "title": q["name"], **({} if main else {"size": "sm"})}
+            "title": q["name"], **({} if main else {"size": "sm"}), **rm.shot_fields(q, SHOT)}
 
 
 def shot(q, small=False):
@@ -343,9 +343,9 @@ def main():
   to. A pin ending in <b>+</b> is several starts of one quest at one spot; its caption lists them. Every quest
   has its own toggle under the map, and its chain goes with it. City starts are also on the close-up below.</div>
 
-  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s" data-label-min-zoom="0" data-height="%(main_height)s"></div>
+  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s" data-block-w="20" data-label-min-zoom="0" data-height="%(main_height)s"></div>
   <h2>%(city)s close-up</h2>
-  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s" data-label-min-zoom="0"></div>
+  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s" data-block-w="38" data-label-min-zoom="0"></div>
 
   <h2>The route</h2>
   <div class="note">Shortest first, counting the whole chain, with each pre-quest's own length. Pictures are the
