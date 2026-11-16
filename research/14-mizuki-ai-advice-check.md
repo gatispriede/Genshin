@@ -393,3 +393,15 @@ cost Varesa her weapon. **Keep Sacrificial Fragments on Mizuki.** The owned
 catalysts not in the frame (Otherworldly Story, Favonius Codex, Emerald Orb,
 Thrilling Tales) were not ranked; this file makes no claim about them. Weapon
 choice is the smallest lever she has. EM and the unlock come first.
+
+## In-game check after the unlock (16 Nov, user)
+
+Mizuki **Lv 70**, Vast Be the Dream **unlocked**. Team: Mizuki · Traveler (Cryo)
+· Rosaria · Sucrose; Valeriy moved to the Varesa team.
+
+- **~23k, often.** The model put the Stellar instance at ~17–22k non-crit
+  around 715 EM. The level-70 ascension EM and Sucrose's EM share account for
+  the rest. **Radiance is firing.**
+- **~65k max, rare.** Crits on the big hits. Rare because her CRIT Rate is
+  ~15%; the attribution is not checked against a damage log.
+- The Furina test's ~4k ceiling is fully explained by the locked talent.
