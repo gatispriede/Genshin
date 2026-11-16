@@ -12,7 +12,7 @@
  * reference/data/hoyolab-roster-*.json).
  */
 
-import roster from '../../reference/data/hoyolab-roster-2026-11-14.json';
+import roster from '../../reference/data/hoyolab-roster-2026-11-16.json';
 import type { Character, EquippedArtifact, EquippedWeapon, Slot, Stats } from './types';
 
 interface LiveCharacter {

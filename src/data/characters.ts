@@ -47,8 +47,8 @@ const profiles: Character[] = [
     stats: { maxHp: 12023, atk: 733, def: 615, em: 426, critRate: '8.9%', critDmg: '63.2%', energyRecharge: '115.5%', elementalDmgBonus: '15.0%' },
     teams: ['mizuki'], tier: 1, paidIn: 'levels',
     targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'CRIT Rate or CRIT DMG' }, // mizuki-build.html
-    targetSet: 'Gilded Dreams, or 2pc/2pc EM',
-    note: 'Stellar Swirl carry. 4pc Viridescent Venerer is already live. 8.9% CRIT Rate is the gap - her payload crits.',
+    targetSet: 'Viridescent Venerer (with Sucrose on Instructor), or Gilded Dreams / 2pc-2pc EM',
+    note: 'Stellar Swirl carry. Vast Be the Dream unlocked 16 Nov at Lv 70: ~23k often, ~65k crits. 15% CRIT Rate is the gap - her payload crits.',
     page: 'mizuki-build.html', verified: '2026-11-12',
   },
   {
@@ -113,11 +113,11 @@ const profiles: Character[] = [
   },
   {
     name: 'Sucrose', element: 'Anemo', weaponType: 'Catalyst', rarity: 4, level: 50,
-    constellation: null, owned: true, fieldRole: 'off-field', teams: ['varesa'], tier: 3,
-    paidIn: 'gear', targetSet: 'Viridescent Venerer', setProgress: 'partial',
+    constellation: null, owned: true, fieldRole: 'off-field', teams: ['mizuki'], tier: 3,
+    paidIn: 'gear', targetSet: 'Instructor', setProgress: 'partial',
     // EM in all three slots, per sucrose-build.html.
     targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'Elemental Mastery' },
-    note: 'Mollis Favonius gives the party 20% of her EM. That is a gear number, not a level one.',
+    note: 'Mizuki team from 16 Nov. Mollis Favonius gives the party 20% of her EM - a gear number, not a level one. 4pc Instructor (VV stays on Mizuki); Fruit of Fulfillment from a Midlander catalyst billet.',
     page: 'sucrose-build.html', verified: '2026-11-12',
   },
   {
@@ -142,7 +142,7 @@ const profiles: Character[] = [
 
   { name: 'Tighnari', element: 'Dendro', weaponType: 'Bow', rarity: 5, level: 70, constellation: null, owned: true, teams: [], tier: null, note: 'Only levelled Dendro. Dendro breaks Hydro wards at x2 where the teams manage x1.', page: 'tighnari-build.html', verified: '2026-11-12' },
   { name: 'Alyosha', element: 'Electro', weaponType: 'Polearm', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
-  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: ['mizuki'], tier: 3, paidIn: 'levels', note: 'Mizuki team from 15 Nov. C6 on the account: his C2 gives the party +100 EM for 18s after his Skill (10s cooldown), so it never drops. Swap in, Skill, swap out. Levels only grow his shield.', verified: '2026-11-15' },
+  { name: 'Valeriy', element: 'Electro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: ['varesa'], tier: 3, paidIn: 'levels', note: 'Varesa team from 16 Nov (was Mizuki, 15 Nov): Offensive Directive adds to on-field Electro hits, C6 gives +10% Electro CRIT Rate on enemies he hits, and his shield covers Varesa’s plunges. C2: party +100 EM for 18s after his Skill (10s cooldown). Also the Theater Act 4-6 support, 16 Nov.', verified: '2026-11-16' },
   { name: 'Dahlia', element: 'Hydro', weaponType: 'Sword', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },
   { name: 'Fischl', element: 'Electro', weaponType: 'Bow', rarity: 4, level: 60, constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null, page: 'fischl-build.html', verified: '2026-11-12' },
   { name: 'Lisa', element: 'Electro', weaponType: 'Catalyst', rarity: 4, level: 60, constellation: null, owned: true, teams: [], tier: null, verified: '2026-11-12' },

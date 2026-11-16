@@ -415,6 +415,19 @@ gate, the quest gate, or the in-game talent screen.***
 
 ---
 
+## Told the user AR 53 should be World Level 8 (16 Nov)
+
+From memory I said AR 50+ means World Level 8 "if you've done the AR 50 ascension
+quest", and that their World Level 7 meant a skipped quest. The in-game World Level
+screen (user screenshot) says it rises at AR **20/25/30/35/40/45/50/55/58**, so
+**AR 53 is World Level 7**, World Level 8 comes at AR 55 and 9 at AR 58. No quest
+was skipped. The thresholds have changed since the ones I remembered.
+
+*Lesson: game progression tables change between versions. Before stating one,
+read it from the game or the wiki; don't recall it.*
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.
