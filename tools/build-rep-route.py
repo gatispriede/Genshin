@@ -27,6 +27,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mapsource as ms  # noqa: E402
 import route_data as rd  # noqa: E402
+import route_markers as rm  # noqa: E402
 
 REGIONS = {"Sumeru": {"area_id": 4, "city": "Sumeru City", "slug": "sumeru"}}
 LEVEL = 1                      # half scale: sharp enough for a city close-up
@@ -203,7 +204,7 @@ def marker(q, window, main):
     approx = q["start"] == "area"
     tag = giver(q) or q["name"]
     return {"x": x, "y": y, "role": "warn" if approx else ("goal" if main else "do-now"),
-            "label": q["label"], "tag": ("≈ " if approx else "") + (tag if len(tag) <= 24 else tag[:23] + "…"),
+            "layer": rm.quest_layer(q["label"]), "label": q["label"], "tag": ("≈ " if approx else "") + (tag if len(tag) <= 24 else tag[:23] + "…"),
             "title": q["name"], **({} if main else {"size": "sm"})}
 
 
@@ -301,7 +302,9 @@ def main():
     x1, y1 = pct(main_win, (city_win.off_x + city_win.w, city_win.off_y + city_win.h))
     main_markers.append({"zone": True, "rect": True, "x": x0, "y": y0, "w": round(x1 - x0, 2), "h": round(y1 - y0, 2),
                          "role": "hub", "tag": "%s: %d starts, close-up below" % (cfg["city"], len(in_city))})
-    city_markers = [marker(q, city_win, is_main(q)) for q in in_city]
+    city_markers = rm.merge_stacked([marker(q, city_win, is_main(q)) for q in in_city])
+    main_markers = rm.merge_stacked(main_markers)
+    main_legend, city_legend = rm.legend(routed, main_markers), rm.legend(routed, city_markers)
 
     total = len(routed)
     chained = sum(1 for e in routed if e["chain"])
@@ -321,13 +324,14 @@ def main():
   <b>7a, 7b…</b> are the quests you must do before quest 7, in order. Dots mark where each one <b>starts</b>.
   Generated %(date)s from the official map's quest pins and the wiki.</p>
 
-  <div class="bar key"><b>Reading the map.</b> Red pins are the quests that pay; small pins are chain pre-quests.
-  Yellow dots are approximate: the wiki names only the area. Dots for the city sit on the close-up below the
-  main map. Zoom in to read the names.</div>
+  <div class="bar key"><b>Reading the map.</b> Green pins are the quests that pay; small red pins are chain
+  pre-quests. Yellow dots are approximate: the wiki names only the area. A pin ending in <b>+</b> is several
+  starts at one spot; its caption lists them all. Every quest has its own toggle under the map, and its chain
+  goes with it. City starts are on the close-up below. Zoom in to read the names.</div>
 
-  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts"></div>
+  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s"></div>
   <h2>%(city)s close-up</h2>
-  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city"></div>
+  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s"></div>
 
   <h2>The route</h2>
   <div class="note">Shortest first, counting the whole chain, with each pre-quest's own length. Pictures are the
@@ -362,6 +366,8 @@ def main():
         "elsewhere": side_html("Starts outside %s" % region, "The quest that pays is here, but it starts in "
                                "another region.", side["elsewhere"]),
         "main_markers": json.dumps(main_markers, ensure_ascii=False),
+        "main_legend": esc(json.dumps(main_legend, ensure_ascii=False)),
+        "city_legend": esc(json.dumps(city_legend, ensure_ascii=False)),
         "city_markers": json.dumps(city_markers, ensure_ascii=False),
     }
     out = "%s-rep-route.html" % slug

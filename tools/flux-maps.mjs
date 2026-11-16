@@ -76,5 +76,13 @@ export function mapModule(attrs, html) {
   if (!src) return null;
   const markers = (markersById(html).get(id) || []).map((m, i) => toModuleMarker(m, `#${id} marker ${i}`));
   const content = { image: { src, alt: alt || undefined }, markers };
+  // data-legend='[{layer, text, role}]' replaces the role-derived legend, e.g.
+  // one toggle per quest on a route map (tools/route_markers.py).
+  const legendAttr = (attrs.match(/data-legend="([^"]*)"/) || [, ''])[1];
+  if (legendAttr) {
+    content.legend = JSON.parse(legendAttr.replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'")
+      .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
+    content.legendFromRoles = false;
+  }
   return { type: 'MAP_ANNOTATED', style: 'default', name: id || undefined, content: JSON.stringify(content) };
 }
