@@ -435,3 +435,45 @@ resin source on the account, and its Part I additionally gates Interlude Act II.
 
 *Not confirmed:* the Fragile Resin lifetime total from AR level-ups (76 vs 79
 across sources), and whether Fragile Resin can push Original Resin above 200.
+
+---
+
+## Chests are not gated by World Level — *verified 17 Nov 2026*
+
+Checked after a disagreement, against three sources that agree:
+
+1. **World Level page:** *"When a player's World Level increases, it increases the
+   difficulty and rewards of **Enemies, Normal Bosses, and Ley Line Outcrops**."*
+   That list is exhaustive. Chests are not on it.
+2. **Chest page:** payout is set by the **area** the chest sits in, and never mentions
+   World Level or Adventure Rank.
+3. **KQM Zone Levels** (cited by the Chest page): zones are fixed map geography
+   affecting *"enemy level and environmental reactions"*. World Level sets the
+   enemy-level band; it does not move a chest between zones.
+
+**Chest Primogems by area, fixed and permanent:** Common / Exquisite / Precious pay
+**0 / 2 / 5** in most of Mondstadt and Liyue, and **2 / 5 / 10** everywhere else —
+all other nations, plus Dragonspine, Stormbearer Mountains, Guyun Stone Forest, Lisha
+and The Chasm.
+
+**Lowering World Level does not reduce chest rewards.** The page is explicit that it
+*"lowers the level of Ley Line Blossoms and opponents in the open world, but also
+decreases the rewards the player gains from **defeating them**"* — enemies and ley
+lines only. So dropping a level to explore is free value on a weak roster. One change
+per 24 hours.
+
+### What *does* gate chests: Adventure Rank, via region access
+
+Highest AR gate on any region's Archon Quest is **40**. Mondstadt acts at 10 / 18 ·
+Liyue 23 / 25 / 28 · **Inazuma 30** · **Sumeru 35** · **Fontaine, Natlan, Snezhnaya,
+Nod-Krai 40**.
+
+**This account is AR 51, so every region is AR-open.** What remains is quest
+completion, not rank — each region needs its Archon Quest played, and sub-areas need
+world quests on top (Enkanomiya needed *The Still Water's Flow*; the same holds for
+The Chasm, Chenyu Vale and Sea of Bygone Eras).
+
+*Likely source of the "new chests at higher World Level" impression: AR and WL rise
+together, and AR is what opens regions — so a World Level ascension often coincides
+with a whole new continent of chests. Ley Line Outcrops also scale with World Level
+and drop a resin-claimed Blossom that resembles a chest.*
