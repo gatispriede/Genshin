@@ -477,3 +477,17 @@ The Chasm, Chenyu Vale and Sea of Bygone Eras).
 together, and AR is what opens regions — so a World Level ascension often coincides
 with a whole new continent of chests. Ley Line Outcrops also scale with World Level
 and drop a resin-claimed Blossom that resembles a chest.*
+
+### Sumeru Reputation unlock — *verified 17 Nov 2026, Fandom*
+
+**Quest: *Corps of Thirty Recruitment*.** One step: **talk to Effendi**, start
+location **Treasures Street, Sumeru City** (area Avidya Forest). Rewards
+20,000 Mora + 2 Hero's Wit. It is **automatically unlocked after completing
+*Dawn*** (an act of Sumeru's Archon Quest) — so it is not findable before that
+point, and until it is done **Sumeru reputation EXP has nowhere to bank.**
+
+**Ashavan Realm is rainforest, not desert** — subregion **Dharma Forest**.
+Its own description: *"a materially-rich southern region covered in hill, wood
+and wetland; mighty ramparts defend its western edge from … sandstorms."* The
+desert is the far side of those ramparts. Yasna Monument sits in it, reachable
+without any Great Red Sand progress.

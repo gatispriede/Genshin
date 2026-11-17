@@ -189,3 +189,14 @@ event itself became permanent. Prerequisite is normally Chapter 4 Act 6, but
 
 **The check:** open the in-game Events menu and the Natlan Archon Quest entry.
 Natlan is at 2% exploration so this is almost certainly unclaimed.
+
+## Is Sumeru Reputation unlocked on this account? — *raised 17 Nov 2026*
+
+Blocks the entire Sumeru reputation run. Sumeru EXP only banks once *Corps of
+Thirty Recruitment* is done, which itself requires the Archon quest *Dawn*.
+The exploration snapshot says Sumeru **0%**, which makes it genuinely doubtful.
+
+**30-second check:** Paimon menu → Reputation → is there a **Sumeru** tab?
+If yes, the screenshot also gives the current level and EXP bar, which is the
+only trustworthy source for the claimed-vs-outstanding split (see the Inazuma
+counter correction). If no, the whole run is blocked behind *Dawn*.

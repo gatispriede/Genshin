@@ -592,3 +592,27 @@ Snezhnaya isn't playable while the Chronicle reports 19 Cryoculi.
 
 The user's own standing rule covers all four: *verify the actual current state
 before acting on it.* Every entry here is a case of not doing that.
+
+## 17 Nov 2026 — Sumeru shortest-first list ignored gating (twice over)
+
+**What I said.** Read the live flux page and reported 32 Sumeru world quests
+shortest-first, leading with *Adventure Takes Courage!* (3.5) and *Memory's
+Final Chapter* (6.7). Handed that to the user as a running order.
+
+**What was wrong.** Both are prerequisite-locked. Effort score is not a running
+order until gates are applied — the same mistake class as the Inazuma
+"6 of 31 were actually startable" unwind, repeated one region later.
+
+**Then the gate check was wrong too.** `quest-chains.json` reported
+*Purbiruni's Commandment* and *The Price* as prerequisite-free. The wiki says
+they need *Solitary Sea-Beast* and *The End of the Sabzeruz Festival*. Cached
+chain data is stale for Sumeru.
+
+**And the wiki's own field is not enough.** *A Delicacy for Nara* has an empty
+`|requirement=`, but its lede reads *"the last quest of the series An
+Unwavering Culinary Dream."* **An empty requirement field does not mean
+ungated — check the lede for series membership as well.** Of 40 Sumeru
+entries, exactly one survives both tests: **Even Beasts Stumble**.
+
+**Rule.** Gate first, sort second, and clear a Sumeru quest only when the
+requirement field is empty *and* the lede names no series.
