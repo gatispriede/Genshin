@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kachina — build</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+  .slots { display:grid; gap:9px; margin-top:10px; }
+  .slot { display:grid; grid-template-columns:96px 1fr 1fr; gap:12px; align-items:start;
+          padding:12px 14px; background:var(--panel); border-radius:8px;
+          border-left:3px solid var(--off); }
+  .slot.ok  { border-left-color:var(--goal); }
+  .slot.bad { border-left-color:var(--do-now); }
+  .slot.meh { border-left-color:var(--warn); }
+  .slot h4 { margin:0; font-size:.88rem; color:var(--paper); }
+  .slot .now, .slot .want { font-size:.85rem; line-height:1.5; }
+  .slot .now  { color:var(--dim); }
+  .slot .want { color:#c9d4e3; }
+  .slot .want b { color:var(--best); }
+  .slot small { display:block; color:#6f7a8c; font-size:.72rem;
+                letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px; }
+  @media (max-width:640px){ .slot{ grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="styles/gear.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="pagechar"><span data-char="Kachina"></span><h1>Kachina</h1></div>
+  <p class="sub">Lv 50 · C0 · Geo polearm · off-field support. Loadout read from
+  HoYoLAB 16 Nov 2026.</p>
+
+  <div class="bar key">
+    <b>Not built yet: five mismatched pieces from four sets, three of them still +0,
+    and talents 1/1/1.</b> Her weapon and Energy Recharge are already fine. Everything
+    else is a cheap fix, because the target set is a 4-star set.
+  </div>
+
+  <h2>Where she is vs where she's going</h2>
+  <table>
+    <tr><th>Stat</th><th>Now</th><th>Target</th><th></th></tr>
+    <tr><td>DEF</td><td>615</td><td>~2,000 (her damage scales on DEF)</td><td class="bad">a third of target</td></tr>
+    <tr><td>Energy Recharge</td><td>153.8%</td><td>enough for her Burst every rotation</td><td class="good">fine, from the weapon</td></tr>
+    <tr><td>Geo DMG</td><td>18.3%</td><td>46%+ (5★ goblet) or 38.7% (4★)</td><td class="bad">+0 goblet</td></tr>
+    <tr><td>CRIT Rate / DMG</td><td>12.5% / 62.6%</td><td>CRIT circlet, then crit subs</td><td class="bad">DEF% circlet</td></tr>
+    <tr><td>Set bonus</td><td>none (2 Exile + 3 singles)</td><td>4pc Scroll of the Hero of Cinder City</td><td class="bad">1 of 4</td></tr>
+  </table>
+
+  <h2>Slot by slot</h2>
+  <div class="slots">
+    <div class="slot meh">
+      <h4>Flower</h4>
+      <div class="now"><small>Now</small>Long Night's Oath 5★ +8 · HP · DEF, EM, HP%, CRIT DMG subs</div>
+      <div class="want"><small>Want</small><b>Scroll of the Hero of Cinder City</b> flower, any substats with DEF% / ER / CRIT.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Plume</h4>
+      <div class="now"><small>Now</small>The Exile 4★ +4 · ATK · CRIT Rate, DEF%, DEF, HP subs</div>
+      <div class="want"><small>Want</small><b>Scroll</b> plume. ATK is a dead main stat on her either way; the set is what matters.</div>
+    </div>
+    <div class="slot meh">
+      <h4>Sands</h4>
+      <div class="now"><small>Now</small>Scroll 4★ <b>+0</b> · DEF% 7.9%</div>
+      <div class="want"><small>Want</small><b>DEF%</b>, the right piece already. Level it: +0 to +16 takes DEF% from 7.9% to 46.6%.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Goblet</h4>
+      <div class="now"><small>Now</small>The Exile 4★ <b>+0</b> · Geo DMG 6.3%</div>
+      <div class="want"><small>Want</small><b>Geo DMG</b>, the right main stat. Level it, or swap in a Scroll goblet with Geo DMG.</div>
+    </div>
+    <div class="slot bad">
+      <h4>Circlet</h4>
+      <div class="now"><small>Now</small>Scholar 4★ <b>+0</b> · DEF% 7.9%</div>
+      <div class="want"><small>Want</small><b>CRIT Rate or CRIT DMG</b> (Scroll circlet), or DEF% if no crit piece exists.</div>
+    </div>
+  </div>
+
+  <h2>Set</h2>
+  <div class="note">
+    <b>4pc Scroll of the Hero of Cinder City</b> is every guide's first pick: the 2pc
+    refunds 6 energy when a party member triggers a Nightsoul Burst, the 4pc gives the
+    party a 12% Elemental DMG Bonus for 15s after she triggers a reaction. Only one
+    Scroll 4pc buff applies at a time, so she and Valeriy should not both carry it in
+    one team. In mono-Geo teams, 4pc Husk of Opulent Dreams is the alternative.
+  </div>
+
+  <h2>Weapon</h2>
+  <div class="note">
+    <b>Prototype Starglitter</b> (Lv 60, R1, 33.8% ER) is what gives her 153.8% ER, so
+    keep it. Better picks: <b>Favonius Lance</b> (energy for the team) or <b>Footprint
+    of the Rainbow</b> (DEF substat, +DEF% after her Skill), once her ER is covered.
+    Neither is confirmed owned.
+  </div>
+
+  <h2>Investment order</h2>
+  <ol>
+    <li>Level the Scroll sands and the Geo goblet to +16. Cheapest DEF and Geo DMG on the account.</li>
+    <li>Collect Scroll flower, plume and circlet to finish the 4pc. Natlan domain, same one as Valeriy's set.</li>
+    <li>Character level and talents only once she has a team slot. She has none today.</li>
+  </ol>
+
+  <div class="note">
+    Sources: <a href="https://game8.co/games/Genshin-Impact/archives/462004" rel="noopener">Game8</a>,
+    <a href="https://www.pockettactics.com/genshin-impact/kachina" rel="noopener">Pocket Tactics</a>,
+    <a href="https://genshin-builds.com/en/character/kachina" rel="noopener">genshin-builds</a>
+    (17 Nov 2026). Her pieces and stats are read live from the Battle Chronicle.
+  </div>
+
+</div>
+<script src="app/nav.js"></script>
+<div id="ascension" data-character="Kachina"></div>
+
+<h2>Artifact sets</h2>
+<p class="sub">Effects are read live from the game data, so they cannot go stale.</p>
+<div class="setgrid gear" data-sets="Scroll of the Hero of Cinder City | her best set, party Elemental DMG and energy; Husk of Opulent Dreams | mono-Geo teams, DEF and Geo DMG; The Exile | what she wears now, no set bonus with 2 pieces worth keeping"></div>
+
+<script src="app/ascension.js"></script>
+<script src="app/icons.js"></script>
+</body>
+</html>

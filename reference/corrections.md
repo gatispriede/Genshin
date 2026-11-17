@@ -428,6 +428,27 @@ read it from the game or the wiki; don't recall it.*
 
 ---
 
+## Guessed kill EXP 3–10× too high (17 Nov)
+
+Asked how much Character EXP 10 unclaimed ley lines give, I estimated "tens to
+low hundreds" per kill, so 5,000–20,000 for 10 ley lines. Neither the wiki nor a
+web search publishes a per-kill figure. The user measured it: one ordinary level 89 enemy
+took a Lv 60 party member from 19 to 38 EXP, so **19 per kill**, which means about
+1,100–1,900 for 10 ley lines. 70→80 needs 1,611,875, roughly 85,000 kills. Kill
+EXP is effectively zero; books from claimed Blossoms of Revelation (about 122,500
+per 20 resin at World Level 6+) are the only real source.
+
+Later found (17 Nov): elites give **3× a common enemy** at the same level
+(Elite Enemy, fandom wiki), so about 57, and stop dropping anything after 400
+elite kills a day. A world boss gives **200** at World Level 7 (gamertagmythras.com
+World Level guide), apparently with the claim; whether an unclaimed kill gives it
+is unverified. No figure found for weekly bosses.
+
+*Lesson: when no source gives a number, say "unknown" and how to measure it.
+Don't hand over a guessed range as if it were an estimate.*
+
+---
+
 ## Patterns
 
 Four habits produced nearly every entry above.

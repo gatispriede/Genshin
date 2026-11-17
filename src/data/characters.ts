@@ -30,7 +30,7 @@ const profiles: Character[] = [
     teams: ['varesa'], tier: null, paidIn: 'gear',
     targetMains: { sands: 'ATK%', goblet: 'Electro DMG', circlet: 'CRIT DMG' }, // varesa-build.html
     targetSet: "Long Night's Oath (BiS) or Obsidian Codex",
-    note: 'Max level, wearing all five pieces of Long Night’s Oath (4-piece bonus active). Corrected 14 Nov from HoYoLAB: earlier notes read the five piece names as five sets and concluded she had no set bonus. Still true: the goblet is ATK%, so Electro DMG Bonus is 0.0% — an Electro goblet is the biggest single gain.',
+    note: 'Max level, Long Night’s Oath 4pc, artifacts done (all +20, 16 Nov): crafted Electro DMG goblet, CRIT DMG circlet, 64% CRIT Rate / 188% CRIT DMG, 47% Electro DMG. Dummy test 16 Nov: 18,437 DPS (was 14,138). Keep the CRIT DMG circlet: a CRIT Rate one overcaps with Valeriy’s +10%. Next gains: Valeriy Skill-and-swap (he sat on field 4.6 s a cycle), then substat hunting on the circlet (no crit subs).',
     page: 'varesa-build.html', targetSubs: ["CRIT Rate", "CRIT DMG", "ATK%", "ATK"], targetWeapon: "The Widsith (owned); her signature is better", gearSource: "varesa-build.html: ER to her need, then CRIT, ATK%, flat ATK", verified: '2026-11-12',
   },
   {
@@ -107,9 +107,13 @@ const profiles: Character[] = [
   {
     name: 'Kachina', element: 'Geo', weaponType: 'Polearm', rarity: 4, level: 50,
     constellation: null, owned: true, fieldRole: 'off-field', teams: [], tier: null,
-    paidIn: 'gear', targetSet: 'Scroll of the Hero of Cinder City',
-    note: 'Not built — no levels or artifacts worth fielding; used for exploring only (14 Nov). Was the Varesa team enabler on paper; Charlotte has the slot.',
-    verified: '2026-11-12',
+    paidIn: 'gear', targetSet: 'Scroll of the Hero of Cinder City', setProgress: 'partial',
+    targetMains: { sands: 'DEF%', goblet: 'Geo DMG', circlet: 'CRIT Rate or CRIT DMG' }, // kachina-build.html
+    targetSubs: ["Energy Recharge", "DEF%", "CRIT Rate", "CRIT DMG"],
+    targetWeapon: "Prototype Starglitter (owned); Favonius Lance or Footprint of the Rainbow",
+    gearSource: "kachina-build.html: Game8, Pocket Tactics, genshin-builds (17 Nov) — ER > DEF% > CRIT, aim ~2,000 DEF",
+    note: 'Not built: mixed pieces from four sets, three at +0, talents 1/1/1. Her sands (DEF%) and goblet (Geo DMG) are already the right main stats, so levelling them is the cheap first step. No team slot today; Charlotte has the Varesa slot.',
+    page: 'kachina-build.html', verified: '2026-11-16',
   },
   {
     name: 'Sucrose', element: 'Anemo', weaponType: 'Catalyst', rarity: 4, level: 50,

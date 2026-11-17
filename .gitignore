@@ -26,3 +26,6 @@ tools/.bundles/
 __pycache__/
 tools/.map-upload/
 tools/.route-tiles/
+
+# TypeScript incremental build state
+tsconfig.tsbuildinfo

@@ -20,6 +20,7 @@ import { homeModules } from './flux-home.mjs';
 import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { connect, call } from './flux-client.mjs';
+import { heading, makePage, reusePage, writeSectionIndex } from './flux-pages.mjs';
 import { pageSections } from './flux-layout.mjs';
 import { sourceHtml } from './flux-catalogue.mjs';
 
@@ -48,11 +49,6 @@ const json = (o) => JSON.stringify(o);
  * character link back to its team, instead of printing a bare id.
  */
 const links = { characters: {}, teams: {} };
-
-function heading(eyebrow, h, subtitle) {
-  return { type: 'SECTION_HEADING', style: 'editorial',
-           content: json({ eyebrow, heading: h, subtitle, align: 'left' }) };
-}
 
 function characterModules(c, teamName) {
   const mods = [heading(c.element, c.name,
@@ -211,22 +207,9 @@ function characterRoadmapModules(data) {
 
 /* ----------------------------------------------------------------- run --- */
 
-/**
- * Creates the page and parents it, but writes no modules — those come in a
- * second pass, once every page exists and its real slug is known, so content
- * can link to URLs instead of guessing at them.
- *
- * page.setParent {pageId, parentId} is the working shape. page.update with a
- * `parent` field returns isError and does nothing.
- */
-async function makePage(name, parentId) {
-  await call('page.create', { page: name });
-  const pages = await call('page.list', {});
-  const row = pages.filter((p) => p.page === name).pop();
-  if (!row) throw new Error('page vanished after create: ' + name);
-  if (parentId) await call('page.setParent', { pageId: row.id, parentId });
-  return row;
-}
+// Pages are created in a first pass and filled in a second, once every page
+// exists and its real slug is known, so content links to URLs instead of
+// guessing at them. makePage / reusePage live in flux-pages.mjs.
 
 /** Module types compact enough to sit side by side in a 2-column section. */
 const PAIRABLE = new Set(['KEY_VALUE_DOSSIER', 'LIST']);
@@ -249,20 +232,6 @@ function packSections(modules) {
     }
   }
   return sections;
-}
-
-/** Find-or-create a page and empty its sections, keeping its id and children. */
-async function reusePage(name, parentId) {
-  const existing = (await call('page.list', {}))
-    .filter((p) => p.page === name && p.source !== 'system-page').pop();
-  if (!existing) return makePage(name, parentId);
-  for (const sectionId of existing.sections || []) {
-    await call('section.delete', { id: sectionId });
-  }
-  if (parentId && existing.parent !== parentId) {
-    await call('page.setParent', { pageId: existing.id, parentId });
-  }
-  return existing;
 }
 
 async function writeModules(row, modules) {
@@ -375,11 +344,14 @@ const main = async () => {
 
   // Roadmaps, generated from the live read; links resolve now every page exists.
   const roadmapsRoot = await reusePage('Roadmaps', root.id);
-  await writeModules(roadmapsRoot, [heading('Roadmap', 'Roadmaps', 'Artifacts and levels, computed from the game’s own record')]);
   const artRow = await makePage('Artifact roadmap', roadmapsRoot.id);
   await writeModules(artRow, artifactRoadmapModules(data));
   const charRow = await makePage('Character roadmap', roadmapsRoot.id);
   await writeModules(charRow, characterRoadmapModules(data));
+  await writeSectionIndex(roadmapsRoot, [
+    { title: 'Artifact roadmap', blurb: 'Which piece to replace next, per character, from the game’s own record' },
+    { title: 'Character roadmap', blurb: 'Who to level next, and to what, computed from the live read' },
+  ], 'Roadmap');
 
   console.log('\nlinked tree:');
   console.log('  ' + rootUrl);

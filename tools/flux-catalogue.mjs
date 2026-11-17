@@ -10,9 +10,13 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { marked } from 'marked';
 
-/** Catalogue section -> parent page in the CMS tree. */
+/**
+ * Catalogue section -> parent page in the CMS tree. A path ("A/B") nests one
+ * level deeper: the region reputation pages sit under the all-regions page.
+ */
 export const PARENT_FOR_SECTION = {
   Tools: 'Guides',
+  Reputation: 'Guides/Reputation quests — all regions',
   Maps: 'Maps',
   Farming: 'Farming',
   Research: 'Research',
@@ -39,11 +43,12 @@ const ENGINE_PAGES = /app\/(map-core|live-map|collect-map)\.js/;
 /** Read pages.ts without a TypeScript toolchain — its format is generated and fixed. */
 export function catalogue() {
   const src = readFileSync('src/data/pages.ts', 'utf8');
-  const re = /href: "([^"]+)", title: "((?:[^"\\]|\\.)*)", blurb: "(?:[^"\\]|\\.)*", kind: "([^"]+)", section: "([^"]+)"/g;
+  const re = /href: "([^"]+)", title: "((?:[^"\\]|\\.)*)", blurb: "((?:[^"\\]|\\.)*)", kind: "([^"]+)", section: "([^"]+)"/g;
   const out = [];
   let m;
   while ((m = re.exec(src))) {
-    out.push({ href: m[1], title: JSON.parse(`"${m[2]}"`), kind: m[3], section: m[4] });
+    out.push({ href: m[1], title: JSON.parse(`"${m[2]}"`), blurb: JSON.parse(`"${m[3]}"`),
+               kind: m[4], section: m[5] });
   }
   return out;
 }
@@ -71,6 +76,21 @@ export function sourceHtml(entry) {
   }
   const rendered = join('tools/.rendered', entry.href);
   return readFileSync(existsSync(rendered) ? rendered : entry.href, 'utf8');
+}
+
+/**
+ * Build write-up -> the character whose generated page it is attached to
+ * (flux-push.mjs), read from characters.ts: one profile object per block.
+ */
+export function buildOwners() {
+  const src = readFileSync('src/data/characters.ts', 'utf8');
+  const owners = {};
+  for (const block of src.split(/\n  \{/)) {
+    const name = block.match(/name: '([^']+)'/);
+    const page = block.match(/page: '([^']+)'/);
+    if (name && page) owners[page[1]] = name[1];
+  }
+  return owners;
 }
 
 export const usesEngine = (entry) =>

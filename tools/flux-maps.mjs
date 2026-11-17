@@ -76,6 +76,14 @@ export function mapModule(attrs, html) {
   if (!src) return null;
   const raw = markersById(html).get(id) || [];
   const markers = raw.map((m, i) => toModuleMarker(m, `#${id} marker ${i}`));
+  // A pin with no picture would be inert. On a route map its layer is its
+  // quest ("q7"), and the page has that entry as id="q7": `ref` makes the pin
+  // scroll there when clicked (the migrator prefixes the page path).
+  raw.forEach((m, i) => {
+    if (!m.shot && /^q\d+$/.test(m.layer || '') && html.includes(`id="${m.layer}"`)) {
+      markers[i].ref = '#' + m.layer;
+    }
+  });
   const content = { image: { src, alt: alt || undefined }, markers };
   // Click-to-open pictures: a marker carrying `shot` gets a block anchored to
   // it (same index), hidden until the marker is clicked. tools/route_markers.py
