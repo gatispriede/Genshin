@@ -56,7 +56,7 @@ export const pages: PageEntry[] = [
   { href: "theater.html", title: "Imaginarium Theater", blurb: "This season's cast as faces \u2014 who to field on Act 1 and who to keep fresh", kind: "tool", section: "Tools" },
   { href: "character-roadmap.html", title: "Character roadmap", blurb: "Where levels, talent books and Mora go next \u2014 ordered by what the three teams need, and who levels do nothing for", kind: "tool", section: "Tools" },
   { href: "tcg-swap.html", title: "TCG swaps", blurb: "Every switch effect in Genius Invokation, split by whether it pays you or just costs less", kind: "tool", section: "Tools" },
-  { href: "codes.html", title: "Redeem codes", blurb: "Dated snapshot, live split from dead, and a tick per code so you know what you have used", kind: "tool", section: "Tools" },
+  { href: "codes.html", title: "Redeem codes", blurb: "Live codes checked 17 Nov against two feeds, the next livestream date, and a tick per code", kind: "tool", section: "Tools" },
   { href: "sucrose-build.html", title: "Sucrose \u2014 build & materials", blurb: "Elemental Mastery in all three slots, and why. Target stats, 3\u2605/4\u2605 catalysts, artifacts", kind: "tool", section: "Builds" },
   { href: "escoffier-build.html", title: "Escoffier \u2014 build & materials", blurb: "Skirk\u2019s best teammate. Sets and 3\u2605/4\u2605 polearms with icons, and the Skirk material overlap", kind: "tool", section: "Builds" },
   { href: "tighnari-build.html", title: "Tighnari \u2014 build & materials", blurb: "Artifact sets and 3\u2605/4\u2605 bows with icons, plus every ascension material", kind: "tool", section: "Builds" },

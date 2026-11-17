@@ -20,6 +20,8 @@ const START = [
    'Each region’s reputation quests with start NPC and length, plus the chains hidden behind them.'],
   ['Enemy shields', 'guides/enemy-shields-what-you-cant-break',
    'Which team breaks which elemental shield, and the one gap no team covers.'],
+  ['Redeem codes', 'guides/redeem-codes',
+   'Codes still live (checked against two feeds), the next livestream batch, and a tick per code you have used.'],
   ['Imaginarium Theater', 'guides/imaginarium-theater',
    'How this account clears it: who to spend in which Act, and the boss loop for the last one.'],
 ];
