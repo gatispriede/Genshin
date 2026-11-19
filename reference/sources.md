@@ -9,6 +9,7 @@ what worked and what failed across this project.
 
 | Question | Go here | Notes |
 |---|---|---|
+| **Any research question: start here** | **Google AI Mode** (`google.com/search?udm=50&q=…`, built-in browser) | Owner's rule, 19 Nov. Finds news, leaks and Reddit fast. A lead only: confirm each fact on the page it cites or a source below |
 | Item source, cost, threshold, totals | **Fandom wiki** | The authority. Has exact tables. |
 | Character build, rotation, ER needs | **KeqingMains** | Theorycrafted, versioned, states its own uncertainty |
 | "Where is X" — anything positional | **HoYoLAB interactive map** | Real pin data, filterable layers |
@@ -106,6 +107,21 @@ c[c.length - 1].innerText;
 ```
 Click each portrait in the "My Characters" carousel to switch. Intercepting
 `fetch` for `character/detail` also works but the hook dies on navigation.
+
+---
+
+## Official HoYoverse notices (added 19 Nov 2026)
+
+The official news feed answers plain `curl` and carries every version notice: Update
+Details (next Theater and Abyss seasons, balance changes), Event Wishes, Events Overview.
+Once a version is out, its notice replaces any leak about it.
+
+```bash
+# latest 30 posts: id, date, title
+curl -s "https://sg-public-api-static.hoyoverse.com/content_v2_user/app/a1b1f9d3315447cc/getContentList?iPage=1&iPageSize=30&sLangKey=en-us&isPreview=0&iChanId=395"
+# one post's HTML: .data.sContent
+curl -s "https://sg-public-api-static.hoyoverse.com/content_v2_user/app/a1b1f9d3315447cc/getContent?iInfoId=<id>&sLangKey=en-us&isPreview=0"
+```
 
 ---
 

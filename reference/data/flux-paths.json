@@ -1,0 +1,654 @@
+[
+ [
+  "Genshin notes",
+  "/genshin-notes"
+ ],
+ [
+  "Builds",
+  "/genshin-notes/builds"
+ ],
+ [
+  "Teams",
+  "/genshin-notes/teams"
+ ],
+ [
+  "Guides",
+  "/genshin-notes/guides"
+ ],
+ [
+  "Theater — Act 1 picks",
+  "/genshin-notes/guides/theater-act-1-picks"
+ ],
+ [
+  "Treasure Compasses",
+  "/genshin-notes/guides/treasure-compasses"
+ ],
+ [
+  "Collectibles status",
+  "/genshin-notes/guides/collectibles-status"
+ ],
+ [
+  "Build coverage",
+  "/genshin-notes/guides/build-coverage"
+ ],
+ [
+  "Support squad",
+  "/genshin-notes/guides/support-squad"
+ ],
+ [
+  "Talent farming",
+  "/genshin-notes/guides/talent-farming"
+ ],
+ [
+  "Stellar Glimmer",
+  "/genshin-notes/guides/stellar-glimmer"
+ ],
+ [
+  "Imaginarium Theater",
+  "/genshin-notes/guides/imaginarium-theater"
+ ],
+ [
+  "TCG swaps",
+  "/genshin-notes/guides/tcg-swaps"
+ ],
+ [
+  "Redeem codes",
+  "/genshin-notes/guides/redeem-codes"
+ ],
+ [
+  "Maps",
+  "/genshin-notes/maps"
+ ],
+ [
+  "Local Legends — all 36",
+  "/genshin-notes/maps/local-legends-all-36"
+ ],
+ [
+  "Domains — all 74",
+  "/genshin-notes/maps/domains-all-74"
+ ],
+ [
+  "Collectible maps",
+  "/genshin-notes/maps/collectible-maps"
+ ],
+ [
+  "Quest map — interactive",
+  "/genshin-notes/maps/quest-map-interactive"
+ ],
+ [
+  "Reaction combos",
+  "/genshin-notes/maps/reaction-combos"
+ ],
+ [
+  "Research",
+  "/genshin-notes/research"
+ ],
+ [
+  "01 · Mora farming",
+  "/genshin-notes/research/01-mora-farming"
+ ],
+ [
+  "02 · Wishes & Primogems",
+  "/genshin-notes/research/02-wishes-primogems"
+ ],
+ [
+  "03 · Characters & materials",
+  "/genshin-notes/research/03-characters-materials"
+ ],
+ [
+  "04 · Weapons & artifacts",
+  "/genshin-notes/research/04-weapons-artifacts"
+ ],
+ [
+  "05 · Loadout audit",
+  "/genshin-notes/research/05-loadout-audit"
+ ],
+ [
+  "06 · Artifact plan",
+  "/genshin-notes/research/06-artifact-plan"
+ ],
+ [
+  "06a · In the Mountains",
+  "/genshin-notes/research/06a-in-the-mountains"
+ ],
+ [
+  "07 · Ore farming",
+  "/genshin-notes/research/07-ore-farming"
+ ],
+ [
+  "08 · Snezhnaya mechanics",
+  "/genshin-notes/research/08-snezhnaya-mechanics"
+ ],
+ [
+  "09 · Artifact sets",
+  "/genshin-notes/research/09-artifact-sets"
+ ],
+ [
+  "10 · Imaginarium Theater",
+  "/genshin-notes/research/10-imaginarium-theater"
+ ],
+ [
+  "10a · Theater — the Normal run",
+  "/genshin-notes/research/10a-theater-the-normal-run"
+ ],
+ [
+  "11 · Tactical Sweep",
+  "/genshin-notes/research/11-tactical-sweep"
+ ],
+ [
+  "11a · Sweep boss mechanics",
+  "/genshin-notes/research/11a-sweep-boss-mechanics"
+ ],
+ [
+  "Reference",
+  "/genshin-notes/reference"
+ ],
+ [
+  "Verified facts",
+  "/genshin-notes/reference/verified-facts"
+ ],
+ [
+  "Character kits",
+  "/genshin-notes/reference/character-kits"
+ ],
+ [
+  "Artifact sets",
+  "/genshin-notes/reference/artifact-sets"
+ ],
+ [
+  "Weapons you own",
+  "/genshin-notes/reference/weapons-you-own"
+ ],
+ [
+  "Open questions",
+  "/genshin-notes/reference/open-questions"
+ ],
+ [
+  "Sources",
+  "/genshin-notes/reference/sources"
+ ],
+ [
+  "Corrections log",
+  "/genshin-notes/reference/corrections-log"
+ ],
+ [
+  "Research coverage",
+  "/genshin-notes/reference/research-coverage"
+ ],
+ [
+  "Farming",
+  "/genshin-notes/farming"
+ ],
+ [
+  "Natlan Saurian map",
+  "/genshin-notes/farming/natlan-saurian-map"
+ ],
+ [
+  "Tyrant’s Fang plan",
+  "/genshin-notes/farming/tyrants-fang-plan"
+ ],
+ [
+  "Natlan routes",
+  "/genshin-notes/farming/natlan-routes"
+ ],
+ [
+  "World quest pins",
+  "/genshin-notes/farming/world-quest-pins"
+ ],
+ [
+  "Roadmaps",
+  "/genshin-notes/roadmaps"
+ ],
+ [
+  "12 · Varesa's team",
+  "/genshin-notes/research/12-varesas-team"
+ ],
+ [
+  "13 · Varesa's damage gap",
+  "/genshin-notes/research/13-varesas-damage-gap"
+ ],
+ [
+  "The Arsenal — 3 keys",
+  "/genshin-notes/maps/the-arsenal-3-keys"
+ ],
+ [
+  "Reputation quests — all regions",
+  "/genshin-notes/guides/reputation-quests-all-regions"
+ ],
+ [
+  "Liyue quests — start maps",
+  "/genshin-notes/maps/liyue-quests-start-maps"
+ ],
+ [
+  "Inazuma quests — start maps",
+  "/genshin-notes/maps/inazuma-quests-start-maps"
+ ],
+ [
+  "Sumeru quests — start maps",
+  "/genshin-notes/maps/sumeru-quests-start-maps"
+ ],
+ [
+  "Fontaine quests — start maps",
+  "/genshin-notes/maps/fontaine-quests-start-maps"
+ ],
+ [
+  "Enemy shields — what you can't break",
+  "/genshin-notes/guides/enemy-shields-what-you-cant-break"
+ ],
+ [
+  "The three teams",
+  "/genshin-notes/guides/the-three-teams"
+ ],
+ [
+  "Bounty — Ruin Guard",
+  "/genshin-notes/maps/bounty-ruin-guard"
+ ],
+ [
+  "The Chasm — ore",
+  "/genshin-notes/maps/the-chasm-ore"
+ ],
+ [
+  "Chi of Yore — statues",
+  "/genshin-notes/maps/chi-of-yore-statues"
+ ],
+ [
+  "Crafting benches",
+  "/genshin-notes/maps/crafting-benches"
+ ],
+ [
+  "Derelict Masonry Dock",
+  "/genshin-notes/maps/derelict-masonry-dock"
+ ],
+ [
+  "Dragonspine — In the Mountains",
+  "/genshin-notes/maps/dragonspine-in-the-mountains"
+ ],
+ [
+  "Snezhnaya statues",
+  "/genshin-notes/maps/snezhnaya-statues"
+ ],
+ [
+  "Eye of Graeae",
+  "/genshin-notes/maps/eye-of-graeae"
+ ],
+ [
+  "Fishing spots",
+  "/genshin-notes/maps/fishing-spots"
+ ],
+ [
+  "Fowl",
+  "/genshin-notes/maps/fowl"
+ ],
+ [
+  "Liyue reputation quests",
+  "/genshin-notes/guides/liyue-reputation-quests"
+ ],
+ [
+  "Oculus tracking",
+  "/genshin-notes/maps/oculus-tracking"
+ ],
+ [
+  "Red Beet",
+  "/genshin-notes/maps/red-beet"
+ ],
+ [
+  "Starfell Valley",
+  "/genshin-notes/maps/starfell-valley"
+ ],
+ [
+  "TCG — cards & a Skirk deck",
+  "/genshin-notes/guides/tcg-cards-a-skirk-deck"
+ ],
+ [
+  "Vault of Qingce",
+  "/genshin-notes/maps/vault-of-qingce"
+ ],
+ [
+  "Wind Catcher",
+  "/genshin-notes/maps/wind-catcher"
+ ],
+ [
+  "Wuwang Hill — 8 statues",
+  "/genshin-notes/maps/wuwang-hill-8-statues"
+ ],
+ [
+  "Yaodie Valley",
+  "/genshin-notes/maps/yaodie-valley"
+ ],
+ [
+  "Sumeru rep quests — route",
+  "/genshin-notes/maps/sumeru-rep-quests-route"
+ ],
+ [
+  "Liyue — every reputation quest",
+  "/genshin-notes/guides/reputation-quests-all-regions/liyue-every-reputation-quest"
+ ],
+ [
+  "Inazuma — every reputation quest",
+  "/genshin-notes/guides/reputation-quests-all-regions/inazuma-every-reputation-quest"
+ ],
+ [
+  "Sumeru — every reputation quest",
+  "/genshin-notes/guides/reputation-quests-all-regions/sumeru-every-reputation-quest"
+ ],
+ [
+  "Fontaine — every reputation quest",
+  "/genshin-notes/guides/reputation-quests-all-regions/fontaine-every-reputation-quest"
+ ],
+ [
+  "Varesa",
+  "/genshin-notes/builds/varesa"
+ ],
+ [
+  "Yumemizuki Mizuki",
+  "/genshin-notes/builds/yumemizuki-mizuki"
+ ],
+ [
+  "Furina",
+  "/genshin-notes/builds/furina"
+ ],
+ [
+  "Skirk",
+  "/genshin-notes/builds/skirk"
+ ],
+ [
+  "Escoffier",
+  "/genshin-notes/builds/escoffier"
+ ],
+ [
+  "Mona",
+  "/genshin-notes/builds/mona"
+ ],
+ [
+  "Rosaria",
+  "/genshin-notes/builds/rosaria"
+ ],
+ [
+  "Traveler",
+  "/genshin-notes/builds/traveler"
+ ],
+ [
+  "Kachina",
+  "/genshin-notes/builds/kachina"
+ ],
+ [
+  "Sucrose",
+  "/genshin-notes/builds/sucrose"
+ ],
+ [
+  "Mika",
+  "/genshin-notes/builds/mika"
+ ],
+ [
+  "Tighnari",
+  "/genshin-notes/builds/tighnari"
+ ],
+ [
+  "Valeriy",
+  "/genshin-notes/builds/valeriy"
+ ],
+ [
+  "Fischl",
+  "/genshin-notes/builds/fischl"
+ ],
+ [
+  "Charlotte",
+  "/genshin-notes/builds/charlotte"
+ ],
+ [
+  "Skirk freeze",
+  "/genshin-notes/teams/skirk-freeze"
+ ],
+ [
+  "Mizuki Stellar Swirl",
+  "/genshin-notes/teams/mizuki-stellar-swirl"
+ ],
+ [
+  "Varesa Electro-Charged",
+  "/genshin-notes/teams/varesa-electro-charged"
+ ],
+ [
+  "Artifact roadmap",
+  "/genshin-notes/roadmaps/artifact-roadmap"
+ ],
+ [
+  "Character roadmap",
+  "/genshin-notes/roadmaps/character-roadmap"
+ ],
+ [
+  "Theater — Act 1 picks",
+  "/genshin-notes/combat/theater-act-1-picks"
+ ],
+ [
+  "Treasure Compasses",
+  "/genshin-notes/reputation-quests/treasure-compasses"
+ ],
+ [
+  "Support squad",
+  "/genshin-notes/team-building/support-squad"
+ ],
+ [
+  "Talent farming",
+  "/genshin-notes/farming-economy/talent-farming"
+ ],
+ [
+  "Stellar Glimmer",
+  "/genshin-notes/combat/stellar-glimmer"
+ ],
+ [
+  "Imaginarium Theater",
+  "/genshin-notes/combat/imaginarium-theater"
+ ],
+ [
+  "TCG swaps",
+  "/genshin-notes/tcg/tcg-swaps"
+ ],
+ [
+  "Redeem codes",
+  "/genshin-notes/farming-economy/redeem-codes"
+ ],
+ [
+  "Local Legends — all 36",
+  "/genshin-notes/farming-economy/local-legends-all-36"
+ ],
+ [
+  "Domains — all 74",
+  "/genshin-notes/farming-economy/domains-all-74"
+ ],
+ [
+  "Collectible maps",
+  "/genshin-notes/maps-puzzles/collectible-maps"
+ ],
+ [
+  "Reaction combos",
+  "/genshin-notes/combat/reaction-combos"
+ ],
+ [
+  "01 · Mora farming",
+  "/genshin-notes/farming-economy/01-mora-farming"
+ ],
+ [
+  "02 · Wishes & Primogems",
+  "/genshin-notes/farming-economy/02-wishes-primogems"
+ ],
+ [
+  "03 · Characters & materials",
+  "/genshin-notes/farming-economy/03-characters-materials"
+ ],
+ [
+  "04 · Weapons & artifacts",
+  "/genshin-notes/reference/04-weapons-artifacts"
+ ],
+ [
+  "06a · In the Mountains",
+  "/genshin-notes/maps-puzzles/06a-in-the-mountains"
+ ],
+ [
+  "07 · Ore farming",
+  "/genshin-notes/farming-economy/07-ore-farming"
+ ],
+ [
+  "08 · Snezhnaya mechanics",
+  "/genshin-notes/combat/08-snezhnaya-mechanics"
+ ],
+ [
+  "09 · Artifact sets",
+  "/genshin-notes/reference/09-artifact-sets"
+ ],
+ [
+  "10 · Imaginarium Theater",
+  "/genshin-notes/combat/10-imaginarium-theater"
+ ],
+ [
+  "10a · Theater — the Normal run",
+  "/genshin-notes/combat/10a-theater-the-normal-run"
+ ],
+ [
+  "11 · Tactical Sweep",
+  "/genshin-notes/combat/11-tactical-sweep"
+ ],
+ [
+  "11a · Sweep boss mechanics",
+  "/genshin-notes/combat/11a-sweep-boss-mechanics"
+ ],
+ [
+  "Natlan Saurian map",
+  "/genshin-notes/farming-economy/natlan-saurian-map"
+ ],
+ [
+  "Tyrant’s Fang plan",
+  "/genshin-notes/farming-economy/tyrants-fang-plan"
+ ],
+ [
+  "Natlan routes",
+  "/genshin-notes/farming-economy/natlan-routes"
+ ],
+ [
+  "12 · Varesa's team",
+  "/genshin-notes/team-building/12-varesas-team"
+ ],
+ [
+  "13 · Varesa's damage gap",
+  "/genshin-notes/team-building/13-varesas-damage-gap"
+ ],
+ [
+  "The Arsenal — 3 keys",
+  "/genshin-notes/maps-puzzles/the-arsenal-3-keys"
+ ],
+ [
+  "Enemy shields — what you can't break",
+  "/genshin-notes/combat/enemy-shields-what-you-cant-break"
+ ],
+ [
+  "The three teams",
+  "/genshin-notes/team-building/the-three-teams"
+ ],
+ [
+  "Bounty — Ruin Guard",
+  "/genshin-notes/maps-puzzles/bounty-ruin-guard"
+ ],
+ [
+  "The Chasm — ore",
+  "/genshin-notes/maps-puzzles/the-chasm-ore"
+ ],
+ [
+  "Chi of Yore — statues",
+  "/genshin-notes/maps-puzzles/chi-of-yore-statues"
+ ],
+ [
+  "Crafting benches",
+  "/genshin-notes/maps-puzzles/crafting-benches"
+ ],
+ [
+  "Derelict Masonry Dock",
+  "/genshin-notes/maps-puzzles/derelict-masonry-dock"
+ ],
+ [
+  "Dragonspine — In the Mountains",
+  "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains"
+ ],
+ [
+  "Snezhnaya statues",
+  "/genshin-notes/maps-puzzles/snezhnaya-statues"
+ ],
+ [
+  "Eye of Graeae",
+  "/genshin-notes/maps-puzzles/eye-of-graeae"
+ ],
+ [
+  "Fishing spots",
+  "/genshin-notes/maps-puzzles/fishing-spots"
+ ],
+ [
+  "Fowl",
+  "/genshin-notes/maps-puzzles/fowl"
+ ],
+ [
+  "Liyue reputation quests",
+  "/genshin-notes/reputation-quests/liyue-reputation-quests"
+ ],
+ [
+  "Red Beet",
+  "/genshin-notes/maps-puzzles/red-beet"
+ ],
+ [
+  "Starfell Valley",
+  "/genshin-notes/maps-puzzles/starfell-valley"
+ ],
+ [
+  "TCG — cards & a Skirk deck",
+  "/genshin-notes/tcg/tcg-cards-a-skirk-deck"
+ ],
+ [
+  "Vault of Qingce",
+  "/genshin-notes/maps-puzzles/vault-of-qingce"
+ ],
+ [
+  "Wind Catcher",
+  "/genshin-notes/maps-puzzles/wind-catcher"
+ ],
+ [
+  "Wuwang Hill — 8 statues",
+  "/genshin-notes/maps-puzzles/wuwang-hill-8-statues"
+ ],
+ [
+  "Yaodie Valley",
+  "/genshin-notes/maps-puzzles/yaodie-valley"
+ ],
+ [
+  "Reputation quests",
+  "/genshin-notes/reputation-quests"
+ ],
+ [
+  "Combat",
+  "/genshin-notes/combat"
+ ],
+ [
+  "Farming & economy",
+  "/genshin-notes/farming-economy"
+ ],
+ [
+  "Maps & puzzles",
+  "/genshin-notes/maps-puzzles"
+ ],
+ [
+  "Inazuma reputation quests",
+  "/genshin-notes/reputation-quests/inazuma-reputation-quests"
+ ],
+ [
+  "Sumeru reputation quests",
+  "/genshin-notes/reputation-quests/sumeru-reputation-quests"
+ ],
+ [
+  "Fontaine reputation quests",
+  "/genshin-notes/reputation-quests/fontaine-reputation-quests"
+ ],
+ [
+  "TCG",
+  "/genshin-notes/tcg"
+ ],
+ [
+  "Team building",
+  "/genshin-notes/team-building"
+ ]
+]

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genius Invokation TCG — cards, a Skirk deck, switch cards</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+<h1>Genius Invokation TCG <span class="dim">— cards, a Skirk deck, switch cards</span></h1>
+<p class="sub">
+  How character cards are unlocked, what the shop is worth, a Frozen deck built around Skirk,
+  and every card that rewards switching characters. Merged from the card-and-deck page and
+  the switching page. Card costs checked against the wiki card list, Oct 2026.
+</p>
+
+<h2 id="getting-cards">Getting cards</h2>
+<table>
+  <tr><th>Route</th><th>What you get</th></tr>
+  <tr><td>Tutorial world quest <i>Battlefield of Dice, Cats, and Cards</i></td><td>Diluc, Kaeya, Sucrose, Fischl</td></tr>
+  <tr><td><b>Invitation Board</b>, The Cat's Tail (Mondstadt)</td><td>Spend a Match Invitation Letter, beat that character in Friendly Fracas: their card. Clear all their objectives: their Talent card (never sold)</td></tr>
+  <tr><td>TCG Player Level rewards</td><td>Cards and 8 free letters across Levels 2–9</td></tr>
+</table>
+<div class="bar warn">
+  <b>Letters are the bottleneck, not Lucky Coins.</b> Character cards cannot be bought. The
+  shop sells one letter at each of Player Levels 2, 3 and 4, five at Level 5, and unlimited
+  only from Level 10. Spend each letter on a character a deck actually needs.
+</div>
+
+<table>
+  <tr><th>Shop item (Prince)</th><th>Lucky Coins</th></tr>
+  <tr><td>Match Invitation Letter</td><td>1,000 (Player Level 2+)</td></tr>
+  <tr><td>Action cards</td><td>500–1,000 each, non-Talent</td></tr>
+  <tr><td>Card Boxes</td><td>16,000 (Player Level 8)</td></tr>
+  <tr><td>Dynamic skins</td><td>4,000, cosmetic</td></tr>
+</table>
+<p>Coins come from open-world duellists (a few hundred early, about 1,500 from a Level 7–8
+opponent) and four weekly Tavern guests from Player Level 2. Coins cap at 50,000. The
+Casket of Tomes' locate function pins every nearby duellist on your map; the Cat's Tail
+has its own teleport icon when you zoom into Mondstadt.</p>
+
+<h2 id="skirk-deck">A Skirk Frozen deck</h2>
+<p><b>Skirk · Kaeya · Xingqiu</b>, the shell HoYoverse uses for her own Invitational
+(Skirk · Xingqiu · Escoffier, with free Kaeya in Escoffier's slot). Her Burst <i>Havoc:
+Ruin</i> spends all Serpent's Subtlety: at the 7 cap it deals 7 Cryo plus 3 Piercing to each
+standby enemy, for 3 dice. Everything in the deck exists to reach 7.</p>
+<table>
+  <tr><th>Source of Serpent's Subtlety</th><th>Gain</th><th>Limit</th></tr>
+  <tr><td>Elemental Skill <i>Havoc: Warp</i></td><td>+2</td><td>once per round</td></tr>
+  <tr><td>Void Rift (made when your side triggers Frozen, Superconduct, Cryo Swirl or Cryo Crystallize)</td><td>+2, by discarding a card whose <b>original cost is 3</b></td><td>3 per round</td></tr>
+  <tr><td>Mutual Weapons Mentorship discarded on a switch or at round start</td><td>+1</td><td>—</td></tr>
+</table>
+<ul>
+  <li><b>Never a third Cryo.</b> Mono-Cryo triggers no reaction, so no Void Rifts. Xingqiu's
+    Rainbow Bladework puts Hydro on every Normal Attack: Frozen, a rift, and a lost turn for
+    the opponent. Fischl is the free substitute (Oz makes Superconduct every End Phase).</li>
+  <li><b>Pack 6–8 cards that cost exactly 3 dice</b> as rift fuel: Sacrificial Sword,
+    Favonius Sword, Noblesse Oblige, Paimon, Dawn Winery, Aquila Favonia, Skyward Blade. All
+    three characters use swords, so no weapon card is ever stranded.</li>
+  <li><b>Skirk banks from the bench.</b> Her passive and Void Rift say "your side" and "your
+    Skirk", not "active". She steps in only for her Skill and the Burst.</li>
+  <li><b>Wait for 7.</b> The Burst is legal at 2 and does 2 + 2 Piercing; at 7 it does 7 + 3
+    for the same dice. Plan: set up Frozen in round 1, bank to 7 in round 2, fire in round 3.</li>
+  <li><b>Higher ceiling: Mona instead of Xingqiu.</b> Her Illusory Bubble doubles the next
+    Skill DMG after additive bonuses; with Adeptus' Temptation (+3) a 7-stack Burst becomes
+    20. Whether the Piercing part doubles too is unverified.</li>
+</ul>
+
+<h2 id="switch-cards">Cards that reward switching</h2>
+<p><b>Efficient Switch</b> makes the next switch cost 1 less die; <b>Agile Switch</b> makes
+it a Fast Action that does not end your turn (the expensive one). Useful for any deck that
+swaps every round, such as Varesa's, whose Skill switches out and whose Apex Drive fires
+when she is switched back in.</p>
+<table>
+  <tr><th>Card</th><th>Type, cost</th><th>On switch</th></tr>
+  <tr><td>Red Feather Fan</td><td>Item, 2</td><td>Gain Efficient <b>and</b> Agile Switch, once per round</td></tr>
+  <tr><td>Katheryne</td><td>Companion, 1</td><td>The switch is a Fast Action, once per round</td></tr>
+  <tr><td>Dawn Winery</td><td>Location, 3</td><td>1 less die, twice per round</td></tr>
+  <tr><td>Liu Su</td><td>Companion, 1</td><td>An empty-Energy character switched in gains 1 Energy</td></tr>
+  <tr><td>Conductor's Top Hat</td><td>Artifact, 1</td><td>Switching in: 2 dice to Omni, next Skill 1 less die</td></tr>
+  <tr><td>Vermillion Hereafter</td><td>Artifact, 3</td><td>Switching in: +1 Normal Attack DMG this round</td></tr>
+  <tr><td>Dyed Tassel</td><td>Artifact, 2</td><td>After a Plunging Attack: Efficient Switch</td></tr>
+  <tr><td>Plunging Strike</td><td>Event, 3</td><td>Switch to a character and Normal Attack in one card</td></tr>
+  <tr><td>Kuki Shinobu (character)</td><td>Electro, 10 HP</td><td>Her ring deals 1 Electro and heals 1 after each switch</td></tr>
+</table>
+<p><b>Counter:</b> <i>Falls and Fortune</i> makes both sides pay 1 extra die per switch for a
+round, so keep a line of damage that needs no swap.</p>
+
+<div class="note">
+  Sources: Genshin Impact Wiki card lists (194 Event, 284 Equipment, 289 Support cards, Oct
+  2026) and Skirk's Invitational in game. No published Skirk deck existed when this was
+  written; the deck is reasoned from card text and the game's own Invitational lineup.
+  Re-check costs after a TCG balance update.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

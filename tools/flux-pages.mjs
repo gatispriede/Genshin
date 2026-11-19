@@ -9,6 +9,11 @@
 import { call } from './flux-client.mjs';
 
 const json = (o) => JSON.stringify(o);
+
+/** A page's URL segment, the way flux derives it from the title. */
+export const slugOf = (title) => title.toLowerCase().replace(/['’]/g, '').normalize('NFKD')
+  .replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 const listPages = async () => (await call('page.list', {})).filter((p) => p.source !== 'system-page');
 
 export function heading(eyebrow, h, subtitle) {

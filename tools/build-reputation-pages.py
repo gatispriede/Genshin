@@ -28,9 +28,8 @@ LEVELS = [0, 0, 400, 820, 1260, 1720, 2200, 2700, 3220, 3800, 4400]
 KNOWN = {"Liyue": {"level": 4, "into": 40, "next": 460, "done": 8}}
 
 NOTE = {
-    "Liyue": "Geo Treasure Compass at Level 6. The in-game counter reads 8/60 "
-             "- which is exactly the world-quest count below, so this list and "
-             "the game agree.",
+    "Liyue": "Geo Treasure Compass at Level 6. The in-game reputation counter "
+             "matches the world-quest count on the region page.",
 }
 
 # Regions whose note is arithmetic rather than prose: the compass sits at
@@ -39,9 +38,13 @@ NOTE = {
 # "45 quests = 4,500" when the real pool is 42 world quests plus 3 story acts,
 # which is 4,800. Computed now so it cannot drift again.
 COMPASS = {
-    "Inazuma": "Electro",
-    "Sumeru": "Dendro",
-    "Fontaine": "Hydro",
+    # (element, compass level, cumulative EXP to reach it). Liyue's comes from
+    # LEVELS (Mondstadt's curve, confirmed in-game for Liyue); the 10-level
+    # regions use TARGET_EXP.
+    "Liyue": ("Geo", 6, 2200),
+    "Inazuma": ("Electro", 9, 5000),
+    "Sumeru": ("Dendro", 9, 5000),
+    "Fontaine": ("Hydro", 9, 5000),
 }
 TARGET_EXP = 5000
 
@@ -52,6 +55,20 @@ def pool(quests):
     acts = [q for q in live if is_act(q)]
     world = [q for q in live if not is_act(q)]
     return len(world) * 100 + len(acts) * 200, len(world), len(acts)
+
+
+def compass_row(region, quests):
+    """One table row: which compass, at what level, and whether quests cover it."""
+    if region not in COMPASS:
+        return ""
+    element, level, need = COMPASS[region]
+    avail, n_wq, n_acts = pool(quests)
+    gap = need - avail
+    return ('  <tr><td>%s</td><td>%s, Level %d (%s EXP)</td><td>%s (%d world quests, %d story acts)</td>'
+            '<td>%s</td></tr>\n'
+            % (region, element, level, "{:,}".format(need), "{:,}".format(avail), n_wq, n_acts,
+               "%s from weekly requests and exploration" % "{:,}".format(gap) if gap > 0
+               else "nothing, quests cover it"))
 
 
 def note(region, quests):
@@ -66,7 +83,7 @@ def note(region, quests):
             "enough on its own, with %s to spare." % "{:,}".format(-gap))
     return ("%s Treasure Compass at Level 9 (%s EXP). %d world quests at 100 "
             "plus %d story acts at 200 = %s - %s"
-            % (COMPASS[region], "{:,}".format(TARGET_EXP), n_wq, n_acts,
+            % (COMPASS[region][0], "{:,}".format(TARGET_EXP), n_wq, n_acts,
                "{:,}".format(avail), tail))
 
 
@@ -336,8 +353,8 @@ they cannot be farmed.</div>
 
 
 def region_page(region):
-    """One region's own page, e.g. reputation-sumeru.html."""
-    return "reputation-%s.html" % region.lower()
+    """A region's page: its route map and shortest-first list (build-rep-route.py)."""
+    return "%s-rep-route.html" % region.lower()
 
 
 from reputation_page import UPDATED, LINKS, INTRO, shell  # noqa: E402
@@ -345,16 +362,21 @@ from reputation_page import UPDATED, LINKS, INTRO, shell  # noqa: E402
 
 def overview(data, regions):
     """The parent page: how the lists were measured, then one line per region."""
+    # One short line per card: the cards are the way into the route pages, and
+    # a paragraph per card squeezes them. The compass sums go in their own table.
     items = "".join(
-        '<li><a href="%s"><b>%s reputation quests</b></a> &middot; %d quests<br>'
-        '<span class="dim">%s</span></li>'
-        % (region_page(r), r, len([q for q in data[r] if not q.get("missing")]),
-           esc(note(r, data[r])))
+        '<li><a href="%s">%s reputation quests</a> &middot; %d quests on an annotated route map, '
+        'shortest first, with a city close-up</li>'
+        % (region_page(r), r, len([q for q in data[r] if not q.get("missing")]))
         for r in regions)
-    body = INTRO + '\n\n<h2>Regions</h2>\n<ul class="regions">%s</ul>' % items
-    return shell("Reputation quests — every region",
+    compass = "".join(compass_row(r, data[r]) for r in regions)
+    body = ('<h2 id="regions">Regions</h2>\n<ul class="regions">%s</ul>\n\n' % items + INTRO
+            +'\n\n<h2 id="treasure-compass">Treasure Compass: can the quests pay for it?</h2>\n'
+            '<table>\n  <tr><th>Region</th><th>Compass</th><th>Quests pay</th><th>Rest from</th></tr>\n'
+            '%s</table>' % compass)
+    return shell("Reputation quests",
                  "Start NPC, start location, and a measured length for every quest that "
-                 "pays Reputation EXP, one page per region. Generated from the wiki, %s. "
+                 "pays Reputation EXP, one page per region with a map of where each starts. Generated from the wiki, %s. "
                  "&middot; %s" % (UPDATED, LINKS), body)
 
 
@@ -368,8 +390,8 @@ def region_html(region, quests):
 def main():
     data = json.load(io.open(DATA, encoding="utf-8"))
     regions = [r for r in data if data[r]]
+    # Region pages are the route pages (build-rep-route.py); this writes the overview.
     pages = {OUT: overview(data, regions)}
-    pages.update({region_page(r): region_html(r, data[r]) for r in regions})
     for path, html in pages.items():
         with io.open(path, "w", encoding="utf-8") as f:
             f.write(html)

@@ -1,4 +1,32 @@
 {
+ "\"Eye of Watatsumi\"": {
+  "area": "Watatsumi Island",
+  "dlg": 4173,
+  "firstSpeaker": "Ancient Stone Tablet",
+  "firstStep": "Go to the \"Eye\"",
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Watatsumi Island, Inazuma",
+  "steps": 8,
+  "subarea": null,
+  "type": "World"
+ },
+ "\"Heart of Watatsumi\"": {
+  "area": "Watatsumi Island",
+  "dlg": 6508,
+  "firstSpeaker": "Tsuyuko",
+  "firstStep": "Return to Sangonomiya Shrine and talk to Tsuyuko",
+  "npcs": [
+   "Tsuyuko"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Sangonomiya Shrine, Inazuma",
+  "steps": 22,
+  "subarea": "Sangonomiya Shrine",
+  "type": "World"
+ },
  "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"": {
   "area": "Lost Nursery",
   "dlg": 11580,
@@ -13,6 +41,126 @@
   "start": "Land of Grounded Dreams, Sumeru",
   "steps": 3,
   "subarea": "Old Vanarana",
+  "type": "World"
+ },
+ "\"Hey, This Isn't Pumpkin Soup...\"": {
+  "area": "Beryl Region",
+  "dlg": 16365,
+  "firstSpeaker": "Verenata",
+  "firstStep": "Talk to Verenata",
+  "npcs": [
+   "Verenata"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Merusea Village, Fontaine",
+  "steps": 11,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "\"The Seventh Samurai\"": {
+  "area": "Narukami Island",
+  "dlg": 13404,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Toranosuke",
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 6,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "...What Do Adventurers Do Again?": {
+  "area": "Sea of Clouds",
+  "dlg": 6852,
+  "firstSpeaker": "Lan",
+  "firstStep": "Talk to Tiantian",
+  "npcs": [
+   "Lan",
+   "Tiantian"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''Farewell, Archaic Lord''",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 5,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "A Certain Notice": {
+  "area": "Court of Fontaine Region",
+  "dlg": 23674,
+  "firstSpeaker": "Iaune",
+  "firstStep": "Talk to Gattineo / Difor",
+  "npcs": [
+   "Difor",
+   "Gattineo",
+   "Iaune",
+   "Roialte"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete ''As Light Rain Falls Without Reason''",
+  "start": "Palais Mermonia, Fontaine.",
+  "steps": 5,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "A Certain Stamp": {
+  "area": "Court of Fontaine Region",
+  "dlg": 15297,
+  "firstSpeaker": "Iaune",
+  "firstStep": "Wait until the following morning (08:00 – 12:00)",
+  "npcs": [
+   "Cornelia",
+   "Gattineo",
+   "Iaune",
+   "Roialte",
+   "Semaine",
+   "Thales"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Palais Mermonia, Fontaine",
+  "steps": 4,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "A Certain Trifle": {
+  "area": "Court of Fontaine Region",
+  "dlg": 11724,
+  "firstSpeaker": "Iaune",
+  "firstStep": "Wait until the following morning (08:00 – 12:00)",
+  "npcs": [
+   "Cornelia",
+   "Estelle",
+   "Iaune",
+   "Roialte",
+   "Semaine"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Palais Mermonia, Fontaine",
+  "steps": 8,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "A Cliff-Side Hero's Past": {
+  "area": "The Chasm (Area)",
+  "dlg": 19872,
+  "firstSpeaker": "???",
+  "firstStep": "Defeat Tang Wuchou, self-proclaimed Guhua disciple",
+  "npcs": [
+   "Old Chou",
+   "Tang Wuchou"
+  ],
+  "region": "Liyue",
+  "requirement": "* {{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Cinnabar Cliff, The Chasm",
+  "steps": 9,
+  "subarea": "Cinnabar Cliff",
   "type": "World"
  },
  "A Delicacy for Nara": {
@@ -34,6 +182,119 @@
   "subarea": "Vanarana (Subarea)",
   "type": "World"
  },
+ "A Fontainian Message": {
+  "area": "Court of Fontaine Region",
+  "dlg": 13954,
+  "firstSpeaker": "Sonny",
+  "firstStep": "Head to your destination",
+  "npcs": [
+   "Luca",
+   "Sonny",
+   "Virgil"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+  "steps": 7,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "A Letter": {
+  "area": "Liffey Region;Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 13892,
+  "firstSpeaker": "Choiseul",
+  "firstStep": "Go to the Fontaine Research Institute",
+  "npcs": [
+   "Choiseul",
+   "Desnos",
+   "Iaune"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete Fontaine Research Institute Chronicles",
+  "start": "New Fontaine Research Institute, Fontaine",
+  "steps": 7,
+  "subarea": "New Fontaine Research Institute",
+  "type": "World"
+ },
+ "A Little Game": {
+  "area": "Sea of Clouds",
+  "dlg": 13905,
+  "firstSpeaker": "Childish Jiang",
+  "firstStep": "Locate and talk to the childish Jiang before the allotted time of the game ends.",
+  "npcs": [
+   "Childish Jiang"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Mt. Tianheng, Liyue",
+  "steps": 5,
+  "subarea": "Mt. Tianheng",
+  "type": "World"
+ },
+ "A Lone Ship In Guyun": {
+  "area": "Sea of Clouds",
+  "dlg": 25574,
+  "firstSpeaker": "Juza",
+  "firstStep": "Talk to Suling",
+  "npcs": [
+   "Bolai",
+   "Changchang",
+   "Furong",
+   "Juza",
+   "Little Yue",
+   "Mora-Grubber",
+   "Sea Drake",
+   "Suling",
+   "Xu Liushi",
+   "Yinxing"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Sea of Clouds, Liyue",
+  "steps": 9,
+  "subarea": null,
+  "type": "World"
+ },
+ "A New Star Approaches": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "A Particularly Particular Author": {
+  "area": "Narukami Island",
+  "dlg": 43575,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Talk to Katheryne at the Inazuma Adventurers' Guild",
+  "npcs": [
+   "Katheryne (Inazuma)",
+   "Sumida",
+   "Kama",
+   "Ruu",
+   "Makiri",
+   "Ipe",
+   "Onkami",
+   "Kito",
+   "Kina",
+   "Una",
+   "Abe",
+   "Mata",
+   "Ku"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 19,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
  "A Prayer for Rain on the Fecund Land": {
   "area": "Ashavan Realm",
   "dlg": 17618,
@@ -52,6 +313,44 @@
   "subarea": "Apam Woods",
   "type": "World"
  },
+ "A Provisional Arrangement": {
+  "area": "Bishui Plain",
+  "dlg": 3656,
+  "firstSpeaker": "Zhen Qiang",
+  "firstStep": "Ride the elevator",
+  "npcs": [
+   "Huai'an",
+   "Zhen Qiang"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Wangshu Inn, Liyue",
+  "steps": 3,
+  "subarea": "Wangshu Inn",
+  "type": "World"
+ },
+ "A Quiet Day in Liyue Harbor": {
+  "area": "Sea of Clouds",
+  "dlg": 17870,
+  "firstSpeaker": "Nervous An",
+  "firstStep": "Calm Freki and her brother down",
+  "npcs": [
+   "Atsuko",
+   "Bolai",
+   "Clerk Zhao",
+   "Freki",
+   "Geri",
+   "Ivanovich",
+   "Manager Kuan",
+   "Nervous An"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Farewell, Archaic Lord and Mondstadt Gastronomy Trip",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 11,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
  "A Short Encounter with a Rare Bird": {
   "area": "Ashavan Realm",
   "dlg": 0,
@@ -68,6 +367,41 @@
   "start": "Ashavan Realm, Sumeru",
   "steps": 13,
   "subarea": null,
+  "type": "World"
+ },
+ "A Strange Story in Konda": {
+  "area": "Narukami Island",
+  "dlg": 33766,
+  "firstSpeaker": "???",
+  "firstStep": "Use the power of Electro on the Sky Kitsune Statue",
+  "npcs": [
+   "Futaba",
+   "Hanachirusato",
+   "Konda Densuke",
+   "Saimon Eri",
+   "Takeru"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Konda Village, Narukami Island, Inazuma",
+  "steps": 21,
+  "subarea": "Konda Village",
+  "type": "World"
+ },
+ "A Wangshan Walk to Remember": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 60372,
+  "firstSpeaker": "Huang the Third",
+  "firstStep": "Go to Wangshan Hall",
+  "npcs": [
+   "Huang the Third",
+   "Wen the Fourth"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Yilong Wharf, Liyue",
+  "steps": 15,
+  "subarea": "Yilong Wharf",
   "type": "World"
  },
  "Adventure Takes Courage! (World Quest)": {
@@ -128,6 +462,89 @@
   "subarea": "Gandharva Ville",
   "type": "World"
  },
+ "An Adeptal Summons": {
+  "area": "Minlin",
+  "dlg": 7231,
+  "firstSpeaker": "Cloud Retainer",
+  "firstStep": "Offer the Delicious Jewelry Soup",
+  "npcs": [
+   "Xianyun"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''Farewell, Archaic Lord''",
+  "start": "Mt. Aocang, Liyue",
+  "steps": 10,
+  "subarea": "Mt. Aocang",
+  "type": "World"
+ },
+ "An Expected Lie": {
+  "area": "Morte Region",
+  "dlg": 19840,
+  "firstSpeaker": "Fusilier",
+  "firstStep": "Head to Nacker's hideout",
+  "npcs": [
+   "Chaussivert",
+   "Choiseul",
+   "Edwin Eastinghouse",
+   "Fusilier",
+   "Lemarcq",
+   "Nacker",
+   "Raimondo"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Fort Charybdis Ruins, Fontaine",
+  "steps": 11,
+  "subarea": "Fort Charybdis Ruins",
+  "type": "World"
+ },
+ "An Expected Plan": {
+  "area": null,
+  "dlg": 46457,
+  "firstSpeaker": "Fusilier",
+  "firstStep": "Go below Lumidouce Harbor",
+  "npcs": [
+   "Chaussivert",
+   "Covault",
+   "Edwin Eastinghouse",
+   "Fusilier",
+   "Lasselin",
+   "Lemarcq",
+   "Loillier",
+   "Morgen",
+   "Nacker",
+   "Pattyn",
+   "Permingeat",
+   "Pitot",
+   "Raimondo"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete Fontaine Research Institute Chronicles",
+  "start": "Lumidouce Harbor, Fontaine",
+  "steps": 36,
+  "subarea": "Lumidouce Harbor",
+  "type": "World"
+ },
+ "An Eye for an Eye": {
+  "area": "Liffey Region",
+  "dlg": 31439,
+  "firstSpeaker": "Estienne",
+  "firstStep": "Leave the Fortress of Meropide",
+  "npcs": [
+   "Caterpillar",
+   "Estienne",
+   "Lanoire",
+   "Maupoil",
+   "Monglane",
+   "Noailles"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Administrative Area, Fontaine",
+  "steps": 27,
+  "subarea": "Fortress of Meropide",
+  "type": "World"
+ },
  "An Introduction to Indoor Archaeology": {
   "area": "Hypostyle Desert",
   "dlg": 38649,
@@ -150,6 +567,23 @@
   "subarea": "Sobek Oasis",
   "type": "World"
  },
+ "An Ode to Yonder City": {
+  "area": "Bishui Plain",
+  "dlg": 7351,
+  "firstSpeaker": "Qingzhou",
+  "firstStep": "Talk to Qingzhou",
+  "npcs": [
+   "Fan Er'ye",
+   "Hao (Liyue Harbor)",
+   "Qingzhou"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''A New Star Approaches''",
+  "start": "Wangshu Inn, Liyue",
+  "steps": 6,
+  "subarea": "Wangshu Inn",
+  "type": "World"
+ },
  "An Unwavering Culinary Dream": {
   "area": null,
   "dlg": 0,
@@ -162,6 +596,68 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "And This Treasure Goes To...": {
+  "area": "Lisha",
+  "dlg": 7185,
+  "firstSpeaker": "Neatly-Written Diary",
+  "firstStep": "''(Optional)'' Investigate the strange camp (0/3)",
+  "npcs": [
+   "Alrani"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Lingju Pass, Liyue",
+  "steps": 8,
+  "subarea": "Lingju Pass",
+  "type": "World"
+ },
+ "Ann's Story": {
+  "area": "Court of Fontaine Region",
+  "dlg": 25231,
+  "firstSpeaker": "Ann",
+  "firstStep": "Keep moving ahead",
+  "npcs": [
+   "Ann"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Another Horizon of Adventure": {
+  "area": "Court of Fontaine Region",
+  "dlg": 2000,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Talk to Katheryne",
+  "npcs": [
+   "Katheryne (Fontaine)"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete As Light Rain Falls Without Reason",
+  "start": "Court of Fontaine: Quartier Lyonnais, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Aqueous Tidemarks": {
+  "area": "Court of Fontaine Region",
+  "dlg": 31584,
+  "firstSpeaker": "???",
+  "firstStep": "Search for and collect clues",
+  "npcs": [
+   "Luca",
+   "Sonny",
+   "Virgil"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+  "steps": 19,
+  "subarea": "Court of Fontaine",
+  "type": "World"
  },
  "Aragaru's Drawing": {
   "area": "Lokapala Jungle",
@@ -209,6 +705,19 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "As Light Rain Falls Without Reason": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "As the Khvarena's Light Shows": {
   "area": "Gavireh Lajavard",
   "dlg": 41326,
@@ -244,6 +753,67 @@
   "subarea": null,
   "type": "World"
  },
+ "Automaton Attack": {
+  "area": "Yashiori Island",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Automatons",
+  "npcs": [
+   "Satou"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Yashiori Island, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Battle of Revenge": {
+  "area": "Narukami Island",
+  "dlg": 8198,
+  "firstSpeaker": "Asakura",
+  "firstStep": "Talk to Asakura",
+  "npcs": [
+   "Asakura"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete ''An Art to Be Honed'' 4 times",
+  "start": "Inazuma City, Inazuma",
+  "steps": 5,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Big Business": {
+  "area": "Bishui Plain",
+  "dlg": 6865,
+  "firstSpeaker": "Landa",
+  "firstStep": "Get the invoices (0/3)",
+  "npcs": [
+   "Bao'er",
+   "Landa"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Wangshu Inn, Liyue",
+  "steps": 5,
+  "subarea": "Wangshu Inn",
+  "type": "World"
+ },
+ "Blackcliff Woes": {
+  "area": "Sea of Clouds",
+  "dlg": 4292,
+  "firstSpeaker": "Manager Kuan",
+  "firstStep": "Talk to Manager Kuan",
+  "npcs": [
+   "Manager Kuan"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Of the Land Amidst Monoliths",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 9,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
  "Blooming Sands": {
   "area": "Land of Lower Setekh",
   "dlg": 8458,
@@ -261,6 +831,99 @@
   "subarea": "Aaru Village",
   "type": "World"
  },
+ "Book in the Woods": {
+  "area": "Bishui Plain",
+  "dlg": 4028,
+  "firstSpeaker": "Little Nine",
+  "firstStep": "Talk to Little Nine",
+  "npcs": [
+   "Little Nine"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Wuwang Hill, Liyue",
+  "steps": 5,
+  "subarea": "Wuwang Hill",
+  "type": "World"
+ },
+ "Both Brains and Brawn": {
+  "area": "Liffey Region",
+  "dlg": 57043,
+  "firstSpeaker": "Genevieve",
+  "firstStep": "Go to the Pankration Ring",
+  "npcs": [
+   "Champvallon",
+   "Genevieve",
+   "Goncourt",
+   "Poiret",
+   "Roussimoff"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete An Eye for an Eye",
+  "start": "Administrative Area, Fontaine",
+  "steps": 37,
+  "subarea": "Fortress of Meropide",
+  "type": "World"
+ },
+ "Bruneau's Flower Request": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1444,
+  "firstSpeaker": "Bruneau",
+  "firstStep": "Give five Rainbow Roses to Bruneau",
+  "npcs": [
+   "Bruneau"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Cataclysm's Quickening": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Changchang's Little Friend": {
+  "area": "Sea of Clouds",
+  "dlg": 3001,
+  "firstSpeaker": "Changchang",
+  "firstStep": "Talk to Changchang",
+  "npcs": [
+   "Changchang"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 3,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Chasm Spelunkers": {
+  "area": "The Chasm: Underground Mines",
+  "dlg": 20069,
+  "firstSpeaker": "Zhiqiong",
+  "firstStep": "Enter the mines of The Chasm",
+  "npcs": [
+   "Jinwu",
+   "Zhiqiong"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm's Maw, Liyue",
+  "steps": 15,
+  "subarea": "The Chasm: Main Mining Area",
+  "type": "World"
+ },
  "Children of the Forest": {
   "area": null,
   "dlg": 1640,
@@ -272,6 +935,90 @@
   "start": null,
   "steps": 1,
   "subarea": null,
+  "type": "World"
+ },
+ "Chili Con Cloudy": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 21026,
+  "firstSpeaker": "Mingli",
+  "firstStep": "Go to the Treasure Hoarder camp",
+  "npcs": [
+   "Chili Pepper",
+   "Mingli",
+   "Tusheng",
+   "Wenhua",
+   "Yunyun"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Chenyu Vale: Upper Vale, Chenyu Vale",
+  "steps": 9,
+  "subarea": null,
+  "type": "World"
+ },
+ "Chisato's Letter": {
+  "area": "Narukami Island",
+  "dlg": 7498,
+  "firstSpeaker": "Sanada",
+  "firstStep": "Give the letter to Kujou Kamaji",
+  "npcs": [
+   "Hiiragi Chisato",
+   "Kiminami Anna",
+   "Kujou Kamaji",
+   "Sanada"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Inazuma City, Inazuma",
+  "steps": 6,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Clean House": {
+  "area": "Watatsumi Island",
+  "dlg": 19326,
+  "firstSpeaker": "Shizuru",
+  "firstStep": "Go to Jakotsu Mine to negotiate with the Shogunate Samurai",
+  "npcs": [
+   "Borenka",
+   "Brutish Samurai",
+   "Shizuru"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Orobashi's Legacy series<br>Complete Omnipresence Over Mortals",
+  "start": "Sangonomiya Shrine, Inazuma",
+  "steps": 13,
+  "subarea": "Sangonomiya Shrine",
+  "type": "World"
+ },
+ "Cleansing Defilement": {
+  "area": "Narukami Island",
+  "dlg": 5089,
+  "firstSpeaker": null,
+  "firstStep": "Complete the Sacred Sakura Cleansing Ritual (0/3).",
+  "npcs": [
+   "Hanachirusato"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Chinju Forest, Inazuma",
+  "steps": 2,
+  "subarea": "Chinju Forest;Kamisato Estate;Araumi",
+  "type": "World"
+ },
+ "Collection of Dragons and Snakes": {
+  "area": "Enkanomiya",
+  "dlg": 10427,
+  "firstSpeaker": "???",
+  "firstStep": "Speak to the afterimage within the library",
+  "npcs": [
+   "Ema"
+  ],
+  "region": "Inazuma",
+  "requirement": "The Subterranean Trials of Drake and Serpent",
+  "start": "The Narrows, Enkanomiya, Inazuma",
+  "steps": 5,
+  "subarea": "The Narrows",
   "type": "World"
  },
  "Cooking, a Pleasant Memory": {
@@ -336,6 +1083,74 @@
   "subarea": null,
   "type": "World"
  },
+ "Crabby Chaos": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the attacking Armored Crabs",
+  "npcs": [
+   "Wei Xiaobao",
+   "Hubel"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Belleau Region, Fontaine",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Danger Lurks Everywhere in Fontaine": {
+  "area": "Court of Fontaine Region",
+  "dlg": 10509,
+  "firstSpeaker": "Guijarro",
+  "firstStep": "Talk to Guijarro",
+  "npcs": [
+   "Arouet",
+   "Guijarro"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Marcotte Station, Fontaine",
+  "steps": 6,
+  "subarea": "Marcotte Station",
+  "type": "World"
+ },
+ "Daydreams Beyond Space and Time": {
+  "area": "Court of Fontaine Region",
+  "dlg": 28777,
+  "firstSpeaker": "Garcia",
+  "firstStep": "Talk to Garcia",
+  "npcs": [
+   "Garcia",
+   "Kaia",
+   "Lutong",
+   "Mécantre",
+   "Babisse",
+   "Grundeland",
+   "Menthe"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete For Yesterday and Tomorrow",
+  "start": "Court of Fontaine, Fontaine",
+  "steps": 6,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Divine Plant of the Depths": {
+  "area": "Watatsumi Island",
+  "dlg": 15515,
+  "firstSpeaker": "Komaki",
+  "firstStep": "Talk to Komaki",
+  "npcs": [
+   "Komaki"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Bourou Village, Watatsumi Island, Inazuma",
+  "steps": 11,
+  "subarea": "Bourou Village",
+  "type": "World"
+ },
  "Dreams Beneath the Searing Sand": {
   "area": "Hypostyle Desert",
   "dlg": 57423,
@@ -358,6 +1173,24 @@
   "start": "Sobek Oasis, Sumeru",
   "steps": 40,
   "subarea": "Sobek Oasis",
+  "type": "World"
+ },
+ "Dreams of Sword Art": {
+  "area": "Kannazuka",
+  "dlg": 24497,
+  "firstSpeaker": "Nameless",
+  "firstStep": "Search for the nameless samurai",
+  "npcs": [
+   "Ishikawa",
+   "Kujou Masahito",
+   "Matsudaira",
+   "Nameless"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Kannazuka, Inazuma",
+  "steps": 34,
+  "subarea": null,
   "type": "World"
  },
  "Dreams, Emptiness, Deception": {
@@ -459,6 +1292,25 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "Echoes of the Ancient World": {
+  "area": "Beryl Region",
+  "dlg": 29217,
+  "firstSpeaker": "Verenata",
+  "firstStep": "Look for Carabosse",
+  "npcs": [
+   "Carabosse",
+   "Katheryne (Fontaine)",
+   "Tailleferre",
+   "Topyas",
+   "Verenata"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete ''Ancient Colors''",
+  "start": "Merusea Village, Fontaine",
+  "steps": 14,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
  "Endless Research": {
   "area": "Sea of Clouds",
   "dlg": 6557,
@@ -467,7 +1319,7 @@
   "npcs": [
    "Alrani"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": "* Complete the {{Quest|A New Star Approaches}}",
   "start": "Liyue Harbor, Liyue",
   "steps": 6,
@@ -491,6 +1343,22 @@
   "subarea": null,
   "type": "World"
  },
+ "Etienne's Raw Meat Request": {
+  "area": "Belleau Region",
+  "dlg": 1641,
+  "firstSpeaker": "Etienne",
+  "firstStep": "Give 8 servings of Raw Meat to Etienne",
+  "npcs": [
+   "Etienne",
+   "Baguette"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Romaritime Harbor, Fontaine",
+  "steps": 1,
+  "subarea": "Romaritime Harbor",
+  "type": "World"
+ },
  "Even Beasts Stumble": {
   "area": "Ashavan Realm",
   "dlg": 8720,
@@ -504,6 +1372,49 @@
   "start": "Yasna Monument, Sumeru",
   "steps": 7,
   "subarea": "Yasna Monument",
+  "type": "World"
+ },
+ "Farewell, Archaic Lord": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Fate of a Fighter": {
+  "area": "Yashiori Island",
+  "dlg": 10482,
+  "firstSpeaker": "Inaba Kyuuzou",
+  "firstStep": "Rescue the besieged samurai Nobushi: Jintouban*4;Kairagi: Dancing Thunder",
+  "npcs": [
+   "Inaba Kyuuzou"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete In the Name of the Resistance",
+  "start": null,
+  "steps": 11,
+  "subarea": null,
+  "type": "World"
+ },
+ "Fatuous Farce (Inazuma)": {
+  "area": "Kannazuka",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Fatui",
+  "npcs": [
+   "Katayama"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 1,
+  "subarea": null,
   "type": "World"
  },
  "Fatuous Farce (Sumeru)": {
@@ -534,7 +1445,7 @@
    "Kaushik",
    "Ookubo Daisuke"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": "* Complete the {{Quest|In Another Land}}",
   "start": "Watatsumi Island, Inazuma",
   "steps": 10,
@@ -584,6 +1495,81 @@
   "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
   "steps": 6,
   "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
+ "Fishing For Jade": {
+  "area": "Sea of Clouds",
+  "dlg": 7361,
+  "firstSpeaker": "Kun",
+  "firstStep": "Clear the flotsam from the north wharf 0/5 (Obtain: A Bag of Mora (Fishing For Jade))",
+  "npcs": [
+   "Baiwen",
+   "Kun"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Sea of Clouds, Sea of People",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 4,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Fishing Game": {
+  "area": "Beryl Region",
+  "dlg": 7523,
+  "firstSpeaker": "Iara",
+  "firstStep": "Talk to Iara",
+  "npcs": [
+   "Iara"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Ancient Colors",
+  "start": "Merusea Village, Fontaine",
+  "steps": 3,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "Foggy Forest Path": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Fontaine Research Institute, Stagnating in the Rubble": {
+  "area": "Liffey Region; Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 112172,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Go to the preliminary review location",
+  "npcs": [
+   "Broglie",
+   "Chalmet",
+   "Chisseray",
+   "Choiseul",
+   "Chronie",
+   "Conjat",
+   "Damestier",
+   "Denichere",
+   "Desnos",
+   "Heinry",
+   "Katheryne (Fontaine)",
+   "Lanty",
+   "Muirne",
+   "Nacker",
+   "Raimondo",
+   "Sevigne",
+   "Vuillermoz"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Liffey Region, Fontaine",
+  "steps": 34,
+  "subarea": "New Fontaine Research Institute; Central Laboratory Ruins",
   "type": "World"
  },
  "For A Better Reunion": {
@@ -669,6 +1655,42 @@
   "subarea": "Fane of Ashvattha",
   "type": "World"
  },
+ "Fortune Plango Vulnera": {
+  "area": "Sea of Bygone Eras",
+  "dlg": 18067,
+  "firstSpeaker": "Scylla",
+  "firstStep": "Release the Ichor to connect the aqueducts",
+  "npcs": [
+   "Boethius",
+   "Cassiodor",
+   "Osse",
+   "Phobos",
+   "Scylla"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Sea of Bygone Eras, Fontaine",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Free Verse": {
+  "area": "Erinnyes Forest",
+  "dlg": 38860,
+  "firstSpeaker": "???",
+  "firstStep": "Try to understand what Don Quijano and Nana are saying",
+  "npcs": [
+   "Don Quijano",
+   "Nana",
+   "Penny"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Erinnyes Forest, Fontaine",
+  "steps": 16,
+  "subarea": null,
+  "type": "World"
+ },
  "Fungal Fracas": {
   "area": null,
   "dlg": 0,
@@ -686,6 +1708,52 @@
   "subarea": null,
   "type": "World"
  },
+ "Galathee's Salt Solicitation": {
+  "area": "Belleau Region",
+  "dlg": 1613,
+  "firstSpeaker": "Galathee",
+  "firstStep": "Give 10 bottles of Salt to Galathee",
+  "npcs": [
+   "Galathee"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Romaritime Harbor, Fontaine",
+  "steps": 1,
+  "subarea": "Romaritime Harbor",
+  "type": "World"
+ },
+ "Game of the Rich": {
+  "area": "Liffey Region",
+  "dlg": 95256,
+  "firstSpeaker": "Galvana",
+  "firstStep": "Talk to Darcy",
+  "npcs": [
+   "Alvard",
+   "Bran",
+   "Caterpillar",
+   "Clynes",
+   "Darcy",
+   "Delassaux",
+   "Estienne",
+   "Galvana",
+   "Galvaryet",
+   "Genevieve",
+   "Henaff",
+   "Lanoire",
+   "Monglane",
+   "Nizami",
+   "Noailles",
+   "Poiret",
+   "Rave"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Administrative Area, Fontaine",
+  "steps": 30,
+  "subarea": "Fortress of Meropide",
+  "type": "World"
+ },
  "Garcia's Paean": {
   "area": "Bishui Plain",
   "dlg": 13111,
@@ -696,7 +1764,7 @@
    "Lutong",
    "Smiley Yanxiao"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": null,
   "start": "Wangshu Inn, Liyue",
   "steps": 5,
@@ -732,7 +1800,7 @@
    "Garcia",
    "Lutong"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": "Complete ''Garcia's Paean: Key Items'' and ''Garcia's Paean: Substitutes'' three times each.",
   "start": "Sumeru City, Sumeru",
   "steps": 3,
@@ -749,7 +1817,7 @@
    "Lutong",
    "Ahangar"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": "",
   "start": "Sumeru City, Sumeru",
   "steps": 3,
@@ -765,7 +1833,7 @@
    "Garcia",
    "Lutong"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": null,
   "start": "Lokapala Jungle, Sumeru",
   "steps": 3,
@@ -781,7 +1849,7 @@
    "Garcia",
    "Lutong"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": null,
   "start": "Sumeru City, Sumeru",
   "steps": 3,
@@ -798,12 +1866,59 @@
    "Kaia",
    "Lutong"
   ],
-  "region": "Sumeru",
+  "region": "Fontaine",
   "requirement": "Complete {{Quest|Garcia's Paean: Easy Peasy|showType=0}} correctly four times",
   "start": "Sumeru City, Sumeru",
   "steps": 4,
   "subarea": "Sumeru City",
   "type": "Commission"
+ },
+ "Gazing Three Thousand Miles Away": {
+  "area": "Yashiori Island",
+  "dlg": 33036,
+  "firstSpeaker": "Chouji",
+  "firstStep": "Gather 12 chunks of Crystal Marrow",
+  "npcs": [
+   "Chouji"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Jakotsu Mine, Yashiori Island",
+  "steps": 14,
+  "subarea": "Jakotsu Mine",
+  "type": "World"
+ },
+ "Geri's Gastro-Nostalgia": {
+  "area": "Sea of Clouds",
+  "dlg": 4136,
+  "firstSpeaker": "Geri",
+  "firstStep": "Give Geri two Sweet Madames / two servings of Flaming Red Bolognese / three servings of Radish Veggie Soup / two Tea Break Pancakes",
+  "npcs": [
+   "Geri"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Gourmet Supremos, Assemble!": {
+  "area": "Narukami Island",
+  "dlg": 9043,
+  "firstSpeaker": "Xudong",
+  "firstStep": "Collect the Special Sakura Bloom",
+  "npcs": [
+   "Julie",
+   "Parvaneh",
+   "Xudong"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Inazuma",
+  "steps": 4,
+  "subarea": null,
+  "type": "World"
  },
  "Gourmet Supremos: Within Our Duties": {
   "area": "Ardravi Valley",
@@ -831,6 +1946,154 @@
   "subarea": "Port Ormos",
   "type": "World"
  },
+ "Gradus ad Capitolium": {
+  "area": "Sea of Bygone Eras",
+  "dlg": 29903,
+  "firstSpeaker": "Monsieur Os",
+  "firstStep": "Head to \"Domus Aurea\"",
+  "npcs": [
+   "Boethius",
+   "Cassiodor",
+   "Osse",
+   "Remus",
+   "Scylla"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Sea of Bygone Eras, Fontaine",
+  "steps": 7,
+  "subarea": null,
+  "type": "World"
+ },
+ "Hanfeng's Iron-Mongering": {
+  "area": "Bishui Plain",
+  "dlg": 2137,
+  "firstSpeaker": "Hanfeng, \"Cold Blade\"",
+  "firstStep": "Give ten Iron Chunks to Hanfeng",
+  "npcs": [
+   "Hanfeng, \"Cold Blade\""
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Qingce Village, Liyue",
+  "steps": 1,
+  "subarea": "Qingce Village",
+  "type": "World"
+ },
+ "Happy Birthday": {
+  "area": "Court of Fontaine Region",
+  "dlg": 11780,
+  "firstSpeaker": "Earnshaw",
+  "firstStep": "Talk to Earnshaw",
+  "npcs": [
+   "Caterpillar",
+   "Charlene",
+   "Earnshaw",
+   "Lanoire"
+  ],
+  "region": "Fontaine",
+  "requirement": "*Complete ''Upon a Flowery Field of Grass''",
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "Herbalist's Forage": {
+  "area": "Sea of Clouds",
+  "dlg": 3842,
+  "firstSpeaker": "Herbalist Gui",
+  "firstStep": "Give Herbalist Gui three Violetgrass / three Qingxin / ten Mints / ten Sweet Flowers",
+  "npcs": [
+   "Herbalist Gui"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Hereafter...": {
+  "area": "Court of Fontaine Region",
+  "dlg": 15326,
+  "firstSpeaker": "Caterpillar",
+  "firstStep": "Meet up with Lanoire and Caterpillar",
+  "npcs": [
+   "Caterpillar",
+   "Earnshaw",
+   "Lanoire"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "Hereafter: All is Well": {
+  "area": "Lisha",
+  "dlg": 8161,
+  "firstSpeaker": "Could I ask for a favor from you?",
+  "firstStep": "Talk to Wang Ping'an",
+  "npcs": [
+   "Wang Ping'an"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Lisha, Liyue",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "Hereafter: Return to the Mountains": {
+  "area": "Lisha",
+  "dlg": 3691,
+  "firstSpeaker": null,
+  "firstStep": "Go back to the Pervases statue",
+  "npcs": [
+   "Wang Ping'an",
+   "Pervases"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Lisha, Liyue",
+  "steps": 4,
+  "subarea": null,
+  "type": "World"
+ },
+ "Hereafter: The Trail of Pervases": {
+  "area": "Sea of Clouds",
+  "dlg": 9047,
+  "firstSpeaker": "Chef Mao",
+  "firstStep": "Speak to Chef Mao",
+  "npcs": [
+   "Chef Mao",
+   "Xiao",
+   "Wang Ping'an"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''Butterfly's Dream''",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 8,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Hilichurl Hullaballoo (Inazuma)": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Hilichurls",
+  "npcs": [
+   "Furuya Noboru",
+   "Utsumi"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Narukami Island, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
  "Hilichurl Hullaballoo (Sumeru)": {
   "area": "Ashavan Realm",
   "dlg": 0,
@@ -843,6 +2106,43 @@
   "requirement": null,
   "start": "Ashavan Realm, Sumeru",
   "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Hiromi's Watch": {
+  "area": "Narukami Island",
+  "dlg": 23213,
+  "firstSpeaker": "Hiromi",
+  "firstStep": "Go to the north of Narukami Island to find traces of Shun",
+  "npcs": [
+   "Hiromi",
+   "Shun",
+   "Little Que'er",
+   "Sun Yu",
+   "Yan'er"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete The Chi of Yore and Ritou Escape Plan<br>Have Someone's Drifting Bottle in your inventory",
+  "start": "Inazuma City, Inazuma",
+  "steps": 8,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Home Lies Over the Ocean": {
+  "area": "Narukami Island",
+  "dlg": 12079,
+  "firstSpeaker": "Atsuko",
+  "firstStep": "Give the letter to Michiru and Yoh",
+  "npcs": [
+   "Atsuko",
+   "Atsuko (Bake-Danuki)",
+   "Michiru",
+   "Yoh"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 5,
   "subarea": null,
   "type": "World"
  },
@@ -861,6 +2161,40 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "Hydro Phantasm Havoc": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Tainted Hydro Phantasms",
+  "npcs": [
+   "Lectoure"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Impromptu Poem of the Crimson Dawn": {
+  "area": "Erinnyes Forest",
+  "dlg": 17980,
+  "firstSpeaker": "Composed-Looking Treasure Hoarder",
+  "firstStep": "Look for the Treasure Hoarders and the redhead",
+  "npcs": [
+   "Blanc",
+   "Bleu",
+   "Havisham",
+   "Jingle",
+   "Rouge"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Erinnyes Forest, Fontaine",
+  "steps": 6,
+  "subarea": null,
+  "type": "World"
+ },
  "In Another Land": {
   "area": "Narukami Island",
   "dlg": 17428,
@@ -872,11 +2206,110 @@
    "Obata",
    "Vahid"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": "* Start the {{Quest|Stillness, the Sublimation of Shadow}}",
   "start": "Ritou, Inazuma",
   "steps": 6,
   "subarea": "Ritou",
+  "type": "World"
+ },
+ "In Expert Company? (I)": {
+  "area": "Court of Fontaine Region",
+  "dlg": 6040,
+  "firstSpeaker": "Xingye",
+  "firstStep": "Defeat all monsters and retrieve the Film Kamera Blazing Axe Mitachurl;Hilichurl*3",
+  "npcs": [
+   "Ms. Qiu",
+   "Xingye",
+   "Yifeng"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Chapter IV: Act II - As Light Rain Falls Without Reason",
+  "start": "Fountain of Lucine, Fontaine",
+  "steps": 2,
+  "subarea": "Fountain of Lucine",
+  "type": "World"
+ },
+ "In Expert Company? (II)": {
+  "area": "Court of Fontaine Region",
+  "dlg": 7053,
+  "firstSpeaker": "Ms. Qiu",
+  "firstStep": "Retrieve the box containing films",
+  "npcs": [
+   "Geisert",
+   "Ms. Qiu",
+   "Xingye",
+   "Yifeng"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "In Search of Lost Time": {
+  "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 10861,
+  "firstSpeaker": "Broglie",
+  "firstStep": "Talk to Broglie",
+  "npcs": [
+   "Broglie",
+   "Malinovskyi"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "New Fontaine Research Institute, Fontaine",
+  "steps": 12,
+  "subarea": "New Fontaine Research Institute",
+  "type": "World"
+ },
+ "In Search of Lost Time: South": {
+  "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 18607,
+  "firstSpeaker": "Broglie",
+  "firstStep": "Enter the sunken hydrology research station",
+  "npcs": [
+   "Broglie"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "New Fontaine Research Institute, Fontaine",
+  "steps": 6,
+  "subarea": "New Fontaine Research Institute",
+  "type": "World"
+ },
+ "International Travel Log": {
+  "area": "Narukami Island",
+  "dlg": 11912,
+  "firstSpeaker": "Midori",
+  "firstStep": "Talk to Kozue",
+  "npcs": [
+   "Heihachi",
+   "Kozue",
+   "Midori",
+   "Ramsay"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete ''Ritou Escape Plan''",
+  "start": "Inazuma City, Inazuma",
+  "steps": 14,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Ismenor's Bulle Fruit Bulletin": {
+  "area": "Court of Fontaine Region",
+  "dlg": 2180,
+  "firstSpeaker": "Ismenor",
+  "firstStep": "Give five Bulle Fruit to Ismenor",
+  "npcs": [
+   "Ismenor"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
   "type": "World"
  },
  "Jahan's Sugar": {
@@ -913,6 +2346,36 @@
   "subarea": "Aaru Village",
   "type": "World"
  },
+ "Kairagi Chaos": {
+  "area": "Narukami Island",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Kairagi",
+  "npcs": [
+   "Inoue"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Narukami Island, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Kairagi-Vagrant Pandemonium": {
+  "area": "Yashiori Island",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Kairagi and Vagrant",
+  "npcs": [
+   "Kujou Masahito"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Yashiori Island, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
  "Kamla's Berries": {
   "area": "Ardravi Valley",
   "dlg": 1657,
@@ -926,6 +2389,51 @@
   "start": "Port Ormos, Sumeru",
   "steps": 1,
   "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Kano Nana's Healthy Diet": {
+  "area": "Narukami Island",
+  "dlg": 2185,
+  "firstSpeaker": "Kano Nana",
+  "firstStep": "Give fifteen Carrots to Kano Nana",
+  "npcs": [
+   "Kano Nana"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Grand Narukami Shrine, Inazuma",
+  "steps": 1,
+  "subarea": "Grand Narukami Shrine (Subarea)",
+  "type": "World"
+ },
+ "Kanra's Lovesickness": {
+  "area": "Narukami Island",
+  "dlg": 1950,
+  "firstSpeaker": "Kanra",
+  "firstStep": "Give five Sakura Blooms to Kanra",
+  "npcs": [
+   "Kanra"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Grand Narukami Shrine, Inazuma",
+  "steps": 1,
+  "subarea": "Grand Narukami Shrine (Subarea)",
+  "type": "World"
+ },
+ "Katheryne in Inazuma": {
+  "area": "Narukami Island",
+  "dlg": 2489,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Talk to Katheryne in Inazuma City",
+  "npcs": [
+   "Katheryne (Inazuma)"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Inazuma City, Inazuma",
+  "steps": 1,
+  "subarea": "Inazuma City",
   "type": "World"
  },
  "King Deshret and the Three Magi": {
@@ -956,6 +2464,198 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "Kozue's Ironwork": {
+  "area": "Narukami Island",
+  "dlg": 1704,
+  "firstSpeaker": "Kozue",
+  "firstStep": "Give ten Iron Chunks to Kozue",
+  "npcs": [
+   "Kozue"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 1,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Latecoming Homecoming": {
+  "area": "Nostoi Region",
+  "dlg": 19411,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to Giulietta",
+  "npcs": [
+   "Agent",
+   "Contarini",
+   "Giovanni",
+   "Giulietta",
+   "Giustino",
+   "Loredan"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete ''Canticles of Harmony''",
+  "start": "Petrichor, Fontaine",
+  "steps": 7,
+  "subarea": "Petrichor",
+  "type": "World"
+ },
+ "Leroy: Beautiful Friends": {
+  "area": "Court of Fontaine Region",
+  "dlg": 9217,
+  "firstSpeaker": "House-for-Sale Notice",
+  "firstStep": "Talk to Molli",
+  "npcs": [
+   "Autumn",
+   "Athos (Fontaine)",
+   "Molli"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: Dying Flash": {
+  "area": "Court of Fontaine Region",
+  "dlg": 9668,
+  "firstSpeaker": "Euphrasie",
+  "firstStep": "Look for Mr. Leroy",
+  "npcs": [
+   "Benoit Leroy",
+   "Euphrasie",
+   "Nana (Cat)"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Impromptu Poem of the Crimson Dawn<br>Complete Questioning Melusine and Answering Machine",
+  "start": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+  "steps": 3,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: Firing Squad": {
+  "area": "Court of Fontaine Region",
+  "dlg": 11952,
+  "firstSpeaker": "Benoit Leroy",
+  "firstStep": "Talk to Benoit",
+  "npcs": [
+   "Autumn",
+   "Athos (Fontaine)",
+   "Benoit Leroy",
+   "Molli"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 3,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: Hangman's Noose": {
+  "area": "Court of Fontaine Region",
+  "dlg": 9906,
+  "firstSpeaker": "Athos",
+  "firstStep": "Observe what's going on near Benoit's residence",
+  "npcs": [
+   "Autumn",
+   "Athos (Fontaine)",
+   "Benoit Leroy"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 3,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: High Noon": {
+  "area": "Court of Fontaine Region",
+  "dlg": 17444,
+  "firstSpeaker": "Pip",
+  "firstStep": "Go near Benoit's house to investigate",
+  "npcs": [
+   "Areta",
+   "Athos (Fontaine)",
+   "Bracari",
+   "Faustier",
+   "Pip",
+   "Snodgrass"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 11,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: Queen of the Night's Aria": {
+  "area": "Court of Fontaine Region",
+  "dlg": 17642,
+  "firstSpeaker": "Benoit Leroy",
+  "firstStep": "Wait for the \"Bulle Fruit\" signal",
+  "npcs": [
+   "Autumn",
+   "Athos (Fontaine)",
+   "Benoit Leroy"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 6,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Leroy: Under Guard": {
+  "area": "Court of Fontaine Region",
+  "dlg": 13171,
+  "firstSpeaker": "Molli",
+  "firstStep": "Talk to Molli",
+  "npcs": [
+   "Autumn",
+   "Athos (Fontaine)",
+   "Benoit Leroy",
+   "Molli"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Vasari Passage, Fontaine",
+  "steps": 5,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Let's Make A Flower Garland!": {
+  "area": "Sea of Clouds",
+  "dlg": 2233,
+  "firstSpeaker": "Changchang",
+  "firstStep": "Give Changchang three Silk Flowers",
+  "npcs": [
+   "Changchang"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Limner, Dreamer, and Robotic Dog": {
+  "area": "Beryl Region",
+  "dlg": 31885,
+  "firstSpeaker": "Mamere",
+  "firstStep": "Head to the designated location",
+  "npcs": [
+   "Elynas (NPC)",
+   "Jakob",
+   "Mamere",
+   "Seymour"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+  "steps": 12,
+  "subarea": "\"A Lonely Place\"; \"A Very Warm Place\"",
+  "type": "World"
+ },
  "Lost in the Sands": {
   "area": "Land of Lower Setekh",
   "dlg": 51204,
@@ -977,6 +2677,114 @@
   "start": "Aaru Village, Sumeru",
   "steps": 33,
   "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Lotus Eater": {
+  "area": "Enkanomiya",
+  "dlg": 14913,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to the afterimage at The Altar at The Serpent's Heart",
+  "npcs": [
+   "Adonis",
+   "Supada no Hiko"
+  ],
+  "region": "Inazuma",
+  "requirement": "The Subterranean Trials of Drake and Serpent",
+  "start": "The Serpent's Heart, Enkanomiya, Inazuma",
+  "steps": 20,
+  "subarea": "The Serpent's Heart",
+  "type": "World"
+ },
+ "Luhua Landscape": {
+  "area": "Qiongji Estuary",
+  "dlg": 8276,
+  "firstSpeaker": "Vermeer",
+  "firstStep": "Look for Vermeer's paintbrushes and paints (0/2)",
+  "npcs": [
+   "Vermeer"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Luhua Pool, Liyue",
+  "steps": 14,
+  "subarea": "Luhua Pool",
+  "type": "World"
+ },
+ "Mary-Ann's Story": {
+  "area": "Court of Fontaine Region",
+  "dlg": 24343,
+  "firstSpeaker": "Ann",
+  "firstStep": "Talk to Ann",
+  "npcs": [
+   "Ann",
+   "Mary-Ann"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 8,
+  "subarea": null,
+  "type": "World"
+ },
+ "Masquerade of the Guilty": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Master Zhang's Metal Mission": {
+  "area": "Sea of Clouds",
+  "dlg": 1989,
+  "firstSpeaker": "Master Zhang",
+  "firstStep": "Give ten Iron Chunks to Master Zhang",
+  "npcs": [
+   "Master Zhang"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Matsumoto's Fried Egg Fracas": {
+  "area": "Narukami Island",
+  "dlg": 2183,
+  "firstSpeaker": "Matsumoto",
+  "firstStep": "Give five Teyvat Fried Eggs to Matsumoto",
+  "npcs": [
+   "Matsumoto"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 1,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Meka Mess": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the clockwork meka",
+  "npcs": [
+   "Arouet",
+   "Augereau",
+   "Chatelet",
+   "Liath"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Beryl Region, Fontaine",
+  "steps": 2,
+  "subarea": null,
   "type": "World"
  },
  "Memory of Stone": {
@@ -1013,6 +2821,417 @@
   "subarea": "Mawtiyima Forest",
   "type": "World"
  },
+ "Monster Mayhem": {
+  "area": "Kannazuka",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Fend off the monsters",
+  "npcs": [
+   "Ikuhara Gai"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Kannazuka, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Muirne's Better Butter": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1435,
+  "firstSpeaker": "Muirne",
+  "firstStep": "Give three Butter to Muirne",
+  "npcs": [
+   "Muirne"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Palais Mermonia, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Murakami's Meal-Making": {
+  "area": "Narukami Island",
+  "dlg": 2036,
+  "firstSpeaker": "Murakami",
+  "firstStep": "Give fifteen Mints to Murakami",
+  "npcs": [
+   "Murakami"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Amakane Island, Inazuma",
+  "steps": 1,
+  "subarea": "Amakane Island",
+  "type": "World"
+ },
+ "Necessary Procedures": {
+  "area": "Sea of Clouds",
+  "dlg": 10368,
+  "firstSpeaker": "Ivanovich",
+  "firstStep": "Talk to Ivanovich",
+  "npcs": [
+   "Ivanovich",
+   "Nervous An",
+   "Jiayi",
+   "Clerk Zhao"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 7,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Nine Pillars of Peace": {
+  "area": "Minlin",
+  "dlg": 8093,
+  "firstSpeaker": "Inscription",
+  "firstStep": "Open the Nine Pillars (0/9)",
+  "npcs": [
+   "Bolai",
+   "Linlang"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Cuijue Slope, Liyue",
+  "steps": 18,
+  "subarea": "Cuijue Slope",
+  "type": "World"
+ },
+ "No Restoring This Past Land of Beauty": {
+  "area": "Sea of Clouds",
+  "dlg": 9360,
+  "firstSpeaker": "Zhiping",
+  "firstStep": "Go to the cavern ruin in Tianqiu Valley",
+  "npcs": [
+   "Zhiping"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Mt. Tianheng, Liyue",
+  "steps": 3,
+  "subarea": "Mt. Tianheng",
+  "type": "World"
+ },
+ "O Archon, Have I Done Right?": {
+  "area": "Narukami Island",
+  "dlg": 10819,
+  "firstSpeaker": "Shouta",
+  "firstStep": "Talk to Shouta",
+  "npcs": [
+   "Kouichi",
+   "Shouta",
+   "Yayoi Nanatsuki"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 6,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "O Archon, Hear Me!": {
+  "area": "Narukami Island",
+  "dlg": 5563,
+  "firstSpeaker": "Shouta",
+  "firstStep": "Talk to Shouta",
+  "npcs": [
+   "Shouta",
+   "Yayoi Nanatsuki"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 3,
+  "subarea": "Inazuma City",
+  "type": "Commission"
+ },
+ "O Shrine, Show Your Power Once Again!": {
+  "area": "Narukami Island",
+  "dlg": 7054,
+  "firstSpeaker": "Shouta",
+  "firstStep": "Talk to Shouta",
+  "npcs": [
+   "Shouta"
+  ],
+  "region": "Inazuma",
+  "requirement": "",
+  "start": "Inazuma City, Inazuma",
+  "steps": 3,
+  "subarea": "Inazuma City",
+  "type": "Commission"
+ },
+ "Octave of the Maushiro": {
+  "area": "Narukami Island",
+  "dlg": 45484,
+  "firstSpeaker": "Sango",
+  "firstStep": "Travel to Tsurumi Island",
+  "npcs": [
+   "\"Kama\"",
+   "\"Sayo\"",
+   "Abe",
+   "Chise",
+   "Ipe",
+   "Kama",
+   "Kina",
+   "Kito",
+   "Mata",
+   "Roald",
+   "Ruu",
+   "Ryuuji",
+   "Sango",
+   "Sumida",
+   "Una"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 39,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Of the Land Amidst Monoliths": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Old Tastes Die Hard": {
+  "area": "Sea of Clouds",
+  "dlg": 3089,
+  "firstSpeaker": "Mr. Zhu",
+  "firstStep": "Talk to Mr. Zhu",
+  "npcs": [
+   "Mr. Zhu"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Sea of Clouds, Liyue",
+  "steps": 4,
+  "subarea": null,
+  "type": "World"
+ },
+ "Omnipresence Over Mortals": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "On the Stage, Behind the Stage": {
+  "area": "Sea of Clouds",
+  "dlg": 20865,
+  "firstSpeaker": "Tea Master Liu Su",
+  "firstStep": "Talk to Liu Su",
+  "npcs": [
+   "Dayu",
+   "Fan Er'ye",
+   "Granny Ruoxin",
+   "Master Lu",
+   "Tea Master Liu Su",
+   "Yun Jin"
+  ],
+  "region": "Liyue",
+  "requirement": "Interlude Chapter: Act I - The Crane Returns on the Wind",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 11,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Part I": {
+  "area": "Yashiori Island",
+  "dlg": 3804,
+  "firstSpeaker": "Touch Ward",
+  "firstStep": "Observe the ward",
+  "npcs": [
+   "Kaji"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Fort Fujitou",
+  "steps": 7,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Part II": {
+  "area": "Yashiori Island",
+  "dlg": 2096,
+  "firstSpeaker": "Place",
+  "firstStep": "Search for the ward at the Serpent's Head",
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Fort Fujitou",
+  "steps": 15,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Part III": {
+  "area": "Yashiori Island",
+  "dlg": 2048,
+  "firstSpeaker": "Place",
+  "firstStep": "Search for the ward in the Jakotsu Mine",
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Fort Fujitou",
+  "steps": 14,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Part IV": {
+  "area": "Yashiori Island",
+  "dlg": 1872,
+  "firstSpeaker": "Kaji",
+  "firstStep": "Go back and report to Kaji",
+  "npcs": [
+   "Kaji"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Fort Fujitou",
+  "steps": 1,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Part V": {
+  "area": "Yashiori Island",
+  "dlg": 3912,
+  "firstSpeaker": "Kaji",
+  "firstStep": "Head to Fort Mumei",
+  "npcs": [
+   "Kaji"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Fort Fujitou",
+  "steps": 4,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Orobashi's Legacy: Prologue": {
+  "area": "Yashiori Island",
+  "dlg": 4708,
+  "firstSpeaker": "Kaji",
+  "firstStep": null,
+  "npcs": [
+   "Kaji"
+  ],
+  "region": "Inazuma",
+  "requirement": "* {{Quest|A New Star Approaches|requirements=1|display=fullSentence}}",
+  "start": "Fort Fujitou, Inazuma",
+  "steps": 0,
+  "subarea": "Fort Fujitou",
+  "type": "World"
+ },
+ "Our Chenyu Vale Trek": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 16528,
+  "firstSpeaker": "Zhuchun",
+  "firstStep": "Complete the Chenyu Vale scenic photography contest (0/4)",
+  "npcs": [
+   "Akai",
+   "Fangju",
+   "Mali",
+   "Mingjing",
+   "Zhuchun"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|Threefold Expectations|requirements = 1|display = fullSentence}}",
+  "start": "Hezhe Post, Yilong Wharf, Chenyu Vale, Liyue",
+  "steps": 8,
+  "subarea": "Yilong Wharf",
+  "type": "World"
+ },
+ "Our Purpose Is in Another Canal": {
+  "area": "Liffey Region",
+  "dlg": 11509,
+  "firstSpeaker": "Aigouy",
+  "firstStep": "''(If Aigouy was spoken to)'' Go look for Balent in the Hilichurl camp on the water",
+  "npcs": [
+   "Aigouy",
+   "Balent"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Liffey Region, Fontaine",
+  "steps": 10,
+  "subarea": null,
+  "type": "World"
+ },
+ "Overstretched": {
+  "area": "Bishui Plain",
+  "dlg": 3832,
+  "firstSpeaker": "Qiaoxi",
+  "firstStep": "Investigate the nearby camp",
+  "npcs": [
+   "Qiaoxi"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Dihua Marsh, Liyue",
+  "steps": 7,
+  "subarea": "Dihua Marsh",
+  "type": "World"
+ },
+ "Paban's Milk Run": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1387,
+  "firstSpeaker": "Paban",
+  "firstStep": "Give eight Milk to Paban",
+  "npcs": [
+   "Paban"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Perfect Shot": {
+  "area": "Sea of Clouds",
+  "dlg": 5718,
+  "firstSpeaker": "Ji Tong",
+  "firstStep": "Talk to Ji Tong",
+  "npcs": [
+   "Ji Tong"
+  ],
+  "region": "Liyue",
+  "requirement": "Reach Adventure Rank 20",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Perils in the Dark": {
+  "area": "The Chasm: Underground Mines",
+  "dlg": 5499,
+  "firstSpeaker": "Egill",
+  "firstStep": "Take the path that leads deeper in",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm: Underground Mines",
+  "steps": 11,
+  "subarea": null,
+  "type": "World"
+ },
  "Peseng's Zaytun Peaches": {
   "area": "Ardravi Valley",
   "dlg": 2150,
@@ -1026,6 +3245,51 @@
   "start": "Port Ormos, Sumeru",
   "steps": 1,
   "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "Prelude of Blancheur and Noirceur": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Pressing Deadlines": {
+  "area": "Sea of Clouds",
+  "dlg": 9681,
+  "firstSpeaker": "Clerk Zhao",
+  "firstStep": "Talk to Clerk Zhao at Feiyun Slope in the daytime or the upper level of Xinyue Kiosk across the Northland Bank in the nighttime.",
+  "npcs": [
+   "Clerk Zhao",
+   "Jiangzhou",
+   "Nervous An"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Farewell, Archaic Lord",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 4,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Pruniere's White Iron Impetration": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1702,
+  "firstSpeaker": "Pruniere",
+  "firstStep": "Give five White Iron Chunks to Pruniere",
+  "npcs": [
+   "Pruniere"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
   "type": "World"
  },
  "Purbiruni's Commandment": {
@@ -1047,6 +3311,146 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "Pursuit (Part 1)": {
+  "area": "Beryl Region",
+  "dlg": 8207,
+  "firstSpeaker": "Book of Revealing",
+  "firstStep": "Enter the world of Meditation through the Book of Revealing",
+  "npcs": [
+   "Caterpillar",
+   "Puppy"
+  ],
+  "region": "Fontaine",
+  "requirement": "Through the Looking Glass",
+  "start": "Canotila and the Book of Revealing, Fontaine",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "Pursuit (Part 2)": {
+  "area": "Beryl Region",
+  "dlg": 12135,
+  "firstSpeaker": "Book of Revealing",
+  "firstStep": "Enter the world of Meditation through the Book of Revealing",
+  "npcs": [
+   "Canotila",
+   "Puppy"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Canotila and the Book of Revealing, Fontaine",
+  "steps": 15,
+  "subarea": null,
+  "type": "World"
+ },
+ "Qiaoying, the Village of Many Tales": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 19962,
+  "firstSpeaker": "Guijarro",
+  "firstStep": "Follow the fleeing cat",
+  "npcs": [
+   "Guijarro",
+   "Hung Fan"
+  ],
+  "region": "Liyue",
+  "requirement": "Qiaoying of the Sacred Mountain",
+  "start": "Qiaoying Village, Liyue",
+  "steps": 8,
+  "subarea": "Qiaoying Village",
+  "type": "World"
+ },
+ "Questions and Answers": {
+  "area": "Court of Fontaine Region",
+  "dlg": 58224,
+  "firstSpeaker": "Euphrasie",
+  "firstStep": "Wait until the following morning (08:00)",
+  "npcs": [
+   "\"Curve\"",
+   "\"Intrepid Valberry\"",
+   "Baulande",
+   "Baulande! Lombroso!",
+   "Boss (The Red and the Black)",
+   "Euphrasie",
+   "Jenck",
+   "Kevin",
+   "Madeleine (Questioning Melusine and Answering Machine)",
+   "Melo Lombroso",
+   "Rocher",
+   "Sir Arthur",
+   "Talochard"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+  "steps": 45,
+  "subarea": "Court of Fontaine: Quartier Narbonnais",
+  "type": "World"
+ },
+ "Relics of Seirai": {
+  "area": "Seirai Island",
+  "dlg": 9747,
+  "firstSpeaker": "Fujiwara Toshiko",
+  "firstStep": "Rescue the person surrounded by monsters Hilichurl*3",
+  "npcs": [
+   "Fujiwara Toshiko"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Koseki Village, Inazuma",
+  "steps": 38,
+  "subarea": "Koseki Village",
+  "type": "World"
+ },
+ "Reminiscence of Seirai": {
+  "area": "Seirai Island",
+  "dlg": 7374,
+  "firstSpeaker": "Furuya Noboru",
+  "firstStep": "Ask the adventurers some questions",
+  "npcs": [
+   "Furuya Noboru",
+   "Oda Tarou"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Seirai Island, Inazuma",
+  "steps": 4,
+  "subarea": null,
+  "type": "World"
+ },
+ "Return of the Jade Chamber?": {
+  "area": "Sea of Clouds",
+  "dlg": 19104,
+  "firstSpeaker": "Kun",
+  "firstStep": "Start the quest by talking to Kun",
+  "npcs": [
+   "Kun",
+   "Jifang",
+   "Qingzhou",
+   "Master Lu",
+   "Baiwen"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 10,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Riku's Eggy Endeavor": {
+  "area": "Narukami Island",
+  "dlg": 1711,
+  "firstSpeaker": "Riku",
+  "firstStep": "Give eight Bird Eggs to Riku",
+  "npcs": [
+   "Riku"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Grand Narukami Shrine, Inazuma",
+  "steps": 1,
+  "subarea": "Grand Narukami Shrine (Subarea)",
+  "type": "World"
+ },
  "Risen Moon Chapter": {
   "area": "Lokapala Jungle",
   "dlg": 19195,
@@ -1059,6 +3463,58 @@
   "requirement": "The World of Aranara",
   "start": "Lokapala Jungle, Sumeru",
   "steps": 17,
+  "subarea": null,
+  "type": "World"
+ },
+ "Road to the Singularity": {
+  "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 16792,
+  "firstSpeaker": "???",
+  "firstStep": "Explore the mysterious building",
+  "npcs": [
+   "Bricole",
+   "Coutrot",
+   "Kuisel"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Kuisel's Clockwork Workshop, Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+  "steps": 27,
+  "subarea": null,
+  "type": "World"
+ },
+ "Rowboat's Wake (Quest)": {
+  "area": "Morte Region",
+  "dlg": 31249,
+  "firstSpeaker": "Ann",
+  "firstStep": "Talk to Ann and re-seal the entrance to the Primordial Sea",
+  "npcs": [
+   "Ann",
+   "Caterpillar",
+   "Mamere",
+   "Mary-Ann",
+   "Narzissenkreuz",
+   "Seymour"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Genesis of a Certain Micro-Universe, Fontaine",
+  "steps": 9,
+  "subarea": "Genesis of a Certain Micro-Universe",
+  "type": "World"
+ },
+ "Ruin Drake Maelstrom (Fontaine)": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Ruin Drakes",
+  "npcs": [
+   "Ophelia"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Beryl Region, Fontaine",
+  "steps": 1,
   "subarea": null,
   "type": "World"
  },
@@ -1078,6 +3534,233 @@
   "subarea": null,
   "type": "World"
  },
+ "Sacrificial Offering": {
+  "area": "Narukami Island",
+  "dlg": 35292,
+  "firstSpeaker": "Mysterious Shadow",
+  "firstStep": "Go to the abandoned shrine northeast of Konda Village",
+  "npcs": [
+   "Hanachirusato",
+   "Inagi Hotomi",
+   "Kamuna Harunosuke",
+   "Mysterious Shadow"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Mt. Yougou, Narukami Island, Inazuma",
+  "steps": 32,
+  "subarea": "Mt. Yougou",
+  "type": "World"
+ },
+ "Sakura Arborism": {
+  "area": "Kannazuka",
+  "dlg": 15747,
+  "firstSpeaker": "Miyuki",
+  "firstStep": "Investigate the Treasure Hoarder camp",
+  "npcs": [
+   "Hideaki",
+   "Miyuki"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Tatara Tales (Quest)",
+  "start": null,
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Sanden's Resource Request": {
+  "area": "Narukami Island",
+  "dlg": 2039,
+  "firstSpeaker": "Sanden",
+  "firstStep": "Give Sanden five Electro Crystals",
+  "npcs": [
+   "Sanden"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 1,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Savior's Wake": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Says He Who Seeks Stone": {
+  "area": "The Chasm (Area)",
+  "dlg": 8387,
+  "firstSpeaker": "Muning",
+  "firstStep": "Talk to Muning",
+  "npcs": [
+   "Muning"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''Surreptitious Seven-Star Seal Sundering''",
+  "start": "The Chasm, Liyue",
+  "steps": 2,
+  "subarea": null,
+  "type": "World"
+ },
+ "Scrolls and Sword Manuals of Guhua": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 6725,
+  "firstSpeaker": "\"Key to Martial Principles\"",
+  "firstStep": "Enter the Arcane Archive",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Mt. Lingmeng, Liyue",
+  "steps": 4,
+  "subarea": "Mt. Lingmeng",
+  "type": "World"
+ },
+ "Search in the Algae Sea": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Seirai Stormchasers: Part I": {
+  "area": "Narukami Island",
+  "dlg": 26888,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Go to the Adventurers' Guild",
+  "npcs": [
+   "Etsuko",
+   "Katheryne (Inazuma)",
+   "Neko",
+   "Taisuke"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 19,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Seirai Stormchasers: Part II": {
+  "area": "Seirai Island",
+  "dlg": 3634,
+  "firstSpeaker": "Etsuko",
+  "firstStep": "Go to the Warding Stone",
+  "npcs": [
+   "Etsuko",
+   "Taisuke"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Seirai Island, Inazuma",
+  "steps": 6,
+  "subarea": null,
+  "type": "World"
+ },
+ "Seirai Stormchasers: Part III": {
+  "area": "Seirai Island",
+  "dlg": 3398,
+  "firstSpeaker": "Taisuke",
+  "firstStep": "Go to the Warding Stone's location",
+  "npcs": [
+   "Etsuko",
+   "Taisuke"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Seirai Island, Inazuma",
+  "steps": 7,
+  "subarea": null,
+  "type": "World"
+ },
+ "Seirai Stormchasers: Part IV": {
+  "area": "Seirai Island",
+  "dlg": 5588,
+  "firstSpeaker": "Etsuko",
+  "firstStep": "Go to the Warding Stone's location",
+  "npcs": [
+   "Etsuko",
+   "Taisuke"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Seirai Island, Inazuma",
+  "steps": 12,
+  "subarea": null,
+  "type": "World"
+ },
+ "Share Not Your Treasures": {
+  "area": "Qiongji Estuary",
+  "dlg": 3620,
+  "firstSpeaker": "Worn Letter",
+  "firstStep": "Defeat the Ruin Guard that is at the entrance of the ruins in Guili Plains.",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Guili Plains, Liyue",
+  "steps": 7,
+  "subarea": "Guili Plains",
+  "type": "World"
+ },
+ "Shrouded Vale, Hidden Hero": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 7345,
+  "firstSpeaker": "Decayed Inscription",
+  "firstStep": "Keep moving",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Mt. Lingmeng, Liyue",
+  "steps": 10,
+  "subarea": "Mt. Lingmeng",
+  "type": "World"
+ },
+ "Smiley's Selections": {
+  "area": "Bishui Plain",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Give two Hams/Sausages/servings of Bacon to Smiley Yanxiao",
+  "npcs": [
+   "Smiley Yanxiao"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Wangshu Inn, Liyue",
+  "steps": 1,
+  "subarea": "Wangshu Inn",
+  "type": "World"
+ },
+ "Snapshots": {
+  "area": "Sea of Clouds",
+  "dlg": 6216,
+  "firstSpeaker": "Xu",
+  "firstStep": "Deliver the picture to the customer (0/2)",
+  "npcs": [
+   "Granny Shan",
+   "Tea Master Liu Su",
+   "Xu"
+  ],
+  "region": "Liyue",
+  "requirement": "Reach Adventure Rank 25",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 4,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
  "Soheil's Wish": {
   "area": "Land of Lower Setekh",
   "dlg": 16311,
@@ -1092,6 +3775,22 @@
   "start": "Aaru Village, Sumeru",
   "steps": 3,
   "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Solitary Sea-Beast": {
+  "area": "Watatsumi Island",
+  "dlg": 25294,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to Kumi",
+  "npcs": [
+   "Anisa",
+   "Kumi"
+  ],
+  "region": "Inazuma",
+  "requirement": "* {{Quest|A New Star Approaches|requirements=1|display=fullSentence}}",
+  "start": "Watatsumi Island, Inazuma",
+  "steps": 14,
+  "subarea": null,
   "type": "World"
  },
  "Static Views": {
@@ -1123,6 +3822,83 @@
   "subarea": null,
   "type": "World"
  },
+ "Stillness, the Sublimation of Shadow": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Stolen, by the Rightful Owner": {
+  "area": null,
+  "dlg": 8466,
+  "firstSpeaker": "Taliesin",
+  "firstStep": "Look for the ring that was stolen from Taliesin",
+  "npcs": [
+   "Clitopho",
+   "Taliesin"
+  ],
+  "region": "Liyue",
+  "requirement": "Destroy the three Bedrock Keys in ''Surreptitious Seven-Star Seal Sundering''",
+  "start": "The Chasm, Liyue",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "Storytelling Method": {
+  "area": "Narukami Island",
+  "dlg": 10788,
+  "firstSpeaker": "Junkichi",
+  "firstStep": "Talk to Junkichi",
+  "npcs": [
+   "Junkichi",
+   "Shigeru"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete This Novel... Seems Familiar? and This Novel Seems... Problematic?",
+  "start": "Inazuma City, Inazuma",
+  "steps": 8,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Strange Stone Chronicle (Part 1)": {
+  "area": "Beryl Region",
+  "dlg": 8584,
+  "firstSpeaker": "Puca",
+  "firstStep": "Look for Puca's Token",
+  "npcs": [
+   "Chesil",
+   "Puca"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Ancient Colors",
+  "start": "{{LL|\"A Very Bright Place\"|,}} Fontaine",
+  "steps": 3,
+  "subarea": "\"A Very Bright Place\"",
+  "type": "World"
+ },
+ "Strange Stone Chronicle (Part 2)": {
+  "area": "Beryl Region",
+  "dlg": 3606,
+  "firstSpeaker": "Chesil",
+  "firstStep": "Talk to Puca",
+  "npcs": [
+   "Chesil",
+   "Puca"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Merusea Village, Fontaine",
+  "steps": 3,
+  "subarea": "Merusea Village;\"A Very Bright Place\"",
+  "type": "World"
+ },
  "Supreme Hookshot?": {
   "area": "Ardravi Valley",
   "dlg": 7582,
@@ -1137,6 +3913,285 @@
   "steps": 8,
   "subarea": "Port Ormos",
   "type": "Commission"
+ },
+ "Surreptitious Seven-Star Seal Sundering": {
+  "area": "The Chasm (Area)",
+  "dlg": 34566,
+  "firstSpeaker": "Muning",
+  "firstStep": "Talk to Muning and find out the situation in The Chasm",
+  "npcs": [
+   "Muning",
+   "Zhiqiong"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm, Liyue",
+  "steps": 18,
+  "subarea": null,
+  "type": "World"
+ },
+ "Sylvie's Beryl Conch Commission": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1595,
+  "firstSpeaker": "Sylvie",
+  "firstStep": "Give five Beryl Conch to Sylvie",
+  "npcs": [
+   "Sylvie"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Court of Fontaine, Fontaine",
+  "steps": 1,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Tatara Tales": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Tatara Tales: Data Collection": {
+  "area": "Kannazuka",
+  "dlg": 3163,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 3,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: Final Preparations": {
+  "area": "Kannazuka",
+  "dlg": 4353,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 4,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: Functional Test": {
+  "area": "Kannazuka",
+  "dlg": 4007,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 3,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: Priority Investigation": {
+  "area": "Kannazuka",
+  "dlg": 7711,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 3,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: Process Is Everything": {
+  "area": "Kannazuka",
+  "dlg": 4651,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 4,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: Purification Device": {
+  "area": "Kannazuka",
+  "dlg": 4459,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 3,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Tatara Tales: The Last Act": {
+  "area": "Kannazuka",
+  "dlg": 17127,
+  "firstSpeaker": "Xavier",
+  "firstStep": "Talk to Xavier",
+  "npcs": [
+   "Toranosuke",
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tatarasuna, Inazuma",
+  "steps": 22,
+  "subarea": "Tatarasuna",
+  "type": "World"
+ },
+ "Temporary Acclimatization": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 14981,
+  "firstSpeaker": "Woliu",
+  "firstStep": "Help Woliu set up the device (0/2)",
+  "npcs": [
+   "Ms. Qiu",
+   "Woliu",
+   "Xingye",
+   "Yifeng"
+  ],
+  "region": "Liyue",
+  "requirement": "* Qiaoying of the Sacred Mountain",
+  "start": "Chenyu Vale: Upper Vale, Liyue",
+  "steps": 8,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Adventurers' Guild's Affairs": {
+  "area": "Sea of Clouds",
+  "dlg": 7415,
+  "firstSpeaker": "Lan",
+  "firstStep": "Talk to Lan",
+  "npcs": [
+   "Lan",
+   "Ash"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 3,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "The Art of Horticulture": {
+  "area": "Narukami Island",
+  "dlg": 5143,
+  "firstSpeaker": "Madarame Hyakubei",
+  "firstStep": "Talk to Madarame Hyakubei",
+  "npcs": [
+   "Madame Ping",
+   "Madarame Hyakubei"
+  ],
+  "region": "Inazuma",
+  "requirement": "Reach Reputation Level 3 in Inazuma and Claim Naku Weed Seed reward from Madarame Hyakubei",
+  "start": "Kamisato Estate, Inazuma",
+  "steps": 2,
+  "subarea": "Kamisato Estate",
+  "type": "World"
+ },
+ "The Chasm Charters": {
+  "area": "The Chasm (Area)",
+  "dlg": 10937,
+  "firstSpeaker": "Lan",
+  "firstStep": "Search for Muning, the Ministry of Civil Affairs' specialist",
+  "npcs": [
+   "Lan",
+   "Xu"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete Chapter I: Act III - A New Star Approaches and at least one of the following:",
+  "start": "The Chasm, Liyue",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Chi of Yore": {
+  "area": "Bishui Plain",
+  "dlg": 20657,
+  "firstSpeaker": "Incomplete writing",
+  "firstStep": "Investigate the ruin ''(if the player talked to Yan'er)''",
+  "npcs": [
+   "Granny Ruoxin",
+   "Little Liu",
+   "Little Xing",
+   "Little You",
+   "Little Zuo",
+   "Master Lu",
+   "Pops Kai",
+   "Yan'er",
+   "Zhi"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Bishui Plain, Liyue",
+  "steps": 34,
+  "subarea": "Qingce Village",
+  "type": "World"
+ },
+ "The Dealing Sands": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 13210,
+  "firstSpeaker": "Iron Ming",
+  "firstStep": "Talk to Iron Dou'erTreasure Hoarders: Scout*2",
+  "npcs": [
+   "Hongyu (Chenyu Vale)",
+   "Iron Chuan'er",
+   "Iron Chui'er",
+   "Iron Dou'er",
+   "Iron Gua'er",
+   "Iron Men'er",
+   "Iron Ming",
+   "Iron Shan'er",
+   "Johnnie",
+   "Lingxiao",
+   "Qingye",
+   "Walker",
+   "Yijun"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Mt. Mingyuan, Liyue",
+  "steps": 8,
+  "subarea": "Mt. Mingyuan",
+  "type": "World"
+ },
+ "The Entrance to Tokoyo": {
+  "area": "Enkanomiya",
+  "dlg": 2943,
+  "firstSpeaker": null,
+  "firstStep": "Go deeper into the cave",
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Enkanomiya",
+  "steps": 10,
+  "subarea": null,
+  "type": "World"
  },
  "The Eternal Dream, Ever Lush": {
   "area": "Desert of Hadramaveth",
@@ -1153,6 +4208,23 @@
   "start": "The Orchard of Pairidaeza, Desert of Hadramaveth, Sumeru",
   "steps": 12,
   "subarea": "Mt. Damavand",
+  "type": "World"
+ },
+ "The Farmer's Treasure": {
+  "area": "Narukami Island",
+  "dlg": 25583,
+  "firstSpeaker": "Saimon Jirou",
+  "firstStep": "Report back to Saimon Jirou",
+  "npcs": [
+   "Saimon Eri",
+   "Saimon Jirou",
+   "Saimon Katsumi"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Searching for Saimon Jirou",
+  "start": "Jinren Island, Narukami Island, Inazuma",
+  "steps": 36,
+  "subarea": "Jinren Island",
   "type": "World"
  },
  "The Final Chapter": {
@@ -1189,6 +4261,24 @@
   "subarea": "Yasna Monument",
   "type": "World"
  },
+ "The Fountain Flows Again": {
+  "area": "Court of Fontaine Region",
+  "dlg": 11744,
+  "firstSpeaker": "Observe the fountain",
+  "firstStep": "Talk to Edel",
+  "npcs": [
+   "Edel",
+   "Estelle",
+   "Keratry",
+   "Remaudiere"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete ''As Light Rain Falls Without Reason''",
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
  "The Gourmet Supremos: Breakthrough Thinking": {
   "area": "Narukami Island",
   "dlg": 9772,
@@ -1199,7 +4289,7 @@
    "Xiangling",
    "Xudong"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Inazuma City, Inazuma",
   "steps": 7,
@@ -1212,7 +4302,7 @@
   "firstSpeaker": null,
   "firstStep": "Go to the Grand Narukami Shrine",
   "npcs": [],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Grand Narukami Shrine, Narukami Island, Inazuma",
   "steps": 2,
@@ -1230,7 +4320,7 @@
    "Julie",
    "Kamei Munehisa"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Inazuma City, Narukami Island, Inazuma",
   "steps": 6,
@@ -1247,7 +4337,7 @@
    "Parvaneh",
    "Julie"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Yashiori Island, Inazuma",
   "steps": 3,
@@ -1265,7 +4355,7 @@
    "Parvaneh",
    "Xudong"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": "Complete Xiangling's ending of The Gourmet Supremos: Breakthrough Thinking",
   "start": "Inazuma City, Narukami Island, Inazuma",
   "steps": 15,
@@ -1282,7 +4372,7 @@
    "Parvaneh",
    "Julie"
   ],
-  "region": "Sumeru",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Kujou Encampment, Kannazuka, Inazuma",
   "steps": 6,
@@ -1303,6 +4393,23 @@
   "steps": 3,
   "subarea": null,
   "type": "Commission"
+ },
+ "The Heavenly Stone's Debris": {
+  "area": "The Chasm: Underground Mines",
+  "dlg": 34177,
+  "firstSpeaker": "Jinwu",
+  "firstStep": "Tell Jinwu about what happened",
+  "npcs": [
+   "Clitopho",
+   "Jinwu",
+   "Zhiqiong"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm: Underground Mines",
+  "steps": 37,
+  "subarea": null,
+  "type": "World"
  },
  "The Hymn of Tir Yazad (Part 1)": {
   "area": "Gavireh Lajavard",
@@ -1341,6 +4448,120 @@
   "subarea": "Tunigi Hollow",
   "type": "World"
  },
+ "The Illusion's Finishings": {
+  "area": "Beryl Region",
+  "dlg": 60955,
+  "firstSpeaker": "???",
+  "firstStep": "Chase away the Eremites Eremite Axe Vanguard;Eremite Crossbow;Eremite Ravenbeak Halberdier",
+  "npcs": [
+   "Irus",
+   "Jakob",
+   "Kaykaus",
+   "Kaykubad",
+   "Mamere",
+   "Seymour"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Elynas, Fontaine",
+  "steps": 17,
+  "subarea": "Elynas",
+  "type": "World"
+ },
+ "The Immovable God and the Eternal Euthymia": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "The Last Day of Remuria": {
+  "area": "Nostoi Region; Sea of Bygone Eras",
+  "dlg": 38923,
+  "firstSpeaker": "Monsieur Os",
+  "firstStep": "Head to the Sea of Bygone Eras",
+  "npcs": [
+   "Boethius",
+   "Este (Golem)",
+   "Osse",
+   "Remus",
+   "Scylla"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Faded Castle, Fontaine",
+  "steps": 11,
+  "subarea": "Caesareum Palace; Capitolium; Faded Castle; Hortus Euergetis; Initium Iani; Machimos; Portus Anticus",
+  "type": "World"
+ },
+ "The Lone Phantom Sail": {
+  "area": "Beryl Region",
+  "dlg": 25258,
+  "firstSpeaker": "Ahes",
+  "firstStep": "Go to the place Ahes mentioned",
+  "npcs": [
+   "Ahes"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete \"Hey, This Isn't Pumpkin Soup...\"",
+  "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
+  "steps": 15,
+  "subarea": "\"A Lonely Place\"",
+  "type": "World"
+ },
+ "The Millennial Mountains": {
+  "area": "The Chasm (Area)",
+  "dlg": 18369,
+  "firstSpeaker": "Wang",
+  "firstStep": "Look for offerings to place before the memorial (0/6)",
+  "npcs": [
+   "Wang",
+   "\"The Qingce Kid\""
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm's Maw, The Chasm, Liyue",
+  "steps": 12,
+  "subarea": "The Chasm's Maw",
+  "type": "World"
+ },
+ "The Missing Miner": {
+  "area": "The Chasm: Underground Mines",
+  "dlg": 14972,
+  "firstSpeaker": "Work Handbook",
+  "firstStep": "Collect \"mushroom meat\" together with Uncle He",
+  "npcs": [
+   "Jinwu",
+   "Khedive",
+   "Tang Wuchou",
+   "Uncle He"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm: Underground Mines",
+  "steps": 3,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Moon-Bathed Deep": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "The Morn a Thousand Roses Brings": {
   "area": null,
   "dlg": 0,
@@ -1353,6 +4574,66 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "The Narukami Trail": {
+  "area": "Seirai Island",
+  "dlg": 10954,
+  "firstSpeaker": "Neko",
+  "firstStep": "Talk to Neko",
+  "npcs": [
+   "Inagi Hotomi",
+   "Neko"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Neko Is a Cat World Quest Series, and 4 total completions of any of the following:",
+  "start": "Asase Shrine, Inazuma",
+  "steps": 6,
+  "subarea": "Asase Shrine",
+  "type": "World"
+ },
+ "The Narzissenkreuz Adventure": {
+  "area": "Court of Fontaine Region",
+  "dlg": 47334,
+  "firstSpeaker": "???",
+  "firstStep": "Head to the designated location",
+  "npcs": [
+   "Al",
+   "Ann",
+   "Colonel Kate",
+   "Jak",
+   "Mori",
+   "Petit Chou"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 12,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Ocean Pearl": {
+  "area": "Sea of Clouds",
+  "dlg": 19623,
+  "firstSpeaker": "Suspicious Guest",
+  "firstStep": "Demand an invitation from those aboard the ship",
+  "npcs": [
+   "Chaoxi",
+   "Cui'er",
+   "Guan Hong",
+   "Li the Ninth",
+   "Luo Feng",
+   "Luoxia",
+   "Maksim",
+   "Pinghai",
+   "Qiu'ge",
+   "Sisi"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Sea of Clouds, Liyue",
+  "steps": 17,
+  "subarea": null,
+  "type": "World"
  },
  "The Path of Papers": {
   "area": "Avidya Forest",
@@ -1372,6 +4653,21 @@
   "subarea": "Sumeru City",
   "type": "World"
  },
+ "The Phaethons' Syrtos": {
+  "area": "Enkanomiya",
+  "dlg": 16637,
+  "firstSpeaker": "???",
+  "firstStep": "Offer a Sango Pearl to the seven royal tombs (0/7)",
+  "npcs": [
+   "Clymene"
+  ],
+  "region": "Inazuma",
+  "requirement": "The Subterranean Trials of Drake and Serpent",
+  "start": "Evernight Temple, Enkanomiya, Inazuma",
+  "steps": 7,
+  "subarea": "Evernight Temple",
+  "type": "World"
+ },
  "The Price": {
   "area": "Ardravi Valley",
   "dlg": 15960,
@@ -1388,6 +4684,91 @@
   "start": "Port Ormos, Sumeru",
   "steps": 9,
   "subarea": "Port Ormos",
+  "type": "World"
+ },
+ "The Red and the Black": {
+  "area": "Court of Fontaine Region",
+  "dlg": 54273,
+  "firstSpeaker": "Talochard",
+  "firstStep": "Wait until the following morning (08:00)",
+  "npcs": [
+   "Baulande",
+   "Boss (The Red and the Black)",
+   "\"Curve\"",
+   "\"Intrepid Valberry\"",
+   "Melo Lombroso",
+   "Talochard"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Palais Mermonia, Fontaine",
+  "steps": 24,
+  "subarea": "Court of Fontaine: Palais Mermonia",
+  "type": "World"
+ },
+ "The Ritou Road": {
+  "area": "Narukami Island",
+  "dlg": 4520,
+  "firstSpeaker": "Harrison",
+  "firstStep": "Investigate the strange camp",
+  "npcs": [
+   "Harrison"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Ritou Escape Plan",
+  "start": "Ritou, Inazuma",
+  "steps": 8,
+  "subarea": "Ritou",
+  "type": "World"
+ },
+ "The Roaming Abode": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 10820,
+  "firstSpeaker": "???",
+  "firstStep": "Look for clues in the direction indicated by Xiangjun",
+  "npcs": [
+   "Uncle Luo",
+   "Xiangjun"
+  ],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Mt. Lingmeng, Liyue",
+  "steps": 17,
+  "subarea": "Teatree Slope",
+  "type": "World"
+ },
+ "The Saga of Mr. Forgetful": {
+  "area": "Tsurumi Island",
+  "dlg": 14489,
+  "firstSpeaker": "Roald",
+  "firstStep": "Give Roald the Fluorescent Fungus",
+  "npcs": [
+   "Roald"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete ''Octave of the Maushiro''",
+  "start": "Tsurumi Island, Inazuma",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Sea of Fog and the Rite of the Trees": {
+  "area": "Narukami Island",
+  "dlg": 26521,
+  "firstSpeaker": "Kama",
+  "firstStep": "Talk to Kama",
+  "npcs": [
+   "Ipe",
+   "Kama",
+   "Makiri",
+   "Ruu",
+   "Sumida"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 12,
+  "subarea": "Inazuma City",
   "type": "World"
  },
  "The Secret of Al-Ahmar": {
@@ -1409,6 +4790,43 @@
   "subarea": "Khemenu Temple",
   "type": "World"
  },
+ "The Secret of Nantianmen": {
+  "area": "Sea of Clouds",
+  "dlg": 4083,
+  "firstSpeaker": "Jiayi",
+  "firstStep": "Talk to Jiayi",
+  "npcs": [
+   "Jiayi"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 4,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "The Shadow Over Petrichor": {
+  "area": "Nostoi Region",
+  "dlg": 30404,
+  "firstSpeaker": "Leader",
+  "firstStep": "Defeat the \"bandits\" Treasure Hoarders: Raptor/as Leader; Treasure Hoarders: Cryo Potioneer/as The Dude They Call \"Idiot\"; Treasure Hoarders: Scout",
+  "npcs": [
+   "\"Bellringer\"",
+   "Cassiodor",
+   "Este (Human)",
+   "Leader (Human)",
+   "Osse",
+   "Remus",
+   "Scylla",
+   "The Dude They Call \"Idiot\""
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|Song of the Dragon and Freedom|requirements = 1|display = fullSentence}}",
+  "start": "Petrichor, Fontaine",
+  "steps": 11,
+  "subarea": "Petrichor",
+  "type": "World"
+ },
  "The Splendorous Sky That Day": {
   "area": "Gavireh Lajavard",
   "dlg": 60277,
@@ -1428,6 +4846,76 @@
   "subarea": null,
   "type": "World"
  },
+ "The Still Water's Flow": {
+  "area": "Watatsumi Island",
+  "dlg": 11469,
+  "firstSpeaker": "Tsuyuko",
+  "firstStep": "Talk to Tsuyuko",
+  "npcs": [
+   "Tsuyuko"
+  ],
+  "region": "Inazuma",
+  "requirement": "\"Heart of Watatsumi\"",
+  "start": "Sangonomiya Shrine",
+  "steps": 15,
+  "subarea": "Sangonomiya Shrine",
+  "type": "World"
+ },
+ "The Story of \"the Princess\" and \"the Adventure Team\"": {
+  "area": "Court of Fontaine Region",
+  "dlg": 19655,
+  "firstSpeaker": "Ann",
+  "firstStep": "Enter the bubble",
+  "npcs": [
+   "Al",
+   "Ann",
+   "Colonel Kate",
+   "Jak",
+   "Mori",
+   "Petit Chou"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Annapausis, Fontaine",
+  "steps": 12,
+  "subarea": "Annapausis",
+  "type": "World"
+ },
+ "The Subterranean Trials of Drake and Serpent": {
+  "area": "Enkanomiya",
+  "dlg": 36640,
+  "firstSpeaker": "???",
+  "firstStep": "Go to the ruins up ahead",
+  "npcs": [
+   "Aru",
+   "Enjou",
+   "Tsuyuko"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Enkanomiya",
+  "steps": 29,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Sun-Wheel and Mt. Kanna": {
+  "area": "Tsurumi Island",
+  "dlg": 50506,
+  "firstSpeaker": "Kama",
+  "firstStep": "Travel to Tsurumi Island",
+  "npcs": [
+   "Kama",
+   "Kapatcir",
+   "Ruu",
+   "Sumida"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Tsurumi Island, Inazuma",
+  "steps": 46,
+  "subarea": null,
+  "type": "World"
+ },
  "The Temple Where Sand Flows Like Tears": {
   "area": "Desert of Hadramaveth",
   "dlg": 63302,
@@ -1444,6 +4932,54 @@
   "start": "The Temples Forsaken, Sumeru",
   "steps": 47,
   "subarea": "Safhe Shatranj",
+  "type": "World"
+ },
+ "The Three Great Martial Trials": {
+  "area": "Enkanomiya",
+  "dlg": 9209,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to Eboshi",
+  "npcs": [
+   "Eboshi"
+  ],
+  "region": "Inazuma",
+  "requirement": "From Dusk to Dawn in Byakuyakoku",
+  "start": "Enkanomiya",
+  "steps": 6,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Three Primary Colors of the Solar Corona": {
+  "area": "Beryl Region",
+  "dlg": 12078,
+  "firstSpeaker": "Sluasi",
+  "firstStep": "Talk to Sluasi",
+  "npcs": [
+   "Sluasi"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Ancient Colors",
+  "start": null,
+  "steps": 3,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "The Tree who Stands Alone": {
+  "area": "Qiongji Estuary",
+  "dlg": 7088,
+  "firstSpeaker": "Yuan Hong",
+  "firstStep": "Look around Mingyun Village",
+  "npcs": [
+   "Yuan Hong",
+   "Yuan Cheng",
+   "Yuan Qing",
+   "Yuan Liang"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Mingyun Village, Liyue",
+  "steps": 4,
+  "subarea": "Mingyun Village",
   "type": "World"
  },
  "The World of Aranara": {
@@ -1477,6 +5013,59 @@
   "subarea": "Vimara Village",
   "type": "World"
  },
+ "The Yaksha's Wish": {
+  "area": "Minlin",
+  "dlg": 1554,
+  "firstSpeaker": null,
+  "firstStep": "Look for clues to opening the stone tablet (0/3)",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Minlin, Liyue",
+  "steps": 12,
+  "subarea": null,
+  "type": "World"
+ },
+ "There Will Come Soft Rains": {
+  "area": "Beryl Region",
+  "dlg": 49868,
+  "firstSpeaker": "Serene",
+  "firstStep": "Ask about the parts in Merusea Village",
+  "npcs": [
+   "Cosanzeana",
+   "Glaisti",
+   "Irus",
+   "Kaykaus",
+   "Kaykubad",
+   "Mamere",
+   "Puca",
+   "Serene",
+   "Seymour",
+   "Virda"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Merusea Village, Fontaine",
+  "steps": 16,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "Threefold Expectations": {
+  "area": "Chenyu Vale: Upper Vale",
+  "dlg": 16705,
+  "firstSpeaker": "Hautemontagne",
+  "firstStep": "Help Mountain adjust the three Monoliths (0/3)",
+  "npcs": [
+   "Hautemontagne",
+   "Uncle Luo"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete ''Qiaoying of the Sacred Mountain''",
+  "start": "Qiaoying Village, Liyue",
+  "steps": 10,
+  "subarea": "Qiaoying Village",
+  "type": "World"
+ },
  "Through Mists of Smoke and Forests Dark": {
   "area": null,
   "dlg": 0,
@@ -1489,6 +5078,108 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Through the Looking Glass": {
+  "area": "Beryl Region",
+  "dlg": 3763,
+  "firstSpeaker": "Canotila",
+  "firstStep": "Enter the Looking Glass",
+  "npcs": [
+   "Canotila"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|In the Wake of Narcissus; Book of Esoteric Revelations|display=bullet}}",
+  "start": "???, Fontaine",
+  "steps": 3,
+  "subarea": "??? (Fontaine)",
+  "type": "World"
+ },
+ "Tianqiu Treasure Trail": {
+  "area": "Sea of Clouds",
+  "dlg": 5112,
+  "firstSpeaker": "Lan",
+  "firstStep": "Defeat all opponents",
+  "npcs": [
+   "Lan"
+  ],
+  "region": "Liyue",
+  "requirement": "*Reach Adventure Rank 31",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 11,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "To the Stars Shining in the Depths": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Trails in Tianqiu": {
+  "area": "Minlin",
+  "dlg": 5207,
+  "firstSpeaker": "Ancient Tablet",
+  "firstStep": "Unlock the secret of Tianqiu Valley",
+  "npcs": [],
+  "region": "Liyue",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Tianqiu Valley, Liyue",
+  "steps": 21,
+  "subarea": "Tianqiu Valley",
+  "type": "World"
+ },
+ "Treacherous Light of the Depths": {
+  "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 15423,
+  "firstSpeaker": "Strange Clockwork Meka",
+  "firstStep": "Explore inside the ruins",
+  "npcs": [
+   "Chisseray",
+   "Sevigne"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+  "steps": 20,
+  "subarea": null,
+  "type": "World"
+ },
+ "Treasure Lost, Treasure Found (Part 1)": {
+  "area": "Qiongji Estuary",
+  "dlg": 12540,
+  "firstSpeaker": "Soraya",
+  "firstStep": "Head to Guili Assembly to search for an ancient stone tablet (0/5)",
+  "npcs": [
+   "Soraya"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Guili Plains, Liyue",
+  "steps": 6,
+  "subarea": "Guili Plains",
+  "type": "World"
+ },
+ "Treasure Lost, Treasure Found (Part 2)": {
+  "area": "Qiongji Estuary",
+  "dlg": 14783,
+  "firstSpeaker": "Soraya",
+  "firstStep": "Talk to Soraya",
+  "npcs": [
+   "Soraya"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Guili Plains, Liyue",
+  "steps": 11,
+  "subarea": "Guili Plains",
+  "type": "World"
  },
  "Treasure of Wisdom: A New Plan": {
   "area": "Avidya Forest",
@@ -1503,6 +5194,72 @@
   "start": "Sumeru City, Sumeru",
   "steps": 2,
   "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Treatment on the Island": {
+  "area": "Yashiori Island",
+  "dlg": 11023,
+  "firstSpeaker": "Yasumoto",
+  "firstStep": "Talk to Yasumoto",
+  "npcs": [
+   "Yasumoto"
+  ],
+  "region": "Inazuma",
+  "requirement": "* {{Quest|A New Star Approaches|requirements=1|display=fullSentence}}",
+  "start": "Yashiori Island, Inazuma",
+  "steps": 16,
+  "subarea": null,
+  "type": "World"
+ },
+ "Truly Mouthwatering!": {
+  "area": "Belleau Region",
+  "dlg": 17686,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to Henri",
+  "npcs": [
+   "Henri",
+   "Hunter",
+   "Turner"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "West Slopes of Mont Automnequi, Fontaine",
+  "steps": 3,
+  "subarea": "West Slopes of Mont Automnequi",
+  "type": "World"
+ },
+ "Underwater Nocturne": {
+  "area": "Nostoi Region",
+  "dlg": 41767,
+  "firstSpeaker": "Osse",
+  "firstStep": "Continue exploring the Faded Castle",
+  "npcs": [
+   "Boethius",
+   "Osse"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Faded Castle, Fontaine",
+  "steps": 8,
+  "subarea": "Faded Castle",
+  "type": "World"
+ },
+ "Undetected Infiltration": {
+  "area": "The Chasm (Area)",
+  "dlg": 18335,
+  "firstSpeaker": "Treasure Hoarder",
+  "firstStep": "Meet up with Yanbo in front of the smuggler's camp",
+  "npcs": [
+   "Brass Bull Zhao",
+   "Chen the Flower",
+   "Ivano",
+   "Yanbo"
+  ],
+  "region": "Liyue",
+  "requirement": "Finish talking to Zhiqiong for the first time in ''Surreptitious Seven-Star Seal Sundering''",
+  "start": "Tiangong Gorge, The Chasm",
+  "steps": 34,
+  "subarea": "Tiangong Gorge",
   "type": "World"
  },
  "Until Vana is Healed": {
@@ -1521,6 +5278,63 @@
   "subarea": null,
   "type": "World"
  },
+ "Upon a Flowery Field of Grass": {
+  "area": "Court of Fontaine Region",
+  "dlg": 22612,
+  "firstSpeaker": "???",
+  "firstStep": "Bring Hero, Prince, and Princess home (0/3)",
+  "npcs": [
+   "Earnshaw",
+   "Hero",
+   "Lanoire",
+   "Prince (Dog)",
+   "Princess"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Court of Fontaine Region, Fontaine",
+  "steps": 2,
+  "subarea": null,
+  "type": "World"
+ },
+ "Vagrant Havoc": {
+  "area": "Narukami Island",
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": "Defeat the Vagrants",
+  "npcs": [
+   "Amano"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Narukami Island, Inazuma",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "Vagrants and Scamps": {
+  "area": "Court of Fontaine Region",
+  "dlg": 43461,
+  "firstSpeaker": "Talochard",
+  "firstStep": "Go to The Steambird",
+  "npcs": [
+   "Baulande! Lombroso!",
+   "\"Curve\"",
+   "\"Intrepid Valberry\"",
+   "Euphrasie",
+   "Jenck",
+   "Kevin",
+   "Madeleine (Questioning Melusine and Answering Machine)",
+   "Rocher",
+   "Talochard"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete A Fontainian Message",
+  "start": "Court of Fontaine: Quartier Narbonnais, Fontaine",
+  "steps": 19,
+  "subarea": "Court of Fontaine: Quartier Narbonnais",
+  "type": "World"
+ },
  "Varuna Gatha": {
   "area": null,
   "dlg": 0,
@@ -1533,6 +5347,25 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Villains": {
+  "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
+  "dlg": 66003,
+  "firstSpeaker": "Weak Voice",
+  "firstStep": "Catch up with the little girl, Blanche",
+  "npcs": [
+   "\"Guileless Wolfhook\"",
+   "\"Ruthless Calla Lily\"",
+   "\"Trendy Zaytun Peach\"",
+   "\"Tricky Bulle Fruit\"",
+   "Blanche (Fontaine)"
+  ],
+  "region": "Fontaine",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Fontaine Research Institute of Kinetic Energy Engineering Region, Fontaine",
+  "steps": 25,
+  "subarea": null,
+  "type": "World"
  },
  "Vimana Agama": {
   "area": null,
@@ -1612,6 +5445,34 @@
   "subarea": "Port Ormos",
   "type": "World"
  },
+ "Waking from the Great Dream": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Were It So Easy": {
+  "area": "Beryl Region",
+  "dlg": 7561,
+  "firstSpeaker": "Cosanzeana",
+  "firstStep": "Go to the flower garden",
+  "npcs": [
+   "Cosanzeana"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Cosanzeana's request from ''There Will Come Soft Rains''",
+  "start": "Merusea Village, Beryl Region, Fontaine",
+  "steps": 6,
+  "subarea": "Merusea Village",
+  "type": "World"
+ },
  "Where Are the Fierce Creatures?": {
   "area": "Lokapala Jungle",
   "dlg": 13345,
@@ -1628,6 +5489,62 @@
   "start": "Lokapala Jungle, Sumeru",
   "steps": 9,
   "subarea": null,
+  "type": "World"
+ },
+ "Where His Life Lies": {
+  "area": "Court of Fontaine Region",
+  "dlg": 18116,
+  "firstSpeaker": "Lutong",
+  "firstStep": "Go to the Opera Epiclese",
+  "npcs": [
+   "Garcia",
+   "Kaia",
+   "Lutong",
+   "Menthe"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete {{Quest|Finale}}.",
+  "start": "Court of Fontaine: Court Region Waterway Hub, Fontaine",
+  "steps": 5,
+  "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "Wherefore Did the Spiritstone Descend?": {
+  "area": "The Chasm: Underground Mines",
+  "dlg": 45728,
+  "firstSpeaker": "Zhiqiong",
+  "firstStep": "Talk to Zhiqiong up ahead",
+  "npcs": [
+   "Clitopho",
+   "Jinwu",
+   "Khedive",
+   "Muning",
+   "Taliesin",
+   "Yelan",
+   "Zhiqiong"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "The Chasm: Underground Mines",
+  "steps": 28,
+  "subarea": null,
+  "type": "World"
+ },
+ "Will of Stone": {
+  "area": "Sea of Clouds",
+  "dlg": 10668,
+  "firstSpeaker": "Jiayi",
+  "firstStep": "Talk to Granny Ruoxin in Qingce Village",
+  "npcs": [
+   "Granny Ruoxin",
+   "Jiayi",
+   "Little Liu"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete The Chi of Yore and ''Farewell, Archaic Lord''",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 11,
+  "subarea": "Liyue Harbor",
   "type": "World"
  },
  "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars": {
@@ -1652,6 +5569,88 @@
   "subarea": null,
   "type": "World"
  },
+ "Wish-Fulfilling Treasure Hunt": {
+  "area": "Morte Region",
+  "dlg": 31474,
+  "firstSpeaker": "Precious Chest",
+  "firstStep": "Salvage the lost items",
+  "npcs": [
+   "Nadia (Fontaine)",
+   "Urville"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete ''Rowboat's Wake''",
+  "start": "Tower of Ipsissimus, Fontaine",
+  "steps": 8,
+  "subarea": "Tower of Ipsissimus",
+  "type": "World"
+ },
+ "Within the Depths of Erinnyes": {
+  "area": "Court of Fontaine Region",
+  "dlg": 10627,
+  "firstSpeaker": "Pahsiv",
+  "firstStep": "Go to the square",
+  "npcs": [
+   "Keratry",
+   "Pahsiv",
+   "Remaudiere"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Marcotte Station, Fontaine",
+  "steps": 14,
+  "subarea": "Marcotte Station",
+  "type": "World"
+ },
+ "Words Worth Their Weight in Mora": {
+  "area": "Sea of Clouds",
+  "dlg": 5696,
+  "firstSpeaker": "Jifang",
+  "firstStep": "Talk to Jifang",
+  "npcs": [
+   "Gentry De'an",
+   "Jifang",
+   "Uncle Tian"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Liyue Harbor, Liyue",
+  "steps": 5,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Yae Publishing House's Invitation": {
+  "area": "Narukami Island",
+  "dlg": 10226,
+  "firstSpeaker": "Aratani",
+  "firstStep": "Talk to Chang the Ninth",
+  "npcs": [
+   "Aratani",
+   "Chang the Ninth",
+   "Xingqiu"
+  ],
+  "region": "Inazuma",
+  "requirement": "Complete Bookworm Swordsman and Ritou Escape Plan",
+  "start": "Inazuma City, Inazuma",
+  "steps": 4,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Yata Kouki's Order of Ore": {
+  "area": "Narukami Island",
+  "dlg": 2191,
+  "firstSpeaker": "Yata Kouki",
+  "firstStep": "Give Yata Kouki five White Iron Chunks",
+  "npcs": [
+   "Yata Kouki"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 1,
+  "subarea": "Inazuma City",
+  "type": "World"
+ },
  "Yavanani's Apples": {
   "area": "Avidya Forest",
   "dlg": 1930,
@@ -1665,6 +5664,37 @@
   "start": "Sumeru City, Sumeru",
   "steps": 1,
   "subarea": "Sumeru City",
+  "type": "World"
+ },
+ "Yi Zhu's Snack": {
+  "area": "Sea of Clouds",
+  "dlg": 3084,
+  "firstSpeaker": "Yi Zhu",
+  "firstStep": "Give the Almond Tofu to Yi Zhu",
+  "npcs": [
+   "Yi Xian",
+   "Yi Zhu"
+  ],
+  "region": "Liyue",
+  "requirement": null,
+  "start": "Liyue Harbor, Liyue",
+  "steps": 1,
+  "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Yougou Cleansing": {
+  "area": "Narukami Island",
+  "dlg": 21765,
+  "firstSpeaker": "Hanachirusato",
+  "firstStep": "Report back to Hanachirusato",
+  "npcs": [
+   "Hanachirusato"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Konda Village, Narukami Island, Inazuma",
+  "steps": 6,
+  "subarea": "Konda Village",
   "type": "World"
  }
 }

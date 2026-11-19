@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tactical Sweep — all four stages to 36,000</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="wrap">
+
+<h1>Tactical Sweep <span class="dim">— all four stages to 36,000</span></h1>
+<p class="sub">
+  The Version 7.2 flagship event <i>The Grand Defense: Defy the Unjust Judgment</i>, open until
+  16 Dec 2026, 03:59 (GMT+8). How score works, what each boss needs, and who to field.
+  Merged from the plan and the boss-mechanics pages.
+</p>
+
+<div class="bar key">
+  <b>Score is an elemental puzzle, not a stat check.</b> Every boss has a state where your
+  damage multiplies 4–6×, and the gate is always a mechanic: a shield to break, a gauge to
+  fill, a Morale buff to trigger. Pick characters for that, then for level.
+</div>
+
+<h2 id="rewards">What is worth chasing</h2>
+<p>Primogems sit only at <b>20 overall Morale</b> and a <b>6,000</b> top score per stage.
+The 18,000 and 36,000 tiers pay Mora, Mystic Enhancement Ore and Sanctifying Unction
+(2,500 artifact EXP each). The wiki and Game8 disagree on the 36,000 tier's Mora (30,000 vs
+60,000); the in-game reward screen settles it.</p>
+
+<h2 id="rules">Four rules that decide the score</h2>
+<ol>
+  <li><b>Brutal Eradication is already the ceiling.</b> Standard ×1, Crippling Blow ×6,
+    Brutal Eradication ×18 (enemies Lv 90). Past that, only damage raises the score.</li>
+  <li><b>Morale comes from the deployment phase.</b> Each round lists objectives (number of
+    members, an element, weapon types, a named Support Squad); harder operations pay more.
+    Deploy the minimum that meets a round and hold back anyone a later round names, because
+    deployed characters are spent.</li>
+  <li><b>Field whoever fires the Morale 30 buff,</b> trial or own. On the Natlan stage,
+    swapping in Nightsoul characters took one party from 18,288 to 24,000 with no farming.</li>
+  <li><b>Break the shield first.</b> Above 75% RES the damage multiplier is
+    <code>1 ÷ (4 × RES + 1)</code>: a shielded Regisvine takes 18.5% of your damage.</li>
+</ol>
+
+<h2 id="stages">The four stages</h2>
+<table>
+  <tr><th>Stage</th><th>Boss</th><th>Break with</th><th>Morale 30 needs</th><th>Round 3 wants</th></tr>
+  <tr><td>Foothills of Wind and Snow (Mondstadt)</td><td>Cryo Regisvine</td><td><b>Pyro</b> (12 GU Cryo shield)</td><td>Hexerei: Secret Rite, 2 Hexerei in party: +40% ATK</td><td>Bennett + Mona</td></tr>
+  <tr><td>Traversing Forest and Sand (Sumeru)</td><td>Jadeplume Terrorshroom</td><td>No shield: overload its Fury bar. <b>No Pyro</b></td><td>Quicken / Aggravate / Spread: −100% Dendro RES</td><td>Layla + Tighnari</td></tr>
+  <tr><td>Isles of Lingering Thunder (Inazuma)</td><td>Primordial Bathysmal Vishap</td><td><b>Dendro</b> best (16 GU Hydro shield)</td><td>Crystallize: +60% DEF</td><td>Gorou + Itto</td></tr>
+  <tr><td>Plains of Blazing Fire (Natlan)</td><td>Goldflame Qucusaur Tyrant</td><td><b>Hydro</b> (24 GU Pyro shield)</td><td>Consume Nightsoul points: +60% CRIT DMG</td><td>Ororon + Chasca</td></tr>
+</table>
+
+<h3 id="mondstadt">Mondstadt: a switch, not a damage problem</h3>
+<p>Both Mondstadt Morale buffs need characters who finished <i>Witch's Homework</i> (owned,
+Lv 70+). The trial lineup (Xilonen, Klee, Prune, Fischl, Bennett) holds exactly two Hexerei,
+Klee and Fischl, and Klee + Bennett give double Pyro for the shield. <i>Unverified:</i> that
+trial characters count as having done Witch's Homework; one run tells you.</p>
+
+<h3 id="sumeru">Sumeru: fill the Fury bar</h3>
+<p>Quicken-family reactions add 15% Fury, Electro hits 2%, and <b>a Pyro hit drains 34%</b>.
+A full bar means one attack, then about 15 s of paralysis at 0% global RES. With the Morale
+30 buff on top, Dendro RES goes 80% → −45%, about 6× Dendro damage. The trials have no
+Electro, so bring your own; trial Tighnari cashes in the Dendro shred.</p>
+
+<h3 id="inazuma">Inazuma: Geo for the Morale, any reaction for the shield</h3>
+<p>Breaking the shield paralyses the Vishap and removes its RES boost. Its Cleansing Shower
+drains 10 Energy from the active character. The Morale 10 shockwave resonates off Geo
+Constructs for up to two extra True DMG hits, so Itto, Gorou and Yelan (Crystallize) fit;
+a Geo Traveler's stele may add the construct (untested).</p>
+
+<h3 id="natlan">Natlan: kill every feather</h3>
+<p>The Tyrant spends up to 45 s immune and airborne behind its shield. Destroy
+<b>every</b> Flamewind Feather (2 GU Pyro objects, break them with reactions) and its Dive
+leaves it low and open to melee; miss one and it flies back up. A Charged Attack applies
+<b>−50% all RES for 6 s</b> on a 6 s cooldown, so a charged shot every 6 s holds it
+permanently (about 1.33× damage). Bows (Chasca, Ororon) do this naturally; Varesa, Chasca and
+Ororon are Nightsoul and Natlanese, which also puts Nightsoul Burst at its 9 s minimum.</p>
+
+<h2 id="unlock">Unlocking each stage</h2>
+<table>
+  <tr><th>Stage</th><th>Prerequisite world quest</th><th>Starts at</th></tr>
+  <tr><td>Traversing Forest and Sand</td><td>From Trees to a Forest</td><td>Sumeru City</td></tr>
+  <tr><td>Plains of Blazing Fire</td><td>Embers Never Fade</td><td>Tezcatepetonco Range</td></tr>
+  <tr><td>Foothills of Wind and Snow</td><td>Banners of the Northwind</td><td>Starfell Valley</td></tr>
+  <tr><td>Isles of Lingering Thunder</td><td>Thunder Purges All Spite</td><td>Inazuma City</td></tr>
+</table>
+<p>All four open from step 1 of <i>Trial of the Usurper</i>. Main Force squads come from
+<i>Allies in Action</i> events; a bigger roster meets round objectives without over-deploying.
+Lowering the Holy Soil threat to 30% invites one 4★ of your choice (Amber, Xiangling, Thoma,
+Collei, Lynette, Kachina, Aino or Alyosha).</p>
+
+<div class="note">
+  Sources: Genshin Impact Wiki (event, stage and boss pages), Game8 and community guides for
+  the deployment rounds (the wiki's Operations sections were empty on 10 Nov), and in-game
+  event screens. Not published anywhere: how much Morale each objective pays, and the exact
+  scoring formula.
+</div>
+
+</div>
+<script src="app/nav.js"></script>
+</body>
+</html>

@@ -13,10 +13,13 @@
  */
 
 import { connect, call, findPage, TARGET } from './flux-client.mjs';
-import { pageSections, moduleText, enginePlaceholder } from './flux-layout.mjs';
+import { pageSections, moduleText, enginePlaceholder, withoutEditorNotes } from './flux-layout.mjs';
 import { contentText } from './html-blocks.mjs';
-import { catalogue, route, sourceHtml, usesEngine, isRendered, PARENT_FOR_SECTION } from './flux-catalogue.mjs';
-import { ensurePage, reusePage, pagePaths, writeSectionIndex } from './flux-pages.mjs';
+import { catalogue, route, sourceHtml, usesEngine, isRendered } from './flux-catalogue.mjs';
+
+/** Top-level pages flux-push.mjs generates; the migrator leaves them alone. */
+const GENERATED = new Set(['Builds', 'Teams']);
+import { ensurePage, reusePage, pagePaths, writeSectionIndex, slugOf } from './flux-pages.mjs';
 import { linkTargets, withLinks } from './flux-links.mjs';
 
 const arg = (name) => {
@@ -39,6 +42,17 @@ function withPagePath(module, path) {
   return content === module.content ? module : { ...module, content };
 }
 
+/**
+ * The owner's account identity stays off the public site. Local notes keep it
+ * (the tools read it); what flux receives says "<UID>" instead.
+ */
+const PRIVATE = [[/790160140/g, '<UID>'], [/\bFunisimo\b/g, 'the Traveler']];
+function redact(module) {
+  let content = module.content;
+  for (const [re, to] of PRIVATE) content = content.replace(re, to);
+  return content === module.content ? module : { ...module, content };
+}
+
 /** Below this, blocks are being dropped — the 4% lesson. Refuse to write. */
 const MIN_COVERAGE = 95;
 
@@ -50,7 +64,7 @@ function plan(entry, parent) {
     sections.splice(1, 0, { columns: 1, modules: [enginePlaceholder()] });
   }
   const modules = sections.flatMap((s) => s.modules);
-  const src = contentText(html).length;
+  const src = contentText(withoutEditorNotes(html)).length; // editor notes are dropped on purpose
   const out = modules.map(moduleText).join(' ').length;
   return {
     entry, parent, sections, modules,
@@ -113,12 +127,12 @@ console.log(`writing to ${TARGET}`);
 const root = await findPage('Genshin notes');
 if (!root) { console.error('no "Genshin notes" root — run flux-push first'); process.exit(1); }
 
-/** "Guides/Reputation quests — all regions" -> that page, created empty if missing. */
+/** "Reputation quests" or "A/B" -> that page, created empty if missing; "" is the root. */
 const parents = {};
 async function parentRow(path) {
   if (!parents[path]) {
     let row = root;
-    for (const name of path.split('/')) row = await ensurePage(name, row.id);
+    for (const name of path.split('/').filter(Boolean)) row = await ensurePage(name, row.id);
     parents[path] = row;
   }
   return parents[path];
@@ -127,21 +141,30 @@ async function parentRow(path) {
 // 1. Every page exists before any content is written, so links between pages
 //    of this run resolve. Pages are reused, not recreated: recreating would
 //    drop the pages nested under them.
+// The URL follows the title, so a renamed page does not keep its old address
+// (the old one is redirected by tools/flux-redirects.mjs).
 for (const p of plans) {
-  const parent = await parentRow(p.parent);
-  // A whole-section batch owns that section: clear children that are no
-  // longer in the catalogue (renamed or retired), so they don't linger as
-  // orphans beside their replacements. Never on --only, never system pages.
-  if (!ONLY && !parent.cleared) {
-    parent.cleared = true;
-    const keep = new Set(plans.filter((x) => x.parent === p.parent).map((x) => x.entry.title));
-    const nested = new Set(Object.values(PARENT_FOR_SECTION).flatMap((v) => v.split('/')));
-    const stale = (await call('page.list', {})).filter((x) => x.parent === parent.id
-      && x.source !== 'system-page' && !keep.has(x.page) && !nested.has(x.page));
-    for (const s of stale) await call('page.delete', { id: s.id });
-    if (stale.length) console.log(`  cleared ${stale.length} stale under ${p.parent}: ${stale.map((s) => s.page).join(', ')}`);
-  }
-  p.row = await reusePage(p.entry.title, parent.id);
+  p.row = await reusePage(p.entry.title, (await parentRow(p.parent)).id);
+  const slug = slugOf(p.entry.title);
+  if (p.row.slug !== slug) await call('page.update', { id: p.row.id, slug });
+}
+
+// A full run owns the tree: anything under the root that is neither a page of
+// this run, a parent in flux-tree.mjs, nor flux-push's generated Builds/Teams
+// is a leftover (renamed, merged or retired) and goes. Its URL is redirected by
+// tools/flux-redirects.mjs. Deepest first, so no page is deleted under a parent
+// that is already gone.
+if (!ONLY && !SECTION) {
+  const { pages: now } = await pagePaths();
+  const kids = (id) => now.filter((x) => x.parent === id);
+  const keep = new Set([root.id, ...plans.map((p) => p.row.id), ...Object.values(parents).map((r) => r.id)]);
+  const keepTree = (id) => { keep.add(id); kids(id).forEach((k) => keepTree(k.id)); };
+  now.filter((x) => x.parent === root.id && GENERATED.has(x.page)).forEach((x) => keepTree(x.id));
+  const doomed = [];
+  const walk = (id, depth) => kids(id).forEach((k) => { walk(k.id, depth + 1); if (!keep.has(k.id)) doomed.push(k); });
+  walk(root.id, 0);
+  for (const d of doomed) await call('page.delete', { id: d.id });
+  if (doomed.length) console.log(`  removed ${doomed.length} leftover pages: ${doomed.map((d) => d.page).join(', ')}`);
 }
 
 // 2. Content, with local file links pointed at their flux pages.
@@ -153,7 +176,7 @@ for (const p of plans) {
   const here = path(byId.get(p.row.id));
   for (const s of p.sections) {
     const items = s.modules.map((m) => {
-      const linked = withLinks(withPagePath(m, here), targets, p.entry.href);
+      const linked = withLinks(withPagePath(redact(m), here), targets, p.entry.href);
       linked.missing.forEach((x) => missing.add(x));
       return { module: linked.module };
     });
@@ -167,7 +190,26 @@ if (missing.size) console.log(`  links left local (no flux page): ${[...missing]
 // 3. Section pages that are only containers get a card per child.
 const titles = new Set(all.map((e) => e.title));
 for (const [name, row] of Object.entries(parents)) {
-  if (titles.has(row.page)) continue;   // a real page with its own content
+  if (!name || titles.has(row.page)) continue;   // the root, or a real page with its own content
   const n = await writeSectionIndex(row, all, 'Genshin notes');
   console.log(`  index ${name}: ${n} pages`);
+}
+
+// 4. No dead ends: every page ends with its parent and its siblings.
+{
+  const { pages: now, path: urlOf } = await pagePaths();
+  for (const p of plans) {
+    const me = now.find((x) => x.id === p.row.id);
+    const up = now.find((x) => x.id === me.parent);
+    const sibs = now.filter((x) => x.parent === me.parent && x.id !== me.id && !GENERATED.has(x.page));
+    const items = [
+      ...(up && up.id !== root.id ? [{ label: `↑ ${up.page}`, href: urlOf(up) }] : []),
+      ...sibs.map((x) => ({ label: x.page, href: urlOf(x) })),
+    ];
+    if (!items.length) continue;
+    const { sectionId } = await call('section.create', { pageId: p.row.id, type: 1 });
+    await call('module.add', { items: [{ sectionId, module: { type: 'LIST', style: 'default',
+      content: JSON.stringify({ title: 'In this section', items }) } }] });
+  }
+  console.log(`  section links on ${plans.length} pages`);
 }

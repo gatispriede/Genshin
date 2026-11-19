@@ -477,3 +477,14 @@ Snezhnaya isn't playable while the Chronicle reports 19 Cryoculi.
 
 The user's own standing rule covers all four: *verify the actual current state
 before acting on it.* Every entry here is a case of not doing that.
+
+## December Theater leak had the wrong guests (19 Nov)
+
+The Theater notes quoted a leak for the December season: guests Jean, Yae Miko, Emilie
+and Iansan, opening cast with "Xinque" and "Illigo", and concluded that November was
+Varesa's last Theater month. The official *Version 7.2 Update Details* (HoYoverse, 4 Nov
+2026, two weeks before the notes were last edited) lists the guests as **Chasca, Varesa,
+Kinich and Iansan** and the cast as Xingqiu and Illuga. Varesa stays playable in December.
+Found by the first Google AI Mode search; confirmed on the official notice, since Fandom
+had no December page yet. Lesson: once a version is out, its Update Details notice
+replaces every leak about it. Check the official feed (sources.md) before quoting one.

@@ -245,12 +245,16 @@ That bench survives rotation. Chasing Normal in November buys six Acts once.
 
 ---
 
-## Next season — leaked, unverified
+## Next season — official (corrected 19 Nov)
 
-December (Version 7.2): **Pyro / Hydro / Geo**. Opening cast Arlecchino, Bennett, Furina,
-Xinque, Navia, Illigo; guests Jean, Yae Miko, Emilie, Iansan. Treat as rumour until the
-season opens — but note **Barbara and Varesa both fall out of the required elements**,
-so the Alternate Cast problem gets worse, not better.
+December, from the official *Version 7.2 Update Details* (4 Nov 2026): **Pyro / Hydro /
+Geo**. Opening cast Arlecchino, Bennett, Furina, Xingqiu, Navia, Illuga; Special Guest
+Stars **Chasca, Varesa, Kinich, Iansan**.
+
+> ❌ **The leak this section first quoted was wrong on the guests** (it said Jean, Yae
+> Miko, Emilie, Iansan) and misspelt two names. Barbara does fall out of the required
+> elements, but **Varesa stays usable as a Special Guest Star**, so December is not her
+> last Theater month.
 
 ---
 

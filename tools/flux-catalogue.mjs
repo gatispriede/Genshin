@@ -6,22 +6,10 @@
  * listed as skipped with a reason.
  */
 
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { marked } from 'marked';
-
-/**
- * Catalogue section -> parent page in the CMS tree. A path ("A/B") nests one
- * level deeper: the region reputation pages sit under the all-regions page.
- */
-export const PARENT_FOR_SECTION = {
-  Tools: 'Guides',
-  Reputation: 'Guides/Reputation quests — all regions',
-  Maps: 'Maps',
-  Farming: 'Farming',
-  Research: 'Research',
-  Reference: 'Reference',
-};
+import { parentOf, RETIRED } from './flux-tree.mjs';
 
 /**
  * Not content. The two code files are listed under "Making new pages" for
@@ -30,6 +18,7 @@ export const PARENT_FOR_SECTION = {
  * site.
  */
 const SKIP = {
+  'reference/account.md': 'the owner\'s account identity (UID, in-game name), kept private',
   'styles/map.css': 'code file, not content',
   'app/annotate.js': 'code file, not content',
   'CLAUDE.md': 'instructions for the AI assistant, not site content',
@@ -59,10 +48,11 @@ export function catalogue() {
  */
 export function route(entry) {
   if (SKIP[entry.href]) return { action: 'skip', reason: SKIP[entry.href] };
+  if (RETIRED[entry.href]) return { action: 'skip', reason: `retired: ${RETIRED[entry.href]}` };
   // Build write-ups attach to the generated character pages (flux-push.mjs).
   if (entry.section === 'Builds') return { action: 'builds' };
-  const parent = PARENT_FOR_SECTION[entry.section];
-  if (!parent) return { action: 'skip', reason: `no parent for section "${entry.section}"` };
+  const parent = parentOf(entry.href);
+  if (parent === null) return { action: 'skip', reason: 'not placed in tools/flux-tree.mjs' };
   return { action: 'migrate', parent };
 }
 
@@ -75,7 +65,12 @@ export function sourceHtml(entry) {
     return marked.parse(readFileSync(entry.href, 'utf8'), { gfm: true });
   }
   const rendered = join('tools/.rendered', entry.href);
-  return readFileSync(existsSync(rendered) ? rendered : entry.href, 'utf8');
+  if (!existsSync(rendered)) return readFileSync(entry.href, 'utf8');
+  // A render older than its source would publish yesterday's page.
+  if (statSync(rendered).mtimeMs < statSync(entry.href).mtimeMs) {
+    throw new Error(`${rendered} is older than ${entry.href}; run: node tools/render-pages.mjs ${entry.href}`);
+  }
+  return readFileSync(rendered, 'utf8');
 }
 
 /**

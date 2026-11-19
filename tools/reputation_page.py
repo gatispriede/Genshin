@@ -45,30 +45,32 @@ CSS = """  .qt{width:100%;border-collapse:collapse;margin:10px 0 22px;font-size:
 """
 
 INTRO = """<div class="bar key">
-  <b>How length is measured.</b> You suggested deducting it from how much text a
-  quest has, and that works — the wiki stores the full script. <b>Dialogue</b> is
-  the size of each quest's dialogue section; <b>Steps</b> is its numbered
-  objective list. Sorting on the two together turns "which are quickest" from a
-  guess into a measurement. Treat it as an ordering, not a stopwatch: a short
+  <b>Shortest first, measured.</b> Every quest that pays Reputation EXP is ranked by
+  how much there is to do: <b>Steps</b> is its numbered objective list on the wiki,
+  <b>Dialogue</b> the size of its script. Together they turn "which are quickest" from
+  a guess into a measurement. Treat it as an ordering, not a stopwatch: a short
   script with a long walk still takes time.
 </div>
 
-<div class="bar warn">
-  <b>On pins.</b> You asked for exact per-quest dots. The official map's World
-  Quest layer has <b>576 pins with no names on them</b> — every one returns a
-  null label, so a pin cannot be tied to a quest. Rather than invent
-  coordinates, this page gives the <b>start NPC and subarea</b>, which the wiki
-  does record exactly. Searching the NPC's name in-game puts a marker on them.
-</div>
+<h2>Where reputation EXP comes from</h2>
+<table>
+  <tr><th>Source</th><th>EXP</th><th>Note</th></tr>
+  <tr><td>Archon Quest acts in the region</td><td>200 each</td><td>Banked automatically once done</td></tr>
+  <tr><td>World quests</td><td>100 each</td><td>The bulk of it, and uncapped: every quest on the region pages</td></tr>
+  <tr><td>Exploration milestones</td><td>100 each</td><td>At 20%, 40% and 60% exploration</td></tr>
+  <tr><td>Weekly requests and bounties</td><td>80 each</td><td>Capped at 3 per week, shared across every nation</td></tr>
+  <tr><td>Supply Notices</td><td>varies</td><td>Unlock at Reputation Level 1</td></tr>
+</table>
 
 <div class="note">
-  <b>Mondstadt and Snezhnaya are not here</b> — Mondstadt by your request, and
-  <b>Snezhnaya has no Reputation system at all</b>. <b>Natlan is absent because
-  it has no such category</b>: it uses per-tribe reputation, a different system
-  with its own tracks.
+  <b>Use the game as your checklist.</b> The region's reputation NPC (Liyue: Ms. Yu,
+  Reputation → Quests) lists every qualifying quest with an Achieved / Not achieved
+  mark. Neither the wiki nor HoYoLAB knows which ones you have done; the game does.
+  <b>Mondstadt is not covered yet. Natlan</b> uses per-tribe reputation, a different
+  system, and <b>Snezhnaya</b> has none.
 </div>"""
 
-REGEN = """<div class="note">
+REGEN = """<div class="note editor">
   <b>Regenerate</b> with <code>python -I tools/fetch-reputation-quests.py</code>
   then <code>python -I tools/build-reputation-pages.py</code>. The source is the
   wiki's auto-generated <i>&lt;Region&gt; Quests with Reputation Reward</i>
@@ -76,8 +78,7 @@ REGEN = """<div class="note">
   out of sync the way a hand-written list page does.
 </div>"""
 
-LINKS = ('<a href="reputation-compass.html">what each compass costs</a> &middot; '
-         '<a href="quest-map.html">see them all on the map</a>')
+LINKS = '<a href="reputation-compass.html">what each Treasure Compass costs</a>'
 
 
 def shell(title, sub, body):

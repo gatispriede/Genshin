@@ -76,8 +76,12 @@ def effort(q):
     return (q.get("dlg") or 0) / 1000.0 + (q.get("steps") or 0) * 0.6
 
 
-def route(region, home_area, home_names):
+def route(region, home_area, home_names, claimed_by=None):
     """The ordered route: one entry per reputation quest, chains expanded.
+
+    claimed_by: a list of quest names one account has already done, which makes
+    their chain steps free and so changes the order. None (the public pages)
+    gives the same order for every reader.
 
     home_names: area/subarea names that belong to this region's map; a start
     outside them is "elsewhere".
@@ -86,7 +90,7 @@ def route(region, home_area, home_names):
     rep = {q["name"]: q for q in load("reputation-quests.json")[region]}
     chains = {c["quest"]: c for c in load("quest-chains.json")["chains"] if c["region"] == region}
     pins = load("hoyolab-wq-pins.json")["pins"]
-    claimed = {norm(n) for n in load("claimed.json").get(region, [])}
+    claimed = {norm(n) for n in (claimed_by or [])}
 
     def place(name, prev_entry):
         s = starts.get(name, {})

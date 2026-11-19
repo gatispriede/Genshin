@@ -102,8 +102,9 @@ That is enough to expect a clear. The ⭐ is a stretch.
 - **A failed Act costs no Vigor.** Retry freely.
 - **Rewind** goes back to the last Climactic Showdown (Act 3), and the Acts after it
   must be re-cleared. Don't finalize straight after a rewind.
-- The season ends **1 Dec**. December's cast is Pyro / Hydro / Geo (leaked), where
-  Varesa and Barbara don't qualify. **This is Varesa's last Theater month.**
+- The season ends **1 Dec**. December is Pyro / Hydro / Geo, where Barbara doesn't
+  qualify. ~~This is Varesa's last Theater month.~~ **Corrected 19 Nov:** Varesa is a
+  December Special Guest Star (official 7.2 Update Details), so she is still usable.
 
 ---
 

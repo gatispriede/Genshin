@@ -20,7 +20,7 @@ import { homeModules } from './flux-home.mjs';
 import { unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { connect, call } from './flux-client.mjs';
-import { heading, makePage, reusePage, writeSectionIndex } from './flux-pages.mjs';
+import { heading, makePage, reusePage } from './flux-pages.mjs';
 import { pageSections } from './flux-layout.mjs';
 import { sourceHtml } from './flux-catalogue.mjs';
 
@@ -161,50 +161,6 @@ function teamModules(t) {
   return mods;
 }
 
-/* ------------------------------------------------------------ roadmaps --- */
-
-const KIND = { set: 'Set', main: 'Main stat' };
-
-/** Artifact roadmap: where to farm, then each fielded character's gaps. */
-function artifactRoadmapModules(data) {
-  const mods = [heading('Roadmap', 'Artifact roadmap',
-    'Computed from the HoYoLAB read against each character\u2019s target set and main stats. Biggest payoff first.')];
-  mods.push({ type: 'KEY_VALUE_DOSSIER', style: 'spec', content: json({
-    title: 'Where to farm',
-    items: data.domainPriority().map((d) => ({ label: d.domain, value: `${d.gaps} gap(s) \u2014 ${d.who.join(', ')}` })),
-  }) });
-  for (const { character: c, team, gaps } of data.artifactRoadmap()) {
-    const real = gaps.filter((g) => g.kind === 'set' || g.kind === 'main');
-    const levels = gaps.filter((g) => g.kind === 'level').length;
-    const items = real.map((g) => ({ label: KIND[g.kind], value: g.action, meta: g.domain }));
-    if (!items.length) items.push({ label: 'On target', value: 'Set and main stats are right' });
-    if (levels) items.push({ label: 'Levels', value: `${levels} piece(s) below max level` });
-    mods.push({ type: 'LIST', style: 'facts', content: json({
-      title: `${c.name} \u00b7 ${team}`,
-      items: items.map((i, n) => (n === 0 && links.characters[c.name] ? { ...i, href: links.characters[c.name].url } : i)),
-    }) });
-  }
-  return mods;
-}
-
-/** Character roadmap: next level, talent and weapon step per fielded character. */
-function characterRoadmapModules(data) {
-  return [
-    heading('Roadmap', 'Character roadmap',
-      'Next step per fielded character, steered by where investment pays off. Computed from the HoYoLAB read.'),
-    { type: 'LIST', style: 'cards', content: json({
-      items: data.characterRoadmap().map((s) => ({
-        label: s.character.name,
-        value: s.next,
-        meta: `Lv ${s.character.level} \u00b7 talents ${(s.character.talents || []).join('/')}`
-          + (s.character.weapon ? ` \u00b7 ${s.character.weapon.name} ${s.character.weapon.level}` : ''),
-        tags: s.warnings,
-        href: links.characters[s.character.name]?.url,
-      })),
-    }) },
-  ];
-}
-
 /* ----------------------------------------------------------------- run --- */
 
 // Pages are created in a first pass and filled in a second, once every page
@@ -273,7 +229,6 @@ const main = async () => {
   // without touching system pages or anything authored elsewhere.
   const owned = new Set([
     ...characters.map((c) => c.name), ...teams.map((t) => t.name),
-    'Artifact roadmap', 'Character roadmap',
   ]);
   const before = await call('page.list', {});
   const doomed = before.filter((p) => p.source !== 'system-page' && owned.has(p.page));
@@ -308,8 +263,7 @@ const main = async () => {
   console.log(`created ${3 + charRows.length + teamRows.length} pages`);
 
   // 3. modules, now that every href resolves.
-  await writeModules(root, homeModules({ rootUrl, teams, characters: data.characters, pages: data.pages,
-                                         liveReadAt: data.liveReadAt, links }));
+  await writeModules(root, homeModules({ rootUrl, teams, characters: data.characters, pages: data.pages, links }));
 
   await writeModules(buildsRoot, [
     heading('Characters', 'Builds', `${characters.length} characters currently fielded`),
@@ -341,17 +295,6 @@ const main = async () => {
     await writeWriteUp(row, c);
   }
   for (const [t, row] of teamRows) await writeModules(row, teamModules(t));
-
-  // Roadmaps, generated from the live read; links resolve now every page exists.
-  const roadmapsRoot = await reusePage('Roadmaps', root.id);
-  const artRow = await makePage('Artifact roadmap', roadmapsRoot.id);
-  await writeModules(artRow, artifactRoadmapModules(data));
-  const charRow = await makePage('Character roadmap', roadmapsRoot.id);
-  await writeModules(charRow, characterRoadmapModules(data));
-  await writeSectionIndex(roadmapsRoot, [
-    { title: 'Artifact roadmap', blurb: 'Which piece to replace next, per character, from the game’s own record' },
-    { title: 'Character roadmap', blurb: 'Who to level next, and to what, computed from the live read' },
-  ], 'Roadmap');
 
   console.log('\nlinked tree:');
   console.log('  ' + rootUrl);

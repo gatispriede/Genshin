@@ -42,14 +42,7 @@ def clean(s):
         re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s))).strip()
 
 
-# reputation-<region>.html are the region pages under the all-regions
-# overview; flux nests them one level deeper (flux-catalogue.mjs).
-REGION_PAGE = re.compile(r'^reputation-(liyue|inazuma|sumeru|fontaine)\.html$')
-
-
 def section_for(heading, kind, href):
-    if REGION_PAGE.match(href):
-        return 'Reputation'
     if heading not in OVERLOADED:
         return heading
     if href.endswith('-build.html'):

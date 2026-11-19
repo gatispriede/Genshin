@@ -19,5 +19,11 @@
   "assets/bishui-map.webp": "api/bishui-map.webp",
   "assets/chenyu-south-map.webp": "api/chenyu-south-map.webp",
   "assets/sumeru-city-rep-route.webp": "api/sumeru-city-rep-route.webp",
-  "assets/sumeru-rep-route-map.webp": "api/sumeru-rep-route-map.webp"
+  "assets/sumeru-rep-route-map.webp": "api/sumeru-rep-route-map.webp",
+  "assets/fontaine-city-rep-route.webp": "api/fontaine-city-rep-route.webp",
+  "assets/fontaine-rep-route-map.webp": "api/fontaine-rep-route-map.webp",
+  "assets/inazuma-city-rep-route.webp": "api/inazuma-city-rep-route.webp",
+  "assets/inazuma-rep-route-map.webp": "api/inazuma-rep-route-map.webp",
+  "assets/liyue-city-rep-route.webp": "api/liyue-city-rep-route.webp",
+  "assets/liyue-rep-route-map.webp": "api/liyue-rep-route-map.webp"
 }

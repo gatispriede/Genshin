@@ -29,7 +29,14 @@ import mapsource as ms  # noqa: E402
 import route_data as rd  # noqa: E402
 import route_markers as rm  # noqa: E402
 
-REGIONS = {"Sumeru": {"area_id": 4, "city": "Sumeru City", "slug": "sumeru"}}
+# area_id is the official map's region id (hoyolab-wq-pins.json): 1 Mondstadt,
+# 2 Liyue, 3 Inazuma, 4 Sumeru, 8 Fontaine, 11 Natlan, 13 Nod-Krai, 16 Snezhnaya.
+REGIONS = {
+    "Liyue": {"area_id": 2, "city": "Liyue Harbor", "slug": "liyue"},
+    "Inazuma": {"area_id": 3, "city": "Inazuma City", "slug": "inazuma"},
+    "Sumeru": {"area_id": 4, "city": "Sumeru City", "slug": "sumeru"},
+    "Fontaine": {"area_id": 8, "city": "Court of Fontaine", "slug": "fontaine"},
+}
 LEVEL = 1                      # half scale: sharp enough for a city close-up
 MAX_EDGE = 1920                # flux resizes anything larger anyway
 CITY_RADIUS = 110              # px at LEVEL 1 around the city's anchor

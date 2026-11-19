@@ -21,6 +21,8 @@ const json = (o) => JSON.stringify(o);
 
 /** Prose shorter than this sits beside its neighbours; longer gets full width. */
 const NARROW_PROSE_CHARS = 500;
+/** Longer than this, a list item is a sentence and stays HTML (see listBlock). */
+const LIST_LABEL_CHARS = 60;
 
 /* ------------------------------------------------------------ callouts --- */
 
@@ -95,12 +97,36 @@ function tableBlock(html) {
   return [richText(html), true];
 }
 
+/**
+ * A list where every item opens with a link is navigation: it becomes full-width
+ * cards (link text as the title, the rest as the line under it), so the links
+ * survive and long descriptions are not squeezed into a narrow column.
+ * Any other list stays a plain LIST.
+ */
 function listBlock(html) {
-  const items = (html.match(/<li[\s\S]*?<\/li>/gi) || [])
-    .map((li) => decode(text(li))).filter(Boolean).map((t) => ({ label: t }));
-  if (items.length < 2) return [richText(html), false];
+  const lis = html.match(/<li[\s\S]*?<\/li>/gi) || [];
+  const linked = lis.map((li) => li.replace(/^<li[^>]*>\s*/, '')
+    .match(/^<a\s[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>([\s\S]*)<\/li>$/i));
+  if (lis.length >= 2 && linked.every(Boolean)) {
+    const items = linked.map(([, href, label, rest]) => ({
+      label: decode(text(label)), href,
+      value: decode(text(rest.replace(/<br\s*\/?>/gi, ' ').replace(/^\s*(&middot;|·|,|:|—|-)\s*/, ''))),
+    }));
+    return [{ type: 'LIST', style: 'cards', content: json({ items }) }, true];
+  }
+  // LIST renders each item as a short uppercase label: right for "Hydro ·
+  // Electro", unreadable for a sentence. Sentences stay a normal HTML list.
+  const items = lis.map((li) => decode(text(li))).filter(Boolean).map((t) => ({ label: t }));
+  const prose = items.some((i) => i.label.length > LIST_LABEL_CHARS);
+  if (items.length < 2 || prose) {
+    return [richText(html), text(html).length > NARROW_PROSE_CHARS];
+  }
   return [{ type: 'LIST', style: 'default', content: json({ items }) }, false];
 }
+
+/** Notes for whoever edits the project (class "editor") are not published. */
+export const withoutEditorNotes = (html) =>
+  html.replace(/<(div|p)\b[^>]*class="[^"]*\beditor\b[^"]*"[^>]*>[\s\S]*?<\/\1>/gi, "");
 
 /* -------------------------------------------------------------- packing --- */
 
@@ -152,7 +178,7 @@ export function pageSections(html, title) {
     sections.push({ columns: 1, modules: [module] });
   };
 
-  const blocks = topLevelBlocks(pageContent(html));
+  const blocks = topLevelBlocks(withoutEditorNotes(pageContent(html)));
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i];
     const cls = classOf(b.attrs);

@@ -31,6 +31,20 @@ and the game patches constantly. Specifically, always look up:
 If I can't verify it, say so plainly and mark it unverified in the output. A
 flagged gap is useful; a confident wrong answer costs the user real time.
 
+## Research goes through Google AI first (owner's rule, 19 Nov 2026)
+
+Start every research question in **Google AI Mode**, in the built-in browser:
+`https://www.google.com/search?udm=50&q=<question>`. It reaches Google's index
+(news sites, Reddit, YouTube, fresh leaks) better than WebSearch does, and needs
+no sign-in. Read the answer with `get_page_text`. If Google shows a consent
+screen, choose "Noraidīt visus" (Reject all).
+
+**The answer is a lead, not a source.** AI Mode says itself that its answers can
+be wrong, and agreeing aggregators have been wrong here before (codes, 17 Nov).
+Every fact that goes into a page or an answer is checked against the page the AI
+cites, or against the authorities below, and cited as that page. If no cited page
+confirms it, it is marked unverified.
+
 ## Where to check — see `reference/sources.md`
 
 Short version: **Fandom wiki is the authority** for numbers, thresholds and
