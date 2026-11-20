@@ -1,0 +1,335 @@
+{
+ "_about": "Every fixed overworld spot that gives 5-star artifacts. Facts from the Genshin Impact Wiki (Hidden Trove, Tribal Secret Space, Kuuhenki's Hidden Trove, Secret Hall of the Realms, Shadow Realm Treasure Vault, Nine Pillars of Peace and each key item's page), checked 20 Nov 2026. Positions and pictures are the official map's own pins (map/pin ids below). Rendered by tools/build-artifact-troves.py.",
+ "_checked": "2026-11-20",
+ "regions": [
+  {
+   "name": "Mondstadt",
+   "map": "2",
+   "intro": "One trove: the Noblesse Secret Treasury on Windrest Peak, the only trove that needs two keys instead of three.",
+   "troves": [
+    {
+     "pin": 95659,
+     "name": "Noblesse Secret Treasury",
+     "where": "Windrest Peak",
+     "key": "Ancient Mondstadt Royal Seal",
+     "keys": 2,
+     "keyFrom": "random Precious and Luxurious Chests in Windrest Peak",
+     "sets": [
+      "Aubade of Morningstar and Moon",
+      "A Day Carved From Rising Winds"
+     ],
+     "extra": "Dust of Enlightenment"
+    }
+   ]
+  },
+  {
+   "name": "Liyue",
+   "map": "2",
+   "intro": "No trove, but one quest vault with a guaranteed 5-star piece. It is a single flower, not a set.",
+   "troves": [
+    {
+     "pin": 1717,
+     "name": "Nine Pillars of Peace",
+     "where": "Cuijue Slope",
+     "quest": true,
+     "key": "Stone of Remembrance",
+     "keys": 9,
+     "keyFrom": "offerings to the Geo Statues of The Seven in Liyue; read the inscription at the pin to start the world quest",
+     "sets": [],
+     "piece": "Royal Flora (5-star Noblesse Oblige flower)",
+     "note": "The back room also holds a Luxurious and a Precious Chest. Only the host can claim it in co-op."
+    }
+   ]
+  },
+  {
+   "name": "Natlan",
+   "map": "2",
+   "intro": "Six Tribal Secret Spaces, one per tribe. Three Obsidian Fragments of one colour make that tribe's ring; the ring opens the space.",
+   "troves": [
+    {
+     "pin": 73221,
+     "name": "People of the Springs",
+     "where": "People of the Springs",
+     "key": "Azure Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Azure Obsidian Fragments from Precious and Luxurious Chests in Toyac Springs",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    },
+    {
+     "pin": 73220,
+     "name": "Scions of the Canopy",
+     "where": "Scions of the Canopy",
+     "key": "Green Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Green Obsidian Fragments from Precious and Luxurious Chests in Coatepec Mountain and the Basin of Unnumbered Flames",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    },
+    {
+     "pin": 73222,
+     "name": "Children of Echoes",
+     "where": "Children of Echoes",
+     "key": "Yellow Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Yellow Obsidian Fragments from Precious and Luxurious Chests in Tequemecan Valley",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    },
+    {
+     "pin": 78776,
+     "name": "Masters of the Night-Wind",
+     "where": "Masters of the Night-Wind",
+     "key": "Purple Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Purple Obsidian Fragments from Precious and Luxurious Chests in Tezcatepetonco Range",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    },
+    {
+     "pin": 78775,
+     "name": "Flower-Feather Clan",
+     "where": "Flower-Feather Clan",
+     "key": "Crimson Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Crimson Obsidian Fragments from Precious and Luxurious Chests in Ochkanatlan and Quahuacan Cliff",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    },
+    {
+     "pin": 82862,
+     "name": "Collective of Plenty",
+     "where": "Collective of Plenty",
+     "key": "Sunset-Blue Obsidian Ring",
+     "keys": 1,
+     "keyFrom": "3 Sunset-Blue Obsidian Fragments from Precious and Luxurious Chests in Atocpan",
+     "sets": [
+      "Obsidian Codex",
+      "Scroll of the Hero of Cinder City"
+     ],
+     "extra": "Sanctifying Elixir"
+    }
+   ]
+  },
+  {
+   "name": "Nod-Krai",
+   "map": "2",
+   "intro": "Kuuhenki's Hidden Troves (Lunar Treasuries): six on the main map, two more on the Lunar Highlands and Moontide Sea map below. Each needs three seals named after its own sub-area.",
+   "troves": [
+    {
+     "pin": 89172,
+     "name": "Lunar Treasury: Lempo Isle",
+     "where": "Lempo Isle",
+     "key": "Evermoon Seal (Lempo Isle)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Lempo Isle",
+     "sets": [
+      "Night of the Sky's Unveiling",
+      "Silken Moon's Serenade"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 89173,
+     "name": "Lunar Treasury: Hiisi Island",
+     "where": "Hiisi Island",
+     "key": "Evermoon Seal (Hiisi Island)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Hiisi Island",
+     "sets": [
+      "Night of the Sky's Unveiling",
+      "Silken Moon's Serenade"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 89171,
+     "name": "Lunar Treasury: Paha Isle",
+     "where": "Paha Isle",
+     "key": "Evermoon Seal (Paha Isle)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Paha Isle",
+     "sets": [
+      "Night of the Sky's Unveiling",
+      "Silken Moon's Serenade"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 93476,
+     "name": "Lunar Treasury: Wavechaser Plain",
+     "where": "Wavechaser Plain",
+     "key": "Irismoon Seal (Wavechaser Plain)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Wavechaser Plain",
+     "sets": [
+      "Aubade of Morningstar and Moon",
+      "A Day Carved From Rising Winds"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 93475,
+     "name": "Lunar Treasury: Ashveil Peak",
+     "where": "Ashveil Peak",
+     "key": "Irismoon Seal (Ashveil Peak)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Ashveil Peak",
+     "sets": [
+      "Aubade of Morningstar and Moon",
+      "A Day Carved From Rising Winds"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 93477,
+     "name": "Lunar Treasury: Voidsea Outlook",
+     "where": "Voidsea Outlook",
+     "key": "Irismoon Seal (Voidsea Outlook)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Voidsea Outlook",
+     "sets": [
+      "Aubade of Morningstar and Moon",
+      "A Day Carved From Rising Winds"
+     ],
+     "extra": "Dust of Enlightenment"
+    }
+   ]
+  },
+  {
+   "name": "Lunar Highlands and Moontide Sea",
+   "map": "40",
+   "intro": "The last two Nod-Krai troves, on their own map layer.",
+   "troves": [
+    {
+     "pin": 99928,
+     "name": "Lunar Treasury: Lunar Highlands",
+     "where": "Lunar Highlands",
+     "key": "Frost Moon Seal (Lunar Highlands)",
+     "keys": 3,
+     "keyFrom": "chests while exploring the Lunar Highlands",
+     "sets": [
+      "Disenchantment in Deep Shadow",
+      "Celestial Gift"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 99927,
+     "name": "Lunar Treasury: Moontide Sea",
+     "where": "Moontide Sea",
+     "key": "Frost Moon Seal (Moontide Sea)",
+     "keys": 3,
+     "keyFrom": "chests while exploring Moontide Sea, Dunanna Pit and the Dark Side of the Moon",
+     "sets": [
+      "Disenchantment in Deep Shadow",
+      "Celestial Gift"
+     ],
+     "extra": "Dust of Enlightenment"
+    }
+   ]
+  },
+  {
+   "name": "Temple of Space",
+   "map": "37",
+   "intro": "One trove: the Secret Hall of the Realms in the Pillar Hall Central Zone.",
+   "troves": [
+    {
+     "pin": 96385,
+     "name": "Secret Hall of the Realms",
+     "where": "Pillar Hall Central Zone",
+     "key": "Segment-Domain Control Module: Zero Particle",
+     "keys": 3,
+     "keyFrom": "chests while exploring the Temple of Space",
+     "sets": [
+      "Aubade of Morningstar and Moon",
+      "A Day Carved From Rising Winds"
+     ],
+     "extra": "Dust of Enlightenment"
+    }
+   ]
+  },
+  {
+   "name": "Snezhnaya",
+   "map": "2",
+   "intro": "Shadow Realm Treasure Vaults: three documented on the wiki, plus two the official map added with Version 7.2.",
+   "troves": [
+    {
+     "pin": 101945,
+     "name": "Shadow Realm Vault: Everfrozen Earth",
+     "where": "Everfrozen Earth",
+     "key": "Remnant Incense Guide - Everfrozen Earth",
+     "keys": 3,
+     "keyFrom": "Precious and Luxurious Chests in Everfrozen Earth and Flamefeather Valley",
+     "sets": [
+      "Scarlet Proof",
+      "Heart of the Furnace"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 101944,
+     "name": "Shadow Realm Vault: Fellfrost Peak",
+     "where": "Fellfrost Peak",
+     "key": "Remnant Incense Guide - Fellfrost Peak",
+     "keys": 3,
+     "keyFrom": "Precious and Luxurious Chests in Fellfrost Peak and Volkodlak Tundra",
+     "sets": [
+      "Scarlet Proof",
+      "Heart of the Furnace"
+     ],
+     "extra": "Dust of Enlightenment"
+    },
+    {
+     "pin": 101943,
+     "name": "Shadow Realm Vault: White Birch Snowgrave",
+     "where": "White Birch Snowgrave",
+     "key": "Remnant Incense Guide - Snowgrave",
+     "keys": 3,
+     "keyFrom": "Precious and Luxurious Chests in White Birch Snowgrave",
+     "sets": [
+      "Scarlet Proof",
+      "Heart of the Furnace"
+     ],
+     "extra": "Dust of Enlightenment",
+     "img": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Shadow_Realm_Treasure_Vault_White_Birch_Snowgrave_Location_Context.png/revision/latest?cb=20260817213159"
+    },
+    {
+     "pin": 107104,
+     "name": "Shadow Realm Vault (7.2): west of Teplo Oasis",
+     "where": "west of Teplo Oasis",
+     "key": "Remnant Incense Guide",
+     "keys": 3,
+     "unconfirmed": true,
+     "keyFrom": "not yet on the wiki; chests in the area added with 7.2",
+     "sets": []
+    },
+    {
+     "pin": 107103,
+     "name": "Shadow Realm Vault (7.2): Teplo Oasis",
+     "where": "Teplo Oasis",
+     "key": "Remnant Incense Guide",
+     "keys": 3,
+     "unconfirmed": true,
+     "keyFrom": "not yet on the wiki; guides report Precious and Luxurious Chests in Teplo Oasis, Hallowed Plain and Wingspan Peak",
+     "sets": []
+    }
+   ]
+  }
+ ]
+}

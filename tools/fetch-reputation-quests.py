@@ -13,7 +13,9 @@ prose page is transcribed by hand and was missing entries.
 
 The wiki's api.php answers curl with a User-Agent. Only article HTML returns 402.
 
-    python -I tools/fetch-reputation-quests.py
+    python -I tools/fetch-reputation-quests.py [Region ...]
+
+With regions named, only those are fetched and merged into the existing file.
 
 Writes reference/data/reputation-quests.json
 """
@@ -30,9 +32,15 @@ import urllib.parse
 API = "https://genshin-impact.fandom.com/api.php"
 UA = "Mozilla/5.0 (compatible; genshin-notes/1.0)"
 
-# Mondstadt and Snezhnaya deliberately excluded - Snezhnaya has no Reputation
-# system at all, and Mondstadt is already near its cap on this account.
-REGIONS = ["Liyue", "Inazuma", "Sumeru", "Fontaine", "Natlan"]
+# Every region with a quest-based Reputation system. Nod-Krai (Selenic
+# Chronicles) and Snezhnaya (Special Recruitment Project) reward a timed quest
+# series from one NPC instead, so they have no route to map.
+REGIONS = ["Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "Natlan"]
+
+# Natlan's reputation is per tribe (Tribe Reputation): the wiki files its quests
+# under each tribe's category, not under Natlan's.
+TRIBES = ["Children of Echoes", "Scions of the Canopy", "People of the Springs",
+          "Flower-Feather Clan", "Masters of the Night-Wind", "Collective of Plenty"]
 
 OUT = os.path.join("reference", "data", "reputation-quests.json")
 
@@ -147,11 +155,29 @@ def quests(titles):
     return recs
 
 
+def region_quests(region):
+    """(titles, tribe of each title). Natlan is the union of its tribes."""
+    if region != "Natlan":
+        return members(region), {}
+    tribe_of = {}
+    for t in TRIBES:
+        for title in members('"%s"' % t):
+            tribe_of.setdefault(title, t)
+    return list(tribe_of), tribe_of
+
+
 def main():
-    data = {}
-    for region in REGIONS:
-        titles = members(region)
+    wanted = sys.argv[1:] or REGIONS
+    unknown = [r for r in wanted if r not in REGIONS]
+    if unknown:
+        raise SystemExit("unknown region(s): %s" % unknown)
+    data = json.load(io.open(OUT, encoding="utf-8")) if sys.argv[1:] and os.path.exists(OUT) else {}
+    for region in wanted:
+        titles, tribe_of = region_quests(region)
         recs = quests(titles)
+        for r in recs:
+            if r["name"] in tribe_of:
+                r["tribe"] = tribe_of[r["name"]]
         recs.sort(key=lambda r: r.get("dlg") or 0)
         data[region] = recs
         # Count only |type = World. Archon acts and quest-series container

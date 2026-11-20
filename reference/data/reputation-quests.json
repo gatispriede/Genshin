@@ -3455,5 +3455,970 @@
    "steps": 34
   }
  ],
- "Natlan": []
+ "Natlan": [
+  {
+   "name": "Serenity's Reprise",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"Children of Echoes\"|,}} Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": "\"Children of Echoes\"",
+   "npcs": [
+    "Xilonen"
+   ],
+   "dlg": 3641,
+   "steps": 2,
+   "tribe": "Children of Echoes"
+  },
+  {
+   "name": "The Mystery of Tecoloapan Beach",
+   "type": "World",
+   "group": null,
+   "start": "???, Natlan",
+   "area": "Tezcatepetonco Range",
+   "subarea": "Tecoloapan Bay",
+   "npcs": [
+    "Mimic Wayob Manifestation",
+    "Sakaw",
+    "Weakened Wayob Manifestation"
+   ],
+   "dlg": 7391,
+   "steps": 7,
+   "tribe": "Masters of the Night-Wind"
+  },
+  {
+   "name": "Those Searching for the Mysterious Island",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"People of the Springs\"|,}} Natlan",
+   "area": "Toyac Springs",
+   "subarea": "\"People of the Springs\"",
+   "npcs": [
+    "Karya",
+    "Viramdra"
+   ],
+   "dlg": 7621,
+   "steps": 3,
+   "tribe": "People of the Springs"
+  },
+  {
+   "name": "Sing, Ho, For the Greatness of Fat!",
+   "type": "World",
+   "group": null,
+   "start": "Atocpan, Natlan",
+   "area": "Atocpan",
+   "subarea": null,
+   "npcs": [
+    "Illimani",
+    "Suriqui"
+   ],
+   "dlg": 8754,
+   "steps": 7,
+   "tribe": "Collective of Plenty"
+  },
+  {
+   "name": "Tepetli Dissonance",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"Children of Echoes\"|,}} Tequemecan Valley, Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": "\"Children of Echoes\"",
+   "npcs": [
+    "Cheven",
+    "Coztic",
+    "Imix"
+   ],
+   "dlg": 10383,
+   "steps": 4,
+   "tribe": "Children of Echoes"
+  },
+  {
+   "name": "Is \"Intensity\" Really the Key?",
+   "type": "World",
+   "group": null,
+   "start": "Atocpan, Natlan",
+   "area": "Atocpan",
+   "subarea": null,
+   "npcs": [
+    "Linaha",
+    "Little One",
+    "Ma'chah",
+    "Yoleehe"
+   ],
+   "dlg": 10556,
+   "steps": 2,
+   "tribe": "Collective of Plenty"
+  },
+  {
+   "name": "Ardent Land of Plenty",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Atocpan, Natlan",
+   "area": "Atocpan",
+   "subarea": null,
+   "npcs": [
+    "Varesa"
+   ],
+   "dlg": 12772,
+   "steps": 7,
+   "tribe": "Collective of Plenty"
+  },
+  {
+   "name": "The Night Before the Trial",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Quahuacan Cliff, Natlan",
+   "area": "Quahuacan Cliff",
+   "subarea": null,
+   "npcs": [
+    "Allpa",
+    "Bold Investigator",
+    "Cautious Investigator",
+    "Chasca",
+    "Confused Investigator",
+    "Curious Investigator",
+    "Doubtful Investigator",
+    "Elderly Merchant",
+    "Inkanak",
+    "Isidore",
+    "Young Merchant"
+   ],
+   "dlg": 15125,
+   "steps": 9,
+   "tribe": "Flower-Feather Clan"
+  },
+  {
+   "name": "Legendary \"Color\"",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "\"Masters of the Night-Wind\", Natlan",
+   "area": "Tezcatepetonco Range",
+   "subarea": null,
+   "npcs": [
+    "Biram",
+    "Toltec"
+   ],
+   "dlg": 15599,
+   "steps": 9,
+   "tribe": "Masters of the Night-Wind"
+  },
+  {
+   "name": "Every Aspect of a Warrior",
+   "type": "World",
+   "group": null,
+   "start": "Quahuacan Cliff, Natlan",
+   "area": null,
+   "subarea": null,
+   "npcs": [
+    "Acomitl",
+    "Manyoya",
+    "Matahga",
+    "Xueyoni"
+   ],
+   "dlg": 15699,
+   "steps": 6,
+   "tribe": "Flower-Feather Clan"
+  },
+  {
+   "name": "Farewell, Final Saurus Cracker",
+   "type": "World",
+   "group": null,
+   "start": null,
+   "area": "Tezcatepetonco Range",
+   "subarea": null,
+   "npcs": [
+    "Cisik",
+    "Furball",
+    "Lamizana",
+    "Little One",
+    "Oberon",
+    "Quilla",
+    "Taruka",
+    "Temach"
+   ],
+   "dlg": 15938,
+   "steps": 9,
+   "tribe": "Flower-Feather Clan"
+  },
+  {
+   "name": "Hoarse Echoes",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"Children of Echoes\"|,}} Tequemecan Valley, Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": "\"Children of Echoes\"",
+   "npcs": [
+    "Cheven",
+    "Iengu",
+    "Imix",
+    "Tlazolli"
+   ],
+   "dlg": 16401,
+   "steps": 3,
+   "tribe": "Children of Echoes"
+  },
+  {
+   "name": "Seeker No Finding",
+   "type": "World",
+   "group": null,
+   "start": "Ameyalco Waters, Natlan",
+   "area": "Toyac Springs",
+   "subarea": "Ameyalco Waters",
+   "npcs": [
+    "Chikya",
+    "Little One"
+   ],
+   "dlg": 19128,
+   "steps": 12,
+   "tribe": "People of the Springs"
+  },
+  {
+   "name": "To the Night, What is the Night's",
+   "type": "World",
+   "group": null,
+   "start": "Tequemecan Valley, Natlan",
+   "area": "Coatepec Mountain",
+   "subarea": "Ancestral Temple",
+   "npcs": [
+    "Legba",
+    "Little One",
+    "\"Projection of an Obsidian Tablet\""
+   ],
+   "dlg": 20040,
+   "steps": 10,
+   "tribe": "Scions of the Canopy"
+  },
+  {
+   "name": "A Mysterious Visitor From Huitztlan",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Coatepec Mountain, Natlan",
+   "area": "Coatepec Mountain",
+   "subarea": null,
+   "npcs": [
+    "Ajaw",
+    "Enjou",
+    "Huni",
+    "Pocchi",
+    "Poggi",
+    "Ponini",
+    "Sanka",
+    "Toba"
+   ],
+   "dlg": 20633,
+   "steps": 3,
+   "tribe": "Scions of the Canopy"
+  },
+  {
+   "name": "Calling from the Masters of the Night-Wind",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "\"Masters of the Night-Wind\", Natlan",
+   "area": "Tezcatepetonco Range",
+   "subarea": null,
+   "npcs": [
+    "Biram",
+    "Caholom",
+    "Tlapo"
+   ],
+   "dlg": 21164,
+   "steps": 8,
+   "tribe": "Masters of the Night-Wind"
+  },
+  {
+   "name": "A Hero's Rite",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": null,
+   "area": "Coatepec Mountain",
+   "subarea": "\"Scions of the Canopy\"",
+   "npcs": [
+    "Ajaw",
+    "Huni",
+    "Kinich",
+    "Enjou",
+    "Trinidad"
+   ],
+   "dlg": 22591,
+   "steps": 5,
+   "tribe": "Scions of the Canopy"
+  },
+  {
+   "name": "Peace to the Slumbering",
+   "type": "World",
+   "group": null,
+   "start": "Land of Myriad Megaliths, Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": null,
+   "npcs": [
+    "\"Beast With Fur Like That of Night\"",
+    "Irizar",
+    "Little One",
+    "Titu",
+    "Yukom",
+    "Zephaniah"
+   ],
+   "dlg": 22767,
+   "steps": 14,
+   "tribe": "Children of Echoes"
+  },
+  {
+   "name": "The Color of Memory",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Tezcatepetonco Range, Natlan",
+   "area": "Tezcatepetonco Range",
+   "subarea": null,
+   "npcs": [
+    "Allier",
+    "Aywastin",
+    "Besuci",
+    "Biram",
+    "Caholom",
+    "Chogan",
+    "Citlali",
+    "Huitzilin",
+    "Montluson",
+    "Tlapo"
+   ],
+   "dlg": 23753,
+   "steps": 5,
+   "tribe": "Masters of the Night-Wind"
+  },
+  {
+   "name": "Orchard Repose",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "\"Collective of Plenty\", Natlan",
+   "area": "Atocpan",
+   "subarea": "\"Collective of Plenty\"",
+   "npcs": [
+    "Iansan",
+    "Vanana",
+    "Varesa"
+   ],
+   "dlg": 25183,
+   "steps": 7,
+   "tribe": "Collective of Plenty"
+  },
+  {
+   "name": "Ripe For Trouble",
+   "type": "World",
+   "group": null,
+   "start": "Tequemecan Valley, Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": null,
+   "npcs": [
+    "Poca",
+    "Tisoc"
+   ],
+   "dlg": 27822,
+   "steps": 10,
+   "tribe": "Scions of the Canopy"
+  },
+  {
+   "name": "The Legend of the Mysterious Island",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"People of the Springs\"|,}} Natlan",
+   "area": "Toyac Springs",
+   "subarea": "\"People of the Springs\"",
+   "npcs": [
+    "Amina",
+    "Ata (Koholasaur)",
+    "Kaeho",
+    "Kaulu"
+   ],
+   "dlg": 29201,
+   "steps": 5,
+   "tribe": "People of the Springs"
+  },
+  {
+   "name": "Tracer No Tracing",
+   "type": "World",
+   "group": null,
+   "start": "Underground Lava River: Upper Level, Natlan",
+   "area": "Toyac Springs",
+   "subarea": "Ameyalco Waters",
+   "npcs": [
+    "Chikya",
+    "Little One"
+   ],
+   "dlg": 32840,
+   "steps": 14,
+   "tribe": "People of the Springs"
+  },
+  {
+   "name": "The Last Turnfire Night",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "{{LL|\"Scions of the Canopy\"|,}} Natlan",
+   "area": "Coatepec Mountain",
+   "subarea": "\"Scions of the Canopy\"",
+   "npcs": [
+    "Ajaw",
+    "Burkina",
+    "Enjou",
+    "Huni",
+    "Kinich",
+    "Kongamato",
+    "Nanna",
+    "Ponche",
+    "Thiago",
+    "Toba",
+    "Trinidad",
+    "Wayna"
+   ],
+   "dlg": 35966,
+   "steps": 19,
+   "tribe": "Scions of the Canopy"
+  },
+  {
+   "name": "The Mysterious Island's Truth",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Ameyalco Waters, Natlan",
+   "area": "Toyac Springs",
+   "subarea": "Ameyalco Waters",
+   "npcs": [
+    "Karya",
+    "Koolau",
+    "Mualani",
+    "Nuu",
+    "Viramdra"
+   ],
+   "dlg": 37746,
+   "steps": 17,
+   "tribe": "People of the Springs"
+  },
+  {
+   "name": "Smokeless War",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "\"Collective of Plenty\", Natlan",
+   "area": "Atocpan",
+   "subarea": "\"Collective of Plenty\"",
+   "npcs": [
+    "Acatl",
+    "Atolli",
+    "Camotli",
+    "Chatraka",
+    "Iansan",
+    "Katheryne (Natlan)",
+    "Mushrial",
+    "Mushriu",
+    "Mushriwaili",
+    "Sage-Lord of Fungi",
+    "Soletl",
+    "Teoxoletl",
+    "Tighnari",
+    "Varesa",
+    "Xoctli"
+   ],
+   "dlg": 39185,
+   "steps": 10,
+   "tribe": "Collective of Plenty"
+  },
+  {
+   "name": "Time for the Showdown",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Quahuacan Cliff, Natlan",
+   "area": "Quahuacan Cliff",
+   "subarea": null,
+   "npcs": [
+    "Allpa",
+    "Chasca",
+    "Chime",
+    "Chimpu",
+    "Coya",
+    "Cusco",
+    "Mutota",
+    "Puma",
+    "Tepal"
+   ],
+   "dlg": 40135,
+   "steps": 18,
+   "tribe": "Flower-Feather Clan"
+  },
+  {
+   "name": "The Wingless One of Tlalocan",
+   "type": "Story",
+   "group": "Tribal Chronicles",
+   "start": "Quahuacan Cliff, Natlan",
+   "area": "Quahuacan Cliff",
+   "subarea": null,
+   "npcs": [
+    "Allpa",
+    "Capac",
+    "Chasca",
+    "Coyllur",
+    "Cusco",
+    "Huascar",
+    "Kotimy",
+    "Mutota",
+    "Pixica",
+    "Warmi",
+    "Yatlan",
+    "Zhunan"
+   ],
+   "dlg": 42371,
+   "steps": 11,
+   "tribe": "Flower-Feather Clan"
+  },
+  {
+   "name": "Beneath the Crystal Rock",
+   "type": "World",
+   "group": null,
+   "start": "Tequemecan Valley, Natlan",
+   "area": "Tequemecan Valley",
+   "subarea": null,
+   "npcs": [
+    "Little One",
+    "Titu",
+    "Yukom"
+   ],
+   "dlg": 45934,
+   "steps": 29,
+   "tribe": "Children of Echoes"
+  }
+ ],
+ "Mondstadt": [
+  {
+   "name": "For a Tomorrow Without Tears",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Song of the Dragon and Freedom",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "The Outlander Who Caught the Wind",
+   "type": null,
+   "group": null,
+   "start": null,
+   "area": null,
+   "subarea": null,
+   "npcs": [],
+   "dlg": 0,
+   "steps": 0
+  },
+  {
+   "name": "Timmie's Wish",
+   "type": "World",
+   "group": "Request",
+   "start": "Starfell Valley, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": null,
+   "npcs": [
+    "Timmie"
+   ],
+   "dlg": 1642,
+   "steps": 1
+  },
+  {
+   "name": "Glory's Wish",
+   "type": "World",
+   "group": "Request",
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Glory"
+   ],
+   "dlg": 1822,
+   "steps": 1
+  },
+  {
+   "name": "Chloris' Flora Studies",
+   "type": "World",
+   "group": "Request",
+   "start": "Starfell Valley, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": null,
+   "npcs": [
+    "Chloris"
+   ],
+   "dlg": 1861,
+   "steps": 1
+  },
+  {
+   "name": "Helen's Special Blend",
+   "type": "World",
+   "group": "Request",
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Helen"
+   ],
+   "dlg": 1904,
+   "steps": 3
+  },
+  {
+   "name": "Alfred's Bouquet",
+   "type": "World",
+   "group": "Request",
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Alfred"
+   ],
+   "dlg": 2452,
+   "steps": 1
+  },
+  {
+   "name": "Brook the Carnivore",
+   "type": "World",
+   "group": "Request",
+   "start": "Springvale, Mondstadt",
+   "area": "Windwail Highland",
+   "subarea": "Springvale",
+   "npcs": [
+    "Brook"
+   ],
+   "dlg": 2578,
+   "steps": 2
+  },
+  {
+   "name": "Manly Jack's Manly Journey of Manliness",
+   "type": "World",
+   "group": "Request",
+   "start": "Galesong Hill, Mondstadt",
+   "area": "Galesong Hill",
+   "subarea": null,
+   "npcs": [
+    "Manly Jack"
+   ],
+   "dlg": 2891,
+   "steps": 0
+  },
+  {
+   "name": "After the Storm",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Wagner"
+   ],
+   "dlg": 3381,
+   "steps": 3
+  },
+  {
+   "name": "Windrise, Windfall",
+   "type": "World",
+   "group": null,
+   "start": "Dawn Winery, Mondstadt",
+   "area": "Windwail Highland",
+   "subarea": "Dawn Winery",
+   "npcs": [
+    "Elzer"
+   ],
+   "dlg": 3646,
+   "steps": 3
+  },
+  {
+   "name": "Thief-Catcher",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Cyrus (Mondstadt)"
+   ],
+   "dlg": 4088,
+   "steps": 8
+  },
+  {
+   "name": "Connor's Brew",
+   "type": "World",
+   "group": "Request",
+   "start": "Dawn Winery, Mondstadt",
+   "area": "Windwail Highland",
+   "subarea": "Dawn Winery",
+   "npcs": [
+    "Connor"
+   ],
+   "dlg": 4126,
+   "steps": 1
+  },
+  {
+   "name": "The Great Mountain Survey II",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": null,
+   "npcs": [
+    "Cyrus (Mondstadt)",
+    "Esther"
+   ],
+   "dlg": 4291,
+   "steps": 5
+  },
+  {
+   "name": "Mondstadt and its Archon",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Grace"
+   ],
+   "dlg": 4300,
+   "steps": 5
+  },
+  {
+   "name": "Cleanup At Dawn",
+   "type": "World",
+   "group": null,
+   "start": "Dawn Winery, Mondstadt",
+   "area": "Windwail Highland",
+   "subarea": "Dawn Winery",
+   "npcs": [
+    "Adelinde",
+    "Hillie",
+    "Moco"
+   ],
+   "dlg": 4843,
+   "steps": 4
+  },
+  {
+   "name": "In the Aftermath",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Huffman"
+   ],
+   "dlg": 4850,
+   "steps": 17
+  },
+  {
+   "name": "The Great Mountain Survey",
+   "type": "World",
+   "group": null,
+   "start": "Entombed City - Outskirts, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": "Entombed City - Outskirts",
+   "npcs": [
+    "Esther"
+   ],
+   "dlg": 5037,
+   "steps": 4
+  },
+  {
+   "name": "Lingering Malady",
+   "type": "World",
+   "group": null,
+   "start": "Outside the Cathedral, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Aramis"
+   ],
+   "dlg": 5144,
+   "steps": 3
+  },
+  {
+   "name": "Forest Boar Pauses for the Bloom",
+   "type": "World",
+   "group": null,
+   "start": "Millhaven, Mondstadt",
+   "area": "Windrest Peak",
+   "subarea": "Millhaven",
+   "npcs": [
+    "Leopoldine"
+   ],
+   "dlg": 5249,
+   "steps": 8
+  },
+  {
+   "name": "Flighty Flora... and Flora",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Flora"
+   ],
+   "dlg": 5929,
+   "steps": 5
+  },
+  {
+   "name": "Question and Answer",
+   "type": "World",
+   "group": null,
+   "start": "Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Swan"
+   ],
+   "dlg": 6022,
+   "steps": 2
+  },
+  {
+   "name": "Ah, Fresh Meat!",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine Adventurer Camp, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": "Snow-Covered Path",
+   "npcs": [
+    "Harris"
+   ],
+   "dlg": 6492,
+   "steps": 10
+  },
+  {
+   "name": "Lost in the Snow",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine Adventurer Camp, Dragonspine",
+   "area": "Dragonspine",
+   "subarea": "Snow-Covered Path",
+   "npcs": [
+    "Joel"
+   ],
+   "dlg": 7819,
+   "steps": 7
+  },
+  {
+   "name": "A Land Entombed",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": null,
+   "npcs": [
+    "Stevens"
+   ],
+   "dlg": 8428,
+   "steps": 7
+  },
+  {
+   "name": "Break the Sword Cemetery Seal",
+   "type": "World",
+   "group": null,
+   "start": "Dadaupa Gorge, Mondstadt",
+   "area": "Galesong Hill",
+   "subarea": "Dadaupa Gorge",
+   "npcs": [
+    "Dr. Livingstone"
+   ],
+   "dlg": 10226,
+   "steps": 2
+  },
+  {
+   "name": "In the Mountains",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine Adventurer Camp, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": "Snow-Covered Path",
+   "npcs": [
+    "Iris (Dragonspine Adventurer Camp)"
+   ],
+   "dlg": 11256,
+   "steps": 52
+  },
+  {
+   "name": "Time and Wind",
+   "type": "World",
+   "group": null,
+   "start": "Nameless Island, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": null,
+   "npcs": [
+    "Henry Morton"
+   ],
+   "dlg": 11266,
+   "steps": 19
+  },
+  {
+   "name": "The Festering Fang",
+   "type": "World",
+   "group": null,
+   "start": "Dragonspine, Mondstadt",
+   "area": "Dragonspine",
+   "subarea": null,
+   "npcs": [
+    "Iris (Dragonspine Adventurer Camp)",
+    "Orban"
+   ],
+   "dlg": 13306,
+   "steps": 7
+  },
+  {
+   "name": "Equivalent Exchange",
+   "type": "World",
+   "group": null,
+   "start": "Favonius Cathedral, Mondstadt, Mondstadt",
+   "area": "Starfell Valley",
+   "subarea": "Mondstadt City",
+   "npcs": [
+    "Charles",
+    "Flora",
+    "Sara",
+    "Viktor"
+   ],
+   "dlg": 17233,
+   "steps": 13
+  },
+  {
+   "name": "Winds Beneath the Tower of Silence",
+   "type": "World",
+   "group": null,
+   "start": "Dornman Port, Mondstadt",
+   "area": "Windrest Peak",
+   "subarea": "Dornman Port",
+   "npcs": [
+    "Lennart",
+    "Matthew",
+    "Odolf",
+    "Winslow"
+   ],
+   "dlg": 21615,
+   "steps": 22
+  },
+  {
+   "name": "The Final Judgment",
+   "type": "World",
+   "group": null,
+   "start": "Temple of Space",
+   "area": "Temple of Space",
+   "subarea": null,
+   "npcs": [
+    "Dex",
+    "Istoria",
+    "Melanta",
+    "Zeitlind"
+   ],
+   "dlg": 30987,
+   "steps": 23
+  }
+ ]
 }

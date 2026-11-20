@@ -365,8 +365,8 @@ def overview(data, regions):
     # One short line per card: the cards are the way into the route pages, and
     # a paragraph per card squeezes them. The compass sums go in their own table.
     items = "".join(
-        '<li><a href="%s">%s reputation quests</a> &middot; %d quests on an annotated route map, '
-        'shortest first, with a city close-up</li>'
+        '<li><a href="%s">%s reputation quests</a> &middot; %d quests, shortest first, '
+        'with a page and map per area</li>'
         % (region_page(r), r, len([q for q in data[r] if not q.get("missing")]))
         for r in regions)
     compass = "".join(compass_row(r, data[r]) for r in regions)
@@ -389,7 +389,9 @@ def region_html(region, quests):
 
 def main():
     data = json.load(io.open(DATA, encoding="utf-8"))
-    regions = [r for r in data if data[r]]
+    # Game order, not the order regions were added to the data file.
+    order = ["Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "Natlan"]
+    regions = sorted((r for r in data if data[r]), key=lambda r: order.index(r) if r in order else len(order))
     # Region pages are the route pages (build-rep-route.py); this writes the overview.
     pages = {OUT: overview(data, regions)}
     for path, html in pages.items():

@@ -527,6 +527,60 @@
    "note": ""
   },
   {
+   "quest": "Serenity's Reprise",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "Tepetli Dissonance",
+    "Hoarse Echoes",
+    "Threadlike Whispers",
+    "A Faint Signal Lingers",
+    "Wailing Cacophony"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Color of Memory",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "Calling from the Masters of the Night-Wind",
+    "Legendary \"Color\"",
+    "A Commission Catches You in Natlan",
+    "Please, great shaman!",
+    "Seven-Hued Ruins"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Mysterious Island's Truth",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "Those Searching for the Mysterious Island",
+    "The Legend of the Mysterious Island",
+    "Someone Trustworthy",
+    "Where the Koholasaurs Gather",
+    "The Riddle of Sea and Sky"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
    "quest": "Soheil's Wish",
    "region": "Sumeru",
    "severity": "bad",
@@ -608,6 +662,57 @@
     "The Gourmet Supremos: Of Shrines and Sakura",
     "The Gourmet Supremos: The Seashore Strider",
     "The Gourmet Supremos: The Deep Divers"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Smokeless War",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 4,
+   "archonPriors": null,
+   "before": [
+    "Ardent Land of Plenty",
+    "Orchard Repose",
+    "Sage Supreme",
+    "The Meaning of Courage"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Last Turnfire Night",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 4,
+   "archonPriors": null,
+   "before": [
+    "A Mysterious Visitor From Huitztlan",
+    "A Hero's Rite",
+    "Kinich's Deal (Quest)",
+    "I, Flame Bearer"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Time for the Showdown",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "Story",
+   "priors": 4,
+   "archonPriors": null,
+   "before": [
+    "The Wingless One of Tlalocan",
+    "The Night Before the Trial",
+    "Tracks Through the Wilderness",
+    "Mortal Pursuit"
    ],
    "hidden": [],
    "requirement": "",
@@ -790,6 +895,38 @@
    ],
    "hidden": [],
    "requirement": "Qiaoying of the Sacred Mountain",
+   "note": ""
+  },
+  {
+   "quest": "The Final Judgment",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": 3,
+   "archonPriors": null,
+   "before": [
+    "The Wind Has Ceased",
+    "A Day the Grand Temple Inscribed with Ages",
+    "Lion's Celerity"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Farewell, Final Saurus Cracker",
+   "region": "Natlan",
+   "severity": "bad",
+   "type": "World",
+   "priors": 3,
+   "archonPriors": null,
+   "before": [
+    "Incidents Are Ever Sudden",
+    "Beat the Clock: 24 Hours",
+    "An Air Race and an Alibi"
+   ],
+   "hidden": [],
+   "requirement": "",
    "note": ""
   },
   {
@@ -1097,6 +1234,21 @@
    "note": ""
   },
   {
+   "quest": "The Great Mountain Survey II",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "In the Mountains",
+    "The Great Mountain Survey"
+   ],
+   "hidden": [],
+   "requirement": "Complete In the Mountains and The Great Mountain Survey",
+   "note": ""
+  },
+  {
    "quest": "A Prayer for Rain on the Fecund Land",
    "region": "Sumeru",
    "severity": "bad",
@@ -1237,6 +1389,20 @@
    ],
    "hidden": [],
    "requirement": "Complete The Chi of Yore and Farewell, Archaic Lord",
+   "note": ""
+  },
+  {
+   "quest": "Thief-Catcher",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Time Waits For No Man"
+   ],
+   "hidden": [],
+   "requirement": "Reach Adventure Rank 24",
    "note": ""
   },
   {
@@ -1606,6 +1772,126 @@
    "note": ""
   },
   {
+   "quest": "After the Storm",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Complete Song of the Dragon and Freedom",
+   "note": ""
+  },
+  {
+   "quest": "Break the Sword Cemetery Seal",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Unexpected Power",
+   "note": ""
+  },
+  {
+   "quest": "Cleanup At Dawn",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Complete Song of the Dragon and Freedom",
+   "note": ""
+  },
+  {
+   "quest": "In the Aftermath",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Complete Song of the Dragon and Freedom",
+   "note": ""
+  },
+  {
+   "quest": "Lingering Malady",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "30;For a Tomorrow Without Tears",
+   "note": ""
+  },
+  {
+   "quest": "Mondstadt and its Archon",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Complete Should You Be Trapped in a Windless Land",
+   "note": ""
+  },
+  {
+   "quest": "Question and Answer",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "24;For a Tomorrow Without Tears",
+   "note": ""
+  },
+  {
+   "quest": "Time and Wind",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Reach the Nameless Island and read the Ragged Notebook",
+   "note": ""
+  },
+  {
+   "quest": "Windrise, Windfall",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Complete For a Tomorrow Without Tears",
+   "note": ""
+  },
+  {
+   "quest": "Winds Beneath the Tower of Silence",
+   "region": "Mondstadt",
+   "severity": "bad",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "Song of the Dragon and Freedom",
+   "note": ""
+  },
+  {
    "quest": "A Short Encounter with a Rare Bird",
    "region": "Sumeru",
    "severity": "bad",
@@ -1796,6 +2082,132 @@
    "archonPriors": null,
    "before": [
     "Treasure Lost, Treasure Found (Part 1)"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Equivalent Exchange",
+   "region": "Mondstadt",
+   "severity": "mild",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Tales of Winter"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "A Hero's Rite",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "A Mysterious Visitor From Huitztlan"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Hoarse Echoes",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Tepetli Dissonance"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Legendary \"Color\"",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Calling from the Masters of the Night-Wind"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Orchard Repose",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Ardent Land of Plenty"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Peace to the Slumbering",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Beneath the Crystal Rock"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Seeker No Finding",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Tracer No Tracing"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Legend of the Mysterious Island",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Those Searching for the Mysterious Island"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Night Before the Trial",
+   "region": "Natlan",
+   "severity": "mild",
+   "type": "Story",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "The Wingless One of Tlalocan"
    ],
    "hidden": [],
    "requirement": "",
@@ -2142,6 +2554,54 @@
    "note": ""
   },
   {
+   "quest": "Flighty Flora... and Flora",
+   "region": "Mondstadt",
+   "severity": "entry",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "24;The Outlander Who Caught the Wind",
+   "note": ""
+  },
+  {
+   "quest": "In the Mountains",
+   "region": "Mondstadt",
+   "severity": "entry",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "The Outlander Who Caught the Wind",
+   "note": ""
+  },
+  {
+   "quest": "Lost in the Snow",
+   "region": "Mondstadt",
+   "severity": "entry",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "The Outlander Who Caught the Wind",
+   "note": ""
+  },
+  {
+   "quest": "The Festering Fang",
+   "region": "Mondstadt",
+   "severity": "entry",
+   "type": "World",
+   "priors": null,
+   "archonPriors": null,
+   "before": [],
+   "hidden": [],
+   "requirement": "The Outlander Who Caught the Wind",
+   "note": ""
+  },
+  {
    "quest": "Afratu's Dilemma",
    "region": "Sumeru",
    "severity": "entry",
@@ -2366,6 +2826,30 @@
    "type": "Archon",
    "priors": null,
    "archonPriors": 31,
+   "before": [],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "For a Tomorrow Without Tears",
+   "region": "Mondstadt",
+   "severity": "story",
+   "type": "Archon",
+   "priors": null,
+   "archonPriors": 12,
+   "before": [],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Song of the Dragon and Freedom",
+   "region": "Mondstadt",
+   "severity": "story",
+   "type": "Archon",
+   "priors": null,
+   "archonPriors": 25,
    "before": [],
    "hidden": [],
    "requirement": "",

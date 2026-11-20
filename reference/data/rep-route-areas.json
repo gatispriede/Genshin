@@ -106,5 +106,21 @@
    "href": "fontaine-rep-fontaine-research-institute-of-kinetic-energy-engineering-region.html",
    "title": "Fontaine: Fontaine Research Institute of Kinetic Energy Engineering Region"
   }
+ ],
+ "Mondstadt": [
+  {
+   "href": "mondstadt-rep-starfell-valley.html",
+   "title": "Mondstadt: Starfell Valley and nearby"
+  },
+  {
+   "href": "mondstadt-rep-dragonspine.html",
+   "title": "Mondstadt: Dragonspine and nearby"
+  }
+ ],
+ "Natlan": [
+  {
+   "href": "natlan-rep-all-areas.html",
+   "title": "Natlan: All areas"
+  }
  ]
 }

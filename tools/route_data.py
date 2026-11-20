@@ -120,7 +120,9 @@ def route(region, home_area, home_names, claimed_by=None):
             # A commission that gates a quest: it has a home area, so it gets an
             # approximate dot there; where_line says it comes among commissions.
             entry.update(start="area", commission=True)
-        elif s.get("type") in (None, "Archon", "Story") and not where:
+        elif s.get("type") in (None, "Archon", "Story") and (not where or r.get("group") == "Tribal Chronicles"):
+            # Natlan's Tribal Chronicles are Story Quests taken from the quest menu;
+            # the wiki's area is where the act plays, not a start to walk to.
             entry["start"] = "story"
         elif where and where not in home_names:
             entry["start"] = "elsewhere"

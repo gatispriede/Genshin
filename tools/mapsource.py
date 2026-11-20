@@ -45,7 +45,7 @@ class MapSource(object):
         self.level = level
         self.scale = SCALE_AT[level]
 
-        detail = self._find_basemap(get("v1/map/list", map_id).get("all_map_list"))
+        detail = self._find_basemap(get("v1/map/list", map_id).get("all_map_list"), int(map_id))
         if not detail:
             raise SystemExit("no map node carried a detail_v2.map_version")
         self.version = detail["map_version"]
@@ -54,14 +54,17 @@ class MapSource(object):
         self.points = get("v1/map/point/list", map_id)["point_list"]
 
     @staticmethod
-    def _find_basemap(nodes):
-        for n in nodes or []:
+    def _find_basemap(nodes, map_id):
+        """This map's own basemap. The list holds every map (Teyvat first), so
+        taking the first node with a version gave sub-maps Teyvat's tiles."""
+        def walk(ns):
+            for n in ns or []:
+                yield n
+                yield from walk(n.get("children"))
+        for n in walk(nodes):
             v = n.get("detail_v2") or {}
-            if v.get("map_version"):
+            if n.get("id") == map_id and v.get("map_version"):
                 return v
-            hit = MapSource._find_basemap(n.get("children"))
-            if hit:
-                return hit
         return None
 
     def px(self, x, y):

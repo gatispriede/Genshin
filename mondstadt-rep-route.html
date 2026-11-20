@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mondstadt reputation quests</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Mondstadt reputation quests</h1>
+  <p class="sub">33 quests pay Mondstadt reputation. The ones you start from the map are split by area below, each page with its own map, the quests shortest first, what unlocks them and the quests that lead to them.</p>
+  <h2>Areas</h2>
+  <ul class="regions"><li><a href="mondstadt-rep-starfell-valley.html">Starfell Valley and nearby</a> · 11 quests, 2 behind other quests (also Windrest Peak)</li><li><a href="mondstadt-rep-dragonspine.html">Dragonspine and nearby</a> · 10 quests, 1 behind other quests (also Galesong Hill, Windwail Highland)</li></ul>
+  <div class="map-wrap" id="mondstadtRoute" data-map="assets/mondstadt-rep-areas-map.webp" data-alt="Mondstadt: reputation quest areas" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+<h2>Weekly requests and bounties</h2><div class="note">Taken from the Reputation menu, not from the map: up to 3 a week across all nations. The name is who you hand in to.</div><ul class="side"><li><b>Timmie&#x27;s Wish</b> — Timmie, Starfell Valley</li><li><b>Glory&#x27;s Wish</b> — Glory, Mondstadt City</li><li><b>Chloris&#x27; Flora Studies</b> — Chloris, Starfell Valley</li><li><b>Manly Jack&#x27;s Manly Journey of Manliness</b> — Manly Jack, Galesong Hill</li><li><b>Alfred&#x27;s Bouquet</b> — Alfred, Mondstadt City</li><li><b>Helen&#x27;s Special Blend</b> — Helen, Mondstadt City</li><li><b>Brook the Carnivore</b> — Brook, Springvale</li><li><b>Connor&#x27;s Brew</b> — Connor, Dawn Winery</li></ul><h2>Story quests</h2><div class="note">Archon or Story quests: start them from the Quests menu.</div><ul class="side"><li><b>For a Tomorrow Without Tears</b></li><li><b>Song of the Dragon and Freedom</b></li><li><b>The Outlander Who Caught the Wind</b></li></ul><h2>Starts outside Mondstadt</h2><div class="note">The quest that pays is here, but it starts in another region.</div><ul class="side"><li><b>The Final Judgment</b> — Dex, Temple of Space</li></ul>
+  <p class="sub">Sources: HoYoLAB interactive map (World Quest pins and their notes); Genshin Impact Wiki quest and
+  hidden-objective pages (requirements, steps, start NPCs). Generated 20 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-rep-route.py Mondstadt</code> from
+  reference/data/quest-starts.json, quest-chains.json and hidden-objectives.json.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#mondstadtRoute", [{"zone": true, "rect": true, "x": 16.73, "y": 10.61, "w": 74.35, "h": 46.1, "role": "hub", "tag": "Starfell Valley: 11 quests"}, {"zone": true, "rect": true, "x": 25.2, "y": 54.04, "w": 40.75, "h": 37.82, "role": "hub", "tag": "Dragonspine: 10 quests"}, {"x": 43.82, "y": 54.43, "role": "goal", "size": "sm", "title": "After the Storm"}, {"x": 26.5, "y": 69.01, "role": "goal", "size": "sm", "title": "Windrise, Windfall"}, {"x": 37.17, "y": 50.39, "role": "goal", "size": "sm", "title": "Lingering Malady"}, {"x": 44.53, "y": 54.3, "role": "goal", "size": "sm", "title": "Question and Answer"}, {"x": 26.89, "y": 69.4, "role": "goal", "size": "sm", "title": "Cleanup At Dawn"}, {"x": 38.74, "y": 51.24, "role": "goal", "size": "sm", "title": "Mondstadt and its Archon"}, {"x": 33.4, "y": 77.67, "role": "goal", "size": "sm", "title": "The Great Mountain Survey"}, {"x": 43.88, "y": 53.39, "role": "goal", "size": "sm", "title": "Flighty Flora... and Flora"}, {"x": 18.03, "y": 24.35, "role": "goal", "size": "sm", "title": "Forest Boar Pauses for the Bloom"}, {"x": 64.65, "y": 82.49, "role": "goal", "size": "sm", "title": "Break the Sword Cemetery Seal"}, {"x": 49.02, "y": 74.74, "role": "goal", "size": "sm", "title": "Lost in the Snow"}, {"x": 49.61, "y": 73.83, "role": "goal", "size": "sm", "title": "Ah, Fresh Meat!"}, {"x": 46.22, "y": 90.56, "role": "goal", "size": "sm", "title": "A Land Entombed"}, {"x": 43.75, "y": 52.02, "role": "goal", "size": "sm", "title": "In the Aftermath"}, {"x": 40.82, "y": 55.34, "role": "goal", "size": "sm", "title": "Thief-Catcher"}, {"x": 39.71, "y": 83.98, "role": "goal", "size": "sm", "title": "The Festering Fang"}, {"x": 89.78, "y": 41.41, "role": "goal", "size": "sm", "title": "Time and Wind"}, {"x": 24.8, "y": 11.91, "role": "goal", "size": "sm", "title": "Winds Beneath the Tower of Silence"}, {"x": 35.81, "y": 49.8, "role": "goal", "size": "sm", "title": "Equivalent Exchange"}, {"x": 49.41, "y": 74.48, "role": "goal", "size": "sm", "title": "In the Mountains"}, {"x": 40.82, "y": 55.34, "role": "goal", "size": "sm", "title": "The Great Mountain Survey II"}]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>
