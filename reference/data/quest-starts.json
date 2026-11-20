@@ -163,6 +163,41 @@
   "subarea": "Cinnabar Cliff",
   "type": "World"
  },
+ "A Commission Catches You in Natlan": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 23754,
+  "firstSpeaker": "???",
+  "firstStep": "Go to the Masters of the Night-Wind",
+  "npcs": [
+   "Allier",
+   "Citlali",
+   "Grudoc",
+   "Montluson"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Masters of the Night-Wind\", Natlan",
+  "steps": 4,
+  "subarea": null,
+  "type": "Story"
+ },
+ "A Day the Grand Temple Inscribed with Ages": {
+  "area": "Temple of Space",
+  "dlg": 8741,
+  "firstSpeaker": "Istoria",
+  "firstStep": "Find Zeitlind's lost belongings and liberate the areas",
+  "npcs": [
+   "Dex",
+   "Istoria",
+   "Zeitlind"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Temple of Space",
+  "steps": 10,
+  "subarea": "Pillar Hall Central Zone",
+  "type": "World"
+ },
  "A Delicacy for Nara": {
   "area": "Vanarana (Area)",
   "dlg": 7498,
@@ -182,6 +217,27 @@
   "subarea": "Vanarana (Subarea)",
   "type": "World"
  },
+ "A Faint Signal Lingers": {
+  "area": null,
+  "dlg": 59948,
+  "firstSpeaker": "Xilonen",
+  "firstStep": "Head to Xilonen's workshop",
+  "npcs": [
+   "Apoxpalon",
+   "Cheven",
+   "Iknal",
+   "Kachina",
+   "Nepecha",
+   "Tlazolli",
+   "Xilonen"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Children of Echoes\"|,}} Natlan",
+  "steps": 9,
+  "subarea": "\"Children of Echoes\"",
+  "type": "Story"
+ },
  "A Fontainian Message": {
   "area": "Court of Fontaine Region",
   "dlg": 13954,
@@ -197,6 +253,40 @@
   "start": "Court of Fontaine: Palais Mermonia, Fontaine",
   "steps": 7,
   "subarea": "Court of Fontaine",
+  "type": "World"
+ },
+ "A Hero's Rite": {
+  "area": "Coatepec Mountain",
+  "dlg": 22591,
+  "firstSpeaker": "Trinidad",
+  "firstStep": "Go to the mountain",
+  "npcs": [
+   "Ajaw",
+   "Huni",
+   "Kinich",
+   "Enjou",
+   "Trinidad"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": null,
+  "steps": 5,
+  "subarea": "\"Scions of the Canopy\"",
+  "type": "Story"
+ },
+ "A Land Entombed": {
+  "area": "Dragonspine",
+  "dlg": 8428,
+  "firstSpeaker": "Stevens",
+  "firstStep": "Return to the base camp and ask the researchers for clues regarding the journal.",
+  "npcs": [
+   "Stevens"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Dragonspine, Mondstadt",
+  "steps": 7,
+  "subarea": null,
   "type": "World"
  },
  "A Letter": {
@@ -254,6 +344,28 @@
   "steps": 9,
   "subarea": null,
   "type": "World"
+ },
+ "A Mysterious Visitor From Huitztlan": {
+  "area": "Coatepec Mountain",
+  "dlg": 20633,
+  "firstSpeaker": "Huni",
+  "firstStep": "Go beneath the cliffs outside the Scions of the Canopy's dwellings",
+  "npcs": [
+   "Ajaw",
+   "Enjou",
+   "Huni",
+   "Pocchi",
+   "Poggi",
+   "Ponini",
+   "Sanka",
+   "Toba"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Coatepec Mountain, Natlan",
+  "steps": 3,
+  "subarea": null,
+  "type": "Story"
  },
  "A New Star Approaches": {
   "area": null,
@@ -434,6 +546,36 @@
   "subarea": "Valley of Dahri",
   "type": "World"
  },
+ "After the Storm": {
+  "area": "Starfell Valley",
+  "dlg": 3381,
+  "firstSpeaker": "Wagner",
+  "firstStep": "Talk to Wagner",
+  "npcs": [
+   "Wagner"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete Song of the Dragon and Freedom",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 3,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
+ "Ah, Fresh Meat!": {
+  "area": "Dragonspine",
+  "dlg": 6492,
+  "firstSpeaker": "Harris",
+  "firstStep": "Obtain 10 pieces of Chilled Meat",
+  "npcs": [
+   "Harris"
+  ],
+  "region": "Mondstadt",
+  "requirement": "* {{Quest|In the Mountains|requirements = 1|display = fullSentence}}",
+  "start": "Dragonspine Adventurer Camp, Mondstadt",
+  "steps": 10,
+  "subarea": "Snow-Covered Path",
+  "type": "World"
+ },
  "Akasha Pulses, the Kalpa Flame Rises": {
   "area": null,
   "dlg": 0,
@@ -446,6 +588,21 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Alfred's Bouquet": {
+  "area": "Starfell Valley",
+  "dlg": 2452,
+  "firstSpeaker": "Heard you need Cecilias...",
+  "firstStep": "Give Alfred three Cecilias/Windwheel Asters",
+  "npcs": [
+   "Alfred"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Mondstadt, Mondstadt",
+  "steps": 1,
+  "subarea": "Mondstadt City",
+  "type": "World"
  },
  "Amir's Raw Meat Commission": {
   "area": "Avidya Forest",
@@ -475,6 +632,30 @@
   "start": "Mt. Aocang, Liyue",
   "steps": 10,
   "subarea": "Mt. Aocang",
+  "type": "World"
+ },
+ "An Air Race and an Alibi": {
+  "area": null,
+  "dlg": 13127,
+  "firstSpeaker": "Qucusaurus",
+  "firstStep": "Head to the starting point of the air race",
+  "npcs": [
+   "Cisik",
+   "Lamizana",
+   "Little One",
+   "Lliwa",
+   "Oberon",
+   "Paran",
+   "Qucusaurus",
+   "Quilla",
+   "Taruka",
+   "Temach"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": null,
+  "steps": 12,
+  "subarea": null,
   "type": "World"
  },
  "An Art to Be Honed": {
@@ -747,6 +928,21 @@
   "subarea": "Port Ormos",
   "type": "World"
  },
+ "Ardent Land of Plenty": {
+  "area": "Atocpan",
+  "dlg": 12772,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to the girl by the side of the road",
+  "npcs": [
+   "Varesa"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Atocpan, Natlan",
+  "steps": 7,
+  "subarea": null,
+  "type": "Story"
+ },
  "Arina's Nilotpala Lotuses": {
   "area": "Avidya Forest",
   "dlg": 2008,
@@ -838,6 +1034,46 @@
   "start": "Inazuma City, Inazuma",
   "steps": 5,
   "subarea": "Inazuma City",
+  "type": "World"
+ },
+ "Beat the Clock: 24 Hours": {
+  "area": "Quahuacan Cliff",
+  "dlg": 10386,
+  "firstSpeaker": "Gentle Voice",
+  "firstStep": "Investigate the area near the location Taruka mentioned",
+  "npcs": [
+   "Cisik",
+   "Lamizana",
+   "Little One",
+   "Lliwa",
+   "Oberon",
+   "Paran",
+   "Quilla",
+   "Taruka",
+   "Temach"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 9,
+  "subarea": null,
+  "type": "World"
+ },
+ "Beneath the Crystal Rock": {
+  "area": "Tequemecan Valley",
+  "dlg": 45934,
+  "firstSpeaker": "Titu",
+  "firstStep": "Go to the Lesser Shadow Pin with Titu",
+  "npcs": [
+   "Little One",
+   "Titu",
+   "Yukom"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tequemecan Valley, Natlan",
+  "steps": 29,
+  "subarea": null,
   "type": "World"
  },
  "Big Business": {
@@ -941,6 +1177,36 @@
   "subarea": "Mondstadt City",
   "type": "World"
  },
+ "Break the Sword Cemetery Seal": {
+  "area": "Galesong Hill",
+  "dlg": 10226,
+  "firstSpeaker": "Dr. Livingstone",
+  "firstStep": "Explore and unlock the tri-seal",
+  "npcs": [
+   "Dr. Livingstone"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|Unexpected Power|requirements = 1|display = fullSentence}}",
+  "start": "Dadaupa Gorge, Mondstadt",
+  "steps": 2,
+  "subarea": "Dadaupa Gorge",
+  "type": "World"
+ },
+ "Brook the Carnivore": {
+  "area": "Windwail Highland",
+  "dlg": 2578,
+  "firstSpeaker": "Brook",
+  "firstStep": "Give Brook six servings of Fowl/Raw Meat",
+  "npcs": [
+   "Brook"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Springvale, Mondstadt",
+  "steps": 2,
+  "subarea": "Springvale",
+  "type": "World"
+ },
  "Bruneau's Flower Request": {
   "area": "Court of Fontaine Region",
   "dlg": 1444,
@@ -955,6 +1221,23 @@
   "steps": 1,
   "subarea": "Court of Fontaine",
   "type": "World"
+ },
+ "Calling from the Masters of the Night-Wind": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 21164,
+  "firstSpeaker": "???",
+  "firstStep": "Go to the settlement of the Masters of the Night-Wind",
+  "npcs": [
+   "Biram",
+   "Caholom",
+   "Tlapo"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Masters of the Night-Wind\", Natlan",
+  "steps": 8,
+  "subarea": null,
+  "type": "Story"
  },
  "Canticles of Harmony": {
   "area": null,
@@ -1063,6 +1346,21 @@
   "subarea": "Inazuma City",
   "type": "World"
  },
+ "Chloris' Flora Studies": {
+  "area": "Starfell Valley",
+  "dlg": 1861,
+  "firstSpeaker": "Chloris",
+  "firstStep": "Give three Cecilias to Chloris",
+  "npcs": [
+   "Chloris"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Starfell Valley, Mondstadt",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
  "Clean House": {
   "area": "Watatsumi Island",
   "dlg": 19326,
@@ -1095,6 +1393,23 @@
   "subarea": "Chinju Forest;Kamisato Estate;Araumi",
   "type": "World"
  },
+ "Cleanup At Dawn": {
+  "area": "Windwail Highland",
+  "dlg": 4843,
+  "firstSpeaker": "Adelinde",
+  "firstStep": "Follow Adelinde into the Dawn Winery",
+  "npcs": [
+   "Adelinde",
+   "Hillie",
+   "Moco"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete ''Song of the Dragon and Freedom''",
+  "start": "Dawn Winery, Mondstadt",
+  "steps": 4,
+  "subarea": "Dawn Winery",
+  "type": "World"
+ },
  "Collection of Dragons and Snakes": {
   "area": "Enkanomiya",
   "dlg": 10427,
@@ -1108,6 +1423,21 @@
   "start": "The Narrows, Enkanomiya, Inazuma",
   "steps": 5,
   "subarea": "The Narrows",
+  "type": "World"
+ },
+ "Connor's Brew": {
+  "area": "Windwail Highland",
+  "dlg": 4126,
+  "firstSpeaker": "Connor",
+  "firstStep": "Give ten servings of Wheat / three Flaming Flower Stamens / three Mist Flower Corollas / three sets of Dandelion Seeds to Connor",
+  "npcs": [
+   "Connor"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Dawn Winery, Mondstadt",
+  "steps": 1,
+  "subarea": "Dawn Winery",
   "type": "World"
  },
  "Cooking, a Pleasant Memory": {
@@ -1472,6 +1802,24 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Equivalent Exchange": {
+  "area": "Starfell Valley",
+  "dlg": 17233,
+  "firstSpeaker": "Viktor",
+  "firstStep": "Talk to Sara",
+  "npcs": [
+   "Charles",
+   "Flora",
+   "Sara",
+   "Viktor"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Favonius Cathedral, Mondstadt, Mondstadt",
+  "steps": 13,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "Eremite Mayhem": {
   "area": null,
   "dlg": 0,
@@ -1520,6 +1868,24 @@
   "subarea": "Yasna Monument",
   "type": "World"
  },
+ "Every Aspect of a Warrior": {
+  "area": null,
+  "dlg": 15699,
+  "firstSpeaker": "Acomitl",
+  "firstStep": "Talk to everyone",
+  "npcs": [
+   "Acomitl",
+   "Manyoya",
+   "Matahga",
+   "Xueyoni"
+  ],
+  "region": "Natlan",
+  "requirement": "Complete the following:",
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 6,
+  "subarea": null,
+  "type": "World"
+ },
  "Farewell, Archaic Lord": {
   "area": null,
   "dlg": 0,
@@ -1532,6 +1898,28 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Farewell, Final Saurus Cracker": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 15938,
+  "firstSpeaker": "Rawr!",
+  "firstStep": "Indwell an Iktomisaurus and track the strange scent",
+  "npcs": [
+   "Cisik",
+   "Furball",
+   "Lamizana",
+   "Little One",
+   "Oberon",
+   "Quilla",
+   "Taruka",
+   "Temach"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": null,
+  "steps": 9,
+  "subarea": null,
+  "type": "World"
  },
  "Fate of a Fighter": {
   "area": "Yashiori Island",
@@ -1672,6 +2060,21 @@
   "start": "Merusea Village, Fontaine",
   "steps": 3,
   "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "Flighty Flora... and Flora": {
+  "area": "Starfell Valley",
+  "dlg": 5929,
+  "firstSpeaker": "Flora",
+  "firstStep": "Collect flowers for Flora",
+  "npcs": [
+   "Flora"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|24;The Outlander Who Caught the Wind|requirements = 1|display = bullet}}",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 5,
+  "subarea": "Mondstadt City",
   "type": "World"
  },
  "Foggy Forest Path": {
@@ -1829,6 +2232,19 @@
   "subarea": null,
   "type": "World"
  },
+ "For a Tomorrow Without Tears": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "For the Children of the Past": {
   "area": "Vissudha Field",
   "dlg": 36790,
@@ -1843,6 +2259,21 @@
   "start": "Fane of Ashvattha, Sumeru",
   "steps": 29,
   "subarea": "Fane of Ashvattha",
+  "type": "World"
+ },
+ "Forest Boar Pauses for the Bloom": {
+  "area": "Windrest Peak",
+  "dlg": 5249,
+  "firstSpeaker": "Leopoldine",
+  "firstStep": "Talk to Leopoldine",
+  "npcs": [
+   "Leopoldine"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Millhaven, Mondstadt",
+  "steps": 8,
+  "subarea": "Millhaven",
   "type": "World"
  },
  "Fortune Plango Vulnera": {
@@ -2122,6 +2553,21 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Glory's Wish": {
+  "area": "Starfell Valley",
+  "dlg": 1822,
+  "firstSpeaker": "Glory",
+  "firstStep": "Give three sets of Dandelion Seeds to Glory",
+  "npcs": [
+   "Glory"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Mondstadt, Mondstadt",
+  "steps": 1,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "Golden Slumber": {
   "area": null,
   "dlg": 0,
@@ -2228,6 +2674,21 @@
   "start": "Court of Fontaine Region, Fontaine",
   "steps": 3,
   "subarea": null,
+  "type": "World"
+ },
+ "Helen's Special Blend": {
+  "area": "Starfell Valley",
+  "dlg": 1904,
+  "firstSpeaker": "Helen",
+  "firstStep": "Give ten Sweet Flowers to Helen",
+  "npcs": [
+   "Helen"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Mondstadt, Mondstadt",
+  "steps": 3,
+  "subarea": "Mondstadt City",
   "type": "World"
  },
  "Herbalist's Forage": {
@@ -2360,6 +2821,24 @@
   "subarea": "Inazuma City",
   "type": "World"
  },
+ "Hoarse Echoes": {
+  "area": "Tequemecan Valley",
+  "dlg": 16401,
+  "firstSpeaker": "Cheven",
+  "firstStep": "Go visit Tlazolli with Cheven",
+  "npcs": [
+   "Cheven",
+   "Iengu",
+   "Imix",
+   "Tlazolli"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Children of Echoes\"|,}} Tequemecan Valley, Natlan",
+  "steps": 3,
+  "subarea": "\"Children of Echoes\"",
+  "type": "Story"
+ },
  "Home Lies Over the Ocean": {
   "area": "Narukami Island",
   "dlg": 12079,
@@ -2407,6 +2886,31 @@
   "steps": 1,
   "subarea": null,
   "type": "World"
+ },
+ "I, Flame Bearer": {
+  "area": "Coatepec Mountain",
+  "dlg": 46179,
+  "firstSpeaker": "Toba",
+  "firstStep": "Walk around the tribe the next day (08:00 - 12:00)",
+  "npcs": [
+   "Ajaw",
+   "Enjou",
+   "Huni",
+   "Kinich",
+   "Matthias",
+   "Pocchi",
+   "Poggi",
+   "Ponche",
+   "Ponini",
+   "Thiago",
+   "Toba"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Scions of the Canopy\"|,}} Natlan",
+  "steps": 16,
+  "subarea": "\"Scions of the Canopy\"",
+  "type": "Story"
  },
  "Impromptu Poem of the Crimson Dawn": {
   "area": "Erinnyes Forest",
@@ -2511,6 +3015,60 @@
   "subarea": "New Fontaine Research Institute",
   "type": "World"
  },
+ "In the Aftermath": {
+  "area": "Starfell Valley",
+  "dlg": 4850,
+  "firstSpeaker": "Huffman",
+  "firstStep": "Talk to Huffman",
+  "npcs": [
+   "Huffman"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete ''Song of the Dragon and Freedom''",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 17,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
+ "In the Mountains": {
+  "area": "Dragonspine",
+  "dlg": 11256,
+  "firstSpeaker": "Iris",
+  "firstStep": "Investigate the strange ice",
+  "npcs": [
+   "Iris (Dragonspine Adventurer Camp)"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Dragonspine Adventurer Camp, Mondstadt",
+  "steps": 52,
+  "subarea": "Snow-Covered Path",
+  "type": "World"
+ },
+ "Incidents Are Ever Sudden": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 10931,
+  "firstSpeaker": "Temach",
+  "firstStep": "Talk to Temach",
+  "npcs": [
+   "Carrewoof",
+   "Cisik",
+   "Lamizana",
+   "Little One",
+   "Lliwa",
+   "Oberon",
+   "Paran",
+   "Quilla",
+   "Taruka",
+   "Temach"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Scorchwind Trial Grounds, Natlan",
+  "steps": 7,
+  "subarea": null,
+  "type": "World"
+ },
  "Initial Facts": {
   "area": "Court of Fontaine Region",
   "dlg": 1390,
@@ -2554,6 +3112,24 @@
   "requirement": null,
   "start": "Ardravi Valley, Sumeru",
   "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Is \"Intensity\" Really the Key?": {
+  "area": "Atocpan",
+  "dlg": 10556,
+  "firstSpeaker": "Yoleehe",
+  "firstStep": "Seal the geothermal vent",
+  "npcs": [
+   "Linaha",
+   "Little One",
+   "Ma'chah",
+   "Yoleehe"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Atocpan, Natlan",
+  "steps": 2,
   "subarea": null,
   "type": "World"
  },
@@ -2725,6 +3301,23 @@
   "subarea": null,
   "type": null
  },
+ "Kinich's Deal (Quest)": {
+  "area": "Coatepec Mountain",
+  "dlg": 20208,
+  "firstSpeaker": "Kinich",
+  "firstStep": "Go to Elder Trinidad's home",
+  "npcs": [
+   "Kinich",
+   "Trinidad",
+   "Wayna"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Scions of the Canopy\"|,}} Natlan",
+  "steps": 3,
+  "subarea": "\"Scions of the Canopy\"",
+  "type": "Story"
+ },
  "Kourosh's Sumeru Roses": {
   "area": "Avidya Forest",
   "dlg": 1560,
@@ -2774,6 +3367,22 @@
   "steps": 7,
   "subarea": "Petrichor",
   "type": "World"
+ },
+ "Legendary \"Color\"": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 15599,
+  "firstSpeaker": "Toltec",
+  "firstStep": "Rendezvous with the guide",
+  "npcs": [
+   "Biram",
+   "Toltec"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Masters of the Night-Wind\", Natlan",
+  "steps": 9,
+  "subarea": null,
+  "type": "Story"
  },
  "Leroy: Beautiful Friends": {
   "area": "Court of Fontaine Region",
@@ -2932,6 +3541,40 @@
   "subarea": "\"A Lonely Place\"; \"A Very Warm Place\"",
   "type": "World"
  },
+ "Lingering Malady": {
+  "area": "Starfell Valley",
+  "dlg": 5144,
+  "firstSpeaker": "Aramis",
+  "firstStep": "Talk to Aramis",
+  "npcs": [
+   "Aramis"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|30;For a Tomorrow Without Tears|requirements = 1|display = bullet}}",
+  "start": "Outside the Cathedral, Mondstadt",
+  "steps": 3,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
+ "Lion's Celerity": {
+  "area": "Temple of Space",
+  "dlg": 11559,
+  "firstSpeaker": "???",
+  "firstStep": "Leave with Zeitlind",
+  "npcs": [
+   "Alara",
+   "Dex",
+   "Istoria",
+   "Melanta",
+   "Zeitlind"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Temple of Space",
+  "steps": 21,
+  "subarea": "Apathic Interval",
+  "type": "World"
+ },
  "Lost in the Sands": {
   "area": "Land of Lower Setekh",
   "dlg": 51204,
@@ -2953,6 +3596,21 @@
   "start": "Aaru Village, Sumeru",
   "steps": 33,
   "subarea": "Aaru Village",
+  "type": "World"
+ },
+ "Lost in the Snow": {
+  "area": "Dragonspine",
+  "dlg": 7819,
+  "firstSpeaker": "Joel",
+  "firstStep": "Follow the buzzword to search for Joel's father",
+  "npcs": [
+   "Joel"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Dragonspine Adventurer Camp, Dragonspine",
+  "steps": 7,
+  "subarea": "Snow-Covered Path",
   "type": "World"
  },
  "Lotus Eater": {
@@ -2984,6 +3642,21 @@
   "start": "Luhua Pool, Liyue",
   "steps": 14,
   "subarea": "Luhua Pool",
+  "type": "World"
+ },
+ "Manly Jack's Manly Journey of Manliness": {
+  "area": "Galesong Hill",
+  "dlg": 2891,
+  "firstSpeaker": "Manly Jack",
+  "firstStep": null,
+  "npcs": [
+   "Manly Jack"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Galesong Hill, Mondstadt",
+  "steps": 0,
+  "subarea": null,
   "type": "World"
  },
  "Mary-Ann's Story": {
@@ -3097,6 +3770,21 @@
   "subarea": "Mawtiyima Forest",
   "type": "World"
  },
+ "Mondstadt and its Archon": {
+  "area": "Starfell Valley",
+  "dlg": 4300,
+  "firstSpeaker": "Grace",
+  "firstStep": "Search for the Dandelion Seeds she requested",
+  "npcs": [
+   "Grace"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete Should You Be Trapped in a Windless Land",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 5,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "Monster Mayhem": {
   "area": "Kannazuka",
   "dlg": 0,
@@ -3111,6 +3799,31 @@
   "steps": 1,
   "subarea": null,
   "type": "World"
+ },
+ "Mortal Pursuit": {
+  "area": "Quahuacan Cliff",
+  "dlg": 18917,
+  "firstSpeaker": "Chasca",
+  "firstStep": "Go to the Children of Echoes to gather intel",
+  "npcs": [
+   "Allpa",
+   "Chasca",
+   "Coya",
+   "Coyllur",
+   "Huascar",
+   "Inkanak",
+   "Mukki",
+   "Mutota",
+   "Puma",
+   "Xilonen",
+   "Zhunan"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 9,
+  "subarea": null,
+  "type": "Story"
  },
  "Muirne's Better Butter": {
   "area": "Court of Fontaine Region",
@@ -3355,6 +4068,23 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Orchard Repose": {
+  "area": "Atocpan",
+  "dlg": 25183,
+  "firstSpeaker": "Varesa",
+  "firstStep": "Head to the Resonating Arena",
+  "npcs": [
+   "Iansan",
+   "Vanana",
+   "Varesa"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Collective of Plenty\", Natlan",
+  "steps": 7,
+  "subarea": "\"Collective of Plenty\"",
+  "type": "Story"
+ },
  "Orobashi's Legacy": {
   "area": null,
   "dlg": 0,
@@ -3519,6 +4249,26 @@
   "subarea": "Court of Fontaine",
   "type": "World"
  },
+ "Peace to the Slumbering": {
+  "area": "Tequemecan Valley",
+  "dlg": 22767,
+  "firstSpeaker": "Yukom",
+  "firstStep": "Check the hole below",
+  "npcs": [
+   "\"Beast With Fur Like That of Night\"",
+   "Irizar",
+   "Little One",
+   "Titu",
+   "Yukom",
+   "Zephaniah"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Land of Myriad Megaliths, Natlan",
+  "steps": 14,
+  "subarea": null,
+  "type": "World"
+ },
  "Perfect Shot": {
   "area": "Sea of Clouds",
   "dlg": 5718,
@@ -3561,6 +4311,33 @@
   "steps": 1,
   "subarea": "Port Ormos",
   "type": "World"
+ },
+ "Please, great shaman!": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 50486,
+  "firstSpeaker": "Citlali",
+  "firstStep": "Accompany Citlali for the investigation",
+  "npcs": [
+   "Allier",
+   "Atihk",
+   "Aywastin",
+   "Badru",
+   "Besuci",
+   "Biram",
+   "Caholom",
+   "Chogan",
+   "Citlali",
+   "Etchemin",
+   "Grudoc",
+   "Montluson",
+   "Tlapo"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Masters of the Night-Wind\", Natlan",
+  "steps": 9,
+  "subarea": null,
+  "type": "Story"
  },
  "Prelude of Blancheur and Noirceur": {
   "area": null,
@@ -3694,6 +4471,21 @@
   "subarea": "Qiaoying Village",
   "type": "World"
  },
+ "Question and Answer": {
+  "area": "Starfell Valley",
+  "dlg": 6022,
+  "firstSpeaker": "Swan",
+  "firstStep": "Talk to Swan",
+  "npcs": [
+   "Swan"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|24;For a Tomorrow Without Tears|requirements = 1|display = bullet}}",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 2,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "Questions and Answers": {
   "area": "Court of Fontaine Region",
   "dlg": 58224,
@@ -3784,6 +4576,22 @@
   "start": "Grand Narukami Shrine, Inazuma",
   "steps": 1,
   "subarea": "Grand Narukami Shrine (Subarea)",
+  "type": "World"
+ },
+ "Ripe For Trouble": {
+  "area": "Tequemecan Valley",
+  "dlg": 27822,
+  "firstSpeaker": "???",
+  "firstStep": "Enter the cavern and look for Tisoc, who has gone missing",
+  "npcs": [
+   "Poca",
+   "Tisoc"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tequemecan Valley, Natlan",
+  "steps": 10,
+  "subarea": null,
   "type": "World"
  },
  "Risen Moon Chapter": {
@@ -3914,6 +4722,28 @@
   "steps": 32,
   "subarea": "Mt. Yougou",
   "type": "World"
+ },
+ "Sage Supreme": {
+  "area": "Atocpan",
+  "dlg": 38442,
+  "firstSpeaker": "\"Epic Feast Showdown\" Promotional Board",
+  "firstStep": "Head to the venue of the Epic Feast Showdown",
+  "npcs": [
+   "Acatl",
+   "Ammuna",
+   "Asmu",
+   "Atolli",
+   "Huzziya",
+   "Mushwatalli",
+   "Sage-Lord of Fungi",
+   "Varesa"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Collective of Plenty\", Natlan",
+  "steps": 5,
+  "subarea": "\"Collective of Plenty\"",
+  "type": "Story"
  },
  "Sakura Arborism": {
   "area": "Kannazuka",
@@ -4050,6 +4880,22 @@
   "subarea": null,
   "type": null
  },
+ "Seeker No Finding": {
+  "area": "Toyac Springs",
+  "dlg": 19128,
+  "firstSpeaker": "Chikya",
+  "firstStep": "Head to the Upper Sanctum",
+  "npcs": [
+   "Chikya",
+   "Little One"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Ameyalco Waters, Natlan",
+  "steps": 12,
+  "subarea": "Ameyalco Waters",
+  "type": "World"
+ },
  "Seirai Stormchasers: Part I": {
   "area": "Narukami Island",
   "dlg": 26888,
@@ -4116,6 +4962,42 @@
   "subarea": null,
   "type": "World"
  },
+ "Serenity's Reprise": {
+  "area": "Tequemecan Valley",
+  "dlg": 3641,
+  "firstSpeaker": "Xilonen",
+  "firstStep": "Visit Xilonen's workshop again the next day",
+  "npcs": [
+   "Xilonen"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Children of Echoes\"|,}} Natlan",
+  "steps": 2,
+  "subarea": "\"Children of Echoes\"",
+  "type": "Story"
+ },
+ "Seven-Hued Ruins": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 38683,
+  "firstSpeaker": "Citlali",
+  "firstStep": "Wait till 11:00 &ndash; 13:00 the next day",
+  "npcs": [
+   "Allier",
+   "Citlali",
+   "Grudoc",
+   "Huitzilin",
+   "Montluson",
+   "Otila",
+   "Tlapo"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tezcatepetonco Range, Natlan",
+  "steps": 22,
+  "subarea": null,
+  "type": "Story"
+ },
  "Share Not Your Treasures": {
   "area": "Qiongji Estuary",
   "dlg": 3620,
@@ -4142,6 +5024,22 @@
   "subarea": "Mt. Lingmeng",
   "type": "World"
  },
+ "Sing, Ho, For the Greatness of Fat!": {
+  "area": "Atocpan",
+  "dlg": 8754,
+  "firstSpeaker": "Suriqui",
+  "firstStep": "Complete Suriqui's challenge",
+  "npcs": [
+   "Illimani",
+   "Suriqui"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Atocpan, Natlan",
+  "steps": 7,
+  "subarea": null,
+  "type": "World"
+ },
  "Smiley's Selections": {
   "area": "Bishui Plain",
   "dlg": 0,
@@ -4156,6 +5054,35 @@
   "steps": 1,
   "subarea": "Wangshu Inn",
   "type": "World"
+ },
+ "Smokeless War": {
+  "area": "Atocpan",
+  "dlg": 39185,
+  "firstSpeaker": "Acatl",
+  "firstStep": "Return to the tribe and prepare to cook the mushrooms",
+  "npcs": [
+   "Acatl",
+   "Atolli",
+   "Camotli",
+   "Chatraka",
+   "Iansan",
+   "Katheryne (Natlan)",
+   "Mushrial",
+   "Mushriu",
+   "Mushriwaili",
+   "Sage-Lord of Fungi",
+   "Soletl",
+   "Teoxoletl",
+   "Tighnari",
+   "Varesa",
+   "Xoctli"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Collective of Plenty\", Natlan",
+  "steps": 10,
+  "subarea": "\"Collective of Plenty\"",
+  "type": "Story"
  },
  "Snapshots": {
   "area": "Sea of Clouds",
@@ -4205,6 +5132,43 @@
   "steps": 14,
   "subarea": null,
   "type": "World"
+ },
+ "Someone Trustworthy": {
+  "area": "Toyac Springs",
+  "dlg": 32689,
+  "firstSpeaker": "Mualani",
+  "firstStep": "Issue Mualani an invitation",
+  "npcs": [
+   "Anchieta",
+   "Karya",
+   "Koolau",
+   "Mualani",
+   "Nuu",
+   "Pakaa Nui",
+   "Seketo",
+   "Suya",
+   "Viramdra",
+   "Yelafath"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"People of the Springs\"|,}} Natlan",
+  "steps": 7,
+  "subarea": "\"People of the Springs\"",
+  "type": "Story"
+ },
+ "Song of the Dragon and Freedom": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Sprouting Seedlings": {
   "area": "Vanarana (Area)",
@@ -4373,6 +5337,21 @@
   "steps": 1,
   "subarea": "Court of Fontaine",
   "type": "World"
+ },
+ "Tales of Winter": {
+  "area": "Starfell Valley",
+  "dlg": 9769,
+  "firstSpeaker": "Viktor",
+  "firstStep": "Talk to Viktor",
+  "npcs": [
+   "Viktor"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Favonius Cathedral, Mondstadt",
+  "steps": 3,
+  "subarea": "Mondstadt City",
+  "type": "Commission"
  },
  "Taste of Happiness": {
   "area": "Vanarana (Area)",
@@ -4547,6 +5526,23 @@
   "subarea": null,
   "type": "World"
  },
+ "Tepetli Dissonance": {
+  "area": "Tequemecan Valley",
+  "dlg": 10383,
+  "firstSpeaker": "Imix",
+  "firstStep": "Ask about Imix's situation",
+  "npcs": [
+   "Cheven",
+   "Coztic",
+   "Imix"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Children of Echoes\"|,}} Tequemecan Valley, Natlan",
+  "steps": 4,
+  "subarea": "\"Children of Echoes\"",
+  "type": "Story"
+ },
  "The Adventurers' Guild's Affairs": {
   "area": "Sea of Clouds",
   "dlg": 7415,
@@ -4641,6 +5637,30 @@
   "subarea": null,
   "type": "World"
  },
+ "The Color of Memory": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 23753,
+  "firstSpeaker": "Citlali",
+  "firstStep": "Accompany Citlali back to her dwelling",
+  "npcs": [
+   "Allier",
+   "Aywastin",
+   "Besuci",
+   "Biram",
+   "Caholom",
+   "Chogan",
+   "Citlali",
+   "Huitzilin",
+   "Montluson",
+   "Tlapo"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tezcatepetonco Range, Natlan",
+  "steps": 5,
+  "subarea": null,
+  "type": "Story"
+ },
  "The Dealing Sands": {
   "area": "Chenyu Vale: Upper Vale",
   "dlg": 13210,
@@ -4715,6 +5735,22 @@
   "subarea": "Jinren Island",
   "type": "World"
  },
+ "The Festering Fang": {
+  "area": "Dragonspine",
+  "dlg": 13306,
+  "firstSpeaker": "Iris",
+  "firstStep": "Ask the adventurers at the camp for news",
+  "npcs": [
+   "Iris (Dragonspine Adventurer Camp)",
+   "Orban"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|The Outlander Who Caught the Wind|requirements = 1|display = fullSentence}}",
+  "start": "Dragonspine, Mondstadt",
+  "steps": 7,
+  "subarea": null,
+  "type": "World"
+ },
  "The Final Chapter": {
   "area": "Lokapala Jungle",
   "dlg": 25511,
@@ -4730,6 +5766,24 @@
   "start": "Mawtiyima Forest, Sumeru",
   "steps": 33,
   "subarea": "Mawtiyima Forest",
+  "type": "World"
+ },
+ "The Final Judgment": {
+  "area": "Temple of Space",
+  "dlg": 30987,
+  "firstSpeaker": "Istoria",
+  "firstStep": "Go to the center of the Pillar Hall",
+  "npcs": [
+   "Dex",
+   "Istoria",
+   "Melanta",
+   "Zeitlind"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Temple of Space",
+  "steps": 23,
+  "subarea": null,
   "type": "World"
  },
  "The Foolish Fatuus": {
@@ -4882,6 +5936,37 @@
   "subarea": null,
   "type": "Commission"
  },
+ "The Great Mountain Survey": {
+  "area": "Dragonspine",
+  "dlg": 5037,
+  "firstSpeaker": "Esther",
+  "firstStep": "Retrieve the survey beacons (0/4)",
+  "npcs": [
+   "Esther"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Entombed City - Outskirts, Mondstadt",
+  "steps": 4,
+  "subarea": "Entombed City - Outskirts",
+  "type": "World"
+ },
+ "The Great Mountain Survey II": {
+  "area": "Dragonspine",
+  "dlg": 4291,
+  "firstSpeaker": "Esther",
+  "firstStep": "Talk to Esther",
+  "npcs": [
+   "Cyrus (Mondstadt)",
+   "Esther"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete In the Mountains and The Great Mountain Survey",
+  "start": "Dragonspine, Mondstadt",
+  "steps": 5,
+  "subarea": null,
+  "type": "World"
+ },
  "The Heavenly Stone's Debris": {
   "area": "The Chasm: Underground Mines",
   "dlg": 34177,
@@ -4988,6 +6073,50 @@
   "subarea": "Caesareum Palace; Capitolium; Faded Castle; Hortus Euergetis; Initium Iani; Machimos; Portus Anticus",
   "type": "World"
  },
+ "The Last Turnfire Night": {
+  "area": "Coatepec Mountain",
+  "dlg": 35966,
+  "firstSpeaker": "Kinich",
+  "firstStep": "Wait till the next day (18:00 &ndash; 20:00)",
+  "npcs": [
+   "Ajaw",
+   "Burkina",
+   "Enjou",
+   "Huni",
+   "Kinich",
+   "Kongamato",
+   "Nanna",
+   "Ponche",
+   "Thiago",
+   "Toba",
+   "Trinidad",
+   "Wayna"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Scions of the Canopy\"|,}} Natlan",
+  "steps": 19,
+  "subarea": "\"Scions of the Canopy\"",
+  "type": "Story"
+ },
+ "The Legend of the Mysterious Island": {
+  "area": "Toyac Springs",
+  "dlg": 29201,
+  "firstSpeaker": "Amina",
+  "firstStep": "Go to the designated location to lure the scammer out",
+  "npcs": [
+   "Amina",
+   "Ata (Koholasaur)",
+   "Kaeho",
+   "Kaulu"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"People of the Springs\"|,}} Natlan",
+  "steps": 5,
+  "subarea": "\"People of the Springs\"",
+  "type": "Story"
+ },
  "The Lone Phantom Sail": {
   "area": "Beryl Region",
   "dlg": 25258,
@@ -5020,6 +6149,26 @@
   "steps": 10,
   "subarea": null,
   "type": "World"
+ },
+ "The Meaning of Courage": {
+  "area": "Atocpan",
+  "dlg": 12635,
+  "firstSpeaker": "Acatl",
+  "firstStep": "Return and inform people in the tribe",
+  "npcs": [
+   "Acatl",
+   "Atolli",
+   "Iansan",
+   "Sage-Lord of Fungi",
+   "Varesa",
+   "Xoctli"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "\"Collective of Plenty\", Natlan",
+  "steps": 7,
+  "subarea": "\"Collective of Plenty\"",
+  "type": "Story"
  },
  "The Millennial Mountains": {
   "area": "The Chasm (Area)",
@@ -5096,6 +6245,42 @@
   "subarea": null,
   "type": null
  },
+ "The Mysterious Island's Truth": {
+  "area": "Toyac Springs",
+  "dlg": 37746,
+  "firstSpeaker": "Mualani",
+  "firstStep": "Go to where Mualani and the others are",
+  "npcs": [
+   "Karya",
+   "Koolau",
+   "Mualani",
+   "Nuu",
+   "Viramdra"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Ameyalco Waters, Natlan",
+  "steps": 17,
+  "subarea": "Ameyalco Waters",
+  "type": "Story"
+ },
+ "The Mystery of Tecoloapan Beach": {
+  "area": "Tezcatepetonco Range",
+  "dlg": 7391,
+  "firstSpeaker": "Weak Voice",
+  "firstStep": "Unveil the secrets of the island within the fog",
+  "npcs": [
+   "Mimic Wayob Manifestation",
+   "Sakaw",
+   "Weakened Wayob Manifestation"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "???, Natlan",
+  "steps": 7,
+  "subarea": "Tecoloapan Bay",
+  "type": "World"
+ },
  "The Narukami Trail": {
   "area": "Seirai Island",
   "dlg": 10954,
@@ -5132,6 +6317,31 @@
   "subarea": null,
   "type": "World"
  },
+ "The Night Before the Trial": {
+  "area": "Quahuacan Cliff",
+  "dlg": 15125,
+  "firstSpeaker": "Inkanak",
+  "firstStep": "Look for the on-site staff",
+  "npcs": [
+   "Allpa",
+   "Bold Investigator",
+   "Cautious Investigator",
+   "Chasca",
+   "Confused Investigator",
+   "Curious Investigator",
+   "Doubtful Investigator",
+   "Elderly Merchant",
+   "Inkanak",
+   "Isidore",
+   "Young Merchant"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 9,
+  "subarea": null,
+  "type": "Story"
+ },
  "The Ocean Pearl": {
   "area": "Sea of Clouds",
   "dlg": 19623,
@@ -5155,6 +6365,19 @@
   "steps": 17,
   "subarea": null,
   "type": "World"
+ },
+ "The Outlander Who Caught the Wind": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "The Path of Papers": {
   "area": "Avidya Forest",
@@ -5274,6 +6497,23 @@
   "steps": 15,
   "subarea": null,
   "type": "World"
+ },
+ "The Riddle of Sea and Sky": {
+  "area": "Toyac Springs",
+  "dlg": 36090,
+  "firstSpeaker": "Mualani",
+  "firstStep": "Go to the location analyzed by Mualani",
+  "npcs": [
+   "Karya",
+   "Mualani",
+   "Viramdra"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Ameyalco Waters, Natlan",
+  "steps": 12,
+  "subarea": "Ameyalco Waters",
+  "type": "Story"
  },
  "The Ritou Road": {
   "area": "Narukami Island",
@@ -5551,6 +6791,56 @@
   "subarea": "Mingyun Village",
   "type": "World"
  },
+ "The Wind Has Ceased": {
+  "area": "Windrest Peak",
+  "dlg": 35000,
+  "firstSpeaker": "???",
+  "firstStep": "Patrol the sanatorium",
+  "npcs": [
+   "\"Maukie\"",
+   "Dex",
+   "Huffman",
+   "Istoria",
+   "Josephus",
+   "Lipphart",
+   "Mann",
+   "Nihilita",
+   "Raumhilda",
+   "Zeitlind"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Dornman Port, Mondstadt",
+  "steps": 49,
+  "subarea": "Dornman Port",
+  "type": "World"
+ },
+ "The Wingless One of Tlalocan": {
+  "area": "Quahuacan Cliff",
+  "dlg": 42371,
+  "firstSpeaker": "???",
+  "firstStep": "Head to the area near the Flower-Feather Clan",
+  "npcs": [
+   "Allpa",
+   "Capac",
+   "Chasca",
+   "Coyllur",
+   "Cusco",
+   "Huascar",
+   "Kotimy",
+   "Mutota",
+   "Pixica",
+   "Warmi",
+   "Yatlan",
+   "Zhunan"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 11,
+  "subarea": null,
+  "type": "Story"
+ },
  "The World of Aranara": {
   "area": "Ardravi Valley",
   "dlg": 33653,
@@ -5619,6 +6909,21 @@
   "subarea": "Merusea Village",
   "type": "World"
  },
+ "Thief-Catcher": {
+  "area": "Starfell Valley",
+  "dlg": 4088,
+  "firstSpeaker": "Cyrus",
+  "firstStep": "Talk to Cyrus",
+  "npcs": [
+   "Cyrus (Mondstadt)"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Reach Adventure Rank 24",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 8,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "This Novel Seems... Problematic?": {
   "area": "Narukami Island",
   "dlg": 7546,
@@ -5653,6 +6958,41 @@
   "steps": 5,
   "subarea": "Inazuma City",
   "type": "Commission"
+ },
+ "Those Searching for the Mysterious Island": {
+  "area": "Toyac Springs",
+  "dlg": 7621,
+  "firstSpeaker": "Karya",
+  "firstStep": "Defeat the Koholasaurs",
+  "npcs": [
+   "Karya",
+   "Viramdra"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"People of the Springs\"|,}} Natlan",
+  "steps": 3,
+  "subarea": "\"People of the Springs\"",
+  "type": "Story"
+ },
+ "Threadlike Whispers": {
+  "area": null,
+  "dlg": 66085,
+  "firstSpeaker": "Avilix",
+  "firstStep": "Go to the Children of EchoesThis step is skipped if you simply approach Xilonen.",
+  "npcs": [
+   "Avilix",
+   "Iengu",
+   "Tlapal",
+   "Tlazolli",
+   "Xilonen"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "{{LL|\"Children of Echoes\"|,}} Natlan",
+  "steps": 9,
+  "subarea": "\"Children of Echoes\"",
+  "type": "Story"
  },
  "Threefold Expectations": {
   "area": "Chenyu Vale: Upper Vale",
@@ -5713,6 +7053,91 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Time Waits For No Man": {
+  "area": "Starfell Valley",
+  "dlg": 4621,
+  "firstSpeaker": "Cyrus",
+  "firstStep": "Start the quest by talking to Cyrus near the Adventurers' Guild Headquarters or Angel's Share in Mondstadt.",
+  "npcs": [
+   "Cyrus (Mondstadt)"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete Song of the Dragon and Freedom",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 3,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
+ "Time and Wind": {
+  "area": "Starfell Valley",
+  "dlg": 11266,
+  "firstSpeaker": "Ravaged Carving",
+  "firstStep": "Uncover the secret of the uninhabited island",
+  "npcs": [
+   "Henry Morton"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Reach the Nameless Island and read the Ragged Notebook",
+  "start": "Nameless Island, Mondstadt",
+  "steps": 19,
+  "subarea": null,
+  "type": "World"
+ },
+ "Time for the Showdown": {
+  "area": "Quahuacan Cliff",
+  "dlg": 40135,
+  "firstSpeaker": "Chasca",
+  "firstStep": "Investigate the airborne workshop",
+  "npcs": [
+   "Allpa",
+   "Chasca",
+   "Chime",
+   "Chimpu",
+   "Coya",
+   "Cusco",
+   "Mutota",
+   "Puma",
+   "Tepal"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 18,
+  "subarea": null,
+  "type": "Story"
+ },
+ "Timmie's Wish": {
+  "area": "Starfell Valley",
+  "dlg": 1642,
+  "firstSpeaker": "Timmie",
+  "firstStep": "Give ten servings of Wheat to Timmie",
+  "npcs": [
+   "Timmie"
+  ],
+  "region": "Mondstadt",
+  "requirement": null,
+  "start": "Starfell Valley, Mondstadt",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
+ },
+ "To the Night, What is the Night's": {
+  "area": "Coatepec Mountain",
+  "dlg": 20040,
+  "firstSpeaker": "???",
+  "firstStep": "Talk to the strange person",
+  "npcs": [
+   "Legba",
+   "Little One",
+   "\"Projection of an Obsidian Tablet\""
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tequemecan Valley, Natlan",
+  "steps": 10,
+  "subarea": "Ancestral Temple",
+  "type": "World"
+ },
  "To the Stars Shining in the Depths": {
   "area": null,
   "dlg": 0,
@@ -5725,6 +7150,50 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Tracer No Tracing": {
+  "area": "Toyac Springs",
+  "dlg": 32840,
+  "firstSpeaker": "???",
+  "firstStep": "Defeat the opponents",
+  "npcs": [
+   "Chikya",
+   "Little One"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Underground Lava River: Upper Level, Natlan",
+  "steps": 14,
+  "subarea": "Ameyalco Waters",
+  "type": "World"
+ },
+ "Tracks Through the Wilderness": {
+  "area": "Quahuacan Cliff",
+  "dlg": 35604,
+  "firstSpeaker": "Chasca",
+  "firstStep": "Go to the trial site",
+  "npcs": [
+   "Allpa",
+   "Chasca",
+   "Chimpu",
+   "Coya",
+   "Coyllur",
+   "Elderly Merchant",
+   "Huascar",
+   "Isidore",
+   "Mukki",
+   "Mutota",
+   "Pixica",
+   "Warmi",
+   "Young Merchant",
+   "Zhunan"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Quahuacan Cliff, Natlan",
+  "steps": 8,
+  "subarea": null,
+  "type": "Story"
  },
  "Trails in Tianqiu": {
   "area": "Minlin",
@@ -6064,6 +7533,24 @@
   "subarea": "Port Ormos",
   "type": "World"
  },
+ "Wailing Cacophony": {
+  "area": "Tequemecan Valley",
+  "dlg": 27484,
+  "firstSpeaker": "Warning Sign",
+  "firstStep": "Pursue Tlazolli",
+  "npcs": [
+   "Nechca",
+   "Nepecha",
+   "Tlazolli",
+   "Xilonen"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Tequemecan Valley, Natlan",
+  "steps": 11,
+  "subarea": null,
+  "type": "Story"
+ },
  "Waking from the Great Dream": {
   "area": null,
   "dlg": 0,
@@ -6144,6 +7631,23 @@
   "subarea": "Court of Fontaine",
   "type": "World"
  },
+ "Where the Koholasaurs Gather": {
+  "area": "Toyac Springs",
+  "dlg": 18987,
+  "firstSpeaker": "Mualani",
+  "firstStep": "Go to the agreed location",
+  "npcs": [
+   "Karya",
+   "Mualani",
+   "Viramdra"
+  ],
+  "region": "Natlan",
+  "requirement": null,
+  "start": "Ameyalco Waters, Natlan",
+  "steps": 10,
+  "subarea": "Ameyalco Waters",
+  "type": "Story"
+ },
  "Wherefore Did the Spiritstone Descend?": {
   "area": "The Chasm: Underground Mines",
   "dlg": 45728,
@@ -6180,6 +7684,39 @@
   "start": "Liyue Harbor, Liyue",
   "steps": 11,
   "subarea": "Liyue Harbor",
+  "type": "World"
+ },
+ "Windrise, Windfall": {
+  "area": "Windwail Highland",
+  "dlg": 3646,
+  "firstSpeaker": "Elzer",
+  "firstStep": "Talk to Elzer",
+  "npcs": [
+   "Elzer"
+  ],
+  "region": "Mondstadt",
+  "requirement": "Complete For a Tomorrow Without Tears",
+  "start": "Dawn Winery, Mondstadt",
+  "steps": 3,
+  "subarea": "Dawn Winery",
+  "type": "World"
+ },
+ "Winds Beneath the Tower of Silence": {
+  "area": "Windrest Peak",
+  "dlg": 21615,
+  "firstSpeaker": "Matthew",
+  "firstStep": "Head to the base of the old lighthouse",
+  "npcs": [
+   "Lennart",
+   "Matthew",
+   "Odolf",
+   "Winslow"
+  ],
+  "region": "Mondstadt",
+  "requirement": "{{Quest|Song of the Dragon and Freedom|requirements = 1|display = fullSentence}}",
+  "start": "Dornman Port, Mondstadt",
+  "steps": 22,
+  "subarea": "Dornman Port",
   "type": "World"
  },
  "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars": {

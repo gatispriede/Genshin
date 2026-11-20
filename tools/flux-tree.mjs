@@ -24,8 +24,8 @@ export const TREE = {
   '': ['reputation-quests.html'],
   // The overview is itself the parent: it has content, and the regions hang off it.
   'Reputation quests': [
-    'liyue-rep-route.html', 'inazuma-rep-route.html', 'sumeru-rep-route.html',
-    'fontaine-rep-route.html', 'reputation-compass.html',
+    'mondstadt-rep-route.html', 'liyue-rep-route.html', 'inazuma-rep-route.html', 'sumeru-rep-route.html',
+    'fontaine-rep-route.html', 'natlan-rep-route.html', 'reputation-compass.html',
   ],
   // One page per area under each region page (see REP_AREAS above).
   ...repAreaTree,
@@ -36,7 +36,7 @@ export const TREE = {
   'Farming & economy': [
     'codes.html', 'research/02-wishes-and-primogems.md', 'research/01-mora-farming.md',
     'research/07-ore-farming.md', 'research/03-character-materials.md', 'talent-farming.html',
-    'saurian-farming.html', 'local-legends.html', 'domains.html',
+    'saurian-farming.html', 'local-legends.html', 'domains.html', 'artifact-troves.html',
   ],
   'Maps & puzzles': [
     'starfell-valley-guide.html', 'dragonspine-quest-map.html', 'research/06a-in-the-mountains.md',
@@ -58,6 +58,7 @@ export const TREE = {
  * interactive quest map.
  */
 export const RENAMED = {
+  '5★ artifact troves — all 22': '5★ artifact troves',   // the count left the title (20 Nov)
   'Reputation quests — all regions': 'Reputation quests',
   'Sumeru rep quests — route': 'Sumeru reputation quests',
   'Liyue — every reputation quest': 'Liyue reputation quests',

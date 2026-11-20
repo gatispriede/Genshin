@@ -93,7 +93,7 @@ export function mapModule(attrs, html) {
   const blocks = raw.flatMap((m, i) => (m.shot ? [{
     id: `${id}-${i}`, at: i, reveal: 'click', w: boxW,
     placement: m.y > 75 ? 'top' : m.x > 55 ? 'left' : 'right',
-    html: `<img src="${esc(m.shot)}" alt="Where ${esc(m.title)} starts" style="width:100%;border-radius:6px">`
+    html: `<img src="${esc(m.shot)}" alt="${esc(m.alt || `Where ${m.title} starts`)}" style="width:100%;border-radius:6px">`
       + `<p style="margin:6px 0 0;font-size:.85rem"><b>${esc(m.label)} · ${esc(m.title)}</b>`
       + (m.info ? `<br>${esc(m.info)}` : '')
       + (m.card ? `<br><a href="${esc(m.card)}">Full entry ↓</a>` : '') + '</p>',

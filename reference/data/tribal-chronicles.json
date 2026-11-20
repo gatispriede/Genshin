@@ -1,0 +1,132 @@
+{
+ "_checked": "2026-11-20",
+ "_source": "Genshin Impact Wiki, Tribal Chronicles",
+ "tribes": [
+  {
+   "tribe": "People of the Springs",
+   "chapter": "Where the Springs Return",
+   "acts": [
+    {
+     "act": "I",
+     "name": "Those Searching for the Mysterious Island",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "The Legend of the Mysterious Island",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "Journey to the Mysterious Island",
+     "unlock": "Adventure Rank 40 and Into Eternal Night"
+    }
+   ]
+  },
+  {
+   "tribe": "Scions of the Canopy",
+   "chapter": "Yupanqui's Turnfire",
+   "acts": [
+    {
+     "act": "I",
+     "name": "A Mysterious Visitor From Huitztlan",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "A Hero's Rite",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "Kinich's Deal",
+     "unlock": null
+    }
+   ]
+  },
+  {
+   "tribe": "Children of Echoes",
+   "chapter": "A Prayer for Blessings, Told to Crested Peaks",
+   "acts": [
+    {
+     "act": "I",
+     "name": "Tepetli Dissonance",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "Hoarse Echoes",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "Melodious Chant",
+     "unlock": "The Rainbow Destined to Burn"
+    }
+   ]
+  },
+  {
+   "tribe": "Flower-Feather Clan",
+   "chapter": "Of Fading Flowers and Falling Feathers",
+   "acts": [
+    {
+     "act": "I",
+     "name": "The Wingless One of Tlalocan",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "The Night Before the Trial",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "Guns and Wings",
+     "unlock": "Adventure Rank 40 and The Rainbow Destined to Burn"
+    }
+   ]
+  },
+  {
+   "tribe": "Masters of the Night-Wind",
+   "chapter": "Memories Flowing With Color",
+   "acts": [
+    {
+     "act": "I",
+     "name": "Calling from the Masters of the Night-Wind",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "Legendary \"Color\"",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "The Truth of the Battle of Seven Colors",
+     "unlock": "Adventure Rank 40 and Incandescent Ode of Resurrection"
+    }
+   ]
+  },
+  {
+   "tribe": "Collective of Plenty",
+   "chapter": "Mushroom Realm Mystery",
+   "acts": [
+    {
+     "act": "I",
+     "name": "Ardent Land of Plenty",
+     "unlock": "Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame"
+    },
+    {
+     "act": "II",
+     "name": "Orchard Repose",
+     "unlock": null
+    },
+    {
+     "act": "III",
+     "name": "Field Fungal Traces",
+     "unlock": "Adventure Rank 40 and Incandescent Ode of Resurrection"
+    }
+   ]
+  }
+ ]
+}

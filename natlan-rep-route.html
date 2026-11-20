@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natlan reputation quests</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Natlan reputation quests</h1>
+  <p class="sub">29 quests pay Natlan reputation. The ones you start from the map are split by area below, each page with its own map, the quests shortest first, what unlocks them and the quests that lead to them.</p>
+  <h2>Areas</h2>
+  <ul class="regions"><li><a href="natlan-rep-all-areas.html">All areas</a> · 11 quests, 3 behind other quests</li></ul>
+  <div class="map-wrap" id="natlanRoute" data-map="assets/natlan-rep-areas-map.webp" data-alt="Natlan: reputation quest areas" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(71vw, 857px)"></div>
+<h2>Tribal Chronicles</h2><div class="note">Each tribe has a three-act Tribal Chronicle; every act pays 400 of that tribe's reputation. They are Story Quests: take them from the Quests menu once unlocked, not from a spot on the map.</div><h3>People of the Springs: Where the Springs Return</h3><ol class="side"><li><b>Act I: Those Searching for the Mysterious Island</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: The Legend of the Mysterious Island</b> — after the act before</li><li><b>Act III: Journey to the Mysterious Island</b> — needs Adventure Rank 40 and Into Eternal Night</li></ol><h3>Scions of the Canopy: Yupanqui&#x27;s Turnfire</h3><ol class="side"><li><b>Act I: A Mysterious Visitor From Huitztlan</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: A Hero&#x27;s Rite</b> — after the act before</li><li><b>Act III: Kinich&#x27;s Deal</b> — after the act before</li></ol><h3>Children of Echoes: A Prayer for Blessings, Told to Crested Peaks</h3><ol class="side"><li><b>Act I: Tepetli Dissonance</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: Hoarse Echoes</b> — after the act before</li><li><b>Act III: Melodious Chant</b> — needs The Rainbow Destined to Burn</li></ol><h3>Flower-Feather Clan: Of Fading Flowers and Falling Feathers</h3><ol class="side"><li><b>Act I: The Wingless One of Tlalocan</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: The Night Before the Trial</b> — after the act before</li><li><b>Act III: Guns and Wings</b> — needs Adventure Rank 40 and The Rainbow Destined to Burn</li></ol><h3>Masters of the Night-Wind: Memories Flowing With Color</h3><ol class="side"><li><b>Act I: Calling from the Masters of the Night-Wind</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: Legendary &quot;Color&quot;</b> — after the act before</li><li><b>Act III: The Truth of the Battle of Seven Colors</b> — needs Adventure Rank 40 and Incandescent Ode of Resurrection</li></ol><h3>Collective of Plenty: Mushroom Realm Mystery</h3><ol class="side"><li><b>Act I: Ardent Land of Plenty</b> — needs Adventure Rank 40 and Pilgrimage of the Return of the Sacred Flame</li><li><b>Act II: Orchard Repose</b> — after the act before</li><li><b>Act III: Field Fungal Traces</b> — needs Adventure Rank 40 and Incandescent Ode of Resurrection</li></ol>
+  <p class="sub">Sources: HoYoLAB interactive map (World Quest pins and their notes); Genshin Impact Wiki quest and
+  hidden-objective pages (requirements, steps, start NPCs). Generated 20 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-rep-route.py Natlan</code> from
+  reference/data/quest-starts.json, quest-chains.json and hidden-objectives.json.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#natlanRoute", [{"zone": true, "rect": true, "x": 11.33, "y": -3.28, "w": 79.18, "h": 79.84, "role": "hub", "tag": "All areas: 11 quests"}, {"x": 20.15, "y": 8.75, "role": "goal", "size": "sm", "title": "The Mystery of Tecoloapan Beach"}, {"x": 12.44, "y": 64.14, "role": "goal", "size": "sm", "title": "Is \"Intensity\" Really the Key?"}, {"x": 29.07, "y": 75.0, "role": "goal", "size": "sm", "title": "Sing, Ho, For the Greatness of Fat!"}, {"x": 53.24, "y": 7.97, "role": "goal", "size": "sm", "title": "Every Aspect of a Warrior"}, {"x": 89.4, "y": 40.78, "role": "goal", "size": "sm", "title": "To the Night, What is the Night's"}, {"x": 84.1, "y": 21.48, "role": "goal", "size": "sm", "title": "Ripe For Trouble"}, {"x": 68.36, "y": 49.53, "role": "goal", "size": "sm", "title": "Tracer No Tracing"}, {"x": 81.14, "y": 7.5, "role": "goal", "size": "sm", "title": "Beneath the Crystal Rock"}, {"x": 68.36, "y": 49.53, "role": "goal", "size": "sm", "title": "Seeker No Finding"}, {"x": 41.18, "y": 14.14, "role": "goal", "size": "sm", "title": "Farewell, Final Saurus Cracker"}, {"x": 84.77, "y": 8.44, "role": "goal", "size": "sm", "title": "Peace to the Slumbering"}]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

@@ -32,10 +32,13 @@ import route_markers as rm  # noqa: E402
 # area_id is the official map's region id (hoyolab-wq-pins.json): 1 Mondstadt,
 # 2 Liyue, 3 Inazuma, 4 Sumeru, 8 Fontaine, 11 Natlan, 13 Nod-Krai, 16 Snezhnaya.
 REGIONS = {
+    "Mondstadt": {"area_id": 1, "city": "Mondstadt", "slug": "mondstadt"},
     "Liyue": {"area_id": 2, "city": "Liyue Harbor", "slug": "liyue"},
     "Inazuma": {"area_id": 3, "city": "Inazuma City", "slug": "inazuma"},
     "Sumeru": {"area_id": 4, "city": "Sumeru City", "slug": "sumeru"},
     "Fontaine": {"area_id": 8, "city": "Court of Fontaine", "slug": "fontaine"},
+    # Natlan has no capital city: its reputation is per tribe (Tribe Reputation).
+    "Natlan": {"area_id": 11, "city": None, "slug": "natlan"},
 }
 LEVEL = 1                      # half scale: sharp enough for a city close-up
 MAX_EDGE = 1920                # flux resizes anything larger anyway
@@ -313,6 +316,25 @@ def side_html(title, note, items):
     return '<h2>%s</h2><div class="note">%s</div><ul class="side">%s</ul>' % (title, note, rows)
 
 
+def chronicles_html(story):
+    """Natlan's Tribal Chronicles, per tribe, acts in order with what unlocks each.
+    They are Story Quests from the quest menu, so they have no start on the map."""
+    path = os.path.join("reference", "data", "tribal-chronicles.json")
+    paying = {e["quest"]["name"] for e in story if e.get("group") == "Tribal Chronicles"}
+    if not paying or not os.path.exists(path):
+        return ""
+    rows = []
+    for t in json.load(io.open(path, encoding="utf-8"))["tribes"]:
+        acts = "".join("<li><b>Act %s: %s</b>%s</li>" % (
+            a["act"], esc(a["name"]), (" — needs %s" % esc(a["unlock"])) if a["unlock"] else " — after the act before")
+            for a in t["acts"])
+        rows.append("<h3>%s: %s</h3><ol class=\"side\">%s</ol>" % (esc(t["tribe"]), esc(t["chapter"]), acts))
+    return ('<h2>Tribal Chronicles</h2><div class="note">Each tribe has a three-act Tribal Chronicle; every act pays '
+            "400 of that tribe's reputation."
+            ' They are Story Quests: take them from the Quests menu once unlocked, '
+            'not from a spot on the map.</div>%s' % "".join(rows))
+
+
 CSS = """
 .stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
 .stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
@@ -352,8 +374,9 @@ def _merge_small(groups):
     """Groups under MIN_AREA quests join the nearest big group (by centre)."""
     big = {k: v for k, v in groups.items() if len(v) >= MIN_AREA}
     if not big:
-        top = max(groups, key=lambda k: len(groups[k]))
-        big = {top: groups[top]}
+        # No area is big enough on its own (Natlan's 11 world quests are spread
+        # over 7 areas): one page for the region, not one named after a single area.
+        return {"All areas": [e for v in groups.values() for e in v]}, {"All areas": []}
     merged = {k: [] for k in big}
     for k, v in groups.items():
         if k in big:
@@ -526,13 +549,15 @@ def overview_page(region, cfg, src, routed, side, areas):
         (", %d behind other quests" % a["chained"]) if a["chained"] else "",
         (" (also %s)" % esc(", ".join(a["also"]))) if a["also"] else "") for a in areas)
     total = len(routed) + sum(len(v) for v in side.values())
-    body = '  <h2>Areas</h2>\n  <ul class="regions">%s</ul>\n  %s\n%s%s%s%s' % (
+    body = '  <h2>Areas</h2>\n  <ul class="regions">%s</ul>\n  %s\n%s%s%s%s%s' % (
         cards, block,
         side_html("Weekly requests and bounties", "Taken from the Reputation menu, not from the map: up to 3 a week "
                   "across all nations. The name is who you hand in to.", side["request"]),
         side_html("Commission quests", "These turn up among your daily commissions; you cannot start them on "
                   "demand.", side["commission"]),
-        side_html("Story quests", "Archon or Story quests: start them from the Quests menu.", side["story"]),
+        chronicles_html(side["story"]) if region == "Natlan" else "",
+        side_html("Story quests", "Archon or Story quests: start them from the Quests menu.",
+                  [e for e in side["story"] if e.get("group") != "Tribal Chronicles"]),
         side_html("Starts outside %s" % region, "The quest that pays is here, but it starts in another region.",
                   side["elsewhere"]))
     sub = ("%d quests pay %s reputation. The ones you start from the map are split by area below, each page with its "

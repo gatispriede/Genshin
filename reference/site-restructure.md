@@ -182,6 +182,13 @@ secrets run flux-node tools/flux-bundle-publish.mjs --only <href> --apply # one 
 secrets run flux-node tools/flux-bundle-publish.mjs --apply               # every changed page
 ```
 
+**Generated pages on the bundle path too (20 Nov).** Homepage, Builds + a page per
+character, Teams + a page per team are built by `tools/flux-generated.mjs` and go out in
+the same diff/import (`--generated` publishes only them; `--only`/`--section` leave them
+out). `flux-push.mjs` is now a wrapper for `flux-bundle-publish.mjs --generated`. First
+run: 21 compared, 6 build pages differed (write-up links were never resolved to flux
+URLs before); import 39 s against 10+ min for the old delete-and-recreate.
+
 First live import, 20 Nov: Reference/Sources, 1 page, 20 sections replaced, 2 added, one
 `bundle.importScoped` call; a second diff then reported 0 differences. Lessons from it:
 - **Inline cap 256 KB** for export and import: exports split batches in half on

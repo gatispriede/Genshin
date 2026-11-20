@@ -163,7 +163,14 @@ def main():
     with io.open(SRC, encoding="utf-8") as fh:
         regions = json.load(fh)
 
-    wanted = [(r, q["name"]) for r, rows in regions.items() for q in rows]
+    # Named regions: recompute only those, keep every other region's chains as
+    # published (a full refetch would pick up wiki edits on pages nobody asked for).
+    only = sys.argv[1:]
+    wanted = [(r, q["name"]) for r, rows in regions.items() for q in rows if not only or r in only]
+    kept, kept_hidden = [], {}
+    if only and os.path.exists(OUT):
+        kept = [c for c in json.load(io.open(OUT, encoding="utf-8"))["chains"] if c["region"] not in only]
+        kept_hidden = json.load(io.open(HIDDEN_OUT, encoding="utf-8"))["objectives"]
     cache = {}
 
     def grab(titles):
@@ -334,6 +341,7 @@ def main():
             "note": NOTABLE[notable[0]] if notable else "",
         })
 
+    entries += kept
     rank = {"worst": 0, "bad": 1, "mild": 2, "entry": 3, "story": 4}
     entries.sort(key=lambda e: (rank.get(e["severity"], 9),
                                 -(e["priors"] or 0), e["region"], e["quest"]))
@@ -357,8 +365,9 @@ def main():
         fh.write("\n")
 
     # Hidden objectives named as steps: where they are and how to solve them.
-    hidden = {t: dict(v["hidden"], requirement=clean(v["req"]))
-              for t, v in cache.items() if v.get("kind") == "hidden"}
+    hidden = dict(kept_hidden)
+    hidden.update({t: dict(v["hidden"], requirement=clean(v["req"]))
+                   for t, v in cache.items() if v.get("kind") == "hidden"})
     with io.open(HIDDEN_OUT, "w", encoding="utf-8") as fh:
         json.dump({"_checked": time.strftime("%Y-%m-%d"), "_by": "tools/fetch-quest-prereqs.py",
                    "_source": "Genshin Impact Wiki, Hidden Exploration Objectives infobox and Steps",

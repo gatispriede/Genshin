@@ -18,7 +18,7 @@ const json = (o) => JSON.stringify(o);
 const heading = (eyebrow, h, subtitle) => ({ type: 'SECTION_HEADING', style: 'editorial',
   content: json({ eyebrow, heading: h, subtitle, align: 'left' }) });
 
-/** Top-level pages flux-push.mjs generates; the HTML publishers leave them alone. */
+/** Top-level pages built from data (flux-generated.mjs), not from HTML; left out of "In this section" lists. */
 export const GENERATED = new Set(['Builds', 'Teams']);
 
 /** Below this, blocks are being dropped (a page once lost 96% this way). Refuse to publish. */
