@@ -171,7 +171,28 @@ Design:
    UUIDs. `bundle.plan`, then one `bundle.importScoped` merge.
 5. Page creation, deletion and redirects stay separate calls (rare).
 
-**Blocked until the next CMS release (19 Nov):** `bundle.plan` and `bundle.importScoped`
+**Built and tested (20 Nov): `tools/flux-bundle-publish.mjs`.** Page-building is shared
+with the migrator through `tools/flux-build.mjs`, so both produce identical pages (a dry
+run against the migrator's own output finds 0 differences on 51 of 52 pages; the one
+that differed was a real edit).
+
+```
+secrets run flux-node tools/flux-bundle-publish.mjs                       # diff + bundle.plan, writes nothing
+secrets run flux-node tools/flux-bundle-publish.mjs --only <href> --apply # one page
+secrets run flux-node tools/flux-bundle-publish.mjs --apply               # every changed page
+```
+
+First live import, 20 Nov: Reference/Sources, 1 page, 20 sections replaced, 2 added, one
+`bundle.importScoped` call; a second diff then reported 0 differences. Lessons from it:
+- **Inline cap 256 KB** for export and import: exports split batches in half on
+  `bundle_too_large`, imports are packed into bundles under 240 KB.
+- **The CMS now checks versions on import** (unlike its 19 Nov answer): each existing doc
+  must carry the version it was exported with; bumping it locally is a conflict. New docs
+  carry none. A conflict rejects the whole import, nothing written.
+- New pages are created with `page.create` first and diffed on the next run; retired
+  pages are reported, not deleted (the migrator's full run prunes them).
+
+**Unblocked 20 Nov; was blocked until the CMS release (19 Nov):** `bundle.plan` and `bundle.importScoped`
 rejected every inline bundle: the MCP validator had no branch for union types
 (`object|string`). Fixed in the CMS working tree, not yet deployed.
 

@@ -13,14 +13,10 @@
  */
 
 import { connect, call, findPage, TARGET } from './flux-client.mjs';
-import { pageSections, moduleText, enginePlaceholder, withoutEditorNotes } from './flux-layout.mjs';
-import { contentText } from './html-blocks.mjs';
-import { catalogue, route, sourceHtml, usesEngine, isRendered } from './flux-catalogue.mjs';
-
-/** Top-level pages flux-push.mjs generates; the migrator leaves them alone. */
-const GENERATED = new Set(['Builds', 'Teams']);
+import { usesEngine } from './flux-catalogue.mjs';
 import { ensurePage, reusePage, pagePaths, writeSectionIndex, slugOf } from './flux-pages.mjs';
-import { linkTargets, withLinks } from './flux-links.mjs';
+import { linkTargets } from './flux-links.mjs';
+import { GENERATED, MIN_COVERAGE, buildPlans, finishModule, sectionLinksModule } from './flux-build.mjs';
 
 const arg = (name) => {
   const i = process.argv.indexOf(name);
@@ -30,65 +26,7 @@ const APPLY = process.argv.includes('--apply');
 const SECTION = arg('--section');
 const ONLY = arg('--only');
 
-/**
- * Same-page query links (href="?map-…=…", e.g. a route map's "show only this
- * quest") lose their href on flux: the sanitizer keeps only paths and URLs.
- * Prefix the page's own path, known once the page exists.
- */
-function withPagePath(module, path) {
-  let content = module.content;
-  // Same page: "?query" (map filters) and "#anchor" (a map picture's "Full entry" link).
-  for (const lead of ['?', '#']) content = content.split(`href=\\"${lead}`).join(`href=\\"${path}${lead}`);
-  return content === module.content ? module : { ...module, content };
-}
-
-/**
- * The owner's account identity stays off the public site. Local notes keep it
- * (the tools read it); what flux receives says "<UID>" instead.
- */
-const PRIVATE = [[/790160140/g, '<UID>'], [/\bFunisimo\b/g, 'the Traveler']];
-function redact(module) {
-  let content = module.content;
-  for (const [re, to] of PRIVATE) content = content.replace(re, to);
-  return content === module.content ? module : { ...module, content };
-}
-
-/** Below this, blocks are being dropped — the 4% lesson. Refuse to write. */
-const MIN_COVERAGE = 95;
-
-function plan(entry, parent) {
-  const html = sourceHtml(entry);
-  const sections = pageSections(html, entry.title);
-  if (usesEngine(entry)) {
-    // After the title heading, before the carried-over notes.
-    sections.splice(1, 0, { columns: 1, modules: [enginePlaceholder()] });
-  }
-  const modules = sections.flatMap((s) => s.modules);
-  const src = contentText(withoutEditorNotes(html)).length; // editor notes are dropped on purpose
-  const out = modules.map(moduleText).join(' ').length;
-  return {
-    entry, parent, sections, modules,
-    coverage: src ? Math.round((100 * out) / src) : 100,
-    maps: modules.filter((m) => m.content.includes('MAP_ANNOTATED_PLACEHOLDER')).length,
-    rendered: isRendered(entry),
-  };
-}
-
-/* ------------------------------------------------------------- routing --- */
-
-const all = catalogue();
-const skipped = [];
-const builds = [];
-const plans = [];
-
-for (const entry of all) {
-  if (ONLY && entry.href !== ONLY) continue;
-  if (SECTION && entry.section !== SECTION) continue;
-  const r = route(entry);
-  if (r.action === 'skip') skipped.push(`${entry.href} — ${r.reason}`);
-  else if (r.action === 'builds') builds.push(entry.href);
-  else plans.push(plan(entry, r.parent));
-}
+const { all, plans, builds, skipped } = buildPlans({ only: ONLY, section: SECTION });
 
 /* -------------------------------------------------------------- report --- */
 
@@ -176,7 +114,7 @@ for (const p of plans) {
   const here = path(byId.get(p.row.id));
   for (const s of p.sections) {
     const items = s.modules.map((m) => {
-      const linked = withLinks(withPagePath(redact(m), here), targets, p.entry.href);
+      const linked = finishModule(m, here, targets, p.entry.href);
       linked.missing.forEach((x) => missing.add(x));
       return { module: linked.module };
     });
@@ -200,16 +138,10 @@ for (const [name, row] of Object.entries(parents)) {
   const { pages: now, path: urlOf } = await pagePaths();
   for (const p of plans) {
     const me = now.find((x) => x.id === p.row.id);
-    const up = now.find((x) => x.id === me.parent);
-    const sibs = now.filter((x) => x.parent === me.parent && x.id !== me.id && !GENERATED.has(x.page));
-    const items = [
-      ...(up && up.id !== root.id ? [{ label: `↑ ${up.page}`, href: urlOf(up) }] : []),
-      ...sibs.map((x) => ({ label: x.page, href: urlOf(x) })),
-    ];
-    if (!items.length) continue;
+    const module = sectionLinksModule(me, now, urlOf, root.id);
+    if (!module) continue;
     const { sectionId } = await call('section.create', { pageId: p.row.id, type: 1 });
-    await call('module.add', { items: [{ sectionId, module: { type: 'LIST', style: 'default',
-      content: JSON.stringify({ title: 'In this section', items }) } }] });
+    await call('module.add', { items: [{ sectionId, module }] });
   }
   console.log(`  section links on ${plans.length} pages`);
 }

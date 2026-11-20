@@ -72,7 +72,7 @@ export function homeModules({ rootUrl, teams, characters, pages, links }) {
     { type: 'LIST', style: 'default', content: json({
       title: 'Every section',
       items: Object.keys(SECTION_BLURB).map((s) => ({
-        label: s, value: `${counts[s] ?? ''} ${counts[s] ? 'pages · ' : ''}${SECTION_BLURB[s]}`.trim(),
+        label: s, value: `${counts[s] ? `${counts[s]} page${counts[s] === 1 ? '' : 's'} · ` : ''}${SECTION_BLURB[s]}`,
         href: `${rootUrl}/${slugOf(s)}`,
       })),
     }) },

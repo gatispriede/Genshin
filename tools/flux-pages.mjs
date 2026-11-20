@@ -7,6 +7,7 @@
  */
 
 import { call } from './flux-client.mjs';
+import { sectionIndexModules } from './flux-build.mjs';
 
 const json = (o) => JSON.stringify(o);
 
@@ -69,17 +70,9 @@ export async function pagePaths() {
 export async function writeSectionIndex(row, entries, eyebrow = 'Section') {
   const { pages, path } = await pagePaths();
   const children = pages.filter((p) => p.parent === row.id);
-  const order = new Map(entries.map((e, i) => [e.title, i]));
-  children.sort((a, b) => (order.get(a.page) ?? 1e9) - (order.get(b.page) ?? 1e9));
-  const blurb = new Map(entries.map((e) => [e.title, e.blurb]));
   await reusePage(row.page, row.parent);
   const { sectionId } = await call('section.create', { pageId: row.id, type: 1 });
-  await call('module.add', { items: [
-    { sectionId, module: heading(eyebrow, row.page, `${children.length} pages`) },
-    { sectionId, module: { type: 'LIST', style: 'cards', content: json({
-      title: row.page,
-      items: children.map((c) => ({ label: c.page, value: blurb.get(c.page) || '', href: path(c) })),
-    }) } },
-  ] });
+  await call('module.add', { items: sectionIndexModules(row, children, entries, path, eyebrow)
+    .map((module) => ({ sectionId, module })) });
   return children.length;
 }
