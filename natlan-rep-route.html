@@ -33,7 +33,9 @@ details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88r
 </div>
 <script type="module">
   import { drawMap } from "./app/annotate.js";
+  import { trackDone } from "./app/done.js";
   drawMap("#natlanRoute", [{"zone": true, "rect": true, "x": 11.33, "y": -3.28, "w": 79.18, "h": 79.84, "role": "hub", "tag": "All areas: 11 quests"}, {"x": 20.15, "y": 8.75, "role": "goal", "size": "sm", "title": "The Mystery of Tecoloapan Beach"}, {"x": 12.44, "y": 64.14, "role": "goal", "size": "sm", "title": "Is \"Intensity\" Really the Key?"}, {"x": 29.07, "y": 75.0, "role": "goal", "size": "sm", "title": "Sing, Ho, For the Greatness of Fat!"}, {"x": 53.24, "y": 7.97, "role": "goal", "size": "sm", "title": "Every Aspect of a Warrior"}, {"x": 89.4, "y": 40.78, "role": "goal", "size": "sm", "title": "To the Night, What is the Night's"}, {"x": 84.1, "y": 21.48, "role": "goal", "size": "sm", "title": "Ripe For Trouble"}, {"x": 68.36, "y": 49.53, "role": "goal", "size": "sm", "title": "Tracer No Tracing"}, {"x": 81.14, "y": 7.5, "role": "goal", "size": "sm", "title": "Beneath the Crystal Rock"}, {"x": 68.36, "y": 49.53, "role": "goal", "size": "sm", "title": "Seeker No Finding"}, {"x": 41.18, "y": 14.14, "role": "goal", "size": "sm", "title": "Farewell, Final Saurus Cracker"}, {"x": 84.77, "y": 8.44, "role": "goal", "size": "sm", "title": "Peace to the Slumbering"}]);
+  trackDone();
 </script>
 <script src="app/nav.js"></script>
 </body>

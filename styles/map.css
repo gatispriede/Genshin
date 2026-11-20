@@ -551,3 +551,10 @@ tr.chain td.q > a { text-decoration-style: dotted; }
 .st__costs li { color: #e6a2a2; margin-bottom: 4px; }
 .st__covers { display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--goal); margin-top: 3px; }
 .st__covers.is-part { color: #e6a2a2; }
+
+/* Done tracking (app/done.js) */
+.pin.done { opacity: .3; }
+.stop.done { opacity: .55; }
+.done-toggle { float: right; font-size: .85rem; cursor: pointer; user-select: none; }
+.done-toggle input { vertical-align: middle; margin-right: 4px; }
+.done-count { color: var(--dim); font-size: .9rem; margin: 8px 0; }

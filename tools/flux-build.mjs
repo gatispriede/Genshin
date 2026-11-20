@@ -48,9 +48,9 @@ function redact(module) {
 }
 
 /** One catalogue entry -> its sections, before links are resolved. */
-function plan(entry, parent) {
+function plan(entry, parent, opts) {
   const html = sourceHtml(entry);
-  const sections = pageSections(html, entry.title);
+  const sections = pageSections(html, entry.title, opts);
   if (usesEngine(entry)) {
     // After the title heading, before the carried-over notes.
     sections.splice(1, 0, { columns: 1, modules: [enginePlaceholder()] });
@@ -70,7 +70,7 @@ function plan(entry, parent) {
  * Every page to publish, filtered like the migrator's flags.
  * @returns {{all, plans, builds: string[], skipped: string[]}}
  */
-export function buildPlans({ only = null, section = null } = {}) {
+export function buildPlans({ only = null, section = null, checklist = false } = {}) {
   const all = catalogue();
   const skipped = [];
   const builds = [];
@@ -81,7 +81,7 @@ export function buildPlans({ only = null, section = null } = {}) {
     const r = route(entry);
     if (r.action === 'skip') skipped.push(`${entry.href} — ${r.reason}`);
     else if (r.action === 'builds') builds.push(entry.href);
-    else plans.push(plan(entry, r.parent));
+    else plans.push(plan(entry, r.parent, { checklist }));
   }
   return { all, plans, builds, skipped };
 }

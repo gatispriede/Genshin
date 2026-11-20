@@ -37,7 +37,7 @@ export function drawMap(selector, markers) {
   for (const m of markers) {
     if (m.dot)       box.appendChild(buildDot(m));
     else if (m.zone) box.appendChild(buildZone(m));
-    else             box.appendChild(buildPin(m));
+    else             box.appendChild(buildPin(m, "trackDone" in box.dataset));
 
     if (m.tag) box.appendChild(buildTag(m));
   }
@@ -56,8 +56,11 @@ function buildDot(m) {
   return el;
 }
 
-function buildPin(m) {
+function buildPin(m, tracked) {
   const el = document.createElement("div");
+  // On a done-tracked map a pin shares its key with its card (app/done.js).
+  const key = m.doneKey ?? m.layer;
+  if (tracked && key) el.dataset.doneKey = key;
   el.className = ["pin", m.role || "do-now", m.size, m.pulse && "pulse"]
     .filter(Boolean).join(" ");
   el.style.left = `${m.x}%`;

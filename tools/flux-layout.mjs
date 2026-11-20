@@ -150,8 +150,12 @@ export function rowSizes(n) {
 /**
  * @returns {{columns: number, modules: object[]}[]} sections in page order
  */
-export function pageSections(html, title) {
+export function pageSections(html, title, { checklist = false } = {}) {
+  // checklist: the CMS has the CHECKLIST module, so a done-tracked page's
+  // cards (.stop with an id) publish as one, keyed like their map pins.
+  const tracked = checklist && /\bdata-track-done\b/.test(html);
   const sections = [];
+  let cards = [];
   let narrow = [];
   let prose = [];
 
@@ -173,8 +177,13 @@ export function pageSections(html, title) {
     prose = [];
     place(richText(html), text(html).length > NARROW_PROSE_CHARS);
   };
+  const flushCards = () => {
+    if (!cards.length) return;
+    place({ type: 'CHECKLIST', style: 'default', content: JSON.stringify({ items: cards }) }, true);
+    cards = [];
+  };
   const heading = (module) => {
-    flushProse(); flushNarrow();
+    flushCards(); flushProse(); flushNarrow();
     sections.push({ columns: 1, modules: [module] });
   };
 
@@ -182,6 +191,9 @@ export function pageSections(html, title) {
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i];
     const cls = classOf(b.attrs);
+    const cardKey = tracked && b.name === 'div' && /\bstop\b/.test(cls) && (b.attrs.match(/\bid="([^"]+)"/) || [])[1];
+    if (cardKey) { flushProse(); cards.push({ key: cardKey, html: b.html }); continue; }
+    flushCards();
 
     if (b.name === 'h1') {
       // A .sub paragraph straight after the title is its subtitle.
@@ -208,7 +220,7 @@ export function pageSections(html, title) {
       flushProse();
       const alt = (b.attrs.match(/data-alt="([^"]*)"/) || [, ''])[1];
       const img = (b.attrs.match(/data-map="([^"]*)"/) || [, ''])[1];
-      place(mapModule(b.attrs, html) || mapPlaceholder(alt, img), true);
+      place(mapModule(b.attrs, html, { trackDone: tracked }) || mapPlaceholder(alt, img), true);
       continue;
     }
     if (b.name === 'table') { flushProse(); place(...tableBlock(b.html)); continue; }
@@ -216,6 +228,7 @@ export function pageSections(html, title) {
 
     if (text(b.html)) prose.push(b.html);
   }
+  flushCards();
   flushProse();
   flushNarrow();
   return sections;
@@ -226,5 +239,5 @@ export function moduleText(m) {
   const c = JSON.parse(m.content);
   if (c.value) return text(c.value);
   return [c.eyebrow, c.heading, c.subtitle, c.title,
-    ...(c.items || []).flatMap((i) => [i.label, i.value])].filter(Boolean).join(' ');
+    ...(c.items || []).flatMap((i) => [i.label, i.value, i.html && text(i.html)])].filter(Boolean).join(' ');
 }

@@ -18,7 +18,10 @@
       "Aubade of Morningstar and Moon",
       "A Day Carved From Rising Winds"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Windrest Peak"
+     ]
     }
    ]
   },
@@ -37,7 +40,12 @@
      "keyFrom": "offerings to the Geo Statues of The Seven in Liyue; read the inscription at the pin to start the world quest",
      "sets": [],
      "piece": "Royal Flora (5-star Noblesse Oblige flower)",
-     "note": "The back room also holds a Luxurious and a Precious Chest. Only the host can claim it in co-op."
+     "note": "The back room also holds a Luxurious and a Precious Chest. Only the host can claim it in co-op.",
+     "keyPoints": {
+      "label": 2,
+      "area_id": 2,
+      "what": "Statue of The Seven"
+     }
     }
    ]
   },
@@ -57,7 +65,10 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Toyac Springs"
+     ]
     },
     {
      "pin": 73220,
@@ -70,7 +81,11 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Coatepec Mountain",
+      "Basin of Unnumbered Flames"
+     ]
     },
     {
      "pin": 73222,
@@ -83,7 +98,10 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Tequemecan Valley"
+     ]
     },
     {
      "pin": 78776,
@@ -96,7 +114,10 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Tezcatepetonco Range"
+     ]
     },
     {
      "pin": 78775,
@@ -109,7 +130,11 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Ochkanatlan",
+      "Quahuacan Cliff"
+     ]
     },
     {
      "pin": 82862,
@@ -122,7 +147,10 @@
       "Obsidian Codex",
       "Scroll of the Hero of Cinder City"
      ],
-     "extra": "Sanctifying Elixir"
+     "extra": "Sanctifying Elixir",
+     "keyAreas": [
+      "Atocpan"
+     ]
     }
    ]
   },
@@ -142,7 +170,10 @@
       "Night of the Sky's Unveiling",
       "Silken Moon's Serenade"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Lempo Isle"
+     ]
     },
     {
      "pin": 89173,
@@ -155,7 +186,10 @@
       "Night of the Sky's Unveiling",
       "Silken Moon's Serenade"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Hiisi Island"
+     ]
     },
     {
      "pin": 89171,
@@ -168,7 +202,10 @@
       "Night of the Sky's Unveiling",
       "Silken Moon's Serenade"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Paha Isle"
+     ]
     },
     {
      "pin": 93476,
@@ -181,7 +218,10 @@
       "Aubade of Morningstar and Moon",
       "A Day Carved From Rising Winds"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Wavechaser Plain"
+     ]
     },
     {
      "pin": 93475,
@@ -194,7 +234,10 @@
       "Aubade of Morningstar and Moon",
       "A Day Carved From Rising Winds"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Ashveil Peak"
+     ]
     },
     {
      "pin": 93477,
@@ -207,7 +250,10 @@
       "Aubade of Morningstar and Moon",
       "A Day Carved From Rising Winds"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Voidsea Outlook"
+     ]
     }
    ]
   },
@@ -227,7 +273,10 @@
       "Disenchantment in Deep Shadow",
       "Celestial Gift"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Lunar Highlands"
+     ]
     },
     {
      "pin": 99927,
@@ -240,7 +289,11 @@
       "Disenchantment in Deep Shadow",
       "Celestial Gift"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Moontide Sea",
+      "Dark Side of the Moon"
+     ]
     }
    ]
   },
@@ -260,7 +313,10 @@
       "Aubade of Morningstar and Moon",
       "A Day Carved From Rising Winds"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Temple of Space"
+     ]
     }
    ]
   },
@@ -280,7 +336,11 @@
       "Scarlet Proof",
       "Heart of the Furnace"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Everfrozen Earth",
+      "Flamefeather Valley"
+     ]
     },
     {
      "pin": 101944,
@@ -293,7 +353,11 @@
       "Scarlet Proof",
       "Heart of the Furnace"
      ],
-     "extra": "Dust of Enlightenment"
+     "extra": "Dust of Enlightenment",
+     "keyAreas": [
+      "Fellfrost Peak",
+      "Volkodlak Tundra"
+     ]
     },
     {
      "pin": 101943,
@@ -307,7 +371,10 @@
       "Heart of the Furnace"
      ],
      "extra": "Dust of Enlightenment",
-     "img": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Shadow_Realm_Treasure_Vault_White_Birch_Snowgrave_Location_Context.png/revision/latest?cb=20260817213159"
+     "img": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Shadow_Realm_Treasure_Vault_White_Birch_Snowgrave_Location_Context.png/revision/latest?cb=20260817213159",
+     "keyAreas": [
+      "White Birch Snowgrave"
+     ]
     },
     {
      "pin": 107104,
@@ -331,5 +398,6 @@
     }
    ]
   }
- ]
+ ],
+ "_keyChests": "keyAreas: the official map's area names whose Precious and Luxurious Chests can drop the keys (from each key item's wiki page). A chest belongs to the nearest named place in its own region, so borders are approximate."
 }

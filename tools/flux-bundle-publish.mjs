@@ -62,7 +62,13 @@ const MODULE_DEFAULTS = { action: 'none', actionStyle: 'default', actionType: 'T
 
 /* ---------------------------------------------------------------- build --- */
 
-const { all, plans } = CATALOGUE ? buildPlans({ only: ONLY, section: SECTION }) : { all: [], plans: [] };
+await connect('genshin-bundle-publish');
+// Done tracking needs the CMS's CHECKLIST module; until flux lists it, tracked
+// pages publish exactly as before (cards as rich text, no trackDone).
+const types = (await call('module.listTypes', { audience: 'client' })).itemTypes || [];
+const checklist = types.some((t) => t.value === 'CHECKLIST');
+console.log(`done tracking: ${checklist ? 'on (CHECKLIST available)' : 'off (no CHECKLIST module on flux yet)'}`);
+const { all, plans } = CATALOGUE ? buildPlans({ only: ONLY, section: SECTION, checklist }) : { all: [], plans: [] };
 const generated = WITH_GENERATED ? await generatedPages() : [];
 const lost = plans.filter((p) => p.coverage < MIN_COVERAGE);
 if (lost.length) {
@@ -70,7 +76,6 @@ if (lost.length) {
   process.exit(1);
 }
 
-await connect('genshin-bundle-publish');
 const root = await findPage('Genshin notes');
 if (!root) { console.error('no "Genshin notes" root on flux'); process.exit(1); }
 

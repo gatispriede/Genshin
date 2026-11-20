@@ -470,7 +470,9 @@ PAGE = """<!DOCTYPE html>
 </div>
 <script type="module">
   import { drawMap } from "./app/annotate.js";
+  import { trackDone } from "./app/done.js";
 %(draws)s
+  trackDone();
 </script>
 <script src="app/nav.js"></script>
 </body>
@@ -478,11 +480,12 @@ PAGE = """<!DOCTYPE html>
 """
 
 
-def map_block(map_id, img, alt, legend, window, markers):
+def map_block(map_id, img, alt, legend, window, markers, track=False):
     height = "min(%.0fvw, %dpx)" % (100.0 * window.h / window.w, int(1200 * window.h / window.w))
+    # track: visitors can tick entries off (app/done.js locally, CHECKLIST on flux).
     return ('<div class="map-wrap" id="%s" data-map="%s" data-alt="%s" data-legend="%s" data-block-w="24" '
-            'data-label-min-zoom="0" data-height="%s"></div>'
-            % (map_id, img, esc(alt), esc(json.dumps(legend, ensure_ascii=False)), height),
+            'data-label-min-zoom="0" data-height="%s"%s></div>'
+            % (map_id, img, esc(alt), esc(json.dumps(legend, ensure_ascii=False)), height, " data-track-done" if track else ""),
             '  drawMap("#%s", %s);' % (map_id, json.dumps(markers, ensure_ascii=False)))
 
 
@@ -504,7 +507,7 @@ def area_page(region, cfg, src, g):
     stitch(win, img, scale_to=min(MAX_EDGE, MAX_ENLARGE * max(win.w, win.h)), enlarge=True)
     markers = rm.merge_stacked([marker(q, win, q["label"].isdigit()) for q in placed])
     block, draw = map_block(map_id, img, "%s, %s: where each reputation quest starts" % (g["area"], region),
-                            rm.legend(g["entries"], markers), win, markers)
+                            rm.legend(g["entries"], markers), win, markers, track=True)
     chained = sum(1 for e in g["entries"] if e["chain"])
     title = g["area"] + (" and nearby" if g["also"] else "")
     sub = ("%d reputation quests in %s%s, shortest first; %d need other quests first, listed under them in order "

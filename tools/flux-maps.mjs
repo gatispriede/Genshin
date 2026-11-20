@@ -43,7 +43,8 @@ export function markersById(html) {
   for (const [, body] of html.matchAll(/<script type="module">([\s\S]*?)<\/script>/g)) {
     if (!/\b(drawMap|dots)\(/.test(body)) continue;
     const code = body.replace(/^\s*import\s[^;]*;\s*$/gm, '');
-    new Function('drawMap', 'dots', 'drawKey', code)(drawMap, dots, () => {});
+    // trackDone (app/done.js) is browser-only; on flux the CHECKLIST module does its job.
+    new Function('drawMap', 'dots', 'drawKey', 'trackDone', code)(drawMap, dots, () => {}, () => {});
   }
   return byId;
 }
@@ -68,7 +69,7 @@ export function toModuleMarker(m, where) {
  * The MAP_ANNOTATED module for one .map-wrap block, or null when its image
  * has not been uploaded yet (the caller then keeps the placeholder).
  */
-export function mapModule(attrs, html) {
+export function mapModule(attrs, html, { trackDone = false } = {}) {
   const id = (attrs.match(/\bid="([^"]*)"/) || [, ''])[1];
   const img = (attrs.match(/data-map="([^"]*)"/) || [, ''])[1];
   const alt = (attrs.match(/data-alt="([^"]*)"/) || [, ''])[1];
@@ -115,5 +116,8 @@ export function mapModule(attrs, html) {
   // crops the bottom of a tall map (the image fits the width, not the height).
   const height = (attrs.match(/data-height="([^"]*)"/) || [, ''])[1];
   if (height) content.height = height;
+  // data-track-done: visitors can tick pins off. The key is each pin's `layer`
+  // (the CMS's doneKey defaults to it), the same key as the CHECKLIST entry.
+  if (trackDone && /\bdata-track-done\b/.test(attrs)) content.trackDone = true;
   return { type: 'MAP_ANNOTATED', style: 'default', name: id || undefined, content: JSON.stringify(content) };
 }
