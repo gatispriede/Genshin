@@ -7,17 +7,44 @@
  *   import { trackDone } from "./app/done.js";
  *   trackDone();                                          after the drawMap() calls
  *
- * State is per page in localStorage under "done:<page>:<key>", the same key
- * shape the flux CHECKLIST / MAP_ANNOTATED modules use. Storage sits behind
- * `store`, so a server-backed version for logged-in visitors can replace it.
+ * Storage is the flux CMS's own format (ui/client/lib/doneState), so local
+ * pages and flux read progress the same way:
+ *   key    "cms:done:<pathname>"   (no query or hash, no trailing slash, "" -> "/")
+ *   value  JSON array of folded keys, sorted; removed entirely when empty
+ *   cap    500 keys a page: a write past it is refused, nothing is evicted
+ *   sync   window CustomEvent "cms:done-state" {page, done} in this tab,
+ *          the native "storage" event across tabs
+ * `store` is the seam where a server-backed version for logged-in visitors goes.
  */
 
-const page = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
+const CAP = 500;
+const EVENT = "cms:done-state";
+
+/** The CMS's key folding: trim, lowercase, runs of other characters -> "-". */
+export const fold = (key) =>
+  String(key).trim().toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^-+|-+$/g, "");
+
+const page = location.pathname.replace(/\/+$/, "") || "/";
+const storageKey = `cms:done:${page}`;
 
 export const store = {
-  get: (key) => localStorage.getItem(`done:${page}:${key}`) === "1",
-  set: (key, done) => done ? localStorage.setItem(`done:${page}:${key}`, "1")
-                           : localStorage.removeItem(`done:${page}:${key}`),
+  /** The set of done keys on this page. A missing entry and [] are the same. */
+  list() {
+    try { return new Set(JSON.parse(localStorage.getItem(storageKey) || "[]").map(fold)); }
+    catch { return new Set(); }
+  },
+  /** false when the write was refused (the page is at the cap). */
+  set(key, done) {
+    const keys = store.list();
+    const k = fold(key);
+    if (done && !keys.has(k) && keys.size >= CAP) return false;
+    if (done) keys.add(k); else keys.delete(k);
+    const sorted = [...keys].sort();
+    if (sorted.length) localStorage.setItem(storageKey, JSON.stringify(sorted));
+    else localStorage.removeItem(storageKey);
+    dispatchEvent(new CustomEvent(EVENT, { detail: { page, done: sorted } }));
+    return true;
+  },
 };
 
 export function trackDone() {
@@ -30,13 +57,16 @@ export function trackDone() {
   cards[0].before(count);
 
   const show = () => {
+    const done = store.list();
     let n = 0;
     for (const card of cards) {
-      const done = store.get(card.id);
-      n += done;
-      card.classList.toggle("done", done);
-      card.querySelector(".done-toggle input").checked = done;
-      for (const pin of document.querySelectorAll(`[data-done-key="${card.id}"]`)) pin.classList.toggle("done", done);
+      const on = done.has(fold(card.id));
+      n += on;
+      card.classList.toggle("done", on);
+      card.querySelector(".done-toggle input").checked = on;
+    }
+    for (const pin of document.querySelectorAll("[data-done-key]")) {
+      pin.classList.toggle("done", done.has(fold(pin.dataset.doneKey)));
     }
     count.textContent = `${n} of ${cards.length} done`;
   };
@@ -46,12 +76,12 @@ export function trackDone() {
     label.className = "done-toggle";
     label.innerHTML = '<input type="checkbox"> Done';
     label.querySelector("input").addEventListener("change", (e) => {
-      store.set(card.id, e.target.checked);
+      if (!store.set(card.id, e.target.checked)) e.target.checked = false;
       show();
     });
     card.prepend(label);
   }
-  // Another tab ticked something: stay in step.
-  addEventListener("storage", (e) => { if (e.key?.startsWith(`done:${page}:`)) show(); });
+  addEventListener(EVENT, (e) => { if (e.detail?.page === page) show(); });
+  addEventListener("storage", (e) => { if (e.key === storageKey) show(); });
   show();
 }
