@@ -17,12 +17,12 @@
    "title": "Liyue: Chenyu Vale: Upper Vale"
   },
   {
-   "href": "liyue-rep-the-chasm.html",
-   "title": "Liyue: The Chasm and nearby"
-  },
-  {
    "href": "liyue-rep-bishui-plain.html",
    "title": "Liyue: Bishui Plain"
+  },
+  {
+   "href": "liyue-rep-the-chasm.html",
+   "title": "Liyue: The Chasm and nearby"
   },
   {
    "href": "liyue-rep-qiongji-estuary.html",
@@ -35,12 +35,16 @@
  ],
  "Inazuma": [
   {
-   "href": "inazuma-rep-narukami-island.html",
-   "title": "Inazuma: Narukami Island"
+   "href": "inazuma-rep-inazuma-city.html",
+   "title": "Inazuma: Inazuma City"
   },
   {
    "href": "inazuma-rep-yashiori-island.html",
    "title": "Inazuma: Yashiori Island and nearby"
+  },
+  {
+   "href": "inazuma-rep-around-inazuma-city.html",
+   "title": "Inazuma: Around Inazuma City and nearby"
   },
   {
    "href": "inazuma-rep-seirai-island.html",
@@ -53,12 +57,12 @@
  ],
  "Sumeru": [
   {
-   "href": "sumeru-rep-land-of-lower-setekh.html",
-   "title": "Sumeru: Land of Lower Setekh and nearby"
+   "href": "sumeru-rep-avidya-forest.html",
+   "title": "Sumeru: Avidya Forest and nearby"
   },
   {
-   "href": "sumeru-rep-avidya-forest.html",
-   "title": "Sumeru: Avidya Forest"
+   "href": "sumeru-rep-land-of-lower-setekh.html",
+   "title": "Sumeru: Land of Lower Setekh and nearby"
   },
   {
    "href": "sumeru-rep-ashavan-realm.html",

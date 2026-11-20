@@ -86,7 +86,9 @@ def route(region, home_area, home_names, claimed_by=None):
     home_names: area/subarea names that belong to this region's map; a start
     outside them is "elsewhere".
     """
-    starts = {k: v for k, v in load("quest-starts.json").items() if v.get("region") == region}
+    # Every region's start data: a pre-quest is often fetched under another region
+    # (the Garcia's Paean series is tagged Fontaine but starts in Sumeru City).
+    starts = load("quest-starts.json")
     rep = {q["name"]: q for q in load("reputation-quests.json")[region]}
     chains = {c["quest"]: c for c in load("quest-chains.json")["chains"] if c["region"] == region}
     pins = load("hoyolab-wq-pins.json")["pins"]
@@ -95,7 +97,7 @@ def route(region, home_area, home_names, claimed_by=None):
     # infobox gives the place and the steps, which the quest-starts parse misses.
     hidden = load("hidden-objectives.json")["objectives"]
 
-    def place(name, prev_entry):
+    def place(name, prev_entry, pre=False):
         s = dict(starts.get(name, {}))
         h = hidden.get(name)
         if h:
@@ -103,15 +105,21 @@ def route(region, home_area, home_names, claimed_by=None):
                                          ("npcs", h["characters"])) if v})
         r = rep.get(name, {})
         where = s.get("subarea") or s.get("area")
-        entry = {"name": name, "npc": (s.get("npcs") or [None])[0], "npcs": s.get("npcs") or [],
+        # Page titles like "Foggy Forest Path (Quest)" display without the suffix.
+        entry = {"name": re.sub(r"\s*\(Quest\)$", "", name), "title": name,
+                 "npc": (s.get("npcs") or [None])[0], "npcs": s.get("npcs") or [],
                  "firstStep": s.get("firstStep"), "firstSpeaker": s.get("firstSpeaker"),
                  "where": where, "area": s.get("area"),
                  "requirement": (chains.get(name) or {}).get("requirement") or s.get("requirement"),
                  "hidden": h["steps"] if h else None, "effort": effort(s)}
         if r.get("group") == "Request":
             entry["start"] = "request"
-        elif s.get("type") == "Commission":
+        elif s.get("type") == "Commission" and not (pre and where):
             entry["start"] = "commission"
+        elif s.get("type") == "Commission":
+            # A commission that gates a quest: it has a home area, so it gets an
+            # approximate dot there; where_line says it comes among commissions.
+            entry.update(start="area", commission=True)
         elif s.get("type") in (None, "Archon", "Story") and not where:
             entry["start"] = "story"
         elif where and where not in home_names:
@@ -134,7 +142,7 @@ def route(region, home_area, home_names, claimed_by=None):
         before = c.get("before") or [] if c.get("severity") in ("worst", "bad", "mild") else []
         steps, prev = [], None
         for p in before:
-            e = place(p, prev)
+            e = place(p, prev, pre=True)
             e["done"] = norm(p) in claimed
             steps.append(e)
             prev = e

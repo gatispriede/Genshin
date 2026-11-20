@@ -10,13 +10,45 @@
  ],
  "chains": [
   {
+   "quest": "Memory's Final Chapter",
+   "region": "Sumeru",
+   "severity": "worst",
+   "type": "World",
+   "priors": 18,
+   "archonPriors": null,
+   "before": [
+    "Woodland Encounter (Quest)",
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
+    "The World of Aranara",
+    "Children of the Forest",
+    "Encounter in the Woods",
+    "The Rhythm that Leads to the Gloomy Path",
+    "The Rhythm that Nurtures the Sprout",
+    "The Rhythm that Reveals the Beastly Trail",
+    "Sprouting Seedlings",
+    "For A Better Reunion",
+    "Festival Utsava",
+    "Delicious Riddle",
+    "Garden Fairies",
+    "Rishboland Tiger, Roaaar",
+    "Taste of Happiness",
+    "Aragaru's Drawing"
+   ],
+   "hidden": [],
+   "requirement": "Dream Nursery",
+   "note": ""
+  },
+  {
    "quest": "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"",
    "region": "Sumeru",
    "severity": "worst",
    "type": "World",
-   "priors": 10,
+   "priors": 11,
    "archonPriors": null,
    "before": [
+    "Woodland Encounter (Quest)",
     "The Children of Vimara Village",
     "Into the Woods",
     "The Lost Child",
@@ -30,6 +62,52 @@
    ],
    "hidden": [],
    "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Until Vana is Healed",
+   "region": "Sumeru",
+   "severity": "worst",
+   "type": "World",
+   "priors": 11,
+   "archonPriors": null,
+   "before": [
+    "Woodland Encounter (Quest)",
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
+    "The World of Aranara",
+    "Children of the Forest",
+    "For A Better Reunion",
+    "Festival Utsava",
+    "For Fruits, Seeds, and Trees",
+    "For the Children of the Past",
+    "For All Children Who Long for Life"
+   ],
+   "hidden": [],
+   "requirement": "Complete Step 2 of Aranyaka: Part III - Nursery of Lost Dreams, Part 1: For Fruits, Seeds, and Trees",
+   "note": ""
+  },
+  {
+   "quest": "Wish-Fulfilling Treasure Hunt",
+   "region": "Fontaine",
+   "severity": "worst",
+   "type": "World",
+   "priors": 9,
+   "archonPriors": null,
+   "before": [
+    "The Narzissenkreuz Adventure",
+    "The Story of \"the Princess\" and \"the Adventure Team\"",
+    "Ann's Story",
+    "Mary-Ann's Story",
+    "Initial Facts",
+    "Search in the Algae Sea (Quest)",
+    "Savior's Wake (Quest)",
+    "Waking from the Great Dream (Quest)",
+    "Rowboat's Wake (Quest)"
+   ],
+   "hidden": [],
+   "requirement": "Complete Rowboat's Wake",
    "note": ""
   },
   {
@@ -76,6 +154,48 @@
    "note": ""
   },
   {
+   "quest": "Rowboat's Wake (Quest)",
+   "region": "Fontaine",
+   "severity": "worst",
+   "type": "World",
+   "priors": 8,
+   "archonPriors": null,
+   "before": [
+    "The Narzissenkreuz Adventure",
+    "The Story of \"the Princess\" and \"the Adventure Team\"",
+    "Ann's Story",
+    "Mary-Ann's Story",
+    "Initial Facts",
+    "Search in the Algae Sea (Quest)",
+    "Savior's Wake (Quest)",
+    "Waking from the Great Dream (Quest)"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "\"The Seventh Samurai\"",
+   "region": "Inazuma",
+   "severity": "worst",
+   "type": "World",
+   "priors": 8,
+   "archonPriors": null,
+   "before": [
+    "Tatara Tales (Quest)",
+    "Tatara Tales: Priority Investigation",
+    "Tatara Tales: Purification Device",
+    "Tatara Tales: Data Collection",
+    "Tatara Tales: Process Is Everything",
+    "Tatara Tales: Functional Test",
+    "Tatara Tales: Final Preparations",
+    "Tatara Tales: The Last Act"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
    "quest": "Dune-Entombed Fecundity: Part III",
    "region": "Sumeru",
    "severity": "worst",
@@ -118,41 +238,20 @@
    "note": ""
   },
   {
-   "quest": "Until Vana is Healed",
-   "region": "Sumeru",
-   "severity": "worst",
-   "type": "World",
-   "priors": 8,
-   "archonPriors": null,
-   "before": [
-    "The Children of Vimara Village",
-    "Into the Woods",
-    "The Lost Child",
-    "The World of Aranara",
-    "Children of the Forest",
-    "For A Better Reunion",
-    "Festival Utsava",
-    "For Fruits, Seeds, and Trees"
-   ],
-   "hidden": [],
-   "requirement": "Complete Step 2 of Aranyaka: Part III - Nursery of Lost Dreams, Part 1: For Fruits, Seeds, and Trees",
-   "note": ""
-  },
-  {
-   "quest": "\"The Seventh Samurai\"",
+   "quest": "Tatara Tales: The Last Act",
    "region": "Inazuma",
    "severity": "worst",
    "type": "World",
    "priors": 7,
    "archonPriors": null,
    "before": [
+    "Tatara Tales (Quest)",
     "Tatara Tales: Priority Investigation",
     "Tatara Tales: Purification Device",
     "Tatara Tales: Data Collection",
     "Tatara Tales: Process Is Everything",
     "Tatara Tales: Functional Test",
-    "Tatara Tales: Final Preparations",
-    "Tatara Tales: The Last Act"
+    "Tatara Tales: Final Preparations"
    ],
    "hidden": [],
    "requirement": "",
@@ -217,22 +316,41 @@
    "note": ""
   },
   {
-   "quest": "Tatara Tales: The Last Act",
+   "quest": "Collection of Dragons and Snakes",
    "region": "Inazuma",
    "severity": "worst",
    "type": "World",
    "priors": 6,
    "archonPriors": null,
    "before": [
-    "Tatara Tales: Priority Investigation",
-    "Tatara Tales: Purification Device",
-    "Tatara Tales: Data Collection",
-    "Tatara Tales: Process Is Everything",
-    "Tatara Tales: Functional Test",
-    "Tatara Tales: Final Preparations"
+    "The Moon-Bathed Deep (Quest)",
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
    ],
    "hidden": [],
-   "requirement": "",
+   "requirement": "The Subterranean Trials of Drake and Serpent",
+   "note": ""
+  },
+  {
+   "quest": "Lotus Eater",
+   "region": "Inazuma",
+   "severity": "worst",
+   "type": "World",
+   "priors": 6,
+   "archonPriors": null,
+   "before": [
+    "The Moon-Bathed Deep (Quest)",
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
+   ],
+   "hidden": [],
+   "requirement": "The Subterranean Trials of Drake and Serpent",
    "note": ""
   },
   {
@@ -255,6 +373,25 @@
    "note": ""
   },
   {
+   "quest": "The Phaethons' Syrtos",
+   "region": "Inazuma",
+   "severity": "worst",
+   "type": "World",
+   "priors": 6,
+   "archonPriors": null,
+   "before": [
+    "The Moon-Bathed Deep (Quest)",
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
+   ],
+   "hidden": [],
+   "requirement": "The Subterranean Trials of Drake and Serpent",
+   "note": ""
+  },
+  {
    "quest": "The Saga of Mr. Forgetful",
    "region": "Inazuma",
    "severity": "worst",
@@ -271,6 +408,25 @@
    ],
    "hidden": [],
    "requirement": "Complete Octave of the Maushiro",
+   "note": ""
+  },
+  {
+   "quest": "Courage Is in the Heart",
+   "region": "Sumeru",
+   "severity": "worst",
+   "type": "World",
+   "priors": 6,
+   "archonPriors": null,
+   "before": [
+    "Woodland Encounter (Quest)",
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
+    "The World of Aranara",
+    "Static Views"
+   ],
+   "hidden": [],
+   "requirement": "Complete Static Views",
    "note": ""
   },
   {
@@ -317,42 +473,6 @@
    "note": ""
   },
   {
-   "quest": "Collection of Dragons and Snakes",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": 5,
-   "archonPriors": null,
-   "before": [
-    "\"Eye of Watatsumi\"",
-    "\"Heart of Watatsumi\"",
-    "The Still Water's Flow",
-    "The Entrance to Tokoyo",
-    "The Subterranean Trials of Drake and Serpent"
-   ],
-   "hidden": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
-   "note": ""
-  },
-  {
-   "quest": "Lotus Eater",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": 5,
-   "archonPriors": null,
-   "before": [
-    "\"Eye of Watatsumi\"",
-    "\"Heart of Watatsumi\"",
-    "The Still Water's Flow",
-    "The Entrance to Tokoyo",
-    "The Subterranean Trials of Drake and Serpent"
-   ],
-   "hidden": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
-   "note": ""
-  },
-  {
    "quest": "Orobashi's Legacy: Part V",
    "region": "Inazuma",
    "severity": "bad",
@@ -371,21 +491,21 @@
    "note": ""
   },
   {
-   "quest": "The Phaethons' Syrtos",
+   "quest": "The Subterranean Trials of Drake and Serpent",
    "region": "Inazuma",
    "severity": "bad",
    "type": "World",
    "priors": 5,
    "archonPriors": null,
    "before": [
+    "The Moon-Bathed Deep (Quest)",
     "\"Eye of Watatsumi\"",
     "\"Heart of Watatsumi\"",
     "The Still Water's Flow",
-    "The Entrance to Tokoyo",
-    "The Subterranean Trials of Drake and Serpent"
+    "The Entrance to Tokoyo"
    ],
    "hidden": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
+   "requirement": "",
    "note": ""
   },
   {
@@ -404,24 +524,6 @@
    ],
    "hidden": [],
    "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Courage Is in the Heart",
-   "region": "Sumeru",
-   "severity": "bad",
-   "type": "World",
-   "priors": 5,
-   "archonPriors": null,
-   "before": [
-    "The Children of Vimara Village",
-    "Into the Woods",
-    "The Lost Child",
-    "The World of Aranara",
-    "Static Views"
-   ],
-   "hidden": [],
-   "requirement": "Complete Static Views",
    "note": ""
   },
   {
@@ -506,23 +608,6 @@
     "The Gourmet Supremos: Of Shrines and Sakura",
     "The Gourmet Supremos: The Seashore Strider",
     "The Gourmet Supremos: The Deep Divers"
-   ],
-   "hidden": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "The Subterranean Trials of Drake and Serpent",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": 4,
-   "archonPriors": null,
-   "before": [
-    "\"Eye of Watatsumi\"",
-    "\"Heart of Watatsumi\"",
-    "The Still Water's Flow",
-    "The Entrance to Tokoyo"
    ],
    "hidden": [],
    "requirement": "",
@@ -660,6 +745,22 @@
    "note": ""
   },
   {
+   "quest": "The Still Water's Flow",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 3,
+   "archonPriors": null,
+   "before": [
+    "The Moon-Bathed Deep (Quest)",
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\""
+   ],
+   "hidden": [],
+   "requirement": "\"Heart of Watatsumi\"",
+   "note": ""
+  },
+  {
    "quest": "Yougou Cleansing",
    "region": "Inazuma",
    "severity": "bad",
@@ -689,6 +790,22 @@
    ],
    "hidden": [],
    "requirement": "Qiaoying of the Sacred Mountain",
+   "note": ""
+  },
+  {
+   "quest": "A Delicacy for Nara",
+   "region": "Sumeru",
+   "severity": "bad",
+   "type": "World",
+   "priors": 3,
+   "archonPriors": null,
+   "before": [
+    "An Unwavering Culinary Dream (Quest)",
+    "Cooking, the Flavor of Nature",
+    "Cooking, a Pleasant Memory"
+   ],
+   "hidden": [],
+   "requirement": "",
    "note": ""
   },
   {
@@ -830,6 +947,21 @@
    "note": ""
   },
   {
+   "quest": "\"Heart of Watatsumi\"",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "The Moon-Bathed Deep (Quest)",
+    "\"Eye of Watatsumi\""
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
    "quest": "Fertilizer... Salesperson?",
    "region": "Inazuma",
    "severity": "bad",
@@ -857,21 +989,6 @@
    ],
    "hidden": [],
    "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "The Still Water's Flow",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": 2,
-   "archonPriors": null,
-   "before": [
-    "\"Eye of Watatsumi\"",
-    "\"Heart of Watatsumi\""
-   ],
-   "hidden": [],
-   "requirement": "\"Heart of Watatsumi\"",
    "note": ""
   },
   {
@@ -980,15 +1097,15 @@
    "note": ""
   },
   {
-   "quest": "A Delicacy for Nara",
+   "quest": "A Prayer for Rain on the Fecund Land",
    "region": "Sumeru",
    "severity": "bad",
    "type": "World",
    "priors": 2,
    "archonPriors": null,
    "before": [
-    "Cooking, the Flavor of Nature",
-    "Cooking, a Pleasant Memory"
+    "Varuna Gatha (Quest)",
+    "Memory of Stone"
    ],
    "hidden": [],
    "requirement": "",
@@ -1020,20 +1137,6 @@
    ],
    "hidden": [],
    "requirement": "Complete \"Hey, This Isn't Pumpkin Soup...\"",
-   "note": ""
-  },
-  {
-   "quest": "Wish-Fulfilling Treasure Hunt",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": 1,
-   "archonPriors": null,
-   "before": [
-    "Rowboat's Wake"
-   ],
-   "hidden": [],
-   "requirement": "Complete Rowboat's Wake",
    "note": ""
   },
   {
@@ -1076,6 +1179,20 @@
    ],
    "hidden": [],
    "requirement": "Start the Stillness, the Sublimation of Shadow",
+   "note": ""
+  },
+  {
+   "quest": "Sakura Arborism",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Tatara Tales (Quest)"
+   ],
+   "hidden": [],
+   "requirement": "Complete Tatara Tales",
    "note": ""
   },
   {
@@ -1134,20 +1251,6 @@
    ],
    "hidden": [],
    "requirement": "Complete Supreme Hookshot? three times and wait for daily reset",
-   "note": ""
-  },
-  {
-   "quest": "Memory's Final Chapter",
-   "region": "Sumeru",
-   "severity": "bad",
-   "type": "World",
-   "priors": 1,
-   "archonPriors": null,
-   "before": [
-    "Aragaru's Drawing"
-   ],
-   "hidden": [],
-   "requirement": "Dream Nursery",
    "note": ""
   },
   {
@@ -1248,18 +1351,6 @@
    "before": [],
    "hidden": [],
    "requirement": "Complete In the Name of the Resistance",
-   "note": ""
-  },
-  {
-   "quest": "Sakura Arborism",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "hidden": [],
-   "requirement": "Complete Tatara Tales",
    "note": ""
   },
   {
@@ -1648,21 +1739,7 @@
    "priors": 1,
    "archonPriors": null,
    "before": [
-    "Foggy Forest Path"
-   ],
-   "hidden": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "\"Heart of Watatsumi\"",
-   "region": "Inazuma",
-   "severity": "mild",
-   "type": "World",
-   "priors": 1,
-   "archonPriors": null,
-   "before": [
-    "\"Eye of Watatsumi\""
+    "Foggy Forest Path (Quest)"
    ],
    "hidden": [],
    "requirement": "",
@@ -1719,20 +1796,6 @@
    "archonPriors": null,
    "before": [
     "Treasure Lost, Treasure Found (Part 1)"
-   ],
-   "hidden": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "A Prayer for Rain on the Fecund Land",
-   "region": "Sumeru",
-   "severity": "mild",
-   "type": "World",
-   "priors": 1,
-   "archonPriors": null,
-   "before": [
-    "Memory of Stone"
    ],
    "hidden": [],
    "requirement": "",
@@ -2088,6 +2151,224 @@
    "before": [],
    "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
+   "note": ""
+  },
+  {
+   "quest": "As Light Rain Falls Without Reason",
+   "region": "Fontaine",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 111,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Cataclysm's Quickening",
+   "region": "Fontaine",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 118,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Masquerade of the Guilty",
+   "region": "Fontaine",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 123,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Prelude of Blancheur and Noirceur",
+   "region": "Fontaine",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 108,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "To the Stars Shining in the Depths",
+   "region": "Fontaine",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 114,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Omnipresence Over Mortals",
+   "region": "Inazuma",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 65,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Stillness, the Sublimation of Shadow",
+   "region": "Inazuma",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 63,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Immovable God and the Eternal Euthymia",
+   "region": "Inazuma",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 55,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Akasha Pulses, the Kalpa Flame Rises",
+   "region": "Sumeru",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 99,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Dreams, Emptiness, Deception",
+   "region": "Sumeru",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 93,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "King Deshret and the Three Magi",
+   "region": "Sumeru",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 96,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Morn a Thousand Roses Brings",
+   "region": "Sumeru",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 85,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Through Mists of Smoke and Forests Dark",
+   "region": "Sumeru",
+   "severity": "story",
+   "type": "Archon",
+   "priors": 1,
+   "archonPriors": 78,
+   "before": [
+    "Bough Keeper: Dainsleif"
+   ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "A New Star Approaches",
+   "region": "Liyue",
+   "severity": "story",
+   "type": "Archon",
+   "priors": null,
+   "archonPriors": 42,
+   "before": [],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Farewell, Archaic Lord",
+   "region": "Liyue",
+   "severity": "story",
+   "type": "Archon",
+   "priors": null,
+   "archonPriors": 37,
+   "before": [],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Of the Land Amidst Monoliths",
+   "region": "Liyue",
+   "severity": "story",
+   "type": "Archon",
+   "priors": null,
+   "archonPriors": 31,
+   "before": [],
+   "hidden": [],
+   "requirement": "",
    "note": ""
   }
  ]

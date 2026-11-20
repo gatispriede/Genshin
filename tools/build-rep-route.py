@@ -95,6 +95,11 @@ def locate(region_cfg, src, entries):
                 q["xy"] = xy
             else:
                 q["start"] = "elsewhere"
+        elif q["start"] == "follow" and q.get("where"):
+            # Continues where the previous part ended: approximate dot at its named place.
+            xy = area_xy(q["where"])
+            if xy and inside(*xy):
+                q["xy"] = xy
     return box
 
 
@@ -216,11 +221,11 @@ def giver(q):
 
 def marker(q, window, main):
     x, y = pct(window, q["xy"])
-    approx = q["start"] == "area"
+    approx = q["start"] in ("area", "follow")
     tag = giver(q) or q["name"]
     return {"x": x, "y": y, "role": "warn" if approx else ("goal" if main else "do-now"),
             "layer": rm.quest_layer(q["label"]), "label": q["label"], "tag": ("≈ " if approx else "") + (tag if len(tag) <= 24 else tag[:23] + "…"),
-            "title": q["name"], **({} if main else {"size": "sm"}), **rm.shot_fields(q, SHOT)}
+            "title": q["name"], **rm.shot_fields(q, SHOT)}
 
 
 def shot(q, small=False):
@@ -242,6 +247,9 @@ def where_line(q):
     how = {"pin": "", "area": " <span class=\"warn\">(map dot is approximate: area only)</span>",
            "follow": " <span class=\"dim\">(starts where the previous part ends)</span>",
            "elsewhere": " <span class=\"warn\">(starts outside this region)</span>"}
+    if q.get("commission"):
+        how = dict(how, area=" <span class=\"warn\">(a commission quest: it turns up among your daily commissions "
+                              "here once unlocked; map dot is the area)</span>")
     step = ("<br><span class=\"dim\">Step 1: %s</span>" % esc(q["firstStep"])) if q.get("firstStep") else ""
     if not bits and q["start"] == "pin":
         bits.append("exact start: dot <b>%s</b> on the map" % esc(q["label"]))
@@ -271,7 +279,7 @@ def hidden_html(q):
 def step_html(c):
     kind = ' <span class="tag">hidden objective</span>' if c.get("hidden") else ""
     return ('<li><span style="%s">%s</span> %s%s<br>%s%s%s%s</li>'
-            % (PILL, c["label"], esc(c["name"]), kind, where_line(c), requirement_line(c), hidden_html(c), shot(c, True)))
+            % (PILL, c["label"], esc(c["name"]), kind, where_line(c), requirement_line(c), hidden_html(c), shot(c)))
 
 
 def route_html(map_id, routed):

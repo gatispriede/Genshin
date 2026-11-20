@@ -612,6 +612,22 @@
   "subarea": null,
   "type": null
  },
+ "An Unwavering Culinary Dream (Quest)": {
+  "area": "Vanarana (Area)",
+  "dlg": 6933,
+  "firstSpeaker": "Arapacati",
+  "firstStep": "Talk to Arapacati",
+  "npcs": [
+   "Arama",
+   "Arapacati"
+  ],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 1,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
  "Ancient Colors": {
   "area": null,
   "dlg": 0,
@@ -906,6 +922,25 @@
   "subarea": "Fortress of Meropide",
   "type": "World"
  },
+ "Bough Keeper: Dainsleif": {
+  "area": "Starfell Valley",
+  "dlg": 35276,
+  "firstSpeaker": "Katheryne",
+  "firstStep": "Ask Lawrence about the stranger",
+  "npcs": [
+   "Charles",
+   "Dainsleif",
+   "Katheryne (Mondstadt)",
+   "Lawrence",
+   "Wagner"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete A New Star Approaches",
+  "start": "Mondstadt, Mondstadt",
+  "steps": 24,
+  "subarea": "Mondstadt City",
+  "type": "World"
+ },
  "Bruneau's Flower Request": {
   "area": "Court of Fontaine Region",
   "dlg": 1444,
@@ -1190,6 +1225,21 @@
   "subarea": "Court of Fontaine",
   "type": "World"
  },
+ "Delicious Riddle": {
+  "area": "Vanarana (Area)",
+  "dlg": 3152,
+  "firstSpeaker": "Araesha",
+  "firstStep": "Have a crack at Araesha's riddle",
+  "npcs": [
+   "Araesha"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete step 1 of Festival Utsava",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 6,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
  "Divine Plant of the Depths": {
   "area": "Watatsumi Island",
   "dlg": 15515,
@@ -1389,6 +1439,22 @@
   "start": "Merusea Village, Fontaine",
   "steps": 14,
   "subarea": "Merusea Village",
+  "type": "World"
+ },
+ "Encounter in the Woods": {
+  "area": "Vanarana (Area)",
+  "dlg": 4909,
+  "firstSpeaker": "Arakavi",
+  "firstStep": "Talk to Arakavi",
+  "npcs": [
+   "Arama",
+   "Arakavi"
+  ],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 1,
+  "subarea": "Vanarana (Subarea)",
   "type": "World"
  },
  "Endless Research": {
@@ -1620,6 +1686,21 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Foggy Forest Path (Quest)": {
+  "area": "Court of Fontaine Region",
+  "dlg": 13676,
+  "firstSpeaker": "Inscribed Stone Tablet",
+  "firstStep": "Search for the Foggy Forest Path",
+  "npcs": [
+   "Pahsiv"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Marcotte Station, Fontaine",
+  "steps": 7,
+  "subarea": "Marcotte Station",
+  "type": "World"
  },
  "Fontaine Research Institute Chronicles": {
   "area": null,
@@ -1994,6 +2075,22 @@
   "steps": 4,
   "subarea": "Sumeru City",
   "type": "Commission"
+ },
+ "Garden Fairies": {
+  "area": "Vanarana (Area)",
+  "dlg": 4204,
+  "firstSpeaker": "Aranishat",
+  "firstStep": "Find Aralila!",
+  "npcs": [
+   "Aralila",
+   "Aranishat"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete step 1 of Festival Utsava",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 3,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
  },
  "Gazing Three Thousand Miles Away": {
   "area": "Yashiori Island",
@@ -2412,6 +2509,19 @@
   "start": "New Fontaine Research Institute, Fontaine",
   "steps": 6,
   "subarea": "New Fontaine Research Institute",
+  "type": "World"
+ },
+ "Initial Facts": {
+  "area": "Court of Fontaine Region",
+  "dlg": 1390,
+  "firstSpeaker": null,
+  "firstStep": "Find clues regarding the Narzissenkreuz Ordo",
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": "* Complete Ann of the Narzissenkreuz, Ancient Colors, and Unfinished Comedy",
+  "start": "Institute of Natural Philosophy, Fontaine",
+  "steps": 3,
+  "subarea": "Institute of Natural Philosophy",
   "type": "World"
  },
  "International Travel Log": {
@@ -3691,6 +3801,21 @@
   "subarea": null,
   "type": "World"
  },
+ "Rishboland Tiger, Roaaar": {
+  "area": "Vanarana (Area)",
+  "dlg": 3202,
+  "firstSpeaker": "Arakanta",
+  "firstStep": "Act as the Rishboland Tiger and catch all the Aranara",
+  "npcs": [
+   "Arakanta"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete step 1 of Festival Utsava",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 3,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
  "Road to the Singularity": {
   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
   "dlg": 16792,
@@ -3834,6 +3959,23 @@
   "subarea": null,
   "type": null
  },
+ "Savior's Wake (Quest)": {
+  "area": "Morte Region",
+  "dlg": 19592,
+  "firstSpeaker": "Introduction",
+  "firstStep": "Decode this level's puzzle",
+  "npcs": [
+   "Ann",
+   "Caterpillar",
+   "Seymour"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Tower of Ipsissimus, Morte Region, Fontaine",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
  "Says He Who Seeks Stone": {
   "area": "The Chasm (Area)",
   "dlg": 8387,
@@ -3874,6 +4016,26 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Search in the Algae Sea (Quest)": {
+  "area": "Court of Fontaine Region",
+  "dlg": 70298,
+  "firstSpeaker": "Ann",
+  "firstStep": "Talk to Caterpillar when you're ready",
+  "npcs": [
+   "Al",
+   "Ann",
+   "Caterpillar",
+   "Jak",
+   "Jakob",
+   "Seymour"
+  ],
+  "region": "Fontaine",
+  "requirement": "Complete Initial Facts",
+  "start": "The Narzissenkreuz Ordo, Fontaine",
+  "steps": 15,
+  "subarea": "Institute of Natural Philosophy",
+  "type": "World"
  },
  "Searching for Saimon Jirou": {
   "area": null,
@@ -4044,6 +4206,22 @@
   "subarea": null,
   "type": "World"
  },
+ "Sprouting Seedlings": {
+  "area": "Vanarana (Area)",
+  "dlg": 10102,
+  "firstSpeaker": "Arakara",
+  "firstStep": "Head to the garden cared for by Aranakula<br><gallery>",
+  "npcs": [
+   "Arakara",
+   "Aranakula"
+  ],
+  "region": "Sumeru",
+  "requirement": "Varuna Gatha",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 2,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
  "Static Views": {
   "area": "Vanarana (Area)",
   "dlg": 3652,
@@ -4196,6 +4374,25 @@
   "subarea": "Court of Fontaine",
   "type": "World"
  },
+ "Taste of Happiness": {
+  "area": "Vanarana (Area)",
+  "dlg": 7430,
+  "firstSpeaker": "Arapacati",
+  "firstStep": "Talk to the \"brothers\" (0/4)",
+  "npcs": [
+   "Arachatora",
+   "Arapacati",
+   "Arapas",
+   "Araphala",
+   "Arasaka"
+  ],
+  "region": "Sumeru",
+  "requirement": "Complete step 1 of Festival Utsava",
+  "start": "Vanarana (Subarea), Vanarana (Area), Sumeru",
+  "steps": 6,
+  "subarea": "Vanarana (Subarea)",
+  "type": "World"
+ },
  "Tatara Tales": {
   "area": null,
   "dlg": 0,
@@ -4208,6 +4405,23 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Tatara Tales (Quest)": {
+  "area": "Kannazuka",
+  "dlg": 36616,
+  "firstSpeaker": "Miyuki",
+  "firstStep": "Ask the two about the situation",
+  "npcs": [
+   "Miyuki",
+   "Toranosuke",
+   "Xavier"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Kujou Encampment, Inazuma",
+  "steps": 22,
+  "subarea": "Kujou Encampment",
+  "type": "World"
  },
  "Tatara Tales: Data Collection": {
   "area": "Kannazuka",
@@ -4854,6 +5068,21 @@
   "subarea": null,
   "type": null
  },
+ "The Moon-Bathed Deep (Quest)": {
+  "area": "Watatsumi Island",
+  "dlg": 12061,
+  "firstSpeaker": "Tsuyuko",
+  "firstStep": "Talk to Tsuyuko at Mouun Shrine",
+  "npcs": [
+   "Tsuyuko"
+  ],
+  "region": "Inazuma",
+  "requirement": "* {{Quest|A New Star Approaches|requirements=1|display=fullSentence}}",
+  "start": "Mouun Shrine, Inazuma",
+  "steps": 1,
+  "subarea": "Mouun Shrine",
+  "type": "World"
+ },
  "The Morn a Thousand Roses Brings": {
   "area": null,
   "dlg": 0,
@@ -4996,6 +5225,54 @@
   "start": "Palais Mermonia, Fontaine",
   "steps": 24,
   "subarea": "Court of Fontaine: Palais Mermonia",
+  "type": "World"
+ },
+ "The Rhythm that Leads to the Gloomy Path": {
+  "area": "Avidya Forest",
+  "dlg": 19198,
+  "firstSpeaker": "Arama",
+  "firstStep": "Head to the designated location to look for clues about Ashvattha's Concourses",
+  "npcs": [
+   "Arama",
+   "Arayasa"
+  ],
+  "region": "Sumeru",
+  "requirement": "Encounter in the Woods",
+  "start": "Gandha Hill, Sumeru",
+  "steps": 19,
+  "subarea": "Gandha Hill",
+  "type": "World"
+ },
+ "The Rhythm that Nurtures the Sprout": {
+  "area": "Ashavan Realm",
+  "dlg": 27241,
+  "firstSpeaker": "Arama",
+  "firstStep": "Head to the designated location to look for clues about Ashvattha's Concourses",
+  "npcs": [
+   "Arama",
+   "Arasudraka"
+  ],
+  "region": "Sumeru",
+  "requirement": "Encounter in the Woods",
+  "start": "Ashavan Realm, Sumeru",
+  "steps": 16,
+  "subarea": null,
+  "type": "World"
+ },
+ "The Rhythm that Reveals the Beastly Trail": {
+  "area": "Ardravi Valley",
+  "dlg": 26153,
+  "firstSpeaker": "Arama",
+  "firstStep": "Head to the designated location to look for clues about Ashvattha's Concourses",
+  "npcs": [
+   "Aradasa",
+   "Arama"
+  ],
+  "region": "Sumeru",
+  "requirement": "Encounter in the Woods",
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 15,
+  "subarea": null,
   "type": "World"
  },
  "The Ritou Road": {
@@ -5675,6 +5952,21 @@
   "subarea": null,
   "type": null
  },
+ "Varuna Gatha (Quest)": {
+  "area": "Ashavan Realm",
+  "dlg": 15084,
+  "firstSpeaker": "???",
+  "firstStep": "Help the trapped Aranara",
+  "npcs": [
+   "Arapandu"
+  ],
+  "region": "Sumeru",
+  "requirement": "The World of Aranara",
+  "start": "Apam Woods, Sumeru",
+  "steps": 11,
+  "subarea": "Apam Woods",
+  "type": "World"
+ },
  "Villains": {
   "area": "Fontaine Research Institute of Kinetic Energy Engineering Region",
   "dlg": 66003,
@@ -5784,6 +6076,22 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Waking from the Great Dream (Quest)": {
+  "area": "Morte Region",
+  "dlg": 8127,
+  "firstSpeaker": "???",
+  "firstStep": "Enter the ocean current",
+  "npcs": [
+   "Ann",
+   "Narzissenkreuz"
+  ],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": "Genesis of a Certain Micro-Universe, Fontaine",
+  "steps": 5,
+  "subarea": "Genesis of a Certain Micro-Universe",
+  "type": "World"
  },
  "Were It So Easy": {
   "area": "Beryl Region",
@@ -5941,6 +6249,21 @@
   "steps": 0,
   "subarea": null,
   "type": null
+ },
+ "Woodland Encounter (Quest)": {
+  "area": "Avidya Forest",
+  "dlg": 4269,
+  "firstSpeaker": "???",
+  "firstStep": "Help the person who is being attacked Stretchy Geo Fungus *3",
+  "npcs": [
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": "Unlock the Statue of The Seven in Avidya Forest, Lokapala Jungle, Ardravi Valley, Vissudha Field, or Ashavan Realm",
+  "start": "Avidya Forest, Sumeru",
+  "steps": 1,
+  "subarea": null,
+  "type": "World"
  },
  "Words Worth Their Weight in Mora": {
   "area": "Sea of Clouds",

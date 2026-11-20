@@ -134,6 +134,20 @@ def field(text, name, pipes=False):
     return (m.group(1) or "").strip() if m else ""
 
 
+def target(s):
+    """The page a field points at: [[A|B]] and {{Quest|A}} -> A, plain text as is.
+    Display text loses the disambiguation ("Foggy Forest Path (Quest)" shows as
+    "Foggy Forest Path", which is also a location page)."""
+    m = re.search(r"\{\{Quest\|([^|}]+)|\[\[([^\]|#]+)", s or "")
+    return ((m.group(1) or m.group(2)) if m else (s or "")).strip()
+
+
+def act_quests(text):
+    """An act page's ==Quests== list, as page titles in order."""
+    m = re.search(r"==\s*Quests\s*==(.*?)(\n==[^=]|$)", text, re.S)
+    return links(m.group(1)) if m else []
+
+
 def clean(s):
     """Wikitext to something readable."""
     s = re.sub(r"\{\{Quest\|([^|}]+)[^}]*\}\}", r"\1", s)
@@ -167,17 +181,22 @@ def main():
                 hidden = "Hidden Exploration Objectives Infobox" in text[:200]
                 # Series (Chapter) and part (Act) pages carry a quest type too, but
                 # they are overviews, not quests you start: never a step.
-                series = re.search(r"\{\{(Chapter|Act) Infobox", text[:600]) is not None
+                series = re.search(r"\{\{Chapter Infobox", text[:600]) is not None
+                act = re.search(r"\{\{Act Infobox", text[:600]) is not None
+                quest = re.search(r"\{\{Quest Infobox", text[:600]) is not None
                 typ = (field(text, "type") or "").strip()
                 cache[t] = {
                     # Hidden objectives call the field `req`; quests call it `requirement`.
                     "req": field(text, "req" if hidden else "requirement", pipes=True),
-                    "prev": clean(field(text, "prev")),
+                    "prev": target(field(text, "prev", pipes=True)),
                     "type": typ or "?",
                     "found": bool(text),
-                    "kind": "hidden" if hidden else "series" if series
-                            else ("quest" if typ.lower() in QUEST_TYPES else "other"),
+                    "kind": "hidden" if hidden else "series" if series else "act" if act
+                            else ("quest" if quest or (typ.lower() in QUEST_TYPES and "Location Infobox" not in text[:600])
+                                  else "other"),
                 }
+                if act:
+                    cache[t]["quests"] = act_quests(text)
                 if hidden:
                     cache[t]["hidden"] = {
                         "region": field(text, "region"), "area": field(text, "area"),
@@ -194,13 +213,39 @@ def main():
 
     # Walk prev backwards and follow requirement links until nothing new appears:
     # a requirement can name a quest or a hidden objective that has its own.
-    for _ in range(8):
+    for _ in range(10):
         need = [v["prev"] for v in cache.values() if v["prev"] and v["prev"] not in cache]
         need += [l for v in list(cache.values()) for l in links(v["req"]) if l not in cache]
+        need += [q for v in list(cache.values()) for q in v.get("quests", []) if q not in cache]
+        # A name that is a location (or anything but a quest) may be the quest's
+        # namesake: the quest page is then "<name> (Quest)".
+        need += [t + " (Quest)" for t, v in list(cache.items())
+                 if v["kind"] == "other" and not t.endswith("(Quest)") and t + " (Quest)" not in cache]
         if not need:
             break
         grab(need)
     print()
+
+    def canon(title):
+        """The quest page a title means: its "(Quest)" namesake when the plain
+        title is a location or other page."""
+        r = cache.get(title) or {}
+        alt = cache.get(title + " (Quest)") or {}
+        if r.get("kind") == "other" and alt.get("kind") in ("quest", "hidden"):
+            return title + " (Quest)"
+        return title
+
+    def steps_for(title, seen):
+        """What doing `title` means as steps: an act is its quests in order (after
+        whatever leads into the act); a quest is its own chain, then itself."""
+        t = canon(title)
+        r = cache.get(t) or {}
+        if r.get("kind") == "act":
+            qs = [canon(q) for q in r.get("quests", [])]
+            return (chain(qs[0], seen) if qs else []) + qs
+        if r.get("kind") == "series":
+            return []
+        return chain(t, seen) + [t]
 
     def is_step(title):
         """A linked page you have to DO first: a world quest or a hidden objective.
@@ -216,28 +261,33 @@ def main():
         prev chain come before it."""
         out = []
         for l in links((cache.get(name) or {}).get("req")):
-            if l in seen or not is_step(l):
+            l = canon(l)
+            r = cache.get(l) or {}
+            # World acts expand into their quests; Archon acts are the main story and stay text.
+            world_act = r.get("kind") == "act" and r.get("type", "").lower() == "world"
+            if l in seen or not (is_step(l) or world_act):
                 continue
             seen.add(l)
-            out += gates(l, seen) + chain(l) + [l]
+            out += gates(l, seen) + steps_for(l, set())   # own guard: gates marked l already
         return out
 
     def chain(name, seen=None):
         """Ordered list of quests that come before `name`."""
-        seen = seen or set()
-        rec = cache.get(name)
+        seen = seen if seen is not None else set()
+        rec = cache.get(canon(name))
         if not rec or not rec["prev"] or name in seen:
             return []
         seen.add(name)
-        return chain(rec["prev"], seen) + [rec["prev"]]
+        return steps_for(rec["prev"], seen)
 
     entries = []
     for region, name in wanted:
         rec = cache.get(name) or {}
         # prev chain plus every step the requirement links to, without repeats.
-        before = [clean(b) for b in dict.fromkeys(gates(name, {name}) + chain(name))]
-        before = [b for b in dict.fromkeys(before)
-                  if b != name and (cache.get(b) or {}).get("kind") != "series"]
+        # Page titles, so later fetches get the right page ("Foggy Forest Path
+        # (Quest)", not the location); the pages display them without "(Quest)".
+        before = [b for b in dict.fromkeys(gates(name, {name}) + chain(name, set()))
+                  if b != name and (cache.get(b) or {}).get("kind") in ("quest", "hidden")]
         req_raw = rec.get("req", "")
         req = clean(req_raw)
 
