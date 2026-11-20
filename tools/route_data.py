@@ -91,14 +91,23 @@ def route(region, home_area, home_names, claimed_by=None):
     chains = {c["quest"]: c for c in load("quest-chains.json")["chains"] if c["region"] == region}
     pins = load("hoyolab-wq-pins.json")["pins"]
     claimed = {norm(n) for n in (claimed_by or [])}
+    # Hidden exploration objectives (riddles, puzzles) that gate a quest: their own
+    # infobox gives the place and the steps, which the quest-starts parse misses.
+    hidden = load("hidden-objectives.json")["objectives"]
 
     def place(name, prev_entry):
-        s = starts.get(name, {})
+        s = dict(starts.get(name, {}))
+        h = hidden.get(name)
+        if h:
+            s.update({k: v for k, v in (("area", h["area"]), ("subarea", h["subarea"]),
+                                         ("npcs", h["characters"])) if v})
         r = rep.get(name, {})
         where = s.get("subarea") or s.get("area")
         entry = {"name": name, "npc": (s.get("npcs") or [None])[0], "npcs": s.get("npcs") or [],
                  "firstStep": s.get("firstStep"), "firstSpeaker": s.get("firstSpeaker"),
-                 "where": where, "requirement": s.get("requirement"), "effort": effort(s)}
+                 "where": where, "area": s.get("area"),
+                 "requirement": (chains.get(name) or {}).get("requirement") or s.get("requirement"),
+                 "hidden": h["steps"] if h else None, "effort": effort(s)}
         if r.get("group") == "Request":
             entry["start"] = "request"
         elif s.get("type") == "Commission":

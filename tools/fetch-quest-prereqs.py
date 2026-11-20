@@ -38,6 +38,40 @@ API = "https://genshin-impact.fandom.com/api.php"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "reference", "data", "reputation-quests.json")
 OUT = os.path.join(ROOT, "reference", "data", "quest-chains.json")
+HIDDEN_OUT = os.path.join(ROOT, "reference", "data", "hidden-objectives.json")
+
+# Quest types the wiki's Quest infobox uses. A requirement link to anything else
+# (an NPC, "daily reset", an item) is a condition, not a step.
+QUEST_TYPES = {"world", "archon", "story", "hangout", "event", "commission", "random"}
+# Requirement links: {{Quest|Name}} and [[Name]] / [[Name|label]].
+LINK = re.compile(r"\{\{Quest\|([^|}]+)|\[\[([^\]|#]+)")
+
+
+def links(raw):
+    """Page titles linked from a requirement field, in order, without duplicates."""
+    out = []
+    for a, b in LINK.findall(raw or ""):
+        t = (a or b).strip()
+        if t and not t.lower().startswith(("file:", "category:")) and t not in out:
+            out.append(t)
+    return out
+
+
+def steps_of(text):
+    """A Hidden Exploration Objective's ==Steps==, as plain numbered lines."""
+    m = re.search(r"==\s*Steps\s*==(.*?)(\n==[^=]|$)", text, re.S)
+    if not m:
+        return []
+    out = []
+    for line in m.group(1).splitlines():
+        line = line.rstrip()
+        if not line.startswith("#") or line.startswith("#:"):
+            continue
+        depth = len(line) - len(line.lstrip("#"))
+        body = clean(line.lstrip("#").strip())
+        if body:
+            out.append(("  " * (depth - 1)) + body)
+    return out
 
 # Quests that gate a whole region. Everyone standing in that region has already
 # done them, so flagging each row with "needs the Archon quest" is pure noise.
@@ -130,25 +164,63 @@ def main():
                 got = api(batch)
             for t in batch:
                 text = got.get(t, "")
+                hidden = "Hidden Exploration Objectives Infobox" in text[:200]
+                # Series (Chapter) and part (Act) pages carry a quest type too, but
+                # they are overviews, not quests you start: never a step.
+                series = re.search(r"\{\{(Chapter|Act) Infobox", text[:600]) is not None
+                typ = (field(text, "type") or "").strip()
                 cache[t] = {
-                    "req": field(text, "requirement", pipes=True),
+                    # Hidden objectives call the field `req`; quests call it `requirement`.
+                    "req": field(text, "req" if hidden else "requirement", pipes=True),
                     "prev": clean(field(text, "prev")),
-                    "type": field(text, "type") or "?",
+                    "type": typ or "?",
                     "found": bool(text),
+                    "kind": "hidden" if hidden else "series" if series
+                            else ("quest" if typ.lower() in QUEST_TYPES else "other"),
                 }
+                if hidden:
+                    cache[t]["hidden"] = {
+                        "region": field(text, "region"), "area": field(text, "area"),
+                        "subarea": field(text, "subarea"), "loc": clean(field(text, "loc", pipes=True)),
+                        "characters": [c.strip() for c in field(text, "characters", pipes=True).split(";")
+                                       if c.strip() and c.strip() not in ("Traveler", "Paimon")],
+                        "steps": steps_of(text),
+                    }
             sys.stdout.write("\r  fetched %d" % len(cache))
             sys.stdout.flush()
 
     print("Reading %d reputation quests" % len(wanted))
     grab([n for _, n in wanted])
 
-    # Walk prev backwards until no new quests appear.
+    # Walk prev backwards and follow requirement links until nothing new appears:
+    # a requirement can name a quest or a hidden objective that has its own.
     for _ in range(8):
         need = [v["prev"] for v in cache.values() if v["prev"] and v["prev"] not in cache]
+        need += [l for v in list(cache.values()) for l in links(v["req"]) if l not in cache]
         if not need:
             break
         grab(need)
     print()
+
+    def is_step(title):
+        """A linked page you have to DO first: a world quest or a hidden objective.
+        Archon and entry quests stay in the requirement text: they are the main story."""
+        r = cache.get(title) or {}
+        if r.get("kind") == "hidden":
+            return True
+        return (r.get("kind") == "quest" and r.get("type", "").lower() not in ("archon", "story")
+                and title not in ENTRY)
+
+    def gates(name, seen):
+        """Steps named in requirements, deepest first: each step's own gates and
+        prev chain come before it."""
+        out = []
+        for l in links((cache.get(name) or {}).get("req")):
+            if l in seen or not is_step(l):
+                continue
+            seen.add(l)
+            out += gates(l, seen) + chain(l) + [l]
+        return out
 
     def chain(name, seen=None):
         """Ordered list of quests that come before `name`."""
@@ -162,7 +234,10 @@ def main():
     entries = []
     for region, name in wanted:
         rec = cache.get(name) or {}
-        before = chain(name)
+        # prev chain plus every step the requirement links to, without repeats.
+        before = [clean(b) for b in dict.fromkeys(gates(name, {name}) + chain(name))]
+        before = [b for b in dict.fromkeys(before)
+                  if b != name and (cache.get(b) or {}).get("kind") != "series"]
         req_raw = rec.get("req", "")
         req = clean(req_raw)
 
@@ -203,7 +278,8 @@ def main():
             "type": own_type,
             "priors": depth or None,
             "archonPriors": archon_before or None,
-            "before": world_before[-7:],
+            "before": world_before,
+            "hidden": [b for b in world_before if (cache.get(b) or {}).get("kind") == "hidden"],
             "requirement": req,
             "note": NOTABLE[notable[0]] if notable else "",
         })
@@ -229,6 +305,16 @@ def main():
     with io.open(OUT, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, indent=1, ensure_ascii=False)
         fh.write("\n")
+
+    # Hidden objectives named as steps: where they are and how to solve them.
+    hidden = {t: dict(v["hidden"], requirement=clean(v["req"]))
+              for t, v in cache.items() if v.get("kind") == "hidden"}
+    with io.open(HIDDEN_OUT, "w", encoding="utf-8") as fh:
+        json.dump({"_checked": time.strftime("%Y-%m-%d"), "_by": "tools/fetch-quest-prereqs.py",
+                   "_source": "Genshin Impact Wiki, Hidden Exploration Objectives infobox and Steps",
+                   "objectives": hidden}, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    print("wrote %s (%d hidden objectives)" % (HIDDEN_OUT, len(hidden)))
 
     by = {}
     for e in entries:

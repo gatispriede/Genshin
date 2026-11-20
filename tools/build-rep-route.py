@@ -251,25 +251,48 @@ def where_line(q):
 TIERS = ((6, "Very short"), (11, "Short"), (20, "Medium"), (1e9, "Long"))
 
 
-def route_html(region, routed):
+def requirement_line(q):
+    """The wiki's requirement text for this quest or step."""
+    req = (q.get("requirement") or "").strip()
+    return ('<div class="req"><b>To unlock:</b> %s</div>' % esc(req)) if req else ""
+
+
+def hidden_html(q):
+    """A hidden objective's steps (riddles, puzzles), folded: the wiki's walkthrough."""
+    steps = q.get("hidden") or []
+    if not steps:
+        return ""
+    items = "".join('<li%s>%s</li>' % (' class="sub"' if st.startswith("  ") else "", esc(st.strip()))
+                    for st in steps)
+    return ('<details class="hidden"><summary>Hidden objective: how to solve it</summary><ol class="steps">%s</ol>'
+            '</details>' % items)
+
+
+def step_html(c):
+    kind = ' <span class="tag">hidden objective</span>' if c.get("hidden") else ""
+    return ('<li><span style="%s">%s</span> %s%s<br>%s%s%s%s</li>'
+            % (PILL, c["label"], esc(c["name"]), kind, where_line(c), requirement_line(c), hidden_html(c), shot(c, True)))
+
+
+def route_html(map_id, routed):
+    """The stops of one page. Every stop says what unlocks it and lists the quests
+    (and hidden objectives) that lead to it, in the order you do them."""
     out = []
     for e in routed:
         q, chain = e["quest"], e["chain"]
         tier = next(t for lim, t in TIERS if e["cost"] < lim)
         todo = [c for c in chain if not c.get("dupOf")]
-        steps = "".join(
-            '<li><span style="%s">%s</span> %s<br>%s%s</li>' % (PILL, c["label"], esc(c["name"]), where_line(c), shot(c, True))
-            for c in chain)
-        chain_html = ('<details class="chain"><summary>%d quest%s first%s</summary><ol class="steps">%s</ol></details>'
+        chain_html = ('<details class="chain" open><summary>%d step%s first%s</summary><ol class="steps">%s</ol></details>'
                       % (len(chain), "" if len(chain) == 1 else "s",
-                         (" (%d new)" % len(todo)) if len(todo) != len(chain) else "", steps)) if chain else ""
-        slug = REGIONS[region]["slug"]
-        solo = rm.solo_query(e["n"], len(routed), [slug + "Route", slug + "City"])
+                         (" (%d new)" % len(todo)) if len(todo) != len(chain) else "",
+                         "".join(step_html(c) for c in chain))) if chain else ""
+        solo = rm.solo_query(e["n"], len(routed), [map_id])
         out.append('<div class="stop" id="q%d" style="%s"><div><span style="%s">%d</span> <b>%s</b> '
                    '<span style="opacity:.65;font-size:.85rem;margin-left:6px">%s</span> '
                    '<a href="%s" style="font-size:.85rem;margin-left:6px">show only this on the map</a></div>'
-                   '<div>%s</div>%s%s</div>'
-                   % (e["n"], CARD, PILL, e["n"], esc(q["name"]), tier, esc(solo), where_line(q), shot(q), chain_html))
+                   '<div>%s</div>%s%s%s</div>'
+                   % (e["n"], CARD, PILL, e["n"], esc(q["name"]), tier, esc(solo), where_line(q),
+                      requirement_line(q), shot(q), chain_html))
     return "\n".join(out)
 
 
@@ -291,7 +314,245 @@ background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size
 .thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
 ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
 .warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
 """
+
+
+MIN_AREA = 4          # an area with fewer quests joins its nearest neighbour
+MAX_PER_PAGE = 12     # more than this and an area splits by sub-area, then into parts
+MIN_WINDOW = 384      # px of the official map an area crop always covers
+MAX_ENLARGE = 2       # beyond this the half-scale tiles blur badly (the old city close-up was 4x)
+
+
+def area_key(name):
+    """The wiki's area name, cleaned: "(Area)" suffixes dropped, and the first
+    of several areas ("Liffey Region; Fontaine Research Institute…")."""
+    name = re.split(r"\s*;\s*", name or "")[0]
+    return re.sub(r"\s*\((?:area|subarea)\)", "", name, flags=re.I).strip()
+
+
+def slugify(name):
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def _centre(es):
+    return (sum(e["quest"]["xy"][0] for e in es) / len(es), sum(e["quest"]["xy"][1] for e in es) / len(es))
+
+
+def _merge_small(groups):
+    """Groups under MIN_AREA quests join the nearest big group (by centre)."""
+    big = {k: v for k, v in groups.items() if len(v) >= MIN_AREA}
+    if not big:
+        top = max(groups, key=lambda k: len(groups[k]))
+        big = {top: groups[top]}
+    merged = {k: [] for k in big}
+    for k, v in groups.items():
+        if k in big:
+            continue
+        cx, cy = _centre(v)
+        near = min(big, key=lambda b: (_centre(big[b])[0] - cx) ** 2 + (_centre(big[b])[1] - cy) ** 2)
+        big[near] = big[near] + v
+        merged[near].append(k)
+    return big, merged
+
+
+def group_by_area(routed):
+    """Routed quests -> pages of at most MAX_PER_PAGE. By area first; an area
+    over the limit splits by sub-area (Liyue Harbor inside Sea of Clouds); a
+    sub-area still over it splits into parts, shortest quests first. Small
+    groups join the nearest bigger one, so every page has a real list."""
+    by_area = {}
+    for e in routed:
+        by_area.setdefault(area_key(e["quest"].get("area") or e["quest"]["where"]) or "Elsewhere", []).append(e)
+    areas, also = _merge_small(by_area)
+    out = []
+    for area, entries in areas.items():
+        if len(entries) <= MAX_PER_PAGE:
+            out.append({"area": area, "also": sorted(also[area]), "entries": entries})
+            continue
+        by_sub = {}
+        for e in entries:
+            by_sub.setdefault(area_key(e["quest"]["where"]) or area, []).append(e)
+        # Small sub-areas around a city keep their own page when there are enough
+        # of them together, so the city's parts stay city quests.
+        small = [k for k, v in by_sub.items() if len(v) < MIN_AREA]
+        if sum(len(by_sub[k]) for k in small) >= MIN_AREA:
+            rest = [e for k in small for e in by_sub.pop(k)]
+            by_sub["Around " + max(by_sub, key=lambda k: len(by_sub[k]))] = rest
+            names = sorted(set(small + also[area]))
+        else:
+            names = also[area]
+        subs, sub_also = _merge_small(by_sub)
+        for k in subs:
+            if k.startswith("Around "):
+                sub_also[k] = names
+        for sub, es in subs.items():
+            es.sort(key=lambda e: e["cost"])
+            n_parts = -(-len(es) // MAX_PER_PAGE)          # ceil
+            size = -(-len(es) // n_parts)                   # even parts: 25 -> 9, 8, 8
+            parts = [es[i:i + size] for i in range(0, len(es), size)]
+            for n, part in enumerate(parts, 1):
+                name = sub if len(parts) == 1 else "%s, part %d" % (sub, n)
+                out.append({"area": name, "also": sorted(sub_also[sub]) if n == 1 else [], "entries": part})
+    for g in out:
+        g["entries"].sort(key=lambda e: e["cost"])
+    out.sort(key=lambda g: -len(g["entries"]))
+    return out
+
+
+def relabel(entries):
+    """Number one page's stops 1..n; chain steps 1a, 1b. A step already listed
+    under an earlier quest on the same page says so instead of repeating."""
+    seen = {}
+    for n, e in enumerate(entries, 1):
+        e["n"] = n
+        e["quest"]["label"] = str(n)
+        for i, q in enumerate(e["chain"]):
+            q["label"] = "%d%s" % (n, letter(i))
+            q.pop("dupOf", None)
+            if q["name"] in seen:
+                q["dupOf"] = seen[q["name"]]
+            else:
+                seen[q["name"]] = q["label"]
+        seen.setdefault(e["quest"]["name"], e["quest"]["label"])
+
+
+PAGE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%(title)s</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>%(css)s</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>%(title)s</h1>
+  <p class="sub">%(sub)s</p>
+%(body)s
+  <p class="sub">Sources: HoYoLAB interactive map (World Quest pins and their notes); Genshin Impact Wiki quest and
+  hidden-objective pages (requirements, steps, start NPCs). Generated %(date)s.</p>
+  <div class="note editor">Built by <code>python -I tools/build-rep-route.py %(region)s</code> from
+  reference/data/quest-starts.json, quest-chains.json and hidden-objectives.json.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+%(draws)s
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>
+"""
+
+
+def map_block(map_id, img, alt, legend, window, markers):
+    height = "min(%.0fvw, %dpx)" % (100.0 * window.h / window.w, int(1200 * window.h / window.w))
+    return ('<div class="map-wrap" id="%s" data-map="%s" data-alt="%s" data-legend="%s" data-block-w="24" '
+            'data-label-min-zoom="0" data-height="%s"></div>'
+            % (map_id, img, esc(alt), esc(json.dumps(legend, ensure_ascii=False)), height),
+            '  drawMap("#%s", %s);' % (map_id, json.dumps(markers, ensure_ascii=False)))
+
+
+def area_page(region, cfg, src, g):
+    """One area: its own map crop, its quests shortest first, each with what
+    unlocks it and the steps that lead to it."""
+    relabel(g["entries"])
+    every = [q for e in g["entries"] for q in e["chain"] + [e["quest"]]]
+    placed = [q for q in every if "xy" in q and not q.get("dupOf")]
+    slug = "%s-rep-%s" % (cfg["slug"], slugify(g["area"]))
+    map_id = re.sub(r"-(\w)", lambda m: m.group(1).upper(), slug)
+    # Never crop tighter than MIN_WINDOW px of the official map: the tiles stop at
+    # half scale, so a tiny crop (a city) has to be blown up and goes blurry. A
+    # wider crop shows some surroundings and needs at most MAX_ENLARGE.
+    xs, ys = [q["xy"][0] for q in placed], [q["xy"][1] for q in placed]
+    extent = max(max(xs) - min(xs), max(ys) - min(ys))
+    win = src.window([q["xy"] for q in placed], pad=max(72, (MIN_WINDOW - extent) // 2))
+    img = "assets/%s.webp" % slug
+    stitch(win, img, scale_to=min(MAX_EDGE, MAX_ENLARGE * max(win.w, win.h)), enlarge=True)
+    markers = rm.merge_stacked([marker(q, win, q["label"].isdigit()) for q in placed])
+    block, draw = map_block(map_id, img, "%s, %s: where each reputation quest starts" % (g["area"], region),
+                            rm.legend(g["entries"], markers), win, markers)
+    chained = sum(1 for e in g["entries"] if e["chain"])
+    title = g["area"] + (" and nearby" if g["also"] else "")
+    sub = ("%d reputation quests in %s%s, shortest first; %d need other quests first, listed under them in order "
+           "(<b>3a, 3b</b> before quest 3). <b>To unlock</b> lines are the wiki's requirements."
+           % (len(g["entries"]), esc(g["area"]), (" (with %s)" % esc(", ".join(g["also"]))) if g["also"] else "",
+              chained))
+    body = ('  <div class="bar key"><b>Reading the map.</b> Green pins are the quests that pay; small red pins are the '
+            'quests and hidden objectives you do first. Yellow dots are approximate: the wiki names only the area. '
+            'Each pin is captioned with who to talk to; each quest has its own toggle under the map.</div>\n  %s\n'
+            '  <h2>The route</h2>\n%s' % (block, route_html(map_id, g["entries"])))
+    out = slug + ".html"
+    io.open(out, "w", encoding="utf-8", newline="\n").write(PAGE % {
+        "title": "%s reputation quests: %s" % (region, title), "sub": sub, "body": body, "css": CSS,
+        "date": time.strftime("%d %b %Y"), "region": region, "draws": draw})
+    return {"href": out, "title": "%s: %s" % (region, title), "area": g["area"], "also": g["also"],
+            "quests": len(g["entries"]), "chained": chained,
+            "box": [min(q["xy"][0] for q in placed), min(q["xy"][1] for q in placed),
+                    max(q["xy"][0] for q in placed), max(q["xy"][1] for q in placed)]}
+
+
+def overview_page(region, cfg, src, routed, side, areas):
+    """The region page: one map with an outline per area, and a card per area."""
+    placed = [e["quest"] for e in routed]
+    win = src.window([q["xy"] for q in placed], pad=96)
+    # New name, not -rep-route-map: the uploader skips names it has seen, and this
+    # map has a different crop from the old single-page route map.
+    img = "assets/%s-rep-areas-map.webp" % cfg["slug"]
+    stitch(win, img)
+    markers = []
+    for a in areas:
+        x0, y0 = pct(win, (a["box"][0] - 20, a["box"][1] - 20))
+        x1, y1 = pct(win, (a["box"][2] + 20, a["box"][3] + 20))
+        markers.append({"zone": True, "rect": True, "x": x0, "y": y0, "w": round(x1 - x0, 2), "h": round(y1 - y0, 2),
+                        "role": "hub", "tag": "%s: %d quests" % (a["area"], a["quests"])})
+    for q in placed:
+        x, y = pct(win, q["xy"])
+        markers.append({"x": x, "y": y, "role": "goal", "size": "sm", "title": q["name"]})
+    map_id = cfg["slug"] + "Route"
+    block, draw = map_block(map_id, img, "%s: reputation quest areas" % region, [], win, markers)
+    cards = "".join('<li><a href="%s">%s</a> · %d quests%s%s</li>' % (
+        a["href"], esc(a["title"].split(": ", 1)[1]), a["quests"],
+        (", %d behind other quests" % a["chained"]) if a["chained"] else "",
+        (" (also %s)" % esc(", ".join(a["also"]))) if a["also"] else "") for a in areas)
+    total = len(routed) + sum(len(v) for v in side.values())
+    body = '  <h2>Areas</h2>\n  <ul class="regions">%s</ul>\n  %s\n%s%s%s%s' % (
+        cards, block,
+        side_html("Weekly requests and bounties", "Taken from the Reputation menu, not from the map: up to 3 a week "
+                  "across all nations. The name is who you hand in to.", side["request"]),
+        side_html("Commission quests", "These turn up among your daily commissions; you cannot start them on "
+                  "demand.", side["commission"]),
+        side_html("Story quests", "Archon or Story quests: start them from the Quests menu.", side["story"]),
+        side_html("Starts outside %s" % region, "The quest that pays is here, but it starts in another region.",
+                  side["elsewhere"]))
+    sub = ("%d quests pay %s reputation. The ones you start from the map are split by area below, each page with its "
+           "own map, the quests shortest first, what unlocks them and the quests that lead to them." % (total, region))
+    out = "%s-rep-route.html" % cfg["slug"]
+    io.open(out, "w", encoding="utf-8", newline="\n").write(PAGE % {
+        "title": "%s reputation quests" % region, "sub": sub, "body": body, "css": CSS,
+        "date": time.strftime("%d %b %Y"), "region": region, "draws": draw})
+    return out
+
+
+def write_index(region, areas):
+    """The area pages' cards in index.html (the page catalogue), right after the
+    region's own card, between markers this script owns."""
+    slug = REGIONS[region]["slug"]
+    start, end = "<!-- areas:%s -->" % slug, "<!-- /areas:%s -->" % slug
+    cards = "".join('\n  <a class="card map" href="%s">\n    <b>%s</b><span>%d reputation quests%s, '
+                    'with their own map and the quests that lead to them</span></a>'
+                    % (a["href"], esc(a["title"]), a["quests"],
+                       (" (also %s)" % esc(", ".join(a["also"]))) if a["also"] else "") for a in areas)
+    block = "%s%s\n  %s" % (start, cards, end)
+    s = io.open("index.html", encoding="utf-8").read()
+    if start in s:
+        s = re.sub(re.escape(start) + r".*?" + re.escape(end), lambda m: block, s, flags=re.S)
+    else:
+        anchor = re.search(r'  <a class="card map" href="%s-rep-route.html">.*?</a>\n' % slug, s, re.S)
+        s = s[:anchor.end()] + "  " + block + "\n" + s[anchor.end():]
+    io.open("index.html", "w", encoding="utf-8", newline="").write(s)
 
 
 def main():
@@ -299,104 +560,18 @@ def main():
     cfg = REGIONS[region]
     src = ms.MapSource(level=LEVEL)
     routed, side = assemble(region)
-    every = [q for e in routed for q in e["chain"] + [e["quest"]]]
-    locate(cfg, src, every)
-    placed = [q for q in every if "xy" in q and not q.get("dupOf")]
-
-    city = next(a for a in src.areas() if a["name"] == cfg["city"])
-    near = lambda q: abs(q["xy"][0] - city["x"]) <= CITY_RADIUS and abs(q["xy"][1] - city["y"]) <= CITY_RADIUS
-    in_city = [q for q in placed if near(q)]
-    outside = [q for q in placed if not near(q)]
-
-    main_win = src.window([q["xy"] for q in placed], pad=96)
-    city_win = tight(src, [q["xy"] for q in in_city] + [(city["x"], city["y"])], pad=28)
-    slug = cfg["slug"]
-    main_img, city_img = "assets/%s-rep-route-map.webp" % slug, "assets/%s-city-rep-route.webp" % slug
-    stitch(main_win, main_img)
-    stitch(city_win, city_img, scale_to=1024, enlarge=True)
-
-    is_main = lambda q: q["label"].isdigit()
-    # City starts go on the main map too, so its legend lists every quest; the
-    # close-up repeats them at a scale where they can be told apart.
-    main_markers = [marker(q, main_win, is_main(q)) for q in placed]
-    x0, y0 = pct(main_win, (city_win.off_x, city_win.off_y))
-    x1, y1 = pct(main_win, (city_win.off_x + city_win.w, city_win.off_y + city_win.h))
-    main_markers.append({"zone": True, "rect": True, "x": x0, "y": y0, "w": round(x1 - x0, 2), "h": round(y1 - y0, 2),
-                         "role": "hub", "tag": "%s: close-up below" % cfg["city"]})
-    city_markers = rm.merge_stacked([marker(q, city_win, is_main(q)) for q in in_city])
-    main_markers = rm.merge_stacked(main_markers)
-    main_legend, city_legend = rm.legend(routed, main_markers), rm.legend(routed, city_markers)
-
-    total = len(routed)
-    chained = sum(1 for e in routed if e["chain"])
-    page = """<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>%(region)s reputation quests: route, shortest first</title>
-<link rel="stylesheet" href="styles/map.css">
-<style>%(css)s</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>%(region)s reputation quests: route, shortest first</h1>
-  <p class="sub">%(total)d quests that pay reputation, %(chained)d of them behind a chain. Each number is a quest;
-  <b>7a, 7b…</b> are the quests you must do before quest 7, in order. Dots mark where each one <b>starts</b>.
-  Generated %(date)s from the official map's quest pins and the wiki.</p>
-
-  <div class="bar key"><b>Reading the map.</b> Green pins are the quests that pay; small red pins are chain
-  pre-quests. Yellow dots are approximate: the wiki names only the area. Each pin is captioned with who to talk
-  to. A pin ending in <b>+</b> is several starts of one quest at one spot; its caption lists them. Every quest
-  has its own toggle under the map, and its chain goes with it. City starts are also on the close-up below.</div>
-
-  <div class="map-wrap" id="%(slug)sRoute" data-map="%(main_img)s" data-alt="%(region)s: where each reputation quest starts" data-legend="%(main_legend)s" data-block-w="20" data-label-min-zoom="0" data-height="%(main_height)s"></div>
-  <h2>%(city)s close-up</h2>
-  <div class="map-wrap" id="%(slug)sCity" data-map="%(city_img)s" data-alt="%(city)s: quest starts inside the city" data-legend="%(city_legend)s" data-block-w="38" data-label-min-zoom="0"></div>
-
-  <h2>The route</h2>
-  <div class="note">Shortest first, counting the whole chain, with each pre-quest's own length. Pictures are the
-  official map's start screenshots; click one for full size. A pre-quest shared with an earlier chain says
-  which step it already was.</div>
-%(route)s
-%(requests)s
-%(commissions)s
-%(story)s
-%(elsewhere)s
-  <p class="sub">Sources: HoYoLAB interactive map, World Quest pins and their notes
-  (reference/data/hoyolab-wq-pins.json); Genshin Impact Wiki quest pages (reference/data/quest-starts.json).
-  Built by tools/build-rep-route.py.</p>
-</div>
-<script type="module">
-  import { drawMap } from "./app/annotate.js";
-  drawMap("#%(slug)sRoute", %(main_markers)s);
-  drawMap("#%(slug)sCity", %(city_markers)s);
-</script>
-<script src="app/nav.js"></script>
-</body>
-</html>
-""" % {
-        "region": region, "css": CSS, "total": total, "chained": chained, "date": time.strftime("%d %b %Y"),
-        "slug": slug, "city": cfg["city"], "main_img": main_img, "city_img": city_img,
-        "route": route_html(region, routed),
-        "requests": side_html("Weekly requests and bounties", "Taken from the Reputation menu, not from the map: "
-                              "up to 3 a week across all nations. The name is who you hand in to.", side["request"]),
-        "commissions": side_html("Commission quests", "These turn up among your daily commissions; you cannot "
-                                 "start them on demand.", side["commission"]),
-        "story": side_html("Story quests", "Archon or Story quests: start them from the Quests menu.", side["story"]),
-        "elsewhere": side_html("Starts outside %s" % region, "The quest that pays is here, but it starts in "
-                               "another region.", side["elsewhere"]),
-        "main_markers": json.dumps(main_markers, ensure_ascii=False),
-        "main_legend": esc(json.dumps(main_legend, ensure_ascii=False)),
-        # Viewport as tall as the image is at full width, capped near a screen height.
-        "main_height": "min(%.0fvw, %dpx)" % (100.0 * main_win.h / main_win.w, int(1200 * main_win.h / main_win.w)),
-        "city_legend": esc(json.dumps(city_legend, ensure_ascii=False)),
-        "city_markers": json.dumps(city_markers, ensure_ascii=False),
-    }
-    out = "%s-rep-route.html" % slug
-    io.open(out, "w", encoding="utf-8", newline="\n").write(page)
-    print("wrote %s: %d route stops, %d dots (%d in the city close-up), side lists %s" % (
-        out, total, len(placed), len(in_city), {k: len(v) for k, v in side.items()}), file=sys.stderr)
+    locate(cfg, src, [q for e in routed for q in e["chain"] + [e["quest"]]])
+    # A quest whose own start could not be placed moves to the side lists.
+    side["elsewhere"] += [e for e in routed if "xy" not in e["quest"]]
+    routed = [e for e in routed if "xy" in e["quest"]]
+    areas = [area_page(region, cfg, src, g) for g in group_by_area(routed)]
+    overview_page(region, cfg, src, routed, side, areas)
+    write_index(region, areas)
+    manifest = os.path.join("reference", "data", "rep-route-areas.json")
+    data = json.load(io.open(manifest, encoding="utf-8")) if os.path.exists(manifest) else {}
+    data[region] = [{"href": a["href"], "title": a["title"]} for a in areas]
+    io.open(manifest, "w", encoding="utf-8").write(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
+    print("%s: %d area pages %s" % (region, len(areas), [(a["area"], a["quests"]) for a in areas]), file=sys.stderr)
 
 
 if __name__ == "__main__":

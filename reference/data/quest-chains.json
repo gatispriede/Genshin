@@ -1,5 +1,5 @@
 {
- "_checked": "2026-11-02",
+ "_checked": "2026-11-20",
  "_by": "tools/fetch-quest-prereqs.py",
  "_why": "The reputation lists only show the quest that PAYS reputation. Where that quest ends a World Quest series, the earlier parts pay nothing and never appear, so the row understates the work and its length tier measures the final part alone.",
  "_caveat": "Counts are a LOWER BOUND. The wiki's prev field is not filled in on every page, so a quest can report fewer priors than it really has — Memory's Final Chapter reports 1 while its requirement names an entire series.",
@@ -14,9 +14,12 @@
    "region": "Sumeru",
    "severity": "worst",
    "type": "World",
-   "priors": 9,
+   "priors": 10,
    "archonPriors": null,
    "before": [
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
     "The World of Aranara",
     "Children of the Forest",
     "For A Better Reunion",
@@ -25,6 +28,7 @@
     "For the Children of the Past",
     "For All Children Who Long for Life"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -36,6 +40,8 @@
    "priors": 9,
    "archonPriors": null,
    "before": [
+    "Lost in the Sands",
+    "An Introduction to Indoor Archaeology",
     "The Secret of Al-Ahmar",
     "Dreams Beneath the Searing Sand",
     "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars",
@@ -44,26 +50,29 @@
     "Dune-Entombed Fecundity: Part II",
     "Dune-Entombed Fecundity: Part III"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "\"The Seventh Samurai\"",
-   "region": "Inazuma",
+   "quest": "Daydreams Beyond Space and Time",
+   "region": "Fontaine",
    "severity": "worst",
    "type": "World",
    "priors": 8,
    "archonPriors": null,
    "before": [
-    "Tatara Tales: Priority Investigation",
-    "Tatara Tales: Purification Device",
-    "Tatara Tales: Data Collection",
-    "Tatara Tales: Process Is Everything",
-    "Tatara Tales: Functional Test",
-    "Tatara Tales: Final Preparations",
-    "Tatara Tales: The Last Act"
+    "For Yesterday and Tomorrow",
+    "Garcia's Paean",
+    "Garcia's Paean: Key Items",
+    "Garcia's Paean: Substitutes",
+    "Garcia's Paean: By Bearings",
+    "Garcia's Paean: Easy Peasy",
+    "Garcia's Paean: the Echo of Someone",
+    "Where His Life Lies"
    ],
-   "requirement": "",
+   "hidden": [],
+   "requirement": "Complete For Yesterday and Tomorrow",
    "note": ""
   },
   {
@@ -74,6 +83,7 @@
    "priors": 8,
    "archonPriors": null,
    "before": [
+    "Lost in the Sands",
     "An Introduction to Indoor Archaeology",
     "The Secret of Al-Ahmar",
     "Dreams Beneath the Searing Sand",
@@ -82,6 +92,7 @@
     "Dune-Entombed Fecundity: Part I",
     "Dune-Entombed Fecundity: Part II"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -93,6 +104,7 @@
    "priors": 8,
    "archonPriors": null,
    "before": [
+    "Gourmet Supremos, Assemble!",
     "The Gourmet Supremos: Of Shrines and Sakura",
     "The Gourmet Supremos: The Seashore Strider",
     "The Gourmet Supremos: The Deep Divers",
@@ -101,44 +113,48 @@
     "The Gourmet Supremos: The Importance of Eating Well",
     "The Gourmet Supremos: Where'd the Ingredients Go?"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "Daydreams Beyond Space and Time",
-   "region": "Fontaine",
+   "quest": "Until Vana is Healed",
+   "region": "Sumeru",
    "severity": "worst",
    "type": "World",
-   "priors": 7,
+   "priors": 8,
    "archonPriors": null,
    "before": [
-    "Garcia's Paean",
-    "Garcia's Paean: Key Items",
-    "Garcia's Paean: Substitutes",
-    "Garcia's Paean: By Bearings",
-    "Garcia's Paean: Easy Peasy",
-    "Garcia's Paean: the Echo of Someone",
-    "Where His Life Lies"
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
+    "The World of Aranara",
+    "Children of the Forest",
+    "For A Better Reunion",
+    "Festival Utsava",
+    "For Fruits, Seeds, and Trees"
    ],
-   "requirement": "Complete For Yesterday and Tomorrow",
+   "hidden": [],
+   "requirement": "Complete Step 2 of Aranyaka: Part III - Nursery of Lost Dreams, Part 1: For Fruits, Seeds, and Trees",
    "note": ""
   },
   {
-   "quest": "Tatara Tales: The Last Act",
+   "quest": "\"The Seventh Samurai\"",
    "region": "Inazuma",
    "severity": "worst",
    "type": "World",
    "priors": 7,
    "archonPriors": null,
    "before": [
-    "Tatara Tales",
     "Tatara Tales: Priority Investigation",
     "Tatara Tales: Purification Device",
     "Tatara Tales: Data Collection",
     "Tatara Tales: Process Is Everything",
     "Tatara Tales: Functional Test",
-    "Tatara Tales: Final Preparations"
+    "Tatara Tales: Final Preparations",
+    "Tatara Tales: The Last Act"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -158,6 +174,7 @@
     "Octave of the Maushiro",
     "The Sea of Fog and the Rite of the Trees"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -176,6 +193,7 @@
     "Leroy: Hangman's Noose",
     "Leroy: Queen of the Night's Aria"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -194,7 +212,27 @@
     "Garcia's Paean: Easy Peasy",
     "Garcia's Paean: the Echo of Someone"
    ],
+   "hidden": [],
    "requirement": "Complete Finale.",
+   "note": ""
+  },
+  {
+   "quest": "Tatara Tales: The Last Act",
+   "region": "Inazuma",
+   "severity": "worst",
+   "type": "World",
+   "priors": 6,
+   "archonPriors": null,
+   "before": [
+    "Tatara Tales: Priority Investigation",
+    "Tatara Tales: Purification Device",
+    "Tatara Tales: Data Collection",
+    "Tatara Tales: Process Is Everything",
+    "Tatara Tales: Functional Test",
+    "Tatara Tales: Final Preparations"
+   ],
+   "hidden": [],
+   "requirement": "",
    "note": ""
   },
   {
@@ -212,7 +250,27 @@
     "The Gourmet Supremos: On the Road",
     "The Gourmet Supremos: Breakthrough Thinking"
    ],
+   "hidden": [],
    "requirement": "Complete Xiangling's ending of The Gourmet Supremos: Breakthrough Thinking",
+   "note": ""
+  },
+  {
+   "quest": "The Saga of Mr. Forgetful",
+   "region": "Inazuma",
+   "severity": "worst",
+   "type": "World",
+   "priors": 6,
+   "archonPriors": null,
+   "before": [
+    "Seirai Stormchasers: Part I",
+    "Seirai Stormchasers: Part II",
+    "Seirai Stormchasers: Part III",
+    "Seirai Stormchasers: Part IV",
+    "A Particularly Particular Author",
+    "Octave of the Maushiro"
+   ],
+   "hidden": [],
+   "requirement": "Complete Octave of the Maushiro",
    "note": ""
   },
   {
@@ -230,6 +288,7 @@
     "Garcia's Paean: Easy Peasy",
     "Garcia's Paean: the Echo of Someone"
    ],
+   "hidden": [],
    "requirement": "Obtain the Principia Arithmetica",
    "note": ""
   },
@@ -241,6 +300,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Orobashi's Legacy series; Complete Omnipresence Over Mortals",
    "note": ""
   },
@@ -252,7 +312,44 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Neko Is a Cat World Quest Series, and 4 total completions of any of the following:",
+   "note": ""
+  },
+  {
+   "quest": "Collection of Dragons and Snakes",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
+   ],
+   "hidden": [],
+   "requirement": "The Subterranean Trials of Drake and Serpent",
+   "note": ""
+  },
+  {
+   "quest": "Lotus Eater",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
+   ],
+   "hidden": [],
+   "requirement": "The Subterranean Trials of Drake and Serpent",
    "note": ""
   },
   {
@@ -269,24 +366,26 @@
     "Orobashi's Legacy: Part III",
     "Orobashi's Legacy: Part IV"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "The Subterranean Trials of Drake and Serpent",
+   "quest": "The Phaethons' Syrtos",
    "region": "Inazuma",
    "severity": "bad",
    "type": "World",
    "priors": 5,
    "archonPriors": null,
    "before": [
-    "The Moon-Bathed Deep",
     "\"Eye of Watatsumi\"",
     "\"Heart of Watatsumi\"",
     "The Still Water's Flow",
-    "The Entrance to Tokoyo"
+    "The Entrance to Tokoyo",
+    "The Subterranean Trials of Drake and Serpent"
    ],
-   "requirement": "",
+   "hidden": [],
+   "requirement": "The Subterranean Trials of Drake and Serpent",
    "note": ""
   },
   {
@@ -303,7 +402,26 @@
     "The Heavenly Stone's Debris",
     "Perils in the Dark"
    ],
+   "hidden": [],
    "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Courage Is in the Heart",
+   "region": "Sumeru",
+   "severity": "bad",
+   "type": "World",
+   "priors": 5,
+   "archonPriors": null,
+   "before": [
+    "The Children of Vimara Village",
+    "Into the Woods",
+    "The Lost Child",
+    "The World of Aranara",
+    "Static Views"
+   ],
+   "hidden": [],
+   "requirement": "Complete Static Views",
    "note": ""
   },
   {
@@ -320,6 +438,7 @@
     "Dreams Beneath the Searing Sand",
     "Dual Evidence"
    ],
+   "hidden": [],
    "requirement": "Complete Golden Slumber",
    "note": ""
   },
@@ -337,6 +456,7 @@
     "Dreams Beneath the Searing Sand",
     "Wisdom Has Built Her House, She Has Hewn Out Her Seven Pillars"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -353,6 +473,7 @@
     "The Last Day of Remuria",
     "Gradus ad Capitolium"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -369,6 +490,7 @@
     "Vagrants and Scamps",
     "The Red and the Black"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -385,6 +507,24 @@
     "The Gourmet Supremos: The Seashore Strider",
     "The Gourmet Supremos: The Deep Divers"
    ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Subterranean Trials of Drake and Serpent",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 4,
+   "archonPriors": null,
+   "before": [
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\"",
+    "The Still Water's Flow",
+    "The Entrance to Tokoyo"
+   ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -401,6 +541,7 @@
     "The Secret of Al-Ahmar",
     "Dreams Beneath the Searing Sand"
    ],
+   "hidden": [],
    "requirement": "Complete Golden Slumber",
    "note": ""
   },
@@ -417,6 +558,7 @@
     "As the Khvarena's Light Shows",
     "The Hymn of Tir Yazad (Part 1)"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -433,6 +575,7 @@
     "The Secret of Al-Ahmar",
     "Dreams Beneath the Searing Sand"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -448,6 +591,7 @@
     "A Certain Trifle",
     "A Certain Stamp"
    ],
+   "hidden": [],
    "requirement": "Complete Fontaine Research Institute Chronicles",
    "note": ""
   },
@@ -463,6 +607,7 @@
     "Pursuit (Part 1)",
     "Pursuit (Part 2)"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -478,21 +623,7 @@
     "The Story of \"the Princess\" and \"the Adventure Team\"",
     "Ann's Story"
    ],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Rowboat's Wake (Quest)",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": 3,
-   "archonPriors": null,
-   "before": [
-    "Search in the Algae Sea",
-    "Savior's Wake",
-    "Waking from the Great Dream"
-   ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -508,22 +639,24 @@
     "Seirai Stormchasers: Part II",
     "Seirai Stormchasers: Part III"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "The Still Water's Flow",
+   "quest": "Storytelling Method",
    "region": "Inazuma",
    "severity": "bad",
    "type": "World",
    "priors": 3,
    "archonPriors": null,
    "before": [
-    "The Moon-Bathed Deep",
-    "\"Eye of Watatsumi\"",
-    "\"Heart of Watatsumi\""
+    "Is This Novel Amazing?",
+    "This Novel... Seems Familiar?",
+    "This Novel Seems... Problematic?"
    ],
-   "requirement": "\"Heart of Watatsumi\"",
+   "hidden": [],
+   "requirement": "Complete This Novel... Seems Familiar? and This Novel Seems... Problematic?",
    "note": ""
   },
   {
@@ -538,22 +671,24 @@
     "Sacrificial Offering",
     "Cleansing Defilement"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "A Delicacy for Nara",
-   "region": "Sumeru",
+   "quest": "Temporary Acclimatization",
+   "region": "Liyue",
    "severity": "bad",
    "type": "World",
    "priors": 3,
    "archonPriors": null,
    "before": [
-    "An Unwavering Culinary Dream",
-    "Cooking, the Flavor of Nature",
-    "Cooking, a Pleasant Memory"
+    "Qiaoying of the Sacred Mountain",
+    "In Expert Company? (I)",
+    "In Expert Company? (II)"
    ],
-   "requirement": "",
+   "hidden": [],
+   "requirement": "Qiaoying of the Sacred Mountain",
    "note": ""
   },
   {
@@ -568,6 +703,7 @@
     "An Introduction to Indoor Archaeology",
     "The Secret of Al-Ahmar"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -583,6 +719,7 @@
     "In Another Land",
     "Fertilizer... Salesperson?"
    ],
+   "hidden": [],
    "requirement": "Complete the The Morn a Thousand Roses Brings",
    "note": ""
   },
@@ -598,6 +735,7 @@
     "Vimana Agama: Royinjan's Chapter",
     "Vimana Agama: Jazari's Chapter"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -612,6 +750,7 @@
     "A Certain Notice",
     "A Certain Trifle"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -626,7 +765,23 @@
     "Fontaine Research Institute, Stagnating in the Rubble",
     "An Expected Plan"
    ],
+   "hidden": [],
    "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Both Brains and Brawn",
+   "region": "Fontaine",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "Game of the Rich",
+    "An Eye for an Eye"
+   ],
+   "hidden": [],
+   "requirement": "Complete An Eye for an Eye",
    "note": ""
   },
   {
@@ -640,6 +795,7 @@
     "Game of the Rich",
     "An Eye for an Eye"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -654,21 +810,23 @@
     "The Illusion's Finishings",
     "There Will Come Soft Rains"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "\"Heart of Watatsumi\"",
-   "region": "Inazuma",
+   "quest": "Were It So Easy",
+   "region": "Fontaine",
    "severity": "bad",
    "type": "World",
    "priors": 2,
    "archonPriors": null,
    "before": [
-    "The Moon-Bathed Deep",
-    "\"Eye of Watatsumi\""
+    "The Illusion's Finishings",
+    "There Will Come Soft Rains"
    ],
-   "requirement": "",
+   "hidden": [],
+   "requirement": "Complete Cosanzeana's request from There Will Come Soft Rains",
    "note": ""
   },
   {
@@ -682,6 +840,7 @@
     "Endless Research",
     "In Another Land"
    ],
+   "hidden": [],
    "requirement": "Complete the In Another Land",
    "note": ""
   },
@@ -696,7 +855,23 @@
     "O Archon, Hear Me!",
     "O Shrine, Show Your Power Once Again!"
    ],
+   "hidden": [],
    "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "The Still Water's Flow",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "\"Eye of Watatsumi\"",
+    "\"Heart of Watatsumi\""
+   ],
+   "hidden": [],
+   "requirement": "\"Heart of Watatsumi\"",
    "note": ""
   },
   {
@@ -710,7 +885,53 @@
     "Hereafter: The Trail of Pervases",
     "Hereafter: All is Well"
    ],
+   "hidden": [],
    "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "Our Chenyu Vale Trek",
+   "region": "Liyue",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "Qiaoying of the Sacred Mountain",
+    "Threefold Expectations"
+   ],
+   "hidden": [],
+   "requirement": "Threefold Expectations",
+   "note": ""
+  },
+  {
+   "quest": "Qiaoying, the Village of Many Tales",
+   "region": "Liyue",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "Qiaoying of the Sacred Mountain",
+    "Danger Lurks Everywhere in Fontaine"
+   ],
+   "hidden": [],
+   "requirement": "Qiaoying of the Sacred Mountain",
+   "note": ""
+  },
+  {
+   "quest": "Says He Who Seeks Stone",
+   "region": "Liyue",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "The Chasm Charters",
+    "Surreptitious Seven-Star Seal Sundering"
+   ],
+   "hidden": [],
+   "requirement": "Complete Surreptitious Seven-Star Seal Sundering",
    "note": ""
   },
   {
@@ -724,34 +945,52 @@
     "A Wangshan Walk to Remember",
     "Scrolls and Sword Manuals of Guhua"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
   {
-   "quest": "Temporary Acclimatization",
+   "quest": "Stolen, by the Rightful Owner",
    "region": "Liyue",
    "severity": "bad",
    "type": "World",
    "priors": 2,
    "archonPriors": null,
    "before": [
-    "In Expert Company? (I)",
-    "In Expert Company? (II)"
+    "The Chasm Charters",
+    "Surreptitious Seven-Star Seal Sundering"
    ],
-   "requirement": "Qiaoying of the Sacred Mountain",
+   "hidden": [],
+   "requirement": "Destroy the three Bedrock Keys in Surreptitious Seven-Star Seal Sundering",
    "note": ""
   },
   {
-   "quest": "A Prayer for Rain on the Fecund Land",
+   "quest": "Undetected Infiltration",
+   "region": "Liyue",
+   "severity": "bad",
+   "type": "World",
+   "priors": 2,
+   "archonPriors": null,
+   "before": [
+    "The Chasm Charters",
+    "Surreptitious Seven-Star Seal Sundering"
+   ],
+   "hidden": [],
+   "requirement": "Finish talking to Zhiqiong for the first time in Surreptitious Seven-Star Seal Sundering",
+   "note": ""
+  },
+  {
+   "quest": "A Delicacy for Nara",
    "region": "Sumeru",
    "severity": "bad",
    "type": "World",
    "priors": 2,
    "archonPriors": null,
    "before": [
-    "Varuna Gatha",
-    "Memory of Stone"
+    "Cooking, the Flavor of Nature",
+    "Cooking, a Pleasant Memory"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -765,7 +1004,64 @@
    "before": [
     "\"Hey, This Isn't Pumpkin Soup...\""
    ],
+   "hidden": [],
    "requirement": "Complete Ancient Colors",
+   "note": ""
+  },
+  {
+   "quest": "The Lone Phantom Sail",
+   "region": "Fontaine",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "\"Hey, This Isn't Pumpkin Soup...\""
+   ],
+   "hidden": [],
+   "requirement": "Complete \"Hey, This Isn't Pumpkin Soup...\"",
+   "note": ""
+  },
+  {
+   "quest": "Wish-Fulfilling Treasure Hunt",
+   "region": "Fontaine",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Rowboat's Wake"
+   ],
+   "hidden": [],
+   "requirement": "Complete Rowboat's Wake",
+   "note": ""
+  },
+  {
+   "quest": "Battle of Revenge",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "An Art to Be Honed"
+   ],
+   "hidden": [],
+   "requirement": "Complete An Art to Be Honed 4 times",
+   "note": ""
+  },
+  {
+   "quest": "Hiromi's Watch",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "The Chi of Yore"
+   ],
+   "hidden": [],
+   "requirement": "Complete The Chi of Yore and Ritou Escape Plan; Have Someone's Drifting Bottle in your inventory",
    "note": ""
   },
   {
@@ -778,20 +1074,52 @@
    "before": [
     "Endless Research"
    ],
+   "hidden": [],
    "requirement": "Start the Stillness, the Sublimation of Shadow",
    "note": ""
   },
   {
-   "quest": "Qiaoying, the Village of Many Tales",
+   "quest": "The Farmer's Treasure",
+   "region": "Inazuma",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Searching for Saimon Jirou"
+   ],
+   "hidden": [
+    "Searching for Saimon Jirou"
+   ],
+   "requirement": "Complete Searching for Saimon Jirou",
+   "note": ""
+  },
+  {
+   "quest": "Threefold Expectations",
    "region": "Liyue",
    "severity": "bad",
    "type": "World",
    "priors": 1,
    "archonPriors": null,
    "before": [
-    "Danger Lurks Everywhere in Fontaine"
+    "Qiaoying of the Sacred Mountain"
    ],
-   "requirement": "Qiaoying of the Sacred Mountain",
+   "hidden": [],
+   "requirement": "Complete Qiaoying of the Sacred Mountain",
+   "note": ""
+  },
+  {
+   "quest": "Will of Stone",
+   "region": "Liyue",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "The Chi of Yore"
+   ],
+   "hidden": [],
+   "requirement": "Complete The Chi of Yore and Farewell, Archaic Lord",
    "note": ""
   },
   {
@@ -804,6 +1132,7 @@
    "before": [
     "Supreme Hookshot?"
    ],
+   "hidden": [],
    "requirement": "Complete Supreme Hookshot? three times and wait for daily reset",
    "note": ""
   },
@@ -817,7 +1146,24 @@
    "before": [
     "Aragaru's Drawing"
    ],
+   "hidden": [],
    "requirement": "Dream Nursery",
+   "note": ""
+  },
+  {
+   "quest": "Treasure of Wisdom: A New Plan",
+   "region": "Sumeru",
+   "severity": "bad",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Drusus's Riddles"
+   ],
+   "hidden": [
+    "Drusus's Riddles"
+   ],
+   "requirement": "Complete Drusus's Riddles and wait for the daily reset",
    "note": ""
   },
   {
@@ -828,6 +1174,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete As Light Rain Falls Without Reason",
    "note": ""
   },
@@ -839,18 +1186,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete As Light Rain Falls Without Reason",
-   "note": ""
-  },
-  {
-   "quest": "Both Brains and Brawn",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete An Eye for an Eye",
    "note": ""
   },
   {
@@ -861,6 +1198,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ancient Colors",
    "note": ""
   },
@@ -872,6 +1210,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Canticles of Harmony",
    "note": ""
   },
@@ -883,18 +1222,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete As Light Rain Falls Without Reason",
-   "note": ""
-  },
-  {
-   "quest": "The Lone Phantom Sail",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete \"Hey, This Isn't Pumpkin Soup...\"",
    "note": ""
   },
   {
@@ -905,51 +1234,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ancient Colors",
-   "note": ""
-  },
-  {
-   "quest": "Were It So Easy",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Cosanzeana's request from There Will Come Soft Rains",
-   "note": ""
-  },
-  {
-   "quest": "Wish-Fulfilling Treasure Hunt",
-   "region": "Fontaine",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Rowboat's Wake",
-   "note": ""
-  },
-  {
-   "quest": "Battle of Revenge",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete An Art to Be Honed 4 times",
-   "note": ""
-  },
-  {
-   "quest": "Collection of Dragons and Snakes",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
    "note": ""
   },
   {
@@ -960,29 +1246,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete In the Name of the Resistance",
-   "note": ""
-  },
-  {
-   "quest": "Hiromi's Watch",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete The Chi of Yore and Ritou Escape Plan; Have Someone's Drifting Bottle in your inventory",
-   "note": ""
-  },
-  {
-   "quest": "Lotus Eater",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
    "note": ""
   },
   {
@@ -993,18 +1258,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Tatara Tales",
-   "note": ""
-  },
-  {
-   "quest": "Storytelling Method",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete This Novel... Seems Familiar? and This Novel Seems... Problematic?",
    "note": ""
   },
   {
@@ -1015,40 +1270,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Reach Reputation Level 3 in Inazuma and Claim Naku Weed Seed reward from Madarame Hyakubei",
-   "note": ""
-  },
-  {
-   "quest": "The Farmer's Treasure",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Searching for Saimon Jirou",
-   "note": ""
-  },
-  {
-   "quest": "The Phaethons' Syrtos",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "The Subterranean Trials of Drake and Serpent",
-   "note": ""
-  },
-  {
-   "quest": "The Saga of Mr. Forgetful",
-   "region": "Inazuma",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Octave of the Maushiro",
    "note": ""
   },
   {
@@ -1059,6 +1282,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "From Dusk to Dawn in Byakuyakoku",
    "note": ""
   },
@@ -1070,6 +1294,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "A New Star Approaches",
    "note": ""
   },
@@ -1081,6 +1306,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Bookworm Swordsman and Ritou Escape Plan",
    "note": ""
   },
@@ -1092,6 +1318,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Farewell, Archaic Lord",
    "note": ""
   },
@@ -1103,6 +1330,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Farewell, Archaic Lord and Mondstadt Gastronomy Trip",
    "note": ""
   },
@@ -1114,6 +1342,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Farewell, Archaic Lord",
    "note": ""
   },
@@ -1125,6 +1354,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
    "note": ""
   },
@@ -1136,6 +1366,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Of the Land Amidst Monoliths",
    "note": ""
   },
@@ -1147,6 +1378,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
    "note": ""
   },
@@ -1158,6 +1390,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Sea of Clouds, Sea of People",
    "note": ""
   },
@@ -1169,6 +1402,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Butterfly's Dream",
    "note": ""
   },
@@ -1180,6 +1414,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
    "note": ""
   },
@@ -1191,18 +1426,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Interlude Chapter: Act I - The Crane Returns on the Wind",
-   "note": ""
-  },
-  {
-   "quest": "Our Chenyu Vale Trek",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Threefold Expectations",
    "note": ""
   },
   {
@@ -1213,6 +1438,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Reach Adventure Rank 20",
    "note": ""
   },
@@ -1224,18 +1450,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Farewell, Archaic Lord",
-   "note": ""
-  },
-  {
-   "quest": "Says He Who Seeks Stone",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Surreptitious Seven-Star Seal Sundering",
    "note": ""
   },
   {
@@ -1246,18 +1462,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Reach Adventure Rank 25",
-   "note": ""
-  },
-  {
-   "quest": "Stolen, by the Rightful Owner",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Destroy the three Bedrock Keys in Surreptitious Seven-Star Seal Sundering",
    "note": ""
   },
   {
@@ -1268,6 +1474,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
    "note": ""
   },
@@ -1279,18 +1486,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
-   "note": ""
-  },
-  {
-   "quest": "Threefold Expectations",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Qiaoying of the Sacred Mountain",
    "note": ""
   },
   {
@@ -1301,29 +1498,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Reach Adventure Rank 31",
-   "note": ""
-  },
-  {
-   "quest": "Undetected Infiltration",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Finish talking to Zhiqiong for the first time in Surreptitious Seven-Star Seal Sundering",
-   "note": ""
-  },
-  {
-   "quest": "Will of Stone",
-   "region": "Liyue",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete The Chi of Yore and Farewell, Archaic Lord",
    "note": ""
   },
   {
@@ -1334,6 +1510,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete A New Star Approaches",
    "note": ""
   },
@@ -1345,6 +1522,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Kill a particular Shroomboar near the Caravan Ribat.",
    "note": ""
   },
@@ -1356,6 +1534,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete The Morn a Thousand Roses Brings and wait until Reset",
    "note": ""
   },
@@ -1367,18 +1546,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete King Deshret and the Three Magi",
-   "note": ""
-  },
-  {
-   "quest": "Courage Is in the Heart",
-   "region": "Sumeru",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Static Views",
    "note": ""
   },
   {
@@ -1389,6 +1558,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Sumeru's Archon Quest and Aranyaka",
    "note": ""
   },
@@ -1400,6 +1570,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete King Deshret and the Three Magi",
    "note": ""
   },
@@ -1411,29 +1582,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete 8 Strange Energy Extraction Device puzzles in Eremite camps.",
-   "note": ""
-  },
-  {
-   "quest": "Treasure of Wisdom: A New Plan",
-   "region": "Sumeru",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Drusus's Riddles and wait for the daily reset",
-   "note": ""
-  },
-  {
-   "quest": "Until Vana is Healed",
-   "region": "Sumeru",
-   "severity": "bad",
-   "type": "World",
-   "priors": null,
-   "archonPriors": null,
-   "before": [],
-   "requirement": "Complete Step 2 of Aranyaka: Part III - Nursery of Lost Dreams, Part 1: For Fruits, Seeds, and Trees",
    "note": ""
   },
   {
@@ -1444,6 +1594,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Talk to Santon and kill creatures described by him",
    "note": ""
   },
@@ -1457,6 +1608,7 @@
    "before": [
     "A Certain Notice"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1470,6 +1622,7 @@
    "before": [
     "In Search of Lost Time: South"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1483,6 +1636,7 @@
    "before": [
     "Strange Stone Chronicle (Part 1)"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1496,6 +1650,21 @@
    "before": [
     "Foggy Forest Path"
    ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "\"Heart of Watatsumi\"",
+   "region": "Inazuma",
+   "severity": "mild",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "\"Eye of Watatsumi\""
+   ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1509,6 +1678,7 @@
    "before": [
     "Hereafter: The Trail of Pervases"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1522,6 +1692,7 @@
    "before": [
     "Fishing For Jade"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1535,6 +1706,7 @@
    "before": [
     "The Chasm Charters"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1548,6 +1720,21 @@
    "before": [
     "Treasure Lost, Treasure Found (Part 1)"
    ],
+   "hidden": [],
+   "requirement": "",
+   "note": ""
+  },
+  {
+   "quest": "A Prayer for Rain on the Fecund Land",
+   "region": "Sumeru",
+   "severity": "mild",
+   "type": "World",
+   "priors": 1,
+   "archonPriors": null,
+   "before": [
+    "Memory of Stone"
+   ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1561,6 +1748,7 @@
    "before": [
     "Static Views"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1574,6 +1762,7 @@
    "before": [
     "Risen Moon Chapter"
    ],
+   "hidden": [],
    "requirement": "",
    "note": ""
   },
@@ -1585,6 +1774,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1596,6 +1786,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1607,6 +1798,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1618,6 +1810,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1629,6 +1822,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1640,6 +1834,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1651,6 +1846,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1662,6 +1858,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1673,6 +1870,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1684,6 +1882,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1695,6 +1894,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1706,6 +1906,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1717,6 +1918,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1728,6 +1930,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1739,6 +1942,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1750,6 +1954,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1761,6 +1966,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1772,6 +1978,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "Complete Ritou Escape Plan",
    "note": ""
   },
@@ -1783,6 +1990,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1794,6 +2002,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1805,6 +2014,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1816,6 +2026,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1827,6 +2038,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1838,6 +2050,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1849,6 +2062,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1860,6 +2074,7 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
    "note": ""
   },
@@ -1871,183 +2086,8 @@
    "priors": null,
    "archonPriors": null,
    "before": [],
+   "hidden": [],
    "requirement": "The Outlander Who Caught the Wind",
-   "note": ""
-  },
-  {
-   "quest": "As Light Rain Falls Without Reason",
-   "region": "Fontaine",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 19,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Cataclysm's Quickening",
-   "region": "Fontaine",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 21,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Masquerade of the Guilty",
-   "region": "Fontaine",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 22,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Prelude of Blancheur and Noirceur",
-   "region": "Fontaine",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 18,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "To the Stars Shining in the Depths",
-   "region": "Fontaine",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 20,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Omnipresence Over Mortals",
-   "region": "Inazuma",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 10,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Stillness, the Sublimation of Shadow",
-   "region": "Inazuma",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 9,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "The Immovable God and the Eternal Euthymia",
-   "region": "Inazuma",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 8,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "A New Star Approaches",
-   "region": "Liyue",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 5,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Farewell, Archaic Lord",
-   "region": "Liyue",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 4,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Of the Land Amidst Monoliths",
-   "region": "Liyue",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 3,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Akasha Pulses, the Kalpa Flame Rises",
-   "region": "Sumeru",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 16,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Dreams, Emptiness, Deception",
-   "region": "Sumeru",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 14,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "King Deshret and the Three Magi",
-   "region": "Sumeru",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 15,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "The Morn a Thousand Roses Brings",
-   "region": "Sumeru",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 13,
-   "before": [],
-   "requirement": "",
-   "note": ""
-  },
-  {
-   "quest": "Through Mists of Smoke and Forests Dark",
-   "region": "Sumeru",
-   "severity": "story",
-   "type": "Archon",
-   "priors": null,
-   "archonPriors": 12,
-   "before": [],
-   "requirement": "",
    "note": ""
   }
  ]

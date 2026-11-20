@@ -118,14 +118,24 @@ function characterModules(c, teamName) {
   return mods;
 }
 
+const escHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/**
+ * One team page: why it works, roster with sets, shields, rotation, the
+ * mechanics behind it, swaps and what to avoid. `t.note` is the private
+ * account log and is never published.
+ */
 function teamModules(t) {
   const mods = [heading(t.element, t.name, t.members.map((m) => m.character).join(' · '))];
+  if (t.why) {
+    mods.push({ type: 'RICH_TEXT', style: 'default', content: json({ value: `<p>${escHtml(t.why)}</p>` }) });
+  }
 
   mods.push({ type: 'LIST', style: 'cards', content: json({
     title: 'Roster',
     items: t.members.map((m) => ({
       label: m.character, value: m.role,
-      meta: m.set || undefined,
+      meta: [m.set, m.mains].filter(Boolean).join(' — ') || undefined,
       // Links through to the character's own page where one exists.
       href: links.characters[m.character]?.url,
     })),
@@ -148,15 +158,27 @@ function teamModules(t) {
     if (t.rotationNote) {
       const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
       mods.push({ type: 'RICH_TEXT', style: 'default', content: json({
-        value: `<p style="font-size:.9rem;opacity:.8"><i>${esc(t.rotationNote)}</i></p>` }) });
+        value: `<p style="font-size:.9rem;opacity:.8"><i>${escHtml(t.rotationNote)}</i></p>` }) });
     }
   }
 
-  if (t.note) {
+  if (t.mechanics?.length) {
     mods.push({ type: 'FAQ_ACCORDION', style: 'bordered', content: json({
-      title: 'Why this team', mode: 'single',
-      rows: [{ question: `What makes ${t.name} work?`, answer: t.note }],
+      title: 'How it works', mode: 'single',
+      rows: t.mechanics.map((m) => ({ question: m.title, answer: m.text })),
     }) });
+  }
+
+  if (t.swaps?.length) {
+    const rows = t.swaps.map((x) => `<tr><td><b>${escHtml(x.who)}</b></td><td>${escHtml(x.instead)}</td>`
+      + `<td>${escHtml(x.why)}</td></tr>`).join('');
+    mods.push({ type: 'RICH_TEXT', style: 'default', content: json({ value:
+      `<h3>Swaps</h3><table><tr><th>Bring</th><th>Instead of</th><th>Why</th></tr>${rows}</table>` }) });
+  }
+
+  if (t.avoid?.length) {
+    mods.push({ type: 'RICH_TEXT', style: 'default', content: json({ value:
+      `<p><b>Do not run:</b> ${t.avoid.map(escHtml).join(' ')}</p>` }) });
   }
   return mods;
 }

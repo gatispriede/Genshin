@@ -1,0 +1,106 @@
+{
+ "Liyue": [
+  {
+   "href": "liyue-rep-liyue-harbor-part-1.html",
+   "title": "Liyue: Liyue Harbor, part 1"
+  },
+  {
+   "href": "liyue-rep-liyue-harbor-part-2.html",
+   "title": "Liyue: Liyue Harbor, part 2"
+  },
+  {
+   "href": "liyue-rep-around-liyue-harbor.html",
+   "title": "Liyue: Around Liyue Harbor and nearby"
+  },
+  {
+   "href": "liyue-rep-chenyu-vale-upper-vale.html",
+   "title": "Liyue: Chenyu Vale: Upper Vale"
+  },
+  {
+   "href": "liyue-rep-the-chasm.html",
+   "title": "Liyue: The Chasm and nearby"
+  },
+  {
+   "href": "liyue-rep-bishui-plain.html",
+   "title": "Liyue: Bishui Plain"
+  },
+  {
+   "href": "liyue-rep-qiongji-estuary.html",
+   "title": "Liyue: Qiongji Estuary"
+  },
+  {
+   "href": "liyue-rep-minlin.html",
+   "title": "Liyue: Minlin"
+  }
+ ],
+ "Inazuma": [
+  {
+   "href": "inazuma-rep-narukami-island.html",
+   "title": "Inazuma: Narukami Island"
+  },
+  {
+   "href": "inazuma-rep-yashiori-island.html",
+   "title": "Inazuma: Yashiori Island and nearby"
+  },
+  {
+   "href": "inazuma-rep-seirai-island.html",
+   "title": "Inazuma: Seirai Island and nearby"
+  },
+  {
+   "href": "inazuma-rep-watatsumi-island.html",
+   "title": "Inazuma: Watatsumi Island"
+  }
+ ],
+ "Sumeru": [
+  {
+   "href": "sumeru-rep-land-of-lower-setekh.html",
+   "title": "Sumeru: Land of Lower Setekh and nearby"
+  },
+  {
+   "href": "sumeru-rep-avidya-forest.html",
+   "title": "Sumeru: Avidya Forest"
+  },
+  {
+   "href": "sumeru-rep-ashavan-realm.html",
+   "title": "Sumeru: Ashavan Realm and nearby"
+  },
+  {
+   "href": "sumeru-rep-lokapala-jungle.html",
+   "title": "Sumeru: Lokapala Jungle"
+  },
+  {
+   "href": "sumeru-rep-ardravi-valley.html",
+   "title": "Sumeru: Ardravi Valley"
+  },
+  {
+   "href": "sumeru-rep-desert-of-hadramaveth.html",
+   "title": "Sumeru: Desert of Hadramaveth and nearby"
+  }
+ ],
+ "Fontaine": [
+  {
+   "href": "fontaine-rep-beryl-region.html",
+   "title": "Fontaine: Beryl Region and nearby"
+  },
+  {
+   "href": "fontaine-rep-around-court-of-fontaine.html",
+   "title": "Fontaine: Around Court of Fontaine and nearby"
+  },
+  {
+   "href": "fontaine-rep-court-of-fontaine.html",
+   "title": "Fontaine: Court of Fontaine"
+  },
+  {
+   "href": "fontaine-rep-court-of-fontaine-region.html",
+   "title": "Fontaine: Court of Fontaine Region"
+  },
+  {
+   "href": "fontaine-rep-liffey-region.html",
+   "title": "Fontaine: Liffey Region"
+  },
+  {
+   "href": "fontaine-rep-fontaine-research-institute-of-kinetic-energy-engineering-region.html",
+   "title": "Fontaine: Fontaine Research Institute of Kinetic Energy Engineering Region"
+  }
+ ]
+}

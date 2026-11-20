@@ -1,0 +1,4685 @@
+{
+ "summary": {
+  "crawledAt": "2026-11-20T06:10:01.746Z",
+  "origin": "https://flux.siaup.store",
+  "root": "/genshin-notes",
+  "pages": 76,
+  "broken": [],
+  "orphans": [
+   "/genshin-notes/builds",
+   "/genshin-notes/builds/fischl",
+   "/genshin-notes/builds/kachina",
+   "/genshin-notes/builds/tighnari",
+   "/genshin-notes/combat",
+   "/genshin-notes/combat/08-snezhnaya-mechanics",
+   "/genshin-notes/combat/reaction-combos",
+   "/genshin-notes/combat/stellar-glimmer",
+   "/genshin-notes/combat/tactical-sweep",
+   "/genshin-notes/farming-economy",
+   "/genshin-notes/farming-economy/01-mora-farming",
+   "/genshin-notes/farming-economy/02-wishes-primogems",
+   "/genshin-notes/farming-economy/03-characters-materials",
+   "/genshin-notes/farming-economy/07-ore-farming",
+   "/genshin-notes/farming-economy/domains-all-74",
+   "/genshin-notes/farming-economy/local-legends-all-36",
+   "/genshin-notes/farming-economy/talent-farming",
+   "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "/genshin-notes/maps-puzzles",
+   "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+   "/genshin-notes/maps-puzzles/collectible-maps",
+   "/genshin-notes/maps-puzzles/crafting-benches",
+   "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "/genshin-notes/maps-puzzles/eye-of-graeae",
+   "/genshin-notes/maps-puzzles/fishing-spots",
+   "/genshin-notes/maps-puzzles/fowl",
+   "/genshin-notes/maps-puzzles/red-beet",
+   "/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "/genshin-notes/maps-puzzles/starfell-valley",
+   "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "/genshin-notes/maps-puzzles/the-chasm-ore",
+   "/genshin-notes/maps-puzzles/vault-of-qingce",
+   "/genshin-notes/maps-puzzles/wind-catcher",
+   "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "/genshin-notes/maps-puzzles/yaodie-valley",
+   "/genshin-notes/reference",
+   "/genshin-notes/reference/artifact-sets",
+   "/genshin-notes/reference/artifacts-budget-weapons",
+   "/genshin-notes/reference/character-kits",
+   "/genshin-notes/reference/corrections-log",
+   "/genshin-notes/reference/sources",
+   "/genshin-notes/reputation-quests",
+   "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "/genshin-notes/tcg",
+   "/genshin-notes/tcg/genius-invokation-tcg",
+   "/genshin-notes/team-building",
+   "/genshin-notes/team-building/12-varesas-team",
+   "/genshin-notes/team-building/13-varesas-damage-gap",
+   "/genshin-notes/team-building/support-squad",
+   "/genshin-notes/teams"
+  ],
+  "deadEnds": [
+   "/genshin-notes/builds/fischl",
+   "/genshin-notes/builds/kachina",
+   "/genshin-notes/builds/tighnari",
+   "/genshin-notes/combat/08-snezhnaya-mechanics",
+   "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+   "/genshin-notes/combat/imaginarium-theater",
+   "/genshin-notes/combat/reaction-combos",
+   "/genshin-notes/combat/stellar-glimmer",
+   "/genshin-notes/combat/tactical-sweep",
+   "/genshin-notes/farming-economy/01-mora-farming",
+   "/genshin-notes/farming-economy/02-wishes-primogems",
+   "/genshin-notes/farming-economy/03-characters-materials",
+   "/genshin-notes/farming-economy/07-ore-farming",
+   "/genshin-notes/farming-economy/domains-all-74",
+   "/genshin-notes/farming-economy/local-legends-all-36",
+   "/genshin-notes/farming-economy/redeem-codes",
+   "/genshin-notes/farming-economy/talent-farming",
+   "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+   "/genshin-notes/maps-puzzles/collectible-maps",
+   "/genshin-notes/maps-puzzles/crafting-benches",
+   "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "/genshin-notes/maps-puzzles/eye-of-graeae",
+   "/genshin-notes/maps-puzzles/fishing-spots",
+   "/genshin-notes/maps-puzzles/fowl",
+   "/genshin-notes/maps-puzzles/red-beet",
+   "/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "/genshin-notes/maps-puzzles/starfell-valley",
+   "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "/genshin-notes/maps-puzzles/the-chasm-ore",
+   "/genshin-notes/maps-puzzles/vault-of-qingce",
+   "/genshin-notes/maps-puzzles/wind-catcher",
+   "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "/genshin-notes/maps-puzzles/yaodie-valley",
+   "/genshin-notes/reference/artifact-sets",
+   "/genshin-notes/reference/artifacts-budget-weapons",
+   "/genshin-notes/reference/character-kits",
+   "/genshin-notes/reference/corrections-log",
+   "/genshin-notes/reference/sources",
+   "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "/genshin-notes/tcg/genius-invokation-tcg",
+   "/genshin-notes/team-building/12-varesas-team",
+   "/genshin-notes/team-building/13-varesas-damage-gap",
+   "/genshin-notes/team-building/support-squad",
+   "/genshin-notes/team-building/the-three-teams"
+  ],
+  "overThreeScreens": [
+   "/genshin-notes/combat/08-snezhnaya-mechanics (9)",
+   "/genshin-notes/combat/enemy-shields-what-you-cant-break (4)",
+   "/genshin-notes/combat/stellar-glimmer (7)",
+   "/genshin-notes/farming-economy/01-mora-farming (4)",
+   "/genshin-notes/farming-economy/02-wishes-primogems (9)",
+   "/genshin-notes/farming-economy/domains-all-74 (7)",
+   "/genshin-notes/farming-economy/local-legends-all-36 (6)",
+   "/genshin-notes/farming-economy/redeem-codes (4)",
+   "/genshin-notes/farming-economy/talent-farming (4)",
+   "/genshin-notes/reference/artifact-sets (12)",
+   "/genshin-notes/reference/character-kits (49)",
+   "/genshin-notes/reference/corrections-log (18)",
+   "/genshin-notes/reference/sources (4)",
+   "/genshin-notes/reputation-quests/fontaine-reputation-quests (9)",
+   "/genshin-notes/reputation-quests/inazuma-reputation-quests (9)",
+   "/genshin-notes/reputation-quests/liyue-reputation-quests (8)",
+   "/genshin-notes/reputation-quests/sumeru-reputation-quests (9)",
+   "/genshin-notes/team-building/12-varesas-team (7)",
+   "/genshin-notes/team-building/support-squad (7)",
+   "/genshin-notes/team-building/the-three-teams (7)"
+  ],
+  "noImages": [
+   "/genshin-notes",
+   "/genshin-notes/builds",
+   "/genshin-notes/builds/charlotte",
+   "/genshin-notes/builds/escoffier",
+   "/genshin-notes/builds/fischl",
+   "/genshin-notes/builds/furina",
+   "/genshin-notes/builds/kachina",
+   "/genshin-notes/builds/mika",
+   "/genshin-notes/builds/mona",
+   "/genshin-notes/builds/rosaria",
+   "/genshin-notes/builds/skirk",
+   "/genshin-notes/builds/sucrose",
+   "/genshin-notes/builds/tighnari",
+   "/genshin-notes/builds/traveler",
+   "/genshin-notes/builds/valeriy",
+   "/genshin-notes/builds/varesa",
+   "/genshin-notes/builds/yumemizuki-mizuki",
+   "/genshin-notes/combat",
+   "/genshin-notes/combat/08-snezhnaya-mechanics",
+   "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+   "/genshin-notes/combat/reaction-combos",
+   "/genshin-notes/combat/tactical-sweep",
+   "/genshin-notes/farming-economy",
+   "/genshin-notes/farming-economy/01-mora-farming",
+   "/genshin-notes/farming-economy/02-wishes-primogems",
+   "/genshin-notes/farming-economy/03-characters-materials",
+   "/genshin-notes/farming-economy/07-ore-farming",
+   "/genshin-notes/farming-economy/redeem-codes",
+   "/genshin-notes/farming-economy/talent-farming",
+   "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "/genshin-notes/maps-puzzles",
+   "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "/genshin-notes/reference",
+   "/genshin-notes/reference/artifact-sets",
+   "/genshin-notes/reference/artifacts-budget-weapons",
+   "/genshin-notes/reference/character-kits",
+   "/genshin-notes/reference/corrections-log",
+   "/genshin-notes/reference/sources",
+   "/genshin-notes/reputation-quests",
+   "/genshin-notes/tcg",
+   "/genshin-notes/tcg/genius-invokation-tcg",
+   "/genshin-notes/team-building",
+   "/genshin-notes/team-building/12-varesas-team",
+   "/genshin-notes/team-building/13-varesas-damage-gap",
+   "/genshin-notes/team-building/support-squad",
+   "/genshin-notes/team-building/the-three-teams",
+   "/genshin-notes/teams",
+   "/genshin-notes/teams/mizuki-stellar-swirl",
+   "/genshin-notes/teams/skirk-freeze",
+   "/genshin-notes/teams/varesa-electro-charged"
+  ],
+  "noContextLinksIn": [
+   "/genshin-notes/builds",
+   "/genshin-notes/builds/fischl",
+   "/genshin-notes/builds/kachina",
+   "/genshin-notes/builds/tighnari",
+   "/genshin-notes/combat",
+   "/genshin-notes/combat/08-snezhnaya-mechanics",
+   "/genshin-notes/combat/reaction-combos",
+   "/genshin-notes/combat/stellar-glimmer",
+   "/genshin-notes/combat/tactical-sweep",
+   "/genshin-notes/farming-economy",
+   "/genshin-notes/farming-economy/01-mora-farming",
+   "/genshin-notes/farming-economy/02-wishes-primogems",
+   "/genshin-notes/farming-economy/03-characters-materials",
+   "/genshin-notes/farming-economy/07-ore-farming",
+   "/genshin-notes/farming-economy/domains-all-74",
+   "/genshin-notes/farming-economy/local-legends-all-36",
+   "/genshin-notes/farming-economy/talent-farming",
+   "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "/genshin-notes/maps-puzzles",
+   "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+   "/genshin-notes/maps-puzzles/collectible-maps",
+   "/genshin-notes/maps-puzzles/crafting-benches",
+   "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "/genshin-notes/maps-puzzles/eye-of-graeae",
+   "/genshin-notes/maps-puzzles/fishing-spots",
+   "/genshin-notes/maps-puzzles/fowl",
+   "/genshin-notes/maps-puzzles/red-beet",
+   "/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "/genshin-notes/maps-puzzles/starfell-valley",
+   "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "/genshin-notes/maps-puzzles/the-chasm-ore",
+   "/genshin-notes/maps-puzzles/vault-of-qingce",
+   "/genshin-notes/maps-puzzles/wind-catcher",
+   "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "/genshin-notes/maps-puzzles/yaodie-valley",
+   "/genshin-notes/reference",
+   "/genshin-notes/reference/artifact-sets",
+   "/genshin-notes/reference/artifacts-budget-weapons",
+   "/genshin-notes/reference/character-kits",
+   "/genshin-notes/reference/corrections-log",
+   "/genshin-notes/reference/sources",
+   "/genshin-notes/reputation-quests",
+   "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "/genshin-notes/tcg",
+   "/genshin-notes/tcg/genius-invokation-tcg",
+   "/genshin-notes/team-building",
+   "/genshin-notes/team-building/12-varesas-team",
+   "/genshin-notes/team-building/13-varesas-damage-gap",
+   "/genshin-notes/team-building/support-squad",
+   "/genshin-notes/teams"
+  ],
+  "noLinksOut": [
+   "/genshin-notes/combat/imaginarium-theater",
+   "/genshin-notes/combat/reaction-combos",
+   "/genshin-notes/combat/stellar-glimmer",
+   "/genshin-notes/combat/tactical-sweep",
+   "/genshin-notes/farming-economy/01-mora-farming",
+   "/genshin-notes/farming-economy/02-wishes-primogems",
+   "/genshin-notes/farming-economy/03-characters-materials",
+   "/genshin-notes/farming-economy/07-ore-farming",
+   "/genshin-notes/farming-economy/local-legends-all-36",
+   "/genshin-notes/farming-economy/talent-farming",
+   "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "/genshin-notes/maps-puzzles/collectible-maps",
+   "/genshin-notes/maps-puzzles/crafting-benches",
+   "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "/genshin-notes/maps-puzzles/red-beet",
+   "/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "/genshin-notes/maps-puzzles/starfell-valley",
+   "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "/genshin-notes/maps-puzzles/the-chasm-ore",
+   "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "/genshin-notes/maps-puzzles/yaodie-valley",
+   "/genshin-notes/reference/artifact-sets",
+   "/genshin-notes/reference/artifacts-budget-weapons",
+   "/genshin-notes/reference/character-kits",
+   "/genshin-notes/reference/corrections-log",
+   "/genshin-notes/reference/sources",
+   "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "/genshin-notes/tcg/genius-invokation-tcg",
+   "/genshin-notes/team-building/13-varesas-damage-gap"
+  ],
+  "bodyNotInHtml": 34,
+  "deep": [],
+  "noDescription": 76,
+  "badCanonical": 76,
+  "chromeLinks": [],
+  "unpublishedLocal": 36
+ },
+ "pages": [
+  {
+   "url": "/genshin-notes",
+   "status": 200,
+   "title": "Genshin notes · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes",
+   "h1": "",
+   "words": 265,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/reputation-quests",
+    "/genshin-notes/team-building/the-three-teams",
+    "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+    "/genshin-notes/farming-economy/redeem-codes",
+    "/genshin-notes/combat/imaginarium-theater",
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/teams/varesa-electro-charged",
+    "/genshin-notes/builds",
+    "/genshin-notes/teams",
+    "/genshin-notes/team-building",
+    "/genshin-notes/combat",
+    "/genshin-notes/farming-economy",
+    "/genshin-notes/maps-puzzles",
+    "/genshin-notes/tcg",
+    "/genshin-notes/reference"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests",
+     "text": "Every quest that pays reputation, shortest first, with a route map per region an"
+    },
+    {
+     "to": "/genshin-notes/team-building/the-three-teams",
+     "text": "Three team archetypes: who plays together, the rotation, and the set every membe"
+    },
+    {
+     "to": "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+     "text": "Which element breaks which enemy shield, and how to cover every one."
+    },
+    {
+     "to": "/genshin-notes/farming-economy/redeem-codes",
+     "text": "Codes checked in game, not just copied from aggregators, and when the next batch"
+    },
+    {
+     "to": "/genshin-notes/combat/imaginarium-theater",
+     "text": "Who to spend in which Act, and the boss loop for the last one."
+    },
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk · Mona · Escoffier · Mika"
+    },
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Yumemizuki Mizuki · Traveler · Rosaria · Sucrose"
+    },
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa · Furina · Charlotte · Valeriy"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests",
+     "text": "5 pages · route maps per region, shortest quests first, chains included"
+    },
+    {
+     "to": "/genshin-notes/builds",
+     "text": "15 pages · one page per character: target sets, main stats, substats, weapons"
+    },
+    {
+     "to": "/genshin-notes/teams",
+     "text": "3 pages · line-up, rotation and shield coverage per team"
+    },
+    {
+     "to": "/genshin-notes/team-building",
+     "text": "4 pages · how the teams were put together, and the damage maths behind them"
+    },
+    {
+     "to": "/genshin-notes/combat",
+     "text": "6 pages · enemy shields, reactions, Imaginarium Theater, Tactical Sweep"
+    },
+    {
+     "to": "/genshin-notes/farming-economy",
+     "text": "9 pages · codes, wishes, Mora, ore, talent books, bosses and domains"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles",
+     "text": "19 pages · puzzle solutions, gathering routes and collectibles"
+    },
+    {
+     "to": "/genshin-notes/tcg",
+     "text": "1 pages · Genius Invokation: cards and a deck"
+    },
+    {
+     "to": "/genshin-notes/reference",
+     "text": "5 pages · character kits, artifact sets, sources, and what other guides get wron"
+    }
+   ],
+   "external": [],
+   "depth": 0,
+   "inbound": [],
+   "contextualInbound": 0,
+   "source": "generated: home (flux-home)",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/builds",
+   "status": 200,
+   "title": "Builds · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds",
+   "h1": "",
+   "words": 83,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/builds/varesa",
+    "/genshin-notes/builds/yumemizuki-mizuki",
+    "/genshin-notes/builds/furina",
+    "/genshin-notes/builds/skirk",
+    "/genshin-notes/builds/escoffier",
+    "/genshin-notes/builds/mona",
+    "/genshin-notes/builds/rosaria",
+    "/genshin-notes/builds/traveler",
+    "/genshin-notes/builds/kachina",
+    "/genshin-notes/builds/sucrose",
+    "/genshin-notes/builds/mika",
+    "/genshin-notes/builds/tighnari",
+    "/genshin-notes/builds/valeriy",
+    "/genshin-notes/builds/fischl",
+    "/genshin-notes/builds/charlotte"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/builds/varesa",
+     "text": "Electro · Lv 90"
+    },
+    {
+     "to": "/genshin-notes/builds/yumemizuki-mizuki",
+     "text": "Anemo · Lv 70"
+    },
+    {
+     "to": "/genshin-notes/builds/furina",
+     "text": "Hydro · Lv 60"
+    },
+    {
+     "to": "/genshin-notes/builds/skirk",
+     "text": "Cryo · Lv 80"
+    },
+    {
+     "to": "/genshin-notes/builds/escoffier",
+     "text": "Cryo · Lv 70"
+    },
+    {
+     "to": "/genshin-notes/builds/mona",
+     "text": "Hydro · Lv 60"
+    },
+    {
+     "to": "/genshin-notes/builds/rosaria",
+     "text": "Cryo · Lv 20"
+    },
+    {
+     "to": "/genshin-notes/builds/traveler",
+     "text": "Cryo · Lv 40"
+    },
+    {
+     "to": "/genshin-notes/builds/kachina",
+     "text": "Geo · Lv 50"
+    },
+    {
+     "to": "/genshin-notes/builds/sucrose",
+     "text": "Anemo · Lv 56"
+    },
+    {
+     "to": "/genshin-notes/builds/mika",
+     "text": "Cryo · Lv 45"
+    },
+    {
+     "to": "/genshin-notes/builds/tighnari",
+     "text": "Dendro · Lv 70"
+    },
+    {
+     "to": "/genshin-notes/builds/valeriy",
+     "text": "Electro · Lv 60"
+    },
+    {
+     "to": "/genshin-notes/builds/fischl",
+     "text": "Electro · Lv 60"
+    },
+    {
+     "to": "/genshin-notes/builds/charlotte",
+     "text": "Cryo · Lv 60"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/builds/charlotte",
+   "status": 200,
+   "title": "Charlotte · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/charlotte",
+   "h1": "",
+   "words": 291,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/varesa-electro-charged"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa Electro-Charged"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/varesa-electro-charged",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/escoffier",
+   "status": 200,
+   "title": "Escoffier · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/escoffier",
+   "h1": "",
+   "words": 231,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/skirk-freeze"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk freeze"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/fischl",
+   "status": 200,
+   "title": "Fischl · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/fischl",
+   "h1": "",
+   "words": 97,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/builds/furina",
+   "status": 200,
+   "title": "Furina · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/furina",
+   "h1": "",
+   "words": 286,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/varesa-electro-charged"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa Electro-Charged"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/varesa-electro-charged",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/kachina",
+   "status": 200,
+   "title": "Kachina · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/kachina",
+   "h1": "",
+   "words": 334,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/builds/mika",
+   "status": 200,
+   "title": "Mika · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/mika",
+   "h1": "",
+   "words": 221,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/skirk-freeze"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk freeze"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/mona",
+   "status": 200,
+   "title": "Mona · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/mona",
+   "h1": "",
+   "words": 271,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/skirk-freeze"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk freeze"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/rosaria",
+   "status": 200,
+   "title": "Rosaria · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/rosaria",
+   "h1": "",
+   "words": 272,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/teams/skirk-freeze"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Mizuki Stellar Swirl"
+    },
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk freeze"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/skirk",
+   "status": 200,
+   "title": "Skirk · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/skirk",
+   "h1": "",
+   "words": 311,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/skirk-freeze"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk freeze"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/sucrose",
+   "status": 200,
+   "title": "Sucrose · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/sucrose",
+   "h1": "",
+   "words": 269,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/mizuki-stellar-swirl"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Mizuki Stellar Swirl"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/tighnari",
+   "status": 200,
+   "title": "Tighnari · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/tighnari",
+   "h1": "",
+   "words": 105,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/builds/traveler",
+   "status": 200,
+   "title": "Traveler · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/traveler",
+   "h1": "",
+   "words": 301,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/mizuki-stellar-swirl"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Mizuki Stellar Swirl"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/valeriy",
+   "status": 200,
+   "title": "Valeriy · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/valeriy",
+   "h1": "",
+   "words": 311,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/varesa-electro-charged"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa Electro-Charged"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/varesa-electro-charged",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/varesa",
+   "status": 200,
+   "title": "Varesa · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/varesa",
+   "h1": "",
+   "words": 350,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/varesa-electro-charged"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa Electro-Charged"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/varesa-electro-charged",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/builds/yumemizuki-mizuki",
+   "status": 200,
+   "title": "Yumemizuki Mizuki · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/builds/yumemizuki-mizuki",
+   "h1": "",
+   "words": 516,
+   "screens": 2,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/mizuki-stellar-swirl"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Mizuki Stellar Swirl"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/builds"
+   ],
+   "contextualInbound": 1,
+   "source": "generated: build (flux-push)",
+   "content": null,
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/combat",
+   "status": 200,
+   "title": "Combat · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat",
+   "h1": "",
+   "words": 109,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/combat/stellar-glimmer",
+    "/genshin-notes/combat/imaginarium-theater",
+    "/genshin-notes/combat/tactical-sweep",
+    "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+    "/genshin-notes/combat/reaction-combos",
+    "/genshin-notes/combat/08-snezhnaya-mechanics"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/combat/stellar-glimmer",
+     "text": "Stellar-Conduct and Stellar Swirl, the one passive that enables them, and who yo"
+    },
+    {
+     "to": "/genshin-notes/combat/imaginarium-theater",
+     "text": "How to plan a run: Vigor, who to spend early, cards to take, this season's cast "
+    },
+    {
+     "to": "/genshin-notes/combat/tactical-sweep",
+     "text": "All four stages to 36,000: Morale rules, how each boss breaks, who to field"
+    },
+    {
+     "to": "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+     "text": "Wards fall to reactions, not damage. Cryo and Frozen wards need Pyro and no team"
+    },
+    {
+     "to": "/genshin-notes/combat/reaction-combos",
+     "text": "Element pair picker"
+    },
+    {
+     "to": "/genshin-notes/combat/08-snezhnaya-mechanics",
+     "text": "Prime Ice Constructs, melting ice, and what the Shadow Realm pays"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/combat/08-snezhnaya-mechanics",
+   "status": 200,
+   "title": "08 · Snezhnaya mechanics · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/08-snezhnaya-mechanics",
+   "h1": "",
+   "words": 314,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [
+    "https://genshin-impact.fandom.com/wiki/Land_of_Surging_Shadows_(I)"
+   ],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 0,
+   "source": "research/08-snezhnaya-mechanics.md",
+   "content": {
+    "words": 2232,
+    "screens": 9,
+    "images": 0,
+    "maps": 0,
+    "tables": 3,
+    "links": [
+     "/genshin-notes/farming-economy/07-ore-farming\\",
+     "/genshin-notes/maps-puzzles/red-beet\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/combat/enemy-shields-what-you-cant-break",
+   "status": 200,
+   "title": "Enemy shields — what you can't break · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/enemy-shields-what-you-cant-break",
+   "h1": "",
+   "words": 88,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 1,
+   "source": "enemy-coverage.html",
+   "content": {
+    "words": 1096,
+    "screens": 4,
+    "images": 0,
+    "maps": 0,
+    "tables": 5,
+    "links": [
+     "/genshin-notes/team-building/the-three-teams\\"
+    ]
+   },
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/combat/imaginarium-theater",
+   "status": 200,
+   "title": "Imaginarium Theater · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/imaginarium-theater",
+   "h1": "",
+   "words": 105,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 1,
+   "source": "theater.html",
+   "content": {
+    "words": 850,
+    "screens": 3,
+    "images": 6,
+    "maps": 0,
+    "tables": 3,
+    "links": []
+   },
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/combat/reaction-combos",
+   "status": 200,
+   "title": "Reaction combos · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/reaction-combos",
+   "h1": "",
+   "words": 58,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 0,
+   "source": "reaction-combos.html",
+   "content": {
+    "words": 270,
+    "screens": 1,
+    "images": 0,
+    "maps": 0,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/combat/stellar-glimmer",
+   "status": 200,
+   "title": "Stellar Glimmer · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/stellar-glimmer",
+   "h1": "",
+   "words": 67,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 0,
+   "source": "stellar.html",
+   "content": {
+    "words": 1657,
+    "screens": 7,
+    "images": 27,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/combat/tactical-sweep",
+   "status": 200,
+   "title": "Tactical Sweep · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/combat/tactical-sweep",
+   "h1": "",
+   "words": 113,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/combat"
+   ],
+   "contextualInbound": 0,
+   "source": "tactical-sweep.html",
+   "content": {
+    "words": 819,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy",
+   "status": 200,
+   "title": "Farming & economy · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy",
+   "h1": "",
+   "words": 154,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/farming-economy/local-legends-all-36",
+    "/genshin-notes/farming-economy/domains-all-74",
+    "/genshin-notes/farming-economy/talent-farming",
+    "/genshin-notes/farming-economy/redeem-codes",
+    "/genshin-notes/farming-economy/tyrants-fang-farming",
+    "/genshin-notes/farming-economy/01-mora-farming",
+    "/genshin-notes/farming-economy/02-wishes-primogems",
+    "/genshin-notes/farming-economy/03-characters-materials",
+    "/genshin-notes/farming-economy/07-ore-farming"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/farming-economy/local-legends-all-36",
+     "text": "Resinless bosses that respawn daily. Mapped, with the AR 55 catch on the rewards"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/domains-all-74",
+     "text": "Every entrance mapped and tickable. One-time clears are fixed Primogems and cost"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/talent-farming",
+     "text": "What is open today, who needs it, and why resin is not the thing to fix"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/redeem-codes",
+     "text": "Live codes checked 17 Nov against two feeds, the next livestream date, and a tic"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/tyrants-fang-farming",
+     "text": "Natlan Saurian routes densest first, the Lv 60 drop gate, crafting and respawn r"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/01-mora-farming",
+     "text": "Blossoms of Wealth, Ley Line Overflow, the Frostbearing Tree's 600,000 Mora"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/02-wishes-primogems",
+     "text": "What F2P really earns per month, pity maths, pull strategy, why the Frostbearing"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/03-characters-materials",
+     "text": "Roster, priority, talent domains"
+    },
+    {
+     "to": "/genshin-notes/farming-economy/07-ore-farming",
+     "text": "Dense routes near waypoints"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/01-mora-farming",
+   "status": 200,
+   "title": "01 · Mora farming · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/01-mora-farming",
+   "h1": "",
+   "words": 178,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [
+    "https://genshin-impact.fandom.com/wiki/Frostbearing_Tree%27s_Gratitude"
+   ],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "research/01-mora-farming.md",
+   "content": {
+    "words": 1026,
+    "screens": 4,
+    "images": 0,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/02-wishes-primogems",
+   "status": 200,
+   "title": "02 · Wishes & Primogems · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/02-wishes-primogems",
+   "h1": "",
+   "words": 351,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [
+    "https://genshin-impact.fandom.com/wiki/Spiral_Abyss",
+    "https://genshin-impact.fandom.com/wiki/Imaginarium_Theater",
+    "https://genshin-impact.fandom.com/wiki/Stygian_Onslaught",
+    "https://genshin-impact.fandom.com/wiki/Commission",
+    "https://genshin-impact.fandom.com/wiki/Paimon%27s_Bargains",
+    "https://genshin-impact.fandom.com/wiki/Character_Event_Wish"
+   ],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "research/02-wishes-and-primogems.md",
+   "content": {
+    "words": 2160,
+    "screens": 9,
+    "images": 0,
+    "maps": 0,
+    "tables": 3,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/03-characters-materials",
+   "status": 200,
+   "title": "03 · Characters & materials · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/03-characters-materials",
+   "h1": "",
+   "words": 132,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "research/03-character-materials.md",
+   "content": {
+    "words": 791,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 3,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/07-ore-farming",
+   "status": 200,
+   "title": "07 · Ore farming · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/07-ore-farming",
+   "h1": "",
+   "words": 85,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "research/07-ore-farming.md",
+   "content": {
+    "words": 700,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 3,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/domains-all-74",
+   "status": 200,
+   "title": "Domains — all 74 · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/domains-all-74",
+   "h1": "",
+   "words": 93,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "domains.html",
+   "content": {
+    "words": 1767,
+    "screens": 7,
+    "images": 90,
+    "maps": 0,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/collectible-maps\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/local-legends-all-36",
+   "status": 200,
+   "title": "Local Legends — all 36 · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/local-legends-all-36",
+   "h1": "",
+   "words": 96,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "local-legends.html",
+   "content": {
+    "words": 1576,
+    "screens": 6,
+    "images": 90,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/redeem-codes",
+   "status": 200,
+   "title": "Redeem codes · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/redeem-codes",
+   "h1": "",
+   "words": 75,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 1,
+   "source": "codes.html",
+   "content": {
+    "words": 944,
+    "screens": 4,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": [
+     "/genshin-notes/reference/corrections-log\\"
+    ]
+   },
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/farming-economy/talent-farming",
+   "status": 200,
+   "title": "Talent farming · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/talent-farming",
+   "h1": "",
+   "words": 251,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "talent-farming.html",
+   "content": {
+    "words": 946,
+    "screens": 4,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/farming-economy/tyrants-fang-farming",
+   "status": 200,
+   "title": "Tyrant’s Fang farming · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/farming-economy/tyrants-fang-farming",
+   "h1": "",
+   "words": 194,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/farming-economy"
+   ],
+   "contextualInbound": 0,
+   "source": "saurian-farming.html",
+   "content": {
+    "words": 537,
+    "screens": 2,
+    "images": 0,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles",
+   "status": 200,
+   "title": "Maps & puzzles · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles",
+   "h1": "",
+   "words": 190,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/maps-puzzles/starfell-valley",
+    "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+    "/genshin-notes/maps-puzzles/the-chasm-ore",
+    "/genshin-notes/maps-puzzles/fishing-spots",
+    "/genshin-notes/maps-puzzles/wind-catcher",
+    "/genshin-notes/maps-puzzles/crafting-benches",
+    "/genshin-notes/maps-puzzles/fowl",
+    "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+    "/genshin-notes/maps-puzzles/red-beet",
+    "/genshin-notes/maps-puzzles/eye-of-graeae",
+    "/genshin-notes/maps-puzzles/yaodie-valley",
+    "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+    "/genshin-notes/maps-puzzles/vault-of-qingce",
+    "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+    "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+    "/genshin-notes/maps-puzzles/collectible-maps",
+    "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+    "/genshin-notes/maps-puzzles/snezhnaya-statues",
+    "/genshin-notes/maps-puzzles/06a-in-the-mountains"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/maps-puzzles/starfell-valley",
+     "text": "Priority spots, chest zones, waypoints — Mondstadt"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+     "text": "Route to Peak of Vindagnyr"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/the-chasm-ore",
+     "text": "Surface belt and the Underground Mines"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/fishing-spots",
+     "text": "Mondstadt and Liyue, best spot per region"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/wind-catcher",
+     "text": "Anemograna charging spots"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/crafting-benches",
+     "text": "Where to make bait and alchemy items"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/fowl",
+     "text": "Draff in Springvale — bait ingredient"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+     "text": "Stormbearer search area"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/red-beet",
+     "text": "Everfrozen Earth corridor"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/eye-of-graeae",
+     "text": "Three fragment questlines"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/yaodie-valley",
+     "text": "Chenyu Vale — hidden quest cave"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+     "text": "Tatarasuna: where each Key to Some Place is, with the wiki's map and close-up"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/vault-of-qingce",
+     "text": "Why the gate is locked"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+     "text": "Both Qingce puzzles"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+     "text": "Diagram with compass"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/collectible-maps",
+     "text": "Crimson Agate and every oculus, grouped into warps rather than a walking loop. T"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+     "text": "Atocpan — the artifact domain for Skirk and Varesa"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/snezhnaya-statues",
+     "text": "Five stops that level the Exaiphanes Blade — free"
+    },
+    {
+     "to": "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+     "text": "Dragonspine unlock walkthrough"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "status": 200,
+   "title": "06a · In the Mountains · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/06a-in-the-mountains",
+   "h1": "",
+   "words": 287,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "research/06a-in-the-mountains.md",
+   "content": {
+    "words": 479,
+    "screens": 2,
+    "images": 0,
+    "maps": 0,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "status": 200,
+   "title": "Bounty — Ruin Guard · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/bounty-ruin-guard",
+   "h1": "",
+   "words": 116,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "bounty-stormbearer-map.html",
+   "content": {
+    "words": 125,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/chi-of-yore-statues",
+   "status": 200,
+   "title": "Chi of Yore — statues · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/chi-of-yore-statues",
+   "h1": "",
+   "words": 124,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "chi-of-yore-puzzles.html",
+   "content": {
+    "words": 163,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/wuwang-hill-8-statues\\",
+     "/genshin-notes/maps-puzzles/vault-of-qingce\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/collectible-maps",
+   "status": 200,
+   "title": "Collectible maps · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/collectible-maps",
+   "h1": "",
+   "words": 132,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "collectible-map.html",
+   "content": {
+    "words": 614,
+    "screens": 2,
+    "images": 25,
+    "maps": 0,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/crafting-benches",
+   "status": 200,
+   "title": "Crafting benches · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/crafting-benches",
+   "h1": "",
+   "words": 99,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "crafting-bench-map.html",
+   "content": {
+    "words": 160,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "status": 200,
+   "title": "Derelict Masonry Dock · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/derelict-masonry-dock",
+   "h1": "",
+   "words": 140,
+   "screens": 1,
+   "images": 2,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "derelict-masonry-dock.html",
+   "content": {
+    "words": 569,
+    "screens": 2,
+    "images": 2,
+    "maps": 2,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "status": 200,
+   "title": "Dragonspine — In the Mountains · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/dragonspine-in-the-mountains",
+   "h1": "",
+   "words": 162,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "dragonspine-quest-map.html",
+   "content": {
+    "words": 186,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/eye-of-graeae",
+   "status": 200,
+   "title": "Eye of Graeae · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/eye-of-graeae",
+   "h1": "",
+   "words": 117,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "eye-of-graeae-map.html",
+   "content": {
+    "words": 259,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/combat/08-snezhnaya-mechanics\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/fishing-spots",
+   "status": 200,
+   "title": "Fishing spots · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/fishing-spots",
+   "h1": "",
+   "words": 170,
+   "screens": 1,
+   "images": 2,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "fishing-spots-map.html",
+   "content": {
+    "words": 279,
+    "screens": 1,
+    "images": 2,
+    "maps": 2,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/wind-catcher\\",
+     "/genshin-notes/farming-economy/07-ore-farming\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/fowl",
+   "status": 200,
+   "title": "Fowl · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/fowl",
+   "h1": "",
+   "words": 107,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "fowl-map.html",
+   "content": {
+    "words": 265,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/fishing-spots\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/red-beet",
+   "status": 200,
+   "title": "Red Beet · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/red-beet",
+   "h1": "",
+   "words": 145,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "redbeet-map.html",
+   "content": {
+    "words": 266,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "status": 200,
+   "title": "Snezhnaya statues · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/snezhnaya-statues",
+   "h1": "",
+   "words": 140,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "exaiphanes-statues-map.html",
+   "content": {
+    "words": 596,
+    "screens": 2,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/starfell-valley",
+   "status": 200,
+   "title": "Starfell Valley · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/starfell-valley",
+   "h1": "",
+   "words": 185,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "starfell-valley-guide.html",
+   "content": {
+    "words": 674,
+    "screens": 3,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "status": 200,
+   "title": "The Arsenal — 3 keys · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/the-arsenal-3-keys",
+   "h1": "",
+   "words": 108,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "arsenal-keys.html",
+   "content": {
+    "words": 246,
+    "screens": 1,
+    "images": 6,
+    "maps": 0,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/the-chasm-ore",
+   "status": 200,
+   "title": "The Chasm — ore · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/the-chasm-ore",
+   "h1": "",
+   "words": 133,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "chasm-ore-map.html",
+   "content": {
+    "words": 197,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/vault-of-qingce",
+   "status": 200,
+   "title": "Vault of Qingce · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/vault-of-qingce",
+   "h1": "",
+   "words": 111,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "vault-of-qingce.html",
+   "content": {
+    "words": 151,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/chi-of-yore-statues\\",
+     "/genshin-notes/maps-puzzles/wuwang-hill-8-statues\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/wind-catcher",
+   "status": 200,
+   "title": "Wind Catcher · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/wind-catcher",
+   "h1": "",
+   "words": 221,
+   "screens": 1,
+   "images": 2,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "windcatcher-map.html",
+   "content": {
+    "words": 235,
+    "screens": 1,
+    "images": 2,
+    "maps": 2,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/maps-puzzles/the-chasm-ore\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "status": 200,
+   "title": "Wuwang Hill — 8 statues · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/wuwang-hill-8-statues",
+   "h1": "",
+   "words": 116,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "wuwang-statue-puzzle.html",
+   "content": {
+    "words": 254,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/maps-puzzles/yaodie-valley",
+   "status": 200,
+   "title": "Yaodie Valley · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/maps-puzzles/yaodie-valley",
+   "h1": "",
+   "words": 119,
+   "screens": 1,
+   "images": 1,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/maps-puzzles"
+   ],
+   "contextualInbound": 0,
+   "source": "yaodie-valley-map.html",
+   "content": {
+    "words": 147,
+    "screens": 1,
+    "images": 1,
+    "maps": 1,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference",
+   "status": 200,
+   "title": "Reference · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference",
+   "h1": "",
+   "words": 70,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/reference/character-kits",
+    "/genshin-notes/reference/artifact-sets",
+    "/genshin-notes/reference/artifacts-budget-weapons",
+    "/genshin-notes/reference/sources",
+    "/genshin-notes/reference/corrections-log"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reference/character-kits",
+     "text": "All 23 — talents, passives, constellations, full text"
+    },
+    {
+     "to": "/genshin-notes/reference/artifact-sets",
+     "text": "All 63, 2pc and 4pc bonuses"
+    },
+    {
+     "to": "/genshin-notes/reference/artifacts-budget-weapons",
+     "text": "Sets by job with their domains, main stats per slot, when 5-star pieces drop, an"
+    },
+    {
+     "to": "/genshin-notes/reference/sources",
+     "text": "Which source answers what, and how to reach it"
+    },
+    {
+     "to": "/genshin-notes/reference/corrections-log",
+     "text": "What I got wrong, and the habits that caused it"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference/artifact-sets",
+   "status": 200,
+   "title": "Artifact sets · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference/artifact-sets",
+   "h1": "",
+   "words": 22,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reference"
+   ],
+   "contextualInbound": 0,
+   "source": "reference/artifact-sets.md",
+   "content": {
+    "words": 3109,
+    "screens": 12,
+    "images": 0,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference/artifacts-budget-weapons",
+   "status": 200,
+   "title": "Artifacts & budget weapons · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference/artifacts-budget-weapons",
+   "h1": "",
+   "words": 258,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reference"
+   ],
+   "contextualInbound": 0,
+   "source": "artifacts.html",
+   "content": {
+    "words": 683,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference/character-kits",
+   "status": 200,
+   "title": "Character kits · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference/character-kits",
+   "h1": "",
+   "words": 157,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reference"
+   ],
+   "contextualInbound": 0,
+   "source": "reference/kits.md",
+   "content": {
+    "words": 12270,
+    "screens": 49,
+    "images": 0,
+    "maps": 0,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference/corrections-log",
+   "status": 200,
+   "title": "Corrections log · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference/corrections-log",
+   "h1": "",
+   "words": 159,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reference"
+   ],
+   "contextualInbound": 0,
+   "source": "reference/corrections.md",
+   "content": {
+    "words": 4485,
+    "screens": 18,
+    "images": 0,
+    "maps": 0,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reference/sources",
+   "status": 200,
+   "title": "Sources · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reference/sources",
+   "h1": "",
+   "words": 58,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reference"
+   ],
+   "contextualInbound": 0,
+   "source": "reference/sources.md",
+   "content": {
+    "words": 997,
+    "screens": 4,
+    "images": 0,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reputation-quests",
+   "status": 200,
+   "title": "Reputation quests · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reputation-quests",
+   "h1": "",
+   "words": 135,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/reputation-quests/liyue-reputation-quests",
+    "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+    "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+    "/genshin-notes/reputation-quests/fontaine-reputation-quests"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "67 quests on an annotated route map, shortest first, with a city close-up"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "60 quests on an annotated route map, shortest first, with a city close-up"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "55 quests on an annotated route map, shortest first, with a city close-up"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "57 quests on an annotated route map, shortest first, with a city close-up"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "reputation-quests.html",
+   "content": {
+    "words": 383,
+    "screens": 2,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": [
+     "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "/genshin-notes/reputation-quests/fontaine-reputation-quests"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "status": 200,
+   "title": "Fontaine reputation quests · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reputation-quests/fontaine-reputation-quests",
+   "h1": "",
+   "words": 1980,
+   "screens": 8,
+   "images": 54,
+   "imagesExternal": 52,
+   "tables": 0,
+   "out": [],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/fontaine-reputation-quests",
+     "text": "Full entry ↓"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reputation-quests"
+   ],
+   "contextualInbound": 0,
+   "source": "fontaine-rep-route.html",
+   "content": {
+    "words": 2166,
+    "screens": 9,
+    "images": 115,
+    "maps": 2,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "status": 200,
+   "title": "Inazuma reputation quests · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reputation-quests/inazuma-reputation-quests",
+   "h1": "",
+   "words": 1467,
+   "screens": 6,
+   "images": 41,
+   "imagesExternal": 39,
+   "tables": 0,
+   "out": [],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/inazuma-reputation-quests",
+     "text": "Full entry ↓"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reputation-quests"
+   ],
+   "contextualInbound": 0,
+   "source": "inazuma-rep-route.html",
+   "content": {
+    "words": 2260,
+    "screens": 9,
+    "images": 83,
+    "maps": 2,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "status": 200,
+   "title": "Liyue reputation quests · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reputation-quests/liyue-reputation-quests",
+   "h1": "",
+   "words": 2181,
+   "screens": 9,
+   "images": 62,
+   "imagesExternal": 60,
+   "tables": 0,
+   "out": [],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/liyue-reputation-quests",
+     "text": "Full entry ↓"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reputation-quests"
+   ],
+   "contextualInbound": 0,
+   "source": "liyue-rep-route.html",
+   "content": {
+    "words": 2001,
+    "screens": 8,
+    "images": 114,
+    "maps": 2,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "status": 200,
+   "title": "Sumeru reputation quests · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/reputation-quests/sumeru-reputation-quests",
+   "h1": "",
+   "words": 1611,
+   "screens": 6,
+   "images": 44,
+   "imagesExternal": 42,
+   "tables": 0,
+   "out": [],
+   "anchors": [
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    },
+    {
+     "to": "/genshin-notes/reputation-quests/sumeru-reputation-quests",
+     "text": "Full entry ↓"
+    }
+   ],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/reputation-quests"
+   ],
+   "contextualInbound": 0,
+   "source": "sumeru-rep-route.html",
+   "content": {
+    "words": 2203,
+    "screens": 9,
+    "images": 101,
+    "maps": 2,
+    "tables": 0,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/tcg",
+   "status": 200,
+   "title": "TCG · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/tcg",
+   "h1": "",
+   "words": 26,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/tcg/genius-invokation-tcg"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/tcg/genius-invokation-tcg",
+     "text": "Getting cards, what letters and coins buy, a Skirk Frozen deck, and every card t"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/tcg/genius-invokation-tcg",
+   "status": 200,
+   "title": "Genius Invokation TCG · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/tcg/genius-invokation-tcg",
+   "h1": "",
+   "words": 155,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/tcg"
+   ],
+   "contextualInbound": 0,
+   "source": "tcg.html",
+   "content": {
+    "words": 795,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 2,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/team-building",
+   "status": 200,
+   "title": "Team building · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/team-building",
+   "h1": "",
+   "words": 101,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/team-building/support-squad",
+    "/genshin-notes/team-building/the-three-teams",
+    "/genshin-notes/team-building/12-varesas-team",
+    "/genshin-notes/team-building/13-varesas-damage-gap"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/team-building/support-squad",
+     "text": "Barbara, Mika, Sucrose, Alyosha, Kaeya, Chongyun"
+    },
+    {
+     "to": "/genshin-notes/team-building/the-three-teams",
+     "text": "Skirk freeze · Mizuki Stellar Swirl · Varesa Electro-Charged — why each works, t"
+    },
+    {
+     "to": "/genshin-notes/team-building/12-varesas-team",
+     "text": "Nothing you own shreds Electro RES — but Mizuki's Viridescent Venerer already do"
+    },
+    {
+     "to": "/genshin-notes/team-building/13-varesas-damage-gap",
+     "text": "Why ~50k when clips show ~150k: five gaps that multiply, modelled hit by hit — a"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: section index",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/team-building/12-varesas-team",
+   "status": 200,
+   "title": "12 · Varesa's team · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/team-building/12-varesas-team",
+   "h1": "",
+   "words": 303,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/team-building"
+   ],
+   "contextualInbound": 0,
+   "source": "research/12-varesa-team.md",
+   "content": {
+    "words": 1743,
+    "screens": 7,
+    "images": 0,
+    "maps": 0,
+    "tables": 3,
+    "links": [
+     "/genshin-notes/reference/artifact-sets\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/team-building/13-varesas-damage-gap",
+   "status": 200,
+   "title": "13 · Varesa's damage gap · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/team-building/13-varesas-damage-gap",
+   "h1": "",
+   "words": 44,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/team-building"
+   ],
+   "contextualInbound": 0,
+   "source": "research/13-varesa-damage-gap.md",
+   "content": {
+    "words": 627,
+    "screens": 3,
+    "images": 0,
+    "maps": 0,
+    "tables": 1,
+    "links": []
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/team-building/support-squad",
+   "status": 200,
+   "title": "Support squad · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/team-building/support-squad",
+   "h1": "",
+   "words": 62,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 2,
+   "inbound": [
+    "/genshin-notes/team-building"
+   ],
+   "contextualInbound": 0,
+   "source": "support-squad.html",
+   "content": {
+    "words": 1631,
+    "screens": 7,
+    "images": 0,
+    "maps": 0,
+    "tables": 0,
+    "links": [
+     "/genshin-notes/builds/varesa\\",
+     "/genshin-notes/builds/skirk\\",
+     "/genshin-notes/builds/fischl\\"
+    ]
+   },
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/team-building/the-three-teams",
+   "status": 200,
+   "title": "The three teams · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/team-building/the-three-teams",
+   "h1": "",
+   "words": 126,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [],
+   "anchors": [],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/team-building"
+   ],
+   "contextualInbound": 1,
+   "source": "teams.html",
+   "content": {
+    "words": 1848,
+    "screens": 7,
+    "images": 0,
+    "maps": 0,
+    "tables": 7,
+    "links": [
+     "/genshin-notes/builds/yumemizuki-mizuki\\",
+     "/genshin-notes/builds/varesa\\"
+    ]
+   },
+   "contentInbound": 1
+  },
+  {
+   "url": "/genshin-notes/teams",
+   "status": 200,
+   "title": "Teams · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/teams",
+   "h1": "",
+   "words": 40,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/teams/skirk-freeze",
+    "/genshin-notes/teams/mizuki-stellar-swirl",
+    "/genshin-notes/teams/varesa-electro-charged"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/teams/skirk-freeze",
+     "text": "Skirk · Mona · Escoffier · Mika"
+    },
+    {
+     "to": "/genshin-notes/teams/mizuki-stellar-swirl",
+     "text": "Yumemizuki Mizuki · Traveler · Rosaria · Sucrose"
+    },
+    {
+     "to": "/genshin-notes/teams/varesa-electro-charged",
+     "text": "Varesa · Furina · Charlotte · Valeriy"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes"
+   ],
+   "contextualInbound": 0,
+   "source": "generated: team (flux-push)",
+   "content": null,
+   "contentInbound": 0
+  },
+  {
+   "url": "/genshin-notes/teams/mizuki-stellar-swirl",
+   "status": 200,
+   "title": "Mizuki Stellar Swirl · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/teams/mizuki-stellar-swirl",
+   "h1": "",
+   "words": 277,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/builds/yumemizuki-mizuki",
+    "/genshin-notes/builds/traveler",
+    "/genshin-notes/builds/rosaria",
+    "/genshin-notes/builds/sucrose"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/builds/yumemizuki-mizuki",
+     "text": "main-dps"
+    },
+    {
+     "to": "/genshin-notes/builds/traveler",
+     "text": "enabler"
+    },
+    {
+     "to": "/genshin-notes/builds/rosaria",
+     "text": "support-dps"
+    },
+    {
+     "to": "/genshin-notes/builds/sucrose",
+     "text": "support-dps"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/teams",
+    "/genshin-notes/builds/yumemizuki-mizuki",
+    "/genshin-notes/builds/traveler",
+    "/genshin-notes/builds/rosaria",
+    "/genshin-notes/builds/sucrose"
+   ],
+   "contextualInbound": 5,
+   "source": "generated: team (flux-push)",
+   "content": null,
+   "contentInbound": 5
+  },
+  {
+   "url": "/genshin-notes/teams/skirk-freeze",
+   "status": 200,
+   "title": "Skirk freeze · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/teams/skirk-freeze",
+   "h1": "",
+   "words": 251,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/builds/skirk",
+    "/genshin-notes/builds/mona",
+    "/genshin-notes/builds/escoffier",
+    "/genshin-notes/builds/mika"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/builds/skirk",
+     "text": "main-dps"
+    },
+    {
+     "to": "/genshin-notes/builds/mona",
+     "text": "enabler"
+    },
+    {
+     "to": "/genshin-notes/builds/escoffier",
+     "text": "heal"
+    },
+    {
+     "to": "/genshin-notes/builds/mika",
+     "text": "sustain"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/teams",
+    "/genshin-notes/builds/skirk",
+    "/genshin-notes/builds/mona",
+    "/genshin-notes/builds/escoffier",
+    "/genshin-notes/builds/mika",
+    "/genshin-notes/builds/rosaria"
+   ],
+   "contextualInbound": 6,
+   "source": "generated: team (flux-push)",
+   "content": null,
+   "contentInbound": 6
+  },
+  {
+   "url": "/genshin-notes/teams/varesa-electro-charged",
+   "status": 200,
+   "title": "Varesa Electro-Charged · Site",
+   "description": "",
+   "canonical": "http://localhost:80/genshin-notes/teams/varesa-electro-charged",
+   "h1": "",
+   "words": 278,
+   "screens": 1,
+   "images": 0,
+   "imagesExternal": 0,
+   "tables": 0,
+   "out": [
+    "/genshin-notes/builds/varesa",
+    "/genshin-notes/builds/furina",
+    "/genshin-notes/builds/charlotte",
+    "/genshin-notes/builds/valeriy"
+   ],
+   "anchors": [
+    {
+     "to": "/genshin-notes/builds/varesa",
+     "text": "main-dps"
+    },
+    {
+     "to": "/genshin-notes/builds/furina",
+     "text": "support-dps"
+    },
+    {
+     "to": "/genshin-notes/builds/charlotte",
+     "text": "heal"
+    },
+    {
+     "to": "/genshin-notes/builds/valeriy",
+     "text": "sustain"
+    }
+   ],
+   "external": [],
+   "depth": 1,
+   "inbound": [
+    "/genshin-notes",
+    "/genshin-notes/teams",
+    "/genshin-notes/builds/varesa",
+    "/genshin-notes/builds/furina",
+    "/genshin-notes/builds/charlotte",
+    "/genshin-notes/builds/valeriy"
+   ],
+   "contextualInbound": 5,
+   "source": "generated: team (flux-push)",
+   "content": null,
+   "contentInbound": 5
+  }
+ ],
+ "catalogue": [
+  {
+   "source": "starfell-valley-guide.html",
+   "title": "Starfell Valley",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/starfell-valley"
+  },
+  {
+   "source": "dragonspine-quest-map.html",
+   "title": "Dragonspine — In the Mountains",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/dragonspine-in-the-mountains"
+  },
+  {
+   "source": "chasm-ore-map.html",
+   "title": "The Chasm — ore",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/the-chasm-ore"
+  },
+  {
+   "source": "fishing-spots-map.html",
+   "title": "Fishing spots",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/fishing-spots"
+  },
+  {
+   "source": "windcatcher-map.html",
+   "title": "Wind Catcher",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/wind-catcher"
+  },
+  {
+   "source": "crafting-bench-map.html",
+   "title": "Crafting benches",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/crafting-benches"
+  },
+  {
+   "source": "fowl-map.html",
+   "title": "Fowl",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/fowl"
+  },
+  {
+   "source": "bounty-stormbearer-map.html",
+   "title": "Bounty — Ruin Guard",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/bounty-ruin-guard"
+  },
+  {
+   "source": "redbeet-map.html",
+   "title": "Red Beet",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/red-beet"
+  },
+  {
+   "source": "eye-of-graeae-map.html",
+   "title": "Eye of Graeae",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/eye-of-graeae"
+  },
+  {
+   "source": "yaodie-valley-map.html",
+   "title": "Yaodie Valley",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/yaodie-valley"
+  },
+  {
+   "source": "arsenal-keys.html",
+   "title": "The Arsenal — 3 keys",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/the-arsenal-3-keys"
+  },
+  {
+   "source": "vault-of-qingce.html",
+   "title": "Vault of Qingce",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/vault-of-qingce"
+  },
+  {
+   "source": "chi-of-yore-puzzles.html",
+   "title": "Chi of Yore — statues",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/chi-of-yore-statues"
+  },
+  {
+   "source": "wuwang-statue-puzzle.html",
+   "title": "Wuwang Hill — 8 statues",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/wuwang-hill-8-statues"
+  },
+  {
+   "source": "local-legends.html",
+   "title": "Local Legends — all 36",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/local-legends-all-36"
+  },
+  {
+   "source": "domains.html",
+   "title": "Domains — all 74",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/domains-all-74"
+  },
+  {
+   "source": "collectible-map.html",
+   "title": "Collectible maps",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/collectible-maps"
+  },
+  {
+   "source": "liyue-rep-route.html",
+   "title": "Liyue reputation quests",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests/liyue-reputation-quests"
+  },
+  {
+   "source": "inazuma-rep-route.html",
+   "title": "Inazuma reputation quests",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests/inazuma-reputation-quests"
+  },
+  {
+   "source": "sumeru-rep-route.html",
+   "title": "Sumeru reputation quests",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests/sumeru-reputation-quests"
+  },
+  {
+   "source": "fontaine-rep-route.html",
+   "title": "Fontaine reputation quests",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests/fontaine-reputation-quests"
+  },
+  {
+   "source": "reputation-quests.html",
+   "title": "Reputation quests",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests"
+  },
+  {
+   "source": "reputation-compass.html",
+   "title": "Treasure Compasses",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reputation-quests/treasure-compasses"
+  },
+  {
+   "source": "collectibles-status.html",
+   "title": "Collectibles status",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: the owner's exploration progress",
+   "url": null
+  },
+  {
+   "source": "tcg-skirk.html",
+   "title": "TCG — cards & a Skirk deck",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: merged into tcg.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "tcg.html",
+   "title": "Genius Invokation TCG",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/tcg/genius-invokation-tcg"
+  },
+  {
+   "source": "build-coverage.html",
+   "title": "Build coverage",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: which of the owner's characters are built",
+   "url": null
+  },
+  {
+   "source": "support-squad.html",
+   "title": "Support squad",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/team-building/support-squad"
+  },
+  {
+   "source": "talent-farming.html",
+   "title": "Talent farming",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/talent-farming"
+  },
+  {
+   "source": "stellar.html",
+   "title": "Stellar Glimmer",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/stellar-glimmer"
+  },
+  {
+   "source": "theater.html",
+   "title": "Imaginarium Theater",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/imaginarium-theater"
+  },
+  {
+   "source": "tactical-sweep.html",
+   "title": "Tactical Sweep",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/tactical-sweep"
+  },
+  {
+   "source": "character-roadmap.html",
+   "title": "Character roadmap",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "superseded by the generated Character roadmap (flux-push.mjs)",
+   "url": null
+  },
+  {
+   "source": "tcg-swap.html",
+   "title": "TCG swaps",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: merged into tcg.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "codes.html",
+   "title": "Redeem codes",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/redeem-codes"
+  },
+  {
+   "source": "sucrose-build.html",
+   "title": "Sucrose — build & materials",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "escoffier-build.html",
+   "title": "Escoffier — build & materials",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "tighnari-build.html",
+   "title": "Tighnari — build & materials",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "fischl-build.html",
+   "title": "Fischl — build & rotation",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "charlotte-build.html",
+   "title": "Charlotte — healing plan",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "kachina-build.html",
+   "title": "Kachina — build",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "skirk-build.html",
+   "title": "Skirk — build & rotation",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "varesa-build.html",
+   "title": "Varesa — build & rotation",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "enemy-coverage.html",
+   "title": "Enemy shields — what you can't break",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/enemy-shields-what-you-cant-break"
+  },
+  {
+   "source": "teams.html",
+   "title": "The three teams",
+   "section": "Tools",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/team-building/the-three-teams"
+  },
+  {
+   "source": "mizuki-build.html",
+   "title": "Mizuki — swirl carry",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "furina-build.html",
+   "title": "Furina — build & priority",
+   "section": "Builds",
+   "kind": "tool",
+   "action": "builds",
+   "reason": "",
+   "url": null
+  },
+  {
+   "source": "derelict-masonry-dock.html",
+   "title": "Derelict Masonry Dock",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/derelict-masonry-dock"
+  },
+  {
+   "source": "exaiphanes-statues-map.html",
+   "title": "Snezhnaya statues",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/snezhnaya-statues"
+  },
+  {
+   "source": "oculus-tracking.html",
+   "title": "Oculus tracking",
+   "section": "Maps",
+   "kind": "map",
+   "action": "skip",
+   "reason": "retired: the owner's oculus progress",
+   "url": null
+  },
+  {
+   "source": "reaction-combos.html",
+   "title": "Reaction combos",
+   "section": "Maps",
+   "kind": "map",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/reaction-combos"
+  },
+  {
+   "source": "farming/map.html",
+   "title": "Natlan Saurian map",
+   "section": "Farming",
+   "kind": "map",
+   "action": "skip",
+   "reason": "retired: merged into saurian-farming.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "farming/index.html",
+   "title": "Tyrant’s Fang plan",
+   "section": "Farming",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: merged into saurian-farming.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "saurian-farming.html",
+   "title": "Tyrant’s Fang farming",
+   "section": "Farming",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/tyrants-fang-farming"
+  },
+  {
+   "source": "farming/routes.html",
+   "title": "Natlan routes",
+   "section": "Farming",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "retired: merged into saurian-farming.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "research/01-mora-farming.md",
+   "title": "01 · Mora farming",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/01-mora-farming"
+  },
+  {
+   "source": "research/02-wishes-and-primogems.md",
+   "title": "02 · Wishes & Primogems",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/02-wishes-primogems"
+  },
+  {
+   "source": "research/03-character-materials.md",
+   "title": "03 · Characters & materials",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/03-characters-materials"
+  },
+  {
+   "source": "research/04-weapons-and-artifacts.md",
+   "title": "04 · Weapons & artifacts",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: merged into artifacts.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "research/05-current-loadouts.md",
+   "title": "05 · Loadout audit",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: audit of the owner's loadouts",
+   "url": null
+  },
+  {
+   "source": "research/06-artifact-plan.md",
+   "title": "06 · Artifact plan",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: the owner's artifact plan",
+   "url": null
+  },
+  {
+   "source": "research/06a-in-the-mountains.md",
+   "title": "06a · In the Mountains",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/maps-puzzles/06a-in-the-mountains"
+  },
+  {
+   "source": "research/07-ore-farming.md",
+   "title": "07 · Ore farming",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/farming-economy/07-ore-farming"
+  },
+  {
+   "source": "research/08-snezhnaya-mechanics.md",
+   "title": "08 · Snezhnaya mechanics",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/combat/08-snezhnaya-mechanics"
+  },
+  {
+   "source": "research/09-artifact-sets.md",
+   "title": "09 · Artifact sets",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: merged into artifacts.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "research/10-imaginarium-theater.md",
+   "title": "10 · Imaginarium Theater",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: one account's Theater plan; its rules moved into theater.html",
+   "url": null
+  },
+  {
+   "source": "research/10a-theater-normal-run.md",
+   "title": "10a · Theater — the Normal run",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: one account's Theater run log; its rules moved into theater.html",
+   "url": null
+  },
+  {
+   "source": "research/11-tactical-sweep.md",
+   "title": "11 · Tactical Sweep",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: merged into tactical-sweep.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "research/11a-tactical-sweep-bosses.md",
+   "title": "11a · Sweep boss mechanics",
+   "section": "Research",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: merged into tactical-sweep.html; kept as notes",
+   "url": null
+  },
+  {
+   "source": "research/12-varesa-team.md",
+   "title": "12 · Varesa's team",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/team-building/12-varesas-team"
+  },
+  {
+   "source": "research/13-varesa-damage-gap.md",
+   "title": "13 · Varesa's damage gap",
+   "section": "Research",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/team-building/13-varesas-damage-gap"
+  },
+  {
+   "source": "CLAUDE.md",
+   "title": "CLAUDE.md",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "instructions for the AI assistant, not site content",
+   "url": null
+  },
+  {
+   "source": "reference/account.md",
+   "title": "Account snapshot",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "the owner's account identity (UID, in-game name), kept private",
+   "url": null
+  },
+  {
+   "source": "reference/verified-facts.md",
+   "title": "Verified facts",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: internal fact log; its facts move into the pages they belong to",
+   "url": null
+  },
+  {
+   "source": "reference/kits.md",
+   "title": "Character kits",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reference/character-kits"
+  },
+  {
+   "source": "reference/artifact-sets.md",
+   "title": "Artifact sets",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reference/artifact-sets"
+  },
+  {
+   "source": "artifacts.html",
+   "title": "Artifacts & budget weapons",
+   "section": "Reference",
+   "kind": "tool",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reference/artifacts-budget-weapons"
+  },
+  {
+   "source": "reference/weapons-owned.md",
+   "title": "Weapons you own",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: the owner's weapon inventory",
+   "url": null
+  },
+  {
+   "source": "reference/open-questions.md",
+   "title": "Open questions",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: the owner's open research questions",
+   "url": null
+  },
+  {
+   "source": "reference/sources.md",
+   "title": "Sources",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reference/sources"
+  },
+  {
+   "source": "reference/corrections.md",
+   "title": "Corrections log",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "migrate",
+   "reason": "",
+   "url": "/genshin-notes/reference/corrections-log"
+  },
+  {
+   "source": "reference/research-coverage.md",
+   "title": "Research coverage",
+   "section": "Reference",
+   "kind": "doc",
+   "action": "skip",
+   "reason": "retired: internal research tracking",
+   "url": null
+  },
+  {
+   "source": "docs/AUTHORING.md",
+   "title": "Authoring guide",
+   "section": "Making new pages",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "authoring guide for editors, not site content",
+   "url": null
+  },
+  {
+   "source": "styles/map.css",
+   "title": "styles/map.css",
+   "section": "Making new pages",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "code file, not content",
+   "url": null
+  },
+  {
+   "source": "app/annotate.js",
+   "title": "app/annotate.js",
+   "section": "Making new pages",
+   "kind": "tool",
+   "action": "skip",
+   "reason": "code file, not content",
+   "url": null
+  }
+ ]
+}

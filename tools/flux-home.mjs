@@ -14,12 +14,13 @@ const json = (o) => JSON.stringify(o);
 import { TREE, publicPath } from './flux-tree.mjs';
 import { slugOf } from './flux-pages.mjs';
 
-// [catalogue href, card text]. The URL comes from the page tree (flux-tree.mjs),
-// so moving a page cannot leave a stale link here.
+// [catalogue href, card text], or [generated path, card text, label] for pages
+// flux-push generates (Teams). Catalogue URLs come from the page tree
+// (flux-tree.mjs), so moving a page cannot leave a stale link here.
 const START = [
   ['reputation-quests.html',
    'Every quest that pays reputation, shortest first, with a route map per region and a picture of each start.'],
-  ['teams.html', 'Three team archetypes: who plays together, the rotation, and the set every member wants.'],
+  ['/teams', 'Three team archetypes: who plays together, the rotation, and the set every member wants.', 'Teams'],
   ['enemy-coverage.html', 'Which element breaks which enemy shield, and how to cover every one.'],
   ['codes.html', 'Codes checked in game, not just copied from aggregators, and when the next batch is due.'],
   ['theater.html', 'Who to spend in which Act, and the boss loop for the last one.'],
@@ -30,7 +31,6 @@ const SECTION_BLURB = {
   'Reputation quests': 'route maps per region, shortest quests first, chains included',
   Builds: 'one page per character: target sets, main stats, substats, weapons',
   Teams: 'line-up, rotation and shield coverage per team',
-  'Team building': 'how the teams were put together, and the damage maths behind them',
   Combat: 'enemy shields, reactions, Imaginarium Theater, Tactical Sweep',
   'Farming & economy': 'codes, wishes, Mora, ore, talent books, bosses and domains',
   'Maps & puzzles': 'puzzle solutions, gathering routes and collectibles',
@@ -58,9 +58,9 @@ export function homeModules({ rootUrl, teams, characters, pages, links }) {
       + 'interactive map. When something here turns out wrong, it is fixed and logged.</p>' }) },
     { type: 'LIST', style: 'cards', content: json({
       title: 'Start here',
-      items: START.map(([href, value]) => ({
-        label: titleOf[href], value, href: `${rootUrl}/${publicPath(href, titleOf[href])}`,
-      })),
+      items: START.map(([href, value, label]) => (href.startsWith('/')
+        ? { label, value, href: rootUrl + href }
+        : { label: titleOf[href], value, href: `${rootUrl}/${publicPath(href, titleOf[href])}` })),
     }) },
     { type: 'LIST', style: 'cards', content: json({
       title: 'The teams',

@@ -1,0 +1,66 @@
+{
+ "_checked": "2026-11-20",
+ "_by": "tools/fetch-quest-prereqs.py",
+ "_source": "Genshin Impact Wiki, Hidden Exploration Objectives infobox and Steps",
+ "objectives": {
+  "Searching for Saimon Jirou": {
+   "region": "Inazuma",
+   "area": "Narukami Island",
+   "subarea": "Jinren Island",
+   "loc": "Jinren Island, Narukami Island, Inazuma",
+   "characters": [
+    "Ishikawa",
+    "Ogura Yuu",
+    "Ono",
+    "Saimon Katsumi",
+    "Saimon Jirou"
+   ],
+   "steps": [
+    "Optional Steps",
+    "  Check the Missing Person Bulletin Boards around Konda Village.",
+    "  Talk to Saimon Katsumi, just north of the southern Teleport Waypoint in Byakko Plain.",
+    "  Talk to Ishikawa in Kujou Encampment, just east of the Teleport Waypoint.",
+    "  Talk to Ono near the northern gate of the Kujou Encampment.",
+    "  Talk to Ogura Yuu at the watch tower to the south-east of the Teleport Waypoint in Kujou Encampment.",
+    "  Report back to Saimon Katsumi in Konda Village, just west of the southern Teleport Waypoint at his house.",
+    "Head to Jinren Island and climb to the top of the largest island.",
+    "On the top of the largest island, free \"???\" from the cage.",
+    "The key is in the tallest tree on the opposite end of the plateau.",
+    "After a small cutscene, the player will be near the Jinren Island waypoint and will start a conversation with \"???\"",
+    "\"???\" reveals himself to be Saimon Jirou. He will tell the player to collect 4 Old Stone Slates.",
+    "Once the player has all 4 Old Stone Slates, The Farmer's Treasure will appear in the player's journal.",
+    "To get all 4 Old Stone Slates, the player must at least reach the Cleansing Defilement."
+   ],
+   "requirement": "Ritou Escape Plan"
+  },
+  "Drusus's Riddles": {
+   "region": "Sumeru",
+   "area": "Avidya Forest",
+   "subarea": "Sumeru City",
+   "loc": "Sumeru City, Sumeru",
+   "characters": [
+    "Drusus",
+    "Kamal"
+   ],
+   "steps": [
+    "Interact with the bulletin board outside the Adventurers' Guild in Sumeru",
+    "  'First Riddle:' \"In the light of alternating day cycles, one can see the homeward figure of the lighthouse on the bridge.\"",
+    "  'Solution:' Below where the morning shadow of the lighthouse in Sumeru City's harbor meets the bridge section at the docks.",
+    "Find the first Riddle Note in a floating crate beneath the docks",
+    "  'Second Riddle:' \"A mirror not made of glass reflects every drama.\"",
+    "  'Solution:' In the reflective water basin around the fountain in front of the Zubayr Theatre at the Grand Bazaar.",
+    "Find the second Riddle Note in a floating crate in the fountain of the Grand Bazaar",
+    "  'Third Riddle:' \"The sole path to knowledge.\"",
+    "  'Solution:' Below the bridge in the antechamber of the Akademiya's library which one has to cross to access it.",
+    "Find the third Riddle Note in an Exquisite Chest underneath the walkway in the House of Daena",
+    "  'Fourth Riddle:' \"The flowers in the pond are blooming, with watery pearls there lingering.\"",
+    "  'Solution:' Near the blooming lotus flowers in the pond of the gardens on the Akademiya's upper levels.",
+    "Find the fourth Riddle Note in a floating crate in the Razan Garden",
+    "  'Fifth Riddle:' \"Please go to the front door of the Temple of Knowledge at noon.\"",
+    "  'Solution:' Meet Drusus around noon on the terrace in front of the Sanctuary of Surasthana at the top of the tree.",
+    "Speak to Drusus at 10:00 – 14:00 outside the Sanctuary of Surasthana"
+   ],
+   "requirement": "The Morn a Thousand Roses Brings"
+  }
+ }
+}

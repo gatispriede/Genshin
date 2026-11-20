@@ -103,6 +103,17 @@ export interface TeamMember {
   character: string;
   role: TeamRole;
   set?: string;
+  /** Artifact main stats: sands · goblet · circlet, plus any ER target. */
+  mains?: string;
+}
+
+/** A replacement for one team slot, and what it trades. */
+export interface TeamSwap {
+  /** Who comes in. */
+  who: string;
+  /** Whose slot it takes. */
+  instead: string;
+  why: string;
 }
 
 export interface Team {
@@ -115,7 +126,19 @@ export interface Team {
   /** Ward elements this team can break, and how fast. */
   breaks: string[];
   cannotBreak: string[];
+  /**
+   * Private log: this account's levels, dates and history with the team. Shown
+   * in the local app only; never published (flux-push publishes `why` instead).
+   */
   note?: string;
+  /** Public: why the team works, for any player. One short paragraph. */
+  why?: string;
+  /** Public: the mechanics the team depends on, one {title, text} per point. */
+  mechanics?: { title: string; text: string }[];
+  /** Public: slot replacements worth knowing. */
+  swaps?: TeamSwap[];
+  /** Public: what not to put in this team, and why. */
+  avoid?: string[];
   /** Rotation, in order. Each step: who, and what to press and why. */
   rotation?: { who: string; does: string }[];
   /** Where the rotation comes from, and what it assumes. */

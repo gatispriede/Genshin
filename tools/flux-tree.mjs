@@ -7,7 +7,17 @@
  * flux-push.mjs owns Builds and Teams.
  */
 
+import { readFileSync } from 'node:fs';
 import { slugOf } from './flux-pages.mjs';
+
+/**
+ * Area pages under each region's reputation page. Written by
+ * tools/build-rep-route.py, so a rebuilt region (new or renamed areas) needs no
+ * edit here: {"Sumeru": [{href, title}, ...], ...}.
+ */
+const REP_AREAS = JSON.parse(readFileSync('reference/data/rep-route-areas.json', 'utf8'));
+const repAreaTree = Object.fromEntries(Object.entries(REP_AREAS)
+  .map(([region, pages]) => [`Reputation quests/${region} reputation quests`, pages.map((x) => x.href)]));
 
 export const TREE = {
   // Top level, beside the generated Builds and Teams. '' is the "Genshin notes" root.
@@ -17,9 +27,8 @@ export const TREE = {
     'liyue-rep-route.html', 'inazuma-rep-route.html', 'sumeru-rep-route.html',
     'fontaine-rep-route.html', 'reputation-compass.html',
   ],
-  'Team building': [
-    'teams.html', 'support-squad.html', 'research/12-varesa-team.md', 'research/13-varesa-damage-gap.md',
-  ],
+  // One page per area under each region page (see REP_AREAS above).
+  ...repAreaTree,
   'Combat': [
     'enemy-coverage.html', 'reaction-combos.html', 'stellar.html', 'theater.html',
     'tactical-sweep.html', 'research/08-snezhnaya-mechanics.md',
@@ -80,10 +89,20 @@ export const RENAMED = {
   // Artifacts & budget weapons: merged into artifacts.html.
   "09 · Artifact sets": "Artifacts & budget weapons",
   "04 · Weapons & artifacts": "Artifacts & budget weapons",
+  // Teams: the hand-written team pages merged into the generated team pages (flux-push.mjs).
+  'The three teams': 'Teams',
+  'Support squad': 'Teams',
+  "12 · Varesa's team": 'Varesa Electro-Charged',
+  "13 · Varesa's damage gap": 'Varesa',
+  'Team building': 'Teams',
 };
 
 /** Account-only pages with no generic version worth publishing (restructure plan). */
 export const RETIRED = {
+  'teams.html': 'merged into the generated team pages (teams.ts why/mechanics/swaps); kept as notes',
+  'support-squad.html': "one account's live gear audit (27 Oct); kept as notes",
+  'research/12-varesa-team.md': 'its mechanics moved into the Varesa team page; kept as notes',
+  'research/13-varesa-damage-gap.md': "one account's damage compared with showcases; kept as notes",
   'research/09-artifact-sets.md': "merged into artifacts.html; kept as notes",
   'research/04-weapons-and-artifacts.md': "merged into artifacts.html; kept as notes",
   'farming/index.html': "merged into saurian-farming.html; kept as notes",

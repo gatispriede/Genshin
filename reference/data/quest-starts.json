@@ -477,6 +477,21 @@
   "subarea": "Mt. Aocang",
   "type": "World"
  },
+ "An Art to Be Honed": {
+  "area": "Narukami Island",
+  "dlg": 6391,
+  "firstSpeaker": "Asakura",
+  "firstStep": "Find Asakura, who issued the commission",
+  "npcs": [
+   "Asakura"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 3,
+  "subarea": "Inazuma City",
+  "type": "Commission"
+ },
  "An Expected Lie": {
   "area": "Morte Region",
   "dlg": 19840,
@@ -597,6 +612,19 @@
   "subarea": null,
   "type": null
  },
+ "Ancient Colors": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "And This Treasure Goes To...": {
   "area": "Lisha",
   "dlg": 7185,
@@ -674,6 +702,19 @@
   "steps": 3,
   "subarea": "Chatrakam Cave",
   "type": "World"
+ },
+ "Aranyaka": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Arayesh's Jam": {
   "area": "Ardravi Valley",
@@ -879,6 +920,19 @@
   "steps": 1,
   "subarea": "Court of Fontaine",
   "type": "World"
+ },
+ "Canticles of Harmony": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Cataclysm's Quickening": {
   "area": null,
@@ -1151,6 +1205,19 @@
   "subarea": "Bourou Village",
   "type": "World"
  },
+ "Dream Nursery": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "Dreams Beneath the Searing Sand": {
   "area": "Hypostyle Desert",
   "dlg": 57423,
@@ -1203,6 +1270,19 @@
   "requirement": null,
   "start": null,
   "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Drusus's Riddles": {
+  "area": null,
+  "dlg": 4905,
+  "firstSpeaker": "Bulletin Board",
+  "firstStep": "Interact with the bulletin board outside the Adventurers' Guild in Sumeru",
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 11,
   "subarea": null,
   "type": null
  },
@@ -1319,7 +1399,7 @@
   "npcs": [
    "Alrani"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": "* Complete the {{Quest|A New Star Approaches}}",
   "start": "Liyue Harbor, Liyue",
   "steps": 6,
@@ -1445,7 +1525,7 @@
    "Kaushik",
    "Ookubo Daisuke"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": "* Complete the {{Quest|In Another Land}}",
   "start": "Watatsumi Island, Inazuma",
   "steps": 10,
@@ -1541,6 +1621,19 @@
   "subarea": null,
   "type": null
  },
+ "Fontaine Research Institute Chronicles": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "Fontaine Research Institute, Stagnating in the Rubble": {
   "area": "Liffey Region; Fontaine Research Institute of Kinetic Energy Engineering Region",
   "dlg": 112172,
@@ -1623,6 +1716,22 @@
   "subarea": "Vanarana (Subarea)",
   "type": "World"
  },
+ "For Yesterday and Tomorrow": {
+  "area": "Nostoi Region",
+  "dlg": 4164,
+  "firstSpeaker": "Este",
+  "firstStep": "Bring Osse to the cattery",
+  "npcs": [
+   "Este (Human)",
+   "Osse"
+  ],
+  "region": "Fontaine",
+  "requirement": "* Complete Fortune Plango Vulnera",
+  "start": "Petrichor, Fontaine",
+  "steps": 1,
+  "subarea": "Petrichor",
+  "type": "World"
+ },
  "For a Dream I Tarry": {
   "area": "Lokapala Jungle",
   "dlg": 8962,
@@ -1690,6 +1799,19 @@
   "steps": 16,
   "subarea": null,
   "type": "World"
+ },
+ "From Dusk to Dawn in Byakuyakoku": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Fungal Fracas": {
   "area": null,
@@ -1903,6 +2025,19 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Golden Slumber": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "Gourmet Supremos, Assemble!": {
   "area": "Narukami Island",
   "dlg": 9043,
@@ -1913,7 +2048,7 @@
    "Parvaneh",
    "Xudong"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": "Complete Ritou Escape Plan",
   "start": "Inazuma",
   "steps": 4,
@@ -2206,7 +2341,7 @@
    "Obata",
    "Vahid"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": "* Start the {{Quest|Stillness, the Sublimation of Shadow}}",
   "start": "Ritou, Inazuma",
   "steps": 6,
@@ -2296,6 +2431,37 @@
   "steps": 14,
   "subarea": "Inazuma City",
   "type": "World"
+ },
+ "Into the Woods": {
+  "area": "Ardravi Valley",
+  "dlg": 24489,
+  "firstSpeaker": "Rana",
+  "firstStep": "Go to the Withering Zone that needs to be cleaned up",
+  "npcs": [
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 13,
+  "subarea": null,
+  "type": "World"
+ },
+ "Is This Novel Amazing?": {
+  "area": "Narukami Island",
+  "dlg": 11874,
+  "firstSpeaker": "Shigeru",
+  "firstStep": "Visit Shigeru and Junkichi",
+  "npcs": [
+   "Junkichi",
+   "Shigeru"
+  ],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": "Inazuma City, Inazuma",
+  "steps": 6,
+  "subarea": "Inazuma City",
+  "type": "Commission"
  },
  "Ismenor's Bulle Fruit Bulletin": {
   "area": "Court of Fontaine Region",
@@ -2884,6 +3050,19 @@
   "subarea": "Liyue Harbor",
   "type": "World"
  },
+ "Neko Is a Cat": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
+ },
  "Nine Pillars of Peace": {
   "area": "Minlin",
   "dlg": 8093,
@@ -2914,6 +3093,19 @@
   "steps": 3,
   "subarea": "Mt. Tianheng",
   "type": "World"
+ },
+ "Nursery of Lost Dreams": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "O Archon, Have I Done Right?": {
   "area": "Narukami Island",
@@ -3052,6 +3244,19 @@
   "steps": 11,
   "subarea": "Liyue Harbor",
   "type": "World"
+ },
+ "Orobashi's Legacy": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Orobashi's Legacy: Part I": {
   "area": "Yashiori Island",
@@ -3343,6 +3548,26 @@
   "subarea": null,
   "type": "World"
  },
+ "Qiaoying of the Sacred Mountain": {
+  "area": "Mt. Laixin",
+  "dlg": 35981,
+  "firstSpeaker": "Fujin",
+  "firstStep": "Use your adeptal energy to leave the domain",
+  "npcs": [
+   "Fujin",
+   "Grandpa Lu",
+   "Hautemontagne",
+   "Jin",
+   "Little Mao",
+   "Uncle Luo"
+  ],
+  "region": "Liyue",
+  "requirement": "Complete The Outlander Who Caught the Wind and enter Chenyu Vale, Liyue",
+  "start": "Carp's Rest, Liyue",
+  "steps": 9,
+  "subarea": "Carp's Rest",
+  "type": "World"
+ },
  "Qiaoying, the Village of Many Tales": {
   "area": "Chenyu Vale: Upper Vale",
   "dlg": 19962,
@@ -3482,6 +3707,19 @@
   "steps": 27,
   "subarea": null,
   "type": "World"
+ },
+ "Rowboat's Wake": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Fontaine",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Rowboat's Wake (Quest)": {
   "area": "Morte Region",
@@ -3634,6 +3872,19 @@
   "requirement": null,
   "start": null,
   "steps": 0,
+  "subarea": null,
+  "type": null
+ },
+ "Searching for Saimon Jirou": {
+  "area": null,
+  "dlg": 35774,
+  "firstSpeaker": "Missing Person Bulletin Board",
+  "firstStep": "Optional Steps",
+  "npcs": [],
+  "region": "Inazuma",
+  "requirement": null,
+  "start": null,
+  "steps": 8,
   "subarea": null,
   "type": null
  },
@@ -4146,11 +4397,34 @@
    "Yan'er",
    "Zhi"
   ],
-  "region": "Liyue",
+  "region": "Inazuma",
   "requirement": null,
   "start": "Bishui Plain, Liyue",
   "steps": 34,
   "subarea": "Qingce Village",
+  "type": "World"
+ },
+ "The Children of Vimara Village": {
+  "area": "Avidya Forest",
+  "dlg": 44825,
+  "firstSpeaker": "Rana",
+  "firstStep": "Talk to Rana once you are ready",
+  "npcs": [
+   "Alphonso",
+   "Amadhiah",
+   "Bahram",
+   "Iosaphat",
+   "Iotham",
+   "Jehiet",
+   "Kavus",
+   "Sudabeh",
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Avidya Forest, Sumeru",
+  "steps": 13,
+  "subarea": null,
   "type": "World"
  },
  "The Dealing Sands": {
@@ -4195,7 +4469,7 @@
  },
  "The Eternal Dream, Ever Lush": {
   "area": "Desert of Hadramaveth",
-  "dlg": 25416,
+  "dlg": 25449,
   "firstSpeaker": "Jeht",
   "firstStep": "Exit the cave",
   "npcs": [
@@ -4289,7 +4563,7 @@
    "Xiangling",
    "Xudong"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": null,
   "start": "Inazuma City, Inazuma",
   "steps": 7,
@@ -4302,7 +4576,7 @@
   "firstSpeaker": null,
   "firstStep": "Go to the Grand Narukami Shrine",
   "npcs": [],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": null,
   "start": "Grand Narukami Shrine, Narukami Island, Inazuma",
   "steps": 2,
@@ -4320,7 +4594,7 @@
    "Julie",
    "Kamei Munehisa"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": null,
   "start": "Inazuma City, Narukami Island, Inazuma",
   "steps": 6,
@@ -4337,7 +4611,7 @@
    "Parvaneh",
    "Julie"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": null,
   "start": "Yashiori Island, Inazuma",
   "steps": 3,
@@ -4355,7 +4629,7 @@
    "Parvaneh",
    "Xudong"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": "Complete Xiangling's ending of The Gourmet Supremos: Breakthrough Thinking",
   "start": "Inazuma City, Narukami Island, Inazuma",
   "steps": 15,
@@ -4372,7 +4646,7 @@
    "Parvaneh",
    "Julie"
   ],
-  "region": "Inazuma",
+  "region": "Sumeru",
   "requirement": null,
   "start": "Kujou Encampment, Kannazuka, Inazuma",
   "steps": 6,
@@ -4513,6 +4787,24 @@
   "start": "{{LL|\"A Lonely Place\"|,}} Fontaine",
   "steps": 15,
   "subarea": "\"A Lonely Place\"",
+  "type": "World"
+ },
+ "The Lost Child": {
+  "area": "Ardravi Valley",
+  "dlg": 15464,
+  "firstSpeaker": "Rana",
+  "firstStep": "Return to Vimara Village",
+  "npcs": [
+   "Arana",
+   "Alphonso",
+   "Iotham",
+   "Rana"
+  ],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": "Ardravi Valley, Sumeru",
+  "steps": 10,
+  "subarea": null,
   "type": "World"
  },
  "The Millennial Mountains": {
@@ -5049,6 +5341,41 @@
   "steps": 16,
   "subarea": "Merusea Village",
   "type": "World"
+ },
+ "This Novel Seems... Problematic?": {
+  "area": "Narukami Island",
+  "dlg": 7546,
+  "firstSpeaker": "Shigeru",
+  "firstStep": "Visit Shigeru and Junkichi",
+  "npcs": [
+   "Hasegawa",
+   "Junkichi",
+   "Rie",
+   "Shigeru",
+   "Yuzu"
+  ],
+  "region": "Inazuma",
+  "requirement": "Supporting Junkichi's opinion in Is This Novel Amazing?",
+  "start": "Inazuma City, Inazuma",
+  "steps": 5,
+  "subarea": "Inazuma City",
+  "type": "Commission"
+ },
+ "This Novel... Seems Familiar?": {
+  "area": "Narukami Island",
+  "dlg": 8049,
+  "firstSpeaker": "Junkichi",
+  "firstStep": "Visit Shigeru and Junkichi",
+  "npcs": [
+   "Junkichi",
+   "Shigeru"
+  ],
+  "region": "Inazuma",
+  "requirement": "Supporting Shigeru's opinion in Is This Novel Amazing?",
+  "start": "Narukami Island, Inazuma",
+  "steps": 5,
+  "subarea": "Inazuma City",
+  "type": "Commission"
  },
  "Threefold Expectations": {
   "area": "Chenyu Vale: Upper Vale",
@@ -5601,6 +5928,19 @@
   "steps": 14,
   "subarea": "Marcotte Station",
   "type": "World"
+ },
+ "Woodland Encounter": {
+  "area": null,
+  "dlg": 0,
+  "firstSpeaker": null,
+  "firstStep": null,
+  "npcs": [],
+  "region": "Sumeru",
+  "requirement": null,
+  "start": null,
+  "steps": 0,
+  "subarea": null,
+  "type": null
  },
  "Words Worth Their Weight in Mora": {
   "area": "Sea of Clouds",
