@@ -2,7 +2,7 @@
  * The flux homepage (/genshin-notes): what the site is, where to start, and
  * every section, for a visitor arriving cold.
  *
- * Used by tools/flux-push.mjs. Kept apart so the homepage's wording can be
+ * Used by tools/flux-generated.mjs. Kept apart so the homepage's wording can be
  * found and edited without reading the push machinery.
  *
  * START links name catalogue pages; their URLs come from the page tree
@@ -15,7 +15,7 @@ import { TREE, publicPath } from './flux-tree.mjs';
 import { slugOf } from './flux-pages.mjs';
 
 // [catalogue href, card text], or [generated path, card text, label] for pages
-// flux-push generates (Teams). Catalogue URLs come from the page tree
+// built from data in flux-generated.mjs (Teams). Catalogue URLs come from the page tree
 // (flux-tree.mjs), so moving a page cannot leave a stale link here.
 const START = [
   ['reputation-quests.html',

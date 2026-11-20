@@ -6,6 +6,14 @@
  *     secrets run flux-node tools/flux-bundle-publish.mjs --only theater.html
  *     secrets run flux-node tools/flux-bundle-publish.mjs --apply         # import the changed pages
  *     secrets run flux-node tools/flux-bundle-publish.mjs --apply --prune # and delete pages the tree dropped
+ *     secrets run flux-node tools/flux-bundle-publish.mjs --generated     # only the data-built pages
+ *
+ * Two kinds of page go out in the same diff and import:
+ *   - catalogue pages, built from local HTML/markdown (flux-build.mjs)
+ *   - generated pages: homepage, Builds and a page per character, Teams and a
+ *     page per team, built from src/data (flux-generated.mjs). --only and
+ *     --section leave these out; --generated publishes only these.
+ * Both pass through finishModule: the account UID and in-game name are redacted.
  *
  * Why: the section-by-section migrator empties and rebuilds every page (hundreds
  * of calls, rate limits, pages briefly blank). A merge import upserts by id in
@@ -31,6 +39,7 @@ import { randomUUID } from 'node:crypto';
 import { connect, call, findPage } from './flux-client.mjs';
 import { ensurePage, pagePaths } from './flux-pages.mjs';
 import { linkTargets } from './flux-links.mjs';
+import { generatedPages } from './flux-generated.mjs';
 import { MIN_COVERAGE, buildPlans, finishModule, sectionLinksModule, sectionIndexModules } from './flux-build.mjs';
 
 const arg = (name) => {
@@ -41,6 +50,9 @@ const APPLY = process.argv.includes('--apply');
 const PRUNE = process.argv.includes('--prune');
 const ONLY = arg('--only');
 const SECTION = arg('--section');
+const GENERATED_ONLY = process.argv.includes('--generated');
+const WITH_GENERATED = !ONLY && !SECTION;
+const CATALOGUE = !GENERATED_ONLY;
 const OUT = 'tools/.bundles';
 const EDITOR = 'bundle:genshin-publish';
 const EXPORT_CHUNK = 8;
@@ -50,7 +62,8 @@ const MODULE_DEFAULTS = { action: 'none', actionStyle: 'default', actionType: 'T
 
 /* ---------------------------------------------------------------- build --- */
 
-const { all, plans } = buildPlans({ only: ONLY, section: SECTION });
+const { all, plans } = CATALOGUE ? buildPlans({ only: ONLY, section: SECTION }) : { all: [], plans: [] };
+const generated = WITH_GENERATED ? await generatedPages() : [];
 const lost = plans.filter((p) => p.coverage < MIN_COVERAGE);
 if (lost.length) {
   console.error(`refusing: ${lost.map((p) => p.entry.href).join(', ')} below ${MIN_COVERAGE}% content`);
@@ -61,8 +74,9 @@ await connect('genshin-bundle-publish');
 const root = await findPage('Genshin notes');
 if (!root) { console.error('no "Genshin notes" root on flux'); process.exit(1); }
 
-/** The page at parentPath/title, walking the tree from the root; null if any step is missing. */
+/** The page at parentPath/title, walking the tree from the root; null if any step is missing. parentPath null = the root. */
 function find(pages, parentPath, title) {
+  if (parentPath === null) return pages.find((x) => x.id === root.id) || root;
   let row = root;
   for (const name of [...parentPath.split('/').filter(Boolean), title]) {
     row = pages.find((x) => x.parent === row.id && x.page === name);
@@ -79,10 +93,11 @@ async function create(parentPath, title) {
 
 // Pages that do not exist yet: list them (dry run) or create them (--apply).
 const before = (await pagePaths()).pages;
-const absent = plans.filter((p) => !find(before, p.parent, p.entry.title));
+const placed = [...plans.map((p) => ({ parent: p.parent, title: p.entry.title })), ...generated];
+const absent = placed.filter((p) => !find(before, p.parent, p.title));
 if (absent.length) {
-  console.log(`${absent.length} page(s) not on flux yet: ${absent.map((p) => `${p.parent}/${p.entry.title}`).join(', ')}`);
-  if (APPLY) for (const p of absent) await create(p.parent, p.entry.title);
+  console.log(`${absent.length} page(s) not on flux yet: ${absent.map((p) => `${p.parent}/${p.title}`).join(', ')}`);
+  if (APPLY) for (const p of absent) await create(p.parent, p.title);
   else console.log('  (created on --apply; their content is diffed on the next run)');
 }
 
@@ -104,8 +119,19 @@ for (const p of plans) {
   want.set(row.id, { row, sections });
 }
 
+// Generated pages: links between them use real paths (undefined while a page is absent).
+const urlOf = (parent, title) => { const row = find(pages, parent, title); return row ? path(row) : undefined; };
+for (const g of generated) {
+  const row = find(pages, g.parent, g.title);
+  if (!row) continue;
+  const here = path(row);
+  want.set(row.id, { row, sections: g.sections(urlOf).map((s) => ({
+    type: s.type, modules: s.modules.map((m) => finishModule(m, here, targets, g.from).module),
+  })) });
+}
+
 // Container pages (a tree parent that is not itself a catalogue page) get a card per child.
-if (!ONLY) {
+if (!ONLY && CATALOGUE) {
   const titles = new Set(all.map((e) => e.title));
   const parentNames = new Set(plans.flatMap((p) => p.parent.split('/').filter(Boolean)));
   for (const name of parentNames) {
@@ -168,9 +194,8 @@ for (const n of changed) console.log(`  ${path(byId.get(n.id))}`);
 
 const tracked = new Set([...want.keys(), root.id]);
 const strays = pages.filter((x) => path(x).startsWith(path(root) + '/') && !tracked.has(x.id)
-  && !pages.some((c) => c.parent === x.id) && !['Builds', 'Teams'].includes(byId.get(x.parent)?.page)
-  && !['Builds', 'Teams'].includes(x.page));
-if (!ONLY && !SECTION && strays.length) {
+  && !pages.some((c) => c.parent === x.id));
+if (WITH_GENERATED && CATALOGUE && strays.length) {
   // Retired or merged pages. Their URLs get redirects from tools/flux-redirects.mjs.
   if (PRUNE && APPLY) {
     for (const x of strays) await call('page.delete', { id: x.id });

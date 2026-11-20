@@ -23,7 +23,7 @@ const SKIP = {
   'app/annotate.js': 'code file, not content',
   'CLAUDE.md': 'instructions for the AI assistant, not site content',
   'docs/AUTHORING.md': 'authoring guide for editors, not site content',
-  'character-roadmap.html': 'superseded by the generated Character roadmap (flux-push.mjs)',
+  'character-roadmap.html': 'superseded by the generated Character roadmap (flux-generated.mjs)',
 };
 
 /** Pages driven by engines that will not run in the CMS. */
@@ -49,7 +49,7 @@ export function catalogue() {
 export function route(entry) {
   if (SKIP[entry.href]) return { action: 'skip', reason: SKIP[entry.href] };
   if (RETIRED[entry.href]) return { action: 'skip', reason: `retired: ${RETIRED[entry.href]}` };
-  // Build write-ups attach to the generated character pages (flux-push.mjs).
+  // Build write-ups attach to the generated character pages (flux-generated.mjs).
   if (entry.section === 'Builds') return { action: 'builds' };
   const parent = parentOf(entry.href);
   if (parent === null) return { action: 'skip', reason: 'not placed in tools/flux-tree.mjs' };
@@ -75,7 +75,7 @@ export function sourceHtml(entry) {
 
 /**
  * Build write-up -> the character whose generated page it is attached to
- * (flux-push.mjs), read from characters.ts: one profile object per block.
+ * (flux-generated.mjs), read from characters.ts: one profile object per block.
  */
 export function buildOwners() {
   const src = readFileSync('src/data/characters.ts', 'utf8');

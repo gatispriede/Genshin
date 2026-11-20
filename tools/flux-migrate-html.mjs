@@ -1,6 +1,6 @@
 /**
  * Migrates every catalogued page (except build write-ups, which attach to the
- * character pages in flux-push.mjs) to the CMS, in batches.
+ * character pages in flux-generated.mjs) to the CMS, in batches.
  *
  *     node tools/flux-migrate-html.mjs                       # plan, all pages
  *     node tools/flux-migrate-html.mjs --section Research    # plan, one batch
@@ -42,7 +42,7 @@ for (const p of plans.sort((a, b) => a.parent.localeCompare(b.parent))) {
   console.log(`  ${p.entry.title.slice(0, 40).padEnd(40)} ${String(p.sections.length).padStart(3)} sect`
     + `  ${String(p.coverage).padStart(3)}%${flags ? '  ' + flags : ''}`);
 }
-if (builds.length) console.log(`\nBuilds (${builds.length}) — attached to character pages by flux-push.mjs`);
+if (builds.length) console.log(`\nBuilds (${builds.length}) — attached to character pages by flux-generated.mjs`);
 if (skipped.length) {
   console.log(`\nSkipped (${skipped.length}):`);
   skipped.forEach((s) => console.log('  ' + s));
@@ -88,7 +88,7 @@ for (const p of plans) {
 }
 
 // A full run owns the tree: anything under the root that is neither a page of
-// this run, a parent in flux-tree.mjs, nor flux-push's generated Builds/Teams
+// this run, a parent in flux-tree.mjs, nor the generated Builds/Teams
 // is a leftover (renamed, merged or retired) and goes. Its URL is redirected by
 // tools/flux-redirects.mjs. Deepest first, so no page is deleted under a parent
 // that is already gone.

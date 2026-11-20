@@ -1,5 +1,5 @@
 /**
- * Page-tree helpers shared by flux-push.mjs and flux-migrate-html.mjs:
+ * Page-tree helpers shared by the flux publishers:
  * create, reuse and locate pages, and write a section's index of children.
  *
  * page.create takes only a name; parenting is a separate page.setParent call

@@ -6,7 +6,7 @@
  *
  *     node tools/build-team-rotations.mjs
  *
- * teams.ts stays the single source: flux-push.mjs renders the same steps on
+ * teams.ts stays the single source: flux-generated.mjs renders the same steps on
  * each flux team page.
  */
 
