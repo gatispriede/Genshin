@@ -104,6 +104,7 @@ export const RETIRED = {
   'support-squad.html': "one account's live gear audit (27 Oct); kept as notes",
   'research/12-varesa-team.md': 'its mechanics moved into the Varesa team page; kept as notes',
   'research/13-varesa-damage-gap.md': "one account's damage compared with showcases; kept as notes",
+  'research/16-varesa-stygian-roadmap.md': "one account's pull and upgrade plan; kept as notes",
   'research/09-artifact-sets.md': "merged into artifacts.html; kept as notes",
   'research/04-weapons-and-artifacts.md': "merged into artifacts.html; kept as notes",
   'farming/index.html': "merged into saurian-farming.html; kept as notes",
