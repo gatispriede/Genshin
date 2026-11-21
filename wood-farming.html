@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wood farming routes</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Wood farming routes</h1>
+  <p class="sub">The best 11-tree loop for each of the 33 wood types, with the teleport to start from.</p>
+  <div class="bar key"><b>How wood farming works.</b> Each tree gives up to 3 wood, then stays empty
+  until you have chopped <b>ten other trees</b> (or logged out and in). So a loop of 11 trees of one type never runs
+  dry: every route here is the tightest 11-tree group of that wood on the official map, numbered in walking order
+  from the nearest teleport. You can chop up to <b>2,000 of each wood type a day</b>. Chops are Physical Normal,
+  Charged and Plunging Attacks by sword, claymore and polearm users; infused attacks do not count, nor do
+  Clorinde's or Skirk's Charged Attacks. Hitting several trees at once still drops wood from only one.</div>
+  <h2>By region</h2>
+  <ul class="regions"><li><a href="wood-mondstadt.html">Wood farming in Mondstadt</a> &middot; Birch Wood, Cuihua Wood, Fir Wood, Fragrant Cedar Wood, Pine Wood</li><li><a href="wood-liyue.html">Wood farming in Liyue</a> &middot; Bamboo Segment, Sandbearer Wood</li><li><a href="wood-inazuma.html">Wood farming in Inazuma</a> &middot; Aralia Wood, Maple Wood, Otogi Wood, Yumemiru Wood</li><li><a href="wood-sumeru.html">Wood farming in Sumeru</a> &middot; Adhigama Wood, Athel Wood, Brightwood, Karmaphala Wood, Mountain Date Wood</li><li><a href="wood-fontaine.html">Wood farming in Fontaine</a> &middot; Ash Wood, Cypress Wood, Linden Wood, Mallow Wood, Torch Wood</li><li><a href="wood-natlan.html">Wood farming in Natlan</a> &middot; Ashen Aratiku Wood, Flammabomb Wood, Peach Palm Wood, White Chestnut Oak Wood</li><li><a href="wood-nod-krai.html">Wood farming in Nod-Krai</a> &middot; Alder Wood, Hazelnut Wood, Pedunculate Oak Wood, Silver Fir Wood</li><li><a href="wood-snezhnaya.html">Wood farming in Snezhnaya</a> &middot; Bluebeech Wood, Larch Wood, Snow Poplar Wood, White Birch Wood</li></ul>
+  <h2>Every wood type</h2>
+  <table><thead><tr><th>Wood</th><th>Region</th><th>Best spot</th><th>Loop</th><th>From the waypoint</th></tr></thead><tbody><tr><td>Adhigama Wood</td><td><a href="wood-sumeru.html">Sumeru</a></td><td>Pardis Dhyai</td><td>medium loop</td><td>next to it</td></tr><tr><td>Alder Wood</td><td><a href="wood-nod-krai.html">Nod-Krai</a></td><td>Lempo Isle</td><td>short loop</td><td>a short walk</td></tr><tr><td>Aralia Wood</td><td><a href="wood-inazuma.html">Inazuma</a></td><td>Chinju Forest</td><td>medium loop</td><td>next to it</td></tr><tr><td>Ash Wood</td><td><a href="wood-fontaine.html">Fontaine</a></td><td>Beryl Region</td><td>medium loop</td><td>next to it</td></tr><tr><td>Ashen Aratiku Wood</td><td><a href="wood-natlan.html">Natlan</a></td><td>Ochkanatlan</td><td>medium loop</td><td>next to it</td></tr><tr><td>Athel Wood</td><td><a href="wood-sumeru.html">Sumeru</a></td><td>Aaru Village</td><td>medium loop</td><td>next to it</td></tr><tr><td>Bamboo Segment</td><td><a href="wood-liyue.html">Liyue</a></td><td>Liyue Harbor</td><td>short loop</td><td>a short walk</td></tr><tr><td>Birch Wood</td><td><a href="wood-mondstadt.html">Mondstadt</a></td><td>Stormbearer Mountains</td><td>medium loop</td><td>a long walk</td></tr><tr><td>Bluebeech Wood</td><td><a href="wood-snezhnaya.html">Snezhnaya</a></td><td>Flamefeather Valley</td><td>medium loop</td><td>a short walk</td></tr><tr><td>Brightwood</td><td><a href="wood-sumeru.html">Sumeru</a></td><td>Pardis Dhyai</td><td>short loop</td><td>next to it</td></tr><tr><td>Cuihua Wood</td><td><a href="wood-mondstadt.html">Mondstadt</a></td><td>Dadaupa Gorge</td><td>long loop</td><td>a short walk</td></tr><tr><td>Cypress Wood</td><td><a href="wood-fontaine.html">Fontaine</a></td><td>Erinnyes Forest</td><td>short loop</td><td>a short walk</td></tr><tr><td>Fir Wood</td><td><a href="wood-mondstadt.html">Mondstadt</a></td><td>Stormbearer Point</td><td>short loop</td><td>a long walk</td></tr><tr><td>Flammabomb Wood</td><td><a href="wood-natlan.html">Natlan</a></td><td>Tequemecan Valley</td><td>medium loop</td><td>a short walk</td></tr><tr><td>Fragrant Cedar Wood</td><td><a href="wood-mondstadt.html">Mondstadt</a></td><td>Wolvendom</td><td>short loop</td><td>next to it</td></tr><tr><td>Hazelnut Wood</td><td><a href="wood-nod-krai.html">Nod-Krai</a></td><td>Kuuvahki Experimental Design Bureau</td><td>long loop</td><td>a short walk</td></tr><tr><td>Karmaphala Wood</td><td><a href="wood-sumeru.html">Sumeru</a></td><td>Pardis Dhyai</td><td>medium loop</td><td>next to it</td></tr><tr><td>Larch Wood</td><td><a href="wood-snezhnaya.html">Snezhnaya</a></td><td>Everfrozen Earth</td><td>long loop</td><td>a short walk</td></tr><tr><td>Linden Wood</td><td><a href="wood-fontaine.html">Fontaine</a></td><td>Morte Region</td><td>medium loop</td><td>a long walk</td></tr><tr><td>Mallow Wood</td><td><a href="wood-fontaine.html">Fontaine</a></td><td>Petrichor</td><td>medium loop</td><td>next to it</td></tr><tr><td>Maple Wood</td><td><a href="wood-inazuma.html">Inazuma</a></td><td>Ritou</td><td>long loop</td><td>next to it</td></tr><tr><td>Mountain Date Wood</td><td><a href="wood-sumeru.html">Sumeru</a></td><td>Land of Upper Setekh</td><td>long loop</td><td>a short walk</td></tr><tr><td>Otogi Wood</td><td><a href="wood-inazuma.html">Inazuma</a></td><td>Jakotsu Mine</td><td>medium loop</td><td>next to it</td></tr><tr><td>Peach Palm Wood</td><td><a href="wood-natlan.html">Natlan</a></td><td>Toyac Springs</td><td>long loop</td><td>a short walk</td></tr><tr><td>Pedunculate Oak Wood</td><td><a href="wood-nod-krai.html">Nod-Krai</a></td><td>Amsvartnir</td><td>long loop</td><td>a short walk</td></tr><tr><td>Pine Wood</td><td><a href="wood-mondstadt.html">Mondstadt</a></td><td>Mondstadt</td><td>short loop</td><td>a short walk</td></tr><tr><td>Sandbearer Wood</td><td><a href="wood-liyue.html">Liyue</a></td><td>Guili Plains</td><td>medium loop</td><td>a short walk</td></tr><tr><td>Silver Fir Wood</td><td><a href="wood-nod-krai.html">Nod-Krai</a></td><td>Frostmoon Enclave</td><td>short loop</td><td>next to it</td></tr><tr><td>Snow Poplar Wood</td><td><a href="wood-snezhnaya.html">Snezhnaya</a></td><td>Rankova Zorya</td><td>long loop</td><td>a short walk</td></tr><tr><td>Torch Wood</td><td><a href="wood-fontaine.html">Fontaine</a></td><td>Beryl Region</td><td>medium loop</td><td>next to it</td></tr><tr><td>White Birch Wood</td><td><a href="wood-snezhnaya.html">Snezhnaya</a></td><td>Morepesok</td><td>medium loop</td><td>next to it</td></tr><tr><td>White Chestnut Oak Wood</td><td><a href="wood-natlan.html">Natlan</a></td><td>Guiztli Ridge</td><td>long loop</td><td>next to it</td></tr><tr><td>Yumemiru Wood</td><td><a href="wood-inazuma.html">Inazuma</a></td><td>Amakane Island</td><td>medium loop</td><td>a long walk</td></tr></tbody></table>
+  <p class="sub">Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin
+  Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.
+  Generated 21 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-wood-routes.py</code>.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

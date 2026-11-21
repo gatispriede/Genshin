@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wood farming in Inazuma</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Wood farming in Inazuma</h1>
+  <p class="sub">4 wood types whose best loop is in Inazuma. Each map: teleport at W, trees numbered in walking order.</p>
+  <div class="bar key"><b>How wood farming works.</b> Each tree gives up to 3 wood, then stays empty
+  until you have chopped <b>ten other trees</b> (or logged out and in). So a loop of 11 trees of one type never runs
+  dry: every route here is the tightest 11-tree group of that wood on the official map, numbered in walking order
+  from the nearest teleport. You can chop up to <b>2,000 of each wood type a day</b>. Chops are Physical Normal,
+  Charged and Plunging Attacks by sword, claymore and polearm users; infused attacks do not count, nor do
+  Clorinde's or Skirk's Charged Attacks. Hitting several trees at once still drops wood from only one.</div>
+  <h2>Aralia Wood</h2><p><b>Where:</b> Chinju Forest, Narukami Island &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> next to it &middot; 146 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodAraliaWood" data-map="assets/wood-aralia-wood-d035168c.webp" data-alt="Aralia Wood: an 11-tree loop near Chinju Forest" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(200vw, 2400px)"></div>
+  <h2>Maple Wood</h2><p><b>Where:</b> Ritou, Narukami Island &middot; <b>Loop:</b> long walk &middot; <b>From the waypoint:</b> next to it &middot; 47 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodMapleWood" data-map="assets/wood-maple-wood-31260525.webp" data-alt="Maple Wood: an 11-tree loop near Ritou" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+  <h2>Otogi Wood</h2><p><b>Where:</b> Jakotsu Mine, Yashiori Island &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> next to it &middot; 367 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodOtogiWood" data-map="assets/wood-otogi-wood-a9a5ba8a.webp" data-alt="Otogi Wood: an 11-tree loop near Jakotsu Mine" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+  <h2>Yumemiru Wood</h2><p><b>Where:</b> Amakane Island, Narukami Island &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> a long walk &middot; 75 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodYumemiruWood" data-map="assets/wood-yumemiru-wood-9ee92459.webp" data-alt="Yumemiru Wood: an 11-tree loop near Amakane Island" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(50vw, 600px)"></div>
+  <p class="sub">Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin
+  Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.
+  Generated 21 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-wood-routes.py</code>.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#woodAraliaWood", [{"x": 46.88, "y": 53.32, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 48.05, "y": 52.73, "role": "farm", "size": "sm", "label": "1", "title": "Aralia Wood tree 1"}, {"x": 44.92, "y": 52.73, "role": "farm", "size": "sm", "label": "2", "title": "Aralia Wood tree 2"}, {"x": 43.75, "y": 52.73, "role": "farm", "size": "sm", "label": "3", "title": "Aralia Wood tree 3"}, {"x": 43.36, "y": 52.73, "role": "farm", "size": "sm", "label": "4", "title": "Aralia Wood tree 4"}, {"x": 42.58, "y": 51.37, "role": "farm", "size": "sm", "label": "5", "title": "Aralia Wood tree 5"}, {"x": 43.36, "y": 51.17, "role": "farm", "size": "sm", "label": "6", "title": "Aralia Wood tree 6"}, {"x": 42.97, "y": 50.78, "role": "farm", "size": "sm", "label": "7", "title": "Aralia Wood tree 7"}, {"x": 46.09, "y": 50.59, "role": "farm", "size": "sm", "label": "8", "title": "Aralia Wood tree 8"}, {"x": 46.88, "y": 50.39, "role": "farm", "size": "sm", "label": "9", "title": "Aralia Wood tree 9"}, {"x": 47.27, "y": 51.17, "role": "farm", "size": "sm", "label": "10", "title": "Aralia Wood tree 10"}, {"x": 47.66, "y": 49.02, "role": "farm", "size": "sm", "label": "11", "title": "Aralia Wood tree 11"}]);
+  drawMap("#woodMapleWood", [{"x": 63.28, "y": 28.71, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 62.89, "y": 28.91, "role": "farm", "size": "sm", "label": "1", "title": "Maple Wood tree 1"}, {"x": 59.77, "y": 28.32, "role": "farm", "size": "sm", "label": "2", "title": "Maple Wood tree 2"}, {"x": 58.98, "y": 28.91, "role": "farm", "size": "sm", "label": "3", "title": "Maple Wood tree 3"}, {"x": 58.2, "y": 33.2, "role": "farm", "size": "sm", "label": "4", "title": "Maple Wood tree 4"}, {"x": 58.2, "y": 33.59, "role": "farm", "size": "sm", "label": "5", "title": "Maple Wood tree 5"}, {"x": 58.59, "y": 33.59, "role": "farm", "size": "sm", "label": "6", "title": "Maple Wood tree 6"}, {"x": 60.16, "y": 34.18, "role": "farm", "size": "sm", "label": "7", "title": "Maple Wood tree 7"}, {"x": 60.35, "y": 36.52, "role": "farm", "size": "sm", "label": "8", "title": "Maple Wood tree 8"}, {"x": 61.91, "y": 37.11, "role": "farm", "size": "sm", "label": "9", "title": "Maple Wood tree 9"}, {"x": 63.67, "y": 34.96, "role": "farm", "size": "sm", "label": "10", "title": "Maple Wood tree 10"}, {"x": 57.62, "y": 35.55, "role": "farm", "size": "sm", "label": "11", "title": "Maple Wood tree 11"}]);
+  drawMap("#woodOtogiWood", [{"x": 50.39, "y": 66.02, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 50.39, "y": 67.58, "role": "farm", "size": "sm", "label": "1", "title": "Otogi Wood tree 1"}, {"x": 48.44, "y": 66.8, "role": "farm", "size": "sm", "label": "2", "title": "Otogi Wood tree 2"}, {"x": 48.83, "y": 63.67, "role": "farm", "size": "sm", "label": "3", "title": "Otogi Wood tree 3"}, {"x": 45.7, "y": 61.72, "role": "farm", "size": "sm", "label": "4", "title": "Otogi Wood tree 4"}, {"x": 43.36, "y": 62.5, "role": "farm", "size": "sm", "label": "5", "title": "Otogi Wood tree 5"}, {"x": 43.36, "y": 63.67, "role": "farm", "size": "sm", "label": "6", "title": "Otogi Wood tree 6"}, {"x": 42.19, "y": 68.75, "role": "farm", "size": "sm", "label": "7", "title": "Otogi Wood tree 7"}, {"x": 37.5, "y": 66.02, "role": "farm", "size": "sm", "label": "8", "title": "Otogi Wood tree 8"}, {"x": 40.62, "y": 56.64, "role": "farm", "size": "sm", "label": "9", "title": "Otogi Wood tree 9"}, {"x": 43.75, "y": 57.03, "role": "farm", "size": "sm", "label": "10", "title": "Otogi Wood tree 10"}, {"x": 48.44, "y": 58.98, "role": "farm", "size": "sm", "label": "11", "title": "Otogi Wood tree 11"}]);
+  drawMap("#woodYumemiruWood", [{"x": 53.32, "y": 46.09, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 32.62, "y": 41.41, "role": "farm", "size": "sm", "label": "1", "title": "Yumemiru Wood tree 1"}, {"x": 31.84, "y": 40.62, "role": "farm", "size": "sm", "label": "2", "title": "Yumemiru Wood tree 2"}, {"x": 31.25, "y": 41.41, "role": "farm", "size": "sm", "label": "3", "title": "Yumemiru Wood tree 3"}, {"x": 31.25, "y": 39.84, "role": "farm", "size": "sm", "label": "4", "title": "Yumemiru Wood tree 4"}, {"x": 31.84, "y": 39.06, "role": "farm", "size": "sm", "label": "5", "title": "Yumemiru Wood tree 5"}, {"x": 29.49, "y": 38.28, "role": "farm", "size": "sm", "label": "6", "title": "Yumemiru Wood tree 6"}, {"x": 29.3, "y": 41.02, "role": "farm", "size": "sm", "label": "7", "title": "Yumemiru Wood tree 7"}, {"x": 29.3, "y": 41.41, "role": "farm", "size": "sm", "label": "8", "title": "Yumemiru Wood tree 8"}, {"x": 30.27, "y": 43.75, "role": "farm", "size": "sm", "label": "9", "title": "Yumemiru Wood tree 9"}, {"x": 31.84, "y": 45.31, "role": "farm", "size": "sm", "label": "10", "title": "Yumemiru Wood tree 10"}, {"x": 32.23, "y": 45.7, "role": "farm", "size": "sm", "label": "11", "title": "Yumemiru Wood tree 11"}]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

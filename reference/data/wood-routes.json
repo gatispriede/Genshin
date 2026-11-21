@@ -1,0 +1,83 @@
+[
+ {
+  "href": "wood-mondstadt.html",
+  "title": "Wood farming in Mondstadt",
+  "woods": [
+   "Birch Wood",
+   "Cuihua Wood",
+   "Fir Wood",
+   "Fragrant Cedar Wood",
+   "Pine Wood"
+  ]
+ },
+ {
+  "href": "wood-liyue.html",
+  "title": "Wood farming in Liyue",
+  "woods": [
+   "Bamboo Segment",
+   "Sandbearer Wood"
+  ]
+ },
+ {
+  "href": "wood-inazuma.html",
+  "title": "Wood farming in Inazuma",
+  "woods": [
+   "Aralia Wood",
+   "Maple Wood",
+   "Otogi Wood",
+   "Yumemiru Wood"
+  ]
+ },
+ {
+  "href": "wood-sumeru.html",
+  "title": "Wood farming in Sumeru",
+  "woods": [
+   "Adhigama Wood",
+   "Athel Wood",
+   "Brightwood",
+   "Karmaphala Wood",
+   "Mountain Date Wood"
+  ]
+ },
+ {
+  "href": "wood-fontaine.html",
+  "title": "Wood farming in Fontaine",
+  "woods": [
+   "Ash Wood",
+   "Cypress Wood",
+   "Linden Wood",
+   "Mallow Wood",
+   "Torch Wood"
+  ]
+ },
+ {
+  "href": "wood-natlan.html",
+  "title": "Wood farming in Natlan",
+  "woods": [
+   "Ashen Aratiku Wood",
+   "Flammabomb Wood",
+   "Peach Palm Wood",
+   "White Chestnut Oak Wood"
+  ]
+ },
+ {
+  "href": "wood-nod-krai.html",
+  "title": "Wood farming in Nod-Krai",
+  "woods": [
+   "Alder Wood",
+   "Hazelnut Wood",
+   "Pedunculate Oak Wood",
+   "Silver Fir Wood"
+  ]
+ },
+ {
+  "href": "wood-snezhnaya.html",
+  "title": "Wood farming in Snezhnaya",
+  "woods": [
+   "Bluebeech Wood",
+   "Larch Wood",
+   "Snow Poplar Wood",
+   "White Birch Wood"
+  ]
+ }
+]

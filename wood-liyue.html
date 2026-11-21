@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wood farming in Liyue</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Wood farming in Liyue</h1>
+  <p class="sub">2 wood types whose best loop is in Liyue. Each map: teleport at W, trees numbered in walking order.</p>
+  <div class="bar key"><b>How wood farming works.</b> Each tree gives up to 3 wood, then stays empty
+  until you have chopped <b>ten other trees</b> (or logged out and in). So a loop of 11 trees of one type never runs
+  dry: every route here is the tightest 11-tree group of that wood on the official map, numbered in walking order
+  from the nearest teleport. You can chop up to <b>2,000 of each wood type a day</b>. Chops are Physical Normal,
+  Charged and Plunging Attacks by sword, claymore and polearm users; infused attacks do not count, nor do
+  Clorinde's or Skirk's Charged Attacks. Hitting several trees at once still drops wood from only one.</div>
+  <h2>Bamboo Segment</h2><p><b>Where:</b> Liyue Harbor, Sea of Clouds &middot; <b>Loop:</b> short walk &middot; <b>From the waypoint:</b> a short walk &middot; 73 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodBambooSegment" data-map="assets/wood-bamboo-segment-350d5b3c.webp" data-alt="Bamboo Segment: an 11-tree loop near Liyue Harbor" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+  <h2>Sandbearer Wood</h2><p><b>Where:</b> Guili Plains, Qiongji Estuary &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> a short walk &middot; 681 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodSandbearerWood" data-map="assets/wood-sandbearer-wood-e28ebcf4.webp" data-alt="Sandbearer Wood: an 11-tree loop near Guili Plains" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(50vw, 600px)"></div>
+  <p class="sub">Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin
+  Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.
+  Generated 21 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-wood-routes.py</code>.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#woodBambooSegment", [{"x": 64.65, "y": 45.31, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 55.47, "y": 45.31, "role": "farm", "size": "sm", "label": "1", "title": "Bamboo Segment tree 1"}, {"x": 55.47, "y": 45.12, "role": "farm", "size": "sm", "label": "2", "title": "Bamboo Segment tree 2"}, {"x": 55.47, "y": 44.73, "role": "farm", "size": "sm", "label": "3", "title": "Bamboo Segment tree 3"}, {"x": 54.88, "y": 44.14, "role": "farm", "size": "sm", "label": "4", "title": "Bamboo Segment tree 4"}, {"x": 54.1, "y": 44.73, "role": "farm", "size": "sm", "label": "5", "title": "Bamboo Segment tree 5"}, {"x": 54.49, "y": 45.12, "role": "farm", "size": "sm", "label": "6", "title": "Bamboo Segment tree 6"}, {"x": 54.3, "y": 45.7, "role": "farm", "size": "sm", "label": "7", "title": "Bamboo Segment tree 7"}, {"x": 54.69, "y": 45.7, "role": "farm", "size": "sm", "label": "8", "title": "Bamboo Segment tree 8"}, {"x": 54.3, "y": 46.09, "role": "farm", "size": "sm", "label": "9", "title": "Bamboo Segment tree 9"}, {"x": 53.71, "y": 45.31, "role": "farm", "size": "sm", "label": "10", "title": "Bamboo Segment tree 10"}, {"x": 55.27, "y": 45.7, "role": "farm", "size": "sm", "label": "11", "title": "Bamboo Segment tree 11"}]);
+  drawMap("#woodSandbearerWood", [{"x": 58.2, "y": 55.08, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 51.56, "y": 60.16, "role": "farm", "size": "sm", "label": "1", "title": "Sandbearer Wood tree 1"}, {"x": 50.78, "y": 59.77, "role": "farm", "size": "sm", "label": "2", "title": "Sandbearer Wood tree 2"}, {"x": 50.59, "y": 62.5, "role": "farm", "size": "sm", "label": "3", "title": "Sandbearer Wood tree 3"}, {"x": 50.39, "y": 64.45, "role": "farm", "size": "sm", "label": "4", "title": "Sandbearer Wood tree 4"}, {"x": 49.61, "y": 65.23, "role": "farm", "size": "sm", "label": "5", "title": "Sandbearer Wood tree 5"}, {"x": 49.61, "y": 62.89, "role": "farm", "size": "sm", "label": "6", "title": "Sandbearer Wood tree 6"}, {"x": 49.22, "y": 67.97, "role": "farm", "size": "sm", "label": "7", "title": "Sandbearer Wood tree 7"}, {"x": 48.24, "y": 67.97, "role": "farm", "size": "sm", "label": "8", "title": "Sandbearer Wood tree 8"}, {"x": 51.56, "y": 68.75, "role": "farm", "size": "sm", "label": "9", "title": "Sandbearer Wood tree 9"}, {"x": 52.34, "y": 67.58, "role": "farm", "size": "sm", "label": "10", "title": "Sandbearer Wood tree 10"}, {"x": 52.73, "y": 66.02, "role": "farm", "size": "sm", "label": "11", "title": "Sandbearer Wood tree 11"}]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

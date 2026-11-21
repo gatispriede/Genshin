@@ -19,6 +19,10 @@ const REP_AREAS = JSON.parse(readFileSync('reference/data/rep-route-areas.json',
 const repAreaTree = Object.fromEntries(Object.entries(REP_AREAS)
   .map(([region, pages]) => [`Reputation quests/${region} reputation quests`, pages.map((x) => x.href)]));
 
+// Wood farming: one page per region under the overview, from the builder's manifest
+// (tools/build-wood-routes.py), like the reputation areas above.
+const WOOD_PAGES = JSON.parse(readFileSync('reference/data/wood-routes.json', 'utf8')).map((p) => p.href);
+
 export const TREE = {
   // Top level, beside the generated Builds and Teams. '' is the "Genshin notes" root.
   '': ['reputation-quests.html'],
@@ -29,6 +33,7 @@ export const TREE = {
   ],
   // One page per area under each region page (see REP_AREAS above).
   ...repAreaTree,
+  'Farming & economy/Wood farming routes': WOOD_PAGES,
   'Combat': [
     'enemy-coverage.html', 'reaction-combos.html', 'stellar.html', 'theater.html',
     'tactical-sweep.html', 'research/08-snezhnaya-mechanics.md',
@@ -36,7 +41,7 @@ export const TREE = {
   'Farming & economy': [
     'codes.html', 'research/02-wishes-and-primogems.md', 'research/01-mora-farming.md',
     'research/07-ore-farming.md', 'research/03-character-materials.md', 'talent-farming.html',
-    'saurian-farming.html', 'local-legends.html', 'domains.html', 'artifact-troves.html',
+    'saurian-farming.html', 'local-legends.html', 'domains.html', 'artifact-troves.html', 'wood-farming.html',
   ],
   'Maps & puzzles': [
     'starfell-valley-guide.html', 'dragonspine-quest-map.html', 'research/06a-in-the-mountains.md',

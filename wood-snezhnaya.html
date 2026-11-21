@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wood farming in Snezhnaya</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Wood farming in Snezhnaya</h1>
+  <p class="sub">4 wood types whose best loop is in Snezhnaya. Each map: teleport at W, trees numbered in walking order.</p>
+  <div class="bar key"><b>How wood farming works.</b> Each tree gives up to 3 wood, then stays empty
+  until you have chopped <b>ten other trees</b> (or logged out and in). So a loop of 11 trees of one type never runs
+  dry: every route here is the tightest 11-tree group of that wood on the official map, numbered in walking order
+  from the nearest teleport. You can chop up to <b>2,000 of each wood type a day</b>. Chops are Physical Normal,
+  Charged and Plunging Attacks by sword, claymore and polearm users; infused attacks do not count, nor do
+  Clorinde's or Skirk's Charged Attacks. Hitting several trees at once still drops wood from only one.</div>
+  <h2>Bluebeech Wood</h2><p><b>Where:</b> Flamefeather Valley &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> a short walk &middot; 43 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodBluebeechWood" data-map="assets/wood-bluebeech-wood-5043f444.webp" data-alt="Bluebeech Wood: an 11-tree loop near Flamefeather Valley" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(200vw, 2400px)"></div>
+  <h2>Larch Wood</h2><p><b>Where:</b> Everfrozen Earth &middot; <b>Loop:</b> long walk &middot; <b>From the waypoint:</b> a short walk &middot; 32 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodLarchWood" data-map="assets/wood-larch-wood-86f435df.webp" data-alt="Larch Wood: an 11-tree loop near Everfrozen Earth" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+  <h2>Snow Poplar Wood</h2><p><b>Where:</b> Rankova Zorya, Volkodlak Tundra &middot; <b>Loop:</b> long walk &middot; <b>From the waypoint:</b> a short walk &middot; 22 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodSnowPoplarWood" data-map="assets/wood-snow-poplar-wood-46194f57.webp" data-alt="Snow Poplar Wood: an 11-tree loop near Rankova Zorya" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(200vw, 2400px)"></div>
+  <h2>White Birch Wood</h2><p><b>Where:</b> Morepesok, Everfrozen Earth &middot; <b>Loop:</b> medium walk &middot; <b>From the waypoint:</b> next to it &middot; 139 trees of this type on the official map.</p><p>Teleport to the waypoint marked W, chop trees 1 to 11 in order (3 wood each), then go straight on to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat until the 2,000-a-day cap.</p>
+  <div class="map-wrap" id="woodWhiteBirchWood" data-map="assets/wood-white-birch-wood-5406b4a1.webp" data-alt="White Birch Wood: an 11-tree loop near Morepesok" data-legend="[]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)"></div>
+  <p class="sub">Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin
+  Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.
+  Generated 21 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-wood-routes.py</code>.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  drawMap("#woodBluebeechWood", [{"x": 74.22, "y": 39.06, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 69.53, "y": 45.12, "role": "farm", "size": "sm", "label": "1", "title": "Bluebeech Wood tree 1"}, {"x": 72.27, "y": 47.66, "role": "farm", "size": "sm", "label": "2", "title": "Bluebeech Wood tree 2"}, {"x": 70.31, "y": 49.41, "role": "farm", "size": "sm", "label": "3", "title": "Bluebeech Wood tree 3"}, {"x": 67.58, "y": 48.83, "role": "farm", "size": "sm", "label": "4", "title": "Bluebeech Wood tree 4"}, {"x": 67.58, "y": 48.63, "role": "farm", "size": "sm", "label": "5", "title": "Bluebeech Wood tree 5"}, {"x": 65.62, "y": 48.24, "role": "farm", "size": "sm", "label": "6", "title": "Bluebeech Wood tree 6"}, {"x": 63.28, "y": 46.88, "role": "farm", "size": "sm", "label": "7", "title": "Bluebeech Wood tree 7"}, {"x": 63.28, "y": 46.48, "role": "farm", "size": "sm", "label": "8", "title": "Bluebeech Wood tree 8"}, {"x": 67.97, "y": 50.39, "role": "farm", "size": "sm", "label": "9", "title": "Bluebeech Wood tree 9"}, {"x": 65.62, "y": 52.15, "role": "farm", "size": "sm", "label": "10", "title": "Bluebeech Wood tree 10"}, {"x": 64.84, "y": 51.95, "role": "farm", "size": "sm", "label": "11", "title": "Bluebeech Wood tree 11"}]);
+  drawMap("#woodLarchWood", [{"x": 44.14, "y": 54.49, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 47.07, "y": 47.85, "role": "farm", "size": "sm", "label": "1", "title": "Larch Wood tree 1"}, {"x": 47.85, "y": 47.46, "role": "farm", "size": "sm", "label": "2", "title": "Larch Wood tree 2"}, {"x": 49.41, "y": 45.31, "role": "farm", "size": "sm", "label": "3", "title": "Larch Wood tree 3"}, {"x": 48.24, "y": 41.8, "role": "farm", "size": "sm", "label": "4", "title": "Larch Wood tree 4"}, {"x": 45.7, "y": 42.97, "role": "farm", "size": "sm", "label": "5", "title": "Larch Wood tree 5"}, {"x": 43.95, "y": 42.38, "role": "farm", "size": "sm", "label": "6", "title": "Larch Wood tree 6"}, {"x": 44.53, "y": 45.51, "role": "farm", "size": "sm", "label": "7", "title": "Larch Wood tree 7"}, {"x": 42.58, "y": 47.07, "role": "farm", "size": "sm", "label": "8", "title": "Larch Wood tree 8"}, {"x": 36.52, "y": 43.95, "role": "farm", "size": "sm", "label": "9", "title": "Larch Wood tree 9"}, {"x": 39.06, "y": 39.65, "role": "farm", "size": "sm", "label": "10", "title": "Larch Wood tree 10"}, {"x": 45.12, "y": 38.48, "role": "farm", "size": "sm", "label": "11", "title": "Larch Wood tree 11"}]);
+  drawMap("#woodSnowPoplarWood", [{"x": 59.77, "y": 55.47, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 66.02, "y": 65.62, "role": "farm", "size": "sm", "label": "1", "title": "Snow Poplar Wood tree 1"}, {"x": 51.56, "y": 66.6, "role": "farm", "size": "sm", "label": "2", "title": "Snow Poplar Wood tree 2"}, {"x": 50.78, "y": 66.6, "role": "farm", "size": "sm", "label": "3", "title": "Snow Poplar Wood tree 3"}, {"x": 51.17, "y": 67.19, "role": "farm", "size": "sm", "label": "4", "title": "Snow Poplar Wood tree 4"}, {"x": 51.17, "y": 69.14, "role": "farm", "size": "sm", "label": "5", "title": "Snow Poplar Wood tree 5"}, {"x": 51.95, "y": 69.14, "role": "farm", "size": "sm", "label": "6", "title": "Snow Poplar Wood tree 6"}, {"x": 48.05, "y": 71.68, "role": "farm", "size": "sm", "label": "7", "title": "Snow Poplar Wood tree 7"}, {"x": 48.05, "y": 72.27, "role": "farm", "size": "sm", "label": "8", "title": "Snow Poplar Wood tree 8"}, {"x": 46.88, "y": 72.27, "role": "farm", "size": "sm", "label": "9", "title": "Snow Poplar Wood tree 9"}, {"x": 46.88, "y": 64.65, "role": "farm", "size": "sm", "label": "10", "title": "Snow Poplar Wood tree 10"}, {"x": 46.48, "y": 64.26, "role": "farm", "size": "sm", "label": "11", "title": "Snow Poplar Wood tree 11"}]);
+  drawMap("#woodWhiteBirchWood", [{"x": 51.17, "y": 36.91, "role": "hub", "label": "W", "tag": "Teleport here", "title": "Start: teleport"}, {"x": 53.12, "y": 32.03, "role": "farm", "size": "sm", "label": "1", "title": "White Birch Wood tree 1"}, {"x": 52.73, "y": 31.64, "role": "farm", "size": "sm", "label": "2", "title": "White Birch Wood tree 2"}, {"x": 53.71, "y": 31.64, "role": "farm", "size": "sm", "label": "3", "title": "White Birch Wood tree 3"}, {"x": 54.69, "y": 31.64, "role": "farm", "size": "sm", "label": "4", "title": "White Birch Wood tree 4"}, {"x": 54.1, "y": 30.66, "role": "farm", "size": "sm", "label": "5", "title": "White Birch Wood tree 5"}, {"x": 54.1, "y": 30.47, "role": "farm", "size": "sm", "label": "6", "title": "White Birch Wood tree 6"}, {"x": 54.3, "y": 30.08, "role": "farm", "size": "sm", "label": "7", "title": "White Birch Wood tree 7"}, {"x": 53.91, "y": 30.08, "role": "farm", "size": "sm", "label": "8", "title": "White Birch Wood tree 8"}, {"x": 53.32, "y": 30.66, "role": "farm", "size": "sm", "label": "9", "title": "White Birch Wood tree 9"}, {"x": 56.05, "y": 30.86, "role": "farm", "size": "sm", "label": "10", "title": "White Birch Wood tree 10"}, {"x": 56.25, "y": 30.86, "role": "farm", "size": "sm", "label": "11", "title": "White Birch Wood tree 11"}]);
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>
