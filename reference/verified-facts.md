@@ -491,3 +491,33 @@ Its own description: *"a materially-rich southern region covered in hill, wood
 and wetland; mighty ramparts defend its western edge from … sandstorms."* The
 desert is the far side of those ramparts. Yasna Monument sits in it, reachable
 without any Great Red Sand progress.
+
+### Freeze-immune targets and Blizzard Strayer — *verified 22 Nov 2026, Fandom /Frozen + /Elemental Gauge Theory/Advanced Mechanics*
+
+**On a freeze-immune target the Frozen reaction still triggers, but no Freeze
+Aura is applied.** Wiki wording: *"On these targets, the Frozen reaction can
+still be triggered, but the Freeze Aura will not apply and they will not be
+immobilized."* So the duration is **zero** — there is no brief freeze, no
+immobilization, and nothing to Shatter (Shatter requires a Freeze Aura).
+
+**Freeze-immune ("Always"):** most **Bosses**, Cryo Abyss Mage, Cryo Slime.
+Conditionally immune while shielded: Abyss Herald Frost Fall, "Chimalli's
+Shade", Fatui Anemoboxer Vanguard.
+
+**Freeze *Resistance* is a different thing** — those enemies do freeze, just
+briefly, duration scaled by `2√(5·Gauge·(1−FreezeRes)+4) − 4`:
+Canine Bunshin 80%, Abyss Herald Wicked Torrents (shielded) 80%, Consecrated
+Beast 50%, Hydro Hypostasis summon (revival) 40%, most Land Local Legends 90%.
+
+**Blizzard Strayer against a boss:**
+- **2pc (Cryo DMG +15%) — unconditional.** No Frozen requirement at all; it is
+  always active. Do not confuse it with the 4pc.
+- **4pc first half (+20% CRIT Rate vs opponents affected by Cryo) — works.**
+  The ordinary Cryo aura applies to bosses normally, and the Freeze Aura is a
+  *sibling* aura that can coexist with it rather than replacing it.
+- **4pc second half (+20% more if Frozen) — does NOT work on bosses.** They
+  never enter the Frozen state.
+
+**Consequence for builds:** a Blizzard Strayer sheet that assumes the full
++40% CRIT Rate is **20% CRIT Rate short in every boss fight**. Build crit
+substats against the boss case, not the overworld case.
