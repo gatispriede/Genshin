@@ -521,3 +521,29 @@ Beast 50%, Hydro Hypostasis summon (revival) 40%, most Land Local Legends 90%.
 **Consequence for builds:** a Blizzard Strayer sheet that assumes the full
 +40% CRIT Rate is **20% CRIT Rate short in every boss fight**. Build crit
 substats against the boss case, not the overworld case.
+
+**Worked freeze durations** (0% Freeze Resistance), from the formula above —
+`G` is the Freeze Aura gauge, which is *twice* the smaller of the two
+contributing gauges:
+
+| min(aura, trigger) | Freeze Aura G | Duration |
+|---|---|---|
+| 0.5U | 1U | 2.00 s |
+| 1U | 2U | 3.48 s |
+| 2U | 4U | 5.80 s |
+| 4U | 8U | 9.27 s |
+
+A 2U application (G = 4U) against the resistance enemies: no resistance
+5.80 s · Hydro Hypostasis summon (revival, 40%) 4.00 s · Consecrated Beast
+(50%) 3.48 s · Canine Bunshin / Abyss Herald shielded (80%) 1.66 s · most Land
+Local Legends (90%) 0.90 s.
+
+**Neither Blizzard Strayer bonus is a timed buff** — both are state checks on
+the target, evaluated as each hit lands. "Uptime" of the full +40% CRIT Rate
+is therefore exactly the Freeze Aura window, and a freeze team that re-applies
+each rotation holds it at effectively 100% on freezable enemies.
+
+**Shatter is self-inflicted downtime.** A Blunt or Geo hit drains the Freeze
+Aura at **0.006U per Poise DMG** and Shatters if any is left, ending the
+Frozen state early. A claymore or Geo unit in a freeze team (e.g. Noelle)
+cuts the team's own +20% Frozen bonus uptime.
