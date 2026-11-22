@@ -1,0 +1,20 @@
+{
+ "_source": "Genshin Impact Wiki, read 22 Nov 2026: Havoc: Warp (Elemental Skill: Seven-Phase Flash hits), Havoc: Ruin (Burst; Havoc: Extinction), Return to Oblivion (A4), Reason Beyond Reason (A1), Finale of the Deep Galleries, The Black Sword. Talent values are % of ATK, by talent level.",
+ "sevenPhase": {
+  "hit1": {"6": 193.06, "7": 210.05, "8": 227.04, "9": 244.03, "10": 262.56},
+  "hit2": {"6": 174.13, "7": 189.45, "8": 204.77, "9": 220.10, "10": 236.81},
+  "hit3": {"6": 220.12, "7": 239.50, "8": 258.86, "9": 278.24, "10": 299.38, "_parts": "two equal parts, summed here"},
+  "hit4": {"6": 234.12, "7": 254.72, "8": 275.34, "9": 295.94, "10": 318.40, "_parts": "two equal parts, summed here"},
+  "hit5": {"6": 285.79, "7": 310.94, "8": 336.09, "9": 361.24, "10": 388.68},
+  "charged": {"6": 194.25, "7": 211.35, "8": 228.45, "9": 245.52, "10": 264.18, "_parts": "three equal parts, summed here"}
+ },
+ "extinction": {
+  "_text": "After Havoc: Extinction, every 0.1s the next Normal Attack hit deals increased DMG, more with Void Rifts absorbed; cancelled after 10 triggers. Values are the 0/1/2/3-rift bonus (%), modelled as DMG bonus on those 10 hits (the wiki labels them 'DMG Bonus (%)').",
+  "6": [6.0, 9.6, 12.8, 16.0], "7": [6.5, 10.2, 13.6, 17.0], "8": [7.0, 10.8, 14.4, 18.0],
+  "9": [7.5, 11.4, 15.2, 19.0], "10": [8.0, 12.0, 16.0, 20.0]
+ },
+ "deathsCrossing": {"_text": "A4: one stack per Hydro teammate and per Cryo teammate other than Skirk, max 3; Seven-Phase Flash Normal Attacks deal this share of their DMG", "1": 1.10, "2": 1.20, "3": 1.70},
+ "finale4pc": {"_text": "0 Energy: Normal Attack DMG +60% (Skirk's Burst uses no Energy)", "normal": 0.60},
+ "finale2pc": {"cryo": 0.15},
+ "blackSword": {"_text": "Normal and Charged Attack DMG +20% at R1", "1": 0.20}
+}

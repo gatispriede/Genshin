@@ -1,0 +1,79 @@
+{
+ "_about": "Inputs for tools/upgrade-calc.py: one measured dummy run per carry (DPS Test Dummy++, Stygian Dire preset, Stygian Start: the owner always uses it), the carry's stats at that run, and the gear from the latest HoYoLAB read. Fractions, not percents (0.466 = 46.6%). Team buffs are assumptions, stated as such.",
+ "teams": {
+  "skirk": {
+   "run": {"date": "2026-11-22", "team": ["Skirk", "Furina", "Escoffier", "Charlotte"],
+           "carryDamage": 1363771, "teamDamage": 1632682, "seconds": 60.01},
+   "carry": {"name": "Skirk", "level": 87, "scaling": "atk",
+             "base": 861, "pct": 1.267, "flat": 322,
+             "cr": 0.66, "cd": 1.33, "dmg": 0.15,
+             "_source": "22 Nov dummy stat sheet (ATK 2274, CRIT 66%/133%, Cryo 15%); base/pct/flat split from the 16 Nov HoYoLAB gear"},
+   "team": {"pct": 0.34, "dmg": 0.234,
+            "_assumed": "pct: Noblesse Oblige +20% and Thrilling Tales +48% ATK, each up about half the time. dmg: Furina's Fanfare at Burst 4 averaging 60% of 300 points (0.13% per point)."},
+   "fanfare": {"burst": 4, "avgShare": 0.6},
+   "talents": {"skill": 7, "share": 0.8, "_note": "16 Nov talents 6/7/6. Her Seven-Phase Flash hits are in the Elemental Skill table (Havoc: Warp, wiki 22 Nov), so Skill is the lever, as Game8's guide also says; share = part of her damage from those hits (assumed)"},
+   "gear": {
+    "flower":  {"main": "hp",  "subs": {"cr": 0.070, "cd": 0.117}},
+    "plume":   {"main": "atk", "subs": {"cr": 0.062, "cd": 0.124}},
+    "sands":   {"main": "atk%", "subs": {"cr": 0.022}},
+    "goblet":  {"main": "atk%", "subs": {"cr": 0.074}},
+    "circlet": {"main": "atk%", "subs": {"cr": 0.109, "cd": 0.124}}
+   },
+   "want": {"sands": "atk%", "goblet": "elem", "circlet": "cd", "subs": ["cr", "cd", "atk%"]},
+   "benchmarks": {
+    "_source": "community calcs the owner found on Google, 22 Nov 2026: Genshin Scientist (KQM investment, C0 everyone), r/SkirkMains 'My Skirk Day 1 Calc' (meowtews, speculative day-1, 20s rotation), and a Reddit team-DPS table. Standard enemy, no zero-Energy start, so the owner's Stygian Dire dummy reads lower for the same team.",
+    "teams": [
+     {"team": "Skirk / Furina / Escoffier / Vodyanitsa", "dps": 152200, "by": "Genshin Scientist, KQM"},
+     {"team": "Skirk / Furina / Escoffier / Shenhe (= Mona, Yelan, Citlali)", "dps": 135500, "by": "Genshin Scientist, KQM; Skirk 73%, Escoffier 15%, Furina 9%"},
+     {"team": "Skirk / Furina / Yelan / Escoffier", "dps": 137199, "by": "Reddit table"},
+     {"team": "Skirk / Furina / Shenhe / Charlotte", "dps": 98962, "by": "Reddit table"},
+     {"team": "Skirk / Escoffier / Furina / Shenhe (Finale R5)", "dps": 104205, "by": "r/SkirkMains day-1 calc"},
+     {"team": "Skirk / Charlotte / Furina / Yelan (no Escoffier)", "dps": 65332, "by": "r/SkirkMains day-1 calc"}
+    ],
+    "investment": {"Skirk signature": 1.23, "Escoffier C1": 1.19, "Skirk C1": 1.16, "Skirk C2": 1.15, "C0 Vodyanitsa": 1.13,
+                   "_by": "Genshin Scientist, each against the C0 base team"},
+    "weapons": {"Azurelight (signature) R1": 1.325, "Haran Geppaku Futsu R1": 1.166, "Primordial Jade Cutter R1": 1.123,
+                "Mistsplitter Reforged R1": 1.084, "Finale of the Deep R5": 1.0, "Uraku Misugiri R1": 0.996, "Absolution R1": 0.995,
+                "_by": "r/SkirkMains day-1 calc, against Finale R5; The Black Sword not listed"}
+   }
+  },
+  "mizuki": {
+   "run": {"date": "2026-11-22", "team": ["Mizuki", "Traveler", "Sucrose", "Rosaria"],
+           "carryDamage": 767864, "teamDamage": 854835, "seconds": 60.01},
+   "carry": {"name": "Yumemizuki Mizuki", "level": 90, "scaling": "em",
+             "base": 0, "pct": 0, "flat": 644,
+             "cr": 0.20, "cd": 0.63, "dmg": 0.15,
+             "_source": "CRIT and Anemo from the 22 Nov dummy sheet; EM 644 is the 16 Nov read at Lv 70 (the 22 Nov sheet does not show EM), so EM-based results are approximate"},
+   "team": {"pct": 0, "dmg": 0, "_assumed": "no team EM or DMG buffs counted (Sucrose's EM share is left out)"},
+   "talents": {"skill": 6, "share": 0.8, "_note": "16 Nov talents 2/6/6; share = part of her damage from her Skill (assumed)"},
+   "gear": {
+    "flower":  {"main": "hp",  "subs": {"cd": 0.132}},
+    "plume":   {"main": "atk", "subs": {"em": 0.019}},
+    "sands":   {"main": "em",  "subs": {"cr": 0.022}},
+    "goblet":  {"main": "em",  "subs": {"cr": 0.078}},
+    "circlet": {"main": "em",  "subs": {}}
+   },
+   "want": {"sands": "em", "goblet": "em", "circlet": "cr", "subs": ["cr", "cd", "em"]},
+   "_gearNote": "16 Nov pieces were +12; main stats are counted at their +20 values"
+  },
+  "varesa": {
+   "run": {"date": "2026-11-22", "team": ["Varesa", "Iansan", "Furina", "Valeriy"],
+           "carryDamage": null, "teamDamage": null, "seconds": 60, "teamDps": 25000,
+           "_missing": "only the team total (~25k) was reported; a run with the damage breakdown is needed"},
+   "carry": {"name": "Varesa", "level": 90, "scaling": "atk",
+             "base": 866, "pct": 0.466, "flat": 344,
+             "cr": 0.541, "cd": 2.093, "dmg": 0.466,
+             "_source": "CRIT from the owner's Google conversation (newer than 16 Nov); base derived from the 16 Nov sheet: ATK 1614 = base x 1.466 + 344 flat, so 866 (Widsith 510 + her own 356)"},
+   "team": {"pct": 0, "dmg": 0, "_assumed": "Iansan's flat ATK buff not modelled yet"},
+   "talents": {"normal": 8, "share": 0.7, "_note": "talents 8/6/7 per the owner; share = plunge (Normal Attack) part, assumed"},
+   "gear": {
+    "flower":  {"main": "hp",  "subs": {"cr": 0.148}},
+    "plume":   {"main": "atk", "subs": {"cr": 0.105, "cd": 0.070}},
+    "sands":   {"main": "atk%", "subs": {"cr": 0.039}},
+    "goblet":  {"main": "elem", "subs": {"cr": 0.105, "cd": 0.132}},
+    "circlet": {"main": "cd",  "subs": {}}
+   },
+   "want": {"sands": "atk%", "goblet": "elem", "circlet": "cr", "subs": ["cr", "cd", "atk%"]}
+  }
+ }
+}

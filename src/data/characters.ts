@@ -30,7 +30,7 @@ const profiles: Character[] = [
     teams: ['varesa'], tier: null, paidIn: 'gear',
     targetMains: { sands: 'ATK%', goblet: 'Electro DMG', circlet: 'CRIT DMG' }, // varesa-build.html
     targetSet: "Long Night's Oath (BiS) or Obsidian Codex",
-    note: 'Max level, Long Night’s Oath 4pc, artifacts done (all +20, 16 Nov): crafted Electro DMG goblet, CRIT DMG circlet, 64% CRIT Rate / 188% CRIT DMG, 47% Electro DMG. Dummy test 16 Nov: 18,437 DPS (was 14,138). Keep the CRIT DMG circlet: a CRIT Rate one overcaps with Valeriy’s +10%. Next gains: Valeriy Skill-and-swap (he sat on field 4.6 s a cycle), then substat hunting on the circlet (no crit subs).',
+    note: 'Max level, Long Night’s Oath 4pc, artifacts done (all +20, 16 Nov): crafted Electro DMG goblet, CRIT DMG circlet, 64% CRIT Rate / 188% CRIT DMG, 47% Electro DMG. Dummy test 16 Nov: 18,437 DPS (was 14,138). 22 Nov with Iansan (Lv ~20, no Cinder City yet): ~25k DPS, as reported by the owner. All dummy tests use the same preset (Stygian Dire, Stygian zero-Energy start), so they compare directly. Keep the CRIT DMG circlet: a CRIT Rate one overcaps with Valeriy’s +10%. Next gains: Valeriy Skill-and-swap (he sat on field 4.6 s a cycle), then substat hunting on the circlet (no crit subs).',
     page: 'varesa-build.html', targetSubs: ["CRIT Rate", "CRIT DMG", "ATK%", "ATK"], targetWeapon: "The Widsith (owned); her signature is better", gearSource: "varesa-build.html: ER to her need, then CRIT, ATK%, flat ATK", verified: '2026-11-12',
   },
   {
@@ -48,7 +48,7 @@ const profiles: Character[] = [
     teams: ['mizuki'], tier: 1, paidIn: 'levels',
     targetMains: { sands: 'Elemental Mastery', goblet: 'Elemental Mastery', circlet: 'CRIT Rate or CRIT DMG' }, // mizuki-build.html
     targetSet: 'Viridescent Venerer (with Sucrose on Instructor), or Gilded Dreams / 2pc-2pc EM',
-    note: 'Stellar Swirl carry. Vast Be the Dream unlocked 16 Nov at Lv 70: ~23k often, ~65k crits. 15% CRIT Rate is the gap - her payload crits.',
+    note: 'Stellar Swirl carry. Vast Be the Dream unlocked 16 Nov at Lv 70: ~23k often, ~65k crits. 15% CRIT Rate is the gap - her payload crits. Dummy (Stygian Dire, zero Energy) 22 Nov at Lv 90: 16,411 DPS with Traveler/Sucrose/Charlotte, 14,244 with Rosaria (Lv 20) instead; Mizuki 90-93% of the damage. Charlotte belongs to the Skirk team in the Fearless plan, so 14.2k is the legal figure.',
     page: 'mizuki-build.html', targetSubs: ["Elemental Mastery", "CRIT Rate", "CRIT DMG", "Energy Recharge"], targetWeapon: "Sacrificial Fragments (owned, R2)", gearSource: "mizuki-build.html and Zajef's guide: EM about equal to CRIT", verified: '2026-11-12',
   },
   {
