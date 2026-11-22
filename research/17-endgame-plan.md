@@ -117,8 +117,8 @@ Every line is from the character's wiki page, read 22 Nov.
 | Escoffier | **A4 shred** (55% with four Hydro/Cryo); heal and her damage on ATK | **70 (stay)**; 80 only for her own damage | artifacts (all +0 now), Skill/Burst |
 | Mona | Omen DMG bonus = **Burst talent** | **60 (stay)**, enough to survive | Burst talent |
 | Mizuki | carry; A4 +100 EM from teammates' hits | 90 (done) | **Skill 9–10**, EM pieces to +20 |
-| Cryo Traveler | Stellar conversion (Illusory Frostmirror); only +0.35% base DMG per 100 ATK, max 7% | **40 (stay)**, survival only | — |
-| Sucrose | A1 +50 EM on swirl; **A4: 20% of her EM** to the party | **70** (60 now) | EM gear |
+| Cryo Traveler | Stellar conversion (Illusory Frostmirror, +0.35% Stellar base DMG per 100 ATK, max 7%) — **and a contributor to every Stellar Swirl**: each contributor's share uses their own level multiplier (207 at Lv 40, 1,447 at Lv 90), weighted 0.6/0.3/0.05/0.05 | **80–90** (corrected 22 Nov: a Lv 90 Traveler adds ~18% to a Lv 2 Stellar Vortex, Lv 40 adds ~2%) | ATK to 2,000 for the full +7% |
+| Sucrose | A1 +50 EM on swirl; **A4: 20% of her EM** to the party; a Stellar Swirl contributor through her own level and EM | **80–90** (corrected: level feeds her contributor share) | EM gear |
 | Rosaria | Cryo application in the Mizuki team | **20 (stay)** until the Tsaritsa | — |
 
 Resources this saves: Furina 70→90, Escoffier 70→90, Mona, Traveler, Rosaria and (for the
