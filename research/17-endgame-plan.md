@@ -86,10 +86,48 @@ Fearless mapping that fits each team's kit to the boss (supported by the clears)
 3. **Weapons**: Sacrificial Fragments R2 stays; Traveler's Exaiphanes Blade (owned) is what the
    cheap Stellar clears use (at R5).
 4. **New characters** (options):
-   - **Odette** (5★ Cryo sword, limited, released 12 Aug 2026) — the piece every Stellar Swirl
-     benchmark has.
-   - **Faruzan** (4★ Anemo, standard) — the alternative to Sucrose.
+   - **The Tsaritsa (Anastasya, Cryo, upcoming)** — the owner's choice for Odette's slot
+     (22 Nov). Her kit, rarity and release are not announced, so whether she does Odette's job
+     in Stellar Swirl is open: check it against this team when her kit is published.
+   - Odette (5★ Cryo sword, limited, released 12 Aug 2026) — what every Stellar Swirl benchmark
+     uses; not a target.
+   - **Faruzan** (4★ Anemo) — the alternative to Sucrose. She is in the **standard pool**, so any
+     wish can drop her; her 7.1 banner does not matter.
    - Fischl (owned, C1) brings Electro for Stellar-Conduct on Electro-weak bosses.
+
+**Owner's pull targets (22 Nov):** Chevreuse, Bennett and Faruzan (all standard pool: luck on
+any wish), Vodyanitsa and a Pyro 5-star (Durin or Mavuika) as options, and the Tsaritsa
+instead of Odette.
+
+## Least effort: how far each character actually needs levelling (22 Nov)
+
+Rule: a value that comes from a **talent level** or a **level-independent passive** does not
+need character levels; ascension passives need only the ascension (A1 at ascension 1,
+A4 at level 70); only buffs and damage built on **base ATK / HP / DEF** need levels.
+Every line is from the character's wiki page, read 22 Nov.
+
+| Character | Where their value comes from | Minimum level | Spend instead on |
+|---|---|---|---|
+| Varesa | carry | 90 (done) | Normal Attack and Burst 10, Skill stays low; crit artifacts |
+| Iansan | Burst ATK bonus = 27% of **her ATK**, capped by Burst level; A1 +20% ATK; A4 heal | **80–90** | Burst 9–10, Cinder City, ER |
+| Chevreuse | **A1: −40% Pyro/Electro RES** on Overload (party all Pyro/Electro); A4: +1% ATK per 1,000 of her HP, max 40% | **40** for the shred; 70 + HP build for the ATK buff | — |
+| Bennett | Burst ATK bonus from **his base ATK**; heals on his HP | **80–90**, high-base-ATK weapon | Burst talent |
+| Skirk | carry; A4 Death's Crossing | 90 (87 now) | **Skill 9–10**, Cryo goblet |
+| Furina | Fanfare = **Burst talent**, not level; A4 Salon damage from HP | **70 (stay)** — 90 adds ~0.5k | **Burst 4 → 10** |
+| Escoffier | **A4 shred** (55% with four Hydro/Cryo); heal and her damage on ATK | **70 (stay)**; 80 only for her own damage | artifacts (all +0 now), Skill/Burst |
+| Mona | Omen DMG bonus = **Burst talent** | **60 (stay)**, enough to survive | Burst talent |
+| Mizuki | carry; A4 +100 EM from teammates' hits | 90 (done) | **Skill 9–10**, EM pieces to +20 |
+| Cryo Traveler | Stellar conversion (Illusory Frostmirror); only +0.35% base DMG per 100 ATK, max 7% | **40 (stay)**, survival only | — |
+| Sucrose | A1 +50 EM on swirl; **A4: 20% of her EM** to the party | **70** (60 now) | EM gear |
+| Rosaria | Cryo application in the Mizuki team | **20 (stay)** until the Tsaritsa | — |
+
+Resources this saves: Furina 70→90, Escoffier 70→90, Mona, Traveler, Rosaria and (for the
+shred alone) Chevreuse — the levelling goes to Iansan, Bennett, Sucrose and the three carries.
+
+**Dire, honestly:** with every team fully built at C0, Dire is in reach for the Skirk team on
+the Emperor (117k needed vs ~135k). Wavebinder Dire (279k) and Moongecko Dire (175k) exceed
+what the Mizuki (120–180k) and Varesa (~125k) teams reach at C0: those two need constellations,
+signature weapons, or a cycle whose Dire bosses suit them. Fearless needs none of that.
 
 ## Not settled
 
