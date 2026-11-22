@@ -547,3 +547,34 @@ each rotation holds it at effectively 100% on freezable enemies.
 Aura at **0.006U per Poise DMG** and Shatters if any is left, ending the
 Frozen state early. A claymore or Geo unit in a freeze team (e.g. Noelle)
 cuts the team's own +20% Frozen bonus uptime.
+
+### Infusion does not disable Normal/Charged Attack DMG bonuses — *verified 22 Nov 2026*
+
+**An Elemental Infusion changes the damage *type*, not the attack *category*.**
+Wiki: *"An Elemental Infusion changes the damage from the Normal Attack,
+Charged Attack, and Plunging Attack of a Sword, Claymore, or Polearm user into
+elemental damage."* The attack is still a Normal or Charged Attack, so
+**Marechaussee Hunter's 2pc (+15% Normal and Charged Attack DMG) applies in
+full while infused**, and so does any other Normal/Charged category bonus.
+Catalyst users need no infusion at all and are likewise covered.
+
+All DMG Bonus sources — elemental DMG bonus, Normal Attack DMG bonus, Furina's
+Fanfare — land in the **same additive `DMG Bonus` bucket** and multiply once
+(see /Damage, General Damage Formula), so they stack additively, not
+multiplicatively.
+
+**Two limits that catch people out:**
+- Marechaussee's 2pc covers **Normal and Charged only — not Plunging**, even
+  though infusion itself does cover plunges. A plunge-damage DPS gets nothing
+  from the 2pc.
+- It covers no Skill or Burst damage. Blizzard Strayer's +15% Cryo DMG covers
+  *every* source of Cryo damage, so the 2pc comparison depends entirely on
+  where the character's damage actually comes from.
+
+**Marechaussee vs Blizzard Strayer on a boss, in a Furina team:**
+Marechaussee 4pc reaches **3 × 12% = +36% CRIT Rate**, and Furina guarantees
+the HP churn to hold it (her Salon Members drain the active character's HP and
+healing restores it). Blizzard Strayer's 4pc gives only **+20%** on a boss,
+because bosses never enter the Frozen state. For a Normal/Charged-attack DPS
+that is a clear win for Marechaussee; for a Skill/Burst DPS the Blizzard
+Strayer 2pc may still win it back.
