@@ -22,6 +22,8 @@ const repAreaTree = Object.fromEntries(Object.entries(REP_AREAS)
 // Wood farming: one page per region under the overview, from the builder's manifest
 // (tools/build-wood-routes.py), like the reputation areas above.
 const WOOD_PAGES = JSON.parse(readFileSync('reference/data/wood-routes.json', 'utf8')).map((p) => p.href);
+// Troves: one page per region under the overview (tools/build-artifact-troves.py).
+const TROVE_PAGES = JSON.parse(readFileSync('reference/data/trove-pages.json', 'utf8')).map((p) => p.href);
 
 export const TREE = {
   // Top level, beside the generated Builds and Teams. '' is the "Genshin notes" root.
@@ -34,6 +36,7 @@ export const TREE = {
   // One page per area under each region page (see REP_AREAS above).
   ...repAreaTree,
   'Farming & economy/Wood farming routes': WOOD_PAGES,
+  'Farming & economy/5★ artifact troves': TROVE_PAGES,
   'Combat': [
     'enemy-coverage.html', 'reaction-combos.html', 'stellar.html', 'theater.html',
     'tactical-sweep.html', 'research/08-snezhnaya-mechanics.md',

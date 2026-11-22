@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5-star artifact troves: Liyue</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>5-star artifact troves: Liyue</h1>
+  <p class="sub">1 fixed spot in Liyue that gives 5-star artifacts with no resin.</p>
+  <div class="bar key">Every trove opens from Adventure Rank 45. Its keys drop at random from Precious and Luxurious Chests in its own area; once you hold them all, mark the trove from the key in your inventory (or with that region&#x27;s Treasure Compass) and go to the pin. Green numbered pins are the troves, small blue pins the chests that can drop their keys; toggling a trove under its map shows or hides its chests. <a href="artifact-troves.html">All regions</a>.</div>
+  <h2>Liyue</h2>
+  <p>No trove, but one quest vault with a guaranteed 5-star piece. It is a single flower, not a set.</p>
+  <div class="map-wrap" id="trovesLiyue" data-map="assets/troves-liyue-28968033.webp" data-alt="Liyue: where each 5-star artifact trove is" data-legend="[{&quot;layer&quot;: &quot;q1&quot;, &quot;text&quot;: &quot;1 · Nine Pillars of Peace&quot;, &quot;role&quot;: &quot;goal&quot;}]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)" data-track-done></div>
+  <div class="stop" id="q1" style="border-left:3px solid #ff5a3c;padding:6px 10px;margin:12px 0"><div><span style="display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px;font-weight:700">1</span> <b>Nine Pillars of Peace</b> <span style="opacity:.65;font-size:.85rem;margin-left:6px">Quest vault · Cuijue Slope</span></div><div><b>Inside:</b> One 5-star piece: Royal Flora (5-star Noblesse Oblige flower).</div><div><b>To open it:</b></div><ol class="steps"><li>Make offerings to Liyue&#x27;s Statues of The Seven (they take Geoculi) until you hold 9 Stones of Remembrance. The statues are the small pins on this trove&#x27;s layer.</li><li>Read the inscription at the pin to start the world quest Nine Pillars of Peace, then set a stone in each of the nine pillars around Cuijue Slope.</li><li>Win the fight inside the vault, then take the Royal Flora from the back room, with a Luxurious and a Precious Chest. Only the host can claim it in co-op.</li></ol><a href="https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/07/01/379454551/b2f5aaf0862eecbb7761a5beecbb2d44_8551168084537578414.jpg" target="_blank" rel="noopener"><img loading="lazy" style="max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px" src="https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/07/01/379454551/b2f5aaf0862eecbb7761a5beecbb2d44_8551168084537578414.jpg?x-oss-process=image/resize,w_640/format,webp" alt="Where Nine Pillars of Peace is"></a></div>
+
+  <p class="sub">Sources: as on <a href="artifact-troves.html">5-star artifact troves</a>. Generated 22 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-artifact-troves.py</code> from
+  reference/data/artifact-troves.json.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  import { trackDone } from "./app/done.js";
+  drawMap("#trovesLiyue", [{"x": 59.38, "y": 54.07, "role": "goal", "layer": "q1", "label": "1", "tag": "Cuijue Slope", "title": "Nine Pillars of Peace", "shot": "https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/07/01/379454551/b2f5aaf0862eecbb7761a5beecbb2d44_8551168084537578414.jpg?x-oss-process=image/resize,w_640/format,webp", "card": "#q1", "alt": "Where Nine Pillars of Peace is", "info": "9× Stone of Remembrance"}, {"x": 42.3, "y": 10.27, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://act-upload.hoyoverse.com/upload/wiki-ys-map/2024/01/31/362410818/b1e4a0b48a7b8c8e18b76c1f57461814_6154550377625782427.PNG?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 18.25, "y": 21.04, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://act-upload.hoyoverse.com/upload/wiki-ys-map/2024/01/31/248856979/27e3ca4a4e1a24698fa7adaaa2dbe2d0_1146481237074032812.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 27.29, "y": 84.6, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2022/03/30/157430338/257f966385d3e3461cab027adaf757a8_1420624978243142582.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 55.64, "y": 75.56, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2021/08/21/94256213/c54bc357f2ab91160aba6b454b3d264f_2316034691976667686.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 76.12, "y": 66.24, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2021/08/21/94256213/c9edfa04295c0fb9a6c4c1368501e2ef_757151746300873488.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 41.85, "y": 44.64, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2021/08/21/94256213/b1c7c4c94d8bcbd5e14ede0bfb2ed882_9140103975069968259.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 90.35, "y": 48.38, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2021/08/21/94256213/b438b3d6c551c6ff06d039fbd317c635_5220855607242323334.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}, {"x": 76.0, "y": 30.25, "role": "farm", "size": "sm", "layer": "q1", "title": "Statue of The Seven (keys for 1)", "shot": "https://upload-static.hoyoverse.com/wiki-ys-map/2021/08/21/94256213/a335c9977eb6a7c8374c6ab633f96e9d_8881217864278848411.png?x-oss-process=image/resize,w_640/format,webp", "alt": "Where this Statue of The Seven is", "card": "#q1", "info": "Offerings here give Stones of Remembrance"}]);
+  trackDone();
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>

@@ -104,26 +104,26 @@ def steps(t):
                 "in each of the nine pillars around Cuijue Slope.",
                 "Win the fight inside the vault, then take the Royal Flora from the back room, with a Luxurious and "
                 "a Precious Chest. Only the host can claim it in co-op."]
+    # Adventure Rank 45 and "mark it from the key" apply to every trove: the page
+    # intro says them once (COMMON), so a card lists only what is this trove's own.
     if t.get("unconfirmed"):
-        return ["Reach Adventure Rank 45.",
-                "Collect 3 Remnant Incense Guides for this vault. The wiki does not list it yet; guides report "
-                "they drop from Precious and Luxurious Chests in Teplo Oasis, Hallowed Plain and Wingspan Peak.",
-                "Mark the vault from the guides in your inventory or with the Cryo Treasure Compass, then open it."]
+        return ["Collect 3 Remnant Incense Guides for this vault. The wiki does not list it yet; guides report "
+                "they drop from Precious and Luxurious Chests in Teplo Oasis, Hallowed Plain and Wingspan Peak."]
     where = " and ".join(t.get("keyAreas") or []) or t["where"]
-    mapped = ("%d of those chests are on the map above (small pins on this trove's layer)." % found if found else
-              "The official map has not tagged chest tiers in %s yet, so there are no chest pins for it: open "
-              "every Precious and Luxurious Chest you find there." % where)
-    out = ["Reach Adventure Rank 45: troves stay shut below it."]
+    mapped = ("%d of those chests are on the map (small pins on this trove's layer)." % found if found else
+              "The official map has not tagged chest tiers in %s yet, so there are no chest pins for it." % where)
     if t["key"].endswith("Ring"):
         frag = t["key"].replace("Ring", "Fragment")
-        out.append("Collect 3 %ss: they drop at random from %s. %s" % (frag, t["keyFrom"].split(" from ", 1)[-1], mapped))
-        out.append("The three fragments make the %s." % t["key"])
-    else:
-        source = re.sub(r"^random ", "", t["keyFrom"])
-        out.append("Collect %d× %s: they drop at random from %s. %s" % (t["keys"], t["key"], source, mapped))
-    out.append("Mark the trove on the map from the key in your inventory (or with that region's Treasure Compass) "
-               "and go to the pin.")
-    return out
+        return ["Collect 3 %ss from %s; they make the %s. %s"
+                % (frag, t["keyFrom"].split(" from ", 1)[-1], t["key"], mapped)]
+    source = re.sub(r"^random ", "", t["keyFrom"])
+    return ["Collect %d× %s from %s. %s" % (t["keys"], t["key"], source, mapped)]
+
+
+COMMON = ("Every trove opens from Adventure Rank 45. Its keys drop at random from Precious and Luxurious Chests in "
+          "its own area; once you hold them all, mark the trove from the key in your inventory (or with that "
+          "region's Treasure Compass) and go to the pin. Green numbered pins are the troves, small blue pins the "
+          "chests that can drop their keys; toggling a trove under its map shows or hides its chests.")
 
 
 def picture(t):
@@ -150,16 +150,22 @@ def key_line(t):
 
 def card(t):
     full, small = picture(t)
+    # Small: a pin click already opens the full picture on the map.
     pic = ('<a href="%s" target="_blank" rel="noopener"><img loading="lazy" style="%s" src="%s" alt="Where %s is"></a>'
-           % (esc(full), rr.IMG_BIG, esc(small), esc(t["name"]))) if full else \
+           % (esc(full), rr.IMG_SMALL, esc(small), esc(t["name"]))) if full else \
         '<div class="dim">No picture on the official map yet.</div>'
     kind = "Quest vault" if t.get("quest") else "Trove"
     return ('<div class="stop" id="q%(n)s" style="%(card)s"><div><span style="%(pill)s">%(n)s</span> <b>%(name)s</b>'
             ' <span style="opacity:.65;font-size:.85rem;margin-left:6px">%(kind)s · %(where)s</span></div>'
-            '<div><b>Inside:</b> %(reward)s</div><div><b>To open it:</b></div><ol class="steps">%(steps)s</ol>%(pic)s</div>'
+            '<div><b>Inside:</b> %(reward)s</div>%(steps)s%(pic)s</div>'
             % {"n": t["n"], "card": rr.CARD, "pill": rr.PILL, "name": esc(t["name"]), "kind": kind,
-               "where": esc(t["where"]), "reward": esc(reward_line(t)),
-               "steps": "".join("<li>%s</li>" % esc(x) for x in steps(t)), "pic": pic})
+               "where": esc(t["where"]), "reward": esc(reward_line(t)), "steps": steps_html(steps(t)), "pic": pic})
+
+
+def steps_html(items):
+    if len(items) == 1:
+        return "<div><b>To open it:</b> %s</div>" % esc(items[0])
+    return '<div><b>To open it:</b></div><ol class="steps">%s</ol>' % "".join("<li>%s</li>" % esc(x) for x in items)
 
 
 def marker(t, win):
@@ -216,12 +222,25 @@ def region_block(r, src):
     return body, draw
 
 
+# Map regions that share a page: Nod-Krai's last two troves are on their own map layer.
+PAGE_OF = {"Lunar Highlands and Moontide Sea": "Nod-Krai"}
+MANIFEST = os.path.join("reference", "data", "trove-pages.json")
+
+
+def page_name(r):
+    return PAGE_OF.get(r["name"], r["name"])
+
+
+def page_href(name):
+    return "troves-%s.html" % re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
 def summary(regions):
     rows = []
     for r in regions:
         sets = sorted({s for t in r["troves"] for s in t["sets"]})
-        rows.append("<tr><td>%s</td><td>%d</td><td>%s</td></tr>" % (
-            esc(r["name"]), len(r["troves"]),
+        rows.append('<tr><td><a href="%s">%s</a></td><td>%d</td><td>%s</td></tr>' % (
+            page_href(page_name(r)), esc(r["name"]), len(r["troves"]),
             esc(", ".join(sets)) if sets else esc(r["troves"][0].get("piece") or "not yet confirmed")))
     return ('<table><thead><tr><th>Region</th><th>Spots</th><th>5-star sets inside</th></tr></thead><tbody>%s</tbody></table>'
             % "".join(rows))
@@ -232,29 +251,16 @@ PAGE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>5-star artifact troves: every fixed spot on the map</title>
+<title>%(title)s</title>
 <link rel="stylesheet" href="styles/map.css">
 <style>%(css)s</style>
 </head>
 <body>
 <div class="wrap">
-  <h1>5-star artifact troves: every fixed spot on the map</h1>
-  <p class="sub">%(count)d places in the open world hand out 5-star artifacts with no resin. Most are Hidden
-  Troves: collect the keys from chests nearby, open the trove, take two full 5-star sets. Each opens once and never
-  refills, so they are free gear for every account at Adventure Rank 45 or higher.</p>
-  <div class="bar key"><b>How it works.</b> Each trove takes the keys of its own area (seals, rings, guides), which
-  drop at random from <b>Precious and Luxurious Chests</b> there. Once you hold a full set of keys, the trove can be
-  marked on the map from the item in your inventory or with that region's Treasure Compass. Inazuma, Sumeru and
-  Fontaine have no trove: their 5-star pieces come from domains and bosses (see <a href="artifacts.html">Artifacts</a>).
-  Green numbered pins are the troves; small blue pins are the Precious and Luxurious Chests in each trove's key
-  areas, from the official map (it does not mark area borders, so a chest near an edge may belong to the next area).
-  Toggling a trove under its map shows or hides its chests. Click any pin for a picture of the spot; numbers match
-  the cards below each map.</div>
-  %(summary)s
+  <h1>%(title)s</h1>
+  <p class="sub">%(sub)s</p>
 %(body)s
-  <p class="sub">Sources: Genshin Impact Wiki pages Hidden Trove, Tribal Secret Space, Kuuhenki's Hidden Trove,
-  Secret Hall of the Realms, Shadow Realm Treasure Vault, Nine Pillars of Peace and each key item (checked %(checked)s);
-  HoYoLAB interactive map pins and their pictures. Generated %(date)s.</p>
+  <p class="sub">%(sources)s Generated %(date)s.</p>
   <div class="note editor">Built by <code>python -I tools/build-artifact-troves.py</code> from
   reference/data/artifact-troves.json.</div>
 </div>
@@ -270,17 +276,25 @@ PAGE = """<!DOCTYPE html>
 """
 
 
+def write(path, title, sub, body, sources, draws=""):
+    io.open(path, "w", encoding="utf-8", newline="\n").write(PAGE % {
+        "title": title, "sub": sub, "body": body, "css": rr.CSS, "sources": sources,
+        "date": time.strftime("%d %b %Y"), "draws": draws})
+
+
 def main():
     data = json.load(io.open(DATA, encoding="utf-8"))
-    n, sources, places = 0, {}, {}
+    sources, places = {}, {}
     cache = json.load(io.open(CHEST_CACHE, encoding="utf-8")) if os.path.exists(CHEST_CACHE) else {}
+    counter = {}
     for r in data["regions"]:
         src = sources.get(r["map"]) or sources.setdefault(r["map"], ms.MapSource(r["map"]))
         place = places.get(r["map"]) or places.setdefault(r["map"], area_of(src))
         pins = {p["id"]: p for p in src.points}
         for t in r["troves"]:
-            n += 1
-            t["n"] = n
+            # Numbered per page: card q3 and pin 3 are the same trove on that page.
+            counter[page_name(r)] = counter.get(page_name(r), 0) + 1
+            t["n"] = counter[page_name(r)]
             p = pins.get(t["pin"])
             if not p:
                 raise SystemExit("pin %s (%s) is not on map %s any more" % (t["pin"], t["name"], r["map"]))
@@ -289,20 +303,50 @@ def main():
                 t["img"] = point_info(r["map"], t["pin"]).get("img") or None
             t["keyPts"] = key_points(t, src, place, cache)
     io.open(CHEST_CACHE, "w", encoding="utf-8", newline="\n").write(json.dumps(cache, indent=1, sort_keys=True) + "\n")
-    bodies, draws = [], []
+
+    wiki = ("Sources: Genshin Impact Wiki pages Hidden Trove, Tribal Secret Space, Kuuhenki's Hidden Trove, Secret "
+            "Hall of the Realms, Shadow Realm Treasure Vault, Nine Pillars of Peace and each key item (checked %s); "
+            "HoYoLAB interactive map pins and their pictures." % data["_checked"])
+    pages, order = {}, []
     for r in data["regions"]:
-        b, d = region_block(r, sources[r["map"]])
-        bodies.append(b)
-        draws.append(d)
-    io.open(OUT, "w", encoding="utf-8", newline="\n").write(PAGE % {
-        "css": rr.CSS, "count": n, "summary": summary(data["regions"]), "body": "\n".join(bodies),
-        "checked": data["_checked"], "date": time.strftime("%d %b %Y"), "draws": "\n".join(draws)})
+        name = page_name(r)
+        if name not in pages:
+            pages[name] = []
+            order.append(name)
+        pages[name].append(r)
+    manifest = []
+    for name in order:
+        bodies, draws = [], []
+        for r in pages[name]:
+            b, d = region_block(r, sources[r["map"]])
+            bodies.append(b)
+            draws.append(d)
+        troves = [t for r in pages[name] for t in r["troves"]]
+        href = page_href(name)
+        title = "5-star artifact troves: %s" % name
+        write(href, title, "%d fixed spot%s in %s that give%s 5-star artifacts with no resin."
+              % (len(troves), "" if len(troves) == 1 else "s", name, "s" if len(troves) == 1 else ""),
+              '  <div class="bar key">%s <a href="artifact-troves.html">All regions</a>.</div>\n%s'
+              % (esc(COMMON), "\n".join(bodies)),
+              'Sources: as on <a href="artifact-troves.html">5-star artifact troves</a>.', "\n".join(draws))
+        manifest.append({"href": href, "title": title, "troves": [t["name"] for t in troves]})
+        print("  %s: %d troves, %d maps" % (href, len(troves), len(bodies)), file=sys.stderr)
+
+    n = sum(len(r["troves"]) for r in data["regions"])
+    links = "".join('<li><a href="%s">%s</a> &middot; %d</li>' % (m["href"], esc(m["title"].split(": ", 1)[1]), len(m["troves"]))
+                    for m in manifest)
+    write(OUT, "5-star artifact troves: every fixed spot on the map",
+          "%d places in the open world hand out 5-star artifacts with no resin. Most are Hidden Troves: collect the "
+          "keys from chests nearby, open the trove, take two full 5-star sets. Each opens once and never refills, so "
+          "they are free gear for every account at Adventure Rank 45 or higher." % n,
+          '  <div class="bar key"><b>How it works.</b> %s Inazuma, Sumeru and Fontaine have no trove: their 5-star '
+          'pieces come from domains and bosses (see <a href="artifacts.html">Artifacts</a>). The official map does not '
+          'mark area borders, so a chest near an edge may belong to the next area.</div>\n'
+          '  <h2>By region</h2>\n  <ul class="regions">%s</ul>\n  %s' % (esc(COMMON), links, summary(data["regions"])),
+          wiki)
+    io.open(MANIFEST, "w", encoding="utf-8", newline="\n").write(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n")
     missing = [t["name"] for r in data["regions"] for t in r["troves"] if not t.get("img")]
-    print("%s: %d spots, %d maps; no picture: %s" % (OUT, n, len(bodies), missing or "none"), file=sys.stderr)
-    for r in data["regions"]:
-        for t in r["troves"]:
-            print("  %2d %-45s key points %d (%d with picture)" % (t["n"], t["name"], len(t["keyPts"]),
-                  sum(1 for c in t["keyPts"] if c["img"])), file=sys.stderr)
+    print("%s: %d spots on %d region pages; no picture: %s" % (OUT, n, len(manifest), missing or "none"), file=sys.stderr)
 
 
 if __name__ == "__main__":

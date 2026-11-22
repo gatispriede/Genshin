@@ -1,0 +1,60 @@
+[
+ {
+  "href": "troves-mondstadt.html",
+  "title": "5-star artifact troves: Mondstadt",
+  "troves": [
+   "Noblesse Secret Treasury"
+  ]
+ },
+ {
+  "href": "troves-liyue.html",
+  "title": "5-star artifact troves: Liyue",
+  "troves": [
+   "Nine Pillars of Peace"
+  ]
+ },
+ {
+  "href": "troves-natlan.html",
+  "title": "5-star artifact troves: Natlan",
+  "troves": [
+   "People of the Springs",
+   "Scions of the Canopy",
+   "Children of Echoes",
+   "Masters of the Night-Wind",
+   "Flower-Feather Clan",
+   "Collective of Plenty"
+  ]
+ },
+ {
+  "href": "troves-nod-krai.html",
+  "title": "5-star artifact troves: Nod-Krai",
+  "troves": [
+   "Lunar Treasury: Lempo Isle",
+   "Lunar Treasury: Hiisi Island",
+   "Lunar Treasury: Paha Isle",
+   "Lunar Treasury: Wavechaser Plain",
+   "Lunar Treasury: Ashveil Peak",
+   "Lunar Treasury: Voidsea Outlook",
+   "Lunar Treasury: Lunar Highlands",
+   "Lunar Treasury: Moontide Sea"
+  ]
+ },
+ {
+  "href": "troves-temple-of-space.html",
+  "title": "5-star artifact troves: Temple of Space",
+  "troves": [
+   "Secret Hall of the Realms"
+  ]
+ },
+ {
+  "href": "troves-snezhnaya.html",
+  "title": "5-star artifact troves: Snezhnaya",
+  "troves": [
+   "Shadow Realm Vault: Everfrozen Earth",
+   "Shadow Realm Vault: Fellfrost Peak",
+   "Shadow Realm Vault: White Birch Snowgrave",
+   "Shadow Realm Vault (7.2): west of Teplo Oasis",
+   "Shadow Realm Vault (7.2): Teplo Oasis"
+  ]
+ }
+]

@@ -152,19 +152,18 @@ def loop_block(src, w):
 
 
 def card(w):
-    if w["loop"]:
-        how = ("Teleport to the waypoint marked W, chop trees 1 to %d in order (3 wood each), then go straight on "
-               "to tree 1 again: by then it has refreshed, because ten other trees were chopped since. Repeat "
-               "until the 2,000-a-day cap." % len(w["route"]))
-    else:
-        how = ("Fewer than 11 trees of this type stand together, so this spot cannot be looped without "
-               "waiting: chop these, then log out and back in to refresh them.")
+    how = "" if w["loop"] else ("Fewer than 11 trees of this type stand together, so this spot cannot be looped "
+                                "without waiting: chop these, then log out and back in to refresh them.")
     where = "%s, %s" % (w["place"], w["area"]) if w["place"] != w["area"] else w["area"]
     under = (" These trees are on the map's &ldquo;%s&rdquo; layer, not the surface." % esc(w["floor"])) if w["underground"] else ""
     return ('<h2>%s</h2><p><b>Where:</b> %s &middot; <b>Loop:</b> %s walk &middot; <b>From the waypoint:</b> %s '
-            '&middot; %d trees of this type on the official map.%s</p><p>%s</p>'
-            % (esc(w["wood"]), esc(where), w["walk"], w["approach"], w["total"], under, esc(how)))
+            '&middot; %d trees of this type on the official map.%s</p>%s'
+            % (esc(w["wood"]), esc(where), w["walk"], w["approach"], w["total"], under,
+               ("<p>%s</p>" % esc(how)) if how else ""))
 
+
+HOW_TO = """  <div class="bar key">Teleport to W, chop 1 to 11, then start again at 1: it has refreshed by then.
+  <a href="wood-farming.html">How the loop works</a>.</div>"""
 
 MECHANICS = """  <div class="bar key"><b>How wood farming works.</b> Each tree gives up to 3 wood, then stays empty
   until you have chopped <b>ten other trees</b> (or logged out and in). So a loop of 11 trees of one type never runs
@@ -187,9 +186,7 @@ PAGE = """<!DOCTYPE html>
   <h1>%(title)s</h1>
   <p class="sub">%(sub)s</p>
 %(body)s
-  <p class="sub">Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin
-  Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.
-  Generated %(date)s.</p>
+  <p class="sub">%(sources)s Generated %(date)s.</p>
   <div class="note editor">Built by <code>python -I tools/build-wood-routes.py</code>.</div>
 </div>
 <script type="module">
@@ -202,9 +199,15 @@ PAGE = """<!DOCTYPE html>
 """
 
 
-def write(path, title, sub, body, draws=""):
+SOURCES = ("Sources: HoYoLAB interactive map, Wood layers (one pin per tree) and teleport waypoints; Genshin "
+           "Impact Wiki, &ldquo;Wood&rdquo; (refresh rule, daily cap, what counts as a chop), checked 21 Nov 2026.")
+
+
+def write(path, title, sub, body, draws="", sources=SOURCES):
+    """Region pages pass a one-line pointer: the full list lives on the overview, not on nine pages."""
     io.open(path, "w", encoding="utf-8", newline="\n").write(PAGE % {
-        "title": title, "sub": sub, "body": body, "css": rr.CSS, "date": time.strftime("%d %b %Y"), "draws": draws})
+        "title": title, "sub": sub, "body": body, "css": rr.CSS, "date": time.strftime("%d %b %Y"),
+        "draws": draws, "sources": sources})
 
 
 def main():
@@ -225,7 +228,8 @@ def main():
         href = "wood-%s.html" % slug(region)
         write(href, "Wood farming in %s" % region,
               "%d wood types whose best loop is in %s. Each map: teleport at W, trees numbered in walking order."
-              % (len(ws), region), MECHANICS + "\n" + "\n".join(blocks), "\n".join(draws))
+              % (len(ws), region), HOW_TO + "\n" + "\n".join(blocks), "\n".join(draws),
+              sources='Sources: as on <a href="wood-farming.html">Wood farming routes</a>.')
         pages.append({"href": href, "title": "Wood farming in %s" % region, "woods": [w["wood"] for w in ws]})
         print("  %s: %d wood types" % (href, len(ws)), file=sys.stderr)
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5-star artifact troves: Mondstadt</title>
+<link rel="stylesheet" href="styles/map.css">
+<style>
+.stop{background:var(--panel);border-radius:10px;padding:10px 12px;margin:8px 0}
+.stop .head{font-size:1.02rem}.stop .body{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.stop .body>div{flex:1 1 260px}.lbl{display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;
+background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px}.lbl.big{font-size:.9rem}
+.tier{color:var(--dim);font-size:.85rem;margin-left:6px}.shot{max-width:320px;width:100%;border-radius:6px}
+.thumb{max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px}
+ol.steps{margin:6px 0 2px 18px}ol.steps li{margin:6px 0}details.chain summary{cursor:pointer;font-weight:600}
+.warn{color:var(--warn,#c99a06)}.dim{color:var(--dim)}ul.side li{margin:3px 0}
+.req{margin-top:4px;font-size:.9rem}.tag{font-size:.75rem;background:#5b3a8f;color:#fff;border-radius:999px;padding:1px 7px}
+details.hidden{margin:4px 0}details.hidden summary{cursor:pointer;font-size:.88rem}ol.steps li.sub{list-style:none;margin-left:12px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>5-star artifact troves: Mondstadt</h1>
+  <p class="sub">1 fixed spot in Mondstadt that gives 5-star artifacts with no resin.</p>
+  <div class="bar key">Every trove opens from Adventure Rank 45. Its keys drop at random from Precious and Luxurious Chests in its own area; once you hold them all, mark the trove from the key in your inventory (or with that region&#x27;s Treasure Compass) and go to the pin. Green numbered pins are the troves, small blue pins the chests that can drop their keys; toggling a trove under its map shows or hides its chests. <a href="artifact-troves.html">All regions</a>.</div>
+  <h2>Mondstadt</h2>
+  <p>One trove: the Noblesse Secret Treasury on Windrest Peak, the only trove that needs two keys instead of three.</p>
+  <div class="map-wrap" id="trovesMondstadt" data-map="assets/troves-mondstadt-0c3eb4ba.webp" data-alt="Mondstadt: where each 5-star artifact trove is" data-legend="[{&quot;layer&quot;: &quot;q1&quot;, &quot;text&quot;: &quot;1 · Noblesse Secret Treasury&quot;, &quot;role&quot;: &quot;goal&quot;}]" data-block-w="24" data-label-min-zoom="0" data-height="min(100vw, 1200px)" data-track-done></div>
+  <div class="stop" id="q1" style="border-left:3px solid #ff5a3c;padding:6px 10px;margin:12px 0"><div><span style="display:inline-block;min-width:1.6em;text-align:center;border-radius:999px;background:#ff5a3c;color:#fff;font-size:.8rem;padding:1px 6px;font-weight:700">1</span> <b>Noblesse Secret Treasury</b> <span style="opacity:.65;font-size:.85rem;margin-left:6px">Trove · Windrest Peak</span></div><div><b>Inside:</b> Two full 5-star sets: Aubade of Morningstar and Moon and A Day Carved From Rising Winds, plus a Dust of Enlightenment.</div><div><b>To open it:</b> Collect 2× Ancient Mondstadt Royal Seal from Precious and Luxurious Chests in Windrest Peak. The official map has not tagged chest tiers in Windrest Peak yet, so there are no chest pins for it.</div><a href="https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/04/08/175857065/cba6addc2d472754f248bc829491059b_5125648061516450864.png" target="_blank" rel="noopener"><img loading="lazy" style="max-width:200px;width:100%;border-radius:6px;display:block;margin-top:4px" src="https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/04/08/175857065/cba6addc2d472754f248bc829491059b_5125648061516450864.png?x-oss-process=image/resize,w_640/format,webp" alt="Where Noblesse Secret Treasury is"></a></div>
+
+  <p class="sub">Sources: as on <a href="artifact-troves.html">5-star artifact troves</a>. Generated 22 Nov 2026.</p>
+  <div class="note editor">Built by <code>python -I tools/build-artifact-troves.py</code> from
+  reference/data/artifact-troves.json.</div>
+</div>
+<script type="module">
+  import { drawMap } from "./app/annotate.js";
+  import { trackDone } from "./app/done.js";
+  drawMap("#trovesMondstadt", [{"x": 41.02, "y": 58.72, "role": "goal", "layer": "q1", "label": "1", "tag": "Windrest Peak", "title": "Noblesse Secret Treasury", "shot": "https://act-upload.hoyoverse.com/upload/wiki-ys-map/2026/04/08/175857065/cba6addc2d472754f248bc829491059b_5125648061516450864.png?x-oss-process=image/resize,w_640/format,webp", "card": "#q1", "alt": "Where Noblesse Secret Treasury is", "info": "2× Ancient Mondstadt Royal Seal"}]);
+  trackDone();
+</script>
+<script src="app/nav.js"></script>
+</body>
+</html>
